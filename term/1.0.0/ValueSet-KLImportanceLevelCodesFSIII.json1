@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLImportanceLevelCodesFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-D\">D</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLImportanceLevelCodesFSIII",
+  "version" : "1.0.0",
+  "name" : "KLImportanceLevelCodesFSIII",
+  "title" : "KLBetydningKoderFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-25T15:38:16+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Importance level codes (Betydning), as evaluated by the citizen",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "D"
+      }]
+    }]
+  }
+}

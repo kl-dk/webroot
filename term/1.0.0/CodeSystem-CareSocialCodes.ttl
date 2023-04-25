@@ -1,0 +1,235 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/CodeSystem/CareSocialCodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CareSocialCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">940f37e6-8a3d-483b-adac-be8af3268a5b<a name=\"CareSocialCodes-940f37e6-8a3d-483b-adac-be8af3268a5b\"> </a></td><td>oplysningsaktivitet</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  f8ebd11a-04f3-4aa0-9786-406e8896c84d<a name=\"CareSocialCodes-f8ebd11a-04f3-4aa0-9786-406e8896c84d\"> </a></td><td>socialfaglig udredning, VUM/FFB</td><td>udførelse af socialfaglig udredning som specificeret af VUM og FFB</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  0f0f223c-abe3-4720-aab8-c257679a0a4e<a name=\"CareSocialCodes-0f0f223c-abe3-4720-aab8-c257679a0a4e\"> </a></td><td>terapeutfaglig udredning, FSIII</td><td>udførelse af terapeutfaglig udredning jævnfør FSIII</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  95e787e0-5490-437d-ae4c-f3736644242f<a name=\"CareSocialCodes-95e787e0-5490-437d-ae4c-f3736644242f\"> </a></td><td>afklarende samtale §119, FSIII</td><td>udførelse af afklarende samtale vedr. sundhedsfremme og forebyggelse jævnfør FSIII</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  47fd1468-89da-4803-9d7a-ecc039a30d92<a name=\"CareSocialCodes-47fd1468-89da-4803-9d7a-ecc039a30d92\"> </a></td><td>sygeplejefaglig udredning, FSIII</td><td>udførelse af sygeplejefaglig udredning jævnfør FSIII</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  e5a73b0e-a5d2-430e-931f-6156306ab00f<a name=\"CareSocialCodes-e5a73b0e-a5d2-430e-931f-6156306ab00f\"> </a></td><td>funktionsevnevurdering hjemmepleje, FSIII</td><td>udførelse af funktionsevnevurdering i hjemmeplejen jævnfør FSIII</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  e70c66c0-a939-493b-8ea8-5b7e7b48ba1a<a name=\"CareSocialCodes-e70c66c0-a939-493b-8ea8-5b7e7b48ba1a\"> </a></td><td>generelle oplysninger, FSIII</td><td>indhentning af generelle oplysninger jævnfør FSIII</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">25303acd-dcaf-4a8e-a8a3-3961a43858aa<a name=\"CareSocialCodes-25303acd-dcaf-4a8e-a8a3-3961a43858aa\"> </a></td><td>kontaktaktivitet</td><td>aktivitet der foretages ved kommunal kontakt.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  829ac647-c7fc-4964-836b-f708d886e0e3<a name=\"CareSocialCodes-829ac647-c7fc-4964-836b-f708d886e0e3\"> </a></td><td>oplysning</td><td>oplysning er foretaget ved kontakt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  bb6fc544-7f4f-4b50-8868-1431e0df2381<a name=\"CareSocialCodes-bb6fc544-7f4f-4b50-8868-1431e0df2381\"> </a></td><td>observation</td><td>observation foretaget ved kontakt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  784275f1-6822-4a88-b361-d958007d5253<a name=\"CareSocialCodes-784275f1-6822-4a88-b361-d958007d5253\"> </a></td><td>udførelse af planlagt indsats</td><td>Planlagt indsats udført ved kontakt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  9269c9a2-8220-447b-a127-811275b41062<a name=\"CareSocialCodes-9269c9a2-8220-447b-a127-811275b41062\"> </a></td><td>vurdering/bevilling</td><td>vurdering og/eller bevilling er foretaget ved kontakt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  15775b0a-7ec6-469e-9d3c-a81fbc9a1b45<a name=\"CareSocialCodes-15775b0a-7ec6-469e-9d3c-a81fbc9a1b45\"> </a></td><td>udførelse af akutindsats</td><td>Akutindsats, bevilget af læge eller akutteam, udført ved kontakt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  9f03dfbb-7a97-45a5-94db-d4c3501714a9<a name=\"CareSocialCodes-9f03dfbb-7a97-45a5-94db-d4c3501714a9\"> </a></td><td>opfølgning</td><td>opfølgning foretaget ved kontakt</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  c03b426a-4348-407f-b343-f4baa9759c72<a name=\"CareSocialCodes-c03b426a-4348-407f-b343-f4baa9759c72\"> </a></td><td>udførelse af ikke-bevilget indsats</td><td>Indsats, der ikke i forvejen var bevilget, udført ved kontakt</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">3762dd32-4123-43a8-815d-ec40d3697652<a name=\"CareSocialCodes-3762dd32-4123-43a8-815d-ec40d3697652\"> </a></td><td>indforståelse ifm henvendelse</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb<a name=\"CareSocialCodes-54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb\"> </a></td><td>ikke indforstået</td><td>Borger ikke indforstået med henvendelse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  e67035da-9179-466b-99ad-ea86835d38c9<a name=\"CareSocialCodes-e67035da-9179-466b-99ad-ea86835d38c9\"> </a></td><td>indforstået</td><td>Borger indforstået med henvendelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">10deb210-e7e1-4d56-9531-b9ff2102126e<a name=\"CareSocialCodes-10deb210-e7e1-4d56-9531-b9ff2102126e\"> </a></td><td>Planlagt indsatsforløb</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf<a name=\"CareSocialCodes-ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf\"> </a></td><td>Rehabilitering efter §140</td><td>Det planlagte indsatsforløb er rehabilitering efter sundhedslovens §140</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  4fd6c23a-6ff3-4251-ac37-3ca095027b5b<a name=\"CareSocialCodes-4fd6c23a-6ff3-4251-ac37-3ca095027b5b\"> </a></td><td>Sundhedsfremme og forebyggelse §119</td><td>Det planlagte indsatsforløb vedrører sundhedsfremme og forebyggelse efter §119</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  e459386d-1474-4c31-89c5-c8bc7a25e3d4<a name=\"CareSocialCodes-e459386d-1474-4c31-89c5-c8bc7a25e3d4\"> </a></td><td>Social indsats</td><td>Det planlagte indsatsforløb er en social indsats, som defineret af FFB, med tilhørende ydelser, målgruppe og tilbud</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">b5731132-f6b9-4a47-995d-681d2b755d4f<a name=\"CareSocialCodes-b5731132-f6b9-4a47-995d-681d2b755d4f\"> </a></td><td>Kilde</td><td>Person der er kilde til oplysning eller vurdering</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  25b4e705-2e9a-47a2-b11a-c829316b9d3a<a name=\"CareSocialCodes-25b4e705-2e9a-47a2-b11a-c829316b9d3a\"> </a></td><td>Borger</td><td>Borger er kilde til oplysning eller vurdering</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  f6ea2920-7dde-491e-a489-6b99a3904069<a name=\"CareSocialCodes-f6ea2920-7dde-491e-a489-6b99a3904069\"> </a></td><td>Sagsbehandler</td><td>Sagsbehandler er kilde til oplysning eller vurdering</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  63338442-7b2e-405b-acc0-142361ef19f1<a name=\"CareSocialCodes-63338442-7b2e-405b-acc0-142361ef19f1\"> </a></td><td>Andre</td><td>Andre end borger og sagsbehandler er kilde til oplysning eller vurdering. Fx læge, pårørende og udfører</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    f00a6844-1005-401d-965d-1c5859df7beb<a name=\"CareSocialCodes-f00a6844-1005-401d-965d-1c5859df7beb\"> </a></td><td>Udfører</td><td>Udfører er kilde til oplysning eller vurdering</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">253bbdc0-c4ca-4e77-9d3e-3a9e51281636<a name=\"CareSocialCodes-253bbdc0-c4ca-4e77-9d3e-3a9e51281636\"> </a></td><td>Mål/formål</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ca552020-6ed1-4cdc-b0d4-32697f1f27ad<a name=\"CareSocialCodes-ca552020-6ed1-4cdc-b0d4-32697f1f27ad\"> </a></td><td>FSIII tilstandsmål</td><td>Tilstandsmål som defineret af FSIII - ofte i form af en forventet tilstand</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ffb9886b-d04e-46b1-9165-a400f91f822b<a name=\"CareSocialCodes-ffb9886b-d04e-46b1-9165-a400f91f822b\"> </a></td><td>FSIII borgers ønsker og mål</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  e6f35a88-6665-4471-9dce-9a98854532b4<a name=\"CareSocialCodes-e6f35a88-6665-4471-9dce-9a98854532b4\"> </a></td><td>FSIII indsatsmål</td><td>Mål for indsatsen i FSIII, som ofte er defineret af udfører. Hvis der specificeres en FSIII målemetode, er det et mål af denne type</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  6746d4af-145a-4bfd-a672-05c0cf11b53b<a name=\"CareSocialCodes-6746d4af-145a-4bfd-a672-05c0cf11b53b\"> </a></td><td>FFB delmål</td><td>Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  0bb3daef-538d-45dc-b444-abdbcb63f6bc<a name=\"CareSocialCodes-0bb3daef-538d-45dc-b444-abdbcb63f6bc\"> </a></td><td>FFB indsatsmål</td><td>Indsatsmål i FFB - er de konkrete faglige mål der arbejdes med, og som er knyttet til tilstande og opfølgninger</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  416fe27d-3ccf-4390-8742-8b52a9d8dc78<a name=\"CareSocialCodes-416fe27d-3ccf-4390-8742-8b52a9d8dc78\"> </a></td><td>FFB borgers mål og ønsker</td><td>Borgers mål og ønsker som specificeret af FFB. Det er overordnet og er som udtrykt af borger</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  424827b1-23aa-4848-962b-56ee47def560<a name=\"CareSocialCodes-424827b1-23aa-4848-962b-56ee47def560\"> </a></td><td>Indsatsformål</td><td>Det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">11266a8f-5795-42ab-88ec-4fe5c6c28e80<a name=\"CareSocialCodes-11266a8f-5795-42ab-88ec-4fe5c6c28e80\"> </a></td><td>målfokus</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  66959f77-6e2a-4574-8423-3ff097f8b9fa<a name=\"CareSocialCodes-66959f77-6e2a-4574-8423-3ff097f8b9fa\"> </a></td><td>funktionsevneniveau</td><td>målet udtrykkes i form af et funktionsevneniveau, som kan være et FFB funktionsevneniveau eller FSIII tilstandsniveau</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  90c48f03-f194-4b2f-ad7d-6cba1069ae48<a name=\"CareSocialCodes-90c48f03-f194-4b2f-ad7d-6cba1069ae48\"> </a></td><td>måltype</td><td>målet udtrykkes i form af en måltype, måltypen er den forventede ændring i tilstanden givet indsatsen</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">95ec4535-8fe8-4296-867c-35de421794cf<a name=\"CareSocialCodes-95ec4535-8fe8-4296-867c-35de421794cf\"> </a></td><td>evaluering</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  053a301d-1bb8-4cc4-b781-87825ecf0ef8<a name=\"CareSocialCodes-053a301d-1bb8-4cc4-b781-87825ecf0ef8\"> </a></td><td>FFB vurdering af borgers situation</td><td>Vurdering der sammenholder oplysninger fra udredning mhp en samlet faglig analyse og konklusion.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  effe55c7-572c-4a99-8fb4-2a9dda2f6572<a name=\"CareSocialCodes-effe55c7-572c-4a99-8fb4-2a9dda2f6572\"> </a></td><td>FFB støttebehovsvurdering</td><td>Angiver, hvor stort et behov borgeren har for hjælp og støtte.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf<a name=\"CareSocialCodes-3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf\"> </a></td><td>VUM Borgerens perspektiv på indsatsen</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  f52887de-023f-4193-b6b0-4b0a37b1cffc<a name=\"CareSocialCodes-f52887de-023f-4193-b6b0-4b0a37b1cffc\"> </a></td><td>VUM Borgerens ressourcer i forhold til indsatsen</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c<a name=\"CareSocialCodes-54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c\"> </a></td><td>FSIII helhedsvurdering</td><td>Sagsvurdering, der sammenholder resultaterne af en myndighedsudredning og den øvrige sagsoplysning med henblik på at træffe en afgørelse</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">7b41185e-eeb4-437d-8120-5d51bbd27a79<a name=\"CareSocialCodes-7b41185e-eeb4-437d-8120-5d51bbd27a79\"> </a></td><td>Indsats/ydelses-anmodning</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  490ab7be-ddb1-4a54-baf1-009fe6e8a83b<a name=\"CareSocialCodes-490ab7be-ddb1-4a54-baf1-009fe6e8a83b\"> </a></td><td>Hjemmesygepleje</td><td>Der anmodes om sygepleje</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ad865929-7363-4b2d-a271-01993181fbaf<a name=\"CareSocialCodes-ad865929-7363-4b2d-a271-01993181fbaf\"> </a></td><td>Hjemmepleje</td><td>Der anmodes om hjemmepleje</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  7fc66c15-0cb3-4c89-9e18-f3a01e6a6592<a name=\"CareSocialCodes-7fc66c15-0cb3-4c89-9e18-f3a01e6a6592\"> </a></td><td>Træning</td><td>Der anmodes om træning</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  a71921ea-fe83-441d-933b-cc21d0b3c8c3<a name=\"CareSocialCodes-a71921ea-fe83-441d-933b-cc21d0b3c8c3\"> </a></td><td>Sundhedsfremme og forebyggelse</td><td>Der anmodes om sundhedsfremme og forebyggelse</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  4a297733-4d66-4726-a933-590d55cf91e0<a name=\"CareSocialCodes-4a297733-4d66-4726-a933-590d55cf91e0\"> </a></td><td>Social indsats</td><td>Der anmodes om en social indsats</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CareSocialCodes"] ; # 
+  fhir:title [ fhir:v "CareSocialCodes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-04-25T15:38:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Administrative/technical codes in Local Govenment Denmark (KL), associated with KLCommonCareSocial"] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "940f37e6-8a3d-483b-adac-be8af3268a5b" ] ;
+     fhir:display [ fhir:v "oplysningsaktivitet" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "f8ebd11a-04f3-4aa0-9786-406e8896c84d" ] ;
+       fhir:display [ fhir:v "socialfaglig udredning, VUM/FFB" ] ;
+       fhir:definition [ fhir:v "udførelse af socialfaglig udredning som specificeret af VUM og FFB" ]
+     ] [
+       fhir:code [ fhir:v "0f0f223c-abe3-4720-aab8-c257679a0a4e" ] ;
+       fhir:display [ fhir:v "terapeutfaglig udredning, FSIII" ] ;
+       fhir:definition [ fhir:v "udførelse af terapeutfaglig udredning jævnfør FSIII" ]
+     ] [
+       fhir:code [ fhir:v "95e787e0-5490-437d-ae4c-f3736644242f" ] ;
+       fhir:display [ fhir:v "afklarende samtale §119, FSIII" ] ;
+       fhir:definition [ fhir:v "udførelse af afklarende samtale vedr. sundhedsfremme og forebyggelse jævnfør FSIII" ]
+     ] [
+       fhir:code [ fhir:v "47fd1468-89da-4803-9d7a-ecc039a30d92" ] ;
+       fhir:display [ fhir:v "sygeplejefaglig udredning, FSIII" ] ;
+       fhir:definition [ fhir:v "udførelse af sygeplejefaglig udredning jævnfør FSIII" ]
+     ] [
+       fhir:code [ fhir:v "e5a73b0e-a5d2-430e-931f-6156306ab00f" ] ;
+       fhir:display [ fhir:v "funktionsevnevurdering hjemmepleje, FSIII" ] ;
+       fhir:definition [ fhir:v "udførelse af funktionsevnevurdering i hjemmeplejen jævnfør FSIII" ]
+     ] [
+       fhir:code [ fhir:v "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a" ] ;
+       fhir:display [ fhir:v "generelle oplysninger, FSIII" ] ;
+       fhir:definition [ fhir:v "indhentning af generelle oplysninger jævnfør FSIII" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "25303acd-dcaf-4a8e-a8a3-3961a43858aa" ] ;
+     fhir:display [ fhir:v "kontaktaktivitet" ] ;
+     fhir:definition [ fhir:v "aktivitet der foretages ved kommunal kontakt." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "829ac647-c7fc-4964-836b-f708d886e0e3" ] ;
+       fhir:display [ fhir:v "oplysning" ] ;
+       fhir:definition [ fhir:v "oplysning er foretaget ved kontakt" ]
+     ] [
+       fhir:code [ fhir:v "bb6fc544-7f4f-4b50-8868-1431e0df2381" ] ;
+       fhir:display [ fhir:v "observation" ] ;
+       fhir:definition [ fhir:v "observation foretaget ved kontakt" ]
+     ] [
+       fhir:code [ fhir:v "784275f1-6822-4a88-b361-d958007d5253" ] ;
+       fhir:display [ fhir:v "udførelse af planlagt indsats" ] ;
+       fhir:definition [ fhir:v "Planlagt indsats udført ved kontakt" ]
+     ] [
+       fhir:code [ fhir:v "9269c9a2-8220-447b-a127-811275b41062" ] ;
+       fhir:display [ fhir:v "vurdering/bevilling" ] ;
+       fhir:definition [ fhir:v "vurdering og/eller bevilling er foretaget ved kontakt" ]
+     ] [
+       fhir:code [ fhir:v "15775b0a-7ec6-469e-9d3c-a81fbc9a1b45" ] ;
+       fhir:display [ fhir:v "udførelse af akutindsats" ] ;
+       fhir:definition [ fhir:v "Akutindsats, bevilget af læge eller akutteam, udført ved kontakt" ]
+     ] [
+       fhir:code [ fhir:v "9f03dfbb-7a97-45a5-94db-d4c3501714a9" ] ;
+       fhir:display [ fhir:v "opfølgning" ] ;
+       fhir:definition [ fhir:v "opfølgning foretaget ved kontakt" ]
+     ] [
+       fhir:code [ fhir:v "c03b426a-4348-407f-b343-f4baa9759c72" ] ;
+       fhir:display [ fhir:v "udførelse af ikke-bevilget indsats" ] ;
+       fhir:definition [ fhir:v "Indsats, der ikke i forvejen var bevilget, udført ved kontakt" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "3762dd32-4123-43a8-815d-ec40d3697652" ] ;
+     fhir:display [ fhir:v "indforståelse ifm henvendelse" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb" ] ;
+       fhir:display [ fhir:v "ikke indforstået" ] ;
+       fhir:definition [ fhir:v "Borger ikke indforstået med henvendelse" ]
+     ] [
+       fhir:code [ fhir:v "e67035da-9179-466b-99ad-ea86835d38c9" ] ;
+       fhir:display [ fhir:v "indforstået" ] ;
+       fhir:definition [ fhir:v "Borger indforstået med henvendelse" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10deb210-e7e1-4d56-9531-b9ff2102126e" ] ;
+     fhir:display [ fhir:v "Planlagt indsatsforløb" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf" ] ;
+       fhir:display [ fhir:v "Rehabilitering efter §140" ] ;
+       fhir:definition [ fhir:v "Det planlagte indsatsforløb er rehabilitering efter sundhedslovens §140" ]
+     ] [
+       fhir:code [ fhir:v "4fd6c23a-6ff3-4251-ac37-3ca095027b5b" ] ;
+       fhir:display [ fhir:v "Sundhedsfremme og forebyggelse §119" ] ;
+       fhir:definition [ fhir:v "Det planlagte indsatsforløb vedrører sundhedsfremme og forebyggelse efter §119" ]
+     ] [
+       fhir:code [ fhir:v "e459386d-1474-4c31-89c5-c8bc7a25e3d4" ] ;
+       fhir:display [ fhir:v "Social indsats" ] ;
+       fhir:definition [ fhir:v "Det planlagte indsatsforløb er en social indsats, som defineret af FFB, med tilhørende ydelser, målgruppe og tilbud" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "b5731132-f6b9-4a47-995d-681d2b755d4f" ] ;
+     fhir:display [ fhir:v "Kilde" ] ;
+     fhir:definition [ fhir:v "Person der er kilde til oplysning eller vurdering" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "25b4e705-2e9a-47a2-b11a-c829316b9d3a" ] ;
+       fhir:display [ fhir:v "Borger" ] ;
+       fhir:definition [ fhir:v "Borger er kilde til oplysning eller vurdering" ]
+     ] [
+       fhir:code [ fhir:v "f6ea2920-7dde-491e-a489-6b99a3904069" ] ;
+       fhir:display [ fhir:v "Sagsbehandler" ] ;
+       fhir:definition [ fhir:v "Sagsbehandler er kilde til oplysning eller vurdering" ]
+     ] [
+       fhir:code [ fhir:v "63338442-7b2e-405b-acc0-142361ef19f1" ] ;
+       fhir:display [ fhir:v "Andre" ] ;
+       fhir:definition [ fhir:v "Andre end borger og sagsbehandler er kilde til oplysning eller vurdering. Fx læge, pårørende og udfører" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "f00a6844-1005-401d-965d-1c5859df7beb" ] ;
+         fhir:display [ fhir:v "Udfører" ] ;
+         fhir:definition [ fhir:v "Udfører er kilde til oplysning eller vurdering" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "253bbdc0-c4ca-4e77-9d3e-3a9e51281636" ] ;
+     fhir:display [ fhir:v "Mål/formål" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "ca552020-6ed1-4cdc-b0d4-32697f1f27ad" ] ;
+       fhir:display [ fhir:v "FSIII tilstandsmål" ] ;
+       fhir:definition [ fhir:v "Tilstandsmål som defineret af FSIII - ofte i form af en forventet tilstand" ]
+     ] [
+       fhir:code [ fhir:v "ffb9886b-d04e-46b1-9165-a400f91f822b" ] ;
+       fhir:display [ fhir:v "FSIII borgers ønsker og mål" ]
+     ] [
+       fhir:code [ fhir:v "e6f35a88-6665-4471-9dce-9a98854532b4" ] ;
+       fhir:display [ fhir:v "FSIII indsatsmål" ] ;
+       fhir:definition [ fhir:v "Mål for indsatsen i FSIII, som ofte er defineret af udfører. Hvis der specificeres en FSIII målemetode, er det et mål af denne type" ]
+     ] [
+       fhir:code [ fhir:v "6746d4af-145a-4bfd-a672-05c0cf11b53b" ] ;
+       fhir:display [ fhir:v "FFB delmål" ] ;
+       fhir:definition [ fhir:v "Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører" ]
+     ] [
+       fhir:code [ fhir:v "0bb3daef-538d-45dc-b444-abdbcb63f6bc" ] ;
+       fhir:display [ fhir:v "FFB indsatsmål" ] ;
+       fhir:definition [ fhir:v "Indsatsmål i FFB - er de konkrete faglige mål der arbejdes med, og som er knyttet til tilstande og opfølgninger" ]
+     ] [
+       fhir:code [ fhir:v "416fe27d-3ccf-4390-8742-8b52a9d8dc78" ] ;
+       fhir:display [ fhir:v "FFB borgers mål og ønsker" ] ;
+       fhir:definition [ fhir:v "Borgers mål og ønsker som specificeret af FFB. Det er overordnet og er som udtrykt af borger" ]
+     ] [
+       fhir:code [ fhir:v "424827b1-23aa-4848-962b-56ee47def560" ] ;
+       fhir:display [ fhir:v "Indsatsformål" ] ;
+       fhir:definition [ fhir:v "Det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11266a8f-5795-42ab-88ec-4fe5c6c28e80" ] ;
+     fhir:display [ fhir:v "målfokus" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "66959f77-6e2a-4574-8423-3ff097f8b9fa" ] ;
+       fhir:display [ fhir:v "funktionsevneniveau" ] ;
+       fhir:definition [ fhir:v "målet udtrykkes i form af et funktionsevneniveau, som kan være et FFB funktionsevneniveau eller FSIII tilstandsniveau" ]
+     ] [
+       fhir:code [ fhir:v "90c48f03-f194-4b2f-ad7d-6cba1069ae48" ] ;
+       fhir:display [ fhir:v "måltype" ] ;
+       fhir:definition [ fhir:v "målet udtrykkes i form af en måltype, måltypen er den forventede ændring i tilstanden givet indsatsen" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "95ec4535-8fe8-4296-867c-35de421794cf" ] ;
+     fhir:display [ fhir:v "evaluering" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "053a301d-1bb8-4cc4-b781-87825ecf0ef8" ] ;
+       fhir:display [ fhir:v "FFB vurdering af borgers situation" ] ;
+       fhir:definition [ fhir:v "Vurdering der sammenholder oplysninger fra udredning mhp en samlet faglig analyse og konklusion." ]
+     ] [
+       fhir:code [ fhir:v "effe55c7-572c-4a99-8fb4-2a9dda2f6572" ] ;
+       fhir:display [ fhir:v "FFB støttebehovsvurdering" ] ;
+       fhir:definition [ fhir:v "Angiver, hvor stort et behov borgeren har for hjælp og støtte." ]
+     ] [
+       fhir:code [ fhir:v "3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf" ] ;
+       fhir:display [ fhir:v "VUM Borgerens perspektiv på indsatsen" ]
+     ] [
+       fhir:code [ fhir:v "f52887de-023f-4193-b6b0-4b0a37b1cffc" ] ;
+       fhir:display [ fhir:v "VUM Borgerens ressourcer i forhold til indsatsen" ]
+     ] [
+       fhir:code [ fhir:v "54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c" ] ;
+       fhir:display [ fhir:v "FSIII helhedsvurdering" ] ;
+       fhir:definition [ fhir:v "Sagsvurdering, der sammenholder resultaterne af en myndighedsudredning og den øvrige sagsoplysning med henblik på at træffe en afgørelse" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "7b41185e-eeb4-437d-8120-5d51bbd27a79" ] ;
+     fhir:display [ fhir:v "Indsats/ydelses-anmodning" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "490ab7be-ddb1-4a54-baf1-009fe6e8a83b" ] ;
+       fhir:display [ fhir:v "Hjemmesygepleje" ] ;
+       fhir:definition [ fhir:v "Der anmodes om sygepleje" ]
+     ] [
+       fhir:code [ fhir:v "ad865929-7363-4b2d-a271-01993181fbaf" ] ;
+       fhir:display [ fhir:v "Hjemmepleje" ] ;
+       fhir:definition [ fhir:v "Der anmodes om hjemmepleje" ]
+     ] [
+       fhir:code [ fhir:v "7fc66c15-0cb3-4c89-9e18-f3a01e6a6592" ] ;
+       fhir:display [ fhir:v "Træning" ] ;
+       fhir:definition [ fhir:v "Der anmodes om træning" ]
+     ] [
+       fhir:code [ fhir:v "a71921ea-fe83-441d-933b-cc21d0b3c8c3" ] ;
+       fhir:display [ fhir:v "Sundhedsfremme og forebyggelse" ] ;
+       fhir:definition [ fhir:v "Der anmodes om sundhedsfremme og forebyggelse" ]
+     ] [
+       fhir:code [ fhir:v "4a297733-4d66-4726-a933-590d55cf91e0" ] ;
+       fhir:display [ fhir:v "Social indsats" ] ;
+       fhir:definition [ fhir:v "Der anmodes om en social indsats" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

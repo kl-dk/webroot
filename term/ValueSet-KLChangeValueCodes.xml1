@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLChangeValueCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-KLChangeValueCodesFSIII.html">KLMåltypeKoderFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLChangeValueCodesFFB.html">KLMåltypekoderFFB</a></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/term/ValueSet/KLChangeValueCodes"/>
+  <version value="1.0.0"/>
+  <name value="KLChangeValueCodes"/>
+  <title value="KLMåltypeKoder"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-04-25T15:43:23+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Change values for goals (måltype). Express the target value for change of a condition"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFFB"/>
+    </include>
+  </compose>
+</ValueSet>

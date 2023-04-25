@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConsentToLiasing",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-CareSocialCodes.html\"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from  <a href=\"CodeSystem-CareSocialCodes.html#CareSocialCodes-3762dd32-4123-43a8-815d-ec40d3697652\">3762dd32-4123-43a8-815d-ec40d3697652</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLConsentToLiasing",
+  "version" : "1.0.0",
+  "name" : "KLConsentToLiasing",
+  "title" : "KLBorgerIndforståetMedHenvendelseKoder",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-25T15:43:23+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Codes for citizens knowledge of referal/request as defined by FFB",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "3762dd32-4123-43a8-815d-ec40d3697652"
+      }]
+    }]
+  }
+}

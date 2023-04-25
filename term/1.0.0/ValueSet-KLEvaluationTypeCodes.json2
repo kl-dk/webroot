@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLEvaluationTypeCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-CareSocialCodes.html\"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from  <a href=\"CodeSystem-CareSocialCodes.html#CareSocialCodes-95ec4535-8fe8-4296-867c-35de421794cf\">95ec4535-8fe8-4296-867c-35de421794cf</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLEvaluationTypeCodes",
+  "version" : "1.0.0",
+  "name" : "KLEvaluationTypeCodes",
+  "title" : "KLVurderingTypekoder",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-25T15:38:16+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Codes used to distinguish different kinds of evaluations",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "95ec4535-8fe8-4296-867c-35de421794cf"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLInformationCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-KLGeneralInformationFSIII.html">KLGenerelInformationFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLNursingAreasFSIII.html">KLSygeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLHomeCareAreasFSIII.html">KLHjemmeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLTheraphyAreasFSIII.html">KLTræningOmråderFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLPreventionAreasFSIII.html">KLForebyggelseOmråderFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLThemesFFB.html">KLTemaerFFB</a></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/term/ValueSet/KLInformationCodes"/>
+  <version value="1.0.0"/>
+  <name value="KLInformationCodes"/>
+  <title value="KLOplysningKoder"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-04-25T15:38:16+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLGeneralInformationFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLNursingAreasFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLHomeCareAreasFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLTheraphyAreasFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLPreventionAreasFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLThemesFFB"/>
+    </include>
+  </compose>
+</ValueSet>

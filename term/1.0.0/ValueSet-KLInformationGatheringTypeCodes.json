@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLInformationGatheringTypeCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-CareSocialCodes.html\"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from  <a href=\"CodeSystem-CareSocialCodes.html#CareSocialCodes-940f37e6-8a3d-483b-adac-be8af3268a5b\">940f37e6-8a3d-483b-adac-be8af3268a5b</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLInformationGatheringTypeCodes",
+  "version" : "1.0.0",
+  "name" : "KLInformationGatheringTypeCodes",
+  "title" : "KLOplysningsaktivitetsTypeKoder",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-25T15:38:16+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Codes used to specify which kind of information gathering is conducted",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "940f37e6-8a3d-483b-adac-be8af3268a5b"
+      }]
+    }]
+  }
+}

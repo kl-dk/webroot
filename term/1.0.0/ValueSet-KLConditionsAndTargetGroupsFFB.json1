@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConditionsAndTargetGroupsFFB",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesFFB.html\">KLTilstandKoderFFB</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLTargetGroupsFFB.html\">KLMålgrupperFFB</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionsAndTargetGroupsFFB",
+  "version" : "1.0.0",
+  "name" : "KLConditionsAndTargetGroupsFFB",
+  "title" : "KLTilstandeOgMålgrupperFFB",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-25T15:38:16+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Conditions and target groups as defined by FFB",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLConditionCodesFFB"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLTargetGroupsFFB"]
+    }]
+  }
+}
