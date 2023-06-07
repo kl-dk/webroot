@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/Patient/Andreas> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Andreas"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Andreas Hansen </b> (no stated gender), DoB: 1993-01-05 ( id: andreas)</p><hr/></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "andreas" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Hansen" ] ;
+     fhir:given ( [ fhir:v "Andreas" ] )
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1993-01-05"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

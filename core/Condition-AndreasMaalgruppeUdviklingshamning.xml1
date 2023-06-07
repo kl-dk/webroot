@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="AndreasMaalgruppeUdviklingshamning"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFocusCondition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="AndreasMaalgruppeUdviklingshamning"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;AndreasMaalgruppeUdviklingshamning&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialFocusCondition.html">FocusCondition</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Udviklingshæmning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#97c355cc-84e3-46d0-ac1b-00bc627d089f)</span></p><p><b>subject</b>: <a href="Patient-Andreas.html">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>onset</b>: 1 år<span style="background: LightGoldenRodYellow"> (Details: UCUM code a = 'a')</span></p><p><b>recordedDate</b>: 2020-07-06</p><p><b>recorder</b>: <a href="Practitioner-BirteFraVisitationenMorsoe.html">Practitioner/BirteFraVisitationenMorsoe</a> &quot; MATHIASSEN&quot;</p><p><b>asserter</b>: <a href="Practitioner-MarianneLaege.html">Practitioner/MarianneLaege</a> &quot; AAGAARD&quot;</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.22"/>
+      <code value="97c355cc-84e3-46d0-ac1b-00bc627d089f"/>
+      <display value="Udviklingshæmning"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Andreas"/>
+  </subject>
+  <onsetAge>
+    <value value="1"/>
+    <unit value="år"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="a"/>
+  </onsetAge>
+  <recordedDate value="2020-07-06"/>
+  <recorder>
+    <reference value="Practitioner/BirteFraVisitationenMorsoe"/>
+  </recorder>
+  <asserter>
+    <reference value="Practitioner/MarianneLaege"/>
+  </asserter>
+</Condition>

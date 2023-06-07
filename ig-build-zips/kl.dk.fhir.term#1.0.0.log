@@ -1,0 +1,432 @@
+FHIR IG Publisher Version 1.3.14 (Git# f06b79aebf8c). Built 2023-06-06T23:27:22.584Z (10 hours old)
+Detected Java version: 18.0.2.1 from /Users/jkiddo/Library/Java/JavaVirtualMachines/temurin-18.0.2.1/Contents/Home on x86_64 (64bit). 8192MB available
+dir = /Users/jkiddo/work, path = /Users/jkiddo/.gem/ruby/3.1.2/bin:/Users/jkiddo/.rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/bin:/Users/jkiddo/.rubies/ruby-3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+Parameters: -go-publish -source /Users/jkiddo/work/kl-term -web /Users/jkiddo/work/kl-website -temp /Users/jkiddo/work/temp -registry ig-registry/fhir-ig-list.json -history fhir-ig-history-template -templates /Users/jkiddo/work/kl-website/templates
+---------------
+Publication Run: publish /Users/jkiddo/work/kl-term to /Users/jkiddo/work/kl-website
+Run Number: 1
+Relative directory for IG is '/term'
+All checks passed. Do the publication build from /Users/jkiddo/work/kl-term and publish to /Users/jkiddo/work/temp/web-root/run-20230607/term
+Prepare Build space in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0
+Build IG at /Users/jkiddo/work/kl-term: final copy suitable for publication (in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0)
+FHIR IG Publisher Version 1.3.14 (Git# f06b79aebf8c). Built 2023-06-06T23:27:22.584Z (10 hours old)
+Detected Java version: 18.0.2.1 from /Users/jkiddo/Library/Java/JavaVirtualMachines/temurin-18.0.2.1/Contents/Home on Mac OS X/x86_64 (64bit). 8192MB available
+dir = /Users/jkiddo/work, path = /Users/jkiddo/.gem/ruby/3.1.2/bin:/Users/jkiddo/.rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/bin:/Users/jkiddo/.rubies/ruby-3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+Parameters: -ig /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0 -resetTx -publish http://fhir.kl.dk/term/1.0.0 -no-exit
+Start Clock @ Wednesday, 7 June 2023 at 11.45.38 Central European Summer Time (2023-06-07T11:45:38+02:00)
+
+Build FHIR IG from /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0                 (00:00.064)
+Build Formal Publication package, intended for http://fhir.kl.dk/term/1.0.0      (00:00.065)
+API keys loaded from /Users/jkiddo/.fhir/fhir-settings.json                      (00:00.066)
+Package Cache: /Users/jkiddo/.fhir/packages                                      (00:00.070)
+Run Sushi on /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0                       (00:00.075)
+Sushi: info  Running SUSHI v3.0.0 (implements FHIR Shorthand specification v2.0.0) (00:05.452)
+Sushi: info  Arguments:                                                          (00:05.454)
+Sushi: info    --require-latest                                                  (00:05.455)
+Sushi: info    --out /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0               (00:05.456)
+Sushi: info    /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0                     (00:05.457)
+Sushi: info  Using configuration file: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/sushi-config.yaml (00:09.664)
+Sushi: info  Importing FSH text...                                               (00:09.757)
+Sushi: info  Preprocessed 3 documents with 5 aliases.                            (00:09.800)
+Sushi: info  Imported 58 definitions and 1 instances.                            (00:09.807)
+Sushi: info  Checking /Users/jkiddo/.fhir/packages for hl7.fhir.uv.tools#current... (00:09.808)
+Sushi: info  Found hl7.fhir.uv.tools#current in /Users/jkiddo/.fhir/packages.    (00:09.993)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:10.870)
+Sushi: info  Checking /Users/jkiddo/.fhir/packages for hl7.terminology.r4#5.0.0... (00:11.011)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in /Users/jkiddo/.fhir/packages.     (00:20.899)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:20.900)
+Sushi: info  Checking /Users/jkiddo/.fhir/packages for hl7.fhir.r4.core#4.0.1... (00:20.901)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /Users/jkiddo/.fhir/packages.       (00:33.423)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:33.424)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:33.459)
+Sushi: info  Converted 2 FHIR CodeSystems.                                       (00:33.495)
+Sushi: info  Converted 56 FHIR ValueSets.                                        (00:33.771)
+Sushi: info  Converted 1 FHIR instances.                                         (00:33.777)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:33.778)
+Sushi: info  Exported 59 FHIR resources as JSON.                                 (00:33.785)
+Sushi: info  Assembling Implementation Guide sources...                          (00:33.785)
+Sushi: info  Generated ImplementationGuide-kl.dk.fhir.term.json                  (00:33.802)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:33.802)
+Sushi:                                                                           (00:33.803)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:33.805)
+Sushi: |  -------------------------------------------------------------  |       (00:33.805)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:33.807)
+Sushi: | |-------------------------------------------------------------| |       (00:33.809)
+Sushi: | |       0       |      0       |      0       |       0       | |       (00:33.809)
+Sushi: |  -------------------------------------------------------------  |       (00:33.810)
+Sushi: |  -------------------------------------------------------------  |       (00:33.810)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:33.811)
+Sushi: | |-------------------------------------------------------------| |       (00:33.812)
+Sushi: | |         56         |         2         |         1          | |       (00:33.812)
+Sushi: |  -------------------------------------------------------------  |       (00:33.813)
+Sushi: |                                                                 |       (00:33.814)
+Sushi: ===================================================================       (00:33.814)
+Sushi: | You really made a splash!              0 Errors      0 Warnings |       (00:33.815)
+Sushi: ===================================================================       (00:33.815)
+Sushi:                                                                           (00:33.816)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:34.235)
+Load Template from https://github.com/hl7dk/ig-template-kl-dk                    (00:34.681)
+ Load Template from fhir.base.template#current                                   (00:36.165)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onLoad-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0                    (00:40.296)
+Core Package hl7.fhir.r4.core#4.0.1
+Terminology Cache is at /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/txcache. Clearing now (00:47.473)
+Connect to Terminology Server at http://tx.fhir.org                              (00:47.487)
+Load Package hl7.fhir.pubpack#0.1.4
+Load Package hl7.fhir.xver-extensions#0.0.12
+Load Package hl7.terminology.r4#5.0.0
+Load Package hl7.fhir.uv.extensions.r4#1.0.0
+Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (00:51.287)
+Load Package hl7.fhir.uv.tools#0.1.0
+Load R5 SpecialsInitialization complete                                                          (00:58.245)
+Fetch http://fhir.kl.dk/term/package-list.json for version check                 (00:58.251)
+Load Content                                                                     (00:58.352)
+loadPrePages from FetchedFile[/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/fsh-generated/includes] as /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/fsh-generated/includes
+loadPrePages from FetchedFile[/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input/pagecontent] as /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input/pagecontent
+Processing Conformance Resources                                                 (01:00.477)
+Generating Snapshots                                                             (01:01.503)
+Propagating status                                                               (01:01.548)
+Generating Narratives                                                            (01:01.550)
+Validating Conformance Resources                                                 (01:14.210)
+Validating Resources                                                             (01:18.822)
+Processing Provenance Records                                                    (01:18.830)
+Generating Outputs in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/output       (01:18.831)
+Generate 1                                                                       (01:19.055)
+Run Template                                                                     (01:20.751)
+
+onGenerate.checkVersions:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/versions.txt
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R5/fhir-single.xsd
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R5/xml.xsd
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R5/xmldsig-core-schema.xsd
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 17 files to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-working.1.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-updated.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/onGenerate-ig-updated.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                    (01:24.232)
+Generate 2                                                                       (01:24.233)
+Generate Summaries                                                               (04:45.833)
+Generating Summary Outputs                                                       (04:45.835)
+Sending Usage Stats to Server                                                    (04:54.944)
+## Memory (MB): Use = 1265, Free = 502, Total = 1768, Max =8192
+Reclaiming memory...
+## Memory (MB): Use = 641, Free = 1126, Total = 1768, Max =8192
+Run jekyll: jekyll build --destination "/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/output" (in folder /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/temp/pages) (04:55.243)
+Jekyll: Source: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/temp/pages         (04:58.259)
+Jekyll: Generating...                                                            (04:58.265)
+Jekyll: done in 2.6 seconds.                                                     (05:00.854)
+.
+  Installing: Checking Output HTML                                                             (05:02.894)
+found 1125 files                                                                 (05:02.910)
+........................................
+........................................
+  ... 1125 html files, 0 pages invalid xhtml (0%)                                (05:12.052)
+  ... 27397 links, 0 broken links (0%)                                           (05:12.055)
+Build final .zip                                                                 (05:12.056)
+Final .zip built                                                                 (05:12.622)
+Built. Times: loading: 00:02.123, generate: 04:15.122, narrative generation: 00:12.658, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:05.624, validation: 00:04.598 (#63), template: 00:03.480 (#3) (05:16.923)
+Validation output in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0/output/qa.html
+Errors: 4, Warnings: 79, Info: 3, Broken Links: 0 (05:17.695)
+Finished                                                                         (05:17.712)
+Done                                                                             (05:17.713)
+Prepare Build space in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone
+Build IG at /Users/jkiddo/work/kl-term: final copy suitable for publication (in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone) (milestone build)
+FHIR IG Publisher Version 1.3.14 (Git# f06b79aebf8c). Built 2023-06-06T23:27:22.584Z (10 hours old)
+Detected Java version: 18.0.2.1 from /Users/jkiddo/Library/Java/JavaVirtualMachines/temurin-18.0.2.1/Contents/Home on Mac OS X/x86_64 (64bit). 8192MB available
+dir = /Users/jkiddo/work, path = /Users/jkiddo/.gem/ruby/3.1.2/bin:/Users/jkiddo/.rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/bin:/Users/jkiddo/.rubies/ruby-3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+Parameters: -ig /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone -publish http://fhir.kl.dk/term/1.0.0 -milestone -no-exit
+Start Clock @ Wednesday, 7 June 2023 at 11.51.31 Central European Summer Time (2023-06-07T11:51:31+02:00)
+
+Build FHIR IG from /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone       (00:00.013)
+Build Formal Publication package, intended for http://fhir.kl.dk/term/1.0.0      (00:00.014)
+API keys loaded from /Users/jkiddo/.fhir/fhir-settings.json                      (00:00.015)
+Package Cache: /Users/jkiddo/.fhir/packages                                      (00:00.015)
+Run Sushi on /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone             (00:00.016)
+Sushi: info  Running SUSHI v3.0.0 (implements FHIR Shorthand specification v2.0.0) (00:02.300)
+Sushi: info  Arguments:                                                          (00:02.301)
+Sushi: info    --require-latest                                                  (00:02.302)
+Sushi: info    --out /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone     (00:02.304)
+Sushi: info    /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone           (00:02.306)
+Sushi: info  Using configuration file: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/sushi-config.yaml (00:03.830)
+Sushi: info  Importing FSH text...                                               (00:03.898)
+Sushi: info  Preprocessed 3 documents with 5 aliases.                            (00:03.945)
+Sushi: info  Imported 58 definitions and 1 instances.                            (00:03.953)
+Sushi: info  Checking /Users/jkiddo/.fhir/packages for hl7.fhir.uv.tools#current... (00:03.954)
+Sushi: info  Found hl7.fhir.uv.tools#current in /Users/jkiddo/.fhir/packages.    (00:04.078)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:04.967)
+Sushi: info  Checking /Users/jkiddo/.fhir/packages for hl7.terminology.r4#5.0.0... (00:05.101)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in /Users/jkiddo/.fhir/packages.     (00:13.479)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:13.479)
+Sushi: info  Checking /Users/jkiddo/.fhir/packages for hl7.fhir.r4.core#4.0.1... (00:13.480)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /Users/jkiddo/.fhir/packages.       (00:25.639)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:25.641)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:25.667)
+Sushi: info  Converted 2 FHIR CodeSystems.                                       (00:25.717)
+Sushi: info  Converted 56 FHIR ValueSets.                                        (00:25.976)
+Sushi: info  Converted 1 FHIR instances.                                         (00:25.982)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:25.982)
+Sushi: info  Exported 59 FHIR resources as JSON.                                 (00:25.990)
+Sushi: info  Assembling Implementation Guide sources...                          (00:25.990)
+Sushi: info  Generated ImplementationGuide-kl.dk.fhir.term.json                  (00:26.008)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:26.009)
+Sushi:                                                                           (00:26.009)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:26.011)
+Sushi: |  -------------------------------------------------------------  |       (00:26.011)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:26.011)
+Sushi: | |-------------------------------------------------------------| |       (00:26.012)
+Sushi: | |       0       |      0       |      0       |       0       | |       (00:26.013)
+Sushi: |  -------------------------------------------------------------  |       (00:26.013)
+Sushi: |  -------------------------------------------------------------  |       (00:26.014)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:26.014)
+Sushi: | |-------------------------------------------------------------| |       (00:26.015)
+Sushi: | |         56         |         2         |         1          | |       (00:26.015)
+Sushi: |  -------------------------------------------------------------  |       (00:26.015)
+Sushi: |                                                                 |       (00:26.016)
+Sushi: ===================================================================       (00:26.016)
+Sushi: | Swish! Nothing but fishnet.            0 Errors      0 Warnings |       (00:26.016)
+Sushi: ===================================================================       (00:26.017)
+Sushi:                                                                           (00:26.018)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:26.047)
+Load Template from https://github.com/hl7dk/ig-template-kl-dk                    (00:26.091)
+ Load Template from fhir.base.template#current                                   (00:26.730)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onLoad-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone          (00:29.659)
+Core Package hl7.fhir.r4.core#4.0.1
+Terminology Cache is at /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/txcache. 10 files in cache (00:34.867)
+Connect to Terminology Server at http://tx.fhir.org                              (00:34.871)
+Load Package hl7.fhir.pubpack#0.1.4
+Load Package hl7.fhir.xver-extensions#0.0.12
+Load Package hl7.terminology.r4#5.0.0
+Load Package hl7.fhir.uv.extensions.r4#1.0.0
+Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (00:37.470)
+Load Package hl7.fhir.uv.tools#0.1.0
+Load R5 SpecialsSending usage stats failed: test.fhir.org:80 failed to respond
+Initialization complete                                                          (00:41.722)
+Fetch http://fhir.kl.dk/term/package-list.json for version check                 (00:41.723)
+Load Content                                                                     (00:41.823)
+loadPrePages from FetchedFile[/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/fsh-generated/includes] as /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/fsh-generated/includes
+loadPrePages from FetchedFile[/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input/pagecontent] as /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input/pagecontent
+Processing Conformance Resources                                                 (00:42.855)
+Generating Snapshots                                                             (00:43.474)
+Propagating status                                                               (00:43.490)
+Generating Narratives                                                            (00:43.490)
+Validating Conformance Resources                                                 (00:54.071)
+Validating Resources                                                             (00:56.211)
+Processing Provenance Records                                                    (00:56.222)
+Generating Outputs in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/output (00:56.225)
+Generate 1                                                                       (00:56.415)
+Run Template                                                                     (00:58.324)
+
+onGenerate.checkVersions:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/versions.txt
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 17 files to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-working.1.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-updated.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/onGenerate-ig-updated.xml to /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                    (01:00.329)
+Generate 2                                                                       (01:00.330)
+Generate Summaries                                                               (01:17.279)
+Generating Summary Outputs                                                       (01:17.282)
+Sending Usage Stats to Server                                                    (01:23.125)
+## Memory (MB): Use = 1410, Free = 357, Total = 1768, Max =8192
+Reclaiming memory...
+## Memory (MB): Use = 641, Free = 1126, Total = 1768, Max =8192
+Run jekyll: jekyll build --destination "/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/output" (in folder /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/temp/pages) (01:23.402)
+Jekyll: Source: /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/temp/pages (01:24.777)
+Jekyll: Generating...                                                            (01:24.778)
+Jekyll: done in 4.55 seconds.                                                    (01:29.326)
+.
+  Installing: Checking Output HTML                                                             (01:30.373)
+found 1125 files                                                                 (01:30.388)
+........................................
+........................................
+  ... 1125 html files, 0 pages invalid xhtml (0%)                                (01:40.697)
+  ... 27397 links, 0 broken links (0%)                                           (01:40.701)
+Build final .zip                                                                 (01:40.702)
+Final .zip built                                                                 (01:41.260)
+Built. Times: loading: 00:01.031, generate: 01:01.121, narrative generation: 00:10.580, realm-rules: 00:00.000, previous-version: 00:00.000, jekyll: 00:05.930, validation: 00:02.134 (#63), template: 00:01.999 (#3) (01:44.072)
+Validation output in /Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/output/qa.html
+Errors: 4, Warnings: 79, Info: 3, Broken Links: 0 (01:44.572)
+Finished                                                                         (01:44.583)
+Done                                                                             (01:44.584)
+Keep a copy of the build directory at /Users/jkiddo/work/temp/web-root/run-20230607/ig-build-zips/kl.dk.fhir.term#1.0.0.zip
+
+ok. All checks passed. Publish v1.0.0 to /Users/jkiddo/work/temp/web-root/run-20230607/term/1.0.0
+Copy the IG to /Users/jkiddo/work/temp/web-root/run-20230607/term/1.0.0
+Update /Users/jkiddo/work/temp/web-root/run-20230607/term/package-list.json
+Publish Box Statement: This page is part of the KLTerm (v1.0.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a href="http://fhir.kl.dk/term/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
+  .. 374 files checked, 374 updated
+  .. 129 clones checked, 258 updated
+  .. 5 redirections (5 created/updated)
+This is a milestone release - publish v1.0.0 to /Users/jkiddo/work/temp/web-root/run-20230607/term
+Publish Box Statement: This page is part of the KLTerm (v1.0.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.kl.dk/term/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
+  .. 374 files checked, 374 updated
+  .. 129 clones checked, 258 updated
+  .. 5 redirections (5 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG to /Users/jkiddo/work/temp/web-root/run-20230607/term
+Sending usage stats failed: test.fhir.org:80 failed to respond
+Update history page at /Users/jkiddo/work/temp/web-root/run-20230607/term from /Users/jkiddo/work/fhir-ig-history-template and /Users/jkiddo/work/kl-website/templates
+Build is complete. Copy from /Users/jkiddo/work/temp/web-root/run-20230607
+kl.dk.fhir.term (http://fhir.kl.dk/term): KLTerm @ http://build.fhir.org/ig/hl7dk/kl-term
+  release: Releases 1.0.0/4.0.1 @ http://fhir.kl.dk/term/1.0.0

@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/Observation/AndreasRevisitation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AndreasRevisitation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFollowUp"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFollowUp>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"AndreasRevisitation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;AndreasRevisitation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialFollowUp.html\">FollowUp</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>effective</b>: 2020-08-05</p><p><b>performer</b>: <a href=\"Practitioner-BirteFraVisitationenMorsoe.html\">Practitioner/BirteFraVisitationenMorsoe</a> &quot; MATHIASSEN&quot;</p><p><b>value</b>: Det midlertidige botilbud har været godt for Andreas og hans mor. Andreas har udviklet sig positivt vedr. sociale relationer i perioden. Det vurderes at Andreas skal revisiteres mhp. at få tildelt alment botilbud <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#b4c01aa8-82fd-44e4-83ff-ca19ec02c779)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:712744002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "712744002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Andreas> ;
+     fhir:reference [ fhir:v "Patient/Andreas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-08-05"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://fhir.kl.dk/core/Practitioner/BirteFraVisitationenMorsoe> ;
+     fhir:reference [ fhir:v "Practitioner/BirteFraVisitationenMorsoe" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "b4c01aa8-82fd-44e4-83ff-ca19ec02c779" ]
+     ] ) ;
+     fhir:text [ fhir:v "Det midlertidige botilbud har været godt for Andreas og hans mor. Andreas har udviklet sig positivt vedr. sociale relationer i perioden. Det vurderes at Andreas skal revisiteres mhp. at få tildelt alment botilbud" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

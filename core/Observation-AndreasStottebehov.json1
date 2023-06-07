@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "AndreasStottebehov",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEvaluation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"AndreasStottebehov\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;AndreasStottebehov&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialEvaluation.html\">Evaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: FFB støttebehovsvurdering <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#effe55c7-572c-4a99-8fb4-2a9dda2f6572; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225344000)</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>effective</b>: 2020-08-12</p><p><b>performer</b>: <a href=\"Practitioner-BirteFraVisitationenMorsoe.html\">Practitioner/BirteFraVisitationenMorsoe</a> &quot; MATHIASSEN&quot;</p><p><b>value</b>: Andreas støttebehov er meget højt, når det drejer sig om relationer. Vedr. daglige rutiner er det mindre <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#b99a0790-4d70-4152-b149-3fe58b745583 &quot;Højt støttebehov&quot;)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "effe55c7-572c-4a99-8fb4-2a9dda2f6572",
+      "display" : "FFB støttebehovsvurdering"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "225344000"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Andreas"
+  },
+  "effectiveDateTime" : "2020-08-12",
+  "performer" : [{
+    "reference" : "Practitioner/BirteFraVisitationenMorsoe"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.208.176.2.22",
+      "code" : "b99a0790-4d70-4152-b149-3fe58b745583",
+      "display" : "Højt støttebehov"
+    }],
+    "text" : "Andreas støttebehov er meget højt, når det drejer sig om relationer. Vedr. daglige rutiner er det mindre"
+  }
+}

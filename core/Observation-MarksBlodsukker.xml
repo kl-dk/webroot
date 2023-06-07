@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="MarksBlodsukker"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialObservation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MarksBlodsukker"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MarksBlodsukker&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialObservation.html">Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-HenvisningFraLageVedrAkutSygepleje.html">ServiceRequest/HenvisningFraLageVedrAkutSygepleje</a></p><p><b>status</b>: final</p><p><b>code</b>: Blood glucose concentration <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#434912009; <a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-NPU.html">NPU</a>#NPU02195)</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>effective</b>: 2020-06-21</p><p><b>performer</b>: <a href="Practitioner-AbrahamFraAkutSygeplejen.html">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 3.6 mmol/l<span style="background: LightGoldenRodYellow"> (Details: UCUM code mmol/L = 'mmol/L')</span></p></div>
+  </text>
+  <basedOn>
+    <reference value="ServiceRequest/HenvisningFraLageVedrAkutSygepleje"/>
+  </basedOn>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="434912009"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.1"/>
+      <code value="NPU02195"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <effectiveDateTime value="2020-06-21"/>
+  <performer>
+    <reference value="Practitioner/AbrahamFraAkutSygeplejen"/>
+  </performer>
+  <valueQuantity>
+    <value value="3.6"/>
+    <unit value="mmol/l"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/L"/>
+  </valueQuantity>
+</Observation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="MarkIndsatsmaal"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Goal</b><a name="MarkIndsatsmaal"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Goal &quot;MarkIndsatsmaal&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialGoal.html">Goal</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FSIII indsatsmål <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#e6f35a88-6665-4471-9dce-9a98854532b4)</span></p><p><b>description</b>: Målemetoden: Sårets areal sættes op for Marks tryksår <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Measure</b></td></tr><tr><td>*</td><td>Pressure ulcer surface area (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#420753006)</span></td></tr></table><p><b>expressedBy</b>: <a href="Practitioner-HanneFraVisitationenAalborg.html">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>addresses</b>: <a href="Condition-ConditionPressureUlcer.html">Condition/ConditionPressureUlcer</a></p></div>
+  </text>
+  <lifecycleStatus value="active"/>
+  <category>
+    <coding>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <code value="e6f35a88-6665-4471-9dce-9a98854532b4"/>
+      <display value="FSIII indsatsmål"/>
+    </coding>
+  </category>
+  <description>
+    <text value="Målemetoden: Sårets areal sættes op for Marks tryksår"/>
+  </description>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <target>
+    <measure>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="420753006"/>
+        <display value="Pressure ulcer surface area (observable entity)"/>
+      </coding>
+    </measure>
+  </target>
+  <expressedBy>
+    <reference value="Practitioner/HanneFraVisitationenAalborg"/>
+  </expressedBy>
+  <addresses>
+    <reference value="Condition/ConditionPressureUlcer"/>
+  </addresses>
+</Goal>

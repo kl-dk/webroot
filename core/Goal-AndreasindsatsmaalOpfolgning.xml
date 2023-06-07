@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="AndreasindsatsmaalOpfolgning"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFFBGoal"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Goal</b><a name="AndreasindsatsmaalOpfolgning"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Goal &quot;AndreasindsatsmaalOpfolgning&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialFFBGoal.html">Goal - FFB Intervention</a></p></div><p><b>lifecycleStatus</b>: completed</p><p><b>category</b>: FFB indsatsmål <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#0bb3daef-538d-45dc-b444-abdbcb63f6bc)</span></p><p><b>description</b>: holder orden på sit eget værelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-Andreas.html">Patient/Andreas</a> &quot; HANSEN&quot;</p><blockquote><p><b>target</b></p><p><b>measure</b>: funktionsevneniveau <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></p><p><b>detail</b>: Let nedsat funktionsevne <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#8328ce4a-6238-4f73-bf1a-74aadb68eff8)</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: måltype <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#90c48f03-f194-4b2f-ad7d-6cba1069ae48)</span></p><p><b>detail</b>: Udvikle funktionsevne <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#d41c8072-52f8-42b5-9375-ddbea454d27f)</span></p></blockquote><p><b>expressedBy</b>: <a href="Practitioner-BirteFraVisitationenMorsoe.html">Practitioner/BirteFraVisitationenMorsoe</a> &quot; MATHIASSEN&quot;</p><p><b>addresses</b>: <a href="Condition-ConditionCleaning.html">Condition/ConditionCleaning</a></p><p><b>outcomeCode</b>: Andreas har fået styr på morgenrutiner omkring oprydning på værelset. Skal dog stadig mindes om oprydning ind imellem og har brug for støtte fra piktogrammer. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+  </text>
+  <lifecycleStatus value="completed"/>
+  <category>
+    <coding>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <code value="0bb3daef-538d-45dc-b444-abdbcb63f6bc"/>
+      <display value="FFB indsatsmål"/>
+    </coding>
+  </category>
+  <description>
+    <text value="holder orden på sit eget værelse"/>
+  </description>
+  <subject>
+    <reference value="Patient/Andreas"/>
+  </subject>
+  <target>
+    <measure>
+      <coding>
+        <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+        <code value="66959f77-6e2a-4574-8423-3ff097f8b9fa"/>
+      </coding>
+    </measure>
+    <detailCodeableConcept>
+      <coding>
+        <system value="urn:oid:1.2.208.176.2.22"/>
+        <code value="8328ce4a-6238-4f73-bf1a-74aadb68eff8"/>
+        <display value="Let nedsat funktionsevne"/>
+      </coding>
+    </detailCodeableConcept>
+  </target>
+  <target>
+    <measure>
+      <coding>
+        <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+        <code value="90c48f03-f194-4b2f-ad7d-6cba1069ae48"/>
+      </coding>
+    </measure>
+    <detailCodeableConcept>
+      <coding>
+        <system value="urn:oid:1.2.208.176.2.22"/>
+        <code value="d41c8072-52f8-42b5-9375-ddbea454d27f"/>
+        <display value="Udvikle funktionsevne"/>
+      </coding>
+    </detailCodeableConcept>
+  </target>
+  <expressedBy>
+    <reference value="Practitioner/BirteFraVisitationenMorsoe"/>
+  </expressedBy>
+  <addresses>
+    <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+      <valuePositiveInt value="1"/>
+    </extension>
+    <reference value="Condition/ConditionCleaning"/>
+  </addresses>
+  <outcomeCode>
+    <extension url="http://fhir.kl.dk/core/StructureDefinition/MatterOfInterestInformer">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+          <code value="f6ea2920-7dde-491e-a489-6b99a3904069"/>
+          <display value="Sagsbehandler"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <text value="Andreas har fået styr på morgenrutiner omkring oprydning på værelset. Skal dog stadig mindes om oprydning ind imellem og har brug for støtte fra piktogrammer."/>
+  </outcomeCode>
+</Goal>

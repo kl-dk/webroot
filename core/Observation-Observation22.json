@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Observation22",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFollowUp"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation22\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation22&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialFollowUp.html\">FollowUp</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"Patient-BorgerEjnar.html\">Patient/BorgerEjnar</a> &quot; LAURIDSEN&quot;</p><p><b>effective</b>: 2021-02-10</p><p><b>performer</b>: <a href=\"Practitioner-NatasjaFraSygeplejen.html\">Practitioner/NatasjaFraSygeplejen</a> &quot; PETERSEN&quot;</p><p><b>value</b>: Borger har fået hjælp til håndtering af sin sorg, og drikker ikke for meget længere <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#E3 &quot;Afsluttes&quot;)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "712744002"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/BorgerEjnar"
+  },
+  "effectiveDateTime" : "2021-02-10",
+  "performer" : [{
+    "reference" : "Practitioner/NatasjaFraSygeplejen"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "E3",
+      "display" : "Afsluttes"
+    }],
+    "text" : "Borger har fået hjælp til håndtering af sin sorg, og drikker ikke for meget længere"
+  }
+}

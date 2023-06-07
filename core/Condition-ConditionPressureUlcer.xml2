@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ConditionPressureUlcer"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="ConditionPressureUlcer"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;ConditionPressureUlcer&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialCondition.html">Condition</a></p></div><p><b>FollowupEncounter</b>: <a href="Encounter-MarkFollowUpPlanned.html">Encounter/MarkFollowUpPlanned</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#I4.4 &quot;Problemer med tryksår&quot;; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1163220007)</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>recordedDate</b>: 2020-06-05</p><p><b>asserter</b>: <a href="Practitioner-HanneFraVisitationenAalborg.html">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><h3>Evidences</h3><table class="grid"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href="Observation-SkinInformationMark.html">Observation/SkinInformationMark</a></td></tr></table></div>
+  </text>
+  <extension url="http://fhir.kl.dk/core/StructureDefinition/FollowUpEncounter">
+    <valueReference>
+      <reference value="Encounter/MarkFollowUpPlanned"/>
+    </valueReference>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.21"/>
+      <code value="I4.4"/>
+      <display value="Problemer med tryksår"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1163220007"/>
+    </coding>
+    <text value="Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion."/>
+  </code>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <recordedDate value="2020-06-05"/>
+  <asserter>
+    <reference value="Practitioner/HanneFraVisitationenAalborg"/>
+  </asserter>
+  <evidence>
+    <detail>
+      <reference value="Observation/SkinInformationMark"/>
+    </detail>
+  </evidence>
+</Condition>

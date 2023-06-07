@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/Condition/Condition111v3> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Condition111v3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition111v3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition111v3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialCondition.html\">Condition</a></p></div><p><b>ConditionLastAssertedDate</b>: 2021-02-10 10:09:27+0100</p><p><b>dueTo</b>: <a href=\"Condition-Condition444.html\">Condition/Condition444</a></p><p><b>EventHist</b>: <a href=\"Provenance-ProvenanceCondition111.html\">Provenance/ProvenanceCondition111</a></p><p><b>EventHist</b>: <a href=\"Provenance-ProvenanceCondition111v2.html\">Provenance/ProvenanceCondition111v2</a></p><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Der er problemer med misbrug, særligt drikker borger øl og spiritus <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#I6.3 &quot;Problemer med misbrug&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#160590009 &quot;Drinks beer and hard liquor (finding)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-BorgerEjnar.html\">Patient/BorgerEjnar</a> &quot; LAURIDSEN&quot;</p><p><b>abatement</b>: 2021-02-10 10:09:27+0100</p><p><b>recordedDate</b>: 2020-03-17 10:09:27+0100</p><p><b>asserter</b>: <a href=\"Practitioner-NatasjaFraSygeplejen.html\">Practitioner/NatasjaFraSygeplejen</a> &quot; PETERSEN&quot;</p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"Observation-Observation1234.html\">Observation/Observation1234</a>, <a href=\"Observation-Observation22.html\">Observation/Observation22</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ConditionLastAssertedDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2021-02-10T10:09:27+01:00"^^xsd:dateTime ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/condition-dueTo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/core/Condition/Condition444> ;
+       fhir:reference [ fhir:v "Condition/Condition444" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ExtEventHist"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/core/Provenance/ProvenanceCondition111> ;
+       fhir:reference [ fhir:v "Provenance/ProvenanceCondition111" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ExtEventHist"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/core/Provenance/ProvenanceCondition111v2> ;
+       fhir:reference [ fhir:v "Provenance/ProvenanceCondition111v2" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inactive" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "I6.3" ] ;
+       fhir:display [ fhir:v "Problemer med misbrug" ]
+     ] [
+       a sct:160590009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "160590009" ] ;
+       fhir:display [ fhir:v "Drinks beer and hard liquor (finding)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Der er problemer med misbrug, særligt drikker borger øl og spiritus" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/BorgerEjnar> ;
+     fhir:reference [ fhir:v "Patient/BorgerEjnar" ]
+  ] ; # 
+  fhir:abatement [ fhir:v "2021-02-10T10:09:27+01:00"^^xsd:dateTime] ; # 
+  fhir:recordedDate [ fhir:v "2020-03-17T10:09:27+01:00"^^xsd:dateTime] ; # 
+  fhir:asserter [
+     fhir:link <http://fhir.kl.dk/core/Practitioner/NatasjaFraSygeplejen> ;
+     fhir:reference [ fhir:v "Practitioner/NatasjaFraSygeplejen" ]
+  ] ; # 
+  fhir:evidence ( [
+     fhir:detail ( [
+       fhir:link <http://fhir.kl.dk/core/Observation/Observation1234> ;
+       fhir:reference [ fhir:v "Observation/Observation1234" ]
+     ] [
+       fhir:link <http://fhir.kl.dk/core/Observation/Observation22> ;
+       fhir:reference [ fhir:v "Observation/Observation22" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

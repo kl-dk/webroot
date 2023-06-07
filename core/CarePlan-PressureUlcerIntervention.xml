@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="PressureUlcerIntervention"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialPlannedIntervention"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="PressureUlcerIntervention"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;PressureUlcerIntervention&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialPlannedIntervention.html">PlannedIntervention</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>period</b>: 2020-05-30 --&gt; (ongoing)</p><p><b>created</b>: 2020-05-29</p><p><b>author</b>: <a href="Organization-HjemmesygeplejeSonderborg.html">Organization/HjemmesygeplejeSonderborg</a> &quot;Hjemmesygepleje – visitation –hjemmehjælp, Sønderborg Kommune&quot;</p><blockquote><p><b>activity</b></p><p><b>outcomeReference</b>: <a href="Encounter-MarkogSaarsygeplejerske.html">Encounter/MarkogSaarsygeplejerske</a></p><h3>Details</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Performer</b></td><td><b>Description</b></td></tr><tr><td>*</td><td>Sårbehandling <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#G1.39)</span></td><td>in-progress</td><td><a href="Organization-HjemmesygeplejeSonderborg.html">Organization/HjemmesygeplejeSonderborg</a> &quot;Hjemmesygepleje – visitation –hjemmehjælp, Sønderborg Kommune&quot;</td><td>Tryksår på venstre ben skal tilses og behandles dagligt. Vigtigt at tjekke for infektion</td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <period>
+    <start value="2020-05-30"/>
+  </period>
+  <created value="2020-05-29"/>
+  <author>
+    <reference value="Organization/HjemmesygeplejeSonderborg"/>
+  </author>
+  <activity>
+    <outcomeReference>
+      <reference value="Encounter/MarkogSaarsygeplejerske"/>
+    </outcomeReference>
+    <detail>
+      <code>
+        <coding>
+          <system value="urn:oid:1.2.208.176.2.21"/>
+          <code value="G1.39"/>
+          <display value="Sårbehandling"/>
+        </coding>
+      </code>
+      <status value="in-progress"/>
+      <performer>
+        <reference value="Organization/HjemmesygeplejeSonderborg"/>
+      </performer>
+      <description value="Tryksår på venstre ben skal tilses og behandles dagligt. Vigtigt at tjekke for infektion"/>
+    </detail>
+  </activity>
+</CarePlan>

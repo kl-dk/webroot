@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/ValueSet/KLImportanceLevelCodesFSIII> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLImportanceLevelCodesFSIII"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Import all the codes that are contained in <a href=\"http://fhir.kl.dk/term/1.0.0/ValueSet-KLImportanceLevelCodesFSIII.html\">KLBetydningKoderFSIII</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/core/ValueSet/KLImportanceLevelCodesFSIII"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "KLImportanceLevelCodesFSIII"] ; # 
+  fhir:title [ fhir:v "KLBetydningKoderFSIII"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-06-07T16:33:10+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Importance level codes (Betydning), as evaluated by the citizen"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLImportanceLevelCodesFSIII"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLImportanceLevelCodesFSIII>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

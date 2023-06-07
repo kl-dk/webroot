@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/ServiceRequest/HenvendelseFraMorVedrSocialIndsats> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HenvendelseFraMorVedrSocialIndsats"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HenvendelseFraMorVedrSocialIndsats\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HenvendelseFraMorVedrSocialIndsats&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialServiceRequest.html\">ServiceRequest</a></p></div><p><b>RequesterType</b>: Pårørende <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#A2)</span></p><p><b>SubjectConsentToLiaising</b>: indforstået <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#e67035da-9179-466b-99ad-ea86835d38c9)</span></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: Social indsats <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#4a297733-4d66-4726-a933-590d55cf91e0)</span></p><p><b>orderDetail</b>: Midlertidigt ophold <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#80aa8ea7-4ad8-405f-876a-4c0f89fde06a)</span>, Støtte til daglige opgaver i hjemmet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#638f44df-6bf2-47f8-9935-b8fdc83e5bf5)</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>authoredOn</b>: 2020-06-23</p><p><b>requester</b>: <a href=\"Organization-SocialOgSundhedMorsoe.html\">Organization/SocialOgSundhedMorsoe</a> &quot;Social og Sundhed, Morsø Kommune&quot;</p><p><b>reasonCode</b>: Andreas er udviklingshæmmet og bor pt. hjemme hos sin mor. Moderen har fået svær gigt og har derfor ikke mulighed for at have ham boende længere, og Andreas ønsker derfor at komme i et botilbud. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>reasonReference</b>: <a href=\"Condition-AndreasMaalgruppeUdviklingshamning.html\">Condition/AndreasMaalgruppeUdviklingshamning</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/RequesterType"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A2" ] ;
+         fhir:display [ fhir:v "Pårørende" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/SubjectConsentToLiaising"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "e67035da-9179-466b-99ad-ea86835d38c9" ] ;
+         fhir:display [ fhir:v "indforstået" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4a297733-4d66-4726-a933-590d55cf91e0" ] ;
+       fhir:display [ fhir:v "Social indsats" ]
+     ] )
+  ] ; # 
+  fhir:orderDetail ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80aa8ea7-4ad8-405f-876a-4c0f89fde06a" ] ;
+       fhir:display [ fhir:v "Midlertidigt ophold" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "638f44df-6bf2-47f8-9935-b8fdc83e5bf5" ] ;
+       fhir:display [ fhir:v "Støtte til daglige opgaver i hjemmet" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Andreas> ;
+     fhir:reference [ fhir:v "Patient/Andreas" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2020-06-23"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://fhir.kl.dk/core/Organization/SocialOgSundhedMorsoe> ;
+     fhir:reference [ fhir:v "Organization/SocialOgSundhedMorsoe" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "Andreas er udviklingshæmmet og bor pt. hjemme hos sin mor. Moderen har fået svær gigt og har derfor ikke mulighed for at have ham boende længere, og Andreas ønsker derfor at komme i et botilbud." ]
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://fhir.kl.dk/core/Condition/AndreasMaalgruppeUdviklingshamning> ;
+     fhir:reference [ fhir:v "Condition/AndreasMaalgruppeUdviklingshamning" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

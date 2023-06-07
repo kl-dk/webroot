@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="HenvisningFraLageVedrAkutSygepleje"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="HenvisningFraLageVedrAkutSygepleje"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;HenvisningFraLageVedrAkutSygepleje&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialServiceRequest.html">ServiceRequest</a></p></div><p><b>RequesterType</b>: Egen læge/vagtlæge <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#A9)</span></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: Hjemmesygepleje <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#490ab7be-ddb1-4a54-baf1-009fe6e8a83b)</span></p><p><b>orderDetail</b>: Undersøgelser og måling af værdier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#G1.41)</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>authoredOn</b>: 2020-06-21</p><p><b>requester</b>: <a href="Organization-LaegerneHasserisBymidte.html">Organization/LaegerneHasserisBymidte</a> &quot;Lægerne Hasseris Bymidte&quot;</p><p><b>reasonCode</b>: Mark har efter et ildebefindende brug for at akutsygeplejen undersøger situationen og måler vitale værdier. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+  </text>
+  <extension url="http://fhir.kl.dk/core/StructureDefinition/RequesterType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:1.2.208.176.2.21"/>
+        <code value="A9"/>
+        <display value="Egen læge/vagtlæge"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <intent value="order"/>
+  <code>
+    <coding>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <code value="490ab7be-ddb1-4a54-baf1-009fe6e8a83b"/>
+      <display value="Hjemmesygepleje"/>
+    </coding>
+  </code>
+  <orderDetail>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.21"/>
+      <code value="G1.41"/>
+      <display value="Undersøgelser og måling af værdier"/>
+    </coding>
+  </orderDetail>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <authoredOn value="2020-06-21"/>
+  <requester>
+    <reference value="Organization/LaegerneHasserisBymidte"/>
+  </requester>
+  <reasonCode>
+    <text value="Mark har efter et ildebefindende brug for at akutsygeplejen undersøger situationen og måler vitale værdier."/>
+  </reasonCode>
+</ServiceRequest>

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/Goal/MarkIndsatsmaal> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MarkIndsatsmaal"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"MarkIndsatsmaal\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;MarkIndsatsmaal&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialGoal.html\">Goal</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FSIII indsatsmål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#e6f35a88-6665-4471-9dce-9a98854532b4)</span></p><p><b>description</b>: Målemetoden: Sårets areal sættes op for Marks tryksår <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Measure</b></td></tr><tr><td>*</td><td>Pressure ulcer surface area (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#420753006)</span></td></tr></table><p><b>expressedBy</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>addresses</b>: <a href=\"Condition-ConditionPressureUlcer.html\">Condition/ConditionPressureUlcer</a></p></div>"
+  ] ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "e6f35a88-6665-4471-9dce-9a98854532b4" ] ;
+       fhir:display [ fhir:v "FSIII indsatsmål" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:text [ fhir:v "Målemetoden: Sårets areal sættes op for Marks tryksår" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:target ( [
+     fhir:measure [
+       fhir:coding ( [
+         a sct:420753006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "420753006" ] ;
+         fhir:display [ fhir:v "Pressure ulcer surface area (observable entity)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:expressedBy [
+     fhir:link <http://fhir.kl.dk/core/Practitioner/HanneFraVisitationenAalborg> ;
+     fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+  ] ; # 
+  fhir:addresses ( [
+     fhir:link <http://fhir.kl.dk/core/Condition/ConditionPressureUlcer> ;
+     fhir:reference [ fhir:v "Condition/ConditionPressureUlcer" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

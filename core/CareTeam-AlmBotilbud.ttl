@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/CareTeam/AlmBotilbud> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AlmBotilbud"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonServicePerformer"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonServicePerformer>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CareTeam</b><a name=\"AlmBotilbud\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CareTeam &quot;AlmBotilbud&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonServicePerformer.html\">ServicePerformer</a></p></div><p><b>category</b>: Almindeligt længerevarende botilbud til voksne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#498fe92c-d7f7-41cd-9404-5b38fe113be0)</span></p><p><b>managingOrganization</b>: <a href=\"Organization-BotilbudetSommergaarden.html\">Organization/BotilbudetSommergaarden</a> &quot;Botilbudet Sommergaarden&quot;</p></div>"
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "498fe92c-d7f7-41cd-9404-5b38fe113be0" ] ;
+       fhir:display [ fhir:v "Almindeligt længerevarende botilbud til voksne" ]
+     ] )
+  ] ) ; # 
+  fhir:managingOrganization ( [
+     fhir:link <http://fhir.kl.dk/core/Organization/BotilbudetSommergaarden> ;
+     fhir:reference [ fhir:v "Organization/BotilbudetSommergaarden" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
