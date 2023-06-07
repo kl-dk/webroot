@@ -9,7 +9,7 @@
   "version" : "1.0.0",
   "name" : "KLTerm",
   "status" : "active",
-  "date" : "2023-05-09T23:50:17+02:00",
+  "date" : "2023-06-07T11:52:14+02:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -30,6 +30,16 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -655,6 +665,222 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CareSocialCodes"
+      },
+      "name" : "CareSocialCodes",
+      "description" : "Administrative/technical codes in Local Govenment Denmark (KL), associated with KLCommonCareSocial",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/expParam"
+      },
+      "name" : "expParam",
+      "description" : "SNOMED CT expansion parameter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/FFB"
+      },
+      "name" : "FFB",
+      "description" : "Codes from FFB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/FSIII"
+      },
+      "name" : "FSIII",
+      "description" : "Codes from FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLImportanceLevelCodesFSIII"
+      },
+      "name" : "KLBetydningKoderFSIII",
+      "description" : "Importance level codes (Betydning), as evaluated by the citizen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConsentToLiasing"
+      },
+      "name" : "KLBorgerIndforståetMedHenvendelseKoder",
+      "description" : "Codes for citizens knowledge of referal/request as defined by FFB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLCitizenObservationCodesFSIII"
+      },
+      "name" : "KLBorgervurderingsObservationskoderFSIII",
+      "description" : "Observation codes for citizens own observations as defined by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLCitizenObservationResultCodesFSIII"
+      },
+      "name" : "KLBorgervurderingsResultatkoderFSIII",
+      "description" : "Performance and Importance level codes, as evaluated by the citizen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLPreventionInterventionsFSIII"
+      },
+      "name" : "KLForebyggelseIndsatserFSIII",
+      "description" : "Prevention and health promotion interventions as defined by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLPreventionAreasFSIII"
+      },
+      "name" : "KLForebyggelseOmråderFSIII",
+      "description" : "Prevention areas (observation codes), used for documentation within prevention and health promotion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLSeveritiesFFB"
+      },
+      "name" : "KLFunktionsevneniveauFFB",
+      "description" : "Severities related to conditions in FFB (funktionsevneniveau)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLSeveritiesFSIII"
+      },
+      "name" : "KLFunktionsevneniveauFSIII",
+      "description" : "Severities related to conditions in FSIII home care (funktionsniveau)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLGeneralInformationFSIII"
+      },
+      "name" : "KLGenerelInformationFSIII",
+      "description" : "Generel information codes (observations) as defined by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLRequestFromFSIII"
+      },
+      "name" : "KLHenvendelseHenvisningFraFSIII",
+      "description" : "Type of service requesters as defined by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLHomeCareInterventionsFSIII"
+      },
+      "name" : "KLHjemmeplejeIndsatserFSIII",
+      "description" : "Home Care Interventions as described by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLHomeCareAreasFSIII"
+      },
+      "name" : "KLHjemmeplejeOmråderFSIII",
+      "description" : "Observation codes for the five home care areas as defined by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLInterventions"
+      },
+      "name" : "KLIndsatser",
+      "description" : "Interventions as described by FSIII and FFB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLInterventionsFSIII"
+      },
+      "name" : "KLIndsatserFSIII",
+      "description" : "Interventions as described by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -662,6 +888,90 @@
       },
       "name" : "KLIndsatsforløbTypekoder",
       "description" : "Codes for constraining the CarePlan category",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLMatterOfInterestValues"
+      },
+      "name" : "KLIngenOplysningerKoder",
+      "description" : "Matter of interes values to support when no observations have been made",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLMatterOfInterestInformerFFB"
+      },
+      "name" : "KLKildeTilOplysningFFB",
+      "description" : "Codes that identify who's perspective the matter-of-interest is comming from",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLComplicationCodesSCT"
+      },
+      "name" : "KLKomplikationskoderSCT",
+      "description" : "Codes that indicate whether an intervention had complications or not",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLEncounterTypes"
+      },
+      "name" : "KLKontaktTyper",
+      "description" : "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/KLCommonproprietary"
+      },
+      "name" : "KLLokaleKoder",
+      "description" : "Proprietary codes associated with KLCommonCareSocial, partial list, ID's likely to change.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLTargetGroupsFFB"
+      },
+      "name" : "KLMålgrupperFFB",
+      "description" : "Target groups as defined by FFB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLGoalTypeCodes"
+      },
+      "name" : "KLMålKategoriKoder",
+      "description" : "Codes used to distinguish different kinds of goals",
       "exampleBoolean" : false
     },
     {
@@ -706,226 +1016,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/KLCitizenObservationCodesFSIII"
+        "reference" : "ValueSet/KLObservationCodes"
       },
-      "name" : "KLBorgervurderingsObservationskoderFSIII",
-      "description" : "Observation codes for citizens own observations as defined by FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLCitizenObservationResultCodesFSIII"
-      },
-      "name" : "KLBorgervurderingsResultatkoderFSIII",
-      "description" : "Performance and Importance level codes, as evaluated by the citizen",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLComplicationCodesSCT"
-      },
-      "name" : "KLKomplikationskoderSCT",
-      "description" : "Codes that indicate whether an intervention had complications or not",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionADCodesFFB"
-      },
-      "name" : "KLTilstandADKoderFFB",
-      "description" : "Danish municipality FFB condition codes for Activities and Participation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionCodes"
-      },
-      "name" : "KLTilstandKoder",
-      "description" : "Danish municipality condition codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionCodesFFB"
-      },
-      "name" : "KLTilstandKoderFFB",
-      "description" : "Danish municipality FFB condition codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionCodesFSIII"
-      },
-      "name" : "KLTilstandKoderFSIII",
-      "description" : "Danish municipality FSIII condition codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionCodesHomeCare"
-      },
-      "name" : "KLTilstandeKoderHjemmepleje",
-      "description" : "Danish municipality home care condition codes (funktionsevnetilstande)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionCodesNursing"
-      },
-      "name" : "KLTilstandeKoderSygepleje",
-      "description" : "Danish municipality nursing condition codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionCodesPrevention"
-      },
-      "name" : "KLTilstandKoderForebyggelse",
-      "description" : "Danish municipality Prevention condition codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionCodesTheraphy"
-      },
-      "name" : "KLTilstandKoderTræning",
-      "description" : "Danish municipality theraphy condition codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionFFCodesFFB"
-      },
-      "name" : "KLTilstandFFKoderFFB",
-      "description" : "Danish municipality FFB condition codes for body functions and structures",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionOCodesFFB"
-      },
-      "name" : "KLTilstandOKoderFFB",
-      "description" : "Danish municipality FFB condition codes for Environmental Factors",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConditionsAndTargetGroupsFFB"
-      },
-      "name" : "KLTilstandeOgMålgrupperFFB",
-      "description" : "Conditions and target groups as defined by FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLConsentToLiasing"
-      },
-      "name" : "KLBorgerIndforståetMedHenvendelseKoder",
-      "description" : "Codes for citizens knowledge of referal/request as defined by FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLEncounterTypes"
-      },
-      "name" : "KLKontaktTyper",
-      "description" : "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLEvaluationTypeCodes"
-      },
-      "name" : "KLVurderingTypekoder",
-      "description" : "Codes used to distinguish different kinds of evaluations",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLEvaluationTypeCodesSCT"
-      },
-      "name" : "KLVurderingTypekoderSCT",
-      "description" : "SNOMED CT codes used to distinguish different kinds of evaluations",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLFollowUpCodes"
-      },
-      "name" : "KLOpfølgningKodes",
-      "description" : "Follow-up codes used in Danish municipalities",
+      "name" : "KLObservationskoder",
+      "description" : "SNOMED CT and NPU codes used in Danish municipalities",
       "exampleBoolean" : false
     },
     {
@@ -958,58 +1052,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/KLGeneralInformationFSIII"
+        "reference" : "ValueSet/KLFollowUpCodes"
       },
-      "name" : "KLGenerelInformationFSIII",
-      "description" : "Generel information codes (observations) as defined by FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLGoalTypeCodes"
-      },
-      "name" : "KLMålKategoriKoder",
-      "description" : "Codes used to distinguish different kinds of goals",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLHomeCareAreasFSIII"
-      },
-      "name" : "KLHjemmeplejeOmråderFSIII",
-      "description" : "Observation codes for the five home care areas as defined by FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLHomeCareInterventionsFSIII"
-      },
-      "name" : "KLHjemmeplejeIndsatserFSIII",
-      "description" : "Home Care Interventions as described by FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLImportanceLevelCodesFSIII"
-      },
-      "name" : "KLBetydningKoderFSIII",
-      "description" : "Importance level codes (Betydning), as evaluated by the citizen",
+      "name" : "KLOpfølgningKodes",
+      "description" : "Follow-up codes used in Danish municipalities",
       "exampleBoolean" : false
     },
     {
@@ -1054,58 +1100,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/KLInterventions"
+        "reference" : "ValueSet/KLServicesTypes"
       },
-      "name" : "KLIndsatser",
-      "description" : "Interventions as described by FSIII and FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLInterventionsFFB"
-      },
-      "name" : "KLYdelserFFB",
-      "description" : "social interventions (ydelser) as defined by FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLInterventionsFSIII"
-      },
-      "name" : "KLIndsatserFSIII",
-      "description" : "Interventions as described by FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLMatterOfInterestInformerFFB"
-      },
-      "name" : "KLKildeTilOplysningFFB",
-      "description" : "Codes that identify who's perspective the matter-of-interest is comming from",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLMatterOfInterestValues"
-      },
-      "name" : "KLIngenOplysningerKoder",
-      "description" : "Matter of interes values to support when no observations have been made",
+      "name" : "KLServiceTyper",
+      "description" : "Types of services that the Danish municipalities provide which is covered by FSIII and FFB",
       "exampleBoolean" : false
     },
     {
@@ -1126,10 +1124,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/KLNursingAreasFSIII"
+        "reference" : "ValueSet/KLSeverities"
       },
-      "name" : "KLSygeplejeOmråderFSIII",
-      "description" : "Observation codes for the 12 nursing areas as defined by FSIII",
+      "name" : "KLSværhedgrader",
+      "description" : "Severities related to conditions",
       "exampleBoolean" : false
     },
     {
@@ -1150,142 +1148,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/KLObservationCodes"
+        "reference" : "ValueSet/KLNursingAreasFSIII"
       },
-      "name" : "KLObservationskoder",
-      "description" : "SNOMED CT and NPU codes used in Danish municipalities",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLPerformanceLevelCodesFSIII"
-      },
-      "name" : "KLUdførelsesKoderFSIII",
-      "description" : "Performance level codes (Udførelse), as evaluated by the citizen",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLPreventionAreasFSIII"
-      },
-      "name" : "KLForebyggelseOmråderFSIII",
-      "description" : "Prevention areas (observation codes), used for documentation within prevention and health promotion",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLPreventionInterventionsFSIII"
-      },
-      "name" : "KLForebyggelseIndsatserFSIII",
-      "description" : "Prevention and health promotion interventions as defined by FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLRequestFromFSIII"
-      },
-      "name" : "KLHenvendelseHenvisningFraFSIII",
-      "description" : "Type of service requesters as defined by FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLServiceCodesFFB"
-      },
-      "name" : "KLTilbudsKoderFFB",
-      "description" : "Social service (tilbud) as defined by FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLServicesTypes"
-      },
-      "name" : "KLServiceTyper",
-      "description" : "Types of services that the Danish municipalities provide which is covered by FSIII and FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLSeverities"
-      },
-      "name" : "KLSværhedgrader",
-      "description" : "Severities related to conditions",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLSeveritiesFFB"
-      },
-      "name" : "KLFunktionsevneniveauFFB",
-      "description" : "Severities related to conditions in FFB (funktionsevneniveau)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLSeveritiesFSIII"
-      },
-      "name" : "KLFunktionsevneniveauFSIII",
-      "description" : "Severities related to conditions in FSIII home care (funktionsniveau)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLTargetGroupsFFB"
-      },
-      "name" : "KLMålgrupperFFB",
-      "description" : "Target groups as defined by FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/KLTargetMeasureCodes"
-      },
-      "name" : "KLTypeAfObservationPåMål",
-      "description" : "Target measure code, that determines whether the target is expressed as a severity, change value or using another observation",
+      "name" : "KLSygeplejeOmråderFSIII",
+      "description" : "Observation codes for the 12 nursing areas as defined by FSIII",
       "exampleBoolean" : false
     },
     {
@@ -1306,10 +1172,142 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/KLTheraphyAreasFSIII"
+        "reference" : "ValueSet/KLServiceCodesFFB"
       },
-      "name" : "KLTræningOmråderFSIII",
-      "description" : "Theraphy areas (observation codes), used for documentation within physical training, physiotheraphy and occupational theraphy in Danish Municipalities as defined by FSIII",
+      "name" : "KLTilbudsKoderFFB",
+      "description" : "Social service (tilbud) as defined by FFB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionADCodesFFB"
+      },
+      "name" : "KLTilstandADKoderFFB",
+      "description" : "Danish municipality FFB condition codes for Activities and Participation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionCodesHomeCare"
+      },
+      "name" : "KLTilstandeKoderHjemmepleje",
+      "description" : "Danish municipality home care condition codes (funktionsevnetilstande)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionCodesNursing"
+      },
+      "name" : "KLTilstandeKoderSygepleje",
+      "description" : "Danish municipality nursing condition codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionsAndTargetGroupsFFB"
+      },
+      "name" : "KLTilstandeOgMålgrupperFFB",
+      "description" : "Conditions and target groups as defined by FFB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionFFCodesFFB"
+      },
+      "name" : "KLTilstandFFKoderFFB",
+      "description" : "Danish municipality FFB condition codes for body functions and structures",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionCodes"
+      },
+      "name" : "KLTilstandKoder",
+      "description" : "Danish municipality condition codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionCodesFFB"
+      },
+      "name" : "KLTilstandKoderFFB",
+      "description" : "Danish municipality FFB condition codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionCodesPrevention"
+      },
+      "name" : "KLTilstandKoderForebyggelse",
+      "description" : "Danish municipality Prevention condition codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionCodesFSIII"
+      },
+      "name" : "KLTilstandKoderFSIII",
+      "description" : "Danish municipality FSIII condition codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionCodesTheraphy"
+      },
+      "name" : "KLTilstandKoderTræning",
+      "description" : "Danish municipality theraphy condition codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLConditionOCodesFFB"
+      },
+      "name" : "KLTilstandOKoderFFB",
+      "description" : "Danish municipality FFB condition codes for Environmental Factors",
       "exampleBoolean" : false
     },
     {
@@ -1327,13 +1325,73 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "CodeSystem/KLCommonproprietary"
+        "reference" : "ValueSet/KLTheraphyAreasFSIII"
       },
-      "name" : "KLLokaleKoder",
-      "description" : "Proprietary codes associated with KLCommonCareSocial, partial list, ID's likely to change.",
+      "name" : "KLTræningOmråderFSIII",
+      "description" : "Theraphy areas (observation codes), used for documentation within physical training, physiotheraphy and occupational theraphy in Danish Municipalities as defined by FSIII",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLTargetMeasureCodes"
+      },
+      "name" : "KLTypeAfObservationPåMål",
+      "description" : "Target measure code, that determines whether the target is expressed as a severity, change value or using another observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLPerformanceLevelCodesFSIII"
+      },
+      "name" : "KLUdførelsesKoderFSIII",
+      "description" : "Performance level codes (Udførelse), as evaluated by the citizen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLEvaluationTypeCodes"
+      },
+      "name" : "KLVurderingTypekoder",
+      "description" : "Codes used to distinguish different kinds of evaluations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLEvaluationTypeCodesSCT"
+      },
+      "name" : "KLVurderingTypekoderSCT",
+      "description" : "SNOMED CT codes used to distinguish different kinds of evaluations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLInterventionsFFB"
+      },
+      "name" : "KLYdelserFFB",
+      "description" : "social interventions (ydelser) as defined by FFB",
       "exampleBoolean" : false
     },
     {
@@ -1346,54 +1404,6 @@
       },
       "name" : "NPU",
       "description" : "NPUcodes used in Danish municipalities",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
-      }],
-      "reference" : {
-        "reference" : "Parameters/expParam"
-      },
-      "name" : "expParam",
-      "description" : "SNOMED CT expansion parameter",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/FFB"
-      },
-      "name" : "FFB",
-      "description" : "Codes from FFB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/FSIII"
-      },
-      "name" : "FSIII",
-      "description" : "Codes from FSIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CareSocialCodes"
-      },
-      "name" : "CareSocialCodes",
-      "description" : "Administrative/technical codes in Local Govenment Denmark (KL), associated with KLCommonCareSocial",
       "exampleBoolean" : false
     }],
     "page" : {
