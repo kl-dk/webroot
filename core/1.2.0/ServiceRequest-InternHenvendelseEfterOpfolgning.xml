@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="InternHenvendelseEfterOpfolgning"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="InternHenvendelseEfterOpfolgning"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;InternHenvendelseEfterOpfolgning&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialServiceRequest.html">ServiceRequest</a></p></div><p><b>RequesterType</b>: Hjemmeplejen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#A4)</span></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: Hjemmepleje <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#ad865929-7363-4b2d-a271-01993181fbaf)</span></p><p><b>orderDetail</b>: Mobilitet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#H1.4)</span>, RH Hverdagens aktiviteter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#H2.2)</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>authoredOn</b>: 2020-04-11</p><p><b>requester</b>: <a href="Practitioner-HanneFraVisitationenAalborg.html">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>reasonCode</b>: Sidste opfølgning på Marks hjemmepleje viste behov for revisitation fordi funktionsevnen er blevet bedre, særligt ift. mobilitet. Der skal ses på om nogle af §83 indsatserne, med fordel kan gøres til §83a for yderligere at styrke hverdags rehabiliteringsindsatsen og dermed borgers funktionsniveau. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>reasonReference</b>: <a href="Observation-MarkHjemmeplejeRevisitation.html">Observation/MarkHjemmeplejeRevisitation</a></p></div>
+  </text>
+  <extension url="http://fhir.kl.dk/core/StructureDefinition/RequesterType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:1.2.208.176.2.21"/>
+        <code value="A4"/>
+        <display value="Hjemmeplejen"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <code value="ad865929-7363-4b2d-a271-01993181fbaf"/>
+      <display value="Hjemmepleje"/>
+    </coding>
+  </code>
+  <orderDetail>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.21"/>
+      <code value="H1.4"/>
+      <display value="Mobilitet"/>
+    </coding>
+  </orderDetail>
+  <orderDetail>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.21"/>
+      <code value="H2.2"/>
+      <display value="RH Hverdagens aktiviteter"/>
+    </coding>
+  </orderDetail>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <authoredOn value="2020-04-11"/>
+  <requester>
+    <reference value="Practitioner/HanneFraVisitationenAalborg"/>
+  </requester>
+  <reasonCode>
+    <text value="Sidste opfølgning på Marks hjemmepleje viste behov for revisitation fordi funktionsevnen er blevet bedre, særligt ift. mobilitet. Der skal ses på om nogle af §83 indsatserne, med fordel kan gøres til §83a for yderligere at styrke hverdags rehabiliteringsindsatsen og dermed borgers funktionsniveau."/>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Observation/MarkHjemmeplejeRevisitation"/>
+  </reasonReference>
+</ServiceRequest>

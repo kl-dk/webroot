@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/ServiceRequest/HenvisningFraLageVedrAkutSygepleje> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HenvisningFraLageVedrAkutSygepleje"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HenvisningFraLageVedrAkutSygepleje\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HenvisningFraLageVedrAkutSygepleje&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialServiceRequest.html\">ServiceRequest</a></p></div><p><b>RequesterType</b>: Egen læge/vagtlæge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#A9)</span></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: Hjemmesygepleje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#490ab7be-ddb1-4a54-baf1-009fe6e8a83b)</span></p><p><b>orderDetail</b>: Undersøgelser og måling af værdier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#G1.41)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>authoredOn</b>: 2020-06-21</p><p><b>requester</b>: <a href=\"Organization-LaegerneHasserisBymidte.html\">Organization/LaegerneHasserisBymidte</a> &quot;Lægerne Hasseris Bymidte&quot;</p><p><b>reasonCode</b>: Mark har efter et ildebefindende brug for at akutsygeplejen undersøger situationen og måler vitale værdier. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/RequesterType"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A9" ] ;
+         fhir:display [ fhir:v "Egen læge/vagtlæge" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "490ab7be-ddb1-4a54-baf1-009fe6e8a83b" ] ;
+       fhir:display [ fhir:v "Hjemmesygepleje" ]
+     ] )
+  ] ; # 
+  fhir:orderDetail ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "G1.41" ] ;
+       fhir:display [ fhir:v "Undersøgelser og måling af værdier" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2020-06-21"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://fhir.kl.dk/core/Organization/LaegerneHasserisBymidte> ;
+     fhir:reference [ fhir:v "Organization/LaegerneHasserisBymidte" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "Mark har efter et ildebefindende brug for at akutsygeplejen undersøger situationen og måler vitale værdier." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

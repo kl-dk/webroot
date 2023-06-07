@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/Condition/AndreasMaalgruppeUdviklingshamning> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AndreasMaalgruppeUdviklingshamning"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFocusCondition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFocusCondition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"AndreasMaalgruppeUdviklingshamning\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;AndreasMaalgruppeUdviklingshamning&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialFocusCondition.html\">FocusCondition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Udviklingshæmning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#97c355cc-84e3-46d0-ac1b-00bc627d089f)</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>onset</b>: 1 år<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><p><b>recordedDate</b>: 2020-07-06</p><p><b>recorder</b>: <a href=\"Practitioner-BirteFraVisitationenMorsoe.html\">Practitioner/BirteFraVisitationenMorsoe</a> &quot; MATHIASSEN&quot;</p><p><b>asserter</b>: <a href=\"Practitioner-MarianneLaege.html\">Practitioner/MarianneLaege</a> &quot; AAGAARD&quot;</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "97c355cc-84e3-46d0-ac1b-00bc627d089f" ] ;
+       fhir:display [ fhir:v "Udviklingshæmning" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Andreas> ;
+     fhir:reference [ fhir:v "Patient/Andreas" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:Age ;
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "år" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "a" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-07-06"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.kl.dk/core/Practitioner/BirteFraVisitationenMorsoe> ;
+     fhir:reference [ fhir:v "Practitioner/BirteFraVisitationenMorsoe" ]
+  ] ; # 
+  fhir:asserter [
+     fhir:link <http://fhir.kl.dk/core/Practitioner/MarianneLaege> ;
+     fhir:reference [ fhir:v "Practitioner/MarianneLaege" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

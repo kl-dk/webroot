@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/ServiceRequest/HenvendelseVedrSygeplejeMark> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HenvendelseVedrSygeplejeMark"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HenvendelseVedrSygeplejeMark\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HenvendelseVedrSygeplejeMark&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialServiceRequest.html\">ServiceRequest</a></p></div><p><b>RequesterType</b>: Borger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#A1)</span></p><blockquote><p><b>MunicipalityCasenumber</b></p><blockquote><p><b>url</b></p><code>official</code></blockquote><p><b>value</b>: id: 524a66c5-d1b6-4cc4-adca-dad6d058a8f5 (use: OFFICIAL)</p></blockquote><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: Hjemmesygepleje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#490ab7be-ddb1-4a54-baf1-009fe6e8a83b)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>authoredOn</b>: 2020-06-21</p><p><b>requester</b>: <a href=\"Organization-SundhedsforvaltningAalborg.html\">Organization/SundhedsforvaltningAalborg</a> &quot;Sundheds- og kulturforvaltningen, Aalborg Kommune&quot;</p><p><b>reasonCode</b>: Borger har henvendt sig pga. et sår, der skal undersøges nærmere. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/RequesterType"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A1" ] ;
+         fhir:display [ fhir:v "Borger" ]
+       ] )
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "official"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:use [ fhir:v "official" ] ;
+         fhir:system [ fhir:v "https://data.gov.dk/id/organization"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "524a66c5-d1b6-4cc4-adca-dad6d058a8f5" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/MunicipalityCaseNumber"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "490ab7be-ddb1-4a54-baf1-009fe6e8a83b" ] ;
+       fhir:display [ fhir:v "Hjemmesygepleje" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2020-06-21"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://fhir.kl.dk/core/Organization/SundhedsforvaltningAalborg> ;
+     fhir:reference [ fhir:v "Organization/SundhedsforvaltningAalborg" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "Borger har henvendt sig pga. et sår, der skal undersøges nærmere." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

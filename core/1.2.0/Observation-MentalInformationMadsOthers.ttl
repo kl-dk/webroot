@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/Observation/MentalInformationMadsOthers> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MentalInformationMadsOthers"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MentalInformationMadsOthers\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MentalInformationMadsOthers&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialMatterOfInterest.html\">MatterOfInterest</a></p></div><p><b>MatterOfInterestInformer</b>: Andre <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#63338442-7b2e-405b-acc0-142361ef19f1)</span></p><p><b>status</b>: final</p><p><b>code</b>: Mentale funktioner <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#25c5c614-305f-46cd-9891-55d564fc30cf)</span></p><p><b>subject</b>: <a href=\"Patient-Mads.html\">Patient/Mads</a> &quot; SØRENSEN&quot;</p><p><b>effective</b>: 2020-12-12 13:16:19-0400</p><p><b>performer</b>: <a href=\"Practitioner-KristinaFraVoksensocialomraadet.html\">Practitioner/KristinaFraVoksensocialomraadet</a> &quot; JENSEN&quot;</p><p><b>value</b>: Besøg hos Mads, hvor hans mor, Malene, deltager, 3.\nseptember 20xx: Mads’ mor fortæller, at det altid har været nødvendigt at forberede\nMads i god tid, hvis der skulle ske noget ud over det sædvanlige.\nLigesom det har været nødvendigt at give tid til at omstille sig til at\nskulle stoppe med en aktivitet og gå i gang med en anden.\nHun fortæller, at Mads kan koncentrere sig og har tendens til at\nnørde, når han er særligt optaget af et emne, fx dinosaurer eller et\ncomputerspil. Når Mads er usikker eller synes, at noget er svært,\ner det en udfordring for ham at komme i gang og at fastholde sin\nopmærksomhed.\nHan tager ikke selv initiativ til at stå op, rydde op eller tage bad.\nDet skal han mindes om, og da han var mindre, havde han stor\nglæde af en liste over, hvad han skulle om morgenen, som hang\npå køleskabet. Han kan godt lide, når tingene forgår i en fast\nrækkefølge og er kendte. Mads’ mor kan også genkende Mads’\nbeskrivelse af, hvordan han får det, når han ikke kan overskue ting.\nHan kan godt få nogle meget voldsomme raseriudbrud og smadre\ndøre og møbler.\nJournal fra speciallæge XX, august 20xx: Obj.: Vågen og bevidsthedsklar. Ingen motorisk uro. Der ses tics i\nansigt og skulder, men ingen verbale tics. […] Svarer relevant på\nspørgsmål og virker åben og ærlig. […] Skønnes normalbegavet med\nen samlet IQ på 110. […] God formel kontakt. God øjenkontakt.\nNormal mimik og gestus.\nSub.: Mads har store eksekutive vanskeligheder. Han har svært ved\nskift og forandringer, har svært ved at afpasse tiden til aktiviteter.\nHan er rigid og afhængig af ydre struktur. […] I samvær med andre\ner der normale formelle kontaktevner, men Mads tager tingene\npersonligt og bogstaveligt. Forstår ironi og underforståethed,\nmen bliver ensporet ved mange stimuli. […] Der er lette problemer\nmed vedholdende opmærksomhed og afledning, men ingen\nimpulsivitet eller hyperaktivitet. […] Følelsesmæssigt bliver Mads\nudadreagerende, når han er vred. Vreden udløses af naturlige\nårsager, men han kan ikke rumme vreden, og reaktionerne er\noverdrevne. […] Der ses ikke øvrige symptomer på angst, OCD,\ndepression eller psykose. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/MatterOfInterestInformer"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "63338442-7b2e-405b-acc0-142361ef19f1" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25c5c614-305f-46cd-9891-55d564fc30cf" ] ;
+       fhir:display [ fhir:v "Mentale funktioner" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Mads> ;
+     fhir:reference [ fhir:v "Patient/Mads" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-12-12T13:16:19-04:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://fhir.kl.dk/core/Practitioner/KristinaFraVoksensocialomraadet> ;
+     fhir:reference [ fhir:v "Practitioner/KristinaFraVoksensocialomraadet" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.\nseptember 20xx: Mads’ mor fortæller, at det altid har været nødvendigt at forberede\nMads i god tid, hvis der skulle ske noget ud over det sædvanlige.\nLigesom det har været nødvendigt at give tid til at omstille sig til at\nskulle stoppe med en aktivitet og gå i gang med en anden.\nHun fortæller, at Mads kan koncentrere sig og har tendens til at\nnørde, når han er særligt optaget af et emne, fx dinosaurer eller et\ncomputerspil. Når Mads er usikker eller synes, at noget er svært,\ner det en udfordring for ham at komme i gang og at fastholde sin\nopmærksomhed.\nHan tager ikke selv initiativ til at stå op, rydde op eller tage bad.\nDet skal han mindes om, og da han var mindre, havde han stor\nglæde af en liste over, hvad han skulle om morgenen, som hang\npå køleskabet. Han kan godt lide, når tingene forgår i en fast\nrækkefølge og er kendte. Mads’ mor kan også genkende Mads’\nbeskrivelse af, hvordan han får det, når han ikke kan overskue ting.\nHan kan godt få nogle meget voldsomme raseriudbrud og smadre\ndøre og møbler.\nJournal fra speciallæge XX, august 20xx: Obj.: Vågen og bevidsthedsklar. Ingen motorisk uro. Der ses tics i\nansigt og skulder, men ingen verbale tics. […] Svarer relevant på\nspørgsmål og virker åben og ærlig. […] Skønnes normalbegavet med\nen samlet IQ på 110. […] God formel kontakt. God øjenkontakt.\nNormal mimik og gestus.\nSub.: Mads har store eksekutive vanskeligheder. Han har svært ved\nskift og forandringer, har svært ved at afpasse tiden til aktiviteter.\nHan er rigid og afhængig af ydre struktur. […] I samvær med andre\ner der normale formelle kontaktevner, men Mads tager tingene\npersonligt og bogstaveligt. Forstår ironi og underforståethed,\nmen bliver ensporet ved mange stimuli. […] Der er lette problemer\nmed vedholdende opmærksomhed og afledning, men ingen\nimpulsivitet eller hyperaktivitet. […] Følelsesmæssigt bliver Mads\nudadreagerende, når han er vred. Vreden udløses af naturlige\nårsager, men han kan ikke rumme vreden, og reaktionerne er\noverdrevne. […] Der ses ikke øvrige symptomer på angst, OCD,\ndepression eller psykose." ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

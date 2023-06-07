@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="MarksPuls"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialObservation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="MarksPuls"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;MarksPuls&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialObservation.html">Observation</a></p></div><p><b>basedOn</b>: <a href="ServiceRequest-HenvisningFraLageVedrAkutSygepleje.html">ServiceRequest/HenvisningFraLageVedrAkutSygepleje</a></p><p><b>status</b>: final</p><p><b>code</b>: Pulse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#8499008)</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>effective</b>: 2020-06-21</p><p><b>performer</b>: <a href="Practitioner-AbrahamFraAkutSygeplejen.html">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 78 Slag pr. minut<span style="background: LightGoldenRodYellow"> (Details: UCUM code {beats}/min = '{beats}/min')</span></p></div>
+  </text>
+  <basedOn>
+    <reference value="ServiceRequest/HenvisningFraLageVedrAkutSygepleje"/>
+  </basedOn>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="8499008"/>
+      <display value="Pulse"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <effectiveDateTime value="2020-06-21"/>
+  <performer>
+    <reference value="Practitioner/AbrahamFraAkutSygeplejen"/>
+  </performer>
+  <valueQuantity>
+    <value value="78"/>
+    <unit value="Slag pr. minut"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{beats}/min"/>
+  </valueQuantity>
+</Observation>

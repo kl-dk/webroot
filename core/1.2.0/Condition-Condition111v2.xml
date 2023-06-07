@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="Condition111v2"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="Condition111v2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;Condition111v2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialCondition.html">Condition</a></p></div><p><b>ConditionLastAssertedDate</b>: 2020-12-17 10:09:27+0100</p><p><b>FollowupEncounter</b>: <a href="Encounter-Encounter333.html">Encounter/Encounter333</a></p><p><b>dueTo</b>: <a href="Condition-Condition444.html">Condition/Condition444</a></p><p><b>EventHist</b>: <a href="Provenance-ProvenanceCondition111.html">Provenance/ProvenanceCondition111</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Der er problemer med misbrug, særlig drikker borger øl og spiritus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html">FSIII</a>#I6.3 &quot;Problemer med misbrug&quot;; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#160590009 &quot;Drinks beer and hard liquor (finding)&quot;)</span></p><p><b>subject</b>: <a href="Patient-BorgerEjnar.html">Patient/BorgerEjnar</a> &quot; LAURIDSEN&quot;</p><p><b>recordedDate</b>: 2020-03-17 10:09:27+0100</p><p><b>asserter</b>: <a href="Practitioner-NatasjaFraSygeplejen.html">Practitioner/NatasjaFraSygeplejen</a> &quot; PETERSEN&quot;</p><h3>Evidences</h3><table class="grid"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href="Observation-Observation1234.html">Observation/Observation1234</a></td></tr></table><p><b>note</b>: Drikker mindre, der har været et overforbrug, men der er tilsyneladende ikke tale om afhængighed (By Practitioner/NatasjaFraSygeplejen @17 Dec 2020, 10.09.27)</p></div>
+  </text>
+  <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionLastAssertedDate">
+    <valueDateTime value="2020-12-17T10:09:27+01:00"/>
+  </extension>
+  <extension url="http://fhir.kl.dk/core/StructureDefinition/FollowUpEncounter">
+    <valueReference>
+      <reference value="Encounter/Encounter333"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/condition-dueTo">
+    <valueReference>
+      <reference value="Condition/Condition444"/>
+    </valueReference>
+  </extension>
+  <extension url="http://fhir.kl.dk/core/StructureDefinition/ExtEventHist">
+    <valueReference>
+      <reference value="Provenance/ProvenanceCondition111"/>
+    </valueReference>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.208.176.2.21"/>
+      <code value="I6.3"/>
+      <display value="Problemer med misbrug"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="160590009"/>
+      <display value="Drinks beer and hard liquor (finding)"/>
+    </coding>
+    <text value="Der er problemer med misbrug, særlig drikker borger øl og spiritus"/>
+  </code>
+  <subject>
+    <reference value="Patient/BorgerEjnar"/>
+  </subject>
+  <recordedDate value="2020-03-17T10:09:27+01:00"/>
+  <asserter>
+    <reference value="Practitioner/NatasjaFraSygeplejen"/>
+  </asserter>
+  <evidence>
+    <detail>
+      <reference value="Observation/Observation1234"/>
+    </detail>
+  </evidence>
+  <note>
+    <authorReference>
+      <reference value="Practitioner/NatasjaFraSygeplejen"/>
+    </authorReference>
+    <time value="2020-12-17T10:09:27+01:00"/>
+    <text value="Drikker mindre, der har været et overforbrug, men der er tilsyneladende ikke tale om afhængighed"/>
+  </note>
+</Condition>

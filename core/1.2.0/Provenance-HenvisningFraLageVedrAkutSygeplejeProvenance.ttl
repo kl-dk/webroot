@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/Provenance/HenvisningFraLageVedrAkutSygeplejeProvenance> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HenvisningFraLageVedrAkutSygeplejeProvenance"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"HenvisningFraLageVedrAkutSygeplejeProvenance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance &quot;HenvisningFraLageVedrAkutSygeplejeProvenance&quot; </p></div><p><b>target</b>: <a href=\"ServiceRequest-HenvisningFraLageVedrAkutSygepleje.html\">ServiceRequest/HenvisningFraLageVedrAkutSygepleje</a></p><p><b>recorded</b>: 21 Jun 2020, 15.56.24</p><p><b>reason</b>: treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html\">ActReason</a>#TREAT)</span></p><blockquote><p><b>agent</b></p><p><b>type</b>: Enterer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-provenance-participant-type.html\">Provenance participant type</a>#enterer)</span></p><p><b>who</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>onBehalfOf</b>: <a href=\"Organization-SundhedsforvaltningAalborg.html\">Organization/SundhedsforvaltningAalborg</a> &quot;Sundheds- og kulturforvaltningen, Aalborg Kommune&quot;</p></blockquote><blockquote><p><b>agent</b></p><p><b>type</b>: Legal Authenticator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-provenance-participant-type.html\">Provenance participant type</a>#legal)</span></p><p><b>who</b>: <a href=\"Organization-LaegerneHasserisBymidte.html\">Organization/LaegerneHasserisBymidte</a> &quot;Lægerne Hasseris Bymidte&quot;</p></blockquote></div>"
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://fhir.kl.dk/core/ServiceRequest/HenvisningFraLageVedrAkutSygepleje> ;
+     fhir:reference [ fhir:v "ServiceRequest/HenvisningFraLageVedrAkutSygepleje" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2020-06-21T15:56:24+02:00"^^xsd:dateTime] ; # 
+  fhir:reason ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TREAT" ]
+     ] )
+  ] ) ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "enterer" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://fhir.kl.dk/core/Practitioner/HanneFraVisitationenAalborg> ;
+       fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <http://fhir.kl.dk/core/Organization/SundhedsforvaltningAalborg> ;
+       fhir:reference [ fhir:v "Organization/SundhedsforvaltningAalborg" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "legal" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://fhir.kl.dk/core/Organization/LaegerneHasserisBymidte> ;
+       fhir:reference [ fhir:v "Organization/LaegerneHasserisBymidte" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

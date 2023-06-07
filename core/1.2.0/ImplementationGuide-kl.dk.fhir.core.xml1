@@ -1,0 +1,2334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="kl.dk.fhir.core"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>KLCore</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/core/ImplementationGuide/kl.dk.fhir.core</pre><div><p>Danish municipalities implementation guide for common informationmodel</p>
+</div></div>
+  </text>
+  <url value="http://fhir.kl.dk/core/ImplementationGuide/kl.dk.fhir.core"/>
+  <version value="1.2.0"/>
+  <name value="KLCore"/>
+  <title value="Implementation Guide for fælleskommunal informationsmodel"/>
+  <status value="draft"/>
+  <date value="2023-06-07T16:28:58+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Danish municipalities implementation guide for common informationmodel"/>
+  <packageId value="kl.dk.fhir.core"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="5.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_dk_core">
+    <uri value="https://hl7.dk/fhir/core"/>
+    <packageId value="hl7.fhir.dk.core"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="kl_dk_fhir_term">
+    <uri value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
+    <packageId value="kl.dk.fhir.term"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="CI Build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.kl.dk/core/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#current"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="CI Build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.kl.dk/core/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AbrahamFraAkutSygeplejen"/>
+      </reference>
+      <name value="AbrahamFraAkutSygeplejen"/>
+      <description value="Eksempel på medarbejderen Abraham fra akutsygeplejen"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/AkutSygeplejeMark"/>
+      </reference>
+      <name value="Akutsygepleje Mark"/>
+      <description value="Levering af indsats til Mark vedr. undersøgelser og måling af værdier efter henvisning fra læge vedr. akut sygepleje"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCompletedIntervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/AlmBotilbud"/>
+      </reference>
+      <name value="Almindeligt botilbus Sommergaarden"/>
+      <description value="Almindeligt længerevarende botilbud på Sommergaarden"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonServicePerformer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Andreas"/>
+      </reference>
+      <name value="Andreas"/>
+      <description value="Borger Andreas"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/NySocialIndsats"/>
+      </reference>
+      <name value="Andreas alment botilbud"/>
+      <description value="Andreas social indsats vedr. almen botilbud"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCarePlan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/AndreasDelmaal"/>
+      </reference>
+      <name value="Andreas Delmål"/>
+      <description value="Delmål for Andreas"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/AndreasIndsatsformaal"/>
+      </reference>
+      <name value="Andreas indsatsformål"/>
+      <description value="Indsatsformål for Andreas"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialPurpose"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/AndreasIndsatsformaal2"/>
+      </reference>
+      <name value="Andreas indsatsformål ifm ny indsats"/>
+      <description value="Indsatsformål for Andreas ifm. at han skifter fra midlertidig til almen botilbud"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialPurpose"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/Andreasindsatsmaal"/>
+      </reference>
+      <name value="Andreas indsatsmål"/>
+      <description value="Indsatsmål for Andreas"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFFBGoal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/FFBIndsats"/>
+      </reference>
+      <name value="Andreas midlertidigt ophold"/>
+      <description value="Andreas social indsats vedr. midlertidigt ophold"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCarePlan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/AndreasMaalOnsker"/>
+      </reference>
+      <name value="Andreas mål og ønsker"/>
+      <description value="Mål og ønsker for Andreas"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/AndreasMaalgruppeUdviklingshamning"/>
+      </reference>
+      <name value="Andreas målgruppe udviklingshæmning"/>
+      <description value="Andreas' målgruppe"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFocusCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionCareingForOwnHealthPerformerNoteFFB"/>
+      </reference>
+      <name value="Andreas notat varetage egen sundhed"/>
+      <description value="Andreas notat vedr. det at varetage egen sundhed, når tilstanden ikke er kendt"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/AndreasindsatsmaalOpfolgning"/>
+      </reference>
+      <name value="Andreas opfølgning på indsatsmål"/>
+      <description value="Indsatsmål for Andreas, som dokumenteret efter opfølgningstidspunktet (Tilstanden ikke opdateret, fordi implementation guiden ikke versionshåndterer)"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFFBGoal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionCleaning"/>
+      </reference>
+      <name value="Andreas rengøring"/>
+      <description value="Borgeren Andreas der har udfordringer med rengøring"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionCleaningWithNote"/>
+      </reference>
+      <name value="Andreas rengøring med notat"/>
+      <description value="Borgeren Andreas der har udfordringer med rengøring, og en udfører fra Hvidbjerghus, der laver et notat"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AndreasRevisitation"/>
+      </reference>
+      <name value="Andreas Revisitation"/>
+      <description value="Eksempel på opfølgningsresultatet revisitation"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFollowUp"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AndreasStottebehov"/>
+      </reference>
+      <name value="Andreas støttebehov"/>
+      <description value="Visitationen vurderer at Andreas har et højt støttebehov"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEvaluation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/AndreasMor"/>
+      </reference>
+      <name value="Andreas' Mor, Gitte Hansen"/>
+      <description value="Eksempel på pårørende Andreas' mor Gitte"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/AndreasDagligeOpgaver"/>
+      </reference>
+      <name value="AndreasDagligeOpgaver"/>
+      <description value="Andreas' ydelse daglige opgaver"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialPlannedIntervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/AndreasSocialeRelationer"/>
+      </reference>
+      <name value="AndreasSocialeRelationer"/>
+      <description value="Andreas' ydelse sociale relationer"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialPlannedIntervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AnneFraHvidbjerghus"/>
+      </reference>
+      <name value="AnneFraHvidbjerghus"/>
+      <description value="Eksempel på medarbejderen Anne fra botilbudet Hvidbjerghus"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BasedOnServiceRequest"/>
+      </reference>
+      <name value="BasedOnServiceRequest"/>
+      <description value="A reference to a ServiceRequest. Used to connect an event resource with the order that warranted it"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/BirteFraVisitationenMorsoe"/>
+      </reference>
+      <name value="BirteFraVisitationenMorsø"/>
+      <description value="Eksempel på medarbejderen Birte fra visitationen i Morsø"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/BorgerEjnar"/>
+      </reference>
+      <name value="BorgerEjnar"/>
+      <description value="Borgeren Ejnar"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/BotilbudetHvidbjerghus"/>
+      </reference>
+      <name value="Botilbudet Hvidbjerghus"/>
+      <description value="Botilbudet Hvidbjerghus som defineret af https://findsocialetilbud.dk/sociale-tilbud/botilbuddet-hvidbjerghus, og SOR"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonOrganization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/BotilbudetSommergaarden"/>
+      </reference>
+      <name value="Botilbudet Sommergaarden"/>
+      <description value="Botilbudet Sommergaarden, som er et fiktivt eksempel"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonOrganization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialCarePlan"/>
+      </reference>
+      <name value="CarePlan"/>
+      <description value="Overall CarePlan for Danish municipalities, for individual plans regarding social care, and health act §140 and §119"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCitizen"/>
+      </reference>
+      <name value="Citizen"/>
+      <description value="Citizen demographics, as expressed by dk-core"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialCitizensOwnObservation"/>
+      </reference>
+      <name value="CitizensOwnObservation"/>
+      <description value="Citizens own observation of performance level (udførelse) or importance level (betydning) as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialCompletedIntervention"/>
+      </reference>
+      <name value="CompletedIntervention"/>
+      <description value="Documentation for completed inteventions (activities related to one and only one encounter) in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialCondition"/>
+      </reference>
+      <name value="Condition"/>
+      <description value="Detailed information about conditions in Danish municiplities health, social and elderly care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConditionLastAssertedDate"/>
+      </reference>
+      <name value="ConditionLastAssertedDate"/>
+      <description value="Extension for the last date a condition was confirmed valid with its current clinical- and verification status, stage and severity, typically the last performed follow-up"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionPressureUlcer"/>
+      </reference>
+      <name value="ConditionPressureUlcer"/>
+      <description value="Example of the citizen, Mark, who has a pressure ulcer"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConditionRank"/>
+      </reference>
+      <name value="ConditionRank"/>
+      <description value="The rank of a condition. Used for event-resources that refer to conditions that are ranked."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation22"/>
+      </reference>
+      <name value="EjnarOpfølgningsresultat"/>
+      <description value="Ejner opfølgningsresultat"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFollowUp"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Condition111"/>
+      </reference>
+      <name value="EjnarProblemerMedMisbrug"/>
+      <description value="Ejnars tilstand:Problemer med misbrug"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Condition111v2"/>
+      </reference>
+      <name value="EjnarProblemerMedMisbrugV2"/>
+      <description value="Opdatering til version 2 af Ejnars tilstand:Problemer med misbrug"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Condition111v3"/>
+      </reference>
+      <name value="EjnarProblemerMedMisbrugV3"/>
+      <description value="Opdatering til version 3 af Ejnars tilstand:Problemer med misbrug, hvor tilstanden afsluttes"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation1234"/>
+      </reference>
+      <name value="EjnarPsykosociale"/>
+      <description value="Notat vedr. psykosociale forhold, som beskrevet af hjemmesygeplejen ifm sygeplejefaglig udredning"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter333v2"/>
+      </reference>
+      <name value="EjnarsOpfølgning"/>
+      <description value="Ejnars udførte opfølgning, der er en opdatering af Ejnars planlagte opfølgning"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEncounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Condition444"/>
+      </reference>
+      <name value="EjnarSorg"/>
+      <description value="Ejnar er i sorg pga. ægtefælles død. Dette anvendes i eksemplet som bagvedliggende årsag til misbrug"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFocusCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter333"/>
+      </reference>
+      <name value="EjnarsPlanlagteOpfølgning"/>
+      <description value="Ejnars planlagte opfølgning"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEncounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialEncounter"/>
+      </reference>
+      <name value="Encounter"/>
+      <description value="Encounters used for care and social services in Danish municipalities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialEvaluation"/>
+      </reference>
+      <name value="Evaluation"/>
+      <description value="Professional evaluation on citizen status based on gathered information, conditions, observations and citizen preferences used in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtEventHist"/>
+      </reference>
+      <name value="EventHist"/>
+      <description value="Event history, pointing to earlier significant versions of this resource. Comparable to http://hl7.org/fhir/StructureDefinition/event-eventHistory, working for Conditions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialFocusCondition"/>
+      </reference>
+      <name value="FocusCondition"/>
+      <description value="Conditions which may be used to express the focus of an intervention or the problem of a citizen in Danish municipalities. Mostly used for cross sector use cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialFollowUp"/>
+      </reference>
+      <name value="FollowUp"/>
+      <description value="Follow-up results used in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FollowUpEncounter"/>
+      </reference>
+      <name value="FollowupEncounter"/>
+      <description value="Extension for pointing to previous and planned follow up encounters for a condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialGoal"/>
+      </reference>
+      <name value="Goal"/>
+      <description value="Goal as defined in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialFFBGoal"/>
+      </reference>
+      <name value="Goal - FFB Intervention"/>
+      <description value="FFB goal as defined by FFB in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialPurpose"/>
+      </reference>
+      <name value="Goal - Purpose"/>
+      <description value="Purpose as defined by FFB in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/HanneFraVisitationenAalborg"/>
+      </reference>
+      <name value="HanneFraVisitationenAalborg"/>
+      <description value="Eksempel på medarbejderen Hanne fra visitationen i Aalborg"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/HenvendelseFraMorVedrSocialIndsats"/>
+      </reference>
+      <name value="Henvendelse mor social indsats"/>
+      <description value="Henvendelse fra mor vedr. social indsats"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/HenvendelseVedrSygeplejeMark"/>
+      </reference>
+      <name value="Henvendelse vedr hjemmesygepleje"/>
+      <description value="Henvisning fra læge vedr. akut sygepleje"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/HenvisningFraLageVedrAkutSygepleje"/>
+      </reference>
+      <name value="Henvisning læge akut sygepleje"/>
+      <description value="Henvisning fra læge vedr. akut sygepleje"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HjemmesygeplejeSonderborg"/>
+      </reference>
+      <name value="Hjemmesygepleje sønderborg"/>
+      <description value="Hjemmesygepleje – visitation –hjemmehjælp i Sønderborg kommune som defineret af SOR"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonOrganization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SkinInformationMark"/>
+      </reference>
+      <name value="Hud og slimhinder Mark"/>
+      <description value="Områdenotat vedr. hud og slimhinder for Mark"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialInformationGathering"/>
+      </reference>
+      <name value="InformationGathering"/>
+      <description value="Information gathering resource used to group all the information collected in a clinical process such af a nursing status, a functional ability evaluation or a social paedagogical review"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/InternHenvendelseEfterOpfolgning"/>
+      </reference>
+      <name value="Intern henvendelse efter opfølgning"/>
+      <description value="Intern henvisning i hjemmeplejen, efter en opfølgning der viste behov for revisitation"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Judith"/>
+      </reference>
+      <name value="Judith"/>
+      <description value="Borger Judith"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/JudithDiabetes"/>
+      </reference>
+      <name value="Judith diabetes"/>
+      <description value="En diagnose som registreret i kommunen, hvor Hanne fra Aalborg har registreret informationen fra lægen Marianne, som fx kunne komme fra diabetescenteret på hospitalet"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFocusCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/JudithForventetTilstand"/>
+      </reference>
+      <name value="Judith forventet tilstand"/>
+      <description value="Forventet tilstand for Judith, der har et mobilitetsproblem"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionWalking"/>
+      </reference>
+      <name value="Judith Gå"/>
+      <description value="Borgeren judith der har udfordringer med at gå"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/JudithGaa"/>
+      </reference>
+      <name value="Judith Gå Egenvurdering"/>
+      <description value="Judiths vurdering af egen evne til at gå"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCitizensOwnObservation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLImportanceLevelCodesFSIII"/>
+      </reference>
+      <name value="KLBetydningKoderFSIII"/>
+      <description value="Importance level codes (Betydning), as evaluated by the citizen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConsentToLiasing"/>
+      </reference>
+      <name value="KLBorgerIndforståetMedHenvendelseKoder"/>
+      <description value="Codes for citizens knowledge of referal/request as defined by FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLCitizenObservationCodesFSIII"/>
+      </reference>
+      <name value="KLBorgervurderingsObservationskoderFSIII"/>
+      <description value="Observation codes for citizens own observations as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLCitizenObservationResultCodesFSIII"/>
+      </reference>
+      <name value="KLBorgervurderingsResultatkoderFSIII"/>
+      <description value="Performance and Importance level codes, as evaluated by the citizen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLPreventionInterventionsFSIII"/>
+      </reference>
+      <name value="KLForebyggelseIndsatserFSIII"/>
+      <description value="Prevention and health promotion interventions as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLPreventionAreasFSIII"/>
+      </reference>
+      <name value="KLForebyggelseOmråderFSIII"/>
+      <description value="Prevention areas (observation codes), used for documentation within prevention and health promotion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLSeveritiesFFB"/>
+      </reference>
+      <name value="KLFunktionsevneniveauFFB"/>
+      <description value="Severities related to conditions in FFB (funktionsevneniveau)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLSeveritiesFSIII"/>
+      </reference>
+      <name value="KLFunktionsevneniveauFSIII"/>
+      <description value="Severities related to conditions in FSIII home care (funktionsniveau)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLGeneralInformationFSIII"/>
+      </reference>
+      <name value="KLGenerelInformationFSIII"/>
+      <description value="Generel information codes (observations) as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLRequestFromFSIII"/>
+      </reference>
+      <name value="KLHenvendelseHenvisningFraFSIII"/>
+      <description value="Type of service requesters as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLHomeCareInterventionsFSIII"/>
+      </reference>
+      <name value="KLHjemmeplejeIndsatserFSIII"/>
+      <description value="Home Care Interventions as described by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLHomeCareAreasFSIII"/>
+      </reference>
+      <name value="KLHjemmeplejeOmråderFSIII"/>
+      <description value="Observation codes for the five home care areas as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLInterventions"/>
+      </reference>
+      <name value="KLIndsatser"/>
+      <description value="Interventions as described by FSIII and FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLInterventionsFSIII"/>
+      </reference>
+      <name value="KLIndsatserFSIII"/>
+      <description value="Interventions as described by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLCarePlanCategoryCodes"/>
+      </reference>
+      <name value="KLIndsatsforløbTypekoder"/>
+      <description value="Codes for constraining the CarePlan category"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLMatterOfInterestInformerFFB"/>
+      </reference>
+      <name value="KLKildeTilOplysningFFB"/>
+      <description value="Codes that identify who's perspective the matter-of-interest is comming from"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLComplicationCodesSCT"/>
+      </reference>
+      <name value="KLKomplikationskoderSCT"/>
+      <description value="Codes that indicate whether an intervention had complications or not"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLEncounterTypes"/>
+      </reference>
+      <name value="KLKontaktTyper"/>
+      <description value="Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLTargetGroupsFFB"/>
+      </reference>
+      <name value="KLMålgrupperFFB"/>
+      <description value="Target groups as defined by FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLGoalTypeCodes"/>
+      </reference>
+      <name value="KLMålKategoriKoder"/>
+      <description value="Codes used to distinguish different kinds of goals"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLChangeValueCodes"/>
+      </reference>
+      <name value="KLMåltypeKoder"/>
+      <description value="Change values for goals (måltype). Express the target value for change of a condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLChangeValueCodesFFB"/>
+      </reference>
+      <name value="KLMåltypekoderFFB"/>
+      <description value="Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLChangeValueCodesFSIII"/>
+      </reference>
+      <name value="KLMåltypeKoderFSIII"/>
+      <description value="Change values for goals in FSIII (FSIII måltype). Express the target value for change of a health condition or funtional condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLObservationCodes"/>
+      </reference>
+      <name value="KLObservationskoder"/>
+      <description value="SNOMED CT and NPU codes used in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLFollowUpCodesFFB"/>
+      </reference>
+      <name value="KLOpfølgningKoderFFB"/>
+      <description value="Follow-up codes used in FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLFollowUpCodesFSIII"/>
+      </reference>
+      <name value="KLOpfølgningKoderFSIII"/>
+      <description value="Follow-up codes used in FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLFollowUpCodes"/>
+      </reference>
+      <name value="KLOpfølgningKodes"/>
+      <description value="Follow-up codes used in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLMatterOfInterestValues"/>
+      </reference>
+      <name value="KLOplysningKoder"/>
+      <description value="Matter of interes values to support when no observations have been made"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLInformationCodes"/>
+      </reference>
+      <name value="KLOplysningKoder"/>
+      <description value="Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLInformationGatheringInvestigationCodes"/>
+      </reference>
+      <name value="KLOplysningsaktivitetsOgVurderingskoder"/>
+      <description value="Codes that identify valid items in an investigation in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLInformationGatheringTypeCodes"/>
+      </reference>
+      <name value="KLOplysningsaktivitetsTypeKoder"/>
+      <description value="Codes used to specify which kind of information gathering is conducted"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLServicesTypes"/>
+      </reference>
+      <name value="KLServiceTyper"/>
+      <description value="Types of services that the Danish municipalities provide which is covered by FSIII and FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLNeedsAssessmentCodesFFB"/>
+      </reference>
+      <name value="KLStøttebehovsvurderingskoderFFB"/>
+      <description value="Needs assesment codes as defined in FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLSeverities"/>
+      </reference>
+      <name value="KLSværhedgrader"/>
+      <description value="Severities related to conditions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLNursingInterventionsFSIII"/>
+      </reference>
+      <name value="KLSygeplejeIndsatserFSIII"/>
+      <description value="Nursing interventions as described by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLNursingAreasFSIII"/>
+      </reference>
+      <name value="KLSygeplejeOmråderFSIII"/>
+      <description value="Observation codes for the 12 nursing areas as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLThemesFFB"/>
+      </reference>
+      <name value="KLTemaerFFB"/>
+      <description value="FFB Themes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLServiceCodesFFB"/>
+      </reference>
+      <name value="KLTilbudsKoderFFB"/>
+      <description value="Social service (tilbud) as defined by FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionADCodesFFB"/>
+      </reference>
+      <name value="KLTilstandADKoderFFB"/>
+      <description value="Danish municipality FFB condition codes for Activities and Participation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodesHomeCare"/>
+      </reference>
+      <name value="KLTilstandeKoderHjemmepleje"/>
+      <description value="Danish municipality home care condition codes (funktionsevnetilstande)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodesNursing"/>
+      </reference>
+      <name value="KLTilstandeKoderSygepleje"/>
+      <description value="Danish municipality nursing condition codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionsAndTargetGroupsFFB"/>
+      </reference>
+      <name value="KLTilstandeOgMålgrupperFFB"/>
+      <description value="Conditions and target groups as defined by FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionFFCodesFFB"/>
+      </reference>
+      <name value="KLTilstandFFKoderFFB"/>
+      <description value="Danish municipality FFB condition codes for body functions and structures"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodes"/>
+      </reference>
+      <name value="KLTilstandKoder"/>
+      <description value="Danish municipality condition codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodesFFB"/>
+      </reference>
+      <name value="KLTilstandKoderFFB"/>
+      <description value="Danish municipality FFB condition codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodesPrevention"/>
+      </reference>
+      <name value="KLTilstandKoderForebyggelse"/>
+      <description value="Danish municipality Prevention condition codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodesFSIII"/>
+      </reference>
+      <name value="KLTilstandKoderFSIII"/>
+      <description value="Danish municipality FSIII condition codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodesTheraphy"/>
+      </reference>
+      <name value="KLTilstandKoderTræning"/>
+      <description value="Danish municipality theraphy condition codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionOCodesFFB"/>
+      </reference>
+      <name value="KLTilstandOKoderFFB"/>
+      <description value="Danish municipality FFB condition codes for Environmental Factors"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLTrainingInterventionsFSIII"/>
+      </reference>
+      <name value="KLTræningIndsatserFSIII"/>
+      <description value="Training interventions as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLTheraphyAreasFSIII"/>
+      </reference>
+      <name value="KLTræningOmråderFSIII"/>
+      <description value="Theraphy areas (observation codes), used for documentation within physical training, physiotheraphy and occupational theraphy in Danish Municipalities as defined by FSIII"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLTargetMeasureCodes"/>
+      </reference>
+      <name value="KLTypeAfObservationPåMål"/>
+      <description value="Target measure code, that determines whether the target is expressed as a severity, change value or using another observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLPerformanceLevelCodesFSIII"/>
+      </reference>
+      <name value="KLUdførelsesKoderFSIII"/>
+      <description value="Performance level codes (Udførelse), as evaluated by the citizen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLEvaluationTypeCodes"/>
+      </reference>
+      <name value="KLVurderingTypekoder"/>
+      <description value="Codes used to distinguish different kinds of evaluations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLEvaluationTypeCodesSCT"/>
+      </reference>
+      <name value="KLVurderingTypekoderSCT"/>
+      <description value="SNOMED CT codes used to distinguish different kinds of evaluations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLInterventionsFFB"/>
+      </reference>
+      <name value="KLYdelserFFB"/>
+      <description value="social interventions (ydelser) as defined by FFB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/KristinaFraVoksensocialomraadet"/>
+      </reference>
+      <name value="KristinaFraVoksensocialområdet"/>
+      <description value="Eksempel på medarbejderen Kristina fra Voksensocialområdet i Holstebro"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/LaegerneHasserisBymidte"/>
+      </reference>
+      <name value="LaegerneHasserisBymidte"/>
+      <description value="Praktisernede læge i Hasseris, som defineret af SOR"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonOrganization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Mads"/>
+      </reference>
+      <name value="Mads"/>
+      <description value="Borger Mads"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/MarianneLaege"/>
+      </reference>
+      <name value="MarianneLæge"/>
+      <description value="Eksempel på læge Marianne"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Mark"/>
+      </reference>
+      <name value="Mark"/>
+      <description value="Borger Mark"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/MarkForventetTilstand"/>
+      </reference>
+      <name value="Mark forventet tilstand"/>
+      <description value="Forventet tilstand for Mark, der har et tryksårsproblem"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MarkHelhedsvurdering"/>
+      </reference>
+      <name value="Mark helhedsvurdering"/>
+      <description value="Eksempel på Marks helhedvurdering, som er opdateret efter der er lavet en sygeplejefaglig udredning"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEvaluation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/MarkIndsatsmaal"/>
+      </reference>
+      <name value="Mark indsatsmål"/>
+      <description value="FSIII indsatsmål for Mark, der har et tryksårsproblem"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialGoal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/MarkOgAkutsygeplejerske"/>
+      </reference>
+      <name value="Mark og Akutsygeplejerske"/>
+      <description value="Kontakt hvor der leveres en akutindsats til Mark"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEncounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/MarkogSaarsygeplejerske"/>
+      </reference>
+      <name value="Mark og sårsygepleje"/>
+      <description value="Kontakt hvor der leveres en sårbehandling til Mark efter planen"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEncounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/MarkogUdredningSygepleje"/>
+      </reference>
+      <name value="Mark og udredningSygepleje"/>
+      <description value="Kontakt hvor der udføres en sygeplejefaglig udredning på Mark"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEncounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/MarkFollowUpPlanned"/>
+      </reference>
+      <name value="Mark Opfølgning Planlagt"/>
+      <description value="Mark's planlagte opfølgning, med periode.start fremtidigt"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialEncounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalImpression"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalImpression/NursingStatusMark"/>
+      </reference>
+      <name value="Mark sygeplejefaglig udredning"/>
+      <description value="Borgeren Marks sygeplejefaglige udredning"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialInformationGathering"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MarksBlodsukker"/>
+      </reference>
+      <name value="Marks blodsukker"/>
+      <description value="Observation af Marks blodsukker"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialObservation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MarksDiastoliske"/>
+      </reference>
+      <name value="Marks diastoliske blodtryk"/>
+      <description value="Observation af Marks diastoliske blodtryk (OBS: Mere specifik profil for blodtryk findes i værktøjsprojektet, dette er udelukkende et eksempel for denne implememnattion guide)"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialObservation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MarkHjemmeplejeRevisitation"/>
+      </reference>
+      <name value="Marks Hjemmepleje Revisitation"/>
+      <description value="Eksempel på opfølgningsresultatet revisitation"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialFollowUp"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MarksPuls"/>
+      </reference>
+      <name value="Marks puls"/>
+      <description value="Observation af Marks puls (OBS: Mere specifik profil for puls findes i værktøjsprojektet, dette er udelukkende et eksempel,  dette er udelukkende et eksempel for denne implememnattion guide)"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialObservation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/PressureUlcerIntervention"/>
+      </reference>
+      <name value="MarkTryksårsindsats"/>
+      <description value="Mark's planlagte tryksårsindsats, med én tilknyttet kontakt"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialPlannedIntervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialMatterOfInterest"/>
+      </reference>
+      <name value="MatterOfInterest"/>
+      <description value="Matter or area of interest in relation to the care of the citizen, as used in Danish municipalities (Oplysning/Område/Tema)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MatterOfInterestInformer"/>
+      </reference>
+      <name value="MatterOfInterestInformer"/>
+      <description value="Extension for pointing to who's perspective the matter-of-interest is comming from"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MentalInformationMadsOthers"/>
+      </reference>
+      <name value="Mentale funktioner Mads, andres perspektiv"/>
+      <description value="Mads' mentale funktioner, med perspektivet, at det er oplysninger af andre"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MentalInformationMads"/>
+      </reference>
+      <name value="Mentale funktioner Mads, borgerperspektiv"/>
+      <description value="Mads' mentale funktioner, med perspektivet, at det er oplysninger fra borger"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/MidlertidigtOpholdBotilbuddetHvidbjerghus"/>
+      </reference>
+      <name value="Midlertidigt ophold Botilbuddet Hvidbjerghus"/>
+      <description value="Midlertidigt ophold efter servicelovens §107 på Hvidhjerghus"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonServicePerformer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MobilityInformationJudith"/>
+      </reference>
+      <name value="Mobilitet Judith"/>
+      <description value="Områdenotat vedr. Judiths mobilitet"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MunicipalityCaseNumber"/>
+      </reference>
+      <name value="MunicipalityCasenumber"/>
+      <description value="Extension for municipality case numbers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/NatasjaFraSygeplejen"/>
+      </reference>
+      <name value="NatasjaFraSygeplejen"/>
+      <description value="Eksempel på medarbejderen Natasja fra sygeplejen"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonPractitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialObservation"/>
+      </reference>
+      <name value="Observation"/>
+      <description value="Observations and measurements performed in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonOrganization"/>
+      </reference>
+      <name value="Organization"/>
+      <description value="Organisation as expressed by Danish municipalities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialPlannedIntervention"/>
+      </reference>
+      <name value="PlannedIntervention"/>
+      <description value="Planned interventions (indsats/ydelse) in Danish Municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonPractitioner"/>
+      </reference>
+      <name value="Practioner"/>
+      <description value="Practitioners as expressed by dk-core."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/InternHenvendelseEfterOpfolgningProvenance"/>
+      </reference>
+      <name value="Provenance til InternHenvendelseEfterOpfølgning"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/HenvendelseFraMorVedrSocialIndsatsProvenance"/>
+      </reference>
+      <name value="Provenance, henvendelse mor social indsats"/>
+      <description value="Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvendelse fra mor vedr. social indsats"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/HenvisningFraLageVedrAkutSygeplejeProvenance"/>
+      </reference>
+      <name value="Provenance, henvisning læge akut sygepleje"/>
+      <description value="Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvisning fra læge vedr. akut sygepleje"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/ProvenanceCondition111"/>
+      </reference>
+      <name value="ProvenanceCondition111"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/ProvenanceCondition111v2"/>
+      </reference>
+      <name value="ProvenanceCondition111v2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/ProvenanceCondition111v3"/>
+      </reference>
+      <name value="ProvenanceCondition111v3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RequesterType"/>
+      </reference>
+      <name value="RequesterType"/>
+      <description value="Extension for pointing to type of organisation/person that requests a service from the municipality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RespirationCirculationInformationMark"/>
+      </reference>
+      <name value="Respiration og cirkulation Mark"/>
+      <description value="Områdenotat vedr. respiration og cirkulation for Mark"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialMatterOfInterest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonServicePerformer"/>
+      </reference>
+      <name value="ServicePerformer"/>
+      <description value="Service performing CareTeam as expressed by Danish municipalities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLCommonCareSocialServiceRequest"/>
+      </reference>
+      <name value="ServiceRequest"/>
+      <description value="Referals/requests used in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SocialOgSundhedMorsoe"/>
+      </reference>
+      <name value="Social og sundhed Morsø"/>
+      <description value="Social og Sundhed, Morsø Kommune, som defineret af SOR"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonOrganization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SubjectConsentToLiaising"/>
+      </reference>
+      <name value="SubjectConsentToLiaising"/>
+      <description value="Extension for describing whether the citizen knows about the request/referal"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SundhedsforvaltningAalborg"/>
+      </reference>
+      <name value="Sundhedsforvaltning Aalborg"/>
+      <description value="Sundheds- og kulturforvaltningen, Aalborg Kommune, som defineret af SOR"/>
+      <exampleCanonical value="http://fhir.kl.dk/core/StructureDefinition/KLCommonOrganization"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

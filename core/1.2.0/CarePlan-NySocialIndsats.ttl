@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/core/CarePlan/NySocialIndsats> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NySocialIndsats"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCarePlan"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialCarePlan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"NySocialIndsats\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;NySocialIndsats&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialCarePlan.html\">CarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: Social indsats <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#4a297733-4d66-4726-a933-590d55cf91e0)</span></p><p><b>description</b>: Andreas plan for alment botilbud omfatter socialpædagogiske tiltag, med fokus på at klare sig selv i hverdagsaktiviteter, og opbygge relationer til personale og de andre beboere.</p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>created</b>: 2020-08-12</p><p><b>careTeam</b>: <a href=\"CareTeam-AlmBotilbud.html\">CareTeam/AlmBotilbud</a></p><p><b>addresses</b>: <a href=\"Condition-AndreasMaalgruppeUdviklingshamning.html\">Condition/AndreasMaalgruppeUdviklingshamning</a></p><p><b>goal</b>: <a href=\"Goal-AndreasIndsatsformaal2.html\">Goal/AndreasIndsatsformaal2</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4a297733-4d66-4726-a933-590d55cf91e0" ] ;
+       fhir:display [ fhir:v "Social indsats" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Andreas plan for alment botilbud omfatter socialpædagogiske tiltag, med fokus på at klare sig selv i hverdagsaktiviteter, og opbygge relationer til personale og de andre beboere."] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/core/Patient/Andreas> ;
+     fhir:reference [ fhir:v "Patient/Andreas" ]
+  ] ; # 
+  fhir:created [ fhir:v "2020-08-12"^^xsd:date] ; # 
+  fhir:careTeam ( [
+     fhir:link <http://fhir.kl.dk/core/CareTeam/AlmBotilbud> ;
+     fhir:reference [ fhir:v "CareTeam/AlmBotilbud" ]
+  ] ) ; # 
+  fhir:addresses ( [
+     fhir:link <http://fhir.kl.dk/core/Condition/AndreasMaalgruppeUdviklingshamning> ;
+     fhir:reference [ fhir:v "Condition/AndreasMaalgruppeUdviklingshamning" ]
+  ] ) ; # 
+  fhir:goal ( [
+     fhir:link <http://fhir.kl.dk/core/Goal/AndreasIndsatsformaal2> ;
+     fhir:reference [ fhir:v "Goal/AndreasIndsatsformaal2" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

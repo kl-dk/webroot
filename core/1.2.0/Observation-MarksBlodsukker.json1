@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "MarksBlodsukker",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialObservation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MarksBlodsukker\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MarksBlodsukker&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialObservation.html\">Observation</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-HenvisningFraLageVedrAkutSygepleje.html\">ServiceRequest/HenvisningFraLageVedrAkutSygepleje</a></p><p><b>status</b>: final</p><p><b>code</b>: Blood glucose concentration <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#434912009; <a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-NPU.html\">NPU</a>#NPU02195)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>effective</b>: 2020-06-21</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamFraAkutSygeplejen.html\">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 3.6 mmol/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mmol/L = 'mmol/L')</span></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/HenvisningFraLageVedrAkutSygepleje"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "434912009"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.1",
+      "code" : "NPU02195"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Mark"
+  },
+  "effectiveDateTime" : "2020-06-21",
+  "performer" : [{
+    "reference" : "Practitioner/AbrahamFraAkutSygeplejen"
+  }],
+  "valueQuantity" : {
+    "value" : 3.6,
+    "unit" : "mmol/l",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mmol/L"
+  }
+}
