@@ -1,0 +1,158 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "klgateway",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RestServer</h2><div><p>The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG).</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Bundle</td><td><a href=\"http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report\">http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>OperationDefinition</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/OperationDefinition\">http://hl7.org/fhir/StructureDefinition/OperationDefinition</a></td><td>y</td><td></td><td></td><td></td><td></td></tr></table></div>"
+  },
+  "url" : "http://fhir.kl.dk/gateway/CapabilityStatement/klgateway",
+  "version" : "1.1.0",
+  "name" : "RestServer",
+  "status" : "active",
+  "date" : "2023-06-08T00:29:49.294+02:00",
+  "publisher" : "KL",
+  "contact" : [{
+    "name" : "KL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.kl.dk"
+    }]
+  }],
+  "description" : "The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "kind" : "instance",
+  "software" : {
+    "name" : "Trifork Gateway FHIR Server",
+    "version" : "6.2.5"
+  },
+  "implementation" : {
+    "description" : "Trifork Gateway FHIR Server"
+  },
+  "fhirVersion" : "4.0.1",
+  "format" : ["application/fhir+xml",
+  "xml",
+  "application/fhir+json",
+  "json",
+  "application/x-turtle",
+  "ttl"],
+  "rest" : [{
+    "mode" : "server",
+    "resource" : [{
+      "type" : "Bundle",
+      "profile" : "http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report",
+      "interaction" : [{
+        "code" : "search-type"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "read"
+      }],
+      "searchInclude" : ["*",
+      "Bundle:composition",
+      "Bundle:message"],
+      "searchRevInclude" : ["Bundle:composition",
+      "Bundle:message"],
+      "searchParam" : [{
+        "name" : "_content",
+        "type" : "string",
+        "documentation" : "Search the contents of the resource's data using a fulltext search"
+      },
+      {
+        "name" : "_filter",
+        "type" : "string",
+        "documentation" : "Search the contents of the resource's data using a filter"
+      },
+      {
+        "name" : "_has",
+        "type" : "string",
+        "documentation" : "Return resources linked to by the given target"
+      },
+      {
+        "name" : "_id",
+        "type" : "token",
+        "documentation" : "The ID of the resource"
+      },
+      {
+        "name" : "_language",
+        "type" : "string",
+        "documentation" : "The language of the resource"
+      },
+      {
+        "name" : "_lastUpdated",
+        "type" : "date",
+        "documentation" : "Only return resources which were last updated as specified by the given range"
+      },
+      {
+        "name" : "_profile",
+        "type" : "uri",
+        "documentation" : "Search for resources which have the given profile"
+      },
+      {
+        "name" : "_security",
+        "type" : "token",
+        "documentation" : "Search for resources which have the given security labels"
+      },
+      {
+        "name" : "_source",
+        "type" : "uri",
+        "documentation" : "Search for resources which have the given source value (Resource.meta.source)"
+      },
+      {
+        "name" : "_tag",
+        "type" : "token",
+        "documentation" : "Search for resources which have the given tag"
+      },
+      {
+        "name" : "_text",
+        "type" : "string",
+        "documentation" : "Search the contents of the resource's narrative using a fulltext search"
+      },
+      {
+        "name" : "composition",
+        "type" : "reference",
+        "documentation" : "The first resource in the bundle, if the bundle type is \"document\" - this is a composition, and this parameter provides access to search its contents"
+      },
+      {
+        "name" : "identifier",
+        "type" : "token",
+        "documentation" : "Persistent identifier for the bundle"
+      },
+      {
+        "name" : "message",
+        "type" : "reference",
+        "documentation" : "The first resource in the bundle, if the bundle type is \"message\" - this is a message header, and this parameter provides access to search its contents"
+      },
+      {
+        "name" : "timestamp",
+        "type" : "date",
+        "documentation" : "When the bundle was assembled"
+      },
+      {
+        "name" : "type",
+        "type" : "token",
+        "documentation" : "document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection"
+      }]
+    },
+    {
+      "type" : "OperationDefinition",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction" : [{
+        "code" : "read"
+      }],
+      "searchInclude" : ["*"],
+      "searchRevInclude" : ["Bundle:composition",
+      "Bundle:message"]
+    }]
+  }]
+}

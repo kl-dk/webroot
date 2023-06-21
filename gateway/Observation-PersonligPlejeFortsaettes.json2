@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Observation",
+  "id" : "PersonligPlejeFortsaettes",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"PersonligPlejeFortsaettes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;PersonligPlejeFortsaettes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-follow-up-observation.html\">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Patient/TestPerson</a></p><p><b>focus</b>: <a href=\"Condition-ProblemerMedPersonligPleje.html\">Condition/ProblemerMedPersonligPleje</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#E1)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "712744002"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/TestPerson"
+  },
+  "focus" : [{
+    "reference" : "Condition/ProblemerMedPersonligPleje"
+  }],
+  "effectiveDateTime" : "2020-08-14",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "E1"
+    }]
+  }
+}

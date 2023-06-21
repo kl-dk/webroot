@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="klgateway"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RestServer</h2><div><p>The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG).</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET past versions of resources (vread interaction)">V-Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Bundle</td><td><a href="http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report">http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>OperationDefinition</td><td><a href="http://hl7.org/fhir/StructureDefinition/OperationDefinition">http://hl7.org/fhir/StructureDefinition/OperationDefinition</a></td><td>y</td><td></td><td></td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="http://fhir.kl.dk/gateway/CapabilityStatement/klgateway"/>
+  <version value="1.1.0"/>
+  <name value="RestServer"/>
+  <status value="active"/>
+  <date value="2023-06-08T00:29:49.294+02:00"/>
+  <publisher value="KL"/>
+  <contact>
+    <name value="KL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <kind value="instance"/>
+  <software>
+    <name value="Trifork Gateway FHIR Server"/>
+    <version value="6.2.5"/>
+  </software>
+  <implementation>
+    <description value="Trifork Gateway FHIR Server"/>
+  </implementation>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="xml"/>
+  <format value="application/fhir+json"/>
+  <format value="json"/>
+  <format value="application/x-turtle"/>
+  <format value="ttl"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <type value="Bundle"/>
+      <profile value="http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchInclude value="*"/>
+      <searchInclude value="Bundle:composition"/>
+      <searchInclude value="Bundle:message"/>
+      <searchRevInclude value="Bundle:composition"/>
+      <searchRevInclude value="Bundle:message"/>
+      <searchParam>
+        <name value="_content"/>
+        <type value="string"/>
+        <documentation value="Search the contents of the resource's data using a fulltext search"/>
+      </searchParam>
+      <searchParam>
+        <name value="_filter"/>
+        <type value="string"/>
+        <documentation value="Search the contents of the resource's data using a filter"/>
+      </searchParam>
+      <searchParam>
+        <name value="_has"/>
+        <type value="string"/>
+        <documentation value="Return resources linked to by the given target"/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="The ID of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="_language"/>
+        <type value="string"/>
+        <documentation value="The language of the resource"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <type value="date"/>
+        <documentation value="Only return resources which were last updated as specified by the given range"/>
+      </searchParam>
+      <searchParam>
+        <name value="_profile"/>
+        <type value="uri"/>
+        <documentation value="Search for resources which have the given profile"/>
+      </searchParam>
+      <searchParam>
+        <name value="_security"/>
+        <type value="token"/>
+        <documentation value="Search for resources which have the given security labels"/>
+      </searchParam>
+      <searchParam>
+        <name value="_source"/>
+        <type value="uri"/>
+        <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
+      </searchParam>
+      <searchParam>
+        <name value="_tag"/>
+        <type value="token"/>
+        <documentation value="Search for resources which have the given tag"/>
+      </searchParam>
+      <searchParam>
+        <name value="_text"/>
+        <type value="string"/>
+        <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+      </searchParam>
+      <searchParam>
+        <name value="composition"/>
+        <type value="reference"/>
+        <documentation value="The first resource in the bundle, if the bundle type is &quot;document&quot; - this is a composition, and this parameter provides access to search its contents"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Persistent identifier for the bundle"/>
+      </searchParam>
+      <searchParam>
+        <name value="message"/>
+        <type value="reference"/>
+        <documentation value="The first resource in the bundle, if the bundle type is &quot;message&quot; - this is a message header, and this parameter provides access to search its contents"/>
+      </searchParam>
+      <searchParam>
+        <name value="timestamp"/>
+        <type value="date"/>
+        <documentation value="When the bundle was assembled"/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="OperationDefinition"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchInclude value="*"/>
+      <searchRevInclude value="Bundle:composition"/>
+      <searchRevInclude value="Bundle:message"/>
+    </resource>
+  </rest>
+</CapabilityStatement>

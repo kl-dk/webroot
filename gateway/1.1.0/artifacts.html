@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KL.DK.FHIR.GATEWAY\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - release
+
+
+
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="Homecare.html">Homecare Example</a>
+  </li>
+  <li>
+    <a href="Nursing.html">Nursing Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KL Gateway (v1.1.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a href="http://fhir.kl.dk/gateway/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+   <p>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-klgateway.html"
+                     title="CapabilityStatement/klgateway">klgateway</a>
+               </td>
+               <td>
+<p>The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG).</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-citizen.html"
+                     title="StructureDefinition/klgateway-care-citizen">CareCitizen</a>
+               </td>
+               <td>
+<p>Administrative information about a citizen receiving care or care related services.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-citizens-own-observation.html"
+                     title="StructureDefinition/klgateway-care-citizens-own-observation">CareCitizensOwnObservation</a>
+               </td>
+               <td>
+<p>Measurements and simple assertions made about a patient by the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-completed-intervention.html"
+                     title="StructureDefinition/klgateway-care-completed-intervention">CareCompletedIntervention</a>
+               </td>
+               <td>
+<p>Documentation for completed interventions (activities related to one and only one encounter) in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-condition.html"
+                     title="StructureDefinition/klgateway-care-condition">CareCondition</a>
+               </td>
+               <td>
+<p>Detailed information about conditions.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-delivery-report.html"
+                     title="StructureDefinition/klgateway-care-delivery-report">CareDeliveryReport</a>
+               </td>
+               <td>
+<p>Deliver report to deliver for each citizen.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-encounter.html"
+                     title="StructureDefinition/klgateway-care-encounter">CareEncounter</a>
+               </td>
+               <td>
+<p>Encounter for following up on conditions, care plans, or observations.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-follow-up-observation.html"
+                     title="StructureDefinition/klgateway-care-follow-up-observation">CareFollowUpObservation</a>
+               </td>
+               <td>
+<p>Structured result or outcome of a follow up.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-goal.html"
+                     title="StructureDefinition/klgateway-care-goal">CareGoal</a>
+               </td>
+               <td>
+<p>Describes the intended or expected functional level for a condition of a citizen.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html"
+                     title="StructureDefinition/klgateway-care-matter-of-interest-observation">CareMatterOfInterestObservation</a>
+               </td>
+               <td>
+<p>Matter or area of interest in relation to the care of the citizen.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-planned-intervention.html"
+                     title="StructureDefinition/klgateway-care-planned-intervention">CarePlannedIntervention</a>
+               </td>
+               <td>
+<p>Planned interventions for nursing and home care in Danish Municipalities.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-finding-context-at-risk-extension.html"
+                     title="StructureDefinition/klgateway-care-finding-context-at-risk-extension">CareFindingContextAtRiskExtension</a>
+               </td>
+               <td>
+<p>Context at risk for a given matter of interest given as a condition code.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-klgateway-care-follow-up-encounter-extension.html"
+                     title="StructureDefinition/klgateway-care-follow-up-encounter-extension">CareFollowUpEncounterExtension</a>
+               </td>
+               <td>
+<p>Encounter for following up on this information.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-FSIIICareConditions.html"
+                     title="ValueSet/FSIIICareConditions">FSIIICareConditions</a>
+               </td>
+               <td>
+<p>Conditions defined by FSIII for nursing and home care</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-FSIIICareGoalTypes.html"
+                     title="ValueSet/FSIIICareGoalTypes">FSIIICareGoalTypes</a>
+               </td>
+               <td>
+<p>Goal Types defined by FSIII for nursing and home care</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-FSIIICareInterventions.html"
+                     title="ValueSet/FSIIICareInterventions">FSIIICareInterventions</a>
+               </td>
+               <td>
+<p>Interventions defined by FSIII for nursing and home care</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-FSIIICareMatterOfInterests.html"
+                     title="ValueSet/FSIIICareMatterOfInterests">FSIIICareMatterOfInterests</a>
+               </td>
+               <td>
+<p>Matters of Interests (areas) defined by FSIII for nursing and home care</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-KLGatewayCareMatterOfInterestValues.html"
+                     title="ValueSet/KLGatewayCareMatterOfInterestValues">KLGatewayCareMatterOfInterestValues</a>
+               </td>
+               <td>
+<p>Values of Matters of Interests (areas)</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-LocallyDefinedInterventions.html"
+                     title="CodeSystem/LocallyDefinedInterventions">LocallyDefinedInterventions</a>
+               </td>
+               <td>
+<p>Coding system to indicate a code defined locally in the managing organization</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-bfa70a76-318d-453d-9abc-76982f8d13ca.html"
+                     title="Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca">bfa70a76-318d-453d-9abc-76982f8d13ca</a>
+               </td>
+               <td>
+<p>Encounter documenting the next date for a follow-up</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html"
+                     title="Bundle/3304e5f8-4b3f-4c19-8c68-e36c573f3f98">DeliveryReport-JensHansen-1</a>
+               </td>
+               <td>
+<p>Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html"
+                     title="Bundle/b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff">DeliveryReport-JensHansen-2</a>
+               </td>
+               <td>
+<p>Reporting of Jens Hansen after second encounter with Home Care Assessor updating follow-up date</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9.html"
+                     title="Bundle/643c3e42-ab90-4354-9b98-f01b4740d3d9">DeliveryReport-JensHansen-3</a>
+               </td>
+               <td>
+<p>Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-d54206de-c95b-4c53-9517-6eb155dca99a.html"
+                     title="Bundle/d54206de-c95b-4c53-9517-6eb155dca99a">DeliveryReport-PeterOlsen-1</a>
+               </td>
+               <td>
+<p>Reporting of Peter Olsen after first encounter with the Acute Team</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.html"
+                     title="Bundle/abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb">DeliveryReport-PeterOlsen-2</a>
+               </td>
+               <td>
+<p>Reporting of Peter Olsen after second encounter with the Acute Team</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.html"
+                     title="Bundle/0c1112c3-77b5-4d85-965c-0c26228ec7ef">DeliveryReport-PeterOlsen-3</a>
+               </td>
+               <td>
+<p>Reporting of Peter Olsen after third encounter with the Acute Team</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-374484d0-00cb-4b63-94d1-a0d984afc339.html"
+                     title="Bundle/374484d0-00cb-4b63-94d1-a0d984afc339">DeliveryReport-PeterOlsen-4</a>
+               </td>
+               <td>
+<p>Reporting of Peter Olsen after first encounter with home nursing</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.html"
+                     title="Bundle/cc93afc5-7849-4895-84eb-00bb5c129c0b">DeliveryReport-PeterOlsen-5</a>
+               </td>
+               <td>
+<p>Reporting of Peter Olsen after second encounter with home nursing</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.html"
+                     title="Bundle/1652f2a9-510a-4cd3-8fc4-8b69d0ffedae">DeliveryReport-PeterOlsen-6</a>
+               </td>
+               <td>
+<p>Reporting of Peter Olsen after first encounter with training</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-Dialyse.html" title="CarePlan/Dialyse">Dialyse</a>
+               </td>
+               <td>
+<p>Planned intervention doing dialysis according to FSIII on the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-DialyseFortsaettes.html"
+                     title="Observation/DialyseFortsaettes">DialyseFortsaettes</a>
+               </td>
+               <td>
+<p>Follow-up observation documenting that the planned intervention on dialysis should be continued for the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EgensomsorgBegraensninger.html"
+                     title="Observation/EgensomsorgBegraensninger">EgensomsorgBegraensninger</a>
+               </td>
+               <td>
+<p>An observation that self-care is an area that is a matter of interest regarding the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EgensomsorgBegraensningerOmkringKropspleje.html"
+                     title="Observation/EgensomsorgBegraensningerOmkringKropspleje">EgensomsorgBegraensningerOmkringKropspleje</a>
+               </td>
+               <td>
+<p>An observation that self-care is an area that is a matter of interest regarding the test person with potential problems around bodily care</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Goal-ForventetIngenBegraensninger.html"
+                     title="Goal/ForventetIngenBegraensninger">ForventetIngenBegraensninger</a>
+               </td>
+               <td>
+<p>A goal for the test person on the ability to wash himself</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-OpleverIkkeBegraensningerMedVaskeSig.html"
+                     title="Observation/OpleverIkkeBegraensningerMedVaskeSig">OpleverIkkeBegraensningerMedVaskeSig</a>
+               </td>
+               <td>
+<p>Citizens own observation regarding the importance of the limitations on the ability to wash himself</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-PersonligHygiejne.html"
+                     title="CarePlan/PersonligHygiejne">PersonligHygiejne</a>
+               </td>
+               <td>
+<p>Planned intervention doing personal hygiene according to FSIII on the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-PersonligHygiejneFortsaettes.html"
+                     title="Observation/PersonligHygiejneFortsaettes">PersonligHygiejneFortsaettes</a>
+               </td>
+               <td>
+<p>Follow-up observation documenting that the planned intervention on personal hygiene should be continued for the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-PersonligPlejeFortsaettes.html"
+                     title="Observation/PersonligPlejeFortsaettes">PersonligPlejeFortsaettes</a>
+               </td>
+               <td>
+<p>Follow-up observation documenting that focus on personal care should be continued for the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-ProblemerMedPersonligPleje.html"
+                     title="Condition/ProblemerMedPersonligPleje">ProblemerMedPersonligPleje</a>
+               </td>
+               <td>
+<p>Assessed ability for the test person to perform personal care</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-Saarbehandling.html" title="Procedure/Saarbehandling">Saarbehandling</a>
+               </td>
+               <td>
+<p>Completed intervention doing wound treatment according to FSIII on the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-TestPerson.html" title="Patient/TestPerson">TestPerson</a>
+               </td>
+               <td>
+<p>Test person used in the examples of the implementation guide.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-TestPersonReport.html" title="Bundle/TestPersonReport">TestPersonReport</a>
+               </td>
+               <td>
+<p>Example of a delivery report for the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-UdfoererSelvVaskeSig.html"
+                     title="Observation/UdfoererSelvVaskeSig">UdfoererSelvVaskeSig</a>
+               </td>
+               <td>
+<p>Citizens own observation regarding abililty to wash himself</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-VaskeSigFortsaettes.html"
+                     title="Observation/VaskeSigFortsaettes">VaskeSigFortsaettes</a>
+               </td>
+               <td>
+<p>Follow-up observation documenting that focus on ability to wash himself should be continued for the test person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-VaskeSigLetteBegraensninger.html"
+                     title="Condition/VaskeSigLetteBegraensninger">VaskeSigLetteBegraensninger</a>
+               </td>
+               <td>
+<p>Assessed ability for the test person to wash himself</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.kl.dk">KL</a>.  Package kl.dk.fhir.gateway#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 21, 2023 21:55+0200">2023-06-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

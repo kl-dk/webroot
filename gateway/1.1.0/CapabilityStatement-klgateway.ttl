@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/gateway/CapabilityStatement/klgateway> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "klgateway"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RestServer</h2><div><p>The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG).</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Bundle</td><td><a href=\"http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report\">http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>OperationDefinition</td><td><a href=\"http://hl7.org/fhir/StructureDefinition/OperationDefinition\">http://hl7.org/fhir/StructureDefinition/OperationDefinition</a></td><td>y</td><td></td><td></td><td></td><td></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/gateway/CapabilityStatement/klgateway"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "RestServer"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-08T00:29:49.294+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "instance"] ; # 
+  fhir:software [
+     fhir:name [ fhir:v "Trifork Gateway FHIR Server" ] ;
+     fhir:version [ fhir:v "6.2.5" ]
+  ] ; # 
+  fhir:implementation [
+     fhir:description [ fhir:v "Trifork Gateway FHIR Server" ]
+  ] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "application/fhir+xml"] [ fhir:v "xml"] [ fhir:v "application/fhir+json"] [ fhir:v "json"] [ fhir:v "application/x-turtle"] [ fhir:v "ttl"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:resource ( [
+       fhir:type [ fhir:v "Bundle" ] ;
+       fhir:profile [
+         fhir:v "http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report>
+       ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:searchInclude ( [ fhir:v "*" ] [ fhir:v "Bundle:composition" ] [ fhir:v "Bundle:message" ] ) ;
+       fhir:searchRevInclude ( [ fhir:v "Bundle:composition" ] [ fhir:v "Bundle:message" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "_content" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search the contents of the resource's data using a fulltext search" ]
+       ] [
+         fhir:name [ fhir:v "_filter" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search the contents of the resource's data using a filter" ]
+       ] [
+         fhir:name [ fhir:v "_has" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Return resources linked to by the given target" ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "The ID of the resource" ]
+       ] [
+         fhir:name [ fhir:v "_language" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "The language of the resource" ]
+       ] [
+         fhir:name [ fhir:v "_lastUpdated" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Only return resources which were last updated as specified by the given range" ]
+       ] [
+         fhir:name [ fhir:v "_profile" ] ;
+         fhir:type [ fhir:v "uri" ] ;
+         fhir:documentation [ fhir:v "Search for resources which have the given profile" ]
+       ] [
+         fhir:name [ fhir:v "_security" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for resources which have the given security labels" ]
+       ] [
+         fhir:name [ fhir:v "_source" ] ;
+         fhir:type [ fhir:v "uri" ] ;
+         fhir:documentation [ fhir:v "Search for resources which have the given source value (Resource.meta.source)" ]
+       ] [
+         fhir:name [ fhir:v "_tag" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for resources which have the given tag" ]
+       ] [
+         fhir:name [ fhir:v "_text" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search the contents of the resource's narrative using a fulltext search" ]
+       ] [
+         fhir:name [ fhir:v "composition" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "The first resource in the bundle, if the bundle type is \"document\" - this is a composition, and this parameter provides access to search its contents" ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Persistent identifier for the bundle" ]
+       ] [
+         fhir:name [ fhir:v "message" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "The first resource in the bundle, if the bundle type is \"message\" - this is a message header, and this parameter provides access to search its contents" ]
+       ] [
+         fhir:name [ fhir:v "timestamp" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "When the bundle was assembled" ]
+       ] [
+         fhir:name [ fhir:v "type" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection" ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "OperationDefinition" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/OperationDefinition"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/OperationDefinition>
+       ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchRevInclude ( [ fhir:v "Bundle:composition" ] [ fhir:v "Bundle:message" ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
