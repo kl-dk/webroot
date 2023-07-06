@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLChangeValueCodesFFB"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-FFB.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-FFB.html#FFB-d41c8072-52f8-42b5-9375-ddbea454d27f">d41c8072-52f8-42b5-9375-ddbea454d27f</a></td><td>Udvikle funktionsevne</td><td>måltype, der er udtryk for en forventning om, at borgeren støttes i at udvikle sin funktionsevne i relation til målet</td></tr><tr><td><a href="CodeSystem-FFB.html#FFB-10752a63-00b4-4958-b7f4-9f3a18f74266">10752a63-00b4-4958-b7f4-9f3a18f74266</a></td><td>Fastholde funktionsevne</td><td>måltype, der er udtryk for en forventning om, at borgeren støttes i at fastholde sin funktionsevne i relation til målet</td></tr><tr><td><a href="CodeSystem-FFB.html#FFB-e47c22bd-d88d-48ab-882b-419923e1f44e">e47c22bd-d88d-48ab-882b-419923e1f44e</a></td><td>Begrænse tab af funktionsevne</td><td>måltype, der er udtryk for en forventning om, at der vil være et tab af funktionsevne i relation til målet, men at borgeren støttes i at begrænse sit tab af funktionsevne i relation til målet mest muligt</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFFB"/>
+  <version value="0.7.0"/>
+  <name value="KLChangeValueCodesFFB"/>
+  <title value="KLMåltypekoderFFB"/>
+  <status value="draft"/>
+  <date value="2023-07-06T08:45:08+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"/>
+      <concept>
+        <code value="d41c8072-52f8-42b5-9375-ddbea454d27f"/>
+      </concept>
+      <concept>
+        <code value="10752a63-00b4-4958-b7f4-9f3a18f74266"/>
+      </concept>
+      <concept>
+        <code value="e47c22bd-d88d-48ab-882b-419923e1f44e"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

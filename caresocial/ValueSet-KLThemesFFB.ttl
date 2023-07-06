@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLThemesFFB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLThemesFFB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-4fb78b88-d3af-4cfb-84d7-f06daf423317\">4fb78b88-d3af-4cfb-84d7-f06daf423317</a></td><td>Sundhedsforhold</td><td>forhold, der påvirker en persons sundhed</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-25c5c614-305f-46cd-9891-55d564fc30cf\">25c5c614-305f-46cd-9891-55d564fc30cf</a></td><td>Mentale funktioner</td><td>hjernens funktioner, både overordnede mentale funktioner og specifikke mentale funktioner inklusiv psykologiske funktioner</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-e1836145-0c20-4e20-971e-d62dfe4ea1a0\">e1836145-0c20-4e20-971e-d62dfe4ea1a0</a></td><td>Sociale forhold</td><td>tilstand, vilkår, hændelse eller anden personlig faktor, som relaterer til en persons baggrund og historie, er af social karakter og har betydning for en persons funktionsevne</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-a134c31d-d316-46d4-935e-e500874dbbe1\">a134c31d-d316-46d4-935e-e500874dbbe1</a></td><td>Fysiske funktioner</td><td>kroppens funktioner, eksklusiv mentale funktioner</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-da3f488f-1742-4d00-b247-a7d47500b36b\">da3f488f-1742-4d00-b247-a7d47500b36b</a></td><td>Egenomsorg</td><td>aktivitet, der vedrører praktiske og hygiejnemæssige handlinger i relation til personen selv</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-3856b434-f72e-42a5-b9d1-0cc93f48434b\">3856b434-f72e-42a5-b9d1-0cc93f48434b</a></td><td>Relationer</td><td>aktivitet, der vedrører en persons relationer til og interaktion med andre mennesker</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-c2b186f9-9c10-478e-8345-2d2c37ab4c46\">c2b186f9-9c10-478e-8345-2d2c37ab4c46</a></td><td>Kommunikation</td><td>aktivitet, der består af en overførsel eller udveksling af information</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-dfbe6ff6-223b-436a-b864-8ba29bda41e2\">dfbe6ff6-223b-436a-b864-8ba29bda41e2</a></td><td>Samfundsliv</td><td>aktivitet, som er nødvendig for at varetage uddannelse, varetage beskæftigelse og varetage økonomi</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-d1495b2c-1452-4e49-8dbe-8193af5d8823\">d1495b2c-1452-4e49-8dbe-8193af5d8823</a></td><td>Mobilitet</td><td>aktivitet, der vedrører bevægelse og færden</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-eef71492-65f5-4297-aa95-3c3a6866ddef\">eef71492-65f5-4297-aa95-3c3a6866ddef</a></td><td>Praktiske opgaver</td><td>aktivitet, der vedrører huslige og andre dagligdags handlinger og opgaver i relation til husførelse</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-7445fb2b-0009-43d9-b49b-1b9782f2fcd9\">7445fb2b-0009-43d9-b49b-1b9782f2fcd9</a></td><td>Omgivelsesfaktorer</td><td>kontekstuel faktor, der omfatter de fysiske, sociale og holdningsmæssige omgivelser, som en person bor og lever i</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-93433530-b85c-4d04-a4fb-5ae26cf16f1c\">93433530-b85c-4d04-a4fb-5ae26cf16f1c</a></td><td>Aktivitet og deltagelse</td><td/></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-740934cd-002b-4b96-b92e-b3562eed9448\">740934cd-002b-4b96-b92e-b3562eed9448</a></td><td>Funktioner og forhold</td><td/></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLThemesFFB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLThemesFFB"] ; # 
+  fhir:title [ fhir:v "KLTemaerFFB"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "FFB Themes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "4fb78b88-d3af-4cfb-84d7-f06daf423317" ]
+       ] [
+         fhir:code [ fhir:v "25c5c614-305f-46cd-9891-55d564fc30cf" ]
+       ] [
+         fhir:code [ fhir:v "e1836145-0c20-4e20-971e-d62dfe4ea1a0" ]
+       ] [
+         fhir:code [ fhir:v "a134c31d-d316-46d4-935e-e500874dbbe1" ]
+       ] [
+         fhir:code [ fhir:v "da3f488f-1742-4d00-b247-a7d47500b36b" ]
+       ] [
+         fhir:code [ fhir:v "3856b434-f72e-42a5-b9d1-0cc93f48434b" ]
+       ] [
+         fhir:code [ fhir:v "c2b186f9-9c10-478e-8345-2d2c37ab4c46" ]
+       ] [
+         fhir:code [ fhir:v "dfbe6ff6-223b-436a-b864-8ba29bda41e2" ]
+       ] [
+         fhir:code [ fhir:v "d1495b2c-1452-4e49-8dbe-8193af5d8823" ]
+       ] [
+         fhir:code [ fhir:v "eef71492-65f5-4297-aa95-3c3a6866ddef" ]
+       ] [
+         fhir:code [ fhir:v "7445fb2b-0009-43d9-b49b-1b9782f2fcd9" ]
+       ] [
+         fhir:code [ fhir:v "93433530-b85c-4d04-a4fb-5ae26cf16f1c" ]
+       ] [
+         fhir:code [ fhir:v "740934cd-002b-4b96-b92e-b3562eed9448" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ClinicalImpression",
+  "id" : "NursingStatusMark",
+  "meta" : {
+    "profile" : ["http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformationGathering"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ClinicalImpression</b><a name=\"NursingStatusMark\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ClinicalImpression &quot;NursingStatusMark&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialInformationGathering.html\">InformationGathering</a></p></div><p><b>BasedOnServiceRequest</b>: <a href=\"ServiceRequest-HenvendelseVedrSygeplejeMark.html\">ServiceRequest/HenvendelseVedrSygeplejeMark</a></p><p><b>status</b>: completed</p><p><b>code</b>: sygeplejefaglig udredning, FSIII <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#47fd1468-89da-4803-9d7a-ecc039a30d92)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>encounter</b>: <a href=\"Encounter-MarkogUdredningSygepleje.html\">Encounter/MarkogUdredningSygepleje</a></p><p><b>effective</b>: 2020-06-05</p><p><b>assessor</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><blockquote><p><b>investigation</b></p><p><b>code</b>: Respiration og cirkulation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#I7)</span></p><p><b>item</b>: <a href=\"Observation-RespirationCirculationInformationMark.html\">Observation/RespirationCirculationInformationMark</a></p></blockquote><blockquote><p><b>investigation</b></p><p><b>code</b>: Hud og slimhinder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#I4)</span></p><p><b>item</b>: <a href=\"Observation-SkinInformationMark.html\">Observation/SkinInformationMark</a></p></blockquote><h3>Findings</h3><table class=\"grid\"><tr><td>-</td><td><b>ItemReference</b></td></tr><tr><td>*</td><td><a href=\"Condition-ConditionPressureUlcer.html\">Condition/ConditionPressureUlcer</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://kl.dk/fhir/common/caresocial/StructureDefinition/BasedOnServiceRequest",
+    "valueReference" : {
+      "reference" : "ServiceRequest/HenvendelseVedrSygeplejeMark"
+    }
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+      "code" : "47fd1468-89da-4803-9d7a-ecc039a30d92",
+      "display" : "sygeplejefaglig udredning, FSIII"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Mark"
+  },
+  "encounter" : {
+    "reference" : "Encounter/MarkogUdredningSygepleje"
+  },
+  "effectiveDateTime" : "2020-06-05",
+  "assessor" : {
+    "reference" : "Practitioner/HanneFraVisitationenAalborg"
+  },
+  "investigation" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "code" : "I7",
+        "display" : "Respiration og cirkulation"
+      }]
+    },
+    "item" : [{
+      "reference" : "Observation/RespirationCirculationInformationMark"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "code" : "I4",
+        "display" : "Hud og slimhinder"
+      }]
+    },
+    "item" : [{
+      "reference" : "Observation/SkinInformationMark"
+    }]
+  }],
+  "finding" : [{
+    "itemReference" : {
+      "reference" : "Condition/ConditionPressureUlcer"
+    }
+  }]
+}

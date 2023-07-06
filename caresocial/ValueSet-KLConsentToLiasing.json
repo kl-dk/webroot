@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConsentToLiasing",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-KLCommonCareSocialCodes.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-e67035da-9179-466b-99ad-ea86835d38c9\">e67035da-9179-466b-99ad-ea86835d38c9</a></td><td>indforstået</td><td>Borger indforstået med henvendelse</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb\">54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb</a></td><td>ikke indforstået</td><td>Borger ikke indforstået med henvendelse</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://kl.dk/fhir/common/caresocial/ValueSet/KLConsentToLiasing",
+  "version" : "0.7.0",
+  "name" : "KLConsentToLiasing",
+  "title" : "KLBorgerIndforståetMedHenvendelseKoder",
+  "status" : "draft",
+  "date" : "2023-07-06T08:45:08+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Codes for citizens knowledge of referal/request as defined by FFB",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+      "concept" : [{
+        "code" : "e67035da-9179-466b-99ad-ea86835d38c9"
+      },
+      {
+        "code" : "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb"
+      }]
+    }]
+  }
+}

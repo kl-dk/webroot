@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConditionCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesHomeCare.html\">KLTilstandeKoderHjemmepleje</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesNursing.html\">KLTilstandeKoderSygepleje</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesTheraphy.html\">KLTilstandKoderTræning</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesPrevention.html\">KLTilstandKoderForebyggelse</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesFFB.html\">KLTilstandKoderFFB</a></li></ul></div>"
+  },
+  "url" : "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodes",
+  "version" : "0.7.0",
+  "name" : "KLConditionCodes",
+  "title" : "KLTilstandKoder",
+  "status" : "draft",
+  "date" : "2023-07-06T08:45:08+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Danish municipality condition codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesHomeCare"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesNursing"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesTheraphy"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesPrevention"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFFB"]
+    }]
+  }
+}

@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Observation/MobilityInformationJudith> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MobilityInformationJudith"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialMatterOfInterest"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialMatterOfInterest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MobilityInformationJudith\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MobilityInformationJudith&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialMatterOfInterest.html\">MatterOfInterest</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mobilitet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#J3)</span></p><p><b>subject</b>: <a href=\"Patient-Judith.html\">Patient/Judith</a> &quot; NIELSEN&quot;</p><p><b>effective</b>: 2020-08-11 15:28:17-0100</p><p><b>performer</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>value</b>: Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J3" ] ;
+       fhir:display [ fhir:v "Mobilitet" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Judith> ;
+     fhir:reference [ fhir:v "Patient/Judith" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-08-11T15:28:17-01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/HanneFraVisitationenAalborg> ;
+     fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

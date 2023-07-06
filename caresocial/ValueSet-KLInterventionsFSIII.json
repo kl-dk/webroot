@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLInterventionsFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLNursingInterventionsFSIII.html\">KLSygeplejeIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLHomeCareInterventionsFSIII.html\">KLHjemmeplejeIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLTrainingInterventionsFSIII.html\">KLTræningIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLPreventionInterventionsFSIII.html\">KLForebyggelseIndsatserFSIII</a></li></ul></div>"
+  },
+  "url" : "http://kl.dk/fhir/common/caresocial/ValueSet/KLInterventionsFSIII",
+  "version" : "0.7.0",
+  "name" : "KLInterventionsFSIII",
+  "title" : "KLIndsatserFSIII",
+  "status" : "draft",
+  "date" : "2023-07-06T08:45:08+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Interventions as described by FSIII",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingInterventionsFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareInterventionsFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLTrainingInterventionsFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLPreventionInterventionsFSIII"]
+    }]
+  }
+}

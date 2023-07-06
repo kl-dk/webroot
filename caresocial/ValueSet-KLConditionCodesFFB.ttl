@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFFB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLConditionCodesFFB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionFFCodesFFB.html\">KLTilstandFFKoderFFB</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionADCodesFFB.html\">KLTilstandADKoderFFB</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionOCodesFFB.html\">KLTilstandOKoderFFB</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFFB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLConditionCodesFFB"] ; # 
+  fhir:title [ fhir:v "KLTilstandKoderFFB"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Danish municipality FFB condition codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionFFCodesFFB"^^xsd:anyURI ;
+         fhir:link <http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionFFCodesFFB>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionADCodesFFB"^^xsd:anyURI ;
+         fhir:link <http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionADCodesFFB>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionOCodesFFB"^^xsd:anyURI ;
+         fhir:link <http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionOCodesFFB>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLConsentToLiasing"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-KLCommonCareSocialCodes.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-e67035da-9179-466b-99ad-ea86835d38c9">e67035da-9179-466b-99ad-ea86835d38c9</a></td><td>indforstået</td><td>Borger indforstået med henvendelse</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb">54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb</a></td><td>ikke indforstået</td><td>Borger ikke indforstået med henvendelse</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://kl.dk/fhir/common/caresocial/ValueSet/KLConsentToLiasing"/>
+  <version value="0.7.0"/>
+  <name value="KLConsentToLiasing"/>
+  <title value="KLBorgerIndforståetMedHenvendelseKoder"/>
+  <status value="draft"/>
+  <date value="2023-07-06T08:45:08+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Codes for citizens knowledge of referal/request as defined by FFB"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+      <concept>
+        <code value="e67035da-9179-466b-99ad-ea86835d38c9"/>
+      </concept>
+      <concept>
+        <code value="54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

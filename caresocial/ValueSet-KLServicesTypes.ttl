@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLServicesTypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLServicesTypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-KLCommonCareSocialCodes.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-490ab7be-ddb1-4a54-baf1-009fe6e8a83b\">490ab7be-ddb1-4a54-baf1-009fe6e8a83b</a></td><td>Hjemmesygepleje</td><td>Der anmodes om sygepleje</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-ad865929-7363-4b2d-a271-01993181fbaf\">ad865929-7363-4b2d-a271-01993181fbaf</a></td><td>Hjemmepleje</td><td>Der anmodes om hjemmepleje</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-7fc66c15-0cb3-4c89-9e18-f3a01e6a6592\">7fc66c15-0cb3-4c89-9e18-f3a01e6a6592</a></td><td>Træning</td><td>Der anmodes om træning</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-a71921ea-fe83-441d-933b-cc21d0b3c8c3\">a71921ea-fe83-441d-933b-cc21d0b3c8c3</a></td><td>Sundhedsfremme og forebyggelse</td><td>Der anmodes om sundhedsfremme og forebyggelse</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-4a297733-4d66-4726-a933-590d55cf91e0\">4a297733-4d66-4726-a933-590d55cf91e0</a></td><td>Social indsats</td><td>Der anmodes om en social indsats</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLServicesTypes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLServicesTypes"] ; # 
+  fhir:title [ fhir:v "KLServiceTyper"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of services that the Danish municipalities provide which is covered by FSIII and FFB"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "490ab7be-ddb1-4a54-baf1-009fe6e8a83b" ]
+       ] [
+         fhir:code [ fhir:v "ad865929-7363-4b2d-a271-01993181fbaf" ]
+       ] [
+         fhir:code [ fhir:v "7fc66c15-0cb3-4c89-9e18-f3a01e6a6592" ]
+       ] [
+         fhir:code [ fhir:v "a71921ea-fe83-441d-933b-cc21d0b3c8c3" ]
+       ] [
+         fhir:code [ fhir:v "4a297733-4d66-4726-a933-590d55cf91e0" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

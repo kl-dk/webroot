@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLCarePlanCategoryCodes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-KLCommonCareSocialCodes.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf">ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf</a></td><td>Rehabilitering efter §140</td><td>Det planlagte indsatsforløb er rehabilitering efter sundhedslovens §140</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-4fd6c23a-6ff3-4251-ac37-3ca095027b5b">4fd6c23a-6ff3-4251-ac37-3ca095027b5b</a></td><td>Sundhedsfremme og forebyggelse §119</td><td>Det planlagte indsatsforløb vedrører sundhedsfremme og forebyggelse efter §119</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-e459386d-1474-4c31-89c5-c8bc7a25e3d4">e459386d-1474-4c31-89c5-c8bc7a25e3d4</a></td><td>Social indsats</td><td>Det planlagte indsatsforløb er en social indsats, som defineret af FFB, med tilhørende ydelser, målgruppe og tilbud</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://kl.dk/fhir/common/caresocial/ValueSet/KLCarePlanCategoryCodes"/>
+  <version value="0.7.0"/>
+  <name value="KLCarePlanCategoryCodes"/>
+  <title value="KLIndsatsforløbTypekoder"/>
+  <status value="draft"/>
+  <date value="2023-07-06T08:45:08+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Codes for constraining the CarePlan category"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+      <concept>
+        <code value="ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf"/>
+      </concept>
+      <concept>
+        <code value="4fd6c23a-6ff3-4251-ac37-3ca095027b5b"/>
+      </concept>
+      <concept>
+        <code value="e459386d-1474-4c31-89c5-c8bc7a25e3d4"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

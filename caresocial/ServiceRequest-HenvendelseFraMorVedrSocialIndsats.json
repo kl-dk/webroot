@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "HenvendelseFraMorVedrSocialIndsats",
+  "meta" : {
+    "profile" : ["http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HenvendelseFraMorVedrSocialIndsats\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HenvendelseFraMorVedrSocialIndsats&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialServiceRequest.html\">ServiceRequest</a></p></div><p><b>RequesterType</b>: Pårørende <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#A2)</span></p><p><b>SubjectConsentToLiaising</b>: indforstået <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#e67035da-9179-466b-99ad-ea86835d38c9)</span></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: Social indsats <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#4a297733-4d66-4726-a933-590d55cf91e0)</span></p><p><b>orderDetail</b>: Midlertidigt ophold <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FFB.html\">FFB</a>#80aa8ea7-4ad8-405f-876a-4c0f89fde06a)</span>, Støtte til daglige opgaver i hjemmet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FFB.html\">FFB</a>#638f44df-6bf2-47f8-9935-b8fdc83e5bf5)</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>authoredOn</b>: 2020-06-23</p><p><b>requester</b>: <a href=\"Organization-SocialOgSundhedMorsoe.html\">Organization/SocialOgSundhedMorsoe</a> &quot;Social og Sundhed, Morsø Kommune&quot;</p><p><b>reasonCode</b>: Andreas er udviklingshæmmet og bor pt. hjemme hos sin mor. Moderen har fået svær gigt og har derfor ikke mulighed for at have ham boende længere, og Andreas ønsker derfor at komme i et botilbud. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>reasonReference</b>: <a href=\"Condition-AndreasMaalgruppeUdviklingshamning.html\">Condition/AndreasMaalgruppeUdviklingshamning</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "code" : "A2",
+        "display" : "Pårørende"
+      }]
+    }
+  },
+  {
+    "url" : "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "code" : "e67035da-9179-466b-99ad-ea86835d38c9",
+        "display" : "indforstået"
+      }]
+    }
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+      "code" : "4a297733-4d66-4726-a933-590d55cf91e0",
+      "display" : "Social indsats"
+    }]
+  },
+  "orderDetail" : [{
+    "coding" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+      "code" : "80aa8ea7-4ad8-405f-876a-4c0f89fde06a",
+      "display" : "Midlertidigt ophold"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+      "code" : "638f44df-6bf2-47f8-9935-b8fdc83e5bf5",
+      "display" : "Støtte til daglige opgaver i hjemmet"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/Andreas"
+  },
+  "authoredOn" : "2020-06-23",
+  "requester" : {
+    "reference" : "Organization/SocialOgSundhedMorsoe"
+  },
+  "reasonCode" : [{
+    "text" : "Andreas er udviklingshæmmet og bor pt. hjemme hos sin mor. Moderen har fået svær gigt og har derfor ikke mulighed for at have ham boende længere, og Andreas ønsker derfor at komme i et botilbud."
+  }],
+  "reasonReference" : [{
+    "reference" : "Condition/AndreasMaalgruppeUdviklingshamning"
+  }]
+}

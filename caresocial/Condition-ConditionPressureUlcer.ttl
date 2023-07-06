@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Condition/ConditionPressureUlcer> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConditionPressureUlcer"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ConditionPressureUlcer\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ConditionPressureUlcer&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialCondition.html\">Condition</a></p></div><p><b>FollowupEncounter</b>: <a href=\"Encounter-MarkFollowUpPlanned.html\">Encounter/MarkFollowUpPlanned</a></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#I4.4 &quot;Problemer med tryksår&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#420324007 &quot;Pressure ulcer stage 2&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>recordedDate</b>: 2020-06-05</p><p><b>asserter</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"Observation-SkinInformationMark.html\">Observation/SkinInformationMark</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/Encounter/MarkFollowUpPlanned> ;
+       fhir:reference [ fhir:v "Encounter/MarkFollowUpPlanned" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "I4.4" ] ;
+       fhir:display [ fhir:v "Problemer med tryksår" ]
+     ] [
+       a sct:420324007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "420324007" ] ;
+       fhir:display [ fhir:v "Pressure ulcer stage 2" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tryksår i stadium 2, siddende på venstre lår. 4cmx5cm, dybde 3mm, ingen infektion." ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-06-05"^^xsd:date] ; # 
+  fhir:asserter [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/HanneFraVisitationenAalborg> ;
+     fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+  ] ; # 
+  fhir:evidence ( [
+     fhir:detail ( [
+       fhir:link <http://kl.dk/fhir/common/caresocial/Observation/SkinInformationMark> ;
+       fhir:reference [ fhir:v "Observation/SkinInformationMark" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

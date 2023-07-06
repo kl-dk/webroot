@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Observation/MentalInformationMads> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MentalInformationMads"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialMatterOfInterest"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialMatterOfInterest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MentalInformationMads\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MentalInformationMads&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialMatterOfInterest.html\">MatterOfInterest</a></p></div><p><b>MatterOfInterestInformer</b>: Borger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#25b4e705-2e9a-47a2-b11a-c829316b9d3a)</span></p><p><b>status</b>: final</p><p><b>code</b>: Mentale funktioner <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FFB.html\">FFB</a>#25c5c614-305f-46cd-9891-55d564fc30cf)</span></p><p><b>subject</b>: <a href=\"Patient-Mads.html\">Patient/Mads</a> &quot; SØRENSEN&quot;</p><p><b>effective</b>: 2020-12-12 13:16:19-0400</p><p><b>performer</b>: <a href=\"Practitioner-KristinaFraVoksensocialomraadet.html\">Practitioner/KristinaFraVoksensocialomraadet</a> &quot; JENSEN&quot;</p><p><b>value</b>: Besøg hos Mads, hvor hans mor, Malene, deltager, 3.\nseptember 20xx: Mads fortæller, at han har svært ved at holde orden og have styr\npå sine ting. Han vil gerne have noget af ”det der struktur”. Han\nfortæller, at han bliver meget gal, når han bliver presset og ikke\nkan overskue, det han skal. Så får han ondt bag i hovedet, og det\ner som om, han ikke kan tænke. Det kan også ske, hvis andre ikke\nbehandler ham ordentligt eller ikke forstår ham <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/MatterOfInterestInformer"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "25b4e705-2e9a-47a2-b11a-c829316b9d3a" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "25c5c614-305f-46cd-9891-55d564fc30cf" ] ;
+       fhir:display [ fhir:v "Mentale funktioner" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Mads> ;
+     fhir:reference [ fhir:v "Patient/Mads" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-12-12T13:16:19-04:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/KristinaFraVoksensocialomraadet> ;
+     fhir:reference [ fhir:v "Practitioner/KristinaFraVoksensocialomraadet" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Besøg hos Mads, hvor hans mor, Malene, deltager, 3.\nseptember 20xx: Mads fortæller, at han har svært ved at holde orden og have styr\npå sine ting. Han vil gerne have noget af ”det der struktur”. Han\nfortæller, at han bliver meget gal, når han bliver presset og ikke\nkan overskue, det han skal. Så får han ondt bag i hovedet, og det\ner som om, han ikke kan tænke. Det kan også ske, hvis andre ikke\nbehandler ham ordentligt eller ikke forstår ham" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

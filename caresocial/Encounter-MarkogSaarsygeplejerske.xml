@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="MarkogSaarsygeplejerske"/>
+  <meta>
+    <profile value="http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="MarkogSaarsygeplejerske"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;MarkogSaarsygeplejerske&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialEncounter.html">Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: udførelse af planlagt indsats <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-KLCommonCareSocialCodes.html">KLCommonCareSocialCodes</a>#784275f1-6822-4a88-b361-d958007d5253)</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href="Practitioner-NatasjaFraSygeplejen.html">Practitioner/NatasjaFraSygeplejen</a> &quot; PETERSEN&quot;</td></tr></table><p><b>period</b>: 2020-06-07 15:30:00+0000 --&gt; (ongoing)</p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="HH"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+      <code value="784275f1-6822-4a88-b361-d958007d5253"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <participant>
+    <individual>
+      <reference value="Practitioner/NatasjaFraSygeplejen"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2020-06-07T15:30:00.000Z"/>
+  </period>
+</Encounter>

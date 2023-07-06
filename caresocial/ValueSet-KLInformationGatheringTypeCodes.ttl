@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLInformationGatheringTypeCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLInformationGatheringTypeCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-KLCommonCareSocialCodes.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-e70c66c0-a939-493b-8ea8-5b7e7b48ba1a\">e70c66c0-a939-493b-8ea8-5b7e7b48ba1a</a></td><td>generelle oplysninger, FSIII</td><td>indhentning af generelle oplysninger jævnfør FSIII</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-e5a73b0e-a5d2-430e-931f-6156306ab00f\">e5a73b0e-a5d2-430e-931f-6156306ab00f</a></td><td>funktionsevnevurdering hjemmepleje, FSIII</td><td>udførelse af funktionsevnevurdering i hjemmeplejen jævnfør FSIII</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-47fd1468-89da-4803-9d7a-ecc039a30d92\">47fd1468-89da-4803-9d7a-ecc039a30d92</a></td><td>sygeplejefaglig udredning, FSIII</td><td>udførelse af sygeplejefaglig udredning jævnfør FSIII</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-0f0f223c-abe3-4720-aab8-c257679a0a4e\">0f0f223c-abe3-4720-aab8-c257679a0a4e</a></td><td>terapeutfaglig udredning, FSIII</td><td>udførelse af terapeutfaglig udredning jævnfør FSIII</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-95e787e0-5490-437d-ae4c-f3736644242f\">95e787e0-5490-437d-ae4c-f3736644242f</a></td><td>afklarende samtale §119, FSIII</td><td>udførelse af afklarende samtale vedr. sundhedsfremme og forebyggelse jævnfør FSIII</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-f8ebd11a-04f3-4aa0-9786-406e8896c84d\">f8ebd11a-04f3-4aa0-9786-406e8896c84d</a></td><td>socialfaglig udredning, VUM/FFB</td><td>udførelse af socialfaglig udredning som specificeret af VUM og FFB</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLInformationGatheringTypeCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLInformationGatheringTypeCodes"] ; # 
+  fhir:title [ fhir:v "KLOplysningsaktivitetsTypeKoder"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes used to specify which kind of information gathering is conducted"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a" ]
+       ] [
+         fhir:code [ fhir:v "e5a73b0e-a5d2-430e-931f-6156306ab00f" ]
+       ] [
+         fhir:code [ fhir:v "47fd1468-89da-4803-9d7a-ecc039a30d92" ]
+       ] [
+         fhir:code [ fhir:v "0f0f223c-abe3-4720-aab8-c257679a0a4e" ]
+       ] [
+         fhir:code [ fhir:v "95e787e0-5490-437d-ae4c-f3736644242f" ]
+       ] [
+         fhir:code [ fhir:v "f8ebd11a-04f3-4aa0-9786-406e8896c84d" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

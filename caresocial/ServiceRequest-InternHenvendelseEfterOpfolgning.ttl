@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ServiceRequest/InternHenvendelseEfterOpfolgning> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "InternHenvendelseEfterOpfolgning"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"InternHenvendelseEfterOpfolgning\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;InternHenvendelseEfterOpfolgning&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialServiceRequest.html\">ServiceRequest</a></p></div><p><b>RequesterType</b>: Hjemmeplejen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#A4)</span></p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: Hjemmepleje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#ad865929-7363-4b2d-a271-01993181fbaf)</span></p><p><b>orderDetail</b>: Mobilitet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#H1.4)</span>, RH Hverdagens aktiviteter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#H2.2)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>authoredOn</b>: 2020-04-11</p><p><b>requester</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>reasonCode</b>: Sidste opfølgning på Marks hjemmepleje viste behov for revisitation fordi funktionsevnen er blevet bedre, særligt ift. mobilitet. Der skal ses på om nogle af §83 indsatserne, med fordel kan gøres til §83a for yderligere at styrke hverdags rehabiliteringsindsatsen og dermed borgers funktionsniveau. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>reasonReference</b>: <a href=\"Observation-MarkHjemmeplejeRevisitation.html\">Observation/MarkHjemmeplejeRevisitation</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A4" ] ;
+         fhir:display [ fhir:v "Hjemmeplejen" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ad865929-7363-4b2d-a271-01993181fbaf" ] ;
+       fhir:display [ fhir:v "Hjemmepleje" ]
+     ] )
+  ] ; # 
+  fhir:orderDetail ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "H1.4" ] ;
+       fhir:display [ fhir:v "Mobilitet" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "H2.2" ] ;
+       fhir:display [ fhir:v "RH Hverdagens aktiviteter" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2020-04-11"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/HanneFraVisitationenAalborg> ;
+     fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "Sidste opfølgning på Marks hjemmepleje viste behov for revisitation fordi funktionsevnen er blevet bedre, særligt ift. mobilitet. Der skal ses på om nogle af §83 indsatserne, med fordel kan gøres til §83a for yderligere at styrke hverdags rehabiliteringsindsatsen og dermed borgers funktionsniveau." ]
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Observation/MarkHjemmeplejeRevisitation> ;
+     fhir:reference [ fhir:v "Observation/MarkHjemmeplejeRevisitation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Goal/AndreasDelmaal> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AndreasDelmaal"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"AndreasDelmaal\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;AndreasDelmaal&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialGoal.html\">Goal</a></p></div><blockquote><p><b>related goal</b></p><blockquote><p><b>url</b></p><code>type</code></blockquote><p><b>value</b>: based-on <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-goal-relationship-type.html\">GoalRelationshipType</a>#other)</span></p><blockquote><p><b>url</b></p><code>target</code></blockquote><p><b>value</b>: <a href=\"Goal-Andreasindsatsmaal.html\">Goal/Andreasindsatsmaal</a></p></blockquote><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FFB delmål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#6746d4af-145a-4bfd-a672-05c0cf11b53b)</span></p><p><b>description</b>: Første delmål er at Andreas hver morgen for ryddet sit gulv for tøj, og sorteret det i rent og beskidt. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>expressedBy</b>: <a href=\"Practitioner-AnneFraHvidbjerghus.html\">Practitioner/AnneFraHvidbjerghus</a> &quot; HANSEN&quot;</p><p><b>note</b>: Andreas støttes hver morgen i at få ryddet gulvet. Der er hængt et piktogram op med rutinen trin for trin ( @2020-09-10)</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/goal-relationship-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "other" ]
+         ] ) ;
+         fhir:text [ fhir:v "based-on" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "target"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://kl.dk/fhir/common/caresocial/Goal/Andreasindsatsmaal> ;
+         fhir:reference [ fhir:v "Goal/Andreasindsatsmaal" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/goal-relationship"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "6746d4af-145a-4bfd-a672-05c0cf11b53b" ] ;
+       fhir:display [ fhir:v "FFB delmål" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:text [ fhir:v "Første delmål er at Andreas hver morgen for ryddet sit gulv for tøj, og sorteret det i rent og beskidt." ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Andreas> ;
+     fhir:reference [ fhir:v "Patient/Andreas" ]
+  ] ; # 
+  fhir:expressedBy [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/AnneFraHvidbjerghus> ;
+     fhir:reference [ fhir:v "Practitioner/AnneFraHvidbjerghus" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:time [ fhir:v "2020-09-10"^^xsd:date ] ;
+     fhir:text [ fhir:v "Andreas støttes hver morgen i at få ryddet gulvet. Der er hængt et piktogram op med rutinen trin for trin" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

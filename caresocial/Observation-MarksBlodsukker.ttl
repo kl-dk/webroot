@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Observation/MarksBlodsukker> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MarksBlodsukker"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MarksBlodsukker\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MarksBlodsukker&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialObservation.html\">Observation</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-HenvisningFraLageVedrAkutSygepleje.html\">ServiceRequest/HenvisningFraLageVedrAkutSygepleje</a></p><p><b>status</b>: final</p><p><b>code</b>: Blood glucose concentration <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#434912009; <a href=\"CodeSystem-NPU.html\">NPU</a>#NPU02195)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>effective</b>: 2020-06-21</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamFraAkutSygeplejen.html\">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: 3.6 mmol/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mmol/L = 'mmol/L')</span></p></div>"
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/ServiceRequest/HenvisningFraLageVedrAkutSygepleje> ;
+     fhir:reference [ fhir:v "ServiceRequest/HenvisningFraLageVedrAkutSygepleje" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:434912009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "434912009" ]
+     ] [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/NPU"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NPU02195" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-21"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/AbrahamFraAkutSygeplejen> ;
+     fhir:reference [ fhir:v "Practitioner/AbrahamFraAkutSygeplejen" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "3.6"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mmol/l" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mmol/L" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

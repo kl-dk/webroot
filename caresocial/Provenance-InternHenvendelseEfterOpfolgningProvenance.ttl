@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Provenance/InternHenvendelseEfterOpfolgningProvenance> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "InternHenvendelseEfterOpfolgningProvenance"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"InternHenvendelseEfterOpfolgningProvenance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance &quot;InternHenvendelseEfterOpfolgningProvenance&quot; </p></div><p><b>target</b>: <a href=\"ServiceRequest-InternHenvendelseEfterOpfolgning.html\">ServiceRequest/InternHenvendelseEfterOpfolgning</a></p><p><b>recorded</b>: 11 Apr 2020, 09.06.15</p><p><b>reason</b>: treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActReason.html\">ActReason</a>#TREAT)</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td>Author <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-provenance-participant-type.html\">Provenance participant type</a>#author)</span></td><td><a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</td><td><a href=\"Organization-SundhedsforvaltningAalborg.html\">Organization/SundhedsforvaltningAalborg</a> &quot;Sundheds- og kulturforvaltningen, Aalborg Kommune&quot;</td></tr></table></div>"
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/ServiceRequest/InternHenvendelseEfterOpfolgning> ;
+     fhir:reference [ fhir:v "ServiceRequest/InternHenvendelseEfterOpfolgning" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2020-04-11T09:06:15+02:00"^^xsd:dateTime] ; # 
+  fhir:reason ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TREAT" ]
+     ] )
+  ] ) ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "author" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/HanneFraVisitationenAalborg> ;
+       fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <http://kl.dk/fhir/common/caresocial/Organization/SundhedsforvaltningAalborg> ;
+       fhir:reference [ fhir:v "Organization/SundhedsforvaltningAalborg" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

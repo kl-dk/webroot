@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLEncounterTypes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-KLCommonCareSocialCodes.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-829ac647-c7fc-4964-836b-f708d886e0e3">829ac647-c7fc-4964-836b-f708d886e0e3</a></td><td>oplysning</td><td>oplysning er foretaget ved kontakt</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-9269c9a2-8220-447b-a127-811275b41062">9269c9a2-8220-447b-a127-811275b41062</a></td><td>vurdering/bevilling</td><td>vurdering og/eller bevilling er foretaget ved kontakt</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-9f03dfbb-7a97-45a5-94db-d4c3501714a9">9f03dfbb-7a97-45a5-94db-d4c3501714a9</a></td><td>opfølgning</td><td>opfølgning foretaget ved kontakt</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-784275f1-6822-4a88-b361-d958007d5253">784275f1-6822-4a88-b361-d958007d5253</a></td><td>udførelse af planlagt indsats</td><td>Planlagt indsats udført ved kontakt</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-15775b0a-7ec6-469e-9d3c-a81fbc9a1b45">15775b0a-7ec6-469e-9d3c-a81fbc9a1b45</a></td><td>udførelse af akutindsats</td><td>Akutindsats, bevilget af læge eller akutteam, udført ved kontakt</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-c03b426a-4348-407f-b343-f4baa9759c72">c03b426a-4348-407f-b343-f4baa9759c72</a></td><td>udførelse af ikke-bevilget indsats</td><td>Indsats, der ikke i forvejen var bevilget, udført ved kontakt</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-bb6fc544-7f4f-4b50-8868-1431e0df2381">bb6fc544-7f4f-4b50-8868-1431e0df2381</a></td><td>observation</td><td>observation foretaget ved kontakt</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://kl.dk/fhir/common/caresocial/ValueSet/KLEncounterTypes"/>
+  <version value="0.7.0"/>
+  <name value="KLEncounterTypes"/>
+  <title value="KLKontaktTyper"/>
+  <status value="draft"/>
+  <date value="2023-07-06T08:45:08+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+      <concept>
+        <code value="829ac647-c7fc-4964-836b-f708d886e0e3"/>
+      </concept>
+      <concept>
+        <code value="9269c9a2-8220-447b-a127-811275b41062"/>
+      </concept>
+      <concept>
+        <code value="9f03dfbb-7a97-45a5-94db-d4c3501714a9"/>
+      </concept>
+      <concept>
+        <code value="784275f1-6822-4a88-b361-d958007d5253"/>
+      </concept>
+      <concept>
+        <code value="15775b0a-7ec6-469e-9d3c-a81fbc9a1b45"/>
+      </concept>
+      <concept>
+        <code value="c03b426a-4348-407f-b343-f4baa9759c72"/>
+      </concept>
+      <concept>
+        <code value="bb6fc544-7f4f-4b50-8868-1431e0df2381"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

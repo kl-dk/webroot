@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLInformationCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLGeneralInformationFSIII.html\">KLGenerelInformationFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLNursingAreasFSIII.html\">KLSygeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLHomeCareAreasFSIII.html\">KLHjemmeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLTheraphyAreasFSIII.html\">KLTræningOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLPreventionAreasFSIII.html\">KLForebyggelseOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLThemesFFB.html\">KLTemaerFFB</a></li></ul></div>"
+  },
+  "url" : "http://kl.dk/fhir/common/caresocial/ValueSet/KLInformationCodes",
+  "version" : "0.7.0",
+  "name" : "KLInformationCodes",
+  "title" : "KLOplysningKoder",
+  "status" : "draft",
+  "date" : "2023-07-06T08:45:08+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLGeneralInformationFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLTheraphyAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLPreventionAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLThemesFFB"]
+    }]
+  }
+}

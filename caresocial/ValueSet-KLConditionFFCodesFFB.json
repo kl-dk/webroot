@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConditionFFCodesFFB",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href=\"CodeSystem-FFB.html#FFB-a134c31d-d316-46d4-935e-e500874dbbe1\">a134c31d-d316-46d4-935e-e500874dbbe1</a></li><li>Include codes from <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href=\"CodeSystem-FFB.html#FFB-25c5c614-305f-46cd-9891-55d564fc30cf\">25c5c614-305f-46cd-9891-55d564fc30cf</a></li><li>Include codes from <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href=\"CodeSystem-FFB.html#FFB-e1836145-0c20-4e20-971e-d62dfe4ea1a0\">e1836145-0c20-4e20-971e-d62dfe4ea1a0</a></li><li>Include codes from <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href=\"CodeSystem-FFB.html#FFB-4fb78b88-d3af-4cfb-84d7-f06daf423317\">4fb78b88-d3af-4cfb-84d7-f06daf423317</a></li></ul></div>"
+  },
+  "url" : "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionFFCodesFFB",
+  "version" : "0.7.0",
+  "name" : "KLConditionFFCodesFFB",
+  "title" : "KLTilstandFFKoderFFB",
+  "status" : "draft",
+  "date" : "2023-07-06T08:45:08+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Danish municipality FFB condition codes for body functions and structures",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "a134c31d-d316-46d4-935e-e500874dbbe1"
+      }]
+    },
+    {
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "25c5c614-305f-46cd-9891-55d564fc30cf"
+      }]
+    },
+    {
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "e1836145-0c20-4e20-971e-d62dfe4ea1a0"
+      }]
+    },
+    {
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "4fb78b88-d3af-4cfb-84d7-f06daf423317"
+      }]
+    }]
+  }
+}

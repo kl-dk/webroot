@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Observation/MarkHelhedsvurdering> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MarkHelhedsvurdering"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEvaluation"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEvaluation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MarkHelhedsvurdering\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MarkHelhedsvurdering&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialEvaluation.html\">Evaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: FSIII helhedsvurdering <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225400002)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>encounter</b>: <a href=\"Encounter-MarkogUdredningSygepleje.html\">Encounter/MarkogUdredningSygepleje</a></p><p><b>effective</b>: 2020-06-05</p><p><b>performer</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>value</b>: Mark har dårlig mobilitet, og derfor brug for hjælp til større rengøringsopgaver. Har fået konstateret et tryksår. Har hævede fødder som kan være udtryk for et cirkulatorisk problem. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c" ]
+     ] [
+       a sct:225400002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "225400002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Encounter/MarkogUdredningSygepleje> ;
+     fhir:reference [ fhir:v "Encounter/MarkogUdredningSygepleje" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-05"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/HanneFraVisitationenAalborg> ;
+     fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Mark har dårlig mobilitet, og derfor brug for hjælp til større rengøringsopgaver. Har fået konstateret et tryksår. Har hævede fødder som kan være udtryk for et cirkulatorisk problem." ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

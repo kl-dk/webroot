@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="AndreasDelmaal"/>
+  <meta>
+    <profile value="http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Goal</b><a name="AndreasDelmaal"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Goal &quot;AndreasDelmaal&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialGoal.html">Goal</a></p></div><blockquote><p><b>related goal</b></p><blockquote><p><b>url</b></p><code>type</code></blockquote><p><b>value</b>: based-on <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-goal-relationship-type.html">GoalRelationshipType</a>#other)</span></p><blockquote><p><b>url</b></p><code>target</code></blockquote><p><b>value</b>: <a href="Goal-Andreasindsatsmaal.html">Goal/Andreasindsatsmaal</a></p></blockquote><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FFB delmål <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-KLCommonCareSocialCodes.html">KLCommonCareSocialCodes</a>#6746d4af-145a-4bfd-a672-05c0cf11b53b)</span></p><p><b>description</b>: Første delmål er at Andreas hver morgen for ryddet sit gulv for tøj, og sorteret det i rent og beskidt. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-Andreas.html">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>expressedBy</b>: <a href="Practitioner-AnneFraHvidbjerghus.html">Practitioner/AnneFraHvidbjerghus</a> &quot; HANSEN&quot;</p><p><b>note</b>: Andreas støttes hver morgen i at få ryddet gulvet. Der er hængt et piktogram op med rutinen trin for trin ( @2020-09-10)</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/goal-relationship">
+    <extension url="type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/goal-relationship-type"/>
+          <code value="other"/>
+        </coding>
+        <text value="based-on"/>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="target">
+      <valueReference>
+        <reference value="Goal/Andreasindsatsmaal"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <lifecycleStatus value="active"/>
+  <category>
+    <coding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+      <code value="6746d4af-145a-4bfd-a672-05c0cf11b53b"/>
+      <display value="FFB delmål"/>
+    </coding>
+  </category>
+  <description>
+    <text value="Første delmål er at Andreas hver morgen for ryddet sit gulv for tøj, og sorteret det i rent og beskidt."/>
+  </description>
+  <subject>
+    <reference value="Patient/Andreas"/>
+  </subject>
+  <expressedBy>
+    <reference value="Practitioner/AnneFraHvidbjerghus"/>
+  </expressedBy>
+  <note>
+    <time value="2020-09-10"/>
+    <text value="Andreas støttes hver morgen i at få ryddet gulvet. Der er hængt et piktogram op med rutinen trin for trin"/>
+  </note>
+</Goal>

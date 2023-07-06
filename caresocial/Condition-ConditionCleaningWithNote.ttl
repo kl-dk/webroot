@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Condition/ConditionCleaningWithNote> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConditionCleaningWithNote"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ConditionCleaningWithNote\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ConditionCleaningWithNote&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialCondition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>severity</b>: Svært nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FFB.html\">FFB</a>#cae545f5-2813-4d79-98fc-0a7d770af3cd)</span></p><p><b>code</b>: Gøre rent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FFB.html\">FFB</a>#8f32c948-41c4-49d7-8913-cdeede2e7fe1)</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>recordedDate</b>: 2020-08-12</p><p><b>asserter</b>: <a href=\"Practitioner-BirteFraVisitationenMorsoe.html\">Practitioner/BirteFraVisitationenMorsoe</a> &quot; MATHIASSEN&quot;</p><p><b>note</b>: Andreas er blevet bedre til at rydde op og gøre rent efter sig, når han har spist. Ryddelighed og renlighed på værelset kræver fortsat meget støtte (By Practitioner/AnneFraHvidbjerghus)</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:severity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cae545f5-2813-4d79-98fc-0a7d770af3cd" ] ;
+       fhir:display [ fhir:v "Svært nedsat funktionsevne" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8f32c948-41c4-49d7-8913-cdeede2e7fe1" ] ;
+       fhir:display [ fhir:v "Gøre rent" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Andreas> ;
+     fhir:reference [ fhir:v "Patient/Andreas" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-08-12"^^xsd:date] ; # 
+  fhir:asserter [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/BirteFraVisitationenMorsoe> ;
+     fhir:reference [ fhir:v "Practitioner/BirteFraVisitationenMorsoe" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/AnneFraHvidbjerghus> ;
+       fhir:reference [ fhir:v "Practitioner/AnneFraHvidbjerghus" ]
+     ] ;
+     fhir:text [ fhir:v "Andreas er blevet bedre til at rydde op og gøre rent efter sig, når han har spist. Ryddelighed og renlighed på værelset kræver fortsat meget støtte" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Goal/AndreasIndsatsformaal> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AndreasIndsatsformaal"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"AndreasIndsatsformaal\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;AndreasIndsatsformaal&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialPurpose.html\">Goal - Purpose</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: Indsatsformål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#424827b1-23aa-4848-962b-56ee47def560)</span></p><p><b>description</b>: Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>expressedBy</b>: <a href=\"Practitioner-BirteFraVisitationenMorsoe.html\">Practitioner/BirteFraVisitationenMorsoe</a> &quot; MATHIASSEN&quot;</p></div>"
+  ] ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "424827b1-23aa-4848-962b-56ee47def560" ] ;
+       fhir:display [ fhir:v "Indsatsformål" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:text [ fhir:v "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang." ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Andreas> ;
+     fhir:reference [ fhir:v "Patient/Andreas" ]
+  ] ; # 
+  fhir:expressedBy [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/BirteFraVisitationenMorsoe> ;
+     fhir:reference [ fhir:v "Practitioner/BirteFraVisitationenMorsoe" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

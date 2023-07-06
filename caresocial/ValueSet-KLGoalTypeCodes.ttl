@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLGoalTypeCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLGoalTypeCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-KLCommonCareSocialCodes.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-ca552020-6ed1-4cdc-b0d4-32697f1f27ad\">ca552020-6ed1-4cdc-b0d4-32697f1f27ad</a></td><td>FSIII tilstandsmål</td><td>Tilstandsmål som defineret af FSIII - ofte i form af en forventet tilstand</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-e6f35a88-6665-4471-9dce-9a98854532b4\">e6f35a88-6665-4471-9dce-9a98854532b4</a></td><td>FSIII indsatsmål</td><td>Mål for indsatsen i FSIII, som ofte er defineret af udfører. Hvis der specificeres en FSIII målemetode, er det et mål af denne type</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-416fe27d-3ccf-4390-8742-8b52a9d8dc78\">416fe27d-3ccf-4390-8742-8b52a9d8dc78</a></td><td>FFB borgers mål og ønsker</td><td>Borgers mål og ønsker som specificeret af FFB. Det er overordnet og er som udtrykt af borger</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-424827b1-23aa-4848-962b-56ee47def560\">424827b1-23aa-4848-962b-56ee47def560</a></td><td>Indsatsformål</td><td>Det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-0bb3daef-538d-45dc-b444-abdbcb63f6bc\">0bb3daef-538d-45dc-b444-abdbcb63f6bc</a></td><td>FFB indsatsmål</td><td>Indsatsmål i FFB - er de konkrete faglige mål der arbejdes med, og som er knyttet til tilstande og opfølgninger</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-6746d4af-145a-4bfd-a672-05c0cf11b53b\">6746d4af-145a-4bfd-a672-05c0cf11b53b</a></td><td>FFB delmål</td><td>Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-ffb9886b-d04e-46b1-9165-a400f91f822b\">ffb9886b-d04e-46b1-9165-a400f91f822b</a></td><td>FSIII borgers ønsker og mål</td><td/></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLGoalTypeCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLGoalTypeCodes"] ; # 
+  fhir:title [ fhir:v "KLMålKategoriKoder"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes used to distinguish different kinds of goals"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ca552020-6ed1-4cdc-b0d4-32697f1f27ad" ]
+       ] [
+         fhir:code [ fhir:v "e6f35a88-6665-4471-9dce-9a98854532b4" ]
+       ] [
+         fhir:code [ fhir:v "416fe27d-3ccf-4390-8742-8b52a9d8dc78" ]
+       ] [
+         fhir:code [ fhir:v "424827b1-23aa-4848-962b-56ee47def560" ]
+       ] [
+         fhir:code [ fhir:v "0bb3daef-538d-45dc-b444-abdbcb63f6bc" ]
+       ] [
+         fhir:code [ fhir:v "6746d4af-145a-4bfd-a672-05c0cf11b53b" ]
+       ] [
+         fhir:code [ fhir:v "ffb9886b-d04e-46b1-9165-a400f91f822b" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

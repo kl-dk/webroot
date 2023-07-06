@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFFB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLChangeValueCodesFFB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-d41c8072-52f8-42b5-9375-ddbea454d27f\">d41c8072-52f8-42b5-9375-ddbea454d27f</a></td><td>Udvikle funktionsevne</td><td>måltype, der er udtryk for en forventning om, at borgeren støttes i at udvikle sin funktionsevne i relation til målet</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-10752a63-00b4-4958-b7f4-9f3a18f74266\">10752a63-00b4-4958-b7f4-9f3a18f74266</a></td><td>Fastholde funktionsevne</td><td>måltype, der er udtryk for en forventning om, at borgeren støttes i at fastholde sin funktionsevne i relation til målet</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-e47c22bd-d88d-48ab-882b-419923e1f44e\">e47c22bd-d88d-48ab-882b-419923e1f44e</a></td><td>Begrænse tab af funktionsevne</td><td>måltype, der er udtryk for en forventning om, at der vil være et tab af funktionsevne i relation til målet, men at borgeren støttes i at begrænse sit tab af funktionsevne i relation til målet mest muligt</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFFB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLChangeValueCodesFFB"] ; # 
+  fhir:title [ fhir:v "KLMåltypekoderFFB"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "d41c8072-52f8-42b5-9375-ddbea454d27f" ]
+       ] [
+         fhir:code [ fhir:v "10752a63-00b4-4958-b7f4-9f3a18f74266" ]
+       ] [
+         fhir:code [ fhir:v "e47c22bd-d88d-48ab-882b-419923e1f44e" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

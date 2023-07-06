@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "AndreasSocialeRelationer",
+  "meta" : {
+    "profile" : ["http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"AndreasSocialeRelationer\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;AndreasSocialeRelationer&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialPlannedIntervention.html\">PlannedIntervention</a></p></div><p><b>basedOn</b>: <a href=\"CarePlan-NySocialIndsats.html\">CarePlan/NySocialIndsats</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"Patient-Andreas.html\">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>created</b>: 2020-08-12</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Støtte til sociale relationer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FFB.html\">FFB</a>#05cd5e81-1a3a-4bdd-901b-7ec96c12d990)</span></td><td>in-progress</td></tr></table></blockquote></div>"
+  },
+  "basedOn" : [{
+    "reference" : "CarePlan/NySocialIndsats"
+  }],
+  "status" : "active",
+  "intent" : "order",
+  "subject" : {
+    "reference" : "Patient/Andreas"
+  },
+  "created" : "2020-08-12",
+  "activity" : [{
+    "detail" : {
+      "code" : {
+        "coding" : [{
+          "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+          "code" : "05cd5e81-1a3a-4bdd-901b-7ec96c12d990",
+          "display" : "Støtte til sociale relationer"
+        }]
+      },
+      "status" : "in-progress"
+    }
+  }]
+}

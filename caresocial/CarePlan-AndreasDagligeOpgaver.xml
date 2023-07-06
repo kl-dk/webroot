@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="AndreasDagligeOpgaver"/>
+  <meta>
+    <profile value="http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="AndreasDagligeOpgaver"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;AndreasDagligeOpgaver&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialPlannedIntervention.html">PlannedIntervention</a></p></div><p><b>basedOn</b>: <a href="CarePlan-NySocialIndsats.html">CarePlan/NySocialIndsats</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="Patient-Andreas.html">Patient/Andreas</a> &quot; HANSEN&quot;</p><p><b>created</b>: 2020-08-12</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Støtte til daglige opgaver i hjemmet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-FFB.html">FFB</a>#638f44df-6bf2-47f8-9935-b8fdc83e5bf5)</span></td><td>in-progress</td></tr></table></blockquote></div>
+  </text>
+  <basedOn>
+    <reference value="CarePlan/NySocialIndsats"/>
+  </basedOn>
+  <status value="active"/>
+  <intent value="order"/>
+  <subject>
+    <reference value="Patient/Andreas"/>
+  </subject>
+  <created value="2020-08-12"/>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"/>
+          <code value="638f44df-6bf2-47f8-9935-b8fdc83e5bf5"/>
+          <display value="Støtte til daglige opgaver i hjemmet"/>
+        </coding>
+      </code>
+      <status value="in-progress"/>
+    </detail>
+  </activity>
+</CarePlan>

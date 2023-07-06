@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Goal/JudithForventetTilstand> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "JudithForventetTilstand"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"JudithForventetTilstand\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;JudithForventetTilstand&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialGoal.html\">Goal</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FSIII tilstandsmål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#ca552020-6ed1-4cdc-b0d4-32697f1f27ad)</span></p><p><b>description</b>: Tilstand forsvinder, mindskes eller forbliver uændret <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#e182c5dc-9f91-474a-92e8-f62be3d498f4)</span></p><p><b>subject</b>: <a href=\"Patient-Judith.html\">Patient/Judith</a> &quot; NIELSEN&quot;</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td>*</td><td>funktionsevneniveau <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></td><td>Moderate begrænsninger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#B3)</span></td></tr></table><p><b>expressedBy</b>: <a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</p><p><b>addresses</b>: <a href=\"Condition-ConditionWalking.html\">Condition/ConditionWalking</a></p></div>"
+  ] ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ca552020-6ed1-4cdc-b0d4-32697f1f27ad" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "e182c5dc-9f91-474a-92e8-f62be3d498f4" ] ;
+       fhir:display [ fhir:v "Tilstand forsvinder, mindskes eller forbliver uændret" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Judith> ;
+     fhir:reference [ fhir:v "Patient/Judith" ]
+  ] ; # 
+  fhir:target ( [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "66959f77-6e2a-4574-8423-3ff097f8b9fa" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B3" ] ;
+         fhir:display [ fhir:v "Moderate begrænsninger" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:expressedBy [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/HanneFraVisitationenAalborg> ;
+     fhir:reference [ fhir:v "Practitioner/HanneFraVisitationenAalborg" ]
+  ] ; # 
+  fhir:addresses ( [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Condition/ConditionWalking> ;
+     fhir:reference [ fhir:v "Condition/ConditionWalking" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

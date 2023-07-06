@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/Encounter/MarkogSaarsygeplejerske> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MarkogSaarsygeplejerske"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"^^xsd:anyURI ;
+       fhir:link <http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"MarkogSaarsygeplejerske\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;MarkogSaarsygeplejerske&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialEncounter.html\">Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: udførelse af planlagt indsats <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#784275f1-6822-4a88-b361-d958007d5253)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-NatasjaFraSygeplejen.html\">Practitioner/NatasjaFraSygeplejen</a> &quot; PETERSEN&quot;</td></tr></table><p><b>period</b>: 2020-06-07 15:30:00+0000 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "784275f1-6822-4a88-b361-d958007d5253" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://kl.dk/fhir/common/caresocial/Patient/Mark> ;
+     fhir:reference [ fhir:v "Patient/Mark" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:individual [
+       fhir:link <http://kl.dk/fhir/common/caresocial/Practitioner/NatasjaFraSygeplejen> ;
+       fhir:reference [ fhir:v "Practitioner/NatasjaFraSygeplejen" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-06-07T15:30:00.000Z"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

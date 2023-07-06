@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLInterventionsFSIII"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-KLNursingInterventionsFSIII.html">KLSygeplejeIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLHomeCareInterventionsFSIII.html">KLHjemmeplejeIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLTrainingInterventionsFSIII.html">KLTræningIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLPreventionInterventionsFSIII.html">KLForebyggelseIndsatserFSIII</a></li></ul></div>
+  </text>
+  <url value="http://kl.dk/fhir/common/caresocial/ValueSet/KLInterventionsFSIII"/>
+  <version value="0.7.0"/>
+  <name value="KLInterventionsFSIII"/>
+  <title value="KLIndsatserFSIII"/>
+  <status value="draft"/>
+  <date value="2023-07-06T08:45:08+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Interventions as described by FSIII"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingInterventionsFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareInterventionsFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://kl.dk/fhir/common/caresocial/ValueSet/KLTrainingInterventionsFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://kl.dk/fhir/common/caresocial/ValueSet/KLPreventionInterventionsFSIII"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "MarkogUdredningSygepleje",
+  "meta" : {
+    "profile" : ["http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"MarkogUdredningSygepleje\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;MarkogUdredningSygepleje&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialEncounter.html\">Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: oplysning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#829ac647-c7fc-4964-836b-f708d886e0e3)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-HanneFraVisitationenAalborg.html\">Practitioner/HanneFraVisitationenAalborg</a> &quot; SIMONSEN&quot;</td></tr></table><p><b>period</b>: 2020-06-05 --&gt; (ongoing)</p></div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "HH"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+      "code" : "829ac647-c7fc-4964-836b-f708d886e0e3"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/Mark"
+  },
+  "participant" : [{
+    "individual" : {
+      "reference" : "Practitioner/HanneFraVisitationenAalborg"
+    }
+  }],
+  "period" : {
+    "start" : "2020-06-05"
+  }
+}

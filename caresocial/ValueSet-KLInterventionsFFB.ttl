@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLInterventionsFFB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLInterventionsFFB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-35b593cf-724f-4058-9f31-fe1b3e8df124\">35b593cf-724f-4058-9f31-fe1b3e8df124</a></td><td>Pædagogisk udredning</td><td>udredning, hvor en leverandør afdækker en persons funktionsevne i relation til daglige aktiviteter</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-f25674bf-3162-45c3-bde4-6d542bf9629b\">f25674bf-3162-45c3-bde4-6d542bf9629b</a></td><td>Kompetenceudviklende aktivitet</td><td>aktivitet og samvær, hvor en person eller gruppe af personer undervises i bestemte færdigheder eller kompetencer</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-299af83f-586c-4c17-8af6-c8c47a847d6d\">299af83f-586c-4c17-8af6-c8c47a847d6d</a></td><td>Sansestimulerende aktivitet</td><td>aktivitet og samvær, hvor en person får stimuleret sine sanser med henblik på evnen til at kunne sortere, organisere og bearbejde sanseindtryk</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-be5d5058-ef06-42a9-b894-51e44513e717\">be5d5058-ef06-42a9-b894-51e44513e717</a></td><td>Kreativ aktivitet</td><td>aktivitet og samvær, hvor en person kan udfolde sig kreativt</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-66e23d66-1c5f-4070-bed1-8827cc863dcd\">66e23d66-1c5f-4070-bed1-8827cc863dcd</a></td><td>Fysisk aktivitet</td><td>aktivitet og samvær, der gennem fysiske bevægelser giver en person mulighed for at bruge sin krop</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-7e419926-bb04-4829-99c9-95ea20403c2c\">7e419926-bb04-4829-99c9-95ea20403c2c</a></td><td>Social aktivitet</td><td>aktivitet og samvær, som ved at få en person ind i et fællesskab med andre forebygger eller bryder med social isolation og vedligeholder de sociale relationer</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-2c1944be-fe87-4c42-b08e-9cc075c9ef18\">2c1944be-fe87-4c42-b08e-9cc075c9ef18</a></td><td>Oplevelsesaktivitet</td><td>aktivitet og samvær, hvor en person har individuelle oplevelser eller oplevelser sammen med andre personer</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-5af56051-8413-4115-aaa2-83a0767e1137\">5af56051-8413-4115-aaa2-83a0767e1137</a></td><td>Længerevarende ophold</td><td>ophold, der er tilkendt for en ikke-midlertidig periode</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-80aa8ea7-4ad8-405f-876a-4c0f89fde06a\">80aa8ea7-4ad8-405f-876a-4c0f89fde06a</a></td><td>Midlertidigt ophold</td><td>ophold, der er tilkendt midlertidigt</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-a81a3fa9-6601-4d1e-a11e-f7444dfd3828\">a81a3fa9-6601-4d1e-a11e-f7444dfd3828</a></td><td>Akut ophold</td><td>ophold, der leveres akut</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-55b77d7c-afce-4269-9232-7731ab1ef4fc\">55b77d7c-afce-4269-9232-7731ab1ef4fc</a></td><td>Service</td><td>beskyttet beskæftigelse, der er centreret omkring udførelse af servicerende, understøttende arbejdsfunktioner</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-fb3d8722-90e0-4a80-ba65-490617ffeb0f\">fb3d8722-90e0-4a80-ba65-490617ffeb0f</a></td><td>Produktion og værksted</td><td>beskyttet beskæftigelse, der er centreret omkring udførelse af enkle, afgrænsede arbejdsopgaver som led i en samlet produktion af konkrete produkter</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-c429b7a9-5085-472b-b118-a21ca90f769f\">c429b7a9-5085-472b-b118-a21ca90f769f</a></td><td>Praktikforløb</td><td>beskyttet beskæftigelse, der har til formål, at en person kan afprøve ressourcer og kompetencer i forhold til et specifikt arbejdsområde eller en given arbejdsplads i en afgrænset periode</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-c56634ca-6847-4c50-b5c1-c528c1ffc1d8\">c56634ca-6847-4c50-b5c1-c528c1ffc1d8</a></td><td>Støtte til etablering i bolig</td><td>støtte til praktiske opgaver, der retter sig mod anskaffelse af og etablering i bolig</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-638f44df-6bf2-47f8-9935-b8fdc83e5bf5\">638f44df-6bf2-47f8-9935-b8fdc83e5bf5</a></td><td>Støtte til daglige opgaver i hjemmet</td><td>støtte til praktiske opgaver, der har hverdagskarakter og retter sig mod en persons hjem</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-d473dea2-4f6d-4f36-a8f0-260f0213f50a\">d473dea2-4f6d-4f36-a8f0-260f0213f50a</a></td><td>Støtte til administration</td><td>støtte til praktiske opgaver af administrativ eller økonomisk karakter</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-1a2daf63-0510-4bf3-8578-662d4300c965\">1a2daf63-0510-4bf3-8578-662d4300c965</a></td><td>Støtte til uddannelse</td><td>støtte til samfundsdeltagelse, der retter sig mod en persons muligheder for at varetage en uddannelse</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-cb1169ee-8969-46d3-813d-f0dd555bd838\">cb1169ee-8969-46d3-813d-f0dd555bd838</a></td><td>Støtte til beskæftigelse</td><td>støtte til samfundsdeltagelse, der retter sig mod en persons muligheder for at varetage et arbejde</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-e2631dec-fd8b-420e-94db-53fd80e82766\">e2631dec-fd8b-420e-94db-53fd80e82766</a></td><td>Støtte til kontakt til offentlige og private instanser</td><td>støtte til samfundsdeltagelse, der retter sig mod gennemførsel af besøg hos og kontakt til offentlige og private instanser med et specifikt formål</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-0886a1b6-4a3a-47e5-9c97-066270529e4f\">0886a1b6-4a3a-47e5-9c97-066270529e4f</a></td><td>Støtte til transport</td><td>støtte til samfundsdeltagelse, der retter sig mod en persons mulighed for selvstændigt at færdes uden for hjemmet</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-05cd5e81-1a3a-4bdd-901b-7ec96c12d990\">05cd5e81-1a3a-4bdd-901b-7ec96c12d990</a></td><td>Støtte til sociale relationer</td><td>støtte til relationer og fællesskaber, der retter sig mod at udvikle, indgå i og bevare relationer til andre mennesker</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-ea47a198-7e24-472d-ba5d-132b8b744710\">ea47a198-7e24-472d-ba5d-132b8b744710</a></td><td>Støtte til varetagelse af forældrerollen</td><td>støtte til relationer og fællesskaber, der retter sig mod strukturering og håndtering af opgaver, som er en almindelig del af forældreansvaret, og hvor samværet mellem barn og forælder er centralt</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-ad7755d2-11bf-468d-958b-2f0c8d9c3742\">ad7755d2-11bf-468d-958b-2f0c8d9c3742</a></td><td>Støtte til psykisk trivsel</td><td>støtte til sundhed, der retter sig mod en persons psykiske velbefindende</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-72272d03-1774-4a14-b598-5f19b5eac83f\">72272d03-1774-4a14-b598-5f19b5eac83f</a></td><td>Støtte til personlig hygiejne</td><td>støtte til sundhed, der retter sig mod hygiejnemæssige opgaver i relation til personen selv</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-e7c8b42e-b882-4629-8e03-65e44b1aa3e3\">e7c8b42e-b882-4629-8e03-65e44b1aa3e3</a></td><td>Støtte til behandling</td><td>støtte til sundhed, der retter sig mod en persons behandling</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-3c1639d0-e486-43c6-8add-448b8aff4b8f\">3c1639d0-e486-43c6-8add-448b8aff4b8f</a></td><td>Støtte til sund levevis</td><td>støtte til sundhed, der retter sig mod livsstilsbetingede forhold</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-bd5fea9a-16ed-4e63-b6a1-8e83caaf9b0b\">bd5fea9a-16ed-4e63-b6a1-8e83caaf9b0b</a></td><td>Støtte til seksualitet</td><td>støtte til sundhed, der retter sig mod den måde, som en persons seksualitet kommer til udtryk på</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-3459f530-7334-48c4-9037-53bf80df8851\">3459f530-7334-48c4-9037-53bf80df8851</a></td><td>Gruppebaseret hjælp og støtte</td><td>forebyggende hjælp og støtte, der leveres til en gruppe af personer</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-fe42f8f4-d516-4bab-b006-12b0cd186603\">fe42f8f4-d516-4bab-b006-12b0cd186603</a></td><td>Individuel tidsbegrænset socialpædagogisk hjælp og støtte</td><td>forebyggende hjælp og støtte, der leveres i en på forhånd afgrænset periode til enkeltpersoner</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-b6e1f331-fccf-4a33-8bb6-566546edc405\">b6e1f331-fccf-4a33-8bb6-566546edc405</a></td><td>Gruppebaseret hjælp og støtte etableret i samarbejde med frivillige</td><td>gruppebaseret hjælp og støtte der leveres i samabejde med friviilige</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-d580bcb7-145a-4346-8e99-d387bbf08a40\">d580bcb7-145a-4346-8e99-d387bbf08a40</a></td><td>Individuel tidsbegrænset socialpædagogisk hjælp og støtte leveret i samarbejde med frivillige</td><td>Individuel tidsbegrænset socialpædagogisk hjælp og støtte der leveres i samarbejde med frivillige</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-f3edac43-d0d6-4cc3-96c7-4658a557257a\">f3edac43-d0d6-4cc3-96c7-4658a557257a</a></td><td>Akut rådgivning, omsorg og støtte</td><td>forebyggende hjælp og støtte, der retter sig mod personer med psykiske vanskeligheder, der akut har brug for rådgivning, omsorg eller støtte</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLInterventionsFFB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLInterventionsFFB"] ; # 
+  fhir:title [ fhir:v "KLYdelserFFB"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "social interventions (ydelser) as defined by FFB"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "35b593cf-724f-4058-9f31-fe1b3e8df124" ]
+       ] [
+         fhir:code [ fhir:v "f25674bf-3162-45c3-bde4-6d542bf9629b" ]
+       ] [
+         fhir:code [ fhir:v "299af83f-586c-4c17-8af6-c8c47a847d6d" ]
+       ] [
+         fhir:code [ fhir:v "be5d5058-ef06-42a9-b894-51e44513e717" ]
+       ] [
+         fhir:code [ fhir:v "66e23d66-1c5f-4070-bed1-8827cc863dcd" ]
+       ] [
+         fhir:code [ fhir:v "7e419926-bb04-4829-99c9-95ea20403c2c" ]
+       ] [
+         fhir:code [ fhir:v "2c1944be-fe87-4c42-b08e-9cc075c9ef18" ]
+       ] [
+         fhir:code [ fhir:v "5af56051-8413-4115-aaa2-83a0767e1137" ]
+       ] [
+         fhir:code [ fhir:v "80aa8ea7-4ad8-405f-876a-4c0f89fde06a" ]
+       ] [
+         fhir:code [ fhir:v "a81a3fa9-6601-4d1e-a11e-f7444dfd3828" ]
+       ] [
+         fhir:code [ fhir:v "55b77d7c-afce-4269-9232-7731ab1ef4fc" ]
+       ] [
+         fhir:code [ fhir:v "fb3d8722-90e0-4a80-ba65-490617ffeb0f" ]
+       ] [
+         fhir:code [ fhir:v "c429b7a9-5085-472b-b118-a21ca90f769f" ]
+       ] [
+         fhir:code [ fhir:v "c56634ca-6847-4c50-b5c1-c528c1ffc1d8" ]
+       ] [
+         fhir:code [ fhir:v "638f44df-6bf2-47f8-9935-b8fdc83e5bf5" ]
+       ] [
+         fhir:code [ fhir:v "d473dea2-4f6d-4f36-a8f0-260f0213f50a" ]
+       ] [
+         fhir:code [ fhir:v "1a2daf63-0510-4bf3-8578-662d4300c965" ]
+       ] [
+         fhir:code [ fhir:v "cb1169ee-8969-46d3-813d-f0dd555bd838" ]
+       ] [
+         fhir:code [ fhir:v "e2631dec-fd8b-420e-94db-53fd80e82766" ]
+       ] [
+         fhir:code [ fhir:v "0886a1b6-4a3a-47e5-9c97-066270529e4f" ]
+       ] [
+         fhir:code [ fhir:v "05cd5e81-1a3a-4bdd-901b-7ec96c12d990" ]
+       ] [
+         fhir:code [ fhir:v "ea47a198-7e24-472d-ba5d-132b8b744710" ]
+       ] [
+         fhir:code [ fhir:v "ad7755d2-11bf-468d-958b-2f0c8d9c3742" ]
+       ] [
+         fhir:code [ fhir:v "72272d03-1774-4a14-b598-5f19b5eac83f" ]
+       ] [
+         fhir:code [ fhir:v "e7c8b42e-b882-4629-8e03-65e44b1aa3e3" ]
+       ] [
+         fhir:code [ fhir:v "3c1639d0-e486-43c6-8add-448b8aff4b8f" ]
+       ] [
+         fhir:code [ fhir:v "bd5fea9a-16ed-4e63-b6a1-8e83caaf9b0b" ]
+       ] [
+         fhir:code [ fhir:v "3459f530-7334-48c4-9037-53bf80df8851" ]
+       ] [
+         fhir:code [ fhir:v "fe42f8f4-d516-4bab-b006-12b0cd186603" ]
+       ] [
+         fhir:code [ fhir:v "b6e1f331-fccf-4a33-8bb6-566546edc405" ]
+       ] [
+         fhir:code [ fhir:v "d580bcb7-145a-4346-8e99-d387bbf08a40" ]
+       ] [
+         fhir:code [ fhir:v "f3edac43-d0d6-4cc3-96c7-4658a557257a" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

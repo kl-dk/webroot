@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLMatterOfInterestInformerFFB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLMatterOfInterestInformerFFB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-KLCommonCareSocialCodes.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-25b4e705-2e9a-47a2-b11a-c829316b9d3a\">25b4e705-2e9a-47a2-b11a-c829316b9d3a</a></td><td>Borger</td><td>Borger er kilde til oplysning eller vurdering</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-63338442-7b2e-405b-acc0-142361ef19f1\">63338442-7b2e-405b-acc0-142361ef19f1</a></td><td>Andre</td><td>Andre end borger og sagsbehandler er kilde til oplysning eller vurdering. Fx læge, pårørende og udfører</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-f6ea2920-7dde-491e-a489-6b99a3904069\">f6ea2920-7dde-491e-a489-6b99a3904069</a></td><td>Sagsbehandler</td><td>Sagsbehandler er kilde til oplysning eller vurdering</td></tr><tr><td><a href=\"CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-f00a6844-1005-401d-965d-1c5859df7beb\">f00a6844-1005-401d-965d-1c5859df7beb</a></td><td>Udfører</td><td>Udfører er kilde til oplysning eller vurdering</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLMatterOfInterestInformerFFB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLMatterOfInterestInformerFFB"] ; # 
+  fhir:title [ fhir:v "KLKildeTilOplysningFFB"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes that identify who's perspective the matter-of-interest is comming from"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "25b4e705-2e9a-47a2-b11a-c829316b9d3a" ]
+       ] [
+         fhir:code [ fhir:v "63338442-7b2e-405b-acc0-142361ef19f1" ]
+       ] [
+         fhir:code [ fhir:v "f6ea2920-7dde-491e-a489-6b99a3904069" ]
+       ] [
+         fhir:code [ fhir:v "f00a6844-1005-401d-965d-1c5859df7beb" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

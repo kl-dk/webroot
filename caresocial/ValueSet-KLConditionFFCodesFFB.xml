@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLConditionFFCodesFFB"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="CodeSystem-FFB.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href="CodeSystem-FFB.html#FFB-a134c31d-d316-46d4-935e-e500874dbbe1">a134c31d-d316-46d4-935e-e500874dbbe1</a></li><li>Include codes from <a href="CodeSystem-FFB.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href="CodeSystem-FFB.html#FFB-25c5c614-305f-46cd-9891-55d564fc30cf">25c5c614-305f-46cd-9891-55d564fc30cf</a></li><li>Include codes from <a href="CodeSystem-FFB.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href="CodeSystem-FFB.html#FFB-e1836145-0c20-4e20-971e-d62dfe4ea1a0">e1836145-0c20-4e20-971e-d62dfe4ea1a0</a></li><li>Include codes from <a href="CodeSystem-FFB.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a> where concept  descends from  <a href="CodeSystem-FFB.html#FFB-4fb78b88-d3af-4cfb-84d7-f06daf423317">4fb78b88-d3af-4cfb-84d7-f06daf423317</a></li></ul></div>
+  </text>
+  <url value="http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionFFCodesFFB"/>
+  <version value="0.7.0"/>
+  <name value="KLConditionFFCodesFFB"/>
+  <title value="KLTilstandFFKoderFFB"/>
+  <status value="draft"/>
+  <date value="2023-07-06T08:45:08+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Danish municipality FFB condition codes for body functions and structures"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="a134c31d-d316-46d4-935e-e500874dbbe1"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="25c5c614-305f-46cd-9891-55d564fc30cf"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="e1836145-0c20-4e20-971e-d62dfe4ea1a0"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="4fb78b88-d3af-4cfb-84d7-f06daf423317"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

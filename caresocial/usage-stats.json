@@ -1,0 +1,315 @@
+{
+  "package": "dk.fhir.ig.kl.common.caresocial",
+  "version": "0.7.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DNK",
+  "extensions": [
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/BasedOnServiceRequest",
+      "title": "BasedOnServiceRequest",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/ConditionLastAssertedDate",
+      "title": "ConditionLastAssertedDate",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/ConditionRank",
+      "title": "ConditionRank",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/ExtEventHist",
+      "title": "EventHist",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter",
+      "title": "FollowupEncounter",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/MatterOfInterestInformer",
+      "title": "MatterOfInterestInformer",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/MunicipalityCaseNumber",
+      "title": "MunicipalityCasenumber",
+      "types": [
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType",
+      "title": "RequesterType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising",
+      "title": "SubjectConsentToLiaising",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "CarePlan": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention",
+        "title": "PlannedIntervention"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialMatterOfInterest",
+        "title": "MatterOfInterest"
+      },
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation",
+        "title": "Observation"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCompletedIntervention",
+        "title": "CompletedIntervention"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFocusCondition",
+        "title": "FocusCondition"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter",
+        "title": "Encounter"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose",
+        "title": "Goal - Purpose"
+      }
+    ],
+    "ClinicalImpression": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformationGathering",
+        "title": "InformationGathering"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest",
+        "title": "ServiceRequest"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen",
+        "title": "Citizen"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization",
+        "title": "Organization"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner",
+        "title": "Practioner"
+      }
+    ],
+    "CareTeam": [
+      {
+        "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer",
+        "title": "ServicePerformer"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes": [
+      "Patient.address"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/goal-relationship": [
+      "Goal"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-relevantHistory": [
+      "CarePlan"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/BasedOnServiceRequest": [
+      "ClinicalImpression"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/ConditionLastAssertedDate": [
+      "Condition"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/ConditionRank": [
+      "CarePlan.addresses",
+      "Goal.addresses"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/ExtEventHist": [
+      "Condition"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter": [
+      "CarePlan",
+      "Condition"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/MatterOfInterestInformer": [
+      "Condition.note",
+      "Goal.outcomeCode",
+      "Observation"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/MunicipalityCaseNumber": [
+      "CarePlan",
+      "ServiceRequest"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType": [
+      "ServiceRequest"
+    ],
+    "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising": [
+      "ServiceRequest"
+    ]
+  }
+}

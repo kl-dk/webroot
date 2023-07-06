@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLServicesTypes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-KLCommonCareSocialCodes.html"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-490ab7be-ddb1-4a54-baf1-009fe6e8a83b">490ab7be-ddb1-4a54-baf1-009fe6e8a83b</a></td><td>Hjemmesygepleje</td><td>Der anmodes om sygepleje</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-ad865929-7363-4b2d-a271-01993181fbaf">ad865929-7363-4b2d-a271-01993181fbaf</a></td><td>Hjemmepleje</td><td>Der anmodes om hjemmepleje</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-7fc66c15-0cb3-4c89-9e18-f3a01e6a6592">7fc66c15-0cb3-4c89-9e18-f3a01e6a6592</a></td><td>Træning</td><td>Der anmodes om træning</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-a71921ea-fe83-441d-933b-cc21d0b3c8c3">a71921ea-fe83-441d-933b-cc21d0b3c8c3</a></td><td>Sundhedsfremme og forebyggelse</td><td>Der anmodes om sundhedsfremme og forebyggelse</td></tr><tr><td><a href="CodeSystem-KLCommonCareSocialCodes.html#KLCommonCareSocialCodes-4a297733-4d66-4726-a933-590d55cf91e0">4a297733-4d66-4726-a933-590d55cf91e0</a></td><td>Social indsats</td><td>Der anmodes om en social indsats</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://kl.dk/fhir/common/caresocial/ValueSet/KLServicesTypes"/>
+  <version value="0.7.0"/>
+  <name value="KLServicesTypes"/>
+  <title value="KLServiceTyper"/>
+  <status value="draft"/>
+  <date value="2023-07-06T08:45:08+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Types of services that the Danish municipalities provide which is covered by FSIII and FFB"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+      <concept>
+        <code value="490ab7be-ddb1-4a54-baf1-009fe6e8a83b"/>
+      </concept>
+      <concept>
+        <code value="ad865929-7363-4b2d-a271-01993181fbaf"/>
+      </concept>
+      <concept>
+        <code value="7fc66c15-0cb3-4c89-9e18-f3a01e6a6592"/>
+      </concept>
+      <concept>
+        <code value="a71921ea-fe83-441d-933b-cc21d0b3c8c3"/>
+      </concept>
+      <concept>
+        <code value="4a297733-4d66-4726-a933-590d55cf91e0"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

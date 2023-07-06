@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLChangeValueCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLChangeValueCodesFSIII.html\">KLMåltypeKoderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLChangeValueCodesFFB.html\">KLMåltypekoderFFB</a></li></ul></div>"
+  },
+  "url" : "http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodes",
+  "version" : "0.7.0",
+  "name" : "KLChangeValueCodes",
+  "title" : "KLMåltypeKoder",
+  "status" : "draft",
+  "date" : "2023-07-06T08:45:08+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Change values for goals (måltype). Express the target value for change of a condition",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFFB"]
+    }]
+  }
+}

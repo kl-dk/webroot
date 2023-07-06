@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://kl.dk/fhir/common/caresocial/ValueSet/KLNeedsAssessmentCodesFFB> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLNeedsAssessmentCodesFFB"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-FFB.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FFB</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-dd628e73-d6c9-4837-a2b8-aa62d73bd6ae\">dd628e73-d6c9-4837-a2b8-aa62d73bd6ae</a></td><td>Let støttebehov</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-401a397b-b3aa-4ca3-8b23-bd8f99dd3f76\">401a397b-b3aa-4ca3-8b23-bd8f99dd3f76</a></td><td>Moderat støttebehov</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-ae9f388a-91c3-46cf-af55-f81952f2977c\">ae9f388a-91c3-46cf-af55-f81952f2977c</a></td><td>Intet støttebehov</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-b99a0790-4d70-4152-b149-3fe58b745583\">b99a0790-4d70-4152-b149-3fe58b745583</a></td><td>Højt støttebehov</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-e99763d6-6c43-4969-ad52-2b1a7055f9dc\">e99763d6-6c43-4969-ad52-2b1a7055f9dc</a></td><td>Fuldstændigt støttebehov</td></tr><tr><td><a href=\"CodeSystem-FFB.html#FFB-2254dac8-8aa3-4334-8502-9720194f49ad\">2254dac8-8aa3-4334-8502-9720194f49ad</a></td><td>Ikke vurderet</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://kl.dk/fhir/common/caresocial/ValueSet/KLNeedsAssessmentCodesFFB"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "KLNeedsAssessmentCodesFFB"] ; # 
+  fhir:title [ fhir:v "KLStøttebehovsvurderingskoderFFB"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:45:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Needs assesment codes as defined in FFB"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "dd628e73-d6c9-4837-a2b8-aa62d73bd6ae" ]
+       ] [
+         fhir:code [ fhir:v "401a397b-b3aa-4ca3-8b23-bd8f99dd3f76" ]
+       ] [
+         fhir:code [ fhir:v "ae9f388a-91c3-46cf-af55-f81952f2977c" ]
+       ] [
+         fhir:code [ fhir:v "b99a0790-4d70-4152-b149-3fe58b745583" ]
+       ] [
+         fhir:code [ fhir:v "e99763d6-6c43-4969-ad52-2b1a7055f9dc" ]
+       ] [
+         fhir:code [ fhir:v "2254dac8-8aa3-4334-8502-9720194f49ad" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,40 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "AkutSygeplejeMark",
+  "meta" : {
+    "profile" : ["http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCompletedIntervention"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"AkutSygeplejeMark\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;AkutSygeplejeMark&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLCommonCareSocialCompletedIntervention.html\">CompletedIntervention</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-HenvisningFraLageVedrAkutSygepleje.html\">ServiceRequest/HenvisningFraLageVedrAkutSygepleje</a></p><p><b>status</b>: completed</p><p><b>code</b>: Undersøgelser og måling af værdier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FSIII.html\">FSIII</a>#G1.41)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>encounter</b>: <a href=\"Encounter-MarkOgAkutsygeplejerske.html\">Encounter/MarkOgAkutsygeplejerske</a></p><p><b>recorder</b>: <a href=\"Practitioner-AbrahamFraAkutSygeplejen.html\">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>complication</b>: No current problems or disability <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#160245001)</span></p><p><b>note</b>: Vitale værdier målt, blodtrykket er lavt. Vurderer efter samtale med borger, at han ikke drikker nok vand til daglig. Ringet til praktiserende læge, og har aftalt, at hun vurderer blodtryk og væskebalance og giver besked hvis akutsygeplejen skal gøre yderligere.</p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/HenvisningFraLageVedrAkutSygepleje"
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+      "code" : "G1.41",
+      "display" : "Undersøgelser og måling af værdier"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Mark"
+  },
+  "encounter" : {
+    "reference" : "Encounter/MarkOgAkutsygeplejerske"
+  },
+  "recorder" : {
+    "reference" : "Practitioner/AbrahamFraAkutSygeplejen"
+  },
+  "complication" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "160245001"
+    }]
+  }],
+  "note" : [{
+    "text" : "Vitale værdier målt, blodtrykket er lavt. Vurderer efter samtale med borger, at han ikke drikker nok vand til daglig. Ringet til praktiserende læge, og har aftalt, at hun vurderer blodtryk og væskebalance og giver besked hvis akutsygeplejen skal gøre yderligere."
+  }]
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="HenvendelseVedrSygeplejeMark"/>
+  <meta>
+    <profile value="http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="HenvendelseVedrSygeplejeMark"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;HenvendelseVedrSygeplejeMark&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLCommonCareSocialServiceRequest.html">ServiceRequest</a></p></div><p><b>RequesterType</b>: Borger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-FSIII.html">FSIII</a>#A1)</span></p><blockquote><p><b>MunicipalityCasenumber</b></p><blockquote><p><b>url</b></p><code>official</code></blockquote><p><b>value</b>: id: 524a66c5-d1b6-4cc4-adca-dad6d058a8f5 (use: OFFICIAL)</p></blockquote><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>code</b>: Hjemmesygepleje <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-KLCommonCareSocialCodes.html">KLCommonCareSocialCodes</a>#490ab7be-ddb1-4a54-baf1-009fe6e8a83b)</span></p><p><b>subject</b>: <a href="Patient-Mark.html">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>authoredOn</b>: 2020-06-21</p><p><b>requester</b>: <a href="Organization-SundhedsforvaltningAalborg.html">Organization/SundhedsforvaltningAalborg</a> &quot;Sundheds- og kulturforvaltningen, Aalborg Kommune&quot;</p><p><b>reasonCode</b>: Borger har henvendt sig pga. et sår, der skal undersøges nærmere. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+  </text>
+  <extension url="http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+        <code value="A1"/>
+        <display value="Borger"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://kl.dk/fhir/common/caresocial/StructureDefinition/MunicipalityCaseNumber">
+    <extension url="official">
+      <valueIdentifier>
+        <use value="official"/>
+        <system value="https://data.gov.dk/id/organization"/>
+        <value value="524a66c5-d1b6-4cc4-adca-dad6d058a8f5"/>
+      </valueIdentifier>
+    </extension>
+  </extension>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+      <code value="490ab7be-ddb1-4a54-baf1-009fe6e8a83b"/>
+      <display value="Hjemmesygepleje"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Mark"/>
+  </subject>
+  <authoredOn value="2020-06-21"/>
+  <requester>
+    <reference value="Organization/SundhedsforvaltningAalborg"/>
+  </requester>
+  <reasonCode>
+    <text value="Borger har henvendt sig pga. et sår, der skal undersøges nærmere."/>
+  </reasonCode>
+</ServiceRequest>
