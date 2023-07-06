@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="FSIIICareMatterOfInterests"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="https://build.fhir.org/ig/hl7dk/KL-dk//ValueSet-KLNursingAreasFSIII.html">KLSygeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href="https://build.fhir.org/ig/hl7dk/KL-dk//ValueSet-KLHomeCareAreasFSIII.html">KLHjemmeplejeOmråderFSIII</a></li></ul></div>
+  </text>
+  <url value="http://gateway.kl.dk/1.0/ValueSet/FSIIICareMatterOfInterests"/>
+  <version value="1.0.4"/>
+  <name value="FSIIICareMatterOfInterests"/>
+  <title value="FSIIICareMatterOfInterests"/>
+  <status value="active"/>
+  <date value="2023-07-06T11:09:58+02:00"/>
+  <publisher value="KL"/>
+  <contact>
+    <name value="KL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Matters of Interests (areas) defined by FSIII for nursing and home care"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingAreasFSIII"/>
+    </include>
+    <include>
+      <valueSet value="http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareAreasFSIII"/>
+    </include>
+  </compose>
+</ValueSet>

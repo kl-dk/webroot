@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FSIIICareInterventions",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"https://build.fhir.org/ig/hl7dk/KL-dk//ValueSet-KLNursingInterventionsFSIII.html\">KLSygeplejeIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href=\"https://build.fhir.org/ig/hl7dk/KL-dk//ValueSet-KLHomeCareInterventionsFSIII.html\">KLHjemmeplejeIndsatserFSIII</a></li></ul></div>"
+  },
+  "url" : "http://gateway.kl.dk/1.0/ValueSet/FSIIICareInterventions",
+  "version" : "1.0.4",
+  "name" : "FSIIICareInterventions",
+  "title" : "FSIIICareInterventions",
+  "status" : "active",
+  "date" : "2023-07-06T11:09:58+02:00",
+  "publisher" : "KL",
+  "contact" : [{
+    "name" : "KL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.kl.dk"
+    }]
+  }],
+  "description" : "Interventions defined by FSIII for nursing and home care",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingInterventionsFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareInterventionsFSIII"]
+    }]
+  }
+}

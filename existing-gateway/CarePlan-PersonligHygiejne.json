@@ -1,0 +1,35 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "PersonligHygiejne",
+  "meta" : {
+    "profile" : ["http://gateway.kl.dk/1.0/StructureDefinition/klgateway-care-planned-intervention"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"PersonligHygiejne\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;PersonligHygiejne&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-planned-intervention.html\">CarePlannedIntervention</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Patient/TestPerson</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Speciel personlig pleje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7dk/KL-dk//CodeSystem-FSIII.html\">FSIII</a>#H1.1; <a href=\"CodeSystem-LocallyDefinedInterventions.html\">LocallyDefinedInterventions</a>#H1.1.1)</span></td><td>in-progress</td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/TestPerson"
+  },
+  "period" : {
+    "start" : "2020-08-14"
+  },
+  "activity" : [{
+    "detail" : {
+      "code" : {
+        "coding" : [{
+          "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+          "code" : "H1.1"
+        },
+        {
+          "system" : "http://gateway.kl.dk/1.0/CodeSystem/LocallyDefinedInterventions",
+          "code" : "H1.1.1",
+          "display" : "Speciel personlig pleje"
+        }]
+      },
+      "status" : "in-progress"
+    }
+  }]
+}

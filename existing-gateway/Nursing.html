@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.DK.KL.GATEWAY.CARE\Nursing - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">1.0.4 - Build CI
+
+
+
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="Homecare.html">Homecare Example</a>
+  </li>
+  <li>
+    <a href="Nursing.html">Nursing Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Nursing</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">KLGateway - Local Development build (v1.0.4). See the <a href="http://gateway.kl.dk/1.0/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Nursing</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#first-encounter-february-10th-2021---acute-team" id="markdown-toc-first-encounter-february-10th-2021---acute-team">First Encounter February 10th, 2021 - Acute team</a></li>
+  <li><a href="#second-encounter-february-12th-2021---acute-team" id="markdown-toc-second-encounter-february-12th-2021---acute-team">Second Encounter February 12th, 2021 - Acute team</a></li>
+  <li><a href="#third-encounter-february-14th-2021---acute-team" id="markdown-toc-third-encounter-february-14th-2021---acute-team">Third Encounter February 14th, 2021 - Acute team</a></li>
+  <li><a href="#fourth-encounter-february-15th-2021---nursing-team" id="markdown-toc-fourth-encounter-february-15th-2021---nursing-team">Fourth Encounter February 15th, 2021 - Nursing team</a></li>
+  <li><a href="#fifth-encounter-february-17th-2021---nursing-team" id="markdown-toc-fifth-encounter-february-17th-2021---nursing-team">Fifth Encounter February 17th, 2021 - Nursing team</a></li>
+  <li><a href="#sixth-encounter-february-18th-2021---training" id="markdown-toc-sixth-encounter-february-18th-2021---training">Sixth Encounter February 18th, 2021 - Training</a></li>
+</ul>
+
+</div>
+<p>This page describes three subsequent delivery reports for the citizen Peter Olsen.
+For each delivery report the story is told (in Danish), the FSIII documentation is listed, and the reporting example is given.</p>
+
+<h3 id="first-encounter-february-10th-2021---acute-team">First Encounter February 10th, 2021 - Acute team</h3>
+
+<h4 id="story">Story</h4>
+<p>Gerda Olsen har ringet til praktiserende læge.
+Hendes mand Peter har det ikke godt.
+Peter er udskrevet fra sygehuset, for tre dage siden, efter en akut exacerbationer (midlertidig forværring) af hans KOL.
+Han har egentlig været i bedring, men her sidst på dagen fik han feber, hovedpine og øget vejrtrækningsfrekvens.</p>
+
+<p>Peter og Gerda fik besked på sygehuset om at holde øje med almentilstanden og kontakte egen læge ved forværringer.
+Exacerbationer er alvorlige, idet hver episode reducerer lungefunktionen irreversibelt, og akut exacerbation af KOL er den hyppigste dødsårsag hos disse patienter.
+Gerda er derfor meget nervøs for Peter og vil gerne have at egen læge vil indlægge ham igen.</p>
+
+<p>Egen læge aftaler i stedet med Gerda, at der kommer en sygeplejerske hjem og kigger til Peter.</p>
+
+<p>Herefter kontakter egen læge det kommunale akutteam og oplyser at Peter Olsen oplever forværring i almentilstanden – blandt andet feber, hovedpine og øget vejrtrækningsfrekvens.
+Han ønsker derfor at akutteamet skal besøge Peter og foretage nogle målinger og vurdere tilstanden.</p>
+
+<p>Akutteamet besøger Peter Olsen første gang d. 10/2 og foretager de undersøgelser og målinger som egen læge har anmodet om.
+Peter har øget respirationsfrekvens med udpræget svimmelhed til følge.
+Peter har øget mængde sekret og kan ikke hoste frit, så de foretager en supplerende udredning (sekret test til dyrkning).</p>
+
+<p>Desuden er Peter er præget af insufficient iltning og har problemer med at gå på sikker vis, så de planlægger de en respirationsbehandling (vejledning i vejrtrækningsteknikker og PEEP-fløjte) for at afhjælpe problemer med mobilitet og bevægelse.
+Dette dokumenteres - se nedenstående. Opfølgning på tilstandene planlægges til den 12/2.</p>
+
+<h4 id="fsiii-documentation">FSIII Documentation</h4>
+<p>The following FSIII information is documented in the record system.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Respirationsproblemer</td>
+      <td>Undersøgelse og måling af værdier (akut) samt Supplerende udredning(akut)</td>
+    </tr>
+    <tr>
+      <td>Problemer med mobilitet og bevægelse</td>
+      <td>Respirationsbehandling</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting">Reporting</h4>
+<p>A delivery report is generated containing the citizen, 2 conditions, 2 completed interventions, 1 planned interventions starting February 10th, and a follow-up encounter on February 12th for the conditions. The planned intervention reference the condition according to the table above.</p>
+
+<p><a href="Bundle-d54206de-c95b-4c53-9517-6eb155dca99a.html">DeliveryReport-PeterOlsen-1</a></p>
+
+<h3 id="second-encounter-february-12th-2021---acute-team">Second Encounter February 12th, 2021 - Acute team</h3>
+
+<h4 id="story-1">Story</h4>
+<p>Akutteamet besøger Peter Olsen anden gang d. 12/2 til en opfølgning.
+Peters respirationsfrekvens er tæt på normaliseret og svimmelheden er aftagende. Akut teamet vurderer at fokus på respirationsproblemer og problemer med mobilitet og bevægelse fortsættes. Dette dokumenteres - se nedenstående. Opfølgning på tilstandene planlægges til den 14/2.</p>
+
+<h4 id="fsiii-documentation-1">FSIII Documentation</h4>
+<p>The following FSIII information is documented in the record system.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Respirationsproblemer</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Problemer med mobilitet og bevægelse</td>
+      <td>Respirationsbehandling</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-1">Reporting</h4>
+<p>A delivery report is generated containing the citizen, 2 conditions, a follow-up observation, and a follow-up encounter on February 14th for the conditions. The planned intervention is unchanged and thus not included in the report.</p>
+
+<p><a href="Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.html">DeliveryReport-PeterOlsen-2</a></p>
+
+<h3 id="third-encounter-february-14th-2021---acute-team">Third Encounter February 14th, 2021 - Acute team</h3>
+
+<h4 id="story-2">Story</h4>
+<p>Akutteamet vurderer ved besøget d. 14/2, at Peter Olsen har god effekt af vejledning i vejrtrækningsteknikkerne og han bruger PEEP-fløjet, og opnår således en mere kontrolleret vejrtrækning. De dokumenterer at området Respiration og Cirkulation ikke længere er relevant for Peter.</p>
+
+<p>Ved samme opfølgning vurderes det at tilstanden Problemer med mobilitet og bevægelse med den tilhørende indsats Respirationsbehandling bør ændres inden for rammen, og at der er behov for en ny faglig planlægning og disponering.
+Akutteamet afslutter og Peter Olsen overgår til hjemmesygeplejen.</p>
+
+<h4 id="fsiii-documentation-2">FSIII Documentation</h4>
+<p>The following FSIII information is documented in the record system.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Problemer med mobilitet og bevægelse</td>
+      <td>Respirationsbehandling</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-2">Reporting</h4>
+<p>A delivery report is generated containing the citizen, 2 conditions, 1 matter of interest observation, 2 follow-up observations (afsluttes, fortsættes), and a follow-up encounter on February 15th for the conditions. The planned intervention is unchanged and thus not included in the report.</p>
+
+<p><a href="Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.html">DeliveryReport-PeterOlsen-3</a></p>
+
+<h3 id="fourth-encounter-february-15th-2021---nursing-team">Fourth Encounter February 15th, 2021 - Nursing team</h3>
+
+<h4 id="story-3">Story</h4>
+<p>Hjemmesygeplejen aflægger hjemmebesøg den efterfølgende dag 15/2. De vurderer her at Peter Olsen kunne have glæde af genoptræning efter servicelovens § 86 stk. 2. Hjemmesygeplejen planlægger opfølgning til d. 17/2, og Peter Olsen bliver indkaldt til det lokale træningscenter d. 18/2 med en opfølgningsdato den 6/4.</p>
+
+<h4 id="fsiii-documentation-3">FSIII Documentation</h4>
+<p>The following FSIII information is documented in the record system.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Severity</th>
+      <th>Goal</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Problemer med mobilitet og bevægelse</td>
+      <td> </td>
+      <td> </td>
+      <td>Respirationsbehandling</td>
+    </tr>
+    <tr>
+      <td>Gå (servicelov)</td>
+      <td>1 - Lette begrænsninger</td>
+      <td>0 - Ingen eller ubetydlige begrænsninger</td>
+      <td>Vedligehold af færdigheder</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-3">Reporting</h4>
+<p>A delivery report is generated containing the citizen, 1 previous and 1 new condition, 1 goal, and 2 follow-up encounters on February 17th and April 6th for each of the conditions.</p>
+
+<p><a href="Bundle-374484d0-00cb-4b63-94d1-a0d984afc339.html">DeliveryReport-PeterOlsen-4</a></p>
+
+<h3 id="fifth-encounter-february-17th-2021---nursing-team">Fifth Encounter February 17th, 2021 - Nursing team</h3>
+
+<h4 id="story-4">Story</h4>
+<p>I hjemmesygeplejen noteres det i Peter Olsens journal, at han nu er tilbage i habitualtilstanden med sin kroniske sygdom og har fortsat glæde af PEEP-fløjten, og der er ikke aktuelle tilstande eller indsatser.
+Peter er selv tilfreds, men han har reduceret lungekapacitet grundet exacerbationer.
+Imidlertid har hele forløbet været en ’hård omgang’ og parret (Gerda er meget usikker på om Peter nu også selv kan mærke om det går godt!).</p>
+
+<p>Derfor dokumenteres det på Problemområderne - Psykosociale forhold samt Søvn og hvile, at der bør være fokus på Peter Olsens habitus.
+Han har både i forløbet og efterfølgende umiddelbart virket meget positiv.
+Imidlertid har Peter Olsen ved nogle aftenbesøg oplyst, at han sover skidt om natten og at han har været lidt ked af det hele.</p>
+
+<h4 id="fsiii-documentation-4">FSIII Documentation</h4>
+<p>The following FSIII information is documented in the record system.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Severity</th>
+      <th>Goal</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gå (servicelov)</td>
+      <td>1 - Lette begrænsninger</td>
+      <td>0 - Ingen eller ubetydlige begrænsninger</td>
+      <td>Vedligehold af færdigheder</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-4">Reporting</h4>
+<p>A delivery report is generated containing the citizen, 1 previous condition, 1 previous intervention, 2 matter of interest observations, and a follow-up observation.</p>
+
+<p><a href="Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.html">DeliveryReport-PeterOlsen-5</a></p>
+
+<h3 id="sixth-encounter-february-18th-2021---training">Sixth Encounter February 18th, 2021 - Training</h3>
+
+<h4 id="story-5">Story</h4>
+<p>I træningscenterets udredning efter serviceloven spørges Peters om sin egne vurdering i forhold til udførelse og betydning af de forskellige aktiviteter.
+Efter at have deltaget i vedligeholdelsestræningen føler Peter Olsen sig sikker på benene igen og han vurdere selv at ’det går som det gjorde før indlæggelsen’.</p>
+
+<p>Træningscenteret dokumenterer, at Peter udfører selv og ikke oplever begrænsninger i at gå.</p>
+
+<h4 id="fsiii-documentation-5">FSIII Documentation</h4>
+<p>The following FSIII information is documented in the record system.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Severity</th>
+      <th>Goal</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gå (servicelov)</td>
+      <td>1 - Lette begrænsninger</td>
+      <td>0 - Ingen eller ubetydlige begrænsninger</td>
+      <td>Vedligehold af færdigheder</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-5">Reporting</h4>
+<p>A delivery report is generated containing the citizen, 1 condition, 2 citizens own observations, and a follow-up encounter on 6th of April.</p>
+
+<p><a href="Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.html">DeliveryReport-PeterOlsen-6</a></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.kl.dk">KL</a>.  Package hl7.fhir.dk.kl.gateway.care#1.0.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 6, 2023 11:09+0200">2023-07-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
