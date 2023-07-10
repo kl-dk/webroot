@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-89",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-89",
+  "name" : "UnionKLFollowUpCodesFSIIIAndKLFollowUpCodesFSIII",
+  "title" : "Union of KLOpfølgningKoderFSIII And KLOpfølgningKoderFSIII",
+  "status" : "active",
+  "date" : "2023-07-10T23:08:21+02:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "E"
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "E3",
+      "display" : "Afsluttes"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "E1",
+      "display" : "Fortsættes"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "E2",
+      "display" : "Ændres inden for rammen"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "E4",
+      "display" : "Revisitation"
+    }]
+  }
+}

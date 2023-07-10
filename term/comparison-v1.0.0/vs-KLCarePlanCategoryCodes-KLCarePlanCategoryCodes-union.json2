@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-17",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-17",
+  "name" : "UnionKLCarePlanCategoryCodesAndKLCarePlanCategoryCodes",
+  "title" : "Union of KLIndsatsforløbTypekoder And KLIndsatsforløbTypekoder",
+  "status" : "active",
+  "date" : "2023-07-10T23:08:20+02:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "10deb210-e7e1-4d56-9531-b9ff2102126e"
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf",
+      "display" : "Rehabilitering efter §140"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "4fd6c23a-6ff3-4251-ac37-3ca095027b5b",
+      "display" : "Sundhedsfremme og forebyggelse §119"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "e459386d-1474-4c31-89c5-c8bc7a25e3d4",
+      "display" : "Social indsats"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "5c160c02-e858-4c1f-925a-71ed64844749",
+      "display" : "Interventionsforløb efter §119"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "9791e55a-656f-47eb-8fd5-c4a06b0a4662",
+      "display" : "Opfølgningsforløb efter §119"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "f15b2663-94d9-4d0c-a5de-d8bd8e1e4ebb",
+      "display" : "Interventionsforløb efter §140"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "4863001e-14c7-4be8-a2da-e4f21a4b6ac4",
+      "display" : "Opfølgningsforløb efter §140"
+    }]
+  }
+}

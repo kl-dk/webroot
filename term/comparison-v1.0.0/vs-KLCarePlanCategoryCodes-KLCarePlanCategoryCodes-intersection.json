@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-18",
+  "name" : "IntersectionKLCarePlanCategoryCodesAndKLCarePlanCategoryCodes",
+  "title" : "Intersection of KLIndsatsforløbTypekoder And KLIndsatsforløbTypekoder",
+  "status" : "active",
+  "date" : "2023-07-10T23:08:20+02:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "10deb210-e7e1-4d56-9531-b9ff2102126e"
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf",
+      "display" : "Rehabilitering efter §140"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "4fd6c23a-6ff3-4251-ac37-3ca095027b5b",
+      "display" : "Sundhedsfremme og forebyggelse §119"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "e459386d-1474-4c31-89c5-c8bc7a25e3d4",
+      "display" : "Social indsats"
+    }]
+  }
+}

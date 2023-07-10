@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-72",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e71e8bb8-1f0d-4093-9e77-cb0ca05963a2-72",
+  "name" : "IntersectionKLConsentToLiasingAndKLConsentToLiasing",
+  "title" : "Intersection of KLBorgerIndforståetMedHenvendelseKoder And KLBorgerIndforståetMedHenvendelseKoder",
+  "status" : "active",
+  "date" : "2023-07-10T23:08:20+02:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "3762dd32-4123-43a8-815d-ec40d3697652"
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb",
+      "display" : "ikke indforstået"
+    },
+    {
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "code" : "e67035da-9179-466b-99ad-ea86835d38c9",
+      "display" : "indforstået"
+    }]
+  }
+}
