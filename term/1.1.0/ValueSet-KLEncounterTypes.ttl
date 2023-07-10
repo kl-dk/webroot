@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/ValueSet/KLEncounterTypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLEncounterTypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-CareSocialCodes.html\"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from  <a href=\"CodeSystem-CareSocialCodes.html#CareSocialCodes-25303acd-dcaf-4a8e-a8a3-3961a43858aa\">25303acd-dcaf-4a8e-a8a3-3961a43858aa</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/term/ValueSet/KLEncounterTypes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "KLEncounterTypes"] ; # 
+  fhir:title [ fhir:v "KLKontaktTyper"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-10T23:04:47+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "25303acd-dcaf-4a8e-a8a3-3961a43858aa" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLTerm</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term</pre></div>"
   },
   "url" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
-  "version" : "1.0.0",
+  "version" : "1.1.0",
   "name" : "KLTerm",
   "status" : "active",
-  "date" : "2023-06-07T11:52:14+02:00",
+  "date" : "2023-07-10T23:08:03+02:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -94,17 +94,6 @@
       {
         "url" : "value",
         "valueString" : "urn:oid:1.2.208.176.2.1"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-expansion-params"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Parameters-expParam.json"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -412,17 +401,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-expansion-params"
-      },
-      {
-        "url" : "value",
-        "valueString" : "Parameters-expParam.json"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -665,6 +643,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/CancellationTypes"
+      },
+      "name" : "CancellationTypes",
+      "description" : "Cancellation valueset, to be implemented in KL-term and FKI",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -677,13 +667,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "Parameters/expParam"
+        "reference" : "CodeSystem/FBOE"
       },
-      "name" : "expParam",
-      "description" : "SNOMED CT expansion parameter",
+      "name" : "FBOE",
+      "description" : "Concepts used for standardizing documentation for Danish postpartum nursing/childrens health promotion program in schools (Da: Sundhedsplejen). The concepts are utilized in the National Database for Children and Youth (LDBU).",
       "exampleBoolean" : false
     },
     {

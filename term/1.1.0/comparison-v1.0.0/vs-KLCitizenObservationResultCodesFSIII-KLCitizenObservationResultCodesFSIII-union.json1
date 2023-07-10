@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "38a90381-657d-490f-8bc2-32d218d14d93-32",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/38a90381-657d-490f-8bc2-32d218d14d93-32",
+  "name" : "UnionKLCitizenObservationResultCodesFSIIIAndKLCitizenObservationResultCodesFSIII",
+  "title" : "Union of KLBorgervurderingsResultatkoderFSIII And KLBorgervurderingsResultatkoderFSIII",
+  "status" : "active",
+  "date" : "2023-07-10T23:05:09+02:00",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLPerformanceLevelCodesFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLImportanceLevelCodesFSIII"]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "C4",
+      "display" : "Ikke relevant"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "C2",
+      "display" : "Udfører dele af"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "C3",
+      "display" : "Udfører ikke selv"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "C1",
+      "display" : "Udfører selv"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "D2",
+      "display" : "Oplever begrænsninger"
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "D1",
+      "display" : "Oplever ikke begrænsninger"
+    }]
+  }
+}

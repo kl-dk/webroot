@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConditionCodesHomeCare",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-J1\">J1</a></li><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-J2\">J2</a></li><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-J3\">J3</a></li><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-J4\">J4</a></li><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-J5\">J5</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare",
+  "version" : "1.1.0",
+  "name" : "KLConditionCodesHomeCare",
+  "title" : "KLTilstandeKoderHjemmepleje",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-07-10T23:04:47+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Danish municipality home care condition codes (funktionsevnetilstande)",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "J1"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "J2"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "J3"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "J4"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "J5"
+      }]
+    }]
+  }
+}

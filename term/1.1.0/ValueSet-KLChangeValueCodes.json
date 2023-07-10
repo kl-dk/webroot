@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLChangeValueCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLChangeValueCodesFSIII.html\">KLMåltypeKoderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLChangeValueCodesFFB.html\">KLMåltypekoderFFB</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLChangeValueCodes",
+  "version" : "1.1.0",
+  "name" : "KLChangeValueCodes",
+  "title" : "KLMåltypeKoder",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-07-10T23:04:47+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Change values for goals (måltype). Express the target value for change of a condition",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFFB"]
+    }]
+  }
+}

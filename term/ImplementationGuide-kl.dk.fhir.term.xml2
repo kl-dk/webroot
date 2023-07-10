@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>KLTerm</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term</pre></div>
   </text>
   <url value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="KLTerm"/>
   <status value="active"/>
-  <date value="2023-06-07T11:52:14+02:00"/>
+  <date value="2023-07-10T23:08:03+02:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -76,14 +76,6 @@
       </extension>
       <extension url="value">
         <valueString value="urn:oid:1.2.208.176.2.1"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-expansion-params"/>
-      </extension>
-      <extension url="value">
-        <valueString value="Parameters-expParam.json"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -307,14 +299,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-expansion-params"/>
-      </extension>
-      <extension url="value">
-        <valueString value="Parameters-expParam.json"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -491,6 +475,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CancellationTypes"/>
+      </reference>
+      <name value="CancellationTypes"/>
+      <description value="Cancellation valueset, to be implemented in KL-term and FKI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -502,13 +497,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Parameters"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="Parameters/expParam"/>
+        <reference value="CodeSystem/FBOE"/>
       </reference>
-      <name value="expParam"/>
-      <description value="SNOMED CT expansion parameter"/>
+      <name value="FBOE"/>
+      <description value="Concepts used for standardizing documentation for Danish postpartum nursing/childrens health promotion program in schools (Da: Sundhedsplejen). The concepts are utilized in the National Database for Children and Youth (LDBU)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

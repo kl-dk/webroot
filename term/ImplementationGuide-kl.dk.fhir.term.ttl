@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLTerm</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
   fhir:name [ fhir:v "KLTerm"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-06-07T11:52:14+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-10T23:08:03+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
@@ -97,15 +97,6 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "urn:oid:1.2.208.176.2.1" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-expansion-params" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Parameters-expParam.json" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -357,15 +348,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-expansion-params" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Parameters-expParam.json" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "autoload-resources" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -565,6 +547,18 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/term/ValueSet/CancellationTypes> ;
+         fhir:reference [ fhir:v "ValueSet/CancellationTypes" ]
+       ] ;
+       fhir:name [ fhir:v "CancellationTypes" ] ;
+       fhir:description [ fhir:v "Cancellation valueset, to be implemented in KL-term and FKI" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -577,14 +571,14 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Parameters" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.kl.dk/term/Parameters/expParam> ;
-         fhir:reference [ fhir:v "Parameters/expParam" ]
+         fhir:link <http://fhir.kl.dk/term/CodeSystem/FBOE> ;
+         fhir:reference [ fhir:v "CodeSystem/FBOE" ]
        ] ;
-       fhir:name [ fhir:v "expParam" ] ;
-       fhir:description [ fhir:v "SNOMED CT expansion parameter" ] ;
+       fhir:name [ fhir:v "FBOE" ] ;
+       fhir:description [ fhir:v "Concepts used for standardizing documentation for Danish postpartum nursing/childrens health promotion program in schools (Da: Sundhedsplejen). The concepts are utilized in the National Database for Children and Youth (LDBU)." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

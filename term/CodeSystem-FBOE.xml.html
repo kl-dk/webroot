@@ -1,0 +1,698 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KL.DK.FHIR.TERM\FBOE - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.59"}
+    h3,h4,h5,h6{--heading-prefix:"2.59"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>FBOE</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v1.1.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.kl.dk/term/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-FBOE.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-FBOE.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-FBOE.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: FBOE - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-07-10
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-FBOE.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-FBOE.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code>
+
+&lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FBOE&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;7c8eceee-3591-497f-b78d-0d56eb046f35&lt;a name=&quot;FBOE-7c8eceee-3591-497f-b78d-0d56eb046f35&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sundhedsplejefaglig indikator&lt;/td&gt;&lt;td&gt;Indikator brugt i sundhedsplejen, for på overordnede områder at evaluere barnets sundhed og trivsel.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  bf5d7844-6175-41e1-a117-e5d60e755477&lt;a name=&quot;FBOE-bf5d7844-6175-41e1-a117-e5d60e755477&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indikator ifm. forebyggelsesindsats for småbørn&lt;/td&gt;&lt;td&gt;Indikator anvendet ifm. sundhedsplejens forebyggelsesindsats for småbørn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    2c39af9f-8e45-4c88-962f-e7a9e2cd31b6&lt;a name=&quot;FBOE-2c39af9f-8e45-4c88-962f-e7a9e2cd31b6&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Forælders psykiske tilstand&lt;/td&gt;&lt;td&gt;Observation af psykisk tilstand når man er blevet forælder ifm. forebyggelsesindsats for småbørn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    e88ddd81-4aa5-4c84-89fb-52de961a7c17&lt;a name=&quot;FBOE-e88ddd81-4aa5-4c84-89fb-52de961a7c17&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Signaler, reaktioner, kommunikation&lt;/td&gt;&lt;td&gt;Observation af signaler, reaktioner, kommunikation ifm. forebyggelsesindsats for småbørn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    0701a892-2e6b-4b76-a041-97ceda78f973&lt;a name=&quot;FBOE-0701a892-2e6b-4b76-a041-97ceda78f973&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Motorik&lt;/td&gt;&lt;td&gt;Observation af motorik ifm. forebyggelsesindsats for småbørn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    bfc7062e-d529-4516-a698-fc87b339033a&lt;a name=&quot;FBOE-bfc7062e-d529-4516-a698-fc87b339033a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Søvn, døgnrytme&lt;/td&gt;&lt;td&gt;Observation af søvn, døgnrytme ifm. forebyggelsesindsats for småbørn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    bee30064-8436-4762-83ed-e47d65f23fc6&lt;a name=&quot;FBOE-bee30064-8436-4762-83ed-e47d65f23fc6&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Samvær, kontakt, forældre-barn relation&lt;/td&gt;&lt;td&gt;Observation af samvær, kontakt, forældre-barn relation ifm. forebyggelsesindsats for småbørn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  08a7b81a-3633-41ce-9e27-941ce3b4276b&lt;a name=&quot;FBOE-08a7b81a-3633-41ce-9e27-941ce3b4276b&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indikator ifm. indskolingsundersøgelse&lt;/td&gt;&lt;td&gt;Indikator anvendt af skolesundhedsplejen ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    58464451-5fbb-4607-871d-1e01212c38d7&lt;a name=&quot;FBOE-58464451-5fbb-4607-871d-1e01212c38d7&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sundhedsplejerskens observationer og kontakt&lt;/td&gt;&lt;td&gt;Observation vedr. sundhedsplejerskens observationer og kontakt med barnet ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    c61e0e57-b1fd-4e4a-9eb9-5086b14b7504&lt;a name=&quot;FBOE-c61e0e57-b1fd-4e4a-9eb9-5086b14b7504&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at hoppe&lt;/td&gt;&lt;td&gt;Observation af evne til at hoppe ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    c05a5706-c0df-4a66-a6a1-a01e948d9326&lt;a name=&quot;FBOE-c05a5706-c0df-4a66-a6a1-a01e948d9326&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at stå på højre ben&lt;/td&gt;&lt;td&gt;Observation af evne til at stå på højre ben ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    0e24a41d-6bb6-4c84-89e1-5635cd4ea481&lt;a name=&quot;FBOE-0e24a41d-6bb6-4c84-89e1-5635cd4ea481&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at kaste bold med højre hånd&lt;/td&gt;&lt;td&gt;Observation af evne til at kaste bold med højre hånd ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    5f4a21bb-6314-477a-a0fe-7924ff83954a&lt;a name=&quot;FBOE-5f4a21bb-6314-477a-a0fe-7924ff83954a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sprog&lt;/td&gt;&lt;td&gt;Observation af sprog ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    dfa9a5e4-c542-4491-8a4b-1dee0bab8b17&lt;a name=&quot;FBOE-dfa9a5e4-c542-4491-8a4b-1dee0bab8b17&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at holde om en blyant&lt;/td&gt;&lt;td&gt;Observation af evne til at holde om en blyant ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    1c4b0adf-cd19-42af-ba43-80c28fcbc7e3&lt;a name=&quot;FBOE-1c4b0adf-cd19-42af-ba43-80c28fcbc7e3&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at stå på venstre ben&lt;/td&gt;&lt;td&gt;Observation af evne til at stå på venstre ben ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    51a91eca-5a66-4e1a-bbf7-be4ccf12810f&lt;a name=&quot;FBOE-51a91eca-5a66-4e1a-bbf7-be4ccf12810f&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Relation, kontakt, omsorg&lt;/td&gt;&lt;td&gt;Observation vedr. forældre-barn relation, kontakt, omsorg ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    2a8ebbc5-a4f0-485c-850f-1e95db492a6f&lt;a name=&quot;FBOE-2a8ebbc5-a4f0-485c-850f-1e95db492a6f&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at gå&lt;/td&gt;&lt;td&gt;Observation af evne til at gå ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    d240cad7-04ca-4f36-9dd7-86fb1987856a&lt;a name=&quot;FBOE-d240cad7-04ca-4f36-9dd7-86fb1987856a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mad og måltider&lt;/td&gt;&lt;td&gt;Observation vedr. mad og måltider ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    550cad89-6036-453f-9536-d1adb4eae879&lt;a name=&quot;FBOE-550cad89-6036-453f-9536-d1adb4eae879&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at løbe gadedrengeløb&lt;/td&gt;&lt;td&gt;Observation af evne til at løbe gadedrengeløb ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    877a3705-ddd4-4e54-a6eb-f94a95276f99&lt;a name=&quot;FBOE-877a3705-ddd4-4e54-a6eb-f94a95276f99&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Høretest&lt;/td&gt;&lt;td&gt;Observation vedr. høretest ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    7dbe4d6a-a486-4d8a-bd85-d8803ecb9688&lt;a name=&quot;FBOE-7dbe4d6a-a486-4d8a-bd85-d8803ecb9688&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Synstest&lt;/td&gt;&lt;td&gt;Observation vedr. synstest ifm indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    f8d7fba7-acc4-4481-bb8d-4b3112f411a9&lt;a name=&quot;FBOE-f8d7fba7-acc4-4481-bb8d-4b3112f411a9&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fysisk aktivitet&lt;/td&gt;&lt;td&gt;Observation vedr. fysisk aktivitet ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    998d1b1e-b165-43c9-861f-0b620f753df3&lt;a name=&quot;FBOE-998d1b1e-b165-43c9-861f-0b620f753df3&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at kaste bold med venstre hånd&lt;/td&gt;&lt;td&gt;Observation af evne til at kaste bold med venstre hånd ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    a3e32326-283d-47db-af92-3d8554fb7977&lt;a name=&quot;FBOE-a3e32326-283d-47db-af92-3d8554fb7977&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at gribe bold&lt;/td&gt;&lt;td&gt;Observation af evne til at gribe bold ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    5697e7df-3009-44d2-a495-ca8e4da167fb&lt;a name=&quot;FBOE-5697e7df-3009-44d2-a495-ca8e4da167fb&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Evne til at holde balance&lt;/td&gt;&lt;td&gt;Observation af evne til at holde balance ifm. indskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  2ba8931c-0c02-4928-a876-a30ee92adc20&lt;a name=&quot;FBOE-2ba8931c-0c02-4928-a876-a30ee92adc20&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indikator ifm. udskolingsundersøgelse&lt;/td&gt;&lt;td&gt;Indikator anvendt af skolesundhedsplejen ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    089c064d-3e14-47d2-9e34-b753fcf18c7a&lt;a name=&quot;FBOE-089c064d-3e14-47d2-9e34-b753fcf18c7a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spisning, kost og motion&lt;/td&gt;&lt;td&gt;Observation vedr. spisning, kost og motion ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    933d7ded-0c10-48e0-9645-b84b7c8946c7&lt;a name=&quot;FBOE-933d7ded-0c10-48e0-9645-b84b7c8946c7&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trivsel&lt;/td&gt;&lt;td&gt;Observation vedr. trivsel ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    5a517611-64d6-4ebd-af33-f2b30d0ad874&lt;a name=&quot;FBOE-5a517611-64d6-4ebd-af33-f2b30d0ad874&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mental sundhed&lt;/td&gt;&lt;td&gt;Observation vedr. mental sundhed ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    d59a5f7f-805c-44a6-9ab7-a4e7a1d9bd1e&lt;a name=&quot;FBOE-d59a5f7f-805c-44a6-9ab7-a4e7a1d9bd1e&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Andre rusmidler&lt;/td&gt;&lt;td&gt;Observation vedr. andre rusmidler ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    ae0bc3c6-7084-4e62-8e83-427f14a09646&lt;a name=&quot;FBOE-ae0bc3c6-7084-4e62-8e83-427f14a09646&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Seksuel adfærd&lt;/td&gt;&lt;td&gt;Observation vedr. seksuel adfærd ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    9069b5aa-d62c-48f9-a0d9-d17ecd12920a&lt;a name=&quot;FBOE-9069b5aa-d62c-48f9-a0d9-d17ecd12920a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Syntest&lt;/td&gt;&lt;td&gt;Observation vedr. syntest ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    20a41422-1ea1-483e-8070-7ffd79c493c0&lt;a name=&quot;FBOE-20a41422-1ea1-483e-8070-7ffd79c493c0&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Søvn/træthed&lt;/td&gt;&lt;td&gt;Observation vedr. søvn/træthed ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    6be08133-feca-4d2f-a45d-cb36d141011e&lt;a name=&quot;FBOE-6be08133-feca-4d2f-a45d-cb36d141011e&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Høretest&lt;/td&gt;&lt;td&gt;Observation vedr. høretest ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    da541ade-cbc9-4377-bff7-5ec153c93a89&lt;a name=&quot;FBOE-da541ade-cbc9-4377-bff7-5ec153c93a89&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fysisk trivsel&lt;/td&gt;&lt;td&gt;Observation vedr. fysisk trivsel ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    aeded840-d8da-408e-bb6d-d2d8560a6b79&lt;a name=&quot;FBOE-aeded840-d8da-408e-bb6d-d2d8560a6b79&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alkohol&lt;/td&gt;&lt;td&gt;Observation vedr. alkohol ifm. udskolingsundersøgelse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;6d41809a-54e5-4ce6-955f-357b20d063d1&lt;a name=&quot;FBOE-6d41809a-54e5-4ce6-955f-357b20d063d1&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kontakttype&lt;/td&gt;&lt;td&gt;Type af kontakte der foretages i sundhedsplejen.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  4b039ba1-4005-42e6-b672-09b81ad7578a&lt;a name=&quot;FBOE-4b039ba1-4005-42e6-b672-09b81ad7578a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Behovsbesøg af småbørnssundhedsplejen&lt;/td&gt;&lt;td&gt;Sundhedsplejens hjemmebesøg i barnets første 5 leveår efter behov&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  606c6585-444b-4ecd-885c-2ee59dc33f32&lt;a name=&quot;FBOE-606c6585-444b-4ecd-885c-2ee59dc33f32&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Behovsbaseret kontakt med skolesundhedsplejersken&lt;/td&gt;&lt;td&gt;Behovsbaseret kontakt med skolesundhedsplejersken&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  17f5f9fa-3e1c-42fe-9ef3-178bc7900f67&lt;a name=&quot;FBOE-17f5f9fa-3e1c-42fe-9ef3-178bc7900f67&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anden kontakt med skolesundhedsplejersken&lt;/td&gt;&lt;td&gt;Anden kontakt med skolesundhedsplejersken ifm. den almindelige forebyggende skolebørnsindsats.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  6c2a4f15-d775-47f3-9868-b26fbff9ff8b&lt;a name=&quot;FBOE-6c2a4f15-d775-47f3-9868-b26fbff9ff8b&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Forebyggelseskontakt i småbørnssundhedsplejen&lt;/td&gt;&lt;td&gt;Forebyggelseskontakt i småbørnssundhedsplejen, som beskrevet i vejledning om forebyggende sundhedsydelser til børn og unge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    3f3e6489-31bd-44cf-9920-3c632868feb7&lt;a name=&quot;FBOE-3f3e6489-31bd-44cf-9920-3c632868feb7&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Besøg ved det 8-11 måneder gamle barn&lt;/td&gt;&lt;td&gt;Besøg ved det 8-11 måneder gamle barn foretaget af småbørnssundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    58ff370b-a775-4bec-b24a-91604e0a5fe7&lt;a name=&quot;FBOE-58ff370b-a775-4bec-b24a-91604e0a5fe7&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Besøg ved det 4-6 måneder gamle barn&lt;/td&gt;&lt;td&gt;Besøg ved det 4-6 måneder gamle barn foretaget af småbørnssundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    51f30d1c-d60e-4e3e-ac22-ec9712ea962d&lt;a name=&quot;FBOE-51f30d1c-d60e-4e3e-ac22-ec9712ea962d&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Besøg ved det ca. 2 måneder gamle barn&lt;/td&gt;&lt;td&gt;Besøg ved det ca. 2 måneder gamle barn foretaget af småbørnssundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    b4bf6058-502a-4d64-bb8e-369661f43b47&lt;a name=&quot;FBOE-b4bf6058-502a-4d64-bb8e-369661f43b47&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Etableringsbesøg&lt;/td&gt;&lt;td&gt;Etableringsbesøg foretaget af småbørnssundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    d3c00541-f1d3-4c43-b5fc-16e8914ca1df&lt;a name=&quot;FBOE-d3c00541-f1d3-4c43-b5fc-16e8914ca1df&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Graviditetsbesøg&lt;/td&gt;&lt;td&gt;Graviditetsbesøg foretaget af småbørnssundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    7d35a193-e808-4e77-b361-6c0d114d021f&lt;a name=&quot;FBOE-7d35a193-e808-4e77-b361-6c0d114d021f&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Barselsbesøg&lt;/td&gt;&lt;td&gt;Barselsbesøg foretaget af småbørnssundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    563c4174-f451-4c87-8db8-8d5472ca7ff6&lt;a name=&quot;FBOE-563c4174-f451-4c87-8db8-8d5472ca7ff6&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Andet besøg i barnets første levemåned&lt;/td&gt;&lt;td&gt;Andet besøg i barnets første levemåned foretaget af småbørnssundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  b30f139c-fac5-416e-b84a-a3429f0222c2&lt;a name=&quot;FBOE-b30f139c-fac5-416e-b84a-a3429f0222c2&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anden kontakt med småbørnssundhedsplejen&lt;/td&gt;&lt;td&gt;Anden kontakt med småbørnssundhedsplejen ifm den almindelige forebyggende småbørnsindsats&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    644dd6c1-5c80-4412-ae59-f6e0767cead5&lt;a name=&quot;FBOE-644dd6c1-5c80-4412-ae59-f6e0767cead5&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kontakt med sundhedsplejen i åben konsultation&lt;/td&gt;&lt;td&gt;Kontakt med sundhedsplejen i åben konsultation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    a08d3cf6-58ef-4631-8893-3fa44bd67363&lt;a name=&quot;FBOE-a08d3cf6-58ef-4631-8893-3fa44bd67363&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kontakt med sundhedsplejen ifm. gruppeaktivitet&lt;/td&gt;&lt;td&gt;Kontakt med sundhedsplejen ifm. gruppeaktivitet fx mødre-, fædre- eller forældregrupper, åbent hus og undervisning.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb&lt;a name=&quot;FBOE-9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Forebyggelseskontakt i skolesundhedsplejen&lt;/td&gt;&lt;td&gt;Forebyggelseskontakt i skolesundhedsplejen som beskrevet i vejledning for forebyggende sundhedsydelser for børn og unge.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    c06ed6f1-be9d-460e-a45e-34821bcbd533&lt;a name=&quot;FBOE-c06ed6f1-be9d-460e-a45e-34821bcbd533&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indskolingsundersøgelse&lt;/td&gt;&lt;td&gt;Indskolingsundersøgelse foretaget af skolesundhedsplejen.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    0ddb3661-51da-471f-94d7-2a50b81f5fc6&lt;a name=&quot;FBOE-0ddb3661-51da-471f-94d7-2a50b81f5fc6&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;1. klasses undersøgelse&lt;/td&gt;&lt;td&gt;1. klasses undersøgelse foretaget af skolesundhedsplejen.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    d01bcb90-2b29-44f4-834c-191d6dd4a08a&lt;a name=&quot;FBOE-d01bcb90-2b29-44f4-834c-191d6dd4a08a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Undersøgelse i mellemtrin, med måling&lt;/td&gt;&lt;td&gt;Undersøgelse i mellemtrin foretaget af skolesundhedsplejen, hvor måling indberettes til National børnedatabase.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    dd766967-4d02-4c17-8ed3-021852785fdf&lt;a name=&quot;FBOE-dd766967-4d02-4c17-8ed3-021852785fdf&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Udskolingsundersøgelse&lt;/td&gt;&lt;td&gt;Udskolingsundersøgelse foretaget af skolesundhedsplejen.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;7110c91c-2be6-4beb-be73-c58cfc147a83&lt;a name=&quot;FBOE-7110c91c-2be6-4beb-be73-c58cfc147a83&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observationsresultat&lt;/td&gt;&lt;td&gt;Resultat af observation foretaget af sundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  0d512b22-80e6-4bed-9b79-4b13dc22eafb&lt;a name=&quot;FBOE-0d512b22-80e6-4bed-9b79-4b13dc22eafb&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Resultat, egenvurderet trivsel&lt;/td&gt;&lt;td&gt;Resultat af børns egenvurderede trivsel i regi af skolesundhedsplejen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    10edfc52-3632-453b-8db1-af6691049885&lt;a name=&quot;FBOE-10edfc52-3632-453b-8db1-af6691049885&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste ikke glad&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste ikke at være glad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    2e026475-a2ec-45e3-92d8-f0bed307cceb&lt;a name=&quot;FBOE-2e026475-a2ec-45e3-92d8-f0bed307cceb&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste midt imellem i skolen&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste at være midt imellem glad og ikke glad i skolen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    5dc857f6-1220-4762-a718-31a6101b5d61&lt;a name=&quot;FBOE-5dc857f6-1220-4762-a718-31a6101b5d61&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste glad i skolen&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste at være glad i skolen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    822dffb2-3b29-4f86-9784-757954d6a047&lt;a name=&quot;FBOE-822dffb2-3b29-4f86-9784-757954d6a047&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste ikke glad i skolen&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste ikke at være glad i skolen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    9b4b5194-cf7f-4274-a691-734c24adb0b7&lt;a name=&quot;FBOE-9b4b5194-cf7f-4274-a691-734c24adb0b7&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste meget glad i skolen&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste at være meget glad i skolen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    be128c20-851d-4217-b8df-744d8af39cac&lt;a name=&quot;FBOE-be128c20-851d-4217-b8df-744d8af39cac&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste meget glad&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste at være meget glad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    2c945a43-a07b-4b26-b4cc-205ba15a1251&lt;a name=&quot;FBOE-2c945a43-a07b-4b26-b4cc-205ba15a1251&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste midt imellem&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste at være midt imellem glad og ikke glad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    6bea1014-8e30-40e7-9274-2b02376c0b1b&lt;a name=&quot;FBOE-6bea1014-8e30-40e7-9274-2b02376c0b1b&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;For det meste glad&lt;/td&gt;&lt;td&gt;Barnet vurderer selv for det meste at være glad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  700d6a6d-43b7-4a4a-ac06-9c74253d0112&lt;a name=&quot;FBOE-700d6a6d-43b7-4a4a-ac06-9c74253d0112&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indikator resultat&lt;/td&gt;&lt;td&gt;Resultat af vurdering af én af de sundhedsplejefaglige indikatorer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a&lt;a name=&quot;FBOE-96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Problem/bemærkning&lt;/td&gt;&lt;td&gt;Der er konstateret et problem, og lavet en bemærkning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    1b64f768-5133-4633-85a4-2b97fcaa1f7a&lt;a name=&quot;FBOE-1b64f768-5133-4633-85a4-2b97fcaa1f7a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intet at bemærke&lt;/td&gt;&lt;td&gt;Der er intet at bemærke&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.kl.dk/term/CodeSystem/FBOE&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FBOE&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FBOE&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-07-10T23:08:03+02:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kommunernes Landsforening&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kommunernes Landsforening&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://kl.dk&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Concepts used for standardizing documentation for Danish postpartum nursing/childrens health promotion program in schools (Da: Sundhedsplejen). The concepts are utilized in the National Database for Children and Youth (LDBU).&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.hierarchyMeaning">hierarchyMeaning</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;is-a&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;7c8eceee-3591-497f-b78d-0d56eb046f35&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sundhedsplejefaglig indikator&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator brugt i sundhedsplejen, for på overordnede områder at evaluere barnets sundhed og trivsel.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bf5d7844-6175-41e1-a117-e5d60e755477&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator ifm. forebyggelsesindsats for småbørn&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator anvendet ifm. sundhedsplejens forebyggelsesindsats for småbørn&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2c39af9f-8e45-4c88-962f-e7a9e2cd31b6&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Forælders psykiske tilstand&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af psykisk tilstand når man er blevet forælder ifm. forebyggelsesindsats for småbørn&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;e88ddd81-4aa5-4c84-89fb-52de961a7c17&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Signaler, reaktioner, kommunikation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af signaler, reaktioner, kommunikation ifm. forebyggelsesindsats for småbørn&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0701a892-2e6b-4b76-a041-97ceda78f973&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Motorik&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af motorik ifm. forebyggelsesindsats for småbørn&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bfc7062e-d529-4516-a698-fc87b339033a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Søvn, døgnrytme&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af søvn, døgnrytme ifm. forebyggelsesindsats for småbørn&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bee30064-8436-4762-83ed-e47d65f23fc6&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Samvær, kontakt, forældre-barn relation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af samvær, kontakt, forældre-barn relation ifm. forebyggelsesindsats for småbørn&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;08a7b81a-3633-41ce-9e27-941ce3b4276b&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator anvendt af skolesundhedsplejen ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;58464451-5fbb-4607-871d-1e01212c38d7&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sundhedsplejerskens observationer og kontakt&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. sundhedsplejerskens observationer og kontakt med barnet ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;c61e0e57-b1fd-4e4a-9eb9-5086b14b7504&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at hoppe&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at hoppe ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;c05a5706-c0df-4a66-a6a1-a01e948d9326&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at stå på højre ben&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at stå på højre ben ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0e24a41d-6bb6-4c84-89e1-5635cd4ea481&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at kaste bold med højre hånd&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at kaste bold med højre hånd ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;5f4a21bb-6314-477a-a0fe-7924ff83954a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sprog&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af sprog ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;dfa9a5e4-c542-4491-8a4b-1dee0bab8b17&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at holde om en blyant&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at holde om en blyant ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1c4b0adf-cd19-42af-ba43-80c28fcbc7e3&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at stå på venstre ben&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at stå på venstre ben ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;51a91eca-5a66-4e1a-bbf7-be4ccf12810f&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Relation, kontakt, omsorg&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. forældre-barn relation, kontakt, omsorg ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2a8ebbc5-a4f0-485c-850f-1e95db492a6f&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at gå&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at gå ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;d240cad7-04ca-4f36-9dd7-86fb1987856a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mad og måltider&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. mad og måltider ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;550cad89-6036-453f-9536-d1adb4eae879&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at løbe gadedrengeløb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at løbe gadedrengeløb ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;877a3705-ddd4-4e54-a6eb-f94a95276f99&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Høretest&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. høretest ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;7dbe4d6a-a486-4d8a-bd85-d8803ecb9688&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Synstest&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. synstest ifm indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;f8d7fba7-acc4-4481-bb8d-4b3112f411a9&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Fysisk aktivitet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. fysisk aktivitet ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;998d1b1e-b165-43c9-861f-0b620f753df3&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at kaste bold med venstre hånd&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at kaste bold med venstre hånd ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;a3e32326-283d-47db-af92-3d8554fb7977&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at gribe bold&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at gribe bold ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;5697e7df-3009-44d2-a495-ca8e4da167fb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Evne til at holde balance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation af evne til at holde balance ifm. indskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2ba8931c-0c02-4928-a876-a30ee92adc20&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator anvendt af skolesundhedsplejen ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;089c064d-3e14-47d2-9e34-b753fcf18c7a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Spisning, kost og motion&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. spisning, kost og motion ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;933d7ded-0c10-48e0-9645-b84b7c8946c7&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Trivsel&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. trivsel ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;5a517611-64d6-4ebd-af33-f2b30d0ad874&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mental sundhed&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. mental sundhed ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;d59a5f7f-805c-44a6-9ab7-a4e7a1d9bd1e&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Andre rusmidler&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. andre rusmidler ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ae0bc3c6-7084-4e62-8e83-427f14a09646&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Seksuel adfærd&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. seksuel adfærd ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;9069b5aa-d62c-48f9-a0d9-d17ecd12920a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Syntest&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. syntest ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;20a41422-1ea1-483e-8070-7ffd79c493c0&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Søvn/træthed&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. søvn/træthed ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;6be08133-feca-4d2f-a45d-cb36d141011e&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Høretest&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. høretest ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;da541ade-cbc9-4377-bff7-5ec153c93a89&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Fysisk trivsel&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. fysisk trivsel ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;aeded840-d8da-408e-bb6d-d2d8560a6b79&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Alkohol&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation vedr. alkohol ifm. udskolingsundersøgelse&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;6d41809a-54e5-4ce6-955f-357b20d063d1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kontakttype&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Type af kontakte der foretages i sundhedsplejen.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4b039ba1-4005-42e6-b672-09b81ad7578a&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Behovsbesøg af småbørnssundhedsplejen&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sundhedsplejens hjemmebesøg i barnets første 5 leveår efter behov&quot;/&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;606c6585-444b-4ecd-885c-2ee59dc33f32&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Behovsbaseret kontakt med skolesundhedsplejersken&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Behovsbaseret kontakt med skolesundhedsplejersken&quot;/&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;17f5f9fa-3e1c-42fe-9ef3-178bc7900f67&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anden kontakt med skolesundhedsplejersken&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anden kontakt med skolesundhedsplejersken ifm. den almindelige forebyggende skolebørnsindsats.&quot;/&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;6c2a4f15-d775-47f3-9868-b26fbff9ff8b&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Forebyggelseskontakt i småbørnssundhedsplejen&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Forebyggelseskontakt i småbørnssundhedsplejen, som beskrevet i vejledning om forebyggende sundhedsydelser til børn og unge&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;3f3e6489-31bd-44cf-9920-3c632868feb7&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Besøg ved det 8-11 måneder gamle barn&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Besøg ved det 8-11 måneder gamle barn foretaget af småbørnssundhedsplejen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;58ff370b-a775-4bec-b24a-91604e0a5fe7&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Besøg ved det 4-6 måneder gamle barn&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Besøg ved det 4-6 måneder gamle barn foretaget af småbørnssundhedsplejen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;51f30d1c-d60e-4e3e-ac22-ec9712ea962d&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Besøg ved det ca. 2 måneder gamle barn&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Besøg ved det ca. 2 måneder gamle barn foretaget af småbørnssundhedsplejen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;b4bf6058-502a-4d64-bb8e-369661f43b47&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Etableringsbesøg&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Etableringsbesøg foretaget af småbørnssundhedsplejen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;d3c00541-f1d3-4c43-b5fc-16e8914ca1df&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Graviditetsbesøg&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Graviditetsbesøg foretaget af småbørnssundhedsplejen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;7d35a193-e808-4e77-b361-6c0d114d021f&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barselsbesøg&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barselsbesøg foretaget af småbørnssundhedsplejen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;563c4174-f451-4c87-8db8-8d5472ca7ff6&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Andet besøg i barnets første levemåned&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Andet besøg i barnets første levemåned foretaget af småbørnssundhedsplejen&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;b30f139c-fac5-416e-b84a-a3429f0222c2&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anden kontakt med småbørnssundhedsplejen&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anden kontakt med småbørnssundhedsplejen ifm den almindelige forebyggende småbørnsindsats&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;644dd6c1-5c80-4412-ae59-f6e0767cead5&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kontakt med sundhedsplejen i åben konsultation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kontakt med sundhedsplejen i åben konsultation&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;a08d3cf6-58ef-4631-8893-3fa44bd67363&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kontakt med sundhedsplejen ifm. gruppeaktivitet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kontakt med sundhedsplejen ifm. gruppeaktivitet fx mødre-, fædre- eller forældregrupper, åbent hus og undervisning.&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Forebyggelseskontakt i skolesundhedsplejen&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Forebyggelseskontakt i skolesundhedsplejen som beskrevet i vejledning for forebyggende sundhedsydelser for børn og unge.&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;c06ed6f1-be9d-460e-a45e-34821bcbd533&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indskolingsundersøgelse&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indskolingsundersøgelse foretaget af skolesundhedsplejen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0ddb3661-51da-471f-94d7-2a50b81f5fc6&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1. klasses undersøgelse&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1. klasses undersøgelse foretaget af skolesundhedsplejen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;d01bcb90-2b29-44f4-834c-191d6dd4a08a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Undersøgelse i mellemtrin, med måling&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Undersøgelse i mellemtrin foretaget af skolesundhedsplejen, hvor måling indberettes til National børnedatabase.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;dd766967-4d02-4c17-8ed3-021852785fdf&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Udskolingsundersøgelse&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Udskolingsundersøgelse foretaget af skolesundhedsplejen.&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;7110c91c-2be6-4beb-be73-c58cfc147a83&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observationsresultat&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resultat af observation foretaget af sundhedsplejen&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0d512b22-80e6-4bed-9b79-4b13dc22eafb&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resultat, egenvurderet trivsel&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resultat af børns egenvurderede trivsel i regi af skolesundhedsplejen&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;10edfc52-3632-453b-8db1-af6691049885&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste ikke glad&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste ikke at være glad&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2e026475-a2ec-45e3-92d8-f0bed307cceb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste midt imellem i skolen&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste at være midt imellem glad og ikke glad i skolen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;5dc857f6-1220-4762-a718-31a6101b5d61&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste glad i skolen&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste at være glad i skolen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;822dffb2-3b29-4f86-9784-757954d6a047&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste ikke glad i skolen&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste ikke at være glad i skolen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;9b4b5194-cf7f-4274-a691-734c24adb0b7&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste meget glad i skolen&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste at være meget glad i skolen&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;be128c20-851d-4217-b8df-744d8af39cac&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste meget glad&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste at være meget glad&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2c945a43-a07b-4b26-b4cc-205ba15a1251&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste midt imellem&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste at være midt imellem glad og ikke glad&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;6bea1014-8e30-40e7-9274-2b02376c0b1b&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;For det meste glad&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Barnet vurderer selv for det meste at være glad&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;700d6a6d-43b7-4a4a-ac06-9c74253d0112&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indikator resultat&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resultat af vurdering af én af de sundhedsplejefaglige indikatorer&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Problem/bemærkning&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Der er konstateret et problem, og lavet en bemærkning&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1b64f768-5133-4633-85a4-2b97fcaa1f7a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Intet at bemærke&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Der er intet at bemærke&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 10, 2023 23:08+0200">2023-07-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

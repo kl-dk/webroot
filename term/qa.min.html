@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 4, warn = 79, info = 3-->
+<!-- broken links = 0, errors = 0, warn = 0, info = 0-->
 <head>
   <title>KLTerm : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,29 +36,46 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for KLTerm</h1>
- <p>Generated Wed Jun 07 11:53:16 CEST 2023, FHIR version 4.0.1 for kl.dk.fhir.term#1.0.0 (canonical = <a href="http://fhir.kl.dk/term">http://fhir.kl.dk/term</a> (<a href="http://fhir.kl.dk/term/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon Jul 10 23:09:25 CEST 2023, FHIR version 4.0.1 for kl.dk.fhir.term#1.1.0 (canonical = <a href="http://fhir.kl.dk/term">http://fhir.kl.dk/term</a> (<a href="http://fhir.kl.dk/term/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.14</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.3.22, which is out of date. The current version is v1.3.23 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = kl.dk.fhir.term, Canonical = http://fhir.kl.dk/term</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li>Version 1.0.0 has already been published <img src="icon-warning.png" height="16px" width="16px"/></li>
-<li>Publication Request is for version v1.0.0 which is already published <img src="icon-error.gif" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>kl.dk.fhir.term</td></tr>
+ <tr><td>version</d><td>1.1.0</td></tr>
+ <tr><td>path</d><td>http://fhir.kl.dk/term/1.1.0</td></tr>
+ <tr><td>Pub-Mode</d><td>milestone</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>sequence</d><td>Releases</td></tr>
+ <tr><td>desc</d><td>Next release</td></tr>
+ <tr><td>descmd</d><td><p>Version 1.1.0 of KLs terminology IG.</p>
+<p>The CodeSystems FSIII, FFB, FBOE and CareSocialCodes have been migrated from FK-klassifikation (ExTest) May and June 2023. The version of each CodeSystem has been set to the date of the actual migration.
+FBOE is released in its initial version.
+FSIII has been updated with §140 and §119 interventions with detailed concepts for when interventions are delivered individually or in a group. A number of headings in FSIII classic have changed display e.g. H4 changed from SEL § 84 stk. 2 to Midlertidigt ophold. Notice that FSIII classic uses its legacy codes e.g. H1, rather than the new uuid from FK-klassifikation. This is to preseve the implementations already relying on the legacy codes.
+FFB has changed term from Omgivelsesfaktorer to Omgivelser for 7445fb2b-0009-43d9-b49b-1b9782f2fcd9. The new concept a56d59c0-c8fd-468c-85f9-b67f66561b90 Omgivelsesfaktorer has been added.
+CareSocialCodes have been updated with reasons for stopping an intervention, see 2c059407-fed5-4852-92d8-6bb5ad63d7bb Begrundelse for indsatsophør and its subtype descendants. In addition the term Rehabilitering efter § 140 have been changed to Genoptræning efter §140, and two subtypes have been added. Two subtypes have also been added to Sundhedsfremme og forebyggelse §119.</p>
+</td></tr>
+</table>
+<ul><li>Publication request category found (not allowed after first publication <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request title found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Publication request introduction found (not allowed after first publication) <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td>No Suppressed Issues
 </td></tr>
- <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> kl.dk.fhir.term</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/term</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-</table><para>Templates: kl.dk.fhir.template#0.0.1 -&gt; fhir.base.template#current</para></div></td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.term#1.1.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> kl.dk.fhir.term</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/term</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.term#1.1.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.term#1.1.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: kl.dk.fhir.template#0.0.1 -&gt; fhir.base.template#current. Tools: current</para></div></td></tr>
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> </td></tr>
+ <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v1.0.0/index.html">Comparison with version 1.0.0</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 4, warn = 79, info = 3, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 0, info = 0, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -67,27 +84,6 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLComplicationCodesSCT"><b>/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/fsh-generated/resources/ValueSet-KLComplicationCodesSCT</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLEvaluationTypeCodesSCT"><b>/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/fsh-generated/resources/ValueSet-KLEvaluationTypeCodesSCT</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLObservationCodes"><b>/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/fsh-generated/resources/ValueSet-KLObservationCodes</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLTargetMeasureCodes"><b>/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/fsh-generated/resources/ValueSet-KLTargetMeasureCodes</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_input_vocabulary_CodeSystem-FFB"><b>/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input/vocabulary/CodeSystem-FFB</b></a></td><td><b>0</b></td><td><b>75</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_input_vocabulary_CodeSystem-FSIII"><b>/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input/vocabulary/CodeSystem-FSIII</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_input_vocabulary_CodeSystem-KLCommonCareSocialCodes"><b>/Users/jkiddo/work/temp/kl.dk.fhir.term#1.0.0-milestone/input/vocabulary/CodeSystem-KLCommonCareSocialCodes</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
@@ -95,584 +91,9 @@
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
 </table>
-<hr/>
-<a name="_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLComplicationCodesSCT"> </a>
-<h2><a href="ValueSet-KLComplicationCodesSCT.html">fsh-generated/resources/ValueSet-KLComplicationCodesSCT.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'KLComplicationCodesSCT')</b></td><td><b>error</b></td><td title=""><b>Error from server: Access violation</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLEvaluationTypeCodesSCT"> </a>
-<h2><a href="ValueSet-KLEvaluationTypeCodesSCT.html">fsh-generated/resources/ValueSet-KLEvaluationTypeCodesSCT.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'KLEvaluationTypeCodesSCT')</b></td><td><b>error</b></td><td title=""><b>Error from server: Access violation</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLObservationCodes"> </a>
-<h2><a href="ValueSet-KLObservationCodes.html">fsh-generated/resources/ValueSet-KLObservationCodes.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'KLObservationCodes')</b></td><td><b>error</b></td><td title=""><b>Error from server: Access violation</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_fsh-generated_resources_ValueSet-KLTargetMeasureCodes"> </a>
-<h2><a href="ValueSet-KLTargetMeasureCodes.html">fsh-generated/resources/ValueSet-KLTargetMeasureCodes.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'KLTargetMeasureCodes')</b></td><td><b>error</b></td><td><b>Error from server: Access violation</b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_input_vocabulary_CodeSystem-FFB"> </a>
-<h2><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[1].concept[1].concept[5].concept[2].definition (l1/c80442)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'handling, der består i at holde ens nære fysiske omgivelser rene og hygiejniske '</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[0].display (l1/c88586)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Ydelse\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[0].concept[0].display (l1/c88760)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Aktivitet og samvær\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[0].concept[1].display (l1/c90277)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Beskyttet beskæftigelse\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[0].concept[2].display (l1/c91277)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Ophold\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[0].concept[3].display (l1/c91828)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Afklaring\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[0].concept[4].display (l1/c92205)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Socialpædagogisk støtte\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].display (l1/c98057)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Tilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[0].display (l1/c98202)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Mobilt tilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[2].display (l1/c98642)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Dagtilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[2].concept[0].display (l1/c98819)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Aktivitets- og samværstilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[2].concept[1].display (l1/c99052)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Beskyttet beskæftigelsestilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[3].display (l1/c99467)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Botilbudslignende tilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[3].concept[0].display (l1/c99770)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Almen ældre- og handicapvenlig bolig\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[4].display (l1/c100045)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[4].concept[0].display (l1/c100225)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Midlertidigt botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[4].concept[1].display (l1/c100513)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Længerevarende botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[4].concept[1].concept[0].display (l1/c100815)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sikret længerevarende botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[1].concept[4].concept[1].concept[1].display (l1/c101170)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Almindeligt længerevarende botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].display (l1/c101323)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Målgruppe \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].display (l1/c101480)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Socialt problem \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[0].display (l1/c101688)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Selvskadende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[1].display (l1/c101889)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Andet socialt problem \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[2].display (l1/c102078)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Social isolation \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[3].display (l1/c102233)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Prostitution \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[4].display (l1/c102464)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Hjemløshed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[5].display (l1/c102619)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Selvmordstanker eller -forsøg \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[6].display (l1/c102822)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Seksuelt krænkende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[7].display (l1/c103024)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Omsorgssvigt \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[8].display (l1/c103242)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Udadreagerende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[9].display (l1/c103407)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Indadreagerende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[10].display (l1/c103572)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Kriminalitet \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[10].concept[0].display (l1/c103721)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Ikke-personfarlig kriminalitet \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[10].concept[1].display (l1/c103923)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Personfarlig kriminalitet \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[11].concept[0].display (l1/c104330)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Alkoholmisbrug \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[11].concept[1].display (l1/c104459)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Stofmisbrug \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[12].display (l1/c104592)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[12].concept[0].display (l1/c104780)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Seksuelt overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[12].concept[1].display (l1/c104940)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Voldeligt overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[0].concept[12].concept[2].display (l1/c105100)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Andet overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[0].display (l1/c105485)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Multipel funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[1].display (l1/c105705)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sjældent forekommende funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[0].display (l1/c106066)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Synsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[1].display (l1/c106258)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Kommunikationsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[2].display (l1/c106478)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Anden fysisk funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[3].display (l1/c106690)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Hørenedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[4].display (l1/c106881)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Mobilitetsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[5].display (l1/c107071)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Døvblindhed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[5].concept[0].display (l1/c107281)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Medfødt døvblindhed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[2].concept[5].concept[1].display (l1/c107440)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Erhvervet døvblindhed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].display (l1/c107610)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Psykisk funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].display (l1/c107771)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Psykiske vanskeligheder \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].concept[0].display (l1/c108005)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Stressbelastning \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].concept[1].display (l1/c108239)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Angst \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].concept[2].display (l1/c108475)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Spiseforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].concept[3].display (l1/c108645)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Tilknytningsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].concept[4].display (l1/c108923)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Personlighedsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].concept[6].display (l1/c109347)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Forandret virkelighedsopfattelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[0].concept[7].display (l1/c109571)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Depression \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].display (l1/c109802)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Intellektuel/kognitiv forstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[0].display (l1/c110001)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Demens \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[1].display (l1/c110279)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Udviklingshæmning \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[2].display (l1/c110575)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Anden intellektuel/kognitiv forstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[3].display (l1/c110808)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[3].concept[0].display (l1/c111035)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Anden udviklingsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[3].concept[1].display (l1/c111237)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Autismespektrum \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[3].concept[2].display (l1/c111505)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse af skolefærdigheder \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[3].concept[3].display (l1/c111773)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse af tale og sprog \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[3].concept[4].display (l1/c112019)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse af sansemotoriske færdigheder \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[3].concept[5].display (l1/c112240)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Opmærksomhedsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[4].display (l1/c112436)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Hjerneskade \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[4].concept[0].display (l1/c112643)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Erhvervet hjerneskade \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.concept[2].concept[2].concept[1].concept[3].concept[1].concept[4].concept[1].display (l1/c112790)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Medfødt hjerneskade \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c114850)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c114850)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_input_vocabulary_CodeSystem-FSIII"> </a>
-<h2><a href="CodeSystem-FSIII.html">input/vocabulary/CodeSystem-FSIII.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c136600)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c136600)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_jkiddo_work_temp_kl.dk.fhir.term_1.0.0-milestone_input_vocabulary_CodeSystem-KLCommonCareSocialCodes"> </a>
-<h2><a href="CodeSystem-CareSocialCodes.html">input/vocabulary/CodeSystem-KLCommonCareSocialCodes.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c21379)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c21379)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-</table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
-<hr/>
-<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
-<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FSIII.html">input/vocabulary/CodeSystem-FSIII.json</a></td><td><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FSIII.html">input/vocabulary/CodeSystem-FSIII.json</a></td><td><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-CareSocialCodes.html">input/vocabulary/CodeSystem-KLCommonCareSocialCodes.json</a></td><td><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-CareSocialCodes.html">input/vocabulary/CodeSystem-KLCommonCareSocialCodes.json</a></td><td><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Type_Specific_Checks_DT_String_WS"> </a>
-<h2>Type_Specific_Checks_DT_String_WS</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'handling, der består i at holde ens nære fysiske omgivelser rene og hygiejniske '</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Ydelse\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Aktivitet og samvær\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Beskyttet beskæftigelse\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Ophold\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Afklaring\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Socialpædagogisk støtte\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Tilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Mobilt tilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Dagtilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Aktivitets- og samværstilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Beskyttet beskæftigelsestilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Botilbudslignende tilbud\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Almen ældre- og handicapvenlig bolig\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Midlertidigt botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Længerevarende botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Sikret længerevarende botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Almindeligt længerevarende botilbud til voksne\u00a0\u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Målgruppe \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Socialt problem \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Selvskadende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Andet socialt problem \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Social isolation \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Prostitution \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Hjemløshed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Selvmordstanker eller -forsøg \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Seksuelt krænkende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Omsorgssvigt \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Udadreagerende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Indadreagerende adfærd \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Kriminalitet \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Ikke-personfarlig kriminalitet \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Personfarlig kriminalitet \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Alkoholmisbrug \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Stofmisbrug \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Seksuelt overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Voldeligt overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Andet overgreb \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Multipel funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Sjældent forekommende funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Synsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Kommunikationsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Anden fysisk funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Hørenedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Mobilitetsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Døvblindhed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Medfødt døvblindhed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Erhvervet døvblindhed \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Psykisk funktionsnedsættelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Psykiske vanskeligheder \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Stressbelastning \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Angst \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Spiseforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Tilknytningsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Personlighedsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Forandret virkelighedsopfattelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Depression \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Intellektuel/kognitiv forstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Demens \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Udviklingshæmning \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Anden intellektuel/kognitiv forstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Anden udviklingsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Autismespektrum \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse af skolefærdigheder \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse af tale og sprog \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Udviklingsforstyrrelse af sansemotoriske færdigheder \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Opmærksomhedsforstyrrelse \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Hjerneskade \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Erhvervet hjerneskade \u00a0'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-FFB.html">input/vocabulary/CodeSystem-FFB.json</a></td><td><b>value should not start or finish with whitespace 'Medfødt hjerneskade \u00a0'</b></td>
-   </tr>
-</table>
 </body>
 </html>

@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/ValueSet/KLChangeValueCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLChangeValueCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLChangeValueCodesFSIII.html\">KLMåltypeKoderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLChangeValueCodesFFB.html\">KLMåltypekoderFFB</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/term/ValueSet/KLChangeValueCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "KLChangeValueCodes"] ; # 
+  fhir:title [ fhir:v "KLMåltypeKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-10T23:04:47+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Change values for goals (måltype). Express the target value for change of a condition"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFSIII"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFSIII>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFFB"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFFB>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
