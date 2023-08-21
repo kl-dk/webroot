@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://municipality-care-data.gateway.kl.dk/1.0/Observation/OpleverIkkeBegraensningerMedVaskeSig> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OpleverIkkeBegraensningerMedVaskeSig"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizens-own-observation"^^xsd:anyURI ;
+       fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizens-own-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"OpleverIkkeBegraensningerMedVaskeSig\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;OpleverIkkeBegraensningerMedVaskeSig&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-citizens-own-observation.html\">CareCitizensOwnObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Betydning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html\">FSIII</a>#D)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Patient/TestPerson</a></p><p><b>focus</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition/VaskeSigLetteBegraensninger</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Oplever ikke begrænsninger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html\">FSIII</a>#D1)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "D" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/Condition/VaskeSigLetteBegraensninger> ;
+     fhir:reference [ fhir:v "Condition/VaskeSigLetteBegraensninger" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "D1" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

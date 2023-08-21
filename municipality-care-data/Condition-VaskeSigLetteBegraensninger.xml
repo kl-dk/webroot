@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="VaskeSigLetteBegraensninger"/>
+  <meta>
+    <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="VaskeSigLetteBegraensninger"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;VaskeSigLetteBegraensninger&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href="Encounter-bfa70a76-318d-453d-9abc-76982f8d13ca.html">Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>severity</b>: Lette begrænsninger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#B2)</span></p><p><b>code</b>: Vaske sig <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#J1.1)</span></p><p><b>subject</b>: <a href="Patient-TestPerson.html">Patient/TestPerson</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>
+  </text>
+  <extension url="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension">
+    <valueReference>
+      <reference value="Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"/>
+    </valueReference>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+      <code value="B2"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+      <code value="J1.1"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TestPerson"/>
+  </subject>
+  <recordedDate value="2020-08-14"/>
+</Condition>

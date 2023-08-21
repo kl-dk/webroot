@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="EgensomsorgBegraensningerOmkringKropspleje"/>
+  <meta>
+    <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-matter-of-interest-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="EgensomsorgBegraensningerOmkringKropspleje"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;EgensomsorgBegraensningerOmkringKropspleje&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></p></div><p><b>CareFindingContextAtRiskExtension</b>: Kropspleje (Details: http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII code J1.2 = 'Kropspleje', stated as 'null')</p><p><b>status</b>: final</p><p><b>code</b>: Egenomsorg <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#J1)</span></p><p><b>subject</b>: <a href="Patient-TestPerson.html">Patient/TestPerson</a></p><p><b>effective</b>: 2020-08-14</p></div>
+  </text>
+  <extension url="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-finding-context-at-risk-extension">
+    <valueCoding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+      <code value="J1.2"/>
+    </valueCoding>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+      <code value="J1"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TestPerson"/>
+  </subject>
+  <effectiveDateTime value="2020-08-14"/>
+</Observation>

@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://municipality-care-data.gateway.kl.dk/1.0/CodeSystem/LocallyDefinedInterventions> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LocallyDefinedInterventions"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://municipality-care-data.gateway.kl.dk/1.0/CodeSystem/LocallyDefinedInterventions</code> provides a fragment that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://municipality-care-data.gateway.kl.dk/1.0/CodeSystem/LocallyDefinedInterventions"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:name [ fhir:v "LocallyDefinedInterventions"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-08-21T11:23:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Coding system to indicate a code defined locally in the managing organization"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "fragment"] . # 
+
+# -------------------------------------------------------------------------------------
+

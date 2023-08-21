@@ -1,0 +1,181 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb",
+  "meta" : {
+    "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report"]
+  },
+  "type" : "collection",
+  "timestamp" : "2021-02-12T12:46:48Z",
+  "entry" : [{
+    "fullUrl" : "Patient/4a45e179-ace1-4ace-9991-8276c0ba490a",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "4a45e179-ace1-4ace-9991-8276c0ba490a",
+      "meta" : {
+        "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"4a45e179-ace1-4ace-9991-8276c0ba490a\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;4a45e179-ace1-4ace-9991-8276c0ba490a&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-citizen.html\">CareCitizen</a></p></div><p><b>identifier</b>: id:\u00a00101570001\u00a0(use:\u00a0OFFICIAL)</p><p><b>managingOrganization</b>: <span>id:\u00a0123456789012345\u00a0(use:\u00a0OFFICIAL)</span></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0101570001"
+      }],
+      "managingOrganization" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "urn:oid:1.2.208.176.1.1",
+          "value" : "123456789012345"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "Condition/a881788d-1b27-46e3-8b76-607bc49876fd",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "a881788d-1b27-46e3-8b76-607bc49876fd",
+      "meta" : {
+        "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"a881788d-1b27-46e3-8b76-607bc49876fd\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;a881788d-1b27-46e3-8b76-607bc49876fd&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-condition.html\">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href=\"#Encounter_817de94d-84f0-47c3-839a-ae438075ec6f\">See above (Encounter/817de94d-84f0-47c3-839a-ae438075ec6f)</a></p><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>code</b>: Respirationsproblemer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html\">FSIII</a>#I7.1)</span></p><p><b>subject</b>: <a href=\"#Patient_4a45e179-ace1-4ace-9991-8276c0ba490a\">See above (Patient/4a45e179-ace1-4ace-9991-8276c0ba490a)</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/817de94d-84f0-47c3-839a-ae438075ec6f"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "inactive"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+          "code" : "I7.1"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/4a45e179-ace1-4ace-9991-8276c0ba490a"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "Condition/ad506910-9030-4ddb-b8ce-7bb6a69d808e",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "ad506910-9030-4ddb-b8ce-7bb6a69d808e",
+      "meta" : {
+        "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ad506910-9030-4ddb-b8ce-7bb6a69d808e\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ad506910-9030-4ddb-b8ce-7bb6a69d808e&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-condition.html\">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href=\"#Encounter_817de94d-84f0-47c3-839a-ae438075ec6f\">See above (Encounter/817de94d-84f0-47c3-839a-ae438075ec6f)</a></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Problemer med mobilitet og bevægelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html\">FSIII</a>#I2.1)</span></p><p><b>subject</b>: <a href=\"#Patient_4a45e179-ace1-4ace-9991-8276c0ba490a\">See above (Patient/4a45e179-ace1-4ace-9991-8276c0ba490a)</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/817de94d-84f0-47c3-839a-ae438075ec6f"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+          "code" : "I2.1"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/4a45e179-ace1-4ace-9991-8276c0ba490a"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "Observation/ee421741-4e60-46f2-b4d6-fc60bf85c42b",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ee421741-4e60-46f2-b4d6-fc60bf85c42b",
+      "meta" : {
+        "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ee421741-4e60-46f2-b4d6-fc60bf85c42b\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ee421741-4e60-46f2-b4d6-fc60bf85c42b&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-follow-up-observation.html\">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"#Patient_4a45e179-ace1-4ace-9991-8276c0ba490a\">See above (Patient/4a45e179-ace1-4ace-9991-8276c0ba490a)</a></p><p><b>focus</b>: </p><ul><li><a href=\"#Condition_a881788d-1b27-46e3-8b76-607bc49876fd\">See above (Condition/a881788d-1b27-46e3-8b76-607bc49876fd)</a></li><li><a href=\"#Condition_ad506910-9030-4ddb-b8ce-7bb6a69d808e\">See above (Condition/ad506910-9030-4ddb-b8ce-7bb6a69d808e)</a></li></ul><p><b>effective</b>: 2021-02-12</p><p><b>value</b>: Fortsættes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html\">FSIII</a>#E1)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "712744002"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/4a45e179-ace1-4ace-9991-8276c0ba490a"
+      },
+      "focus" : [{
+        "reference" : "Condition/a881788d-1b27-46e3-8b76-607bc49876fd"
+      },
+      {
+        "reference" : "Condition/ad506910-9030-4ddb-b8ce-7bb6a69d808e"
+      }],
+      "effectiveDateTime" : "2021-02-12",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+          "code" : "E1"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "Encounter/817de94d-84f0-47c3-839a-ae438075ec6f",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "817de94d-84f0-47c3-839a-ae438075ec6f",
+      "meta" : {
+        "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"817de94d-84f0-47c3-839a-ae438075ec6f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;817de94d-84f0-47c3-839a-ae438075ec6f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-encounter.html\">CareEncounter</a></p></div><p><b>status</b>: planned</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: opfølgning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#9f03dfbb-7a97-45a5-94db-d4c3501714a9)</span></p><p><b>subject</b>: <a href=\"#Patient_4a45e179-ace1-4ace-9991-8276c0ba490a\">See above (Patient/4a45e179-ace1-4ace-9991-8276c0ba490a)</a></p><p><b>period</b>: 2021-02-14 --&gt; (ongoing)</p></div>"
+      },
+      "status" : "planned",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "HH"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+          "code" : "9f03dfbb-7a97-45a5-94db-d4c3501714a9"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/4a45e179-ace1-4ace-9991-8276c0ba490a"
+      },
+      "period" : {
+        "start" : "2021-02-14"
+      }
+    }
+  }]
+}

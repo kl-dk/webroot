@@ -1,0 +1,487 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "TestIncrementalDelivery",
+  "meta" : {
+    "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-incremental-delivery"]
+  },
+  "type" : "collection",
+  "timestamp" : "2020-08-14T00:00:00Z",
+  "entry" : [{
+    "fullUrl" : "Bundle/TestPersonReport",
+    "resource" : {
+      "resourceType" : "Bundle",
+      "id" : "TestPersonReport",
+      "meta" : {
+        "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report"]
+      },
+      "type" : "collection",
+      "timestamp" : "2020-08-14T00:00:00Z",
+      "entry" : [{
+        "fullUrl" : "Patient/TestPerson",
+        "resource" : {
+          "resourceType" : "Patient",
+          "id" : "TestPerson",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizen"]
+          },
+          "identifier" : [{
+            "use" : "official",
+            "system" : "urn:oid:1.2.208.176.1.2",
+            "value" : "0101010101"
+          }],
+          "managingOrganization" : {
+            "identifier" : {
+              "use" : "official",
+              "system" : "urn:oid:1.2.208.176.1.1",
+              "value" : "123456789012345"
+            }
+          }
+        }
+      },
+      {
+        "fullUrl" : "Condition/VaskeSigLetteBegraensninger",
+        "resource" : {
+          "resourceType" : "Condition",
+          "id" : "VaskeSigLetteBegraensninger",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"]
+          },
+          "extension" : [{
+            "url" : "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+            "valueReference" : {
+              "reference" : "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"
+            }
+          }],
+          "clinicalStatus" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }]
+          },
+          "verificationStatus" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "confirmed"
+            }]
+          },
+          "category" : [{
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code" : "problem-list-item"
+            }]
+          }],
+          "severity" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "B2"
+            }]
+          },
+          "code" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "J1.1"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "recordedDate" : "2020-08-14"
+        }
+      },
+      {
+        "fullUrl" : "Goal/ForventetIngenBegraensninger",
+        "resource" : {
+          "resourceType" : "Goal",
+          "id" : "ForventetIngenBegraensninger",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-goal"]
+          },
+          "lifecycleStatus" : "planned",
+          "category" : [{
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+              "code" : "ca552020-6ed1-4cdc-b0d4-32697f1f27ad"
+            }]
+          }],
+          "description" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "e182c5dc-9f91-474a-92e8-f62be3d498f4"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "startDate" : "2020-08-14",
+          "target" : [{
+            "measure" : {
+              "coding" : [{
+                "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+                "code" : "66959f77-6e2a-4574-8423-3ff097f8b9fa"
+              }]
+            },
+            "detailCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+                "code" : "B2"
+              }]
+            }
+          }],
+          "addresses" : [{
+            "reference" : "Condition/VaskeSigLetteBegraensninger"
+          }]
+        }
+      },
+      {
+        "fullUrl" : "Observation/OpleverIkkeBegraensningerMedVaskeSig",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "OpleverIkkeBegraensningerMedVaskeSig",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizens-own-observation"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "D"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "focus" : [{
+            "reference" : "Condition/VaskeSigLetteBegraensninger"
+          }],
+          "effectiveDateTime" : "2020-08-14",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "D1"
+            }]
+          }
+        }
+      },
+      {
+        "fullUrl" : "Observation/UdfoererSelvVaskeSig",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "UdfoererSelvVaskeSig",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizens-own-observation"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "C"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "focus" : [{
+            "reference" : "Condition/VaskeSigLetteBegraensninger"
+          }],
+          "effectiveDateTime" : "2020-08-14",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "C1"
+            }]
+          }
+        }
+      },
+      {
+        "fullUrl" : "Condition/ProblemerMedPersonligPleje",
+        "resource" : {
+          "resourceType" : "Condition",
+          "id" : "ProblemerMedPersonligPleje",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"]
+          },
+          "extension" : [{
+            "url" : "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+            "valueReference" : {
+              "reference" : "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"
+            }
+          }],
+          "clinicalStatus" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }]
+          },
+          "category" : [{
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code" : "problem-list-item"
+            }]
+          }],
+          "code" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "I1.1"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "recordedDate" : "2020-08-14"
+        }
+      },
+      {
+        "fullUrl" : "CarePlan/PersonligHygiejne",
+        "resource" : {
+          "resourceType" : "CarePlan",
+          "id" : "PersonligHygiejne",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-planned-intervention"]
+          },
+          "status" : "active",
+          "intent" : "plan",
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "period" : {
+            "start" : "2020-08-14"
+          },
+          "activity" : [{
+            "detail" : {
+              "code" : {
+                "coding" : [{
+                  "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+                  "code" : "H1.1"
+                },
+                {
+                  "system" : "http://gateway.kl.dk/1.0/CodeSystem/LocallyDefinedInterventions",
+                  "code" : "H1.1.1",
+                  "display" : "Speciel personlig pleje"
+                }]
+              },
+              "status" : "in-progress"
+            }
+          }]
+        }
+      },
+      {
+        "fullUrl" : "CarePlan/Dialyse",
+        "resource" : {
+          "resourceType" : "CarePlan",
+          "id" : "Dialyse",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-planned-intervention"]
+          },
+          "status" : "active",
+          "intent" : "plan",
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "period" : {
+            "start" : "2020-08-14"
+          },
+          "activity" : [{
+            "detail" : {
+              "code" : {
+                "coding" : [{
+                  "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+                  "code" : "G1.10"
+                }]
+              },
+              "status" : "in-progress"
+            }
+          }]
+        }
+      },
+      {
+        "fullUrl" : "Procedure/Saarbehandling",
+        "resource" : {
+          "resourceType" : "Procedure",
+          "id" : "Saarbehandling",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-completed-intervention"]
+          },
+          "status" : "completed",
+          "code" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "G1.39"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "performedDateTime" : "2020-08-14T10:15:00Z"
+        }
+      },
+      {
+        "fullUrl" : "Observation/EgensomsorgBegraensninger",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "EgensomsorgBegraensninger",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-matter-of-interest-observation"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "J1"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "effectiveDateTime" : "2020-08-14"
+        }
+      },
+      {
+        "fullUrl" : "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca",
+        "resource" : {
+          "resourceType" : "Encounter",
+          "id" : "bfa70a76-318d-453d-9abc-76982f8d13ca",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-encounter"]
+          },
+          "status" : "planned",
+          "class" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code" : "HH"
+          },
+          "type" : [{
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+              "code" : "9f03dfbb-7a97-45a5-94db-d4c3501714a9"
+            }]
+          }],
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "period" : {
+            "start" : "2020-08-14"
+          }
+        }
+      },
+      {
+        "fullUrl" : "Observation/VaskeSigFortsaettes",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "VaskeSigFortsaettes",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "712744002"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "focus" : [{
+            "reference" : "Condition/VaskeSigLetteBegraensninger"
+          }],
+          "effectiveDateTime" : "2020-08-14",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "E1"
+            }]
+          }
+        }
+      },
+      {
+        "fullUrl" : "Observation/PersonligPlejeFortsaettes",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "PersonligPlejeFortsaettes",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "712744002"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "focus" : [{
+            "reference" : "Condition/ProblemerMedPersonligPleje"
+          }],
+          "effectiveDateTime" : "2020-08-14",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "E1"
+            }]
+          }
+        }
+      },
+      {
+        "fullUrl" : "Observation/PersonligHygiejneFortsaettes",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "PersonligHygiejneFortsaettes",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "712744002"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "focus" : [{
+            "reference" : "CarePlan/PersonligHygiejne"
+          }],
+          "effectiveDateTime" : "2020-08-14",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "E1"
+            }]
+          }
+        }
+      },
+      {
+        "fullUrl" : "Observation/DialyseFortsaettes",
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "DialyseFortsaettes",
+          "meta" : {
+            "profile" : ["http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "712744002"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/TestPerson"
+          },
+          "focus" : [{
+            "reference" : "CarePlan/Dialyse"
+          }],
+          "effectiveDateTime" : "2020-08-14",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+              "code" : "E1"
+            }]
+          }
+        }
+      }]
+    }
+  }]
+}

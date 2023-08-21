@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://municipality-care-data.gateway.kl.dk/1.0/Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bfa70a76-318d-453d-9abc-76982f8d13ca"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-encounter"^^xsd:anyURI ;
+       fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"bfa70a76-318d-453d-9abc-76982f8d13ca\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;bfa70a76-318d-453d-9abc-76982f8d13ca&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-encounter.html\">CareEncounter</a></p></div><p><b>status</b>: planned</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: opfølgning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-KLCommonCareSocialCodes.html\">KLCommonCareSocialCodes</a>#9f03dfbb-7a97-45a5-94db-d4c3501714a9)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Patient/TestPerson</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "planned"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9f03dfbb-7a97-45a5-94db-d4c3501714a9" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-08-14"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

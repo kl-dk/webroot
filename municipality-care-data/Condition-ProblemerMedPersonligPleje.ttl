@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://municipality-care-data.gateway.kl.dk/1.0/Condition/ProblemerMedPersonligPleje> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ProblemerMedPersonligPleje"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"^^xsd:anyURI ;
+       fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ProblemerMedPersonligPleje\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ProblemerMedPersonligPleje&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-condition.html\">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Encounter-bfa70a76-318d-453d-9abc-76982f8d13ca.html\">Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca</a></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Problemer med personlig pleje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html\">FSIII</a>#I1.1)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Patient/TestPerson</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca> ;
+       fhir:reference [ fhir:v "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "I1.1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://municipality-care-data.gateway.kl.dk/1.0/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-08-14"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

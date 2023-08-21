@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PersonligHygiejneFortsaettes"/>
+  <meta>
+    <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="PersonligHygiejneFortsaettes"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;PersonligHygiejneFortsaettes&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href="Patient-TestPerson.html">Patient/TestPerson</a></p><p><b>focus</b>: <a href="CarePlan-PersonligHygiejne.html">CarePlan/PersonligHygiejne</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#E1)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="712744002"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TestPerson"/>
+  </subject>
+  <focus>
+    <reference value="CarePlan/PersonligHygiejne"/>
+  </focus>
+  <effectiveDateTime value="2020-08-14"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+      <code value="E1"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

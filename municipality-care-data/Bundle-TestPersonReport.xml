@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="TestPersonReport"/>
+  <meta>
+    <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-delivery-report"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-08-14T00:00:00Z"/>
+  <entry>
+    <fullUrl value="Patient/TestPerson"/>
+    <resource>
+      <Patient>
+        <id value="TestPerson"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="TestPerson"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;TestPerson&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a></p></div><p><b>identifier</b>: id: 0101010101 (use: OFFICIAL)</p><p><b>managingOrganization</b>: <span>id: 123456789012345 (use: OFFICIAL)</span></p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="0101010101"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <use value="official"/>
+            <system value="urn:oid:1.2.208.176.1.1"/>
+            <value value="123456789012345"/>
+          </identifier>
+        </managingOrganization>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/VaskeSigLetteBegraensninger"/>
+    <resource>
+      <Condition>
+        <id value="VaskeSigLetteBegraensninger"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="VaskeSigLetteBegraensninger"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;VaskeSigLetteBegraensninger&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href="#Encounter_bfa70a76-318d-453d-9abc-76982f8d13ca">See above (Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca)</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>severity</b>: Lette begrænsninger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#B2)</span></p><p><b>code</b>: Vaske sig <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#J1.1)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>
+        </text>
+        <extension url="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension">
+          <valueReference>
+            <reference value="Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"/>
+          </valueReference>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <severity>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="B2"/>
+          </coding>
+        </severity>
+        <code>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="J1.1"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <recordedDate value="2020-08-14"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Goal/ForventetIngenBegraensninger"/>
+    <resource>
+      <Goal>
+        <id value="ForventetIngenBegraensninger"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-goal"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Goal</b><a name="ForventetIngenBegraensninger"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Goal &quot;ForventetIngenBegraensninger&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></p></div><p><b>lifecycleStatus</b>: planned</p><p><b>category</b>: FSIII tilstandsmål <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-KLCommonCareSocialCodes.html">KLCommonCareSocialCodes</a>#ca552020-6ed1-4cdc-b0d4-32697f1f27ad)</span></p><p><b>description</b>: Tilstand forsvinder, mindskes eller forbliver uændret <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#e182c5dc-9f91-474a-92e8-f62be3d498f4)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>start</b>: 2020-08-14</p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>funktionsevneniveau <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-KLCommonCareSocialCodes.html">KLCommonCareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></td><td>Lette begrænsninger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#B2)</span></td></tr></table><p><b>addresses</b>: <a href="#Condition_VaskeSigLetteBegraensninger">See above (Condition/VaskeSigLetteBegraensninger)</a></p></div>
+        </text>
+        <lifecycleStatus value="planned"/>
+        <category>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+            <code value="ca552020-6ed1-4cdc-b0d4-32697f1f27ad"/>
+          </coding>
+        </category>
+        <description>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="e182c5dc-9f91-474a-92e8-f62be3d498f4"/>
+          </coding>
+        </description>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <startDate value="2020-08-14"/>
+        <target>
+          <measure>
+            <coding>
+              <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+              <code value="66959f77-6e2a-4574-8423-3ff097f8b9fa"/>
+            </coding>
+          </measure>
+          <detailCodeableConcept>
+            <coding>
+              <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+              <code value="B2"/>
+            </coding>
+          </detailCodeableConcept>
+        </target>
+        <addresses>
+          <reference value="Condition/VaskeSigLetteBegraensninger"/>
+        </addresses>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/OpleverIkkeBegraensningerMedVaskeSig"/>
+    <resource>
+      <Observation>
+        <id value="OpleverIkkeBegraensningerMedVaskeSig"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizens-own-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="OpleverIkkeBegraensningerMedVaskeSig"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;OpleverIkkeBegraensningerMedVaskeSig&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Betydning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#D)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href="#Condition_VaskeSigLetteBegraensninger">See above (Condition/VaskeSigLetteBegraensninger)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Oplever ikke begrænsninger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#D1)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="D"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <focus>
+          <reference value="Condition/VaskeSigLetteBegraensninger"/>
+        </focus>
+        <effectiveDateTime value="2020-08-14"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="D1"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/UdfoererSelvVaskeSig"/>
+    <resource>
+      <Observation>
+        <id value="UdfoererSelvVaskeSig"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-citizens-own-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="UdfoererSelvVaskeSig"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;UdfoererSelvVaskeSig&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Udførelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#C)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href="#Condition_VaskeSigLetteBegraensninger">See above (Condition/VaskeSigLetteBegraensninger)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Udfører selv <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#C1)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="C"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <focus>
+          <reference value="Condition/VaskeSigLetteBegraensninger"/>
+        </focus>
+        <effectiveDateTime value="2020-08-14"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="C1"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/ProblemerMedPersonligPleje"/>
+    <resource>
+      <Condition>
+        <id value="ProblemerMedPersonligPleje"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-condition"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="ProblemerMedPersonligPleje"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;ProblemerMedPersonligPleje&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href="#Encounter_bfa70a76-318d-453d-9abc-76982f8d13ca">See above (Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca)</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Problemer med personlig pleje <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#I1.1)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>
+        </text>
+        <extension url="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-encounter-extension">
+          <valueReference>
+            <reference value="Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"/>
+          </valueReference>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="I1.1"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <recordedDate value="2020-08-14"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/PersonligHygiejne"/>
+    <resource>
+      <CarePlan>
+        <id value="PersonligHygiejne"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-planned-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="PersonligHygiejne"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;PersonligHygiejne&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Speciel personlig pleje <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#H1.1; LocallyDefinedInterventions#H1.1.1)</span></td><td>in-progress</td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <period>
+          <start value="2020-08-14"/>
+        </period>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+                <code value="H1.1"/>
+              </coding>
+              <coding>
+                <system value="http://gateway.kl.dk/1.0/CodeSystem/LocallyDefinedInterventions"/>
+                <code value="H1.1.1"/>
+                <display value="Speciel personlig pleje"/>
+              </coding>
+            </code>
+            <status value="in-progress"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/Dialyse"/>
+    <resource>
+      <CarePlan>
+        <id value="Dialyse"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-planned-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="Dialyse"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;Dialyse&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Dialyse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#G1.10)</span></td><td>in-progress</td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <period>
+          <start value="2020-08-14"/>
+        </period>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+                <code value="G1.10"/>
+              </coding>
+            </code>
+            <status value="in-progress"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Procedure/Saarbehandling"/>
+    <resource>
+      <Procedure>
+        <id value="Saarbehandling"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-completed-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="Saarbehandling"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure &quot;Saarbehandling&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-completed-intervention.html">CareCompletedIntervention</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Sårbehandling <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#G1.39)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>performed</b>: 2020-08-14 10:15:00+0000</p></div>
+        </text>
+        <status value="completed"/>
+        <code>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="G1.39"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <performedDateTime value="2020-08-14T10:15:00Z"/>
+      </Procedure>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/EgensomsorgBegraensninger"/>
+    <resource>
+      <Observation>
+        <id value="EgensomsorgBegraensninger"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-matter-of-interest-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="EgensomsorgBegraensninger"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;EgensomsorgBegraensninger&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Egenomsorg <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#J1)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>effective</b>: 2020-08-14</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="J1"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <effectiveDateTime value="2020-08-14"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"/>
+    <resource>
+      <Encounter>
+        <id value="bfa70a76-318d-453d-9abc-76982f8d13ca"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="bfa70a76-318d-453d-9abc-76982f8d13ca"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;bfa70a76-318d-453d-9abc-76982f8d13ca&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a></p></div><p><b>status</b>: planned</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: opfølgning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-KLCommonCareSocialCodes.html">KLCommonCareSocialCodes</a>#9f03dfbb-7a97-45a5-94db-d4c3501714a9)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p></div>
+        </text>
+        <status value="planned"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="HH"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"/>
+            <code value="9f03dfbb-7a97-45a5-94db-d4c3501714a9"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <period>
+          <start value="2020-08-14"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/VaskeSigFortsaettes"/>
+    <resource>
+      <Observation>
+        <id value="VaskeSigFortsaettes"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="VaskeSigFortsaettes"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;VaskeSigFortsaettes&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href="#Condition_VaskeSigLetteBegraensninger">See above (Condition/VaskeSigLetteBegraensninger)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#E1)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="712744002"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <focus>
+          <reference value="Condition/VaskeSigLetteBegraensninger"/>
+        </focus>
+        <effectiveDateTime value="2020-08-14"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="E1"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/PersonligPlejeFortsaettes"/>
+    <resource>
+      <Observation>
+        <id value="PersonligPlejeFortsaettes"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="PersonligPlejeFortsaettes"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;PersonligPlejeFortsaettes&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href="#Condition_ProblemerMedPersonligPleje">See above (Condition/ProblemerMedPersonligPleje)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#E1)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="712744002"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <focus>
+          <reference value="Condition/ProblemerMedPersonligPleje"/>
+        </focus>
+        <effectiveDateTime value="2020-08-14"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="E1"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/PersonligHygiejneFortsaettes"/>
+    <resource>
+      <Observation>
+        <id value="PersonligHygiejneFortsaettes"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="PersonligHygiejneFortsaettes"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;PersonligHygiejneFortsaettes&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href="#CarePlan_PersonligHygiejne">See above (CarePlan/PersonligHygiejne)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#E1)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="712744002"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <focus>
+          <reference value="CarePlan/PersonligHygiejne"/>
+        </focus>
+        <effectiveDateTime value="2020-08-14"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="E1"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/DialyseFortsaettes"/>
+    <resource>
+      <Observation>
+        <id value="DialyseFortsaettes"/>
+        <meta>
+          <profile value="http://municipality-care-data.gateway.kl.dk/1.0/StructureDefinition/klgateway-care-follow-up-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="DialyseFortsaettes"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;DialyseFortsaettes&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href="#Patient_TestPerson">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href="#CarePlan_Dialyse">See above (CarePlan/Dialyse)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///Users/jkiddo/work/KL-dk/output/CodeSystem-FSIII.html">FSIII</a>#E1)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="712744002"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TestPerson"/>
+        </subject>
+        <focus>
+          <reference value="CarePlan/Dialyse"/>
+        </focus>
+        <effectiveDateTime value="2020-08-14"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII"/>
+            <code value="E1"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

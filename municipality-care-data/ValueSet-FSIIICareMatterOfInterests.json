@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FSIIICareMatterOfInterests",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"file:///Users/jkiddo/work/KL-dk/output/ValueSet-KLNursingAreasFSIII.html\">KLSygeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"file:///Users/jkiddo/work/KL-dk/output/ValueSet-KLHomeCareAreasFSIII.html\">KLHjemmeplejeOmråderFSIII</a></li></ul></div>"
+  },
+  "url" : "http://municipality-care-data.gateway.kl.dk/1.0/ValueSet/FSIIICareMatterOfInterests",
+  "version" : "1.0.1",
+  "name" : "FSIIICareMatterOfInterests",
+  "title" : "FSIIICareMatterOfInterests",
+  "status" : "draft",
+  "date" : "2023-08-21T11:23:30+02:00",
+  "publisher" : "KL",
+  "contact" : [{
+    "name" : "KL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.kl.dk"
+    }]
+  }],
+  "description" : "Matters of Interests (areas) defined by FSIII for nursing and home care",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareAreasFSIII"]
+    }]
+  }
+}
