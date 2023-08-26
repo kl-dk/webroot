@@ -1,0 +1,1084 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffbreporting/Bundle/4b4e5f33-a9a2-42f6-b598-180543029ae5> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "4b4e5f33-a9a2-42f6-b598-180543029ae5"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-deliveryReport"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-deliveryReport>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2021-05-29T12:13:41Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"^^xsd:anyURI ] ;
+     fhir:resource ( <Patient/da16c0a1-840a-46b0-98b3-761e4501b343> )
+  ] [
+     fhir:fullUrl [ fhir:v "ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58"^^xsd:anyURI ] ;
+     fhir:resource ( <ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/57dc36db-56ce-4a4a-95e8-2d2c8a85871a"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/57dc36db-56ce-4a4a-95e8-2d2c8a85871a> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/00b972ba-0b06-4000-83f9-b733700c96e0"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/00b972ba-0b06-4000-83f9-b733700c96e0> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/45b460b2-843e-48ec-8366-a3d184bf591f"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/45b460b2-843e-48ec-8366-a3d184bf591f> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/5089bbd1-6ec1-4f4d-a83e-4a89f44c482e"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/5089bbd1-6ec1-4f4d-a83e-4a89f44c482e> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/5b74d267-952d-487f-969a-68ea6a9aae39"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/5b74d267-952d-487f-969a-68ea6a9aae39> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/6f77529a-d449-4e86-aaed-28b524090a32"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/6f77529a-d449-4e86-aaed-28b524090a32> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/6468d4a7-012e-4639-8dcf-dcec775385a0"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/6468d4a7-012e-4639-8dcf-dcec775385a0> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/b68548a8-b792-4aba-8358-b83a4e691b7c"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/b68548a8-b792-4aba-8358-b83a4e691b7c> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/ec5efa29-6355-40c7-ada4-b534901242ab"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/ec5efa29-6355-40c7-ada4-b534901242ab> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/47d82311-ba67-49c4-aacc-ab3b171b4524"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/47d82311-ba67-49c4-aacc-ab3b171b4524> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/101f2519-adf9-43ba-b4f5-90f3917129c1"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/101f2519-adf9-43ba-b4f5-90f3917129c1> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/e162f02a-6f82-4aed-97cd-a47a43c58413"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/e162f02a-6f82-4aed-97cd-a47a43c58413> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/a2c6378d-66da-4aa8-b973-729687224ab0"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/a2c6378d-66da-4aa8-b973-729687224ab0> )
+  ] [
+     fhir:fullUrl [ fhir:v "Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3"^^xsd:anyURI ] ;
+     fhir:resource ( <Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3> )
+  ] [
+     fhir:fullUrl [ fhir:v "Goal/83fdfed2-f182-4a11-8ea1-de8181e6eab9"^^xsd:anyURI ] ;
+     fhir:resource ( <Goal/83fdfed2-f182-4a11-8ea1-de8181e6eab9> )
+  ] [
+     fhir:fullUrl [ fhir:v "Goal/fcbf670a-f310-485b-b717-07c027c3c808"^^xsd:anyURI ] ;
+     fhir:resource ( <Goal/fcbf670a-f310-485b-b717-07c027c3c808> )
+  ] [
+     fhir:fullUrl [ fhir:v "Goal/90fa089a-1f80-40d0-96db-8e875e241b06"^^xsd:anyURI ] ;
+     fhir:resource ( <Goal/90fa089a-1f80-40d0-96db-8e875e241b06> )
+  ] [
+     fhir:fullUrl [ fhir:v "ClinicalImpression/26d1a3de-0bd0-43d6-b52c-9c5687f01e45"^^xsd:anyURI ] ;
+     fhir:resource ( <ClinicalImpression/26d1a3de-0bd0-43d6-b52c-9c5687f01e45> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/213d0504-1a41-4330-b9a0-347d3ba4bb2a"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/213d0504-1a41-4330-b9a0-347d3ba4bb2a> )
+  ] ) . # 
+
+<Patient/da16c0a1-840a-46b0-98b3-761e4501b343> a fhir:Patient ;
+  fhir:id [ fhir:v "da16c0a1-840a-46b0-98b3-761e4501b343"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-citizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-citizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"da16c0a1-840a-46b0-98b3-761e4501b343\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;da16c0a1-840a-46b0-98b3-761e4501b343&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-citizen.html\">Citizen</a></p></div><p><b>identifier</b>: id: 0101814321 (use: OFFICIAL)</p><p><b>managingOrganization</b>: <span>id: d4e3f4fb-6761-4d6c-9086-74c49231f11e (use: OFFICIAL)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0101814321" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "https://www.kombit.dk/organisation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "d4e3f4fb-6761-4d6c-9086-74c49231f11e" ]
+     ]
+  ] . # 
+
+<ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "9947191b-270a-4f64-9b05-8be29e7f5c58"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-serviceRequest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-serviceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"9947191b-270a-4f64-9b05-8be29e7f5c58\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;9947191b-270a-4f64-9b05-8be29e7f5c58&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-serviceRequest.html\">ServiceRequest</a></p></div><blockquote><p><b>MunicipalityCasenumber</b></p><blockquote><p><b>url</b></p><code>municipalitySpecific</code></blockquote><p><b>value</b>: id: Sag154689</p></blockquote><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "municipalitySpecific"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "http://example.dk/identifier/case"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Sag154689" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-municipalityCaseNumber"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] . # 
+
+<Condition/57dc36db-56ce-4a4a-95e8-2d2c8a85871a> a fhir:Condition ;
+  fhir:id [ fhir:v "57dc36db-56ce-4a4a-95e8-2d2c8a85871a"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"57dc36db-56ce-4a4a-95e8-2d2c8a85871a\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;57dc36db-56ce-4a4a-95e8-2d2c8a85871a&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Bevidsthedstilstand <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#4934e45a-0f93-4c23-a767-2b681378700b)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4934e45a-0f93-4c23-a767-2b681378700b" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/00b972ba-0b06-4000-83f9-b733700c96e0> a fhir:Condition ;
+  fhir:id [ fhir:v "00b972ba-0b06-4000-83f9-b733700c96e0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"00b972ba-0b06-4000-83f9-b733700c96e0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;00b972ba-0b06-4000-83f9-b733700c96e0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Intellektuelle funktioner <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#ef4271c4-f942-4194-a2b0-e9a7045eab22)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ef4271c4-f942-4194-a2b0-e9a7045eab22" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/45b460b2-843e-48ec-8366-a3d184bf591f> a fhir:Condition ;
+  fhir:id [ fhir:v "45b460b2-843e-48ec-8366-a3d184bf591f"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"45b460b2-843e-48ec-8366-a3d184bf591f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;45b460b2-843e-48ec-8366-a3d184bf591f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Problemløsning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#b93216fa-3843-4a7e-85bc-e3ef35a1967f)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "b93216fa-3843-4a7e-85bc-e3ef35a1967f" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/5089bbd1-6ec1-4f4d-a83e-4a89f44c482e> a fhir:Condition ;
+  fhir:id [ fhir:v "5089bbd1-6ec1-4f4d-a83e-4a89f44c482e"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"5089bbd1-6ec1-4f4d-a83e-4a89f44c482e\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;5089bbd1-6ec1-4f4d-a83e-4a89f44c482e&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Syn <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#9959e779-e8ee-47e8-989b-bbff4aae2883)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9959e779-e8ee-47e8-989b-bbff4aae2883" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/5b74d267-952d-487f-969a-68ea6a9aae39> a fhir:Condition ;
+  fhir:id [ fhir:v "5b74d267-952d-487f-969a-68ea6a9aae39"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"5b74d267-952d-487f-969a-68ea6a9aae39\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;5b74d267-952d-487f-969a-68ea6a9aae39&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Døgnrytme <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#e6f82424-da5a-41d1-bd1a-5796aa79d5f2)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "e6f82424-da5a-41d1-bd1a-5796aa79d5f2" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/6f77529a-d449-4e86-aaed-28b524090a32> a fhir:Condition ;
+  fhir:id [ fhir:v "6f77529a-d449-4e86-aaed-28b524090a32"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"6f77529a-d449-4e86-aaed-28b524090a32\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;6f77529a-d449-4e86-aaed-28b524090a32&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Tobak <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#f5b8e809-7689-4952-838c-a069c99408b3)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "f5b8e809-7689-4952-838c-a069c99408b3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/6468d4a7-012e-4639-8dcf-dcec775385a0> a fhir:Condition ;
+  fhir:id [ fhir:v "6468d4a7-012e-4639-8dcf-dcec775385a0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"6468d4a7-012e-4639-8dcf-dcec775385a0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;6468d4a7-012e-4639-8dcf-dcec775385a0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Interesser <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#52efa2e9-e0dc-41eb-8c01-9865e2fdebae)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "52efa2e9-e0dc-41eb-8c01-9865e2fdebae" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/b68548a8-b792-4aba-8358-b83a4e691b7c> a fhir:Condition ;
+  fhir:id [ fhir:v "b68548a8-b792-4aba-8358-b83a4e691b7c"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"b68548a8-b792-4aba-8358-b83a4e691b7c\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;b68548a8-b792-4aba-8358-b83a4e691b7c&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Familiesituation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#7a8f247b-baf8-4552-95bb-acf8ef004b74)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7a8f247b-baf8-4552-95bb-acf8ef004b74" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/ec5efa29-6355-40c7-ada4-b534901242ab> a fhir:Condition ;
+  fhir:id [ fhir:v "ec5efa29-6355-40c7-ada4-b534901242ab"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ec5efa29-6355-40c7-ada4-b534901242ab\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ec5efa29-6355-40c7-ada4-b534901242ab&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Boligområde <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#83342ff3-5f2e-4914-b045-e98357685866)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "83342ff3-5f2e-4914-b045-e98357685866" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/47d82311-ba67-49c4-aacc-ab3b171b4524> a fhir:Condition ;
+  fhir:id [ fhir:v "47d82311-ba67-49c4-aacc-ab3b171b4524"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"47d82311-ba67-49c4-aacc-ab3b171b4524\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;47d82311-ba67-49c4-aacc-ab3b171b4524&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Personer i netværk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#df194a84-6e4b-4f14-a194-d8d9d9a1fcad)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "df194a84-6e4b-4f14-a194-d8d9d9a1fcad" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d> a fhir:Condition ;
+  fhir:id [ fhir:v "3a0e2994-9f3f-44ab-a684-06bb85c7bf9d"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"3a0e2994-9f3f-44ab-a684-06bb85c7bf9d\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;3a0e2994-9f3f-44ab-a684-06bb85c7bf9d&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>severity</b>: Moderat nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#5bdde847-2837-416b-ab63-bbff8b7aa531)</span></p><p><b>code</b>: Indgå i samspil og kontakt <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#3f9da5ac-9686-4eeb-b517-b46e17fcb1d7)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:severity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5bdde847-2837-416b-ab63-bbff8b7aa531" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3f9da5ac-9686-4eeb-b517-b46e17fcb1d7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/101f2519-adf9-43ba-b4f5-90f3917129c1> a fhir:Condition ;
+  fhir:id [ fhir:v "101f2519-adf9-43ba-b4f5-90f3917129c1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"101f2519-adf9-43ba-b4f5-90f3917129c1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;101f2519-adf9-43ba-b4f5-90f3917129c1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>severity</b>: Let nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#8328ce4a-6238-4f73-bf1a-74aadb68eff8)</span></p><p><b>code</b>: Varetage beskæftigelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:severity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8328ce4a-6238-4f73-bf1a-74aadb68eff8" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/e162f02a-6f82-4aed-97cd-a47a43c58413> a fhir:Condition ;
+  fhir:id [ fhir:v "e162f02a-6f82-4aed-97cd-a47a43c58413"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"e162f02a-6f82-4aed-97cd-a47a43c58413\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;e162f02a-6f82-4aed-97cd-a47a43c58413&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>severity</b>: Svært nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#cae545f5-2813-4d79-98fc-0a7d770af3cd)</span></p><p><b>code</b>: Spise <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#464a2ab6-a7df-4b3a-b74d-7873f4cfe668)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:severity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cae545f5-2813-4d79-98fc-0a7d770af3cd" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "464a2ab6-a7df-4b3a-b74d-7873f4cfe668" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/a2c6378d-66da-4aa8-b973-729687224ab0> a fhir:Condition ;
+  fhir:id [ fhir:v "a2c6378d-66da-4aa8-b973-729687224ab0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"a2c6378d-66da-4aa8-b973-729687224ab0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;a2c6378d-66da-4aa8-b973-729687224ab0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>severity</b>: Moderat nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#5bdde847-2837-416b-ab63-bbff8b7aa531)</span></p><p><b>code</b>: Købe ind <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#01770afa-cd17-41fe-a966-b8895e4d55d8)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:severity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5bdde847-2837-416b-ab63-bbff8b7aa531" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "01770afa-cd17-41fe-a966-b8895e4d55d8" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3> a fhir:Condition ;
+  fhir:id [ fhir:v "4908c9b2-fadc-4228-adbe-69ed9ef70ff3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"4908c9b2-fadc-4228-adbe-69ed9ef70ff3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;4908c9b2-fadc-4228-adbe-69ed9ef70ff3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-condition.html\">Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>severity</b>: Svært nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#cae545f5-2813-4d79-98fc-0a7d770af3cd)</span></p><p><b>code</b>: Færdes med transportmidler <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#eff3385d-01fa-4c9c-9850-52e179243f21)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-28 09:17:33+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:severity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cae545f5-2813-4d79-98fc-0a7d770af3cd" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eff3385d-01fa-4c9c-9850-52e179243f21" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-28T09:17:33Z"^^xsd:dateTime] . # 
+
+<Goal/83fdfed2-f182-4a11-8ea1-de8181e6eab9> a fhir:Goal ;
+  fhir:id [ fhir:v "83fdfed2-f182-4a11-8ea1-de8181e6eab9"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-interventionGoal"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-interventionGoal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"83fdfed2-f182-4a11-8ea1-de8181e6eab9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;83fdfed2-f182-4a11-8ea1-de8181e6eab9&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-interventionGoal.html\">InterventionGoal</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FFB indsatsmål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#0bb3daef-538d-45dc-b444-abdbcb63f6bc)</span></p><p><b>description</b>: Goal context (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410518001)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><blockquote><p><b>target</b></p><p><b>measure</b>: funktionsevneniveau <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></p><p><b>detail</b>: Let nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#8328ce4a-6238-4f73-bf1a-74aadb68eff8)</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: måltype <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#90c48f03-f194-4b2f-ad7d-6cba1069ae48)</span></p><p><b>detail</b>: Fastholde funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#10752a63-00b4-4958-b7f4-9f3a18f74266)</span></p></blockquote><p><b>addresses</b>: </p><ul><li><a href=\"#Condition_3a0e2994-9f3f-44ab-a684-06bb85c7bf9d\">See above (Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d)</a></li><li><a href=\"#Condition_101f2519-adf9-43ba-b4f5-90f3917129c1\">See above (Condition/101f2519-adf9-43ba-b4f5-90f3917129c1)</a></li><li><a href=\"#Condition_4908c9b2-fadc-4228-adbe-69ed9ef70ff3\">See above (Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3)</a></li></ul></div>"
+  ] ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0bb3daef-538d-45dc-b444-abdbcb63f6bc" ] ;
+       fhir:display [ fhir:v "FFB indsatsmål" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:coding ( [
+       a sct:410518001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "410518001" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:target ( [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "66959f77-6e2a-4574-8423-3ff097f8b9fa" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8328ce4a-6238-4f73-bf1a-74aadb68eff8" ]
+       ] )
+     ]
+  ] [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "90c48f03-f194-4b2f-ad7d-6cba1069ae48" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10752a63-00b4-4958-b7f4-9f3a18f74266" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:addresses ( [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ConditionRank"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:reference [ fhir:v "Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d" ]
+  ] [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Condition/101f2519-adf9-43ba-b4f5-90f3917129c1> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ConditionRank"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:reference [ fhir:v "Condition/101f2519-adf9-43ba-b4f5-90f3917129c1" ]
+  ] [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ConditionRank"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:reference [ fhir:v "Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3" ]
+  ] ) . # 
+
+<Goal/fcbf670a-f310-485b-b717-07c027c3c808> a fhir:Goal ;
+  fhir:id [ fhir:v "fcbf670a-f310-485b-b717-07c027c3c808"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-interventionGoal"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-interventionGoal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"fcbf670a-f310-485b-b717-07c027c3c808\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;fcbf670a-f310-485b-b717-07c027c3c808&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-interventionGoal.html\">InterventionGoal</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FFB indsatsmål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#0bb3daef-538d-45dc-b444-abdbcb63f6bc)</span></p><p><b>description</b>: Goal context (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410518001)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><blockquote><p><b>target</b></p><p><b>measure</b>: funktionsevneniveau <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></p><p><b>detail</b>: Ingen nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#b508ff66-6326-4862-a6d7-7bbf184c9823)</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: måltype <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#90c48f03-f194-4b2f-ad7d-6cba1069ae48)</span></p><p><b>detail</b>: Udvikle funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#d41c8072-52f8-42b5-9375-ddbea454d27f)</span></p></blockquote><p><b>addresses</b>: <a href=\"#Condition_a2c6378d-66da-4aa8-b973-729687224ab0\">See above (Condition/a2c6378d-66da-4aa8-b973-729687224ab0)</a></p></div>"
+  ] ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0bb3daef-538d-45dc-b444-abdbcb63f6bc" ] ;
+       fhir:display [ fhir:v "FFB indsatsmål" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:coding ( [
+       a sct:410518001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "410518001" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:target ( [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "66959f77-6e2a-4574-8423-3ff097f8b9fa" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "b508ff66-6326-4862-a6d7-7bbf184c9823" ]
+       ] )
+     ]
+  ] [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "90c48f03-f194-4b2f-ad7d-6cba1069ae48" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "d41c8072-52f8-42b5-9375-ddbea454d27f" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:addresses ( [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Condition/a2c6378d-66da-4aa8-b973-729687224ab0> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ConditionRank"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:reference [ fhir:v "Condition/a2c6378d-66da-4aa8-b973-729687224ab0" ]
+  ] ) . # 
+
+<Goal/90fa089a-1f80-40d0-96db-8e875e241b06> a fhir:Goal ;
+  fhir:id [ fhir:v "90fa089a-1f80-40d0-96db-8e875e241b06"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-interventionGoal"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-interventionGoal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"90fa089a-1f80-40d0-96db-8e875e241b06\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;90fa089a-1f80-40d0-96db-8e875e241b06&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-interventionGoal.html\">InterventionGoal</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: FFB indsatsmål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#0bb3daef-538d-45dc-b444-abdbcb63f6bc)</span></p><p><b>description</b>: Goal context (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#410518001)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><blockquote><p><b>target</b></p><p><b>measure</b>: funktionsevneniveau <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></p><p><b>detail</b>: Svært nedsat funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#cae545f5-2813-4d79-98fc-0a7d770af3cd)</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: måltype <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#90c48f03-f194-4b2f-ad7d-6cba1069ae48)</span></p><p><b>detail</b>: Begrænse tab af funktionsevne <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#e47c22bd-d88d-48ab-882b-419923e1f44e)</span></p></blockquote><p><b>addresses</b>: <a href=\"#Condition_e162f02a-6f82-4aed-97cd-a47a43c58413\">See above (Condition/e162f02a-6f82-4aed-97cd-a47a43c58413)</a></p></div>"
+  ] ; # 
+  fhir:lifecycleStatus [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0bb3daef-538d-45dc-b444-abdbcb63f6bc" ] ;
+       fhir:display [ fhir:v "FFB indsatsmål" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:coding ( [
+       a sct:410518001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "410518001" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:target ( [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "66959f77-6e2a-4574-8423-3ff097f8b9fa" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cae545f5-2813-4d79-98fc-0a7d770af3cd" ]
+       ] )
+     ]
+  ] [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "90c48f03-f194-4b2f-ad7d-6cba1069ae48" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "e47c22bd-d88d-48ab-882b-419923e1f44e" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:addresses ( [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Condition/e162f02a-6f82-4aed-97cd-a47a43c58413> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/ConditionRank"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:reference [ fhir:v "Condition/e162f02a-6f82-4aed-97cd-a47a43c58413" ]
+  ] ) . # 
+
+<ClinicalImpression/26d1a3de-0bd0-43d6-b52c-9c5687f01e45> a fhir:ClinicalImpression ;
+  fhir:id [ fhir:v "26d1a3de-0bd0-43d6-b52c-9c5687f01e45"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-informationGathering"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-informationGathering>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ClinicalImpression</b><a name=\"26d1a3de-0bd0-43d6-b52c-9c5687f01e45\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ClinicalImpression &quot;26d1a3de-0bd0-43d6-b52c-9c5687f01e45&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-informationGathering.html\">InformationGathering</a></p></div><p><b>BasedOnServiceRequest</b>: <a href=\"#ServiceRequest_9947191b-270a-4f64-9b05-8be29e7f5c58\">See above (ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58)</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>effective</b>: 2021-05-29 11:54:13+0000</p><h3>Investigations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Item</b></td></tr><tr><td style=\"display: none\">*</td><td>FFB støttebehovsvurdering <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#effe55c7-572c-4a99-8fb4-2a9dda2f6572)</span></td><td><a href=\"#Observation_213d0504-1a41-4330-b9a0-347d3ba4bb2a\">See above (Observation/213d0504-1a41-4330-b9a0-347d3ba4bb2a)</a></td></tr></table><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_57dc36db-56ce-4a4a-95e8-2d2c8a85871a\">See above (Condition/57dc36db-56ce-4a4a-95e8-2d2c8a85871a)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_00b972ba-0b06-4000-83f9-b733700c96e0\">See above (Condition/00b972ba-0b06-4000-83f9-b733700c96e0)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_45b460b2-843e-48ec-8366-a3d184bf591f\">See above (Condition/45b460b2-843e-48ec-8366-a3d184bf591f)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_5089bbd1-6ec1-4f4d-a83e-4a89f44c482e\">See above (Condition/5089bbd1-6ec1-4f4d-a83e-4a89f44c482e)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_5b74d267-952d-487f-969a-68ea6a9aae39\">See above (Condition/5b74d267-952d-487f-969a-68ea6a9aae39)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_6f77529a-d449-4e86-aaed-28b524090a32\">See above (Condition/6f77529a-d449-4e86-aaed-28b524090a32)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_6468d4a7-012e-4639-8dcf-dcec775385a0\">See above (Condition/6468d4a7-012e-4639-8dcf-dcec775385a0)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_b68548a8-b792-4aba-8358-b83a4e691b7c\">See above (Condition/b68548a8-b792-4aba-8358-b83a4e691b7c)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_ec5efa29-6355-40c7-ada4-b534901242ab\">See above (Condition/ec5efa29-6355-40c7-ada4-b534901242ab)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_47d82311-ba67-49c4-aacc-ab3b171b4524\">See above (Condition/47d82311-ba67-49c4-aacc-ab3b171b4524)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_3a0e2994-9f3f-44ab-a684-06bb85c7bf9d\">See above (Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_101f2519-adf9-43ba-b4f5-90f3917129c1\">See above (Condition/101f2519-adf9-43ba-b4f5-90f3917129c1)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_e162f02a-6f82-4aed-97cd-a47a43c58413\">See above (Condition/e162f02a-6f82-4aed-97cd-a47a43c58413)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_a2c6378d-66da-4aa8-b973-729687224ab0\">See above (Condition/a2c6378d-66da-4aa8-b973-729687224ab0)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href=\"#Condition_4908c9b2-fadc-4228-adbe-69ed9ef70ff3\">See above (Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3)</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/core/StructureDefinition/BasedOnServiceRequest"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58> ;
+       fhir:reference [ fhir:v "ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2021-05-29T11:54:13Z"^^xsd:dateTime] ; # 
+  fhir:investigation ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "effe55c7-572c-4a99-8fb4-2a9dda2f6572" ] ;
+         fhir:display [ fhir:v "FFB støttebehovsvurdering" ]
+       ] )
+     ] ;
+     fhir:item ( [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Observation/213d0504-1a41-4330-b9a0-347d3ba4bb2a> ;
+       fhir:reference [ fhir:v "Observation/213d0504-1a41-4330-b9a0-347d3ba4bb2a" ]
+     ] )
+  ] ) ; # 
+  fhir:finding ( [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/57dc36db-56ce-4a4a-95e8-2d2c8a85871a> ;
+       fhir:reference [ fhir:v "Condition/57dc36db-56ce-4a4a-95e8-2d2c8a85871a" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/00b972ba-0b06-4000-83f9-b733700c96e0> ;
+       fhir:reference [ fhir:v "Condition/00b972ba-0b06-4000-83f9-b733700c96e0" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/45b460b2-843e-48ec-8366-a3d184bf591f> ;
+       fhir:reference [ fhir:v "Condition/45b460b2-843e-48ec-8366-a3d184bf591f" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/5089bbd1-6ec1-4f4d-a83e-4a89f44c482e> ;
+       fhir:reference [ fhir:v "Condition/5089bbd1-6ec1-4f4d-a83e-4a89f44c482e" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/5b74d267-952d-487f-969a-68ea6a9aae39> ;
+       fhir:reference [ fhir:v "Condition/5b74d267-952d-487f-969a-68ea6a9aae39" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/6f77529a-d449-4e86-aaed-28b524090a32> ;
+       fhir:reference [ fhir:v "Condition/6f77529a-d449-4e86-aaed-28b524090a32" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/6468d4a7-012e-4639-8dcf-dcec775385a0> ;
+       fhir:reference [ fhir:v "Condition/6468d4a7-012e-4639-8dcf-dcec775385a0" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/b68548a8-b792-4aba-8358-b83a4e691b7c> ;
+       fhir:reference [ fhir:v "Condition/b68548a8-b792-4aba-8358-b83a4e691b7c" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/ec5efa29-6355-40c7-ada4-b534901242ab> ;
+       fhir:reference [ fhir:v "Condition/ec5efa29-6355-40c7-ada4-b534901242ab" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/47d82311-ba67-49c4-aacc-ab3b171b4524> ;
+       fhir:reference [ fhir:v "Condition/47d82311-ba67-49c4-aacc-ab3b171b4524" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d> ;
+       fhir:reference [ fhir:v "Condition/3a0e2994-9f3f-44ab-a684-06bb85c7bf9d" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/101f2519-adf9-43ba-b4f5-90f3917129c1> ;
+       fhir:reference [ fhir:v "Condition/101f2519-adf9-43ba-b4f5-90f3917129c1" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/e162f02a-6f82-4aed-97cd-a47a43c58413> ;
+       fhir:reference [ fhir:v "Condition/e162f02a-6f82-4aed-97cd-a47a43c58413" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/a2c6378d-66da-4aa8-b973-729687224ab0> ;
+       fhir:reference [ fhir:v "Condition/a2c6378d-66da-4aa8-b973-729687224ab0" ]
+     ]
+  ] [
+     fhir:itemReference [
+       fhir:link <http://fhir.kl.dk/ffbreporting/Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3> ;
+       fhir:reference [ fhir:v "Condition/4908c9b2-fadc-4228-adbe-69ed9ef70ff3" ]
+     ]
+  ] ) . # 
+
+<Observation/213d0504-1a41-4330-b9a0-347d3ba4bb2a> a fhir:Observation ;
+  fhir:id [ fhir:v "213d0504-1a41-4330-b9a0-347d3ba4bb2a"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-careEvaluation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-careEvaluation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"213d0504-1a41-4330-b9a0-347d3ba4bb2a\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;213d0504-1a41-4330-b9a0-347d3ba4bb2a&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-careEvaluation.html\">CareEvaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: FFB støttebehovsvurdering <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#effe55c7-572c-4a99-8fb4-2a9dda2f6572)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>effective</b>: 2021-05-29 11:54:13+0000</p><p><b>value</b>: Let støttebehov <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#dd628e73-d6c9-4837-a2b8-aa62d73bd6ae)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "effe55c7-572c-4a99-8fb4-2a9dda2f6572" ] ;
+       fhir:display [ fhir:v "FFB støttebehovsvurdering" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffbreporting/Patient/da16c0a1-840a-46b0-98b3-761e4501b343> ;
+     fhir:reference [ fhir:v "Patient/da16c0a1-840a-46b0-98b3-761e4501b343" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2021-05-29T11:54:13Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.22"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "dd628e73-d6c9-4837-a2b8-aa62d73bd6ae" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

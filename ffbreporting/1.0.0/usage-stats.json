@@ -1,0 +1,263 @@
+{
+  "package": "kl.dk.fhir.ffbreporting",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DK",
+  "extensions": [
+    {
+      "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-follow-up-date-extension",
+      "title": "FollowUpDateExtension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-municipalityCaseNumber",
+      "title": "MunicipalityCasenumber",
+      "types": [
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-followUp",
+        "title": "FollowUp"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-intervention",
+        "title": "Intervention"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-citizen",
+        "title": "Citizen"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-targetGroup",
+        "title": "TargetGroup"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-deliveryReport",
+        "title": "DeliveryReport"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-followUpEncounter",
+        "title": "FollowUpEncounter"
+      }
+    ],
+    "ClinicalImpression": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-informationGathering",
+        "title": "InformationGathering"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-interventionGoal",
+        "title": "InterventionGoal"
+      }
+    ],
+    "CareTeam": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-servicePerformer",
+        "title": "ServicePerformer"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-serviceRequest",
+        "title": "ServiceRequest"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.kl.dk/core/StructureDefinition/BasedOnServiceRequest": [
+      "Bundle.entry.resource",
+      "ClinicalImpression"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/ConditionLastAssertedDate": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/ConditionRank": [
+      "Bundle.entry.resource.addresses",
+      "CarePlan.addresses",
+      "Goal.addresses"
+    ],
+    "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-follow-up-date-extension": [
+      "Bundle.entry.resource",
+      "CarePlan"
+    ],
+    "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-municipalityCaseNumber": [
+      "Bundle.entry.resource",
+      "CarePlan",
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

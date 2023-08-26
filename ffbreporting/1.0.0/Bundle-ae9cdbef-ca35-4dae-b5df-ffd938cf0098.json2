@@ -1,0 +1,427 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "ae9cdbef-ca35-4dae-b5df-ffd938cf0098",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-deliveryReport"]
+  },
+  "type" : "collection",
+  "timestamp" : "2021-08-30T18:03:31Z",
+  "entry" : [{
+    "fullUrl" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "da16c0a1-840a-46b0-98b3-761e4501b343",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-citizen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"da16c0a1-840a-46b0-98b3-761e4501b343\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;da16c0a1-840a-46b0-98b3-761e4501b343&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-citizen.html\">Citizen</a></p></div><p><b>identifier</b>: id:\u00a00101814321\u00a0(use:\u00a0OFFICIAL)</p><p><b>managingOrganization</b>: <span>id:\u00a0d4e3f4fb-6761-4d6c-9086-74c49231f11e\u00a0(use:\u00a0OFFICIAL)</span></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0101814321"
+      }],
+      "managingOrganization" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "https://www.kombit.dk/organisation",
+          "value" : "d4e3f4fb-6761-4d6c-9086-74c49231f11e"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "9947191b-270a-4f64-9b05-8be29e7f5c58",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-serviceRequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"9947191b-270a-4f64-9b05-8be29e7f5c58\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;9947191b-270a-4f64-9b05-8be29e7f5c58&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-serviceRequest.html\">ServiceRequest</a></p></div><blockquote><p><b>MunicipalityCasenumber</b></p><blockquote><p><b>url</b></p><code>municipalitySpecific</code></blockquote><p><b>value</b>: id:\u00a0Sag154689</p></blockquote><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "municipalitySpecific",
+          "valueIdentifier" : {
+            "system" : "http://example.dk/identifier/case",
+            "value" : "Sag154689"
+          }
+        }],
+        "url" : "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-municipalityCaseNumber"
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      }
+    }
+  },
+  {
+    "fullUrl" : "ClinicalImpression/753cbc43-8364-45be-9c21-cdb345e227ef",
+    "resource" : {
+      "resourceType" : "ClinicalImpression",
+      "id" : "753cbc43-8364-45be-9c21-cdb345e227ef",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-informationGathering"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ClinicalImpression</b><a name=\"753cbc43-8364-45be-9c21-cdb345e227ef\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ClinicalImpression &quot;753cbc43-8364-45be-9c21-cdb345e227ef&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-informationGathering.html\">InformationGathering</a></p></div><p><b>BasedOnServiceRequest</b>: <a href=\"#ServiceRequest_9947191b-270a-4f64-9b05-8be29e7f5c58\">See above (ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58)</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>effective</b>: 2021-05-26 13:04:04+0000</p><h3>Investigations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Item</b></td></tr><tr><td style=\"display: none\">*</td><td>FFB støttebehovsvurdering <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#effe55c7-572c-4a99-8fb4-2a9dda2f6572)</span></td><td><a href=\"#Observation_e548c437-05e2-43d9-836f-5d3b4f8e331f\">See above (Observation/e548c437-05e2-43d9-836f-5d3b4f8e331f)</a></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/core/StructureDefinition/BasedOnServiceRequest",
+        "valueReference" : {
+          "reference" : "ServiceRequest/9947191b-270a-4f64-9b05-8be29e7f5c58"
+        }
+      }],
+      "status" : "completed",
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "effectiveDateTime" : "2021-05-26T13:04:04Z",
+      "investigation" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+            "code" : "effe55c7-572c-4a99-8fb4-2a9dda2f6572",
+            "display" : "FFB støttebehovsvurdering"
+          }]
+        },
+        "item" : [{
+          "reference" : "Observation/e548c437-05e2-43d9-836f-5d3b4f8e331f"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "CarePlan/6ef8bead-fb42-4dbe-919f-e4a1f94135e2",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "6ef8bead-fb42-4dbe-919f-e4a1f94135e2",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-intervention"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"6ef8bead-fb42-4dbe-919f-e4a1f94135e2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;6ef8bead-fb42-4dbe-919f-e4a1f94135e2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-intervention.html\">Intervention</a></p></div><p><b>basedOn</b>: <a href=\"#CarePlan_944c7c24-37b4-455e-9319-cd9f35a7aec9\">See above (CarePlan/944c7c24-37b4-455e-9319-cd9f35a7aec9)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>period</b>: 2021-05-29 --&gt; 2021-08-30</p><p><b>created</b>: 2021-05-29 16:10:23+0000</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Støtte til daglige opgaver i hjemmet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#638f44df-6bf2-47f8-9935-b8fdc83e5bf5)</span></td><td>in-progress</td></tr></table></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "CarePlan/944c7c24-37b4-455e-9319-cd9f35a7aec9"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "period" : {
+        "start" : "2021-05-29",
+        "end" : "2021-08-30"
+      },
+      "created" : "2021-05-29T16:10:23Z",
+      "activity" : [{
+        "detail" : {
+          "code" : {
+            "coding" : [{
+              "system" : "urn:oid:1.2.208.176.2.22",
+              "code" : "638f44df-6bf2-47f8-9935-b8fdc83e5bf5"
+            }]
+          },
+          "status" : "in-progress"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "CarePlan/b4ec722a-3cb4-4e9d-8a3b-58ebdb329361",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "b4ec722a-3cb4-4e9d-8a3b-58ebdb329361",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-intervention"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"b4ec722a-3cb4-4e9d-8a3b-58ebdb329361\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;b4ec722a-3cb4-4e9d-8a3b-58ebdb329361&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-intervention.html\">Intervention</a></p></div><p><b>basedOn</b>: <a href=\"#CarePlan_944c7c24-37b4-455e-9319-cd9f35a7aec9\">See above (CarePlan/944c7c24-37b4-455e-9319-cd9f35a7aec9)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>period</b>: 2021-05-29 --&gt; 2021-08-30</p><p><b>created</b>: 2021-05-29 16:10:23+0000</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Støtte til sund levevis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#3c1639d0-e486-43c6-8add-448b8aff4b8f)</span></td><td>in-progress</td></tr></table></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "CarePlan/944c7c24-37b4-455e-9319-cd9f35a7aec9"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "period" : {
+        "start" : "2021-05-29",
+        "end" : "2021-08-30"
+      },
+      "created" : "2021-05-29T16:10:23Z",
+      "activity" : [{
+        "detail" : {
+          "code" : {
+            "coding" : [{
+              "system" : "urn:oid:1.2.208.176.2.22",
+              "code" : "3c1639d0-e486-43c6-8add-448b8aff4b8f"
+            }]
+          },
+          "status" : "in-progress"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "CarePlan/629c659a-8be2-44e9-a852-3efa2d95f856",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "629c659a-8be2-44e9-a852-3efa2d95f856",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-intervention"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"629c659a-8be2-44e9-a852-3efa2d95f856\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;629c659a-8be2-44e9-a852-3efa2d95f856&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-intervention.html\">Intervention</a></p></div><p><b>basedOn</b>: <a href=\"#CarePlan_944c7c24-37b4-455e-9319-cd9f35a7aec9\">See above (CarePlan/944c7c24-37b4-455e-9319-cd9f35a7aec9)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>period</b>: 2021-06-18 --&gt; 2021-08-30</p><p><b>created</b>: 2021-06-18 15:04:47+0000</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Kompetenceudviklende aktivitet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#f25674bf-3162-45c3-bde4-6d542bf9629b)</span></td><td>in-progress</td></tr></table></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "CarePlan/944c7c24-37b4-455e-9319-cd9f35a7aec9"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "period" : {
+        "start" : "2021-06-18",
+        "end" : "2021-08-30"
+      },
+      "created" : "2021-06-18T15:04:47Z",
+      "activity" : [{
+        "detail" : {
+          "code" : {
+            "coding" : [{
+              "system" : "urn:oid:1.2.208.176.2.22",
+              "code" : "f25674bf-3162-45c3-bde4-6d542bf9629b"
+            }]
+          },
+          "status" : "in-progress"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "Observation/e548c437-05e2-43d9-836f-5d3b4f8e331f",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "e548c437-05e2-43d9-836f-5d3b4f8e331f",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-careEvaluation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"e548c437-05e2-43d9-836f-5d3b4f8e331f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;e548c437-05e2-43d9-836f-5d3b4f8e331f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-careEvaluation.html\">CareEvaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: FFB støttebehovsvurdering <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#effe55c7-572c-4a99-8fb4-2a9dda2f6572)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>effective</b>: 2021-08-30 11:45:33+0000</p><p><b>value</b>: Intet støttebehov <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#ae9f388a-91c3-46cf-af55-f81952f2977c)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+          "code" : "effe55c7-572c-4a99-8fb4-2a9dda2f6572",
+          "display" : "FFB støttebehovsvurdering"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "effectiveDateTime" : "2021-08-30T11:45:33Z",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.22",
+          "code" : "ae9f388a-91c3-46cf-af55-f81952f2977c"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "Condition/76cecdcc-321c-479f-ae95-a8f020541650",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "76cecdcc-321c-479f-ae95-a8f020541650",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-targetGroup"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"76cecdcc-321c-479f-ae95-a8f020541650\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;76cecdcc-321c-479f-ae95-a8f020541650&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-targetGroup.html\">TargetGroup</a></p></div><p><b>code</b>: Anden udviklingsforstyrrelse \u00a0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#5cfc9530-a193-4f66-9981-3b980ee9ea7b)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-29</p></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.22",
+          "code" : "5cfc9530-a193-4f66-9981-3b980ee9ea7b"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "recordedDate" : "2021-05-29"
+    }
+  },
+  {
+    "fullUrl" : "Condition/18045390-e599-4b7a-95f2-287f41146975",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "18045390-e599-4b7a-95f2-287f41146975",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-targetGroup"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"18045390-e599-4b7a-95f2-287f41146975\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;18045390-e599-4b7a-95f2-287f41146975&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-targetGroup.html\">TargetGroup</a></p></div><p><b>code</b>: Anden udviklingsforstyrrelse \u00a0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#5cfc9530-a193-4f66-9981-3b980ee9ea7b)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-29</p></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.22",
+          "code" : "5cfc9530-a193-4f66-9981-3b980ee9ea7b"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "recordedDate" : "2021-05-29"
+    }
+  },
+  {
+    "fullUrl" : "Condition/787bb5e8-cb82-4e21-9459-285e5e14b814",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "787bb5e8-cb82-4e21-9459-285e5e14b814",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-targetGroup"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"787bb5e8-cb82-4e21-9459-285e5e14b814\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;787bb5e8-cb82-4e21-9459-285e5e14b814&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-targetGroup.html\">TargetGroup</a></p></div><p><b>code</b>: Selvmordstanker eller -forsøg \u00a0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#5e95db73-4d16-4084-93a3-595c0650b160)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>recordedDate</b>: 2021-05-29</p></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.22",
+          "code" : "5e95db73-4d16-4084-93a3-595c0650b160"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "recordedDate" : "2021-05-29"
+    }
+  },
+  {
+    "fullUrl" : "CareTeam/31a46e2d-0d54-4600-8ecb-1b239749cfd1",
+    "resource" : {
+      "resourceType" : "CareTeam",
+      "id" : "31a46e2d-0d54-4600-8ecb-1b239749cfd1",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-servicePerformer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CareTeam</b><a name=\"31a46e2d-0d54-4600-8ecb-1b239749cfd1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CareTeam &quot;31a46e2d-0d54-4600-8ecb-1b239749cfd1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-servicePerformer.html\">ServicePerformer</a></p></div><p><b>category</b>: Almindeligt længerevarende botilbud til voksne\u00a0\u00a0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#498fe92c-d7f7-41cd-9404-5b38fe113be0)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p></div>"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.22",
+          "code" : "498fe92c-d7f7-41cd-9404-5b38fe113be0"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      }
+    }
+  },
+  {
+    "fullUrl" : "CareTeam/9f4982de-34fd-440b-9980-fa72b51673eb",
+    "resource" : {
+      "resourceType" : "CareTeam",
+      "id" : "9f4982de-34fd-440b-9980-fa72b51673eb",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-servicePerformer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CareTeam</b><a name=\"9f4982de-34fd-440b-9980-fa72b51673eb\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CareTeam &quot;9f4982de-34fd-440b-9980-fa72b51673eb&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-servicePerformer.html\">ServicePerformer</a></p></div><p><b>category</b>: Aktivitets- og samværstilbud\u00a0\u00a0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html\">FFB</a>#9401777d-bdc5-4f52-9804-63c8cae9a792)</span></p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p></div>"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.22",
+          "code" : "9401777d-bdc5-4f52-9804-63c8cae9a792"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      }
+    }
+  },
+  {
+    "fullUrl" : "CarePlan/944c7c24-37b4-455e-9319-cd9f35a7aec9",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "944c7c24-37b4-455e-9319-cd9f35a7aec9",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-carePlan"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"944c7c24-37b4-455e-9319-cd9f35a7aec9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;944c7c24-37b4-455e-9319-cd9f35a7aec9&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-kl-reporting-ffb-carePlan.html\">CarePlan</a></p></div><blockquote><p><b>MunicipalityCasenumber</b></p><blockquote><p><b>url</b></p><code>municipalitySpecific</code></blockquote><p><b>value</b>: id:\u00a0Sag154689</p></blockquote><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"#Patient_da16c0a1-840a-46b0-98b3-761e4501b343\">See above (Patient/da16c0a1-840a-46b0-98b3-761e4501b343)</a></p><p><b>period</b>: 2021-05-29 --&gt; 2021-08-30</p><p><b>careTeam</b>: <a href=\"#CareTeam_31a46e2d-0d54-4600-8ecb-1b239749cfd1\">See above (CareTeam/31a46e2d-0d54-4600-8ecb-1b239749cfd1)</a></p><p><b>addresses</b>: </p><ul><li><a href=\"#Condition_76cecdcc-321c-479f-ae95-a8f020541650\">See above (Condition/76cecdcc-321c-479f-ae95-a8f020541650)</a></li><li><a href=\"#Condition_18045390-e599-4b7a-95f2-287f41146975\">See above (Condition/18045390-e599-4b7a-95f2-287f41146975)</a></li><li><a href=\"#Condition_787bb5e8-cb82-4e21-9459-285e5e14b814\">See above (Condition/787bb5e8-cb82-4e21-9459-285e5e14b814)</a></li></ul><h3>Activities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>OutcomeReference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Observation_e548c437-05e2-43d9-836f-5d3b4f8e331f\">See above (Observation/e548c437-05e2-43d9-836f-5d3b4f8e331f)</a></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "municipalitySpecific",
+          "valueIdentifier" : {
+            "system" : "http://example.dk/identifier/case",
+            "value" : "Sag154689"
+          }
+        }],
+        "url" : "http://fhir.kl.dk/ffbreporting/StructureDefinition/kl-reporting-ffb-municipalityCaseNumber"
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "subject" : {
+        "reference" : "Patient/da16c0a1-840a-46b0-98b3-761e4501b343"
+      },
+      "period" : {
+        "start" : "2021-05-29",
+        "end" : "2021-08-30"
+      },
+      "careTeam" : [{
+        "reference" : "CareTeam/31a46e2d-0d54-4600-8ecb-1b239749cfd1"
+      }],
+      "addresses" : [{
+        "extension" : [{
+          "url" : "http://fhir.kl.dk/core/StructureDefinition/ConditionRank",
+          "valuePositiveInt" : 1
+        }],
+        "reference" : "Condition/76cecdcc-321c-479f-ae95-a8f020541650"
+      },
+      {
+        "extension" : [{
+          "url" : "http://fhir.kl.dk/core/StructureDefinition/ConditionRank",
+          "valuePositiveInt" : 2
+        }],
+        "reference" : "Condition/18045390-e599-4b7a-95f2-287f41146975"
+      },
+      {
+        "extension" : [{
+          "url" : "http://fhir.kl.dk/core/StructureDefinition/ConditionRank",
+          "valuePositiveInt" : 2
+        }],
+        "reference" : "Condition/787bb5e8-cb82-4e21-9459-285e5e14b814"
+      }],
+      "activity" : [{
+        "outcomeReference" : [{
+          "reference" : "Observation/e548c437-05e2-43d9-836f-5d3b4f8e331f"
+        }]
+      }]
+    }
+  }]
+}

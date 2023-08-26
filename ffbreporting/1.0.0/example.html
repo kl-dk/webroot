@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KL.DK.FHIR.FFBREPORTING\Example - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide for FFB reporting (FFB uddatasæt)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="example.html">Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLFFBReporting (v1.0.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a href="http://fhir.kl.dk/ffbreporting/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <h2>Example</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#1st-encounter--first-documentation-phase--phase--case-opening" id="markdown-toc-1st-encounter--first-documentation-phase--phase--case-opening">1st encounter / First documentation phase / phase – Case opening</a></li>
+  <li><a href="#2nd-encounter--second-documentation-phase--case-insight" id="markdown-toc-2nd-encounter--second-documentation-phase--case-insight">2nd encounter / Second documentation phase – Case insight</a></li>
+  <li><a href="#3rd-encounter--third-documentation-phase--case-assesment" id="markdown-toc-3rd-encounter--third-documentation-phase--case-assesment">3rd encounter / Third documentation phase – Case assesment</a></li>
+  <li><a href="#4th-encounter--fourth-documentation-phase--case-verdict" id="markdown-toc-4th-encounter--fourth-documentation-phase--case-verdict">4th encounter / Fourth documentation phase – Case verdict</a></li>
+  <li><a href="#5th-encounter--fifth-documentation-phase--case-appropriation" id="markdown-toc-5th-encounter--fifth-documentation-phase--case-appropriation">5th encounter / Fifth documentation phase – Case appropriation</a></li>
+  <li><a href="#6th-encounter--sixth-documentation-phase--changing-case-appropriation" id="markdown-toc-6th-encounter--sixth-documentation-phase--changing-case-appropriation">6th encounter / Sixth documentation phase – Changing case appropriation</a></li>
+  <li><a href="#7th-encounter--seventh-documentation-phase--case-closing" id="markdown-toc-7th-encounter--seventh-documentation-phase--case-closing">7th encounter / Seventh documentation phase – Case closing</a></li>
+</ul>
+
+</div>
+<p>This page describes seven subsequent delivery reports for the citizen Børge Mogensen.
+For each delivery report the story is told (in Danish), the FFB documentation is listed, and the reporting example is given.</p>
+
+<h3 id="1st-encounter--first-documentation-phase--phase--case-opening">1st encounter / First documentation phase / phase – Case opening</h3>
+
+<h4 id="story">Story</h4>
+<p>Børge Mogensen henvender sig på kommunen efter aftale med en frivillig på hans stamcafé, hvor han har givet udtryk for at han har det svært i livet generelt.</p>
+
+<p>Børge døjer med eftervirkningerne af et Covid-19 forløb, hvor senfølger har gjort at han har forskellige udfordringer i dagligdagen.
+Børge har en fortid med stofmisbrug og har haft perioder med hjemløshed.
+Han har dog indenfor de senere år fået struktur på hverdagen, minimeret sit misbrug og fået tag over hovedet.
+Dog er han udfordret i at fastholde sin hverdag efter covid-19 forløbet.</p>
+
+<p>Børge tilknyttes en sagsbehandler, der starter med at åbne en social sag.
+Herefter spørger sagsbehandler ind til Børges ”Tro, håb og drømme for fremtiden”.
+Børge drømmer om en tilværelse hvor han kan blive ved med at fungere i hverdagen til trods for de nye senfølger.</p>
+
+<p>Visiterende sagsbehandler starter sagen med at indhente diagnoseoplysninger på Børge, og kan se at der ikke foreligger nogle gældende lægefaglige diagnoser på Børge.</p>
+
+<h4 id="ffb-documentation">FFB Documentation</h4>
+<p>The following FFB documentation is documented in the record system.</p>
+
+<h5 id="citizen">Citizen</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>010181-4321</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="servicerequest">ServiceRequest</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>MunicipalityCaseNumber</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sag154689</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting">Reporting</h4>
+<p>A delivery report is not generated here as the target groups will be reported on the subsequent care plans.</p>
+
+<h3 id="2nd-encounter--second-documentation-phase--case-insight">2nd encounter / Second documentation phase – Case insight</h3>
+
+<h4 id="story-1">Story</h4>
+<p>Visiterende myndighedssagsbehandler udformer, efter sagsåbningen, en objektiv og individuel udredning af Børges funktioner og forhold, omgivelser og aktivitets- og deltagelsestemaer.
+Visitator udarbejder udredningen på baggrund af samtale med Børge Mogensen og pårørende, samt journalnotater fra tidligere kontakter med kommunen.
+Ved udredning af Børge Mogensens aktivitets- og deltagelsestemaer vurderer og registrerer visiterende myndighedssagsbehandler Børge Mogensens funktionsevneniveau på en skala mellem 0-4.</p>
+
+<h4 id="ffb-documentation-1">FFB Documentation</h4>
+<p>The following new FFB documentation is documented in the record system.</p>
+
+<h5 id="condition">Condition</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition group</th>
+      <th>Condition</th>
+      <th>Severity</th>
+      <th>Recorded date</th>
+      <th>Last asserted date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Funktioner og forhold</td>
+      <td>Bevidsthedstilstand</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Intellektuelle funktioner</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Problemløsning</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Syn</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Døgnrytme</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Tobak</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Interesser</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Familiesituation</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Omgivelsesfaktorer</td>
+      <td>Boligområde</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Personer i netværk</td>
+      <td>-</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Aktivitet og deltagelse</td>
+      <td>Indgå i samspil og kontakt</td>
+      <td>2 - Moderat nedsat funktionsevne</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Varetage beskæftigelse</td>
+      <td>1 - Let nedsat funktionsevne</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Spise</td>
+      <td>3 - Svært nedsat funktionsevne</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Købe ind</td>
+      <td>2 - Moderat nedsat funktionsevne</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Færdes med transportmidler</td>
+      <td>3 - Svært nedsat funktionsevne</td>
+      <td>28/5-2021</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-1">Reporting</h4>
+<p>A delivery report is generated containing:</p>
+
+<ul>
+  <li>Citizen (new)</li>
+  <li>Information gathering (new)
+    <ul>
+      <li>Reference to service request</li>
+      <li>Reference to conditions</li>
+    </ul>
+  </li>
+  <li>Service request (new)</li>
+  <li>Conditions (new)</li>
+</ul>
+
+<p>The report for this is found here: <a href="Bundle-498644ca-b26c-4ba7-a1ef-69d691297ba3.html">DeliveryReport-2nd-Encounter</a></p>
+
+<h3 id="3rd-encounter--third-documentation-phase--case-assesment">3rd encounter / Third documentation phase – Case assesment</h3>
+
+<h4 id="story-2">Story</h4>
+<p>Visiterende myndighedssagsbehandler udformer derefter, i samarbejde med Børge Mogensen, tre indsatsmål der er rammesættende for den kommunale støtte til Børge Mogensen.
+Børges 1. indsatsmål omhandler at kunne fastholde funktionsevneniveauet på et let nedsat funktionsevneniveau (værdi 1) indenfor aktivitets- og deltagelsestemaet ”indgå i samspil og kontakt”.
+Målet er relateret til at kunne varetage beskæftigelse og færdes med transportmidler, da det er ved brug af disse A&amp;D temaer, at Børge skal fastholde sit funktionsevneniveau.
+Børges 2. mål omhandler at kunne udvikle funktionsevnen, til værdien 0, til at ”købe ind”.
+Målet relaterer sig til A&amp;D temaerne Gang og bevægelse og forstå meddelelser.
+Børges 3., og sidste, mål er at begrænse et tab af funktionsevne ift. at kunne spise.
+Børges bevidsthedstilstand gør at han får sværere og sværere ved at spise, da han har tiltagende bevidsthedsudfald ved fødeindtag.</p>
+
+<p>Efter udformningen af mål for støtten vurderer visiterende myndighedssagsbehandler Børge Mogensens samlede behov for kommunal støtte.
+Her sammenholder den visiterende myndighedssagsbehandler informationer fra de foregående faser med graden af støtte der er nødvendig for at Børge Mogensen kan nå sine opsatte mål.
+Det vurderes at Børge har et let støttebehov (værdi 1), da det ikke er nødvendigt med omfattende støtte for at kunne nå sin tid.
+Der knyttes et lokalt sagsafgørelsesID til vurderingen af støttebehov, da denne kan være forskellig pr. individuel oprettet sag.</p>
+
+<h4 id="ffb-documentation-2">FFB Documentation</h4>
+<p>The following new FFB documentation is documented in the record system.</p>
+
+<h5 id="careevaluation">CareEvaluation</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Evaluation</th>
+      <th>Vurderingsdato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 - Let støttebehov</td>
+      <td>29/5-2021</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="interventiongoal">InterventionGoal</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Addresses (primary)</th>
+      <th>Addresses (secondary)</th>
+      <th>Severity</th>
+      <th>ChangeValue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Indgå i samspil og kontakt</td>
+      <td>Varetage beskæftigelse; Færdes med transportmidler</td>
+      <td>1 - Let nedsat funktionsevne</td>
+      <td>Fastholde funktionsevne</td>
+    </tr>
+    <tr>
+      <td>Købe ind</td>
+      <td>-</td>
+      <td>0 - Ingen nedsat funktionsevne</td>
+      <td>Udvikle funktionsevne</td>
+    </tr>
+    <tr>
+      <td>Spise</td>
+      <td>-</td>
+      <td>3 - Svært nedsat funktionsevne</td>
+      <td>Begrænse tab af funktionsevne</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-2">Reporting</h4>
+<p>A delivery report is generated containing:</p>
+
+<ul>
+  <li>Citizen (unchanged)</li>
+  <li>Information gathering (updated)
+    <ul>
+      <li>Reference to service request (unchanged)</li>
+      <li>Reference to conditions (unchanged)</li>
+      <li>Reference to care evaluation (new)</li>
+    </ul>
+  </li>
+  <li>Care evaluation (new)</li>
+  <li>Intervention goals (new)
+    <ul>
+      <li>Reference to conditions</li>
+    </ul>
+  </li>
+  <li>Service request (unchanged)</li>
+  <li>Conditions (unchanged)</li>
+</ul>
+
+<p>The report for this is found here: <a href="Bundle-4b4e5f33-a9a2-42f6-b598-180543029ae5.html">DeliveryReport-3rd-Encounter</a></p>
+
+<h3 id="4th-encounter--fourth-documentation-phase--case-verdict">4th encounter / Fourth documentation phase – Case verdict</h3>
+
+<h4 id="story-3">Story</h4>
+<p>Visiterende myndighedssagsbehandler udvælger, på baggrund af den lægefagligt stillede diagnose – og en vurdering af hvilken målgruppe der er primær ift. den kommunale støtte, at Børge Mogensens primære målgruppe er ”anden udviklingsforstyrrelse”.
+Da visiterende myndighedssagsbehandler vurderer at Børge Mogensen er i målgruppen for ”opmærksomhedsforstyrrelse”, men ikke har en decideret diagnose, gælder det for hhv. fysiske- og psykiske funktionsnedsættelser at sagsbehandler skal afkrydse på laveste niveau.</p>
+
+<p>Visiterende myndighedssagsbehandler vurderer at Børge Mogensen, foruden at være i primær målgruppe for ”anden udviklingsforstyrrelse” også at Børge har en synsnedsættelse, og derved er i målgruppen for ”anden fysisk funktionsnedsættelse” (iht. det tidligere omtalte princip).
+Børge har ligeledes givet udtryk for at have sporadiske selvmordstanker, hvorfor han er i målgruppen for ”selvmordstanker- eller forsøg”.</p>
+
+<p>Der knyttes et sagsafgørelsesID til registreringen af målgrupper, da det kun er de for sagen relevante målgrupper der registreres på Børge Mogensens sag.
+Disse kan være varierende på tværs af sager.</p>
+
+<h4 id="ffb-documentation-3">FFB Documentation</h4>
+<p>The following new FFB documentation is documented in the record system.</p>
+
+<h5 id="targetgroup">TargetGroup</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>TargetGroup</th>
+      <th>Recorded date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anden udviklingsforstyrrelse</td>
+      <td>29-5-2021</td>
+    </tr>
+    <tr>
+      <td>Anden fysisk funktionsnedsættelse</td>
+      <td>29-5-2021</td>
+    </tr>
+    <tr>
+      <td>Selvmordstanker eller -forsøg</td>
+      <td>29-5-2021</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-3">Reporting</h4>
+<p>A delivery report is not generated here as the target groups will be reported on the subsequent care plans.</p>
+
+<h3 id="5th-encounter--fifth-documentation-phase--case-appropriation">5th encounter / Fifth documentation phase – Case appropriation</h3>
+
+<h4 id="story-4">Story</h4>
+<p>Visiterende myndighedssagsbehandler vurderer at der skal bevilges to sociale indsatser for bedst muligt at understøtte arbejdet med at indfri de opsatte indsatsmål for Børge Madsen.
+Den første sociale indsats sammensætter hun så det botilbudslignende tilbud Solstrålen i Viborg arbejder med ydelserne ”støtte til daglige opgaver i hjemmet” og ”støtte til sund levevis” efter servicelovens §85 (socialpædagogisk støtte), hvorfor der bevilges to ydelser.
+Der bevilges ligeledes en social indsats hvor dagtilbuddet til voksne; måneskinnet bestilles til at arbejde med ydelsen ”social aktivitet”.
+Begge indsatser kobles til den oprindelige afgørelse med et sagsafgørelsesID.
+Bevillingen afsluttet ved at der sendes en bestilling til de to sociale tilbud, og et brev til Børge.</p>
+
+<h4 id="ffb-documentation-4">FFB Documentation</h4>
+<p>The following new FFB documentation is documented in the record system.</p>
+
+<h5 id="careplan">CarePlan</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Start date</th>
+      <th>ServicePerformer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>29/5-2021</td>
+      <td>Almindeligt længerevarende botilbud til voksne</td>
+    </tr>
+    <tr>
+      <td>29/5-2021</td>
+      <td>Aktivitets- og samværstilbud</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="intervention">Intervention</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Intervention</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Recorded date</th>
+      <th>Care plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Støtte til daglige opgaver i hjemmet</td>
+      <td>29/5-2021</td>
+      <td>-</td>
+      <td>29/5-2021</td>
+      <td>Almindeligt længerevarende botilbud til voksne</td>
+    </tr>
+    <tr>
+      <td>Støtte til sund levevis</td>
+      <td>29/5-2021</td>
+      <td>-</td>
+      <td>29/5-2021</td>
+      <td>Almindeligt længerevarende botilbud til voksne</td>
+    </tr>
+    <tr>
+      <td>Sociale aktivitet</td>
+      <td>29/5-2021</td>
+      <td>-</td>
+      <td>29/5-2021</td>
+      <td>Aktivitets- og samværstilbud</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-4">Reporting</h4>
+<p>A delivery report is generated containing:</p>
+
+<ul>
+  <li>Citizen (unchanged)</li>
+  <li>Care plans (new)
+    <ul>
+      <li>Reference to care evaluation</li>
+      <li>Reference to target groups</li>
+      <li>Reference to service performers</li>
+      <li>Reference to follow-up encounter</li>
+    </ul>
+  </li>
+  <li>Interventions (new)
+    <ul>
+      <li>Reference to care plan</li>
+    </ul>
+  </li>
+  <li>Target groups (new)</li>
+  <li>Service performers (new)</li>
+  <li>Follow-up encounter (new)</li>
+</ul>
+
+<p>The report for this is found here: <a href="Bundle-5bf6a186-ee66-4b0e-ba6e-623972ab5130.html">DeliveryReport-5th-Encounter</a></p>
+
+<h3 id="6th-encounter--sixth-documentation-phase--changing-case-appropriation">6th encounter / Sixth documentation phase – Changing case appropriation</h3>
+
+<h4 id="story-5">Story</h4>
+<p>Efter Børge er startet op på hans indsatser, deltager han i den første af de månedligt tilbagevende statusser, hvor han og en socialpædagogisk medarbejder vender arbejdet med indsatsmålene og hans generelle trivsel.
+Børge giver udtryk for at ikke synes at aktivitets- og samværsindsatsen på tilbuddet Måneskinnet giver mening for ham, da han gerne vil med på et EDB-hold de har på stedet. Den socialpædagogiske medarbejder tager kontakt til visiterende myndighedssagsbehandler og indstiller til at aktivitets- og samværsindsatsens primære fokus bliver ”kompetenceudviklende aktivitet”, og indsatsmålet om sociale relationer ændres til at være et udviklende mål med ambitionen om at Børge ingen nedsat funktionsevne har ved indfrielse af målet.
+Visiterende myndighedssagsbehandler godkender indstillingen og ændrer i den sociale indsats og i det pågældende indsatsmål.
+Samtidigt opdaterer den visiterende myndighedssagsbehandler aktivitets- og deltagelsestemaet for ”samspil og kontakt” til ”1: Let nedsat funktionsevne”.</p>
+
+<p>Den socialpædagogiske medarbejder udformer journalnotater på Børges Funktioner &amp; Forhold, Omgivelser og Aktivitets- og deltagelsestemaer.</p>
+
+<h4 id="ffb-documentation-5">FFB Documentation</h4>
+<p>The following new FFB documentation is documented in the record system.</p>
+
+<h5 id="follow-up">Follow-up</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Care plan</th>
+      <th>Value</th>
+      <th>Effective</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Almindeligt længerevarende botilbud til voksne</td>
+      <td>Træf afgørelse om fortsættelse af indsats</td>
+      <td>18/6-2021</td>
+    </tr>
+    <tr>
+      <td>Aktivitets- og samværstilbud</td>
+      <td>Træf afgørelse om afslutning af indsats og visiter til ny</td>
+      <td>18/6-2021</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="condition-1">Condition</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition group</th>
+      <th>Condition</th>
+      <th>Severity</th>
+      <th>Recorded date</th>
+      <th>Last asserted date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aktivitet og deltagelse</td>
+      <td>Indgå i samspil og kontakt</td>
+      <td>1 - Let nedsat funktionsevne</td>
+      <td>28/5-2021</td>
+      <td>18/6-2021</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="intervention-1">Intervention</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Intervention</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Recorded date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Social aktivitet</td>
+      <td>29/5-2021</td>
+      <td>18/6-2021</td>
+      <td>29/5-2021</td>
+    </tr>
+    <tr>
+      <td>Kompetenceudviklende aktivitet</td>
+      <td>18/6-2021</td>
+      <td>-</td>
+      <td>29/5-2021</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="interventiongoal-1">InterventionGoal</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Addresses (primary)</th>
+      <th>Addresses (secondary)</th>
+      <th>Severity</th>
+      <th>ChangeValue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Indgå i samspil og kontakt</td>
+      <td>Varetage beskæftigelse; Færdes med transportmidler</td>
+      <td>0 - Ingen nedsat funktionsevne</td>
+      <td>Udvikle funktionsevne</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-5">Reporting</h4>
+<p>A delivery report is generated containing:</p>
+
+<ul>
+  <li>Citizen (unchanged)</li>
+  <li>Information gathering (unchanged)
+    <ul>
+      <li>Reference to service request (unchanged)</li>
+      <li>Reference to the conditions (unchanged)</li>
+      <li>Reference to care evaluation (new)</li>
+    </ul>
+  </li>
+  <li>Care plans (one unchanged, one updated, and one new)
+    <ul>
+      <li>Reference to care evaluation</li>
+      <li>Reference to target groups</li>
+      <li>Reference to service performers</li>
+      <li>Reference to follow-up encounter</li>
+    </ul>
+  </li>
+  <li>Interventions (one new and one updated)
+    <ul>
+      <li>Reference to care plan</li>
+    </ul>
+  </li>
+  <li>Intervention goals (one new)
+    <ul>
+      <li>Reference to conditions</li>
+    </ul>
+  </li>
+  <li>Service request (unchanged)</li>
+  <li>Conditions (one is updated)</li>
+  <li>Service performers (unchanged)</li>
+  <li>Follow-up encounter (unchanged)</li>
+  <li>Follow-ups (new)
+    <ul>
+      <li>Reference to care plan</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The report for this is found here: <a href="Bundle-aaa5d153-968e-46ec-9f9e-cfc6e93a3f1b.html">DeliveryReport-6th-Encounter</a></p>
+
+<h3 id="7th-encounter--seventh-documentation-phase--case-closing">7th encounter / Seventh documentation phase – Case closing</h3>
+
+<h4 id="story-6">Story</h4>
+<p>Visiterende myndighedssagsbehandler laver på ny en udredning af Børge Mogensen under den planlagte sagsopfølgning.
+Her ses det at Børge Mogensen har rykket sig på de udredte aktivitets- og deltagelsestemaer.
+Det særlige fokus for sagsbehandler er hhv. ”indgå i samspil og kontakt”, ”spise” og ”købe ind”, da det er her der er opsat indsatsmål for.
+Sagsbehandler vurderer ligeledes at Børge Mogensen ikke længere har behov for kommunal støtte og hjælp, hvorfor der registreres et 0 ”intet behov for støtte” under støttebehovsvurderingen.
+De to indsatser på hhv. aktivitets- og samværstilbuddet og det botilbudslignende tilbud afsluttes, og der registreres en faktisk afslutningsdato på de indeholdende ydelser.</p>
+
+<h4 id="ffb-documentation-6">FFB Documentation</h4>
+<p>The following new FFB documentation is documented in the record system.</p>
+
+<h5 id="careevaluation-1">CareEvaluation</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Evaluation</th>
+      <th>Vurderingsdato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0 - Intet støttebehov</td>
+      <td>30/8-2021</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="intervention-2">Intervention</h5>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Intervention</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Recorded date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kompetenceudviklende aktivitet</td>
+      <td>18/6-2021</td>
+      <td>30/8-2021</td>
+      <td>29/5-2021</td>
+    </tr>
+    <tr>
+      <td>Støtte til daglige opgaver i hjemmet</td>
+      <td>29/5-2021</td>
+      <td>30/8-2021</td>
+      <td>29/5-2021</td>
+    </tr>
+    <tr>
+      <td>Støtte til sund levevis</td>
+      <td>29/5-2021</td>
+      <td>30/8-2021</td>
+      <td>29/5-2021</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting-6">Reporting</h4>
+<p>A delivery report is generated containing:</p>
+
+<ul>
+  <li>Citizen (unchanged)</li>
+  <li>Information gathering (new)
+    <ul>
+      <li>Reference to service request</li>
+    </ul>
+  </li>
+  <li>Care plan (updated)
+    <ul>
+      <li>Reference to new care evaluation (updated)</li>
+    </ul>
+  </li>
+  <li>Service request (unchanged)</li>
+  <li>Interventions (updated)</li>
+</ul>
+
+<p>The report for this is found here: <a href="Bundle-ae9cdbef-ca35-4dae-b5df-ffd938cf0098.html">DeliveryReport-7th-Encounter</a></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.kl.dk">KL</a>.  Package kl.dk.fhir.ffbreporting#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 26, 2023 16:39+0200">2023-08-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
