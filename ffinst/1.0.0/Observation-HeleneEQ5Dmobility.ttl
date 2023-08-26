@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/Observation/HeleneEQ5Dmobility> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HeleneEQ5Dmobility"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationMobility"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationMobility>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HeleneEQ5Dmobility\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HeleneEQ5Dmobility&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLToolsCareEQ5DObservationMobility.html\">EQ-5D mobility</a></p></div><p><b>AssociatedConditions</b>: Finding related to ability to perform gross motor function <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#364832000)</span></p><p><b>status</b>: final</p><p><b>code</b>: Ability to mobilize <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#301438001)</span></p><p><b>subject</b>: <a href=\"Patient-Helene.html\">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamFraAkutSygeplejen.html\">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: Difficulty walking <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#719232003; <a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#95be0ff6-ab05-4918-be8e-6dbb820366bb &quot;Jeg har nogle problemer med at gå omkring (2)&quot;)</span></p><p><b>method</b>: Ingen problemer med test-setup og borgers udførelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#4a069078-c3c3-4c67-899d-4e8876026f48Ja)</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-EQ5DAnswerHelene.html\">QuestionnaireResponse/EQ5DAnswerHelene</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:364832000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "364832000" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:301438001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "301438001" ] ;
+       fhir:display [ fhir:v "Ability to mobilize" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffinst/Patient/Helene> ;
+     fhir:reference [ fhir:v "Patient/Helene" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://fhir.kl.dk/ffinst/Practitioner/AbrahamFraAkutSygeplejen> ;
+     fhir:reference [ fhir:v "Practitioner/AbrahamFraAkutSygeplejen" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:719232003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "719232003" ] ;
+       fhir:display [ fhir:v "Difficulty walking" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "95be0ff6-ab05-4918-be8e-6dbb820366bb" ] ;
+       fhir:display [ fhir:v "Jeg har nogle problemer med at gå omkring (2)" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4a069078-c3c3-4c67-899d-4e8876026f48Ja" ] ;
+       fhir:display [ fhir:v "Ingen problemer med test-setup og borgers udførelse" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.kl.dk/ffinst/QuestionnaireResponse/EQ5DAnswerHelene> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/EQ5DAnswerHelene" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

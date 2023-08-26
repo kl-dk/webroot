@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/Patient/Mark> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Mark"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/StructureDefinition/KLCommonCitizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mark Jensen </b> (no stated gender), DoB: 1982-02-02 ( id: mark)</p><hr/></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "mark" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Jensen" ] ;
+     fhir:given ( [ fhir:v "Mark" ] )
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1982-02-02"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

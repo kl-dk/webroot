@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="KLToolsCareWHO5"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareWHO5"/>
+  <version value="1.0.0"/>
+  <name value="KLToolsCareWHO5"/>
+  <title value="WHO-5 questionnaire"/>
+  <status value="draft"/>
+  <date value="2023-08-26T16:15:04+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Instrument til at måle graden af positive oplevelser, og som kan anvendes som et mål for personers generelle trivsel eller velbefindende. Tidsrammen er de seneste to uger."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <code>
+    <system value="http://snomed.info/sct"/>
+    <code value="1144665009"/>
+  </code>
+  <item>
+    <linkId value="happy"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="285854004"/>
+    </code>
+    <text value="I de sidste 2 uger har jeg været glad og i godt humør"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesHappy"/>
+  </item>
+  <item>
+    <linkId value="calm"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="285854004"/>
+    </code>
+    <text value="I de sidste 2 uger har jeg følt mig rolig og afslappet"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesCalm"/>
+  </item>
+  <item>
+    <linkId value="active"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="406202006"/>
+    </code>
+    <text value="I de sidste 2 uger har jeg følt mig aktiv og energisk"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesActive"/>
+  </item>
+  <item>
+    <linkId value="rested"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="404949004"/>
+    </code>
+    <text value="I de sidste 2 uger er jeg vågnet frisk og udhvilet"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesRested"/>
+  </item>
+  <item>
+    <linkId value="interest"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="247752005"/>
+    </code>
+    <text value="I de sidste 2 uger har min dagligdag været fyldt med ting der interesserer mig"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesInterest"/>
+  </item>
+  <item>
+    <linkId value="who5comment"/>
+    <text value="Kommentar til WHO5"/>
+    <type value="text"/>
+    <repeats value="false"/>
+  </item>
+</Questionnaire>

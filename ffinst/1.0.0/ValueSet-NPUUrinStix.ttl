@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/ValueSet/NPUUrinStix> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NPUUrinStix"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/ffinst/ValueSet/NPUUrinStix"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "NPUUrinStix"] ; # 
+  fhir:title [ fhir:v "NPUUrinStix"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-08-26T16:15:04+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "NPU observables for urin stix"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "NPU14924" ] ;
+         fhir:display [ fhir:v "U—Urin; egenskabsart(liste; stix; proc.)" ]
+       ] [
+         fhir:code [ fhir:v "NPU10504" ] ;
+         fhir:display [ fhir:v "U—Acetoacetat; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU17997" ] ;
+         fhir:display [ fhir:v "U—Albumin; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU10506" ] ;
+         fhir:display [ fhir:v "U—Bacterium, nitrit-producerende; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU01372" ] ;
+         fhir:display [ fhir:v "U—Bilirubiner; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU03963" ] ;
+         fhir:display [ fhir:v "U—Erythrocytter; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU04207" ] ;
+         fhir:display [ fhir:v "U—Glucose; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU02415" ] ;
+         fhir:display [ fhir:v "U—Hydrogen-ion; pH(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU04208" ] ;
+         fhir:display [ fhir:v "U—Hæmoglobin; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU03987" ] ;
+         fhir:display [ fhir:v "U—Leukocytter; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU21578" ] ;
+         fhir:display [ fhir:v "U—Nitrit; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU04864" ] ;
+         fhir:display [ fhir:v "U—Porphobilinogen; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU04206" ] ;
+         fhir:display [ fhir:v "U—Protein; arb.k.(proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU03694" ] ;
+         fhir:display [ fhir:v "Pt—Urin; rel.massetæthed(20 °C/vand, 20 °C; proc.) = ?" ]
+       ] [
+         fhir:code [ fhir:v "NPU03697" ] ;
+         fhir:display [ fhir:v "U—Urobilinogen; arb.k.(proc.) = ?" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

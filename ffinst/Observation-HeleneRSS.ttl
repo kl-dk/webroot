@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/Observation/HeleneRSS> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HeleneRSS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRSS"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRSS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HeleneRSS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HeleneRSS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLToolsCareRSS.html\">Chair stand test (RSS)</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Thirty second chair stand test score (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#450738001)</span></p><p><b>subject</b>: <a href=\"Patient-Helene.html\">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>value</b>: 17</p><p><b>method</b>: Ingen problemer med test-setup og borgers udførelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#4a069078-c3c3-4c67-899d-4e8876026f48Ja; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#272391002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:450738001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "450738001" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffinst/Patient/Helene> ;
+     fhir:reference [ fhir:v "Patient/Helene" ]
+  ] ; # 
+  fhir:value [ fhir:v "17"^^xsd:integer] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4a069078-c3c3-4c67-899d-4e8876026f48Ja" ]
+     ] [
+       a sct:272391002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272391002" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

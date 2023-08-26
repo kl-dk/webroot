@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/Observation/HeleneUrinStix> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HeleneUrinStix"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareUrinStix"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareUrinStix>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HeleneUrinStix\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HeleneUrinStix&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLToolsCareUrinStix.html\">Urin Stix</a></p></div><p><b>AssociatedConditions</b>: Observation of urination <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#252041008)</span></p><p><b>status</b>: final</p><p><b>code</b>: U—Leukocytter; arb.k.(proc.) = ? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-NPU.html\">NPU</a>#NPU03987; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#252385000 &quot;Urine dipstick for leukocyte esterase (procedure)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-Helene.html\">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>effective</b>: 2019-01-09 17:45:00+0000</p><p><b>value</b>: Påviselige leukocytter</p><p><b>method</b>: Ingen problemer med test-setup og borgers udførelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#4a069078-c3c3-4c67-899d-4e8876026f48Ja)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:252041008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "252041008" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NPU03987" ] ;
+       fhir:display [ fhir:v "U—Leukocytter; arb.k.(proc.) = ?" ]
+     ] [
+       a sct:252385000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "252385000" ] ;
+       fhir:display [ fhir:v "Urine dipstick for leukocyte esterase (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffinst/Patient/Helene> ;
+     fhir:reference [ fhir:v "Patient/Helene" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-01-09T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [ fhir:v "Påviselige leukocytter"] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4a069078-c3c3-4c67-899d-4e8876026f48Ja" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

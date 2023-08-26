@@ -1,0 +1,1710 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/ImplementationGuide/kl.dk.fhir.ffinst> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "kl.dk.fhir.ffinst"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/ffinst/ImplementationGuide/kl.dk.fhir.ffinst"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "KLFFinst"] ; # 
+  fhir:title [ fhir:v "Implementation Guide for fælles faglige instrumenter (FFInst)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-08-26T16:24:28+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Danish municipalities implementation guide for FFInst"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "kl.dk.fhir.ffinst"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_dk_core" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.dk.core" ] ;
+     fhir:version [ fhir:v "1.1.0" ]
+  ] [
+     fhir:id [ fhir:v "kl_dk_fhir_core" ] ;
+     fhir:uri [
+       fhir:v "http://fhir.kl.dk/core/ImplementationGuide/kl.dk.fhir.core"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/core/ImplementationGuide/kl.dk.fhir.core>
+     ] ;
+     fhir:packageId [ fhir:v "kl.dk.fhir.core" ] ;
+     fhir:version [ fhir:v "1.2.0" ]
+  ] [
+     fhir:id [ fhir:v "kl_dk_fhir_term" ] ;
+     fhir:uri [
+       fhir:v "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term>
+     ] ;
+     fhir:packageId [ fhir:v "kl.dk.fhir.term" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2020+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "release" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.kl.dk/ffinst/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2020+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "release" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.kl.dk/ffinst/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCare6minwalk> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCare6minwalk" ]
+       ] ;
+       fhir:name [ fhir:v "6 min walk" ] ;
+       fhir:description [ fhir:v "6 minutes walking test, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Practitioner/AbrahamFraAkutSygeplejen> ;
+         fhir:reference [ fhir:v "Practitioner/AbrahamFraAkutSygeplejen" ]
+       ] ;
+       fhir:name [ fhir:v "AbrahamFraAkutSygeplejen" ] ;
+       fhir:description [ fhir:v "Eksempel på medarbejderen Abraham fra akutsygeplejen" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions> ;
+         fhir:reference [ fhir:v "StructureDefinition/AssociatedConditions" ]
+       ] ;
+       fhir:name [ fhir:v "AssociatedConditions" ] ;
+       fhir:description [ fhir:v "Extension for pointing to Condition codes, for which the observation might be usefull" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBloodPressure> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareBloodPressure" ]
+       ] ;
+       fhir:name [ fhir:v "Blood pressure" ] ;
+       fhir:description [ fhir:v "Profile of HL7 Blood pressure profile used in Danish Municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyHeight> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareBodyHeight" ]
+       ] ;
+       fhir:name [ fhir:v "Body height" ] ;
+       fhir:description [ fhir:v "Body height profile used in Danish Municipalities, derived from HL7 standard profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyTemperature> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareBodyTemperature" ]
+       ] ;
+       fhir:name [ fhir:v "Body temperature" ] ;
+       fhir:description [ fhir:v "Profile of HL7 body temeprature profile used in Danish Municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyWeight> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareBodyWeight" ]
+       ] ;
+       fhir:name [ fhir:v "Body weight" ] ;
+       fhir:description [ fhir:v "Profile of HL7 body weight profile used in Danish Municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/BodyheightSCTobservables> ;
+         fhir:reference [ fhir:v "ValueSet/BodyheightSCTobservables" ]
+       ] ;
+       fhir:name [ fhir:v "BodyheightSCTobservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for height" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/BodyweightSCTobservables> ;
+         fhir:reference [ fhir:v "ValueSet/BodyweightSCTobservables" ]
+       ] ;
+       fhir:name [ fhir:v "BodyweightSCTobservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for weight" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRSS> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareRSS" ]
+       ] ;
+       fhir:name [ fhir:v "Chair stand test (RSS)" ] ;
+       fhir:description [ fhir:v "Thirty second chair stand test score, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareConsciousness> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareConsciousness" ]
+       ] ;
+       fhir:name [ fhir:v "Consciousness assessment" ] ;
+       fhir:description [ fhir:v "Level of consciousness assessment as defined by TOBS, as performed in Danish municipalities. TOBS is Danish for early disease detection" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/ConsciousnessCodes> ;
+         fhir:reference [ fhir:v "ValueSet/ConsciousnessCodes" ]
+       ] ;
+       fhir:name [ fhir:v "ConsciousnessCodes" ] ;
+       fhir:description [ fhir:v "Findings for Counsciousness" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/ConsciousnessSCTFindings> ;
+         fhir:reference [ fhir:v "ValueSet/ConsciousnessSCTFindings" ]
+       ] ;
+       fhir:name [ fhir:v "ConsciousnessSCTFindings" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings for consciousness" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/DiastolicBloodPressureSCTObservables> ;
+         fhir:reference [ fhir:v "ValueSet/DiastolicBloodPressureSCTObservables" ]
+       ] ;
+       fhir:name [ fhir:v "DiastolicBloodPressureSCTObservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for diastolic blood pressure" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationActivity> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareEQ5DObservationActivity" ]
+       ] ;
+       fhir:name [ fhir:v "EQ-5D activity" ] ;
+       fhir:description [ fhir:v "EQ-5D Activity observation, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationAnxiety> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareEQ5DObservationAnxiety" ]
+       ] ;
+       fhir:name [ fhir:v "EQ-5D anxiety" ] ;
+       fhir:description [ fhir:v "EQ5D Anxiety observation, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationHygiene> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareEQ5DObservationHygiene" ]
+       ] ;
+       fhir:name [ fhir:v "EQ-5D hygiene" ] ;
+       fhir:description [ fhir:v "EQ5D Hygiene observation, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationMobility> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareEQ5DObservationMobility" ]
+       ] ;
+       fhir:name [ fhir:v "EQ-5D mobility" ] ;
+       fhir:description [ fhir:v "EQ5D mobility observation, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationPain> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareEQ5DObservationPain" ]
+       ] ;
+       fhir:name [ fhir:v "EQ-5D pain" ] ;
+       fhir:description [ fhir:v "EQ5D Pain observation, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareEQ5D> ;
+         fhir:reference [ fhir:v "Questionnaire/KLToolsCareEQ5D" ]
+       ] ;
+       fhir:name [ fhir:v "EQ-5D questionnaire" ] ;
+       fhir:description [ fhir:v "Ikke-sygdomsspecifikt spørgeskema til at vurdere helbredsrelateret livskvalitet. Tidsrammen for borgers vurdering er borgers aktuelle tilstand (i dag)." ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dactivity> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5Dactivity" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5Dactivity" ] ;
+       fhir:description [ fhir:v "Findings for EQ-5D activity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/QuestionnaireResponse/EQ5DAnswerHelene> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/EQ5DAnswerHelene" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5DAnswersHelene" ] ;
+       fhir:description [ fhir:v "EQ5D BesvarelseHelene" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Danxiety> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5Danxiety" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5Danxiety" ] ;
+       fhir:description [ fhir:v "Findings for EQ-5D anxiety" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dhygiene> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5Dhygiene" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5Dhygiene" ] ;
+       fhir:description [ fhir:v "Findings for EQ-5D hygiene" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dmobility> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5Dmobility" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5Dmobility" ] ;
+       fhir:description [ fhir:v "Findings for EQ-5D mobility" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dpain> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5Dpain" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5Dpain" ] ;
+       fhir:description [ fhir:v "Findings for EQ-5D pain" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5DSCTfindingsActivity> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5DSCTfindingsActivity" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5DSCTfindingsActivity" ] ;
+       fhir:description [ fhir:v "SNOMED CT Findings for EQ-5D activity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5DSCTfindingsAnxiety> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5DSCTfindingsAnxiety" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5DSCTfindingsAnxiety" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings for EQ-5D Anxiety" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5DSCTfindingsHygiene> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5DSCTfindingsHygiene" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5DSCTfindingsHygiene" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings for EQ-5D hygiene" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5DSCTfindingsMobility> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5DSCTfindingsMobility" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5DSCTfindingsMobility" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings for EQ-5D mobility" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5DSCTfindingsPain> ;
+         fhir:reference [ fhir:v "ValueSet/EQ5DSCTfindingsPain" ]
+       ] ;
+       fhir:name [ fhir:v "EQ5DSCTfindingsPain" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings for EQ-5D pain" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/FindingInformer> ;
+         fhir:reference [ fhir:v "StructureDefinition/FindingInformer" ]
+       ] ;
+       fhir:name [ fhir:v "FindingInformer" ] ;
+       fhir:description [ fhir:v "Extension for pointing to who the source of information is" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/FindingInformerCodes> ;
+         fhir:reference [ fhir:v "ValueSet/FindingInformerCodes" ]
+       ] ;
+       fhir:name [ fhir:v "FindingInformerCodes" ] ;
+       fhir:description [ fhir:v "Codes for who informed the findings" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "General questionnaire" ] ;
+       fhir:description [ fhir:v "Questionnaire profile, for all Questionaires in KLTools" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareHeartRate> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareHeartRate" ]
+       ] ;
+       fhir:name [ fhir:v "Heart Rate" ] ;
+       fhir:description [ fhir:v "Heart rate profile used in Danish Municipalities, derived from HL7 heart rate profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/HeartRateSCTobservables> ;
+         fhir:reference [ fhir:v "ValueSet/HeartRateSCTobservables" ]
+       ] ;
+       fhir:name [ fhir:v "HeartRateSCTobservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for heart rate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Patient/Helene> ;
+         fhir:reference [ fhir:v "Patient/Helene" ]
+       ] ;
+       fhir:name [ fhir:v "Helene" ] ;
+       fhir:description [ fhir:v "Borgeren Helene" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/Helene6minwalk> ;
+         fhir:reference [ fhir:v "Observation/Helene6minwalk" ]
+       ] ;
+       fhir:name [ fhir:v "Helene6minwalk" ] ;
+       fhir:description [ fhir:v "Helenes 6minutters gangtest" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCare6minwalk"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCare6minwalk>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneConsciousness> ;
+         fhir:reference [ fhir:v "Observation/HeleneConsciousness" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneBevidsthed" ] ;
+       fhir:description [ fhir:v "Helene bevidsthedsniveau" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareConsciousness"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareConsciousness>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneBloodPressure> ;
+         fhir:reference [ fhir:v "Observation/HeleneBloodPressure" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneBloodPressure" ] ;
+       fhir:description [ fhir:v "Helenes blodtryk" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBloodPressure"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBloodPressure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneBodyHeight> ;
+         fhir:reference [ fhir:v "Observation/HeleneBodyHeight" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneBodyHeight" ] ;
+       fhir:description [ fhir:v "Helenes kropshøjde" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyHeight"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyHeight>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneBodyTemperature> ;
+         fhir:reference [ fhir:v "Observation/HeleneBodyTemperature" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneBodyTemperature" ] ;
+       fhir:description [ fhir:v "Helenes temperatur" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyTemperature"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyTemperature>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneBodyWeight> ;
+         fhir:reference [ fhir:v "Observation/HeleneBodyWeight" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneBodyWeight" ] ;
+       fhir:description [ fhir:v "Helenes vægt" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyWeight"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareBodyWeight>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneEQ5Dmobility> ;
+         fhir:reference [ fhir:v "Observation/HeleneEQ5Dmobility" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneEQ5D-mobilitet" ] ;
+       fhir:description [ fhir:v "Observation af Helenes mobilitet, som udtrykt i EQ5D spørgeskema" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationMobility"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationMobility>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneHeartRate> ;
+         fhir:reference [ fhir:v "Observation/HeleneHeartRate" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneHeartRate" ] ;
+       fhir:description [ fhir:v "Helenes puls" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareHeartRate"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareHeartRate>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneOxygenSaturation> ;
+         fhir:reference [ fhir:v "Observation/HeleneOxygenSaturation" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneOxygenSaturation" ] ;
+       fhir:description [ fhir:v "Helenes oxygenmætning" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareOxygenSaturation"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareOxygenSaturation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HelenePainVAS> ;
+         fhir:reference [ fhir:v "Observation/HelenePainVAS" ]
+       ] ;
+       fhir:name [ fhir:v "HelenePainVAS" ] ;
+       fhir:description [ fhir:v "Helenes smerte målt med VAS" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVAS"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVAS>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HelenePainVRS> ;
+         fhir:reference [ fhir:v "Observation/HelenePainVRS" ]
+       ] ;
+       fhir:name [ fhir:v "HelenePainVRS" ] ;
+       fhir:description [ fhir:v "Helenes smerte målt med VRS" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVRS"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVRS>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneRespirationRate> ;
+         fhir:reference [ fhir:v "Observation/HeleneRespirationRate" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneRespirationRate" ] ;
+       fhir:description [ fhir:v "Helenes respirationsfrekvens" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRespirationRate"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRespirationRate>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneRSS> ;
+         fhir:reference [ fhir:v "Observation/HeleneRSS" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneRSS" ] ;
+       fhir:description [ fhir:v "Helenes rejse-sætte-sig test" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRSS"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRSS>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/HeleneUrinStix> ;
+         fhir:reference [ fhir:v "Observation/HeleneUrinStix" ]
+       ] ;
+       fhir:name [ fhir:v "HeleneUrinStix leukocytter" ] ;
+       fhir:description [ fhir:v "Helenes urinstix" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareUrinStix"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareUrinStix>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/KLtechniquesCodes> ;
+         fhir:reference [ fhir:v "ValueSet/KLtechniquesCodes" ]
+       ] ;
+       fhir:name [ fhir:v "KLtechniquesCodes" ] ;
+       fhir:description [ fhir:v "Codes for the techniqe used when obtaining an observation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes> ;
+         fhir:reference [ fhir:v "CodeSystem/KLToolsCodes" ]
+       ] ;
+       fhir:name [ fhir:v "KLToolsCodes" ] ;
+       fhir:description [ fhir:v "Codes associated with KLTools, which is not part of KLCommonCareSocial, or international terminologies" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Patient/Mark> ;
+         fhir:reference [ fhir:v "Patient/Mark" ]
+       ] ;
+       fhir:name [ fhir:v "Mark" ] ;
+       fhir:description [ fhir:v "Borgeren Mark" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Observation/MarksWHO5-2> ;
+         fhir:reference [ fhir:v "Observation/MarksWHO5-2" ]
+       ] ;
+       fhir:name [ fhir:v "MarksWHO5-2" ] ;
+       fhir:description [ fhir:v "Observation af Marks humør, som udtrykt i WHO5 spørgeskema" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationCalm2"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationCalm2>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/NPUUrinStix> ;
+         fhir:reference [ fhir:v "ValueSet/NPUUrinStix" ]
+       ] ;
+       fhir:name [ fhir:v "NPUUrinStix" ] ;
+       fhir:description [ fhir:v "NPU observables for urin stix" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareOxygenSaturation> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareOxygenSaturation" ]
+       ] ;
+       fhir:name [ fhir:v "Oxygen saturation" ] ;
+       fhir:description [ fhir:v "Oxygen saturation profile as used in Danish Municipalities, derived from HL7 oxygen saturation profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/OxygenSaturationSCTobservables> ;
+         fhir:reference [ fhir:v "ValueSet/OxygenSaturationSCTobservables" ]
+       ] ;
+       fhir:name [ fhir:v "OxygenSaturationSCTobservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for oxygen saturation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVRS> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCarePainVRS" ]
+       ] ;
+       fhir:name [ fhir:v "Pain VRS" ] ;
+       fhir:description [ fhir:v "Pain intensity evaluation using a verbal rating scale, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVAS> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCarePainVAS" ]
+       ] ;
+       fhir:name [ fhir:v "PainVAS" ] ;
+       fhir:description [ fhir:v "Pain intensity evaluation using a visual analog scale, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire response" ] ;
+       fhir:description [ fhir:v "Questionnaire response profile, for all Questionaires in KLTools" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareRespirationRate> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareRespirationRate" ]
+       ] ;
+       fhir:name [ fhir:v "Respiration rate" ] ;
+       fhir:description [ fhir:v "Respiration rate profile used in Danish Municipalities, derived from HL7 respiration rate profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/RespirationRateSCTObservables> ;
+         fhir:reference [ fhir:v "ValueSet/RespirationRateSCTObservables" ]
+       ] ;
+       fhir:name [ fhir:v "RespirationRateSCTObservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for respiratory rate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/SCTUrinStix> ;
+         fhir:reference [ fhir:v "ValueSet/SCTUrinStix" ]
+       ] ;
+       fhir:name [ fhir:v "SCTUrinStix" ] ;
+       fhir:description [ fhir:v "SNOMED CT evaluation procedure codes for urin stix" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/SystolicBloodPressureSCTObservables> ;
+         fhir:reference [ fhir:v "ValueSet/SystolicBloodPressureSCTObservables" ]
+       ] ;
+       fhir:name [ fhir:v "SystolicBloodPressureSCTObservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for systolic blood pressure" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/TechniqesSCTCodes> ;
+         fhir:reference [ fhir:v "ValueSet/TechniqesSCTCodes" ]
+       ] ;
+       fhir:name [ fhir:v "TechniqesSCTCodes" ] ;
+       fhir:description [ fhir:v "SNOMED CT Codes for the techniqe used when obtaining an observation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/Technique> ;
+         fhir:reference [ fhir:v "StructureDefinition/Technique" ]
+       ] ;
+       fhir:name [ fhir:v "Technique" ] ;
+       fhir:description [ fhir:v "Extension for pointing to the techniqe used to obtain the result of a questionaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/BodyTemperatureSCTObservables> ;
+         fhir:reference [ fhir:v "ValueSet/BodyTemperatureSCTObservables" ]
+       ] ;
+       fhir:name [ fhir:v "TemperatureSCTObservables" ] ;
+       fhir:description [ fhir:v "SNOMED CT observables for temperature" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareUrinStix> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsCareUrinStix" ]
+       ] ;
+       fhir:name [ fhir:v "Urin Stix" ] ;
+       fhir:description [ fhir:v "Urin stix result, as performed in Danish municipalities" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/VRSpain> ;
+         fhir:reference [ fhir:v "ValueSet/VRSpain" ]
+       ] ;
+       fhir:name [ fhir:v "VRSpain" ] ;
+       fhir:description [ fhir:v "Findings for VRS pain" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/VRSSCTfindingsPain> ;
+         fhir:reference [ fhir:v "ValueSet/VRSSCTfindingsPain" ]
+       ] ;
+       fhir:name [ fhir:v "VRSSCTfindingsPain" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings for VRS pain" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationActive3> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsWHO5ObservationActive3" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-5 active (3)" ] ;
+       fhir:description [ fhir:v "WHO5 observation, for the third question about being active" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationCalm2> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsWHO5ObservationCalm2" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-5 calm (2)" ] ;
+       fhir:description [ fhir:v "WHO5 observation, for the second question about feeling calm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationHappy1> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsWHO5ObservationHappy1" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-5 happy (1)" ] ;
+       fhir:description [ fhir:v "WHO5 observation, for the first question about feeling happy" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationInterest5> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsWHO5ObservationInterest5" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-5 Interest (5)" ] ;
+       fhir:description [ fhir:v "WHO5 observation, for the fifth question about being interested" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareWHO5> ;
+         fhir:reference [ fhir:v "Questionnaire/KLToolsCareWHO5" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-5 questionnaire" ] ;
+       fhir:description [ fhir:v "Instrument til at måle graden af positive oplevelser, og som kan anvendes som et mål for personers generelle trivsel eller velbefindende. Tidsrammen er de seneste to uger." ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationRested4> ;
+         fhir:reference [ fhir:v "StructureDefinition/KLToolsWHO5ObservationRested4" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-5 rested (4)" ] ;
+       fhir:description [ fhir:v "WHO5 observation, for the fourth question about being rested" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/QuestionnaireResponse/WHO-5AnswerMark> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/WHO-5AnswerMark" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-5AnswersMark" ] ;
+       fhir:description [ fhir:v "WHO-5 besvarelse Mark" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesActive> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5AnswerCodesActive" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5AnswerCodesActive" ] ;
+       fhir:description [ fhir:v "Codes used to specify WHO-5 answers to the third question about being active" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesCalm> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5AnswerCodesCalm" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5AnswerCodesCalm" ] ;
+       fhir:description [ fhir:v "Codes used to specify WHO-5 answers to the second question about being calm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesHappy> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5AnswerCodesHappy" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5AnswerCodesHappy" ] ;
+       fhir:description [ fhir:v "Codes used to specify WHO-5 answers to the first question about being happy" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesInterest> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5AnswerCodesInterest" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5AnswerCodesInterest" ] ;
+       fhir:description [ fhir:v "Codes used to specify WHO-5 answers to the fifth question about being interested" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesRested> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5AnswerCodesRested" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5AnswerCodesRested" ] ;
+       fhir:description [ fhir:v "Codes used to specify WHO-5 answers to the fourth question about being rested" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5SCTfindingsActive3> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5SCTfindingsActive3" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5SCTfindingsActive3" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings when conducting WHO-5 questionaires, question 3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5SCTfindingsCalm2> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5SCTfindingsCalm2" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5SCTfindingsCalm2" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings when conducting WHO-5 questionaires, question 2" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5SCTfindingsHappy1> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5SCTfindingsHappy1" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5SCTfindingsHappy1" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings when conducting WHO-5 questionaires, question 1" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5SCTfindingsInterest5> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5SCTfindingsInterest5" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5SCTfindingsInterest5" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings when conducting WHO-5 questionaires, question 5" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5SCTfindingsRested4> ;
+         fhir:reference [ fhir:v "ValueSet/WHO5SCTfindingsRested4" ]
+       ] ;
+       fhir:name [ fhir:v "WHO5SCTfindingsRested4" ] ;
+       fhir:description [ fhir:v "SNOMED CT findings when conducting WHO-5 questionaires, question 4" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

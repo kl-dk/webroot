@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HelenePainVRS"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVRS"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="HelenePainVRS"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;HelenePainVRS&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLToolsCarePainVRS.html">Pain VRS</a></p></div><p><b>AssociatedConditions</b>: Pain <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#22253000)</span></p><p><b>FindingInformer</b>: Borger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-KLToolsCodes.html">KLToolsCodes</a>#a3d30bf2-4a3c-4c49-9001-5363ae11681c)</span></p><p><b>status</b>: final</p><p><b>code</b>: Verbal Rating Scale pain intensity score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1144798005)</span></p><p><b>subject</b>: <a href="Patient-Helene.html">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>value</b>: Kraftige/svære smerter (3) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-KLToolsCodes.html">KLToolsCodes</a>#d253770d-ce0b-4320-9806-b8fbe9e5af8a; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#76948002 &quot;Severe pain (finding)&quot;)</span></p></div>
+  </text>
+  <extension url="http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="22253000"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://fhir.kl.dk/ffinst/StructureDefinition/FindingInformer">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"/>
+        <code value="a3d30bf2-4a3c-4c49-9001-5363ae11681c"/>
+        <display value="Borger"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1144798005"/>
+      <display value="Verbal Rating Scale pain intensity score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Helene"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"/>
+      <code value="d253770d-ce0b-4320-9806-b8fbe9e5af8a"/>
+      <display value="Kraftige/svære smerter (3)"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="76948002"/>
+      <display value="Severe pain (finding)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

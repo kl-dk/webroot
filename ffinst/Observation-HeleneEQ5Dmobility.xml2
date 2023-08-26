@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HeleneEQ5Dmobility"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareEQ5DObservationMobility"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="HeleneEQ5Dmobility"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;HeleneEQ5Dmobility&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLToolsCareEQ5DObservationMobility.html">EQ-5D mobility</a></p></div><p><b>AssociatedConditions</b>: Finding related to ability to perform gross motor function <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#364832000)</span></p><p><b>status</b>: final</p><p><b>code</b>: Ability to mobilize <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#301438001)</span></p><p><b>subject</b>: <a href="Patient-Helene.html">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>performer</b>: <a href="Practitioner-AbrahamFraAkutSygeplejen.html">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: Difficulty walking <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#719232003; <a href="CodeSystem-KLToolsCodes.html">KLToolsCodes</a>#95be0ff6-ab05-4918-be8e-6dbb820366bb &quot;Jeg har nogle problemer med at gå omkring (2)&quot;)</span></p><p><b>method</b>: Ingen problemer med test-setup og borgers udførelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-KLToolsCodes.html">KLToolsCodes</a>#4a069078-c3c3-4c67-899d-4e8876026f48Ja)</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-EQ5DAnswerHelene.html">QuestionnaireResponse/EQ5DAnswerHelene</a></p></div>
+  </text>
+  <extension url="http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="364832000"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="301438001"/>
+      <display value="Ability to mobilize"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Helene"/>
+  </subject>
+  <performer>
+    <reference value="Practitioner/AbrahamFraAkutSygeplejen"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="719232003"/>
+      <display value="Difficulty walking"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"/>
+      <code value="95be0ff6-ab05-4918-be8e-6dbb820366bb"/>
+      <display value="Jeg har nogle problemer med at gå omkring (2)"/>
+    </coding>
+  </valueCodeableConcept>
+  <method>
+    <coding>
+      <system value="http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"/>
+      <code value="4a069078-c3c3-4c67-899d-4e8876026f48Ja"/>
+      <display value="Ingen problemer med test-setup og borgers udførelse"/>
+    </coding>
+  </method>
+  <derivedFrom>
+    <reference value="QuestionnaireResponse/EQ5DAnswerHelene"/>
+  </derivedFrom>
+</Observation>

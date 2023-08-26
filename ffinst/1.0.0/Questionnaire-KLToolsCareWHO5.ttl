@@ -1,0 +1,130 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareWHO5> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLToolsCareWHO5"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareWHO5"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "KLToolsCareWHO5"] ; # 
+  fhir:title [ fhir:v "WHO-5 questionnaire"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-08-26T16:15:04+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Instrument til at måle graden af positive oplevelser, og som kan anvendes som et mål for personers generelle trivsel eller velbefindende. Tidsrammen er de seneste to uger."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:code ( [
+     a sct:1144665009 ;
+     fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1144665009" ]
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "happy" ] ;
+     fhir:code ( [
+       a sct:285854004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "285854004" ]
+     ] ) ;
+     fhir:text [ fhir:v "I de sidste 2 uger har jeg været glad og i godt humør" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesHappy"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesHappy>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "calm" ] ;
+     fhir:code ( [
+       a sct:285854004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "285854004" ]
+     ] ) ;
+     fhir:text [ fhir:v "I de sidste 2 uger har jeg følt mig rolig og afslappet" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesCalm"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesCalm>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "active" ] ;
+     fhir:code ( [
+       a sct:406202006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "406202006" ]
+     ] ) ;
+     fhir:text [ fhir:v "I de sidste 2 uger har jeg følt mig aktiv og energisk" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesActive"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesActive>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "rested" ] ;
+     fhir:code ( [
+       a sct:404949004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "404949004" ]
+     ] ) ;
+     fhir:text [ fhir:v "I de sidste 2 uger er jeg vågnet frisk og udhvilet" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesRested"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesRested>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "interest" ] ;
+     fhir:code ( [
+       a sct:247752005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "247752005" ]
+     ] ) ;
+     fhir:text [ fhir:v "I de sidste 2 uger har min dagligdag været fyldt med ting der interesserer mig" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesInterest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesInterest>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "who5comment" ] ;
+     fhir:text [ fhir:v "Kommentar til WHO5" ] ;
+     fhir:type [ fhir:v "text" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="KLToolsCareEQ5D"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareEQ5D"/>
+  <version value="1.0.0"/>
+  <name value="KLToolsCareEQ5D"/>
+  <title value="EQ-5D questionnaire"/>
+  <status value="draft"/>
+  <date value="2023-08-26T16:24:28+02:00"/>
+  <publisher value="Kommunernes landsforening"/>
+  <contact>
+    <name value="Kommunernes landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kl@kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Ikke-sygdomsspecifikt spørgeskema til at vurdere helbredsrelateret livskvalitet. Tidsrammen for borgers vurdering er borgers aktuelle tilstand (i dag)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DNK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <code>
+    <system value="http://snomed.info/sct"/>
+    <code value="1144655003"/>
+  </code>
+  <item>
+    <linkId value="mobility"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="301438001"/>
+    </code>
+    <text value="Bevægelighed"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/EQ5Dmobility"/>
+  </item>
+  <item>
+    <linkId value="hygiene"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="284773001"/>
+    </code>
+    <text value="Personlig pleje"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/EQ5Dhygiene"/>
+  </item>
+  <item>
+    <linkId value="activity"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="284545001"/>
+    </code>
+    <text value="Sædvanlige aktiviteter (fx arbejde, studie, husarbejde, familie- eller fritidsaktiviteter)"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/EQ5Dactivity"/>
+  </item>
+  <item>
+    <linkId value="pain"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="364624006"/>
+    </code>
+    <text value="Smerter/ubehag"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/EQ5Dpain"/>
+  </item>
+  <item>
+    <linkId value="anxiety"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="285854004"/>
+    </code>
+    <text value="Angst/Depression"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="http://fhir.kl.dk/ffinst/ValueSet/EQ5Danxiety"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/maxValue">
+      <valueInteger value="100"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/minValue">
+      <valueInteger value="0"/>
+    </extension>
+    <linkId value="vas"/>
+    <code>
+      <system value="http://snomed.info/sct"/>
+      <code value="736535009"/>
+    </code>
+    <text value="EQ-VAS-score"/>
+    <type value="integer"/>
+    <repeats value="false"/>
+  </item>
+  <item>
+    <linkId value="eq5dcomment"/>
+    <text value="Kommentar til EQ-5D"/>
+    <type value="text"/>
+    <repeats value="false"/>
+  </item>
+</Questionnaire>

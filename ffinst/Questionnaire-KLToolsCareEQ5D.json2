@@ -1,0 +1,120 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "KLToolsCareEQ5D",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareEQ5D",
+  "version" : "1.0.0",
+  "name" : "KLToolsCareEQ5D",
+  "title" : "EQ-5D questionnaire",
+  "status" : "draft",
+  "date" : "2023-08-26T16:24:28+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Ikke-sygdomsspecifikt spørgeskema til at vurdere helbredsrelateret livskvalitet. Tidsrammen for borgers vurdering er borgers aktuelle tilstand (i dag).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "code" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "1144655003"
+  }],
+  "item" : [{
+    "linkId" : "mobility",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "301438001"
+    }],
+    "text" : "Bevægelighed",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dmobility"
+  },
+  {
+    "linkId" : "hygiene",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "284773001"
+    }],
+    "text" : "Personlig pleje",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dhygiene"
+  },
+  {
+    "linkId" : "activity",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "284545001"
+    }],
+    "text" : "Sædvanlige aktiviteter (fx arbejde, studie, husarbejde, familie- eller fritidsaktiviteter)",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dactivity"
+  },
+  {
+    "linkId" : "pain",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "364624006"
+    }],
+    "text" : "Smerter/ubehag",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dpain"
+  },
+  {
+    "linkId" : "anxiety",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "285854004"
+    }],
+    "text" : "Angst/Depression",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/EQ5Danxiety"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/maxValue",
+      "valueInteger" : 100
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/minValue",
+      "valueInteger" : 0
+    }],
+    "linkId" : "vas",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "736535009"
+    }],
+    "text" : "EQ-VAS-score",
+    "type" : "integer",
+    "repeats" : false
+  },
+  {
+    "linkId" : "eq5dcomment",
+    "text" : "Kommentar til EQ-5D",
+    "type" : "text",
+    "repeats" : false
+  }]
+}

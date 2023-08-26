@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/Observation/Helene6minwalk> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Helene6minwalk"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCare6minwalk"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCare6minwalk>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Helene6minwalk\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Helene6minwalk&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLToolsCare6minwalk.html\">6 min walk</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Six minute walk test distance (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1144649008)</span></p><p><b>subject</b>: <a href=\"Patient-Helene.html\">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>value</b>: 350 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code m = 'm')</span></p><p><b>note</b>: Borger støttede sig kortvarrigt til møbler to gange i løbet af testen. Hun fortsatte på min opfordring, så snart hun havde fået balancen</p><p><b>method</b>: Afvigelse i borgers udførelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#17772b27-bc9d-4d62-9515-d268a98a3a27; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#761996005)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1144649008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1144649008" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/ffinst/Patient/Helene> ;
+     fhir:reference [ fhir:v "Patient/Helene" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "350"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "m" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Borger støttede sig kortvarrigt til møbler to gange i løbet af testen. Hun fortsatte på min opfordring, så snart hun havde fået balancen" ]
+  ] ) ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "17772b27-bc9d-4d62-9515-d268a98a3a27" ]
+     ] [
+       a sct:761996005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "761996005" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

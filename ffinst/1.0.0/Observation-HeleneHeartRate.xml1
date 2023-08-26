@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HeleneHeartRate"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareHeartRate"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="HeleneHeartRate"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;HeleneHeartRate&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-KLToolsCareHeartRate.html">Heart Rate</a></p></div><p><b>AssociatedConditions</b>: Cardiovascular finding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#106063007)</span></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Heart rate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8867-4; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#364075005)</span></p><p><b>subject</b>: <a href="Patient-Helene.html">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>effective</b>: 2019-01-09 17:45:00+0000</p><p><b>value</b>: 88 slag/minut<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p><p><b>method</b>: Ingen problemer med test-setup og borgers udførelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-KLToolsCodes.html">KLToolsCodes</a>#4a069078-c3c3-4c67-899d-4e8876026f48Ja; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#272391002)</span></p></div>
+  </text>
+  <extension url="http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="106063007"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8867-4"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="364075005"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Helene"/>
+  </subject>
+  <effectiveDateTime value="2019-01-09T17:45:00.000Z"/>
+  <valueQuantity>
+    <value value="88"/>
+    <unit value="slag/minut"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/min"/>
+  </valueQuantity>
+  <method>
+    <coding>
+      <system value="http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes"/>
+      <code value="4a069078-c3c3-4c67-899d-4e8876026f48Ja"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="272391002"/>
+    </coding>
+  </method>
+</Observation>

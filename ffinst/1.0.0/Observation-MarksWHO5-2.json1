@@ -1,0 +1,54 @@
+{
+  "resourceType" : "Observation",
+  "id" : "MarksWHO5-2",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsWHO5ObservationCalm2"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MarksWHO5-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MarksWHO5-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLToolsWHO5ObservationCalm2.html\">WHO-5 calm (2)</a></p></div><p><b>AssociatedConditions</b>: Emotional state finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#106126000)</span></p><p><b>status</b>: final</p><p><b>code</b>: Emotion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#285854004)</span></p><p><b>subject</b>: <a href=\"Patient-Mark.html\">Patient/Mark</a> &quot; JENSEN&quot;</p><p><b>performer</b>: <a href=\"Practitioner-AbrahamFraAkutSygeplejen.html\">Practitioner/AbrahamFraAkutSygeplejen</a> &quot; MURAKAMI&quot;</p><p><b>value</b>: WHO-5 Lidt mere end halvdelen af tiden - 3 (rolig) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#48694002; <a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#1ab11c78-6258-4069-9065-0f076833b133)</span></p><p><b>method</b>: Ingen problemer med test-setup og borgers udførelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#4a069078-c3c3-4c67-899d-4e8876026f48Ja)</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-WHO-5AnswerMark.html\">QuestionnaireResponse/WHO-5AnswerMark</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "106126000"
+      }]
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "285854004"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Mark"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/AbrahamFraAkutSygeplejen"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "48694002"
+    },
+    {
+      "system" : "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes",
+      "code" : "1ab11c78-6258-4069-9065-0f076833b133",
+      "display" : "WHO-5 Lidt mere end halvdelen af tiden - 3 (rolig)"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes",
+      "code" : "4a069078-c3c3-4c67-899d-4e8876026f48Ja",
+      "display" : "Ingen problemer med test-setup og borgers udførelse"
+    }]
+  },
+  "derivedFrom" : [{
+    "reference" : "QuestionnaireResponse/WHO-5AnswerMark"
+  }]
+}

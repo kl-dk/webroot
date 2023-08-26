@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KL.DK.FHIR.FFINST\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide for fælles faglige instrumenter (FFInst)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLFFinst (v1.0.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.kl.dk/ffinst/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCare6minwalk.html"
+                     title="StructureDefinition/KLToolsCare6minwalk">6 min walk</a>
+               </td>
+               <td>
+<p>6 minutes walking test, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareBloodPressure.html"
+                     title="StructureDefinition/KLToolsCareBloodPressure">Blood pressure</a>
+               </td>
+               <td>
+<p>Profile of HL7 Blood pressure profile used in Danish Municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareBodyHeight.html"
+                     title="StructureDefinition/KLToolsCareBodyHeight">Body height</a>
+               </td>
+               <td>
+<p>Body height profile used in Danish Municipalities, derived from HL7 standard profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareBodyTemperature.html"
+                     title="StructureDefinition/KLToolsCareBodyTemperature">Body temperature</a>
+               </td>
+               <td>
+<p>Profile of HL7 body temeprature profile used in Danish Municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareBodyWeight.html"
+                     title="StructureDefinition/KLToolsCareBodyWeight">Body weight</a>
+               </td>
+               <td>
+<p>Profile of HL7 body weight profile used in Danish Municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareRSS.html"
+                     title="StructureDefinition/KLToolsCareRSS">Chair stand test (RSS)</a>
+               </td>
+               <td>
+<p>Thirty second chair stand test score, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareConsciousness.html"
+                     title="StructureDefinition/KLToolsCareConsciousness">Consciousness assessment</a>
+               </td>
+               <td>
+<p>Level of consciousness assessment as defined by TOBS, as performed in Danish municipalities. TOBS is Danish for early disease detection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareEQ5DObservationActivity.html"
+                     title="StructureDefinition/KLToolsCareEQ5DObservationActivity">EQ-5D activity</a>
+               </td>
+               <td>
+<p>EQ-5D Activity observation, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareEQ5DObservationAnxiety.html"
+                     title="StructureDefinition/KLToolsCareEQ5DObservationAnxiety">EQ-5D anxiety</a>
+               </td>
+               <td>
+<p>EQ5D Anxiety observation, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareEQ5DObservationHygiene.html"
+                     title="StructureDefinition/KLToolsCareEQ5DObservationHygiene">EQ-5D hygiene</a>
+               </td>
+               <td>
+<p>EQ5D Hygiene observation, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareEQ5DObservationMobility.html"
+                     title="StructureDefinition/KLToolsCareEQ5DObservationMobility">EQ-5D mobility</a>
+               </td>
+               <td>
+<p>EQ5D mobility observation, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareEQ5DObservationPain.html"
+                     title="StructureDefinition/KLToolsCareEQ5DObservationPain">EQ-5D pain</a>
+               </td>
+               <td>
+<p>EQ5D Pain observation, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsQuestionnaire.html"
+                     title="StructureDefinition/KLToolsQuestionnaire">General questionnaire</a>
+               </td>
+               <td>
+<p>Questionnaire profile, for all Questionaires in KLTools</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareHeartRate.html"
+                     title="StructureDefinition/KLToolsCareHeartRate">Heart Rate</a>
+               </td>
+               <td>
+<p>Heart rate profile used in Danish Municipalities, derived from HL7 heart rate profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareOxygenSaturation.html"
+                     title="StructureDefinition/KLToolsCareOxygenSaturation">Oxygen saturation</a>
+               </td>
+               <td>
+<p>Oxygen saturation profile as used in Danish Municipalities, derived from HL7 oxygen saturation profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCarePainVRS.html"
+                     title="StructureDefinition/KLToolsCarePainVRS">Pain VRS</a>
+               </td>
+               <td>
+<p>Pain intensity evaluation using a verbal rating scale, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCarePainVAS.html"
+                     title="StructureDefinition/KLToolsCarePainVAS">PainVAS</a>
+               </td>
+               <td>
+<p>Pain intensity evaluation using a visual analog scale, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsQuestionnaireResponse.html"
+                     title="StructureDefinition/KLToolsQuestionnaireResponse">Questionnaire response</a>
+               </td>
+               <td>
+<p>Questionnaire response profile, for all Questionaires in KLTools</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareRespirationRate.html"
+                     title="StructureDefinition/KLToolsCareRespirationRate">Respiration rate</a>
+               </td>
+               <td>
+<p>Respiration rate profile used in Danish Municipalities, derived from HL7 respiration rate profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsCareUrinStix.html"
+                     title="StructureDefinition/KLToolsCareUrinStix">Urin Stix</a>
+               </td>
+               <td>
+<p>Urin stix result, as performed in Danish municipalities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsWHO5ObservationInterest5.html"
+                     title="StructureDefinition/KLToolsWHO5ObservationInterest5">WHO-5 Interest (5)</a>
+               </td>
+               <td>
+<p>WHO5 observation, for the fifth question about being interested</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsWHO5ObservationActive3.html"
+                     title="StructureDefinition/KLToolsWHO5ObservationActive3">WHO-5 active (3)</a>
+               </td>
+               <td>
+<p>WHO5 observation, for the third question about being active</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsWHO5ObservationCalm2.html"
+                     title="StructureDefinition/KLToolsWHO5ObservationCalm2">WHO-5 calm (2)</a>
+               </td>
+               <td>
+<p>WHO5 observation, for the second question about feeling calm</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsWHO5ObservationHappy1.html"
+                     title="StructureDefinition/KLToolsWHO5ObservationHappy1">WHO-5 happy (1)</a>
+               </td>
+               <td>
+<p>WHO5 observation, for the first question about feeling happy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-KLToolsWHO5ObservationRested4.html"
+                     title="StructureDefinition/KLToolsWHO5ObservationRested4">WHO-5 rested (4)</a>
+               </td>
+               <td>
+<p>WHO5 observation, for the fourth question about being rested</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AssociatedConditions.html"
+                     title="StructureDefinition/AssociatedConditions">AssociatedConditions</a>
+               </td>
+               <td>
+<p>Extension for pointing to Condition codes, for which the observation might be usefull</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-FindingInformer.html"
+                     title="StructureDefinition/FindingInformer">FindingInformer</a>
+               </td>
+               <td>
+<p>Extension for pointing to who the source of information is</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Technique.html"
+                     title="StructureDefinition/Technique">Technique</a>
+               </td>
+               <td>
+<p>Extension for pointing to the techniqe used to obtain the result of a questionaire</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-BodyheightSCTobservables.html"
+                     title="ValueSet/BodyheightSCTobservables">BodyheightSCTobservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for height</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-BodyweightSCTobservables.html"
+                     title="ValueSet/BodyweightSCTobservables">BodyweightSCTobservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for weight</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ConsciousnessCodes.html"
+                     title="ValueSet/ConsciousnessCodes">ConsciousnessCodes</a>
+               </td>
+               <td>
+<p>Findings for Counsciousness</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ConsciousnessSCTFindings.html"
+                     title="ValueSet/ConsciousnessSCTFindings">ConsciousnessSCTFindings</a>
+               </td>
+               <td>
+<p>SNOMED CT findings for consciousness</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-DiastolicBloodPressureSCTObservables.html"
+                     title="ValueSet/DiastolicBloodPressureSCTObservables">DiastolicBloodPressureSCTObservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for diastolic blood pressure</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5DSCTfindingsActivity.html"
+                     title="ValueSet/EQ5DSCTfindingsActivity">EQ5DSCTfindingsActivity</a>
+               </td>
+               <td>
+<p>SNOMED CT Findings for EQ-5D activity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5DSCTfindingsAnxiety.html"
+                     title="ValueSet/EQ5DSCTfindingsAnxiety">EQ5DSCTfindingsAnxiety</a>
+               </td>
+               <td>
+<p>SNOMED CT findings for EQ-5D Anxiety</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5DSCTfindingsHygiene.html"
+                     title="ValueSet/EQ5DSCTfindingsHygiene">EQ5DSCTfindingsHygiene</a>
+               </td>
+               <td>
+<p>SNOMED CT findings for EQ-5D hygiene</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5DSCTfindingsMobility.html"
+                     title="ValueSet/EQ5DSCTfindingsMobility">EQ5DSCTfindingsMobility</a>
+               </td>
+               <td>
+<p>SNOMED CT findings for EQ-5D mobility</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5DSCTfindingsPain.html"
+                     title="ValueSet/EQ5DSCTfindingsPain">EQ5DSCTfindingsPain</a>
+               </td>
+               <td>
+<p>SNOMED CT findings for EQ-5D pain</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5Dactivity.html" title="ValueSet/EQ5Dactivity">EQ5Dactivity</a>
+               </td>
+               <td>
+<p>Findings for EQ-5D activity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5Danxiety.html" title="ValueSet/EQ5Danxiety">EQ5Danxiety</a>
+               </td>
+               <td>
+<p>Findings for EQ-5D anxiety</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5Dhygiene.html" title="ValueSet/EQ5Dhygiene">EQ5Dhygiene</a>
+               </td>
+               <td>
+<p>Findings for EQ-5D hygiene</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5Dmobility.html" title="ValueSet/EQ5Dmobility">EQ5Dmobility</a>
+               </td>
+               <td>
+<p>Findings for EQ-5D mobility</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EQ5Dpain.html" title="ValueSet/EQ5Dpain">EQ5Dpain</a>
+               </td>
+               <td>
+<p>Findings for EQ-5D pain</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-FindingInformerCodes.html"
+                     title="ValueSet/FindingInformerCodes">FindingInformerCodes</a>
+               </td>
+               <td>
+<p>Codes for who informed the findings</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-HeartRateSCTobservables.html"
+                     title="ValueSet/HeartRateSCTobservables">HeartRateSCTobservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for heart rate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-KLtechniquesCodes.html"
+                     title="ValueSet/KLtechniquesCodes">KLtechniquesCodes</a>
+               </td>
+               <td>
+<p>Codes for the techniqe used when obtaining an observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-NPUUrinStix.html" title="ValueSet/NPUUrinStix">NPUUrinStix</a>
+               </td>
+               <td>
+<p>NPU observables for urin stix</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OxygenSaturationSCTobservables.html"
+                     title="ValueSet/OxygenSaturationSCTobservables">OxygenSaturationSCTobservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for oxygen saturation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-RespirationRateSCTObservables.html"
+                     title="ValueSet/RespirationRateSCTObservables">RespirationRateSCTObservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for respiratory rate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-SCTUrinStix.html" title="ValueSet/SCTUrinStix">SCTUrinStix</a>
+               </td>
+               <td>
+<p>SNOMED CT evaluation procedure codes for urin stix</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-SystolicBloodPressureSCTObservables.html"
+                     title="ValueSet/SystolicBloodPressureSCTObservables">SystolicBloodPressureSCTObservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for systolic blood pressure</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-TechniqesSCTCodes.html"
+                     title="ValueSet/TechniqesSCTCodes">TechniqesSCTCodes</a>
+               </td>
+               <td>
+<p>SNOMED CT Codes for the techniqe used when obtaining an observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-BodyTemperatureSCTObservables.html"
+                     title="ValueSet/BodyTemperatureSCTObservables">TemperatureSCTObservables</a>
+               </td>
+               <td>
+<p>SNOMED CT observables for temperature</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VRSSCTfindingsPain.html"
+                     title="ValueSet/VRSSCTfindingsPain">VRSSCTfindingsPain</a>
+               </td>
+               <td>
+<p>SNOMED CT findings for VRS pain</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VRSpain.html" title="ValueSet/VRSpain">VRSpain</a>
+               </td>
+               <td>
+<p>Findings for VRS pain</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5AnswerCodesActive.html"
+                     title="ValueSet/WHO5AnswerCodesActive">WHO5AnswerCodesActive</a>
+               </td>
+               <td>
+<p>Codes used to specify WHO-5 answers to the third question about being active</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5AnswerCodesCalm.html"
+                     title="ValueSet/WHO5AnswerCodesCalm">WHO5AnswerCodesCalm</a>
+               </td>
+               <td>
+<p>Codes used to specify WHO-5 answers to the second question about being calm</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5AnswerCodesHappy.html"
+                     title="ValueSet/WHO5AnswerCodesHappy">WHO5AnswerCodesHappy</a>
+               </td>
+               <td>
+<p>Codes used to specify WHO-5 answers to the first question about being happy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5AnswerCodesInterest.html"
+                     title="ValueSet/WHO5AnswerCodesInterest">WHO5AnswerCodesInterest</a>
+               </td>
+               <td>
+<p>Codes used to specify WHO-5 answers to the fifth question about being interested</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5AnswerCodesRested.html"
+                     title="ValueSet/WHO5AnswerCodesRested">WHO5AnswerCodesRested</a>
+               </td>
+               <td>
+<p>Codes used to specify WHO-5 answers to the fourth question about being rested</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5SCTfindingsActive3.html"
+                     title="ValueSet/WHO5SCTfindingsActive3">WHO5SCTfindingsActive3</a>
+               </td>
+               <td>
+<p>SNOMED CT findings when conducting WHO-5 questionaires, question 3</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5SCTfindingsCalm2.html"
+                     title="ValueSet/WHO5SCTfindingsCalm2">WHO5SCTfindingsCalm2</a>
+               </td>
+               <td>
+<p>SNOMED CT findings when conducting WHO-5 questionaires, question 2</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5SCTfindingsHappy1.html"
+                     title="ValueSet/WHO5SCTfindingsHappy1">WHO5SCTfindingsHappy1</a>
+               </td>
+               <td>
+<p>SNOMED CT findings when conducting WHO-5 questionaires, question 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5SCTfindingsInterest5.html"
+                     title="ValueSet/WHO5SCTfindingsInterest5">WHO5SCTfindingsInterest5</a>
+               </td>
+               <td>
+<p>SNOMED CT findings when conducting WHO-5 questionaires, question 5</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-WHO5SCTfindingsRested4.html"
+                     title="ValueSet/WHO5SCTfindingsRested4">WHO5SCTfindingsRested4</a>
+               </td>
+               <td>
+<p>SNOMED CT findings when conducting WHO-5 questionaires, question 4</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-KLToolsCodes.html" title="CodeSystem/KLToolsCodes">KLToolsCodes</a>
+               </td>
+               <td>
+<p>Codes associated with KLTools, which is not part of KLCommonCareSocial, or international terminologies</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-AbrahamFraAkutSygeplejen.html"
+                     title="Practitioner/AbrahamFraAkutSygeplejen">AbrahamFraAkutSygeplejen</a>
+               </td>
+               <td>
+<p>Eksempel på medarbejderen Abraham fra akutsygeplejen</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-KLToolsCareEQ5D.html"
+                     title="Questionnaire/KLToolsCareEQ5D">EQ-5D questionnaire</a>
+               </td>
+               <td>
+<p>Ikke-sygdomsspecifikt spørgeskema til at vurdere helbredsrelateret livskvalitet. Tidsrammen for borgers vurdering er borgers aktuelle tilstand (i dag).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-EQ5DAnswerHelene.html"
+                     title="QuestionnaireResponse/EQ5DAnswerHelene">EQ5DAnswersHelene</a>
+               </td>
+               <td>
+<p>EQ5D BesvarelseHelene</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-Helene.html" title="Patient/Helene">Helene</a>
+               </td>
+               <td>
+<p>Borgeren Helene</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-Helene6minwalk.html"
+                     title="Observation/Helene6minwalk">Helene6minwalk</a>
+               </td>
+               <td>
+<p>Helenes 6minutters gangtest</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneConsciousness.html"
+                     title="Observation/HeleneConsciousness">HeleneBevidsthed</a>
+               </td>
+               <td>
+<p>Helene bevidsthedsniveau</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneBloodPressure.html"
+                     title="Observation/HeleneBloodPressure">HeleneBloodPressure</a>
+               </td>
+               <td>
+<p>Helenes blodtryk</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneBodyHeight.html"
+                     title="Observation/HeleneBodyHeight">HeleneBodyHeight</a>
+               </td>
+               <td>
+<p>Helenes kropshøjde</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneBodyTemperature.html"
+                     title="Observation/HeleneBodyTemperature">HeleneBodyTemperature</a>
+               </td>
+               <td>
+<p>Helenes temperatur</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneBodyWeight.html"
+                     title="Observation/HeleneBodyWeight">HeleneBodyWeight</a>
+               </td>
+               <td>
+<p>Helenes vægt</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneEQ5Dmobility.html"
+                     title="Observation/HeleneEQ5Dmobility">HeleneEQ5D-mobilitet</a>
+               </td>
+               <td>
+<p>Observation af Helenes mobilitet, som udtrykt i EQ5D spørgeskema</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneHeartRate.html"
+                     title="Observation/HeleneHeartRate">HeleneHeartRate</a>
+               </td>
+               <td>
+<p>Helenes puls</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneOxygenSaturation.html"
+                     title="Observation/HeleneOxygenSaturation">HeleneOxygenSaturation</a>
+               </td>
+               <td>
+<p>Helenes oxygenmætning</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HelenePainVAS.html" title="Observation/HelenePainVAS">HelenePainVAS</a>
+               </td>
+               <td>
+<p>Helenes smerte målt med VAS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HelenePainVRS.html" title="Observation/HelenePainVRS">HelenePainVRS</a>
+               </td>
+               <td>
+<p>Helenes smerte målt med VRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneRSS.html" title="Observation/HeleneRSS">HeleneRSS</a>
+               </td>
+               <td>
+<p>Helenes rejse-sætte-sig test</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneRespirationRate.html"
+                     title="Observation/HeleneRespirationRate">HeleneRespirationRate</a>
+               </td>
+               <td>
+<p>Helenes respirationsfrekvens</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HeleneUrinStix.html"
+                     title="Observation/HeleneUrinStix">HeleneUrinStix leukocytter</a>
+               </td>
+               <td>
+<p>Helenes urinstix</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-Mark.html" title="Patient/Mark">Mark</a>
+               </td>
+               <td>
+<p>Borgeren Mark</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-MarksWHO5-2.html" title="Observation/MarksWHO5-2">MarksWHO5-2</a>
+               </td>
+               <td>
+<p>Observation af Marks humør, som udtrykt i WHO5 spørgeskema</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-KLToolsCareWHO5.html"
+                     title="Questionnaire/KLToolsCareWHO5">WHO-5 questionnaire</a>
+               </td>
+               <td>
+<p>Instrument til at måle graden af positive oplevelser, og som kan anvendes som et mål for personers generelle trivsel eller velbefindende. Tidsrammen er de seneste to uger.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-WHO-5AnswerMark.html"
+                     title="QuestionnaireResponse/WHO-5AnswerMark">WHO-5AnswersMark</a>
+               </td>
+               <td>
+<p>WHO-5 besvarelse Mark</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes landsforening</a>.  Package kl.dk.fhir.ffinst#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 26, 2023 16:24+0200">2023-08-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

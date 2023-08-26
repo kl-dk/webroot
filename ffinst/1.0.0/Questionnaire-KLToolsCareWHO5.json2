@@ -1,0 +1,102 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "KLToolsCareWHO5",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareWHO5",
+  "version" : "1.0.0",
+  "name" : "KLToolsCareWHO5",
+  "title" : "WHO-5 questionnaire",
+  "status" : "draft",
+  "date" : "2023-08-26T16:15:04+02:00",
+  "publisher" : "Kommunernes landsforening",
+  "contact" : [{
+    "name" : "Kommunernes landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "kl@kl.dk"
+    }]
+  }],
+  "description" : "Instrument til at måle graden af positive oplevelser, og som kan anvendes som et mål for personers generelle trivsel eller velbefindende. Tidsrammen er de seneste to uger.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DNK",
+      "display" : "Denmark"
+    }]
+  }],
+  "code" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "1144665009"
+  }],
+  "item" : [{
+    "linkId" : "happy",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "285854004"
+    }],
+    "text" : "I de sidste 2 uger har jeg været glad og i godt humør",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesHappy"
+  },
+  {
+    "linkId" : "calm",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "285854004"
+    }],
+    "text" : "I de sidste 2 uger har jeg følt mig rolig og afslappet",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesCalm"
+  },
+  {
+    "linkId" : "active",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "406202006"
+    }],
+    "text" : "I de sidste 2 uger har jeg følt mig aktiv og energisk",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesActive"
+  },
+  {
+    "linkId" : "rested",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "404949004"
+    }],
+    "text" : "I de sidste 2 uger er jeg vågnet frisk og udhvilet",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesRested"
+  },
+  {
+    "linkId" : "interest",
+    "code" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "247752005"
+    }],
+    "text" : "I de sidste 2 uger har min dagligdag været fyldt med ting der interesserer mig",
+    "type" : "choice",
+    "repeats" : false,
+    "answerValueSet" : "http://fhir.kl.dk/ffinst/ValueSet/WHO5AnswerCodesInterest"
+  },
+  {
+    "linkId" : "who5comment",
+    "text" : "Kommentar til WHO5",
+    "type" : "text",
+    "repeats" : false
+  }]
+}

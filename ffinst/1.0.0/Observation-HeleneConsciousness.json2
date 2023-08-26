@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Observation",
+  "id" : "HeleneConsciousness",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCareConsciousness"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HeleneConsciousness\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HeleneConsciousness&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLToolsCareConsciousness.html\">Consciousness assessment</a></p></div><p><b>AssociatedConditions</b>: Consciousness related finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#106167005)</span></p><p><b>status</b>: final</p><p><b>code</b>: Assessment of consciousness level (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#444714004)</span></p><p><b>subject</b>: <a href=\"Patient-Helene.html\">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>value</b>: Reagerer kun på smerte (2) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#0000e850-a51d-4867-a901-dd4c6a2a46a1; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#450847001)</span></p><p><b>method</b>: Ingen problemer med test-setup og borgers udførelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#4a069078-c3c3-4c67-899d-4e8876026f48Ja)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "106167005"
+      }]
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "444714004"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Helene"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes",
+      "code" : "0000e850-a51d-4867-a901-dd4c6a2a46a1"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "450847001"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes",
+      "code" : "4a069078-c3c3-4c67-899d-4e8876026f48Ja"
+    }]
+  }
+}

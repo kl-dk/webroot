@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareEQ5D> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLToolsCareEQ5D"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsQuestionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/ffinst/Questionnaire/KLToolsCareEQ5D"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "KLToolsCareEQ5D"] ; # 
+  fhir:title [ fhir:v "EQ-5D questionnaire"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-08-26T16:24:28+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "kl@kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Ikke-sygdomsspecifikt spørgeskema til at vurdere helbredsrelateret livskvalitet. Tidsrammen for borgers vurdering er borgers aktuelle tilstand (i dag)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DNK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:code ( [
+     a sct:1144655003 ;
+     fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1144655003" ]
+  ] ) ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "mobility" ] ;
+     fhir:code ( [
+       a sct:301438001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "301438001" ]
+     ] ) ;
+     fhir:text [ fhir:v "Bevægelighed" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dmobility"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dmobility>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "hygiene" ] ;
+     fhir:code ( [
+       a sct:284773001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "284773001" ]
+     ] ) ;
+     fhir:text [ fhir:v "Personlig pleje" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dhygiene"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dhygiene>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "activity" ] ;
+     fhir:code ( [
+       a sct:284545001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "284545001" ]
+     ] ) ;
+     fhir:text [ fhir:v "Sædvanlige aktiviteter (fx arbejde, studie, husarbejde, familie- eller fritidsaktiviteter)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dactivity"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dactivity>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "pain" ] ;
+     fhir:code ( [
+       a sct:364624006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "364624006" ]
+     ] ) ;
+     fhir:text [ fhir:v "Smerter/ubehag" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/EQ5Dpain"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Dpain>
+     ]
+  ] [
+     fhir:linkId [ fhir:v "anxiety" ] ;
+     fhir:code ( [
+       a sct:285854004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "285854004" ]
+     ] ) ;
+     fhir:text [ fhir:v "Angst/Depression" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:answerValueSet [
+       fhir:v "http://fhir.kl.dk/ffinst/ValueSet/EQ5Danxiety"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/ffinst/ValueSet/EQ5Danxiety>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/maxValue"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "100"^^xsd:integer ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/minValue"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "0"^^xsd:integer ]
+     ] ) ;
+     fhir:linkId [ fhir:v "vas" ] ;
+     fhir:code ( [
+       a sct:736535009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "736535009" ]
+     ] ) ;
+     fhir:text [ fhir:v "EQ-VAS-score" ] ;
+     fhir:type [ fhir:v "integer" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:linkId [ fhir:v "eq5dcomment" ] ;
+     fhir:text [ fhir:v "Kommentar til EQ-5D" ] ;
+     fhir:type [ fhir:v "text" ] ;
+     fhir:repeats [ fhir:v "false"^^xsd:boolean ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

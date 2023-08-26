@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Observation",
+  "id" : "HelenePainVAS",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/ffinst/StructureDefinition/KLToolsCarePainVAS"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HelenePainVAS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HelenePainVAS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-KLToolsCarePainVAS.html\">PainVAS</a></p></div><p><b>AssociatedConditions</b>: Pain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22253000)</span></p><p><b>FindingInformer</b>: Borger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#a3d30bf2-4a3c-4c49-9001-5363ae11681c)</span></p><p><b>status</b>: final</p><p><b>code</b>: Visual analog scale pain score (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#443394008)</span></p><p><b>subject</b>: <a href=\"Patient-Helene.html\">Patient/Helene</a> &quot; MARKUSSEN&quot;</p><p><b>value</b>: 20</p><p><b>note</b>: Jeg havde ikke en rigtig VAS skala med, så jeg tegnede en på papir, og lod borger pege på den hjemmelavede VAS</p><p><b>method</b>: Afvigelse i test-setup <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-KLToolsCodes.html\">KLToolsCodes</a>#a3231c9a-5569-49c4-8760-4fffbf0b2b80)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.kl.dk/ffinst/StructureDefinition/AssociatedConditions",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "22253000"
+      }]
+    }
+  },
+  {
+    "url" : "http://fhir.kl.dk/ffinst/StructureDefinition/FindingInformer",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes",
+        "code" : "a3d30bf2-4a3c-4c49-9001-5363ae11681c",
+        "display" : "Borger"
+      }]
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "443394008"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Helene"
+  },
+  "valueInteger" : 20,
+  "note" : [{
+    "text" : "Jeg havde ikke en rigtig VAS skala med, så jeg tegnede en på papir, og lod borger pege på den hjemmelavede VAS"
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://fhir.kl.dk/ffinst/CodeSystem/KLToolsCodes",
+      "code" : "a3231c9a-5569-49c4-8760-4fffbf0b2b80",
+      "display" : "Afvigelse i test-setup"
+    }]
+  }
+}
