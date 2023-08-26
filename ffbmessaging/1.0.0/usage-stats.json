@@ -1,0 +1,231 @@
+{
+  "package": "kl.dk.fhir.ffbmessaging",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DK",
+  "extensions": [
+    {
+      "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-actingMunicipality",
+      "title": "ActingMunicipality",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-guardianshipForm",
+      "title": "GuardianshipForm",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-participationDescription",
+      "title": "ParticipationDescription",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Account": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-account",
+        "title": "Account"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-participatingOrganization",
+        "title": "ParticipatingOrganization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-citizen",
+        "title": "Citizen"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-interventionGoal",
+        "title": "InterventionGoal"
+      },
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-interventionPurpose",
+        "title": "InterventionPurpose"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-targetGroup",
+        "title": "TargetGroup"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-consent",
+        "title": "Consent"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-documentReference",
+        "title": "DocumentReference"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-matterOfInterest",
+        "title": "MatterOfInterest"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-followUp",
+        "title": "FollowUp"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-relatedPerson",
+        "title": "RelatedPerson"
+      }
+    ],
+    "ClinicalImpression": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-informationGathering",
+        "title": "InformationGathering"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-relatedCarePlan",
+        "title": "RelatedCarePlan"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-orderMessage",
+        "title": "OrderMessage"
+      }
+    ],
+    "MessageHeader": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-orderMessageHeader",
+        "title": "OrderMessageHeader"
+      }
+    ],
+    "CareTeam": [
+      {
+        "url": "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-servicePerformer",
+        "title": "ServicePerformer"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.kl.dk/core/StructureDefinition/BasedOnServiceRequest": [
+      "ClinicalImpression"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/ConditionLastAssertedDate": [
+      "Condition"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/ConditionRank": [
+      "Bundle.entry.resource.addresses",
+      "CarePlan.addresses",
+      "Goal.addresses"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/ExtEventHist": [
+      "Condition"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/FollowUpEncounter": [
+      "Bundle.entry.resource",
+      "CarePlan",
+      "Condition"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/MatterOfInterestInformer": [
+      "Condition.note",
+      "Goal.outcomeCode",
+      "Observation"
+    ],
+    "http://fhir.kl.dk/core/StructureDefinition/MunicipalityCaseNumber": [
+      "CarePlan"
+    ],
+    "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-actingMunicipality": [
+      "Bundle.entry.resource",
+      "CarePlan"
+    ],
+    "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-guardianshipForm": [
+      "Bundle.entry.resource",
+      "RelatedPerson"
+    ],
+    "http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-participationDescription": [
+      "Bundle.entry.resource.participant",
+      "CareTeam.participant"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes": [
+      "Patient.address"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/goal-relationship": [
+      "Goal"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-relevantHistory": [
+      "CarePlan"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

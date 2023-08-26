@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-consentPolicyCodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "kl-messaging-ffb-consentPolicyCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-consentPolicyCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "KLMessagingFFBConsentPolicyCodes"] ; # 
+  fhir:title [ fhir:v "ConsentPolicySystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-08-26T15:37:37+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Consent policy code system for FFB messaging"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "persondataloven" ] ;
+     fhir:display [ fhir:v "Persondataloven, §6-8" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="909e720e-3edb-45b9-aeb2-655a97861f7c"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-orderMessage"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2021-03-15T13:05:37+01:00"/>
+  <entry>
+    <fullUrl value="MessageHeader/da3fe85ebc6147109364d70be0124b18"/>
+    <resource>
+      <MessageHeader>
+        <id value="da3fe85ebc6147109364d70be0124b18"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-orderMessageHeader"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="da3fe85ebc6147109364d70be0124b18"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;da3fe85ebc6147109364d70be0124b18&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-orderMessageHeader.html">OrderMessageHeader</a></p></div><p><b>event</b>: order (Details: http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-messageEventSystem code ffb-order = 'order', stated as 'null')</p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td style="display: none">*</td><td><a href="http://lillested.dk">http://lillested.dk</a></td><td><a href="#Organization_6d109aab-3803-418b-8e5c-b50ea909623f">See above (Organization/6d109aab-3803-418b-8e5c-b50ea909623f)</a></td></tr></table><p><b>sender</b>: <a href="#Organization_a9e0e18b-dbcb-40a1-9f5e-882365ab52d2">See above (Organization/a9e0e18b-dbcb-40a1-9f5e-882365ab52d2)</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="http://xkobing.dk">http://xkobing.dk</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href="#CarePlan_55602964-b665-45bc-ad84-620c42e1761b">See above (CarePlan/55602964-b665-45bc-ad84-620c42e1761b)</a></li><li><a href="#ClinicalImpression_7e54d9df-b563-47f7-a91a-e35c94797090">See above (ClinicalImpression/7e54d9df-b563-47f7-a91a-e35c94797090)</a></li><li><a href="#Account_9a513f98-f63e-4601-8d85-1086452ef1ae">See above (Account/9a513f98-f63e-4601-8d85-1086452ef1ae)</a></li><li><a href="#DocumentReference_26003edb-c0d7-4033-8ac2-62210221b914">See above (DocumentReference/26003edb-c0d7-4033-8ac2-62210221b914)</a></li><li><a href="#DocumentReference_fc6b255b-3336-4b25-85a0-7f31cdf68482">See above (DocumentReference/fc6b255b-3336-4b25-85a0-7f31cdf68482)</a></li></ul></div>
+        </text>
+        <eventCoding>
+          <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-messageEventSystem"/>
+          <code value="ffb-order"/>
+        </eventCoding>
+        <destination>
+          <endpoint value="http://lillested.dk"/>
+          <receiver>
+            <reference value="Organization/6d109aab-3803-418b-8e5c-b50ea909623f"/>
+          </receiver>
+        </destination>
+        <sender>
+          <reference value="Organization/a9e0e18b-dbcb-40a1-9f5e-882365ab52d2"/>
+        </sender>
+        <source>
+          <endpoint value="http://xkobing.dk"/>
+        </source>
+        <focus>
+          <reference value="CarePlan/55602964-b665-45bc-ad84-620c42e1761b"/>
+        </focus>
+        <focus>
+          <reference value="ClinicalImpression/7e54d9df-b563-47f7-a91a-e35c94797090"/>
+        </focus>
+        <focus>
+          <reference value="Account/9a513f98-f63e-4601-8d85-1086452ef1ae"/>
+        </focus>
+        <focus>
+          <reference value="DocumentReference/26003edb-c0d7-4033-8ac2-62210221b914"/>
+        </focus>
+        <focus>
+          <reference value="DocumentReference/fc6b255b-3336-4b25-85a0-7f31cdf68482"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/a9e0e18b-dbcb-40a1-9f5e-882365ab52d2"/>
+    <resource>
+      <Organization>
+        <id value="a9e0e18b-dbcb-40a1-9f5e-882365ab52d2"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-messagingOrganization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="a9e0e18b-dbcb-40a1-9f5e-882365ab52d2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;a9e0e18b-dbcb-40a1-9f5e-882365ab52d2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-messagingOrganization.html">MessagingOrganization</a></p></div><p><b>name</b>: X-Købing kommune</p></div>
+        </text>
+        <name value="X-Købing kommune"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/6d109aab-3803-418b-8e5c-b50ea909623f"/>
+    <resource>
+      <Organization>
+        <id value="6d109aab-3803-418b-8e5c-b50ea909623f"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-messagingOrganization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="6d109aab-3803-418b-8e5c-b50ea909623f"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;6d109aab-3803-418b-8e5c-b50ea909623f&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-messagingOrganization.html">MessagingOrganization</a></p></div><p><b>name</b>: Bostedet Lillested</p></div>
+        </text>
+        <name value="Bostedet Lillested"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/55602964-b665-45bc-ad84-620c42e1761b"/>
+    <resource>
+      <CarePlan>
+        <id value="55602964-b665-45bc-ad84-620c42e1761b"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-orderCarePlan"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="55602964-b665-45bc-ad84-620c42e1761b"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;55602964-b665-45bc-ad84-620c42e1761b&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-orderCarePlan.html">OrderCarePlan</a></p></div><p><b>ActingMunicipality</b>: Gentofte (Details: http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes code 0157 = 'Gentofte', stated as 'null')</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: Social indsats <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#e459386d-1474-4c31-89c5-c8bc7a25e3d4)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>period</b>: 2021-03-22 --&gt; (ongoing)</p><p><b>created</b>: 2021-03-15 13:05:37+0100</p><p><b>author</b>: <a href="#Organization_b524b7d2-3ee2-425e-a640-c5429596e897">See above (Organization/b524b7d2-3ee2-425e-a640-c5429596e897)</a></p><p><b>careTeam</b>: <a href="#CareTeam_66d6b6a4-c39d-493c-945d-73dffabf2549">See above (CareTeam/66d6b6a4-c39d-493c-945d-73dffabf2549)</a></p><p><b>addresses</b>: </p><ul><li><a href="#Condition_0ed08826-25f6-49be-9878-ac2e31bd5d50">See above (Condition/0ed08826-25f6-49be-9878-ac2e31bd5d50)</a></li><li><a href="#Condition_ec882075-693e-4626-9d29-a3f2292352f3">See above (Condition/ec882075-693e-4626-9d29-a3f2292352f3)</a></li><li><a href="#Condition_7528df43-6d4d-4cc1-9c78-ff10e1b1fe5c">See above (Condition/7528df43-6d4d-4cc1-9c78-ff10e1b1fe5c)</a></li><li><a href="#Condition_e875c9a1-d40b-4c09-9897-ab2086c5f9bf">See above (Condition/e875c9a1-d40b-4c09-9897-ab2086c5f9bf)</a></li><li><a href="#Condition_a4ca3cb0-015d-43e7-81e5-19fde059667b">See above (Condition/a4ca3cb0-015d-43e7-81e5-19fde059667b)</a></li></ul><p><b>goal</b>: </p><ul><li><a href="#Goal_76e873e5-7a07-45b7-8247-ab867f3c98a3">See above (Goal/76e873e5-7a07-45b7-8247-ab867f3c98a3)</a></li><li><a href="#Goal_b6f135d6-ac63-401a-bd0c-95bb10c5dae1">See above (Goal/b6f135d6-ac63-401a-bd0c-95bb10c5dae1)</a></li><li><a href="#Goal_ad8bac88-eaad-4365-a25b-954df2fbc9ea">See above (Goal/ad8bac88-eaad-4365-a25b-954df2fbc9ea)</a></li></ul><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>not-started</td><td>Starting 2021-06-15, Once per 1 years</td><td><a href="#Organization_b524b7d2-3ee2-425e-a640-c5429596e897">See above (Organization/b524b7d2-3ee2-425e-a640-c5429596e897)</a></td><td>Første opfølgning på mål er efter 3 mdr.</td></tr></table></blockquote></div>
+        </text>
+        <extension url="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-actingMunicipality">
+          <valueCoding>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
+            <code value="0157"/>
+          </valueCoding>
+        </extension>
+        <status value="active"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="e459386d-1474-4c31-89c5-c8bc7a25e3d4"/>
+          </coding>
+        </category>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <period>
+          <start value="2021-03-22"/>
+        </period>
+        <created value="2021-03-15T13:05:37+01:00"/>
+        <author>
+          <reference value="Organization/b524b7d2-3ee2-425e-a640-c5429596e897"/>
+        </author>
+        <careTeam>
+          <reference value="CareTeam/66d6b6a4-c39d-493c-945d-73dffabf2549"/>
+        </careTeam>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="1"/>
+          </extension>
+          <reference value="Condition/0ed08826-25f6-49be-9878-ac2e31bd5d50"/>
+        </addresses>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="2"/>
+          </extension>
+          <reference value="Condition/ec882075-693e-4626-9d29-a3f2292352f3"/>
+        </addresses>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="2"/>
+          </extension>
+          <reference value="Condition/7528df43-6d4d-4cc1-9c78-ff10e1b1fe5c"/>
+        </addresses>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="2"/>
+          </extension>
+          <reference value="Condition/e875c9a1-d40b-4c09-9897-ab2086c5f9bf"/>
+        </addresses>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="2"/>
+          </extension>
+          <reference value="Condition/a4ca3cb0-015d-43e7-81e5-19fde059667b"/>
+        </addresses>
+        <goal>
+          <reference value="Goal/76e873e5-7a07-45b7-8247-ab867f3c98a3"/>
+        </goal>
+        <goal>
+          <reference value="Goal/b6f135d6-ac63-401a-bd0c-95bb10c5dae1"/>
+        </goal>
+        <goal>
+          <reference value="Goal/ad8bac88-eaad-4365-a25b-954df2fbc9ea"/>
+        </goal>
+        <activity>
+          <detail>
+            <status value="not-started"/>
+            <scheduledTiming>
+              <repeat>
+                <boundsPeriod>
+                  <start value="2021-06-15"/>
+                </boundsPeriod>
+                <frequency value="1"/>
+                <period value="1"/>
+                <periodUnit value="a"/>
+              </repeat>
+            </scheduledTiming>
+            <performer>
+              <reference value="Organization/b524b7d2-3ee2-425e-a640-c5429596e897"/>
+            </performer>
+            <description value="Første opfølgning på mål er efter 3 mdr."/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="ClinicalImpression/7e54d9df-b563-47f7-a91a-e35c94797090"/>
+    <resource>
+      <ClinicalImpression>
+        <id value="7e54d9df-b563-47f7-a91a-e35c94797090"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-informationGathering"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ClinicalImpression</b><a name="7e54d9df-b563-47f7-a91a-e35c94797090"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ClinicalImpression &quot;7e54d9df-b563-47f7-a91a-e35c94797090&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-informationGathering.html">InformationGathering</a></p></div><p><b>status</b>: completed</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><blockquote><p><b>investigation</b></p><p><b>code</b>: FFB vurdering af borgers situation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#053a301d-1bb8-4cc4-b781-87825ecf0ef8)</span></p><p><b>item</b>: <a href="#Observation_c52f2c0d-eed3-4778-a0f3-aa8f65b188b8">See above (Observation/c52f2c0d-eed3-4778-a0f3-aa8f65b188b8)</a></p></blockquote><blockquote><p><b>investigation</b></p><p><b>code</b>: FFB støttebehovsvurdering <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#effe55c7-572c-4a99-8fb4-2a9dda2f6572)</span></p><p><b>item</b>: <a href="#Observation_156149b4-c918-4818-a97a-d81b77d86fba">See above (Observation/156149b4-c918-4818-a97a-d81b77d86fba)</a></p></blockquote><blockquote><p><b>investigation</b></p><p><b>code</b>: VUM Borgerens ressourcer i forhold til indsatsen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#f52887de-023f-4193-b6b0-4b0a37b1cffc)</span></p><p><b>item</b>: <a href="#Observation_9977d0a0-bad7-4607-9ea1-39837246d497">See above (Observation/9977d0a0-bad7-4607-9ea1-39837246d497)</a></p></blockquote><blockquote><p><b>investigation</b></p><p><b>code</b>: VUM Borgerens perspektiv på indsatsen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf)</span></p><p><b>item</b>: <a href="#Observation_a1febca1-8cb3-4a00-a7f1-deefc9e1391e">See above (Observation/a1febca1-8cb3-4a00-a7f1-deefc9e1391e)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href="#Condition_28f1aa94-a993-4b74-b912-18825daa3367">See above (Condition/28f1aa94-a993-4b74-b912-18825daa3367)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href="#Condition_a2af7c52-e74e-4ca9-8185-09b921aec3b4">See above (Condition/a2af7c52-e74e-4ca9-8185-09b921aec3b4)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href="#Condition_71bb3445-cd03-49ad-81e7-845e5567d490">See above (Condition/71bb3445-cd03-49ad-81e7-845e5567d490)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href="#Condition_33a685e3-7b73-4227-be96-927c5773204b">See above (Condition/33a685e3-7b73-4227-be96-927c5773204b)</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemReference</b>: <a href="#Condition_395b861d-8925-4463-b00f-3c74e637518c">See above (Condition/395b861d-8925-4463-b00f-3c74e637518c)</a></p></blockquote></div>
+        </text>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <investigation>
+          <code>
+            <coding>
+              <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+              <code value="053a301d-1bb8-4cc4-b781-87825ecf0ef8"/>
+              <display value="FFB vurdering af borgers situation"/>
+            </coding>
+          </code>
+          <item>
+            <reference value="Observation/c52f2c0d-eed3-4778-a0f3-aa8f65b188b8"/>
+          </item>
+        </investigation>
+        <investigation>
+          <code>
+            <coding>
+              <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+              <code value="effe55c7-572c-4a99-8fb4-2a9dda2f6572"/>
+              <display value="FFB støttebehovsvurdering"/>
+            </coding>
+          </code>
+          <item>
+            <reference value="Observation/156149b4-c918-4818-a97a-d81b77d86fba"/>
+          </item>
+        </investigation>
+        <investigation>
+          <code>
+            <coding>
+              <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+              <code value="f52887de-023f-4193-b6b0-4b0a37b1cffc"/>
+              <display value="VUM Borgerens ressourcer i forhold til indsatsen"/>
+            </coding>
+          </code>
+          <item>
+            <reference value="Observation/9977d0a0-bad7-4607-9ea1-39837246d497"/>
+          </item>
+        </investigation>
+        <investigation>
+          <code>
+            <coding>
+              <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+              <code value="3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf"/>
+              <display value="VUM Borgerens perspektiv på indsatsen"/>
+            </coding>
+          </code>
+          <item>
+            <reference value="Observation/a1febca1-8cb3-4a00-a7f1-deefc9e1391e"/>
+          </item>
+        </investigation>
+        <finding>
+          <itemReference>
+            <reference value="Condition/28f1aa94-a993-4b74-b912-18825daa3367"/>
+          </itemReference>
+        </finding>
+        <finding>
+          <itemReference>
+            <reference value="Condition/a2af7c52-e74e-4ca9-8185-09b921aec3b4"/>
+          </itemReference>
+        </finding>
+        <finding>
+          <itemReference>
+            <reference value="Condition/71bb3445-cd03-49ad-81e7-845e5567d490"/>
+          </itemReference>
+        </finding>
+        <finding>
+          <itemReference>
+            <reference value="Condition/33a685e3-7b73-4227-be96-927c5773204b"/>
+          </itemReference>
+        </finding>
+        <finding>
+          <itemReference>
+            <reference value="Condition/395b861d-8925-4463-b00f-3c74e637518c"/>
+          </itemReference>
+        </finding>
+      </ClinicalImpression>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Goal/76e873e5-7a07-45b7-8247-ab867f3c98a3"/>
+    <resource>
+      <Goal>
+        <id value="76e873e5-7a07-45b7-8247-ab867f3c98a3"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/core/StructureDefinition/KLCommonCareSocialPurpose"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Goal</b><a name="76e873e5-7a07-45b7-8247-ab867f3c98a3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Goal &quot;76e873e5-7a07-45b7-8247-ab867f3c98a3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialPurpose.html">Goal - Purpose</a></p></div><p><b>lifecycleStatus</b>: accepted</p><p><b>category</b>: Indsatsformål <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#424827b1-23aa-4848-962b-56ee47def560)</span></p><p><b>description</b>: At Christian trives i sit hjem og oplever at blive forstået. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <lifecycleStatus value="accepted"/>
+        <category>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="424827b1-23aa-4848-962b-56ee47def560"/>
+          </coding>
+        </category>
+        <description>
+          <text value="At Christian trives i sit hjem og oplever at blive forstået."/>
+        </description>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Goal/b6f135d6-ac63-401a-bd0c-95bb10c5dae1"/>
+    <resource>
+      <Goal>
+        <id value="b6f135d6-ac63-401a-bd0c-95bb10c5dae1"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-interventionGoal"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Goal</b><a name="b6f135d6-ac63-401a-bd0c-95bb10c5dae1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Goal &quot;b6f135d6-ac63-401a-bd0c-95bb10c5dae1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-interventionGoal.html">InterventionGoal</a></p></div><p><b>lifecycleStatus</b>: accepted</p><p><b>category</b>: FFB indsatsmål <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#0bb3daef-538d-45dc-b444-abdbcb63f6bc)</span></p><p><b>description</b>: Jeg laver mad sammen med de andre, der bor på samme bosted <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><blockquote><p><b>target</b></p><p><b>measure</b>: måltype <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#90c48f03-f194-4b2f-ad7d-6cba1069ae48)</span></p><p><b>detail</b>: Udvikle funktionsevne <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#d41c8072-52f8-42b5-9375-ddbea454d27f)</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: funktionsevneniveau <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></p><p><b>detail</b>: Moderat nedsat funktionsevne <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#5bdde847-2837-416b-ab63-bbff8b7aa531)</span></p></blockquote><p><b>addresses</b>: </p><ul><li><a href="#Condition_a2af7c52-e74e-4ca9-8185-09b921aec3b4">See above (Condition/a2af7c52-e74e-4ca9-8185-09b921aec3b4)</a></li><li><a href="#Condition_71bb3445-cd03-49ad-81e7-845e5567d490">See above (Condition/71bb3445-cd03-49ad-81e7-845e5567d490)</a></li><li><a href="#Condition_33a685e3-7b73-4227-be96-927c5773204b">See above (Condition/33a685e3-7b73-4227-be96-927c5773204b)</a></li><li><a href="#Condition_395b861d-8925-4463-b00f-3c74e637518c">See above (Condition/395b861d-8925-4463-b00f-3c74e637518c)</a></li></ul></div>
+        </text>
+        <lifecycleStatus value="accepted"/>
+        <category>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="0bb3daef-538d-45dc-b444-abdbcb63f6bc"/>
+            <display value="FFB indsatsmål"/>
+          </coding>
+        </category>
+        <description>
+          <text value="Jeg laver mad sammen med de andre, der bor på samme bosted"/>
+        </description>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <target>
+          <measure>
+            <coding>
+              <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+              <code value="90c48f03-f194-4b2f-ad7d-6cba1069ae48"/>
+            </coding>
+          </measure>
+          <detailCodeableConcept>
+            <coding>
+              <system value="urn:oid:1.2.208.176.2.22"/>
+              <code value="d41c8072-52f8-42b5-9375-ddbea454d27f"/>
+            </coding>
+          </detailCodeableConcept>
+        </target>
+        <target>
+          <measure>
+            <coding>
+              <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+              <code value="66959f77-6e2a-4574-8423-3ff097f8b9fa"/>
+            </coding>
+          </measure>
+          <detailCodeableConcept>
+            <coding>
+              <system value="urn:oid:1.2.208.176.2.22"/>
+              <code value="5bdde847-2837-416b-ab63-bbff8b7aa531"/>
+            </coding>
+          </detailCodeableConcept>
+        </target>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="1"/>
+          </extension>
+          <reference value="Condition/a2af7c52-e74e-4ca9-8185-09b921aec3b4"/>
+        </addresses>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="2"/>
+          </extension>
+          <reference value="Condition/71bb3445-cd03-49ad-81e7-845e5567d490"/>
+        </addresses>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="2"/>
+          </extension>
+          <reference value="Condition/33a685e3-7b73-4227-be96-927c5773204b"/>
+        </addresses>
+        <addresses>
+          <extension url="http://fhir.kl.dk/core/StructureDefinition/ConditionRank">
+            <valuePositiveInt value="2"/>
+          </extension>
+          <reference value="Condition/395b861d-8925-4463-b00f-3c74e637518c"/>
+        </addresses>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Goal/ad8bac88-eaad-4365-a25b-954df2fbc9ea"/>
+    <resource>
+      <Goal>
+        <id value="ad8bac88-eaad-4365-a25b-954df2fbc9ea"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-citizenObjective"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Goal</b><a name="ad8bac88-eaad-4365-a25b-954df2fbc9ea"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Goal &quot;ad8bac88-eaad-4365-a25b-954df2fbc9ea&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-citizenObjective.html">CitizenObjective</a></p></div><p><b>lifecycleStatus</b>: accepted</p><p><b>category</b>: FFB borgers mål og ønsker <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#416fe27d-3ccf-4390-8742-8b52a9d8dc78)</span></p><p><b>description</b>: Christian drømmer om at bo et sted, hvor han har det godt med pædagogerne og med de andre, der bor der, så han ikke skal flytte igen. Han vil også gerne bruge mere tid på sine bilkort og sammen med sin mor og blive bedre til at lave mad og gøre rent. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <lifecycleStatus value="accepted"/>
+        <category>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="416fe27d-3ccf-4390-8742-8b52a9d8dc78"/>
+          </coding>
+        </category>
+        <description>
+          <text value="Christian drømmer om at bo et sted, hvor han har det godt med pædagogerne og med de andre, der bor der, så han ikke skal flytte igen. Han vil også gerne bruge mere tid på sine bilkort og sammen med sin mor og blive bedre til at lave mad og gøre rent."/>
+        </description>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/0ed08826-25f6-49be-9878-ac2e31bd5d50"/>
+    <resource>
+      <Condition>
+        <id value="0ed08826-25f6-49be-9878-ac2e31bd5d50"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-targetGroup"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="0ed08826-25f6-49be-9878-ac2e31bd5d50"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;0ed08826-25f6-49be-9878-ac2e31bd5d50&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-targetGroup.html">TargetGroup</a></p></div><p><b>code</b>: Autismespektrum <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#9b3fd322-a75a-4ed8-9b74-425fa1e01c95)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="9b3fd322-a75a-4ed8-9b74-425fa1e01c95"/>
+            <display value="Autismespektrum"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/ec882075-693e-4626-9d29-a3f2292352f3"/>
+    <resource>
+      <Condition>
+        <id value="ec882075-693e-4626-9d29-a3f2292352f3"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-targetGroup"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="ec882075-693e-4626-9d29-a3f2292352f3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;ec882075-693e-4626-9d29-a3f2292352f3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-targetGroup.html">TargetGroup</a></p></div><p><b>code</b>: Anden intellektuel/kognitiv forstyrrelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#17ce646b-4469-4a73-82a9-9628436f6c70)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="17ce646b-4469-4a73-82a9-9628436f6c70"/>
+            <display value="Anden intellektuel/kognitiv forstyrrelse"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/7528df43-6d4d-4cc1-9c78-ff10e1b1fe5c"/>
+    <resource>
+      <Condition>
+        <id value="7528df43-6d4d-4cc1-9c78-ff10e1b1fe5c"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-targetGroup"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="7528df43-6d4d-4cc1-9c78-ff10e1b1fe5c"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;7528df43-6d4d-4cc1-9c78-ff10e1b1fe5c&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-targetGroup.html">TargetGroup</a></p></div><p><b>code</b>: Omsorgssvigt <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#f1f4d709-19d2-48cc-8942-231bf912323d)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="f1f4d709-19d2-48cc-8942-231bf912323d"/>
+            <display value="Omsorgssvigt"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/e875c9a1-d40b-4c09-9897-ab2086c5f9bf"/>
+    <resource>
+      <Condition>
+        <id value="e875c9a1-d40b-4c09-9897-ab2086c5f9bf"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-targetGroup"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="e875c9a1-d40b-4c09-9897-ab2086c5f9bf"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;e875c9a1-d40b-4c09-9897-ab2086c5f9bf&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-targetGroup.html">TargetGroup</a></p></div><p><b>code</b>: Social isolation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#16075f99-3694-4878-a48d-b2f4b515cb76)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="16075f99-3694-4878-a48d-b2f4b515cb76"/>
+            <display value="Social isolation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/a4ca3cb0-015d-43e7-81e5-19fde059667b"/>
+    <resource>
+      <Condition>
+        <id value="a4ca3cb0-015d-43e7-81e5-19fde059667b"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-targetGroup"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="a4ca3cb0-015d-43e7-81e5-19fde059667b"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;a4ca3cb0-015d-43e7-81e5-19fde059667b&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-targetGroup.html">TargetGroup</a></p></div><p><b>code</b>: Udadreagerende adfærd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#e1b59a4a-9cc2-4113-a5f1-84af588b02a2)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="e1b59a4a-9cc2-4113-a5f1-84af588b02a2"/>
+            <display value="Udadreagerende adfærd"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/28f1aa94-a993-4b74-b912-18825daa3367"/>
+    <resource>
+      <Condition>
+        <id value="28f1aa94-a993-4b74-b912-18825daa3367"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-disgnosis"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="28f1aa94-a993-4b74-b912-18825daa3367"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;28f1aa94-a993-4b74-b912-18825daa3367&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-disgnosis.html">Diagnosis</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Christian er i 2008 diagnosticeret med autisme, middelsvær metal retardering og kromosomafvigelse 22q11 Deletion jf. lægeattest fra speciallæge Lars Larsen, august 2008. (journalnummer 2008 – 3687) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <text value="Christian er i 2008 diagnosticeret med autisme, middelsvær metal retardering og kromosomafvigelse 22q11 Deletion jf. lægeattest fra speciallæge Lars Larsen, august 2008. (journalnummer 2008 – 3687)"/>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/a2af7c52-e74e-4ca9-8185-09b921aec3b4"/>
+    <resource>
+      <Condition>
+        <id value="a2af7c52-e74e-4ca9-8185-09b921aec3b4"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-condition"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="a2af7c52-e74e-4ca9-8185-09b921aec3b4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;a2af7c52-e74e-4ca9-8185-09b921aec3b4&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-condition.html">Condition</a></p></div><p><b>FollowupEncounter</b>: <a href="#Encounter_9c0b8699-5a96-4af7-8142-a9643aa01510">See above (Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510)</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>severity</b>: Svært nedsat funktionsevne <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#cae545f5-2813-4d79-98fc-0a7d770af3cd)</span></p><p><b>code</b>: Indgå i samspil og kontakt <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#3f9da5ac-9686-4eeb-b517-b46e17fcb1d7)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>recordedDate</b>: 2021-03-03</p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/core/StructureDefinition/FollowUpEncounter">
+          <valueReference>
+            <reference value="Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510"/>
+          </valueReference>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <severity>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="cae545f5-2813-4d79-98fc-0a7d770af3cd"/>
+            <display value="Svært nedsat funktionsevne"/>
+          </coding>
+        </severity>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="3f9da5ac-9686-4eeb-b517-b46e17fcb1d7"/>
+            <display value="Indgå i samspil og kontakt"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <recordedDate value="2021-03-03"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/71bb3445-cd03-49ad-81e7-845e5567d490"/>
+    <resource>
+      <Condition>
+        <id value="71bb3445-cd03-49ad-81e7-845e5567d490"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-condition"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="71bb3445-cd03-49ad-81e7-845e5567d490"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;71bb3445-cd03-49ad-81e7-845e5567d490&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-condition.html">Condition</a></p></div><p><b>FollowupEncounter</b>: <a href="#Encounter_9c0b8699-5a96-4af7-8142-a9643aa01510">See above (Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510)</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Deltage i sociale fællesskaber og fritidsaktiviteter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#dcc6bb77-45af-4625-9c4d-7d7878307220)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>recordedDate</b>: 2021-03-03</p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/core/StructureDefinition/FollowUpEncounter">
+          <valueReference>
+            <reference value="Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510"/>
+          </valueReference>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="dcc6bb77-45af-4625-9c4d-7d7878307220"/>
+            <display value="Deltage i sociale fællesskaber og fritidsaktiviteter"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <recordedDate value="2021-03-03"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/33a685e3-7b73-4227-be96-927c5773204b"/>
+    <resource>
+      <Condition>
+        <id value="33a685e3-7b73-4227-be96-927c5773204b"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-condition"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="33a685e3-7b73-4227-be96-927c5773204b"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;33a685e3-7b73-4227-be96-927c5773204b&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-condition.html">Condition</a></p></div><p><b>FollowupEncounter</b>: <a href="#Encounter_9c0b8699-5a96-4af7-8142-a9643aa01510">See above (Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510)</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Samtale <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#986898d0-e2e5-4afa-9cb3-ee7aecaa0143)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>recordedDate</b>: 2021-03-03</p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/core/StructureDefinition/FollowUpEncounter">
+          <valueReference>
+            <reference value="Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510"/>
+          </valueReference>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="986898d0-e2e5-4afa-9cb3-ee7aecaa0143"/>
+            <display value="Samtale"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <recordedDate value="2021-03-03"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/395b861d-8925-4463-b00f-3c74e637518c"/>
+    <resource>
+      <Condition>
+        <id value="395b861d-8925-4463-b00f-3c74e637518c"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-condition"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="395b861d-8925-4463-b00f-3c74e637518c"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;395b861d-8925-4463-b00f-3c74e637518c&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-condition.html">Condition</a></p></div><p><b>FollowupEncounter</b>: <a href="#Encounter_9c0b8699-5a96-4af7-8142-a9643aa01510">See above (Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510)</a></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Lave mad <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#b947f321-7cdb-4b33-9653-f3ff800572b0)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>recordedDate</b>: 2021-03-03</p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/core/StructureDefinition/FollowUpEncounter">
+          <valueReference>
+            <reference value="Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510"/>
+          </valueReference>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="b947f321-7cdb-4b33-9653-f3ff800572b0"/>
+            <display value="Lave mad"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <recordedDate value="2021-03-03"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Encounter/9c0b8699-5a96-4af7-8142-a9643aa01510"/>
+    <resource>
+      <Encounter>
+        <id value="9c0b8699-5a96-4af7-8142-a9643aa01510"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-followUp"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="9c0b8699-5a96-4af7-8142-a9643aa01510"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;9c0b8699-5a96-4af7-8142-a9643aa01510&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-followUp.html">FollowUp</a></p></div><p><b>status</b>: planned</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: opfølgning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#9f03dfbb-7a97-45a5-94db-d4c3501714a9)</span></p><p><b>period</b>: 2021-06-15 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href="#Organization_b524b7d2-3ee2-425e-a640-c5429596e897">See above (Organization/b524b7d2-3ee2-425e-a640-c5429596e897)</a></p></div>
+        </text>
+        <status value="planned"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="HH"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="9f03dfbb-7a97-45a5-94db-d4c3501714a9"/>
+            <display value="opfølgning"/>
+          </coding>
+        </type>
+        <period>
+          <start value="2021-06-15"/>
+        </period>
+        <serviceProvider>
+          <reference value="Organization/b524b7d2-3ee2-425e-a640-c5429596e897"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/60fcf132-de0a-4aba-bf3e-7ed52a68c9f2"/>
+    <resource>
+      <CarePlan>
+        <id value="60fcf132-de0a-4aba-bf3e-7ed52a68c9f2"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-relatedCarePlan"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="60fcf132-de0a-4aba-bf3e-7ed52a68c9f2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;60fcf132-de0a-4aba-bf3e-7ed52a68c9f2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-relatedCarePlan.html">RelatedCarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>careTeam</b>: <a href="#CareTeam_7829d961-1b91-4c98-893d-d4c20e8b6093">See above (CareTeam/7829d961-1b91-4c98-893d-d4c20e8b6093)</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="order"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <careTeam>
+          <reference value="CareTeam/7829d961-1b91-4c98-893d-d4c20e8b6093"/>
+        </careTeam>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CareTeam/7829d961-1b91-4c98-893d-d4c20e8b6093"/>
+    <resource>
+      <CareTeam>
+        <id value="7829d961-1b91-4c98-893d-d4c20e8b6093"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CareTeam</b><a name="7829d961-1b91-4c98-893d-d4c20e8b6093"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CareTeam &quot;7829d961-1b91-4c98-893d-d4c20e8b6093&quot; </p></div><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Member</b></td></tr><tr><td style="display: none">*</td><td><a href="#Organization_db5d4fb0-0b9d-4e92-a415-05c42b5362b6">See above (Organization/db5d4fb0-0b9d-4e92-a415-05c42b5362b6)</a></td></tr></table></div>
+        </text>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <participant>
+          <member>
+            <reference value="Organization/db5d4fb0-0b9d-4e92-a415-05c42b5362b6"/>
+          </member>
+        </participant>
+      </CareTeam>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/db5d4fb0-0b9d-4e92-a415-05c42b5362b6"/>
+    <resource>
+      <Organization>
+        <id value="db5d4fb0-0b9d-4e92-a415-05c42b5362b6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="db5d4fb0-0b9d-4e92-a415-05c42b5362b6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;db5d4fb0-0b9d-4e92-a415-05c42b5362b6&quot; </p></div><p><b>name</b>: Produktion og Beskyttet beskæftigelsestilbud § 103</p><p><b>address</b>: Bakkevej 132 XKøbing 8888 </p></div>
+        </text>
+        <name value="Produktion og Beskyttet beskæftigelsestilbud § 103"/>
+        <address>
+          <line value="Bakkevej 132"/>
+          <city value="XKøbing"/>
+          <postalCode value="8888"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/d727dddc-840b-4f5f-a686-626a91058be1"/>
+    <resource>
+      <CarePlan>
+        <id value="d727dddc-840b-4f5f-a686-626a91058be1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="d727dddc-840b-4f5f-a686-626a91058be1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;d727dddc-840b-4f5f-a686-626a91058be1&quot; </p></div><p><b>basedOn</b>: <a href="#CarePlan_60fcf132-de0a-4aba-bf3e-7ed52a68c9f2">See above (CarePlan/60fcf132-de0a-4aba-bf3e-7ed52a68c9f2)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Produktion og værksted <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#fb3d8722-90e0-4a80-ba65-490617ffeb0f)</span></td><td>in-progress</td></tr></table></blockquote></div>
+        </text>
+        <basedOn>
+          <reference value="CarePlan/60fcf132-de0a-4aba-bf3e-7ed52a68c9f2"/>
+        </basedOn>
+        <status value="active"/>
+        <intent value="order"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.22"/>
+                <code value="fb3d8722-90e0-4a80-ba65-490617ffeb0f"/>
+                <display value="Produktion og værksted"/>
+              </coding>
+            </code>
+            <status value="in-progress"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/c52f2c0d-eed3-4778-a0f3-aa8f65b188b8"/>
+    <resource>
+      <Observation>
+        <id value="c52f2c0d-eed3-4778-a0f3-aa8f65b188b8"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-evaluation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="c52f2c0d-eed3-4778-a0f3-aa8f65b188b8"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;c52f2c0d-eed3-4778-a0f3-aa8f65b188b8&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-evaluation.html">Evaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: FFB vurdering af borgers situation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#053a301d-1bb8-4cc4-b781-87825ecf0ef8)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>effective</b>: 2021-03-15 13:05:37+0100</p><p><b>value</b>: Funktioner og forhold
+Christian er som følge af kromosomafvigelsen født med hul i ganen, Dette er han opereret for, men kan stadig opleve problemer med at få maden ned i svælget. 
+Han har tidligere haft en del talevanskeligheder, men kan nu sagtens kommunikere med ord og har et relativt stort ordforråd. 
+Hans immunsystem er svagt og han er let modtagelig for især øreinfektioner. 
+Christian er svært udfordret på en række mentale funktioner som følge af sine diagnoser. Christians udfordringer viser sig især ved, at han har svært ved selv at skabe struktur og genkendelighed, hvilket betyder at han bliver usikker og kan reagere med vrede og afmagt i situationer hvor han ikke støttes heri. 
+Christian har gennem sin opvækst været tilknyttet flere forskellige specialbørnehaver og specialskoler og har boet på flere botilbud siden sit 18. år.
+Omgivelser
+Christians forældre blev skilt da Christian var 7 år og han har ingen kontakt til sin far og har stadig svært ved at forstå, hvorfor faren ikke vil tale med ham. Han har en god relation til sin mor, som har været hans primære omsorgsperson op til det 18. år.
+Aktivitet og Deltagelse
+Christian har svært ved at opbygge en relation til andre, da han har svært ved at forstå de ’’sociale spilleregler’’ og fordi han ikke kan sætte sig i den andens sted, en svært nedsat mentaliseringsevne.  Han har vanskelig ved at opretholde en relation og føler sig ikke hørt og forstået. Han er meget glad for biler og arbejder på et værksted, hvor han hjælper mekanikeren med forfaldent arbejde. Hans mor hjælper ham med økonomien, uden at der er værgeforhold og Christian er god til at styre sine penge, som han siger. Christian bruger piktogrammer til at styre sin hverdag, hvilket gør ham i stand til at klare de fleste ting selv, hvis han har støtte til at planlægge ugen. Christian kan ikke selv lave mad og gøre rent, men kan med guidning hjælpe til og giver udtryk for, at han gerne vil blive bedre. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="053a301d-1bb8-4cc4-b781-87825ecf0ef8"/>
+            <display value="FFB vurdering af borgers situation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <effectiveDateTime value="2021-03-15T13:05:37+01:00"/>
+        <valueCodeableConcept>
+          <text value="Funktioner og forhold&#xA;Christian er som følge af kromosomafvigelsen født med hul i ganen, Dette er han opereret for, men kan stadig opleve problemer med at få maden ned i svælget. &#xA;Han har tidligere haft en del talevanskeligheder, men kan nu sagtens kommunikere med ord og har et relativt stort ordforråd. &#xA;Hans immunsystem er svagt og han er let modtagelig for især øreinfektioner. &#xA;Christian er svært udfordret på en række mentale funktioner som følge af sine diagnoser. Christians udfordringer viser sig især ved, at han har svært ved selv at skabe struktur og genkendelighed, hvilket betyder at han bliver usikker og kan reagere med vrede og afmagt i situationer hvor han ikke støttes heri. &#xA;Christian har gennem sin opvækst været tilknyttet flere forskellige specialbørnehaver og specialskoler og har boet på flere botilbud siden sit 18. år.&#xA;Omgivelser&#xA;Christians forældre blev skilt da Christian var 7 år og han har ingen kontakt til sin far og har stadig svært ved at forstå, hvorfor faren ikke vil tale med ham. Han har en god relation til sin mor, som har været hans primære omsorgsperson op til det 18. år.&#xA;Aktivitet og Deltagelse&#xA;Christian har svært ved at opbygge en relation til andre, da han har svært ved at forstå de ’’sociale spilleregler’’ og fordi han ikke kan sætte sig i den andens sted, en svært nedsat mentaliseringsevne.  Han har vanskelig ved at opretholde en relation og føler sig ikke hørt og forstået. Han er meget glad for biler og arbejder på et værksted, hvor han hjælper mekanikeren med forfaldent arbejde. Hans mor hjælper ham med økonomien, uden at der er værgeforhold og Christian er god til at styre sine penge, som han siger. Christian bruger piktogrammer til at styre sin hverdag, hvilket gør ham i stand til at klare de fleste ting selv, hvis han har støtte til at planlægge ugen. Christian kan ikke selv lave mad og gøre rent, men kan med guidning hjælpe til og giver udtryk for, at han gerne vil blive bedre."/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/156149b4-c918-4818-a97a-d81b77d86fba"/>
+    <resource>
+      <Observation>
+        <id value="156149b4-c918-4818-a97a-d81b77d86fba"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-evaluation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="156149b4-c918-4818-a97a-d81b77d86fba"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;156149b4-c918-4818-a97a-d81b77d86fba&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-evaluation.html">Evaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: FFB støttebehovsvurdering <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#effe55c7-572c-4a99-8fb4-2a9dda2f6572)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>effective</b>: 2021-03-15 13:05:37+0100</p><p><b>value</b>: Christian vurderes at have behov for støtte til at have en indholdsrig hverdag, hvor han dagligt kan blive støttet i at få en god rytme og rutine på de daglige gøremål og hvor han støttes i at opbygge og fastholde relationer til andre. Da hans nedsættelsen af hans mentale funktioner vurderes at være af væsentligt omfang og der er risiko for, at han som følge af især sin kromosomafvigelse vil udvikle følgesygdomme, der kræver yderligere støtte, er det min vurdering at Christian har behov for en indsats, der kan rumme både pædagogisk støtte og pleje på sigt.  Christian vurderes derfor fortsat i målgruppen til et botilbud uden døgndækning. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#401a397b-b3aa-4ca3-8b23-bd8f99dd3f76 &quot;Moderat støttebehov&quot;)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="effe55c7-572c-4a99-8fb4-2a9dda2f6572"/>
+            <display value="FFB støttebehovsvurdering"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <effectiveDateTime value="2021-03-15T13:05:37+01:00"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="401a397b-b3aa-4ca3-8b23-bd8f99dd3f76"/>
+            <display value="Moderat støttebehov"/>
+          </coding>
+          <text value="Christian vurderes at have behov for støtte til at have en indholdsrig hverdag, hvor han dagligt kan blive støttet i at få en god rytme og rutine på de daglige gøremål og hvor han støttes i at opbygge og fastholde relationer til andre. Da hans nedsættelsen af hans mentale funktioner vurderes at være af væsentligt omfang og der er risiko for, at han som følge af især sin kromosomafvigelse vil udvikle følgesygdomme, der kræver yderligere støtte, er det min vurdering at Christian har behov for en indsats, der kan rumme både pædagogisk støtte og pleje på sigt.  Christian vurderes derfor fortsat i målgruppen til et botilbud uden døgndækning."/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/9977d0a0-bad7-4607-9ea1-39837246d497"/>
+    <resource>
+      <Observation>
+        <id value="9977d0a0-bad7-4607-9ea1-39837246d497"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-evaluation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="9977d0a0-bad7-4607-9ea1-39837246d497"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;9977d0a0-bad7-4607-9ea1-39837246d497&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-evaluation.html">Evaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: VUM Borgerens ressourcer i forhold til indsatsen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#f52887de-023f-4193-b6b0-4b0a37b1cffc)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>effective</b>: 2021-03-15 13:05:37+0100</p><p><b>value</b>: Christian er god til at bruge sine piktogrammer som understøttende for en god rutine. Han vil gerne blive bedre til nogle af de ting, der er særligt udfordrende for ham bl.a. lave mad og gøre rent. Han har gode relationer på værkstedet, hvor han arbejder, hvor han primært taler med mekanikeren. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="f52887de-023f-4193-b6b0-4b0a37b1cffc"/>
+            <display value="VUM Borgerens ressourcer i forhold til indsatsen"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <effectiveDateTime value="2021-03-15T13:05:37+01:00"/>
+        <valueCodeableConcept>
+          <text value="Christian er god til at bruge sine piktogrammer som understøttende for en god rutine. Han vil gerne blive bedre til nogle af de ting, der er særligt udfordrende for ham bl.a. lave mad og gøre rent. Han har gode relationer på værkstedet, hvor han arbejder, hvor han primært taler med mekanikeren."/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/a1febca1-8cb3-4a00-a7f1-deefc9e1391e"/>
+    <resource>
+      <Observation>
+        <id value="a1febca1-8cb3-4a00-a7f1-deefc9e1391e"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-evaluation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="a1febca1-8cb3-4a00-a7f1-deefc9e1391e"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;a1febca1-8cb3-4a00-a7f1-deefc9e1391e&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-evaluation.html">Evaluation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: VUM Borgerens perspektiv på indsatsen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>effective</b>: 2021-03-15 13:05:37+0100</p><p><b>value</b>: Christian vil gerne flytte til et nyt sted med andre på sin alder. Han er dog lidt opgivende, idet han ikke synes det rigtige sted er fundet endnu. Det skal helst være et sted, hvor han sammen med andre kan lave nogle ting for eksempel lave mad eller på biludstilling. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="3f7a8ca0-afca-4b0d-8773-a99b5f2f8aaf"/>
+            <display value="VUM Borgerens perspektiv på indsatsen"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <effectiveDateTime value="2021-03-15T13:05:37+01:00"/>
+        <valueCodeableConcept>
+          <text value="Christian vil gerne flytte til et nyt sted med andre på sin alder. Han er dog lidt opgivende, idet han ikke synes det rigtige sted er fundet endnu. Det skal helst være et sted, hvor han sammen med andre kan lave nogle ting for eksempel lave mad eller på biludstilling."/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/998af038-b3c1-48ee-abc9-b56ace276335"/>
+    <resource>
+      <CarePlan>
+        <id value="998af038-b3c1-48ee-abc9-b56ace276335"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="998af038-b3c1-48ee-abc9-b56ace276335"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;998af038-b3c1-48ee-abc9-b56ace276335&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-intervention.html">Intervention</a></p></div><p><b>basedOn</b>: <a href="#CarePlan_55602964-b665-45bc-ad84-620c42e1761b">See above (CarePlan/55602964-b665-45bc-ad84-620c42e1761b)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>created</b>: 2021-03-15 13:05:37+0100</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Længerevarende ophold <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#5af56051-8413-4115-aaa2-83a0767e1137)</span></td><td>not-started</td></tr></table></blockquote></div>
+        </text>
+        <basedOn>
+          <reference value="CarePlan/55602964-b665-45bc-ad84-620c42e1761b"/>
+        </basedOn>
+        <status value="active"/>
+        <intent value="order"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <created value="2021-03-15T13:05:37+01:00"/>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.22"/>
+                <code value="5af56051-8413-4115-aaa2-83a0767e1137"/>
+                <display value="Længerevarende ophold"/>
+              </coding>
+            </code>
+            <status value="not-started"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/4daf3f6a-810a-478d-9bf9-f7fb85c9335a"/>
+    <resource>
+      <CarePlan>
+        <id value="4daf3f6a-810a-478d-9bf9-f7fb85c9335a"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="4daf3f6a-810a-478d-9bf9-f7fb85c9335a"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;4daf3f6a-810a-478d-9bf9-f7fb85c9335a&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-intervention.html">Intervention</a></p></div><p><b>basedOn</b>: <a href="#CarePlan_55602964-b665-45bc-ad84-620c42e1761b">See above (CarePlan/55602964-b665-45bc-ad84-620c42e1761b)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>created</b>: 2021-03-15 13:05:37+0100</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Støtte til daglige opgaver i hjemmet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#638f44df-6bf2-47f8-9935-b8fdc83e5bf5)</span></td><td>not-started</td></tr></table></blockquote></div>
+        </text>
+        <basedOn>
+          <reference value="CarePlan/55602964-b665-45bc-ad84-620c42e1761b"/>
+        </basedOn>
+        <status value="active"/>
+        <intent value="order"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <created value="2021-03-15T13:05:37+01:00"/>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.22"/>
+                <code value="638f44df-6bf2-47f8-9935-b8fdc83e5bf5"/>
+                <display value="Støtte til daglige opgaver i hjemmet"/>
+              </coding>
+            </code>
+            <status value="not-started"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/1867a76f-4ea9-4409-8fb8-9582a43c9dcb"/>
+    <resource>
+      <CarePlan>
+        <id value="1867a76f-4ea9-4409-8fb8-9582a43c9dcb"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="1867a76f-4ea9-4409-8fb8-9582a43c9dcb"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;1867a76f-4ea9-4409-8fb8-9582a43c9dcb&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-intervention.html">Intervention</a></p></div><p><b>basedOn</b>: <a href="#CarePlan_55602964-b665-45bc-ad84-620c42e1761b">See above (CarePlan/55602964-b665-45bc-ad84-620c42e1761b)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>period</b>: 2021-04-01 --&gt; 2021-10-01</p><p><b>created</b>: 2021-03-15 13:05:37+0100</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Støtte til sociale relationer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#05cd5e81-1a3a-4bdd-901b-7ec96c12d990)</span></td><td>not-started</td></tr></table></blockquote></div>
+        </text>
+        <basedOn>
+          <reference value="CarePlan/55602964-b665-45bc-ad84-620c42e1761b"/>
+        </basedOn>
+        <status value="active"/>
+        <intent value="order"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <period>
+          <start value="2021-04-01"/>
+          <end value="2021-10-01"/>
+        </period>
+        <created value="2021-03-15T13:05:37+01:00"/>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.22"/>
+                <code value="05cd5e81-1a3a-4bdd-901b-7ec96c12d990"/>
+                <display value="Støtte til sociale relationer"/>
+              </coding>
+            </code>
+            <status value="not-started"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/47643042-ce30-4110-bd17-2a7cbb4a521b"/>
+    <resource>
+      <CarePlan>
+        <id value="47643042-ce30-4110-bd17-2a7cbb4a521b"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="47643042-ce30-4110-bd17-2a7cbb4a521b"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;47643042-ce30-4110-bd17-2a7cbb4a521b&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-intervention.html">Intervention</a></p></div><p><b>basedOn</b>: <a href="#CarePlan_55602964-b665-45bc-ad84-620c42e1761b">See above (CarePlan/55602964-b665-45bc-ad84-620c42e1761b)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>period</b>: 2021-04-01 --&gt; (ongoing)</p><p><b>created</b>: 2021-03-15 13:05:37+0100</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Støtte til psykisk trivsel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#ad7755d2-11bf-468d-958b-2f0c8d9c3742)</span></td><td>not-started</td></tr></table></blockquote></div>
+        </text>
+        <basedOn>
+          <reference value="CarePlan/55602964-b665-45bc-ad84-620c42e1761b"/>
+        </basedOn>
+        <status value="active"/>
+        <intent value="order"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <period>
+          <start value="2021-04-01"/>
+        </period>
+        <created value="2021-03-15T13:05:37+01:00"/>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.22"/>
+                <code value="ad7755d2-11bf-468d-958b-2f0c8d9c3742"/>
+                <display value="Støtte til psykisk trivsel"/>
+              </coding>
+            </code>
+            <status value="not-started"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/2ad2ab17-31e4-4c03-b6c0-dcda037164ae"/>
+    <resource>
+      <CarePlan>
+        <id value="2ad2ab17-31e4-4c03-b6c0-dcda037164ae"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="2ad2ab17-31e4-4c03-b6c0-dcda037164ae"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;2ad2ab17-31e4-4c03-b6c0-dcda037164ae&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-intervention.html">Intervention</a></p></div><p><b>basedOn</b>: <a href="#CarePlan_55602964-b665-45bc-ad84-620c42e1761b">See above (CarePlan/55602964-b665-45bc-ad84-620c42e1761b)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>period</b>: 2021-04-01 --&gt; (ongoing)</p><p><b>created</b>: 2021-03-15 13:05:37+0100</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td>Kørsel efter §105 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (Text)</span></td><td>not-started</td></tr></table></blockquote></div>
+        </text>
+        <basedOn>
+          <reference value="CarePlan/55602964-b665-45bc-ad84-620c42e1761b"/>
+        </basedOn>
+        <status value="active"/>
+        <intent value="order"/>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <period>
+          <start value="2021-04-01"/>
+        </period>
+        <created value="2021-03-15T13:05:37+01:00"/>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/Text"/>
+              </coding>
+              <text value="Kørsel efter §105"/>
+            </code>
+            <status value="not-started"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CareTeam/66d6b6a4-c39d-493c-945d-73dffabf2549"/>
+    <resource>
+      <CareTeam>
+        <id value="66d6b6a4-c39d-493c-945d-73dffabf2549"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-servicePerformer"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CareTeam</b><a name="66d6b6a4-c39d-493c-945d-73dffabf2549"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CareTeam &quot;66d6b6a4-c39d-493c-945d-73dffabf2549&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-servicePerformer.html">ServicePerformer</a></p></div><p><b>category</b>: Almindeligt længerevarende botilbud til voksne <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.0.0/CodeSystem-FFB.html">FFB</a>#498fe92c-d7f7-41cd-9404-5b38fe113be0)</span></p><p><b>subject</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><blockquote><p><b>participant</b></p><p><b>role</b>: Ansvarlig for koordinering af myndighedssamarbejde <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-kl-messaging-ffb-participantRoleCodes.html">ParticipantRoleSystem</a>#koordinerende-myndighed)</span></p><p><b>member</b>: <a href="#Organization_b524b7d2-3ee2-425e-a640-c5429596e897">See above (Organization/b524b7d2-3ee2-425e-a640-c5429596e897)</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Samarbejdende myndighed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-kl-messaging-ffb-participantRoleCodes.html">ParticipantRoleSystem</a>#samarbejdende-myndighed)</span></p><p><b>member</b>: <a href="#Organization_444d7d11-0456-4144-807b-c10d28b930c6">See above (Organization/444d7d11-0456-4144-807b-c10d28b930c6)</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Ansvarlig for koordinering af udførersamarbejde <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-kl-messaging-ffb-participantRoleCodes.html">ParticipantRoleSystem</a>#koordinerende-udfører)</span></p><p><b>member</b>: <a href="#Organization_e06c1cf9-5923-4ca6-afbe-b56cf41e38a8">See above (Organization/e06c1cf9-5923-4ca6-afbe-b56cf41e38a8)</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>ParticipationDescription</b>: Det er aftalt med Christians mor Louise, at hun kontaktes og deltager, når der skal foregår aktiviteter i Christians liv, som er nye eller afviger fra hans dagligdag fx læge- og tandlægebesøg.</p><p><b>member</b>: <a href="#RelatedPerson_ea132916-522d-467f-837e-5acd991e308a">See above (RelatedPerson/ea132916-522d-467f-837e-5acd991e308a)</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href="#RelatedPerson_77332be5-4721-4c2e-b72a-ed6593a3016a">See above (RelatedPerson/77332be5-4721-4c2e-b72a-ed6593a3016a)</a></p></blockquote></div>
+        </text>
+        <category>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.22"/>
+            <code value="498fe92c-d7f7-41cd-9404-5b38fe113be0"/>
+            <display value="Almindeligt længerevarende botilbud til voksne"/>
+          </coding>
+        </category>
+        <subject>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </subject>
+        <participant>
+          <role>
+            <coding>
+              <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-participantRoleCodes"/>
+              <code value="koordinerende-myndighed"/>
+              <display value="Ansvarlig for koordinering af myndighedssamarbejde"/>
+            </coding>
+          </role>
+          <member>
+            <reference value="Organization/b524b7d2-3ee2-425e-a640-c5429596e897"/>
+          </member>
+        </participant>
+        <participant>
+          <role>
+            <coding>
+              <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-participantRoleCodes"/>
+              <code value="samarbejdende-myndighed"/>
+              <display value="Samarbejdende myndighed"/>
+            </coding>
+          </role>
+          <member>
+            <reference value="Organization/444d7d11-0456-4144-807b-c10d28b930c6"/>
+          </member>
+        </participant>
+        <participant>
+          <role>
+            <coding>
+              <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-participantRoleCodes"/>
+              <code value="koordinerende-udfører"/>
+              <display value="Ansvarlig for koordinering af udførersamarbejde"/>
+            </coding>
+          </role>
+          <member>
+            <reference value="Organization/e06c1cf9-5923-4ca6-afbe-b56cf41e38a8"/>
+          </member>
+        </participant>
+        <participant>
+          <extension url="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-participationDescription">
+            <valueString value="Det er aftalt med Christians mor Louise, at hun kontaktes og deltager, når der skal foregår aktiviteter i Christians liv, som er nye eller afviger fra hans dagligdag fx læge- og tandlægebesøg."/>
+          </extension>
+          <member>
+            <reference value="RelatedPerson/ea132916-522d-467f-837e-5acd991e308a"/>
+          </member>
+        </participant>
+        <participant>
+          <member>
+            <reference value="RelatedPerson/77332be5-4721-4c2e-b72a-ed6593a3016a"/>
+          </member>
+        </participant>
+      </CareTeam>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/b524b7d2-3ee2-425e-a640-c5429596e897"/>
+    <resource>
+      <Organization>
+        <id value="b524b7d2-3ee2-425e-a640-c5429596e897"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-participatingOrganization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="b524b7d2-3ee2-425e-a640-c5429596e897"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;b524b7d2-3ee2-425e-a640-c5429596e897&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-participatingOrganization.html">ParticipatingOrganization</a></p></div><p><b>name</b>: Socialrådgivergruppe B</p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td style="display: none">*</td><td>Karen Karlsen </td><td>ph: 99775533, <a href="mailto:kaka@x-købing.dk">kaka@x-købing.dk</a></td></tr></table></div>
+        </text>
+        <name value="Socialrådgivergruppe B"/>
+        <contact>
+          <name>
+            <family value="Karlsen"/>
+            <given value="Karen"/>
+            <prefix value="Socialrådgiver"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="99775533"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="kaka@x-købing.dk"/>
+          </telecom>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/444d7d11-0456-4144-807b-c10d28b930c6"/>
+    <resource>
+      <Organization>
+        <id value="444d7d11-0456-4144-807b-c10d28b930c6"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-participatingOrganization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="444d7d11-0456-4144-807b-c10d28b930c6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;444d7d11-0456-4144-807b-c10d28b930c6&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-participatingOrganization.html">ParticipatingOrganization</a></p></div><p><b>name</b>: Ungeenheden</p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td style="display: none">*</td><td>John Jensen </td><td>ph: 99887766, <a href="mailto:joje@x-købing.dk">joje@x-købing.dk</a></td></tr></table></div>
+        </text>
+        <name value="Ungeenheden"/>
+        <contact>
+          <name>
+            <family value="Jensen"/>
+            <given value="John"/>
+            <prefix value="Jobkonsulent"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="99887766"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="joje@x-købing.dk"/>
+          </telecom>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/e06c1cf9-5923-4ca6-afbe-b56cf41e38a8"/>
+    <resource>
+      <Organization>
+        <id value="e06c1cf9-5923-4ca6-afbe-b56cf41e38a8"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-participatingOrganization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="e06c1cf9-5923-4ca6-afbe-b56cf41e38a8"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;e06c1cf9-5923-4ca6-afbe-b56cf41e38a8&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-participatingOrganization.html">ParticipatingOrganization</a></p></div><p><b>name</b>: Afdeling Q</p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td style="display: none">*</td><td>Søren Sandemose </td><td>ph: 22446688, <a href="mailto:soesa@lillested.dk">soesa@lillested.dk</a></td></tr></table></div>
+        </text>
+        <name value="Afdeling Q"/>
+        <contact>
+          <name>
+            <family value="Sandemose"/>
+            <given value="Søren"/>
+            <prefix value="Socialpædagog"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="22446688"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="soesa@lillested.dk"/>
+          </telecom>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="RelatedPerson/ea132916-522d-467f-837e-5acd991e308a"/>
+    <resource>
+      <RelatedPerson>
+        <id value="ea132916-522d-467f-837e-5acd991e308a"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-relatedPerson"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RelatedPerson</b><a name="ea132916-522d-467f-837e-5acd991e308a"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RelatedPerson &quot;ea132916-522d-467f-837e-5acd991e308a&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-relatedPerson.html">RelatedPerson</a></p></div><p><b>patient</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>relationship</b>: mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#MTH)</span>, Bisidder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-kl-messaging-ffb-relationshipTypeCodes.html">RelationshipTypeSystem</a>#advocate)</span></p><p><b>name</b>: Louise Christiansen </p><p><b>telecom</b>: ph: 55667788, <a href="mailto:loch@mail.com">loch@mail.com</a></p></div>
+        </text>
+        <patient>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="MTH"/>
+          </coding>
+        </relationship>
+        <relationship>
+          <coding>
+            <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-relationshipTypeCodes"/>
+            <code value="advocate"/>
+          </coding>
+        </relationship>
+        <name>
+          <family value="Christiansen"/>
+          <given value="Louise"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="55667788"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="loch@mail.com"/>
+        </telecom>
+      </RelatedPerson>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="RelatedPerson/77332be5-4721-4c2e-b72a-ed6593a3016a"/>
+    <resource>
+      <RelatedPerson>
+        <id value="77332be5-4721-4c2e-b72a-ed6593a3016a"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-guardian"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RelatedPerson</b><a name="77332be5-4721-4c2e-b72a-ed6593a3016a"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RelatedPerson &quot;77332be5-4721-4c2e-b72a-ed6593a3016a&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-guardian.html">Guardian</a></p></div><p><b>GuardianshipForm</b>: Personlige og/eller økonomiske forhold, værgemålslovens § 5 (Details: http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-guardianshipFormCodes code 5 = 'Personlige og/eller økonomiske forhold, værgemålslovens § 5', stated as 'null')</p><p><b>patient</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>relationship</b>: guardian <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#GUARD)</span></p><p><b>name</b>: Børge Børgesen </p><p><b>telecom</b>: ph: 99112233, <a href="mailto:boeboe@mail.dk">boeboe@mail.dk</a></p><p><b>address</b>: Østervej 9 Y-borg 9999 </p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-guardianshipForm">
+          <valueCoding>
+            <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-guardianshipFormCodes"/>
+            <code value="5"/>
+          </valueCoding>
+        </extension>
+        <patient>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="GUARD"/>
+          </coding>
+        </relationship>
+        <name>
+          <family value="Børgesen"/>
+          <given value="Børge"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="99112233"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="boeboe@mail.dk"/>
+        </telecom>
+        <address>
+          <line value="Østervej 9"/>
+          <city value="Y-borg"/>
+          <postalCode value="9999"/>
+        </address>
+      </RelatedPerson>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Consent/2ceccbaf-8cb2-4ef1-bec3-42d14fa062d8"/>
+    <resource>
+      <Consent>
+        <id value="2ceccbaf-8cb2-4ef1-bec3-42d14fa062d8"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Consent</b><a name="2ceccbaf-8cb2-4ef1-bec3-42d14fa062d8"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Consent &quot;2ceccbaf-8cb2-4ef1-bec3-42d14fa062d8&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-consent.html">Consent</a></p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-consentscope.html">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: Christian har givet fuldmagt til, at hans mor, må have fuld indsigt i hans sag og få tilsendt alle oplysninger. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">ActCode</a>#IDSCL)</span></p><p><b>patient</b>: <a href="#Patient_ef88b48e-e664-41e6-b5b1-2ed4f5c86009">See above (Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009)</a></p><p><b>dateTime</b>: 2021-01-07 08:14:21+0100</p><p><b>performer</b>: <a href="#RelatedPerson_ea132916-522d-467f-837e-5acd991e308a">See above (RelatedPerson/ea132916-522d-467f-837e-5acd991e308a)</a></p><p><b>policyRule</b>: Persondataloven, §6-8 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-kl-messaging-ffb-consentPolicyCodes.html">ConsentPolicySystem</a>#persondataloven)</span></p></div>
+        </text>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="patient-privacy"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="IDSCL"/>
+          </coding>
+          <text value="Christian har givet fuldmagt til, at hans mor, må have fuld indsigt i hans sag og få tilsendt alle oplysninger."/>
+        </category>
+        <patient>
+          <reference value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        </patient>
+        <dateTime value="2021-01-07T08:14:21+01:00"/>
+        <performer>
+          <reference value="RelatedPerson/ea132916-522d-467f-837e-5acd991e308a"/>
+        </performer>
+        <policyRule>
+          <coding>
+            <system value="http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-consentPolicyCodes"/>
+            <code value="persondataloven"/>
+          </coding>
+        </policyRule>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Patient/ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+    <resource>
+      <Patient>
+        <id value="ef88b48e-e664-41e6-b5b1-2ed4f5c86009"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-citizen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="ef88b48e-e664-41e6-b5b1-2ed4f5c86009"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;ef88b48e-e664-41e6-b5b1-2ed4f5c86009&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-citizen.html">Citizen</a></p></div><p><b>identifier</b>: id: 1111111111 (use: OFFICIAL)</p><p><b>name</b>: Christian Christiansen (OFFICIAL)</p><p><b>telecom</b>: ph: 22334455, <a href="mailto:chch@mail.com">chch@mail.com</a></p><p><b>address</b>: Bostedet Storested, Harevænget 11 Y-borg 9999 </p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td style="display: none">*</td><td>Mor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html">contactRole2</a>#N)</span></td><td>Louise Christiansen </td><td>ph: 55667788, <a href="mailto:loch@mail.com">loch@mail.com</a></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="1111111111"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Christiansen"/>
+          <given value="Christian"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="22334455"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="chch@mail.com"/>
+        </telecom>
+        <address>
+          <line value="Bostedet Storested, Harevænget 11"/>
+          <city value="Y-borg"/>
+          <postalCode value="9999"/>
+        </address>
+        <contact>
+          <relationship>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+              <code value="N"/>
+            </coding>
+            <text value="Mor"/>
+          </relationship>
+          <name>
+            <family value="Christiansen"/>
+            <given value="Louise"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="55667788"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="loch@mail.com"/>
+          </telecom>
+        </contact>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Account/9a513f98-f63e-4601-8d85-1086452ef1ae"/>
+    <resource>
+      <Account>
+        <id value="9a513f98-f63e-4601-8d85-1086452ef1ae"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-account"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Account</b><a name="9a513f98-f63e-4601-8d85-1086452ef1ae"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Account &quot;9a513f98-f63e-4601-8d85-1086452ef1ae&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-account.html">Account</a></p></div><p><b>identifier</b>: id: 4444-88888888</p><p><b>status</b>: active</p><p><b>owner</b>: <a href="#Organization_a7c86933-e198-4692-81f4-76f2bf44c361">See above (Organization/a7c86933-e198-4692-81f4-76f2bf44c361)</a></p></div>
+        </text>
+        <identifier>
+          <system value="urn:accountno"/>
+          <value value="4444-88888888"/>
+        </identifier>
+        <status value="active"/>
+        <owner>
+          <reference value="Organization/a7c86933-e198-4692-81f4-76f2bf44c361"/>
+        </owner>
+      </Account>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/a7c86933-e198-4692-81f4-76f2bf44c361"/>
+    <resource>
+      <Organization>
+        <id value="a7c86933-e198-4692-81f4-76f2bf44c361"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-accountOwner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="a7c86933-e198-4692-81f4-76f2bf44c361"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;a7c86933-e198-4692-81f4-76f2bf44c361&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-accountOwner.html">AccountOwner</a></p></div><p><b>identifier</b>: id: 1313131313131</p><p><b>name</b>: Økonomiafdelingen X-købing Kommune</p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td style="display: none">*</td><td>Øjvind Ørn </td><td>ph: 11335577, <a href="mailto:oeoe@x-købing.dk">oeoe@x-købing.dk</a></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:1.3.88"/>
+          <value value="1313131313131"/>
+        </identifier>
+        <name value="Økonomiafdelingen X-købing Kommune"/>
+        <contact>
+          <name>
+            <family value="Ørn"/>
+            <given value="Øjvind"/>
+            <prefix value="Økonomimedarbejder"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="11335577"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="oeoe@x-købing.dk"/>
+          </telecom>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="DocumentReference/26003edb-c0d7-4033-8ac2-62210221b914"/>
+    <resource>
+      <DocumentReference>
+        <id value="26003edb-c0d7-4033-8ac2-62210221b914"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-documentReference"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DocumentReference</b><a name="26003edb-c0d7-4033-8ac2-62210221b914"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DocumentReference &quot;26003edb-c0d7-4033-8ac2-62210221b914&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-documentReference.html">DocumentReference</a></p></div><p><b>status</b>: current</p><p><b>description</b>: Journal fra speciallæge August Krog, august 2012</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td>Journal for Christian Christensen</td></tr></table></blockquote></div>
+        </text>
+        <status value="current"/>
+        <description value="Journal fra speciallæge August Krog, august 2012"/>
+        <content>
+          <attachment>
+            <contentType value="application/pdf"/>
+            <title value="Journal for Christian Christensen"/>
+          </attachment>
+        </content>
+      </DocumentReference>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="DocumentReference/fc6b255b-3336-4b25-85a0-7f31cdf68482"/>
+    <resource>
+      <DocumentReference>
+        <id value="fc6b255b-3336-4b25-85a0-7f31cdf68482"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/ffbmessaging/StructureDefinition/kl-messaging-ffb-documentReference"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DocumentReference</b><a name="fc6b255b-3336-4b25-85a0-7f31cdf68482"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DocumentReference &quot;fc6b255b-3336-4b25-85a0-7f31cdf68482&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-kl-messaging-ffb-documentReference.html">DocumentReference</a></p></div><p><b>status</b>: current</p><p><b>description</b>: Kontinuation fra Børne- og ungdomspsykiatrisk hus i X-købing Kommune, 2011</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td>Kontinuation for Christian Christensen</td></tr></table></blockquote></div>
+        </text>
+        <status value="current"/>
+        <description value="Kontinuation fra Børne- og ungdomspsykiatrisk hus i X-købing Kommune, 2011"/>
+        <content>
+          <attachment>
+            <contentType value="application/pdf"/>
+            <title value="Kontinuation for Christian Christensen"/>
+          </attachment>
+        </content>
+      </DocumentReference>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/ffbmessaging/ValueSet/kl-messaging-ffb-relationshipTypeValues> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "kl-messaging-ffb-relationshipTypeValues"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/ffbmessaging/ValueSet/kl-messaging-ffb-relationshipTypeValues"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "KLMessagingFFBRelationshipTypeValues"] ; # 
+  fhir:title [ fhir:v "RelationshipTypes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-08-26T15:37:37+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "KL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "KL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Relationship type roles to use in FFB messaging"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "GUARD" ]
+       ] [
+         fhir:code [ fhir:v "POWATT" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/ffbmessaging/CodeSystem/kl-messaging-ffb-relationshipTypeCodes"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
