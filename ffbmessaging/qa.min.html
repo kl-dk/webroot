@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for KLFFBMessaging</h1>
- <p>Generated Sat Aug 26 15:42:05 CEST 2023, FHIR version 4.0.1 for kl.dk.fhir.ffbmessaging#1.0.0 (canonical = <a href="http://fhir.kl.dk/ffbmessaging">http://fhir.kl.dk/ffbmessaging</a> (<a href="http://fhir.kl.dk/ffbmessaging/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Sun Aug 27 08:52:11 CEST 2023, FHIR version 4.0.1 for kl.dk.fhir.ffbmessaging#1.0.0 (canonical = <a href="http://fhir.kl.dk/ffbmessaging">http://fhir.kl.dk/ffbmessaging</a> (<a href="http://fhir.kl.dk/ffbmessaging/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.0</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = kl.dk.fhir.ffbmessaging, Canonical = http://fhir.kl.dk/ffbmessaging</td></tr>
@@ -57,7 +57,7 @@
  <tr><td>introduction</d><td>FFB Messaging makes it possible to communicate social care data between municipalities.</td></tr>
  <tr><td>ci-build</d><td>https://build.fhir.org/ig/hl7dk/kl-ffb-messaging/</td></tr>
 </table>
-<ul><li><span title="Invalid HTTP response 404 from http://fhir.kl.dk/ffbmessaging/package-list.json?nocache=1693057323882 (Not Found) (content in /var/folders/dh/y5wvkqpd73zcpgly0rzbcmr00000gn/T/http-log/fhir-http-5.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<ul><li><span title="Invalid HTTP response 404 from http://fhir.kl.dk/ffbmessaging/package-list.json?nocache=1693119130602 (Not Found) (content in /var/folders/nk/q9w58qdj2z928y1h12c3zzrr0000gn/T/http-log/fhir-http-5.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
 <li>No publication request desc found (it is recommended to provide a shorter desc as well as descmd <img src="icon-warning.png" height="16px" width="16px"/></li>
 </ul>
@@ -227,10 +227,56 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
  (39 uses)
   </li>
+  <li>
+kl.dk.fhir.core#1.2.0:     <a href="http://fhir.kl.dk/core/1.2.0/ImplementationGuide-kl.dk.fhir.core.html">KLCore</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialEvaluation.html">KLCommonCareSocialEvaluation</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLEvaluationTypeCodes.html">KLEvaluationTypeCodes</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLEvaluationTypeCodesSCT.html">KLEvaluationTypeCodesSCT</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialEncounter.html">KLCommonCareSocialEncounter</a>
+ (5 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonPractitioner.html">KLCommonPractitioner</a>
+ (11 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLNeedsAssessmentCodesFFB.html">KLNeedsAssessmentCodesFFB</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialPurpose.html">KLCommonCareSocialPurpose</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialGoal.html">KLCommonCareSocialGoal</a>
+ (5 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLGoalTypeCodes.html">KLGoalTypeCodes</a>
+ (3 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLTargetMeasureCodes.html">KLTargetMeasureCodes</a>
+ (3 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLSeverities.html">KLSeverities</a>
+ (3 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLChangeValueCodes.html">KLChangeValueCodes</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCitizen.html">KLCommonCitizen</a>
+ (5 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialCondition.html">KLCommonCareSocialCondition</a>
+ (7 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialMatterOfInterest.html">KLCommonCareSocialMatterOfInterest</a>
+ (5 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-ConditionRank.html">ConditionRank</a>
+ (13 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-MatterOfInterestInformer.html">MatterOfInterestInformer</a>
+ (6 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-ExtEventHist.html">ExtEventHist</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialFocusCondition.html">KLCommonCareSocialFocusCondition</a>
+ (3 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-FollowUpEncounter.html">FollowUpEncounter</a>
+ (7 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-ConditionLastAssertedDate.html">ConditionLastAssertedDate</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLConditionCodesFSIII.html">KLConditionCodesFSIII</a>
+ (3 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLConditionCodesFFB.html">KLConditionCodesFFB</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialFollowUp.html">KLCommonCareSocialFollowUp</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialPlannedIntervention.html">KLCommonCareSocialPlannedIntervention</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-MunicipalityCaseNumber.html">MunicipalityCaseNumber</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonOrganization.html">KLCommonOrganization</a>
+ (4 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLInterventionsFSIII.html">KLInterventionsFSIII</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialInformationGathering.html">KLCommonCareSocialInformationGathering</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-BasedOnServiceRequest.html">BasedOnServiceRequest</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialServiceRequest.html">KLCommonCareSocialServiceRequest</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLInformationGatheringTypeCodes.html">KLInformationGatheringTypeCodes</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLInformationGatheringInvestigationCodes.html">KLInformationGatheringInvestigationCodes</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialCarePlan.html">KLCommonCareSocialCarePlan</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLCarePlanCategoryCodes.html">KLCarePlanCategoryCodes</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonCareSocialFFBGoal.html">KLCommonCareSocialFFBGoal</a>
+ (2 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLInformationCodes.html">KLInformationCodes</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLMatterOfInterestValues.html">KLMatterOfInterestValues</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLEncounterTypes.html">KLEncounterTypes</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/StructureDefinition-KLCommonServicePerformer.html">KLCommonServicePerformer</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLServiceCodesFFB.html">KLServiceCodesFFB</a>
+ (1 uses),     <a href="http://fhir.kl.dk/core/1.2.0/ValueSet-KLConditionsAndTargetGroupsFFB.html">KLConditionsAndTargetGroupsFFB</a>
+ (1 uses)
+  </li>
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.kl.dk/ffbmessaging (Problem #1 with package-list.json at http://fhir.kl.dk/ffbmessaging: Invalid HTTP response 404 from http://fhir.kl.dk/ffbmessaging/package-list.json?nocache=1693057044499 (Not Found) (content in /var/folders/dh/y5wvkqpd73zcpgly0rzbcmr00000gn/T/http-log/fhir-http-4.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.kl.dk/ffbmessaging (Problem #1 with package-list.json at http://fhir.kl.dk/ffbmessaging: Invalid HTTP response 404 from http://fhir.kl.dk/ffbmessaging/package-list.json?nocache=1693117087096 (Not Found) (content in /var/folders/nk/q9w58qdj2z928y1h12c3zzrr0000gn/T/http-log/fhir-http-4.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 23, warn = 18, info = 64, broken links = 0</td></tr>
 </table>
