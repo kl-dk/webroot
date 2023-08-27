@@ -8,4 +8,11 @@ This is the root folder which should be hosted by the web server (published for 
  * (Releases are also hosted under https://kl-dk.github.io/website/ - for tests)
 
 
+# What needs to be checked out:
+
+* This repo on the `docs` branch
+* https://github.com/HL7/fhir-ig-history-template
+* https://github.com/hl7dk/ig-registry
+
+
 Example run `java -jar publisher.jar -go-publish -source /Users/jkiddo/work/dk-core  -web /Users/jkiddo/work/website/fhir -temp /Users/jkiddo/work/temp -registry ig-registry/fhir-ig-list.json -history fhir-ig-history-template -templates /Users/jkiddo/work/website/fhir/templates`
