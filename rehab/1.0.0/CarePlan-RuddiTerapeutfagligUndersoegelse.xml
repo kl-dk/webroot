@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="RuddiTerapeutfagligUndersoegelse"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="RuddiTerapeutfagligUndersoegelse"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;RuddiTerapeutfagligUndersoegelse&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-140-planned-intervention.html">KLGateway140PlannedIntervention</a></p></div><p><b>basedOnServiceRequestExtension</b>: <a href="ServiceRequest-RuddiGGOPInformation.html">ServiceRequest/RuddiGGOPInformation</a></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="Patient-RuddiTestBerggren.html">Patient/RuddiTestBerggren</a></p><p><b>period</b>: 2022-05-23 --&gt; 2022-06-02</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Performer</b></td></tr><tr><td style="display: none">*</td><td/><td>Terapeutfaglig udredning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.1.0/CodeSystem-FSIII.html">FSIII</a>#1130ad70-6553-490d-87f8-5e8941687a0c)</span></td><td>completed</td><td><a href="Organization-UdfoererAfRuddisRehab.html">Organization/UdfoererAfRuddisRehab</a></td></tr></table></blockquote></div>
+  </text>
+  <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension">
+    <valueReference>
+      <reference value="ServiceRequest/RuddiGGOPInformation"/>
+    </valueReference>
+  </extension>
+  <status value="active"/>
+  <intent value="plan"/>
+  <subject>
+    <reference value="Patient/RuddiTestBerggren"/>
+  </subject>
+  <period>
+    <start value="2022-05-23"/>
+    <end value="2022-06-02"/>
+  </period>
+  <activity>
+    <detail>
+      <extension url="http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="8d12d74c-17da-47a7-a4fe-e69dbaec0a8c"/>
+            <display value="Individuel Indsats"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <code>
+        <coding>
+          <system value="urn:oid:1.2.208.176.2.21"/>
+          <code value="1130ad70-6553-490d-87f8-5e8941687a0c"/>
+        </coding>
+      </code>
+      <status value="completed"/>
+      <performer>
+        <reference value="Organization/UdfoererAfRuddisRehab"/>
+      </performer>
+    </detail>
+  </activity>
+</CarePlan>

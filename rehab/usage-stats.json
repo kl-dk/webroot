@@ -1,0 +1,159 @@
+{
+  "package": "kl.dk.fhir.rehab",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnCarePlanExtension",
+      "title": "basedOnCarePlanExtension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+      "title": "basedOnServiceRequestExtension",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType",
+      "title": "DeliveryType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate",
+      "title": "PreconditionDate",
+      "types": [
+        "date"
+      ]
+    }
+  ],
+  "profiles": {
+    "CarePlan": [
+      {
+        "url": "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention",
+        "title": "KLGateway140PlannedIntervention"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-citizen",
+        "title": "KLGateway140Citizen"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-focus-condition",
+        "title": "KLGateway140FocusCondition"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report",
+        "title": "KLGateway140DeliveryReport"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-encounter",
+        "title": "KLGateway140Encounter"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization",
+        "title": "KLGateway140Organization"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-servicerequest",
+        "title": "KLGateway140ServiceRequest"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnCarePlanExtension": [
+      "Bundle.entry.resource",
+      "Encounter"
+    ],
+    "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension": [
+      "Bundle.entry.resource",
+      "CarePlan"
+    ],
+    "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
+    "http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate": [
+      "Condition"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore": [
+      "Condition"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes": [
+      "Patient.address"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-statusReason": [
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

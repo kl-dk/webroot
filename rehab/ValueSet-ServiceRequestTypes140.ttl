@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/rehab/ValueSet/ServiceRequestTypes140> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ServiceRequestTypes140"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/rehab/ValueSet/ServiceRequestTypes140"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ServiceRequestTypes140"] ; # 
+  fhir:title [ fhir:v "ServiceRequestTypes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-28T10:05:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The type of ServicRequest (GGOP), as defined by MedCom, supplemented by the two municipality specific types"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/rehab/CodeSystem/Tempcodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ffd81f78-352e-4589-a195-5350dd1df2a4" ]
+       ] [
+         fhir:code [ fhir:v "8b962281-2ab6-4b10-9c91-4bac592d6d49" ]
+       ] [
+         fhir:code [ fhir:v "b679c454-2da2-46dd-9425-0e52d4aa2bf3" ]
+       ] [
+         fhir:code [ fhir:v "0c8e2bfc-1350-45d1-90da-c07e2645d073" ]
+       ] [
+         fhir:code [ fhir:v "83c89857-8fb8-4163-97b1-eb1a56345c29" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

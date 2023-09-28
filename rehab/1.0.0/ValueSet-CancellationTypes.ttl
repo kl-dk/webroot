@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/rehab/ValueSet/CancellationTypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CancellationTypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/rehab/ValueSet/CancellationTypes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CancellationTypes"] ; # 
+  fhir:title [ fhir:v "CancellationTypes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-28T10:03:22+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cancellation valueset, to be implemented in KL-term or MedCom-term"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "4bbf6d6a-a1c6-41c2-b8c1-7352b7378adf" ]
+       ] [
+         fhir:code [ fhir:v "a63b6aa6-7d56-4e67-a5b3-d73f6d262af5" ]
+       ] [
+         fhir:code [ fhir:v "3a5a72b7-addf-4857-b80c-04e4246e3072" ]
+       ] [
+         fhir:code [ fhir:v "0cd5734d-b663-47c6-a3da-6b14a937d144" ]
+       ] [
+         fhir:code [ fhir:v "f8436c2e-af1c-44fe-939d-473b518dd01d" ]
+       ] [
+         fhir:code [ fhir:v "8371b769-4bfb-4ac8-b130-d91c54784a56" ]
+       ] [
+         fhir:code [ fhir:v "a3f2bd01-078b-486e-81be-797d192ad7bd" ]
+       ] [
+         fhir:code [ fhir:v "82e99421-31da-4915-96ed-168ccfa1d20c" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/rehab/CodeSystem/Tempcodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "ef491570-7884-4acd-bcf7-43d6b2c64762" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

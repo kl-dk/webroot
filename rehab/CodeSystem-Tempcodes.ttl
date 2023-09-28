@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/rehab/CodeSystem/Tempcodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Tempcodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/rehab/CodeSystem/Tempcodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "Tempcodes"] ; # 
+  fhir:title [ fhir:v "Tempcodes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-28T10:05:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tempcodes to be implemented in KL-term"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ef491570-7884-4acd-bcf7-43d6b2c64762" ] ;
+     fhir:display [ fhir:v "Borger har ikke henvendt sig eller er udeblevet" ]
+  ] [
+     fhir:code [ fhir:v "ffd81f78-352e-4589-a195-5350dd1df2a4" ] ;
+     fhir:display [ fhir:v "almen" ] ;
+     fhir:definition [ fhir:v "Midlertidig kopi af MedComs kode for genoptræning på alment niveau, som specificeret af den gode genoptræningsplan, https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/GGOP/Dokumentation/GGOP.pdf" ]
+  ] [
+     fhir:code [ fhir:v "0c8e2bfc-1350-45d1-90da-c07e2645d073" ] ;
+     fhir:display [ fhir:v "specialiseret" ] ;
+     fhir:definition [ fhir:v "Midlertidig kopi af MedComs kode for genoptræning på specialieret niveau, som specificeret af den gode genoptræningsplan, https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/GGOP/Dokumentation/GGOP.pdf" ]
+  ] [
+     fhir:code [ fhir:v "83c89857-8fb8-4163-97b1-eb1a56345c29" ] ;
+     fhir:display [ fhir:v "rehabilitering" ] ;
+     fhir:definition [ fhir:v "Midlertidig kopi af MedComs kode for rehabilitering på specialiseret niveau, som specificeret af den gode genoptræningsplan, https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/GGOP/Dokumentation/GGOP.pdf" ]
+  ] [
+     fhir:code [ fhir:v "8b962281-2ab6-4b10-9c91-4bac592d6d49" ] ;
+     fhir:display [ fhir:v "basal" ] ;
+     fhir:definition [ fhir:v "Almen genoptræning på basalt niveau" ]
+  ] [
+     fhir:code [ fhir:v "b679c454-2da2-46dd-9425-0e52d4aa2bf3" ] ;
+     fhir:display [ fhir:v "avanceret" ] ;
+     fhir:definition [ fhir:v "Almen genoptræning på avanceret niveau" ]
+  ] [
+     fhir:code [ fhir:v "f64b8f5e-8ced-4a8b-ab73-8994fb524915" ] ;
+     fhir:display [ fhir:v "Anden kommmune" ] ;
+     fhir:definition [ fhir:v "Overgivet til anden kommune, på borgers anmodning" ]
+  ] [
+     fhir:code [ fhir:v "a8632e22-bf0c-4f5a-92a7-70977ba104d5" ] ;
+     fhir:display [ fhir:v "Udskudt" ] ;
+     fhir:definition [ fhir:v "Udskudt opstart påkrævet som specificeret i GGOP" ]
+  ] [
+     fhir:code [ fhir:v "3796fa11-305f-47d6-b164-45b05489afb2" ] ;
+     fhir:display [ fhir:v "FritValg" ] ;
+     fhir:definition [ fhir:v "Overgået til FritValg" ]
+  ] [
+     fhir:code [ fhir:v "8ac7be88-5d16-4dbd-a61a-ab02673f4b34" ] ;
+     fhir:display [ fhir:v "Fejl" ] ;
+     fhir:definition [ fhir:v "Fejlafsendt GGOP" ]
+  ] [
+     fhir:code [ fhir:v "46a6bc1f-bfe8-4390-a71f-44ad4a384b9d" ] ;
+     fhir:display [ fhir:v "FritValg afslået" ] ;
+     fhir:definition [ fhir:v "borger tilbudt fritValg, men vil hellere vente" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
