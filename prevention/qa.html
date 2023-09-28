@@ -1,0 +1,965 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 29, warn = 15, info = 14-->
+<head>
+  <title>KLGatewayPrevention : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for KLGatewayPrevention</h1>
+ <p>Generated Thu Sep 28 10:29:55 CEST 2023, FHIR version 4.0.1 for kl.dk.fhir.prevention#1.0.0 (canonical = <a href="http://fhir.kl.dk/prevention">http://fhir.kl.dk/prevention</a> (<a href="http://fhir.kl.dk/prevention/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.9</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = kl.dk.fhir.prevention, Canonical = http://fhir.kl.dk/prevention</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>kl.dk.fhir.prevention</td></tr>
+ <tr><td>version</d><td>1.0.0</td></tr>
+ <tr><td>path</d><td>http://fhir.kl.dk/prevention/1.0.0</td></tr>
+ <tr><td>Pub-Mode</d><td>milestone</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>sequence</d><td>Releases</td></tr>
+ <tr><td>desc</d><td>Initial release</td></tr>
+ <tr><td>descmd</d><td><p>Initial release</p>
+</td></tr>
+ <tr><td>first</d><td>true</td></tr>
+ <tr><td>category</d><td>Clinical Registries</td></tr>
+ <tr><td>title</d><td>KLGatewayPrevention</td></tr>
+ <tr><td>introduction</d><td>This IG includes models for reporting disease prevention and health promotion data from Danish Municipalities for secondary purposes.</td></tr>
+ <tr><td>ci-build</d><td>https://build.fhir.org/ig/hl7dk/kl-gateway-prevention/</td></tr>
+</table>
+<ul><li><span title="Invalid HTTP response 404 from http://fhir.kl.dk/prevention/package-list.json?nocache=1695889795471 (Not Found) (content in /var/folders/nk/q9w58qdj2z928y1h12c3zzrr0000gn/T/http-log/fhir-http-5.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> kl.dk.fhir.prevention</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/prevention</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.dk.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core/2.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 2.2.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.3.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> kl.dk.fhir.term</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/term</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/term/1.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above. Latest Release is 5.3.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoQ0AMAwEsez6+8/QBqe4IJJPMrlKUpt0Zz4AAGCHZwAAAPxyAWqFQIAoZQ9kAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+</table><para>Templates: kl.dk.fhir.template#0.0.1 -&gt; fhir.base.template#current. Tools: current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.dk.core#2.1.0:     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-organization.html">DkCoreOrganization</a>
+ (2 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-gln-identifier.html">GLNIdentifier</a>
+ (1 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-sor-identifier.html">SORIdentifier</a>
+ (4 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-kombit-org-identifier.html">KombitOrgIdentifier</a>
+ (1 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-cvr-identifier.html">CVRIdentifier</a>
+ (1 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/ValueSet-dk-core-MunicipalityCodes.html">MunicipalityCodes</a>
+ (1 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/CodeSystem-dk-core-regional-subdivision-codes.html">DKCoreRegionalSubdivisionCodes</a>
+ (1 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-cpr-identifier.html">DkCoreCprIdentifier</a>
+ (3 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-municipalityCodes.html">MunicipalityCodes</a>
+ (1 uses),     <a href="http://hl7.dk/fhir/core/2.1.0/StructureDefinition-dk-core-RegionalSubDivisionCodes.html">RegionalSubDivisionCodes</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
+ (11 uses),     <code>fhir-type</code>
+ (80 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
+ (94 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-iscommonbinding.html">isCommonBinding</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/measure.html">Measure</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-intent.html">CarePlanIntent</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/goal.html">Goal</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html">CarePlanActivityOutcome</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/task.html">Task</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/visionprescription.html">VisionPrescription</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html">CarePlanActivityKind</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html">CarePlanActivityStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-explicit-type-name.html">explicit-type-name</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-translatable.html">translatable</a>
+ (24 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-type.html">EncounterType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-category.html">CarePlanCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/extension-condition-dueto.html">dueTo</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-intent.html">RequestIntent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">ServiceRequestCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html">ServiceRequestOrderDetailsCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (35 uses)
+  </li>
+  <li>
+hl7.terminology.r4#5.0.0:     <a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">ConditionCategoryCodes</a>
+ (2 uses)
+  </li>
+  <li>
+hl7.terminology.r4#5.3.0:     <a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>
+ (2 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.kl.dk/prevention (Problem #1 with package-list.json at http://fhir.kl.dk/prevention: Invalid HTTP response 404 from http://fhir.kl.dk/prevention/package-list.json?nocache=1695889634401 (Not Found) (content in /var/folders/nk/q9w58qdj2z928y1h12c3zzrr0000gn/T/http-log/fhir-http-4.log))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 29, warn = 15, info = 14, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Bundle-BrunoIndberetningsrapport"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Bundle-BrunoIndberetningsrapport</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>12</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoAfklarendeSamtale"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CarePlan-BrunoAfklarendeSamtale</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoKostvejledning"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CarePlan-BrunoKostvejledning</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoKostvejledningValidationError"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CarePlan-BrunoKostvejledningValidationError</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKost"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CarePlan-BrunoforloebKost</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKostAfbrudt"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudt</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKostAfbrudtValidationerror"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudtValidationerror</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKostValidationerror"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CarePlan-BrunoforloebKostValidationerror</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CodeSystem-Tempcodes"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/CodeSystem-Tempcodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Condition-BrunoAktionsdiagnoseRequest"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Condition-BrunoAktionsdiagnoseRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Condition-BrunoTilstand"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Condition-BrunoTilstand</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Encounter-BrunoKontakt1Kost"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Encounter-BrunoKontakt1Kost</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Encounter-BrunoKontaktAfklarende"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Encounter-BrunoKontaktAfklarende</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ImplementationGuide-kl.dk.fhir.prevention"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ImplementationGuide-kl.dk.fhir.prevention</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Organization-AfsenderAfBrunosHenvisning"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Organization-AfsenderAfBrunosHenvisning</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Organization-UdfoererAfBrunosForebyggelse"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Organization-UdfoererAfBrunosForebyggelse</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Patient-BrunoTestElmer"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/Patient-BrunoTestElmer</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ServiceRequest-BrunoRequestInformation"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ServiceRequest-BrunoRequestInformation</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ServiceRequest-BrunoTidligereRequestInformation"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ServiceRequest-BrunoTidligereRequestInformation</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-BasedOnCarePlanExtension"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-BasedOnCarePlanExtension</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-BasedOnServiceRequestExtension"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-BasedOnServiceRequestExtension</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-DeliveryType"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-DeliveryType</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-care-plan"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-care-plan</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-citizen"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-citizen</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-condition"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-condition</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-delivery-report"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-delivery-report</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-encounter"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-encounter</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-focus-condition"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-focus-condition</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-organization"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-organization</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-planned-intervention"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-planned-intervention</b></a></td><td><b>0</b></td><td><b>14</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-servicerequest"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/StructureDefinition-klgateway-119-servicerequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-CancellationTypes"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ValueSet-CancellationTypes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-CarePlanCategories119"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ValueSet-CarePlanCategories119</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-DeliveryTypes119"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ValueSet-DeliveryTypes119</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-KLInterventionCodes119"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ValueSet-KLInterventionCodes119</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-ServiceTypes119"><b>/Users/jkiddo/work/temp/kl.dk.fhir.prevention#1.0.0-milestone/fsh-generated/resources/ValueSet-ServiceTypes119</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.dependency[2].url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ImplementationGuide.dependency[2].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Bundle-BrunoIndberetningsrapport"> </a>
+<h2><a href="Bundle-BrunoIndberetningsrapport.html">fsh-generated/resources/Bundle-BrunoIndberetningsrapport.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(30)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-delivery-report.html">KLGateway119DeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-citizen.html">KLGateway119Citizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-119-citizen.html">KLGateway119Citizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-organization.html">KLGateway119Organization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-klgateway-119-organization.html">KLGateway119Organization</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-organization.html">KLGateway119Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-condition.html">KLGateway119Condition</a>, <i>this.</i><a href="StructureDefinition-klgateway-119-focus-condition.html">KLGateway119FocusCondition</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-119-focus-condition.html">KLGateway119FocusCondition</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-servicerequest.html">KLGateway119ServiceRequest</a></li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a>, <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a></li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-encounter.html">KLGateway119Encounter</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>, <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a></li><li>Bundle.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a>, <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a></li><li>Bundle.entry[9].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-encounter.html">KLGateway119Encounter</a></li><li>Bundle.entry[10].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-condition.html">KLGateway119Condition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-119-condition.html">KLGateway119Condition</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[1] (l39/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl2" class="flip" onclick="flip('l2')">Show Reasoning</span><div id="l2" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[1]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'Organization'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[2] (l58/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl3" class="flip" onclick="flip('l3')">Show Reasoning</span><div id="l3" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[2]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'Organization'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3] (l77/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl4" class="flip" onclick="flip('l4')">Show Reasoning</span><div id="l4" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[3]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[3].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'Condition'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[4] (l109/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl5" class="flip" onclick="flip('l5')">Show Reasoning</span><div id="l5" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[4]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[4]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[4].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'ServiceRequest'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[5] (l143/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl6" class="flip" onclick="flip('l6')">Show Reasoning</span><div id="l6" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[5]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[5]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[5].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'CarePlan'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[6] (l206/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl7" class="flip" onclick="flip('l7')">Show Reasoning</span><div id="l7" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[6]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'Encounter'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[7] (l238/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl8" class="flip" onclick="flip('l8')">Show Reasoning</span><div id="l8" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[7]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[7]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[7].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'CarePlan'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[8] (l280/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl9" class="flip" onclick="flip('l9')">Show Reasoning</span><div id="l9" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[8]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[8]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[8].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'CarePlan'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[9] (l348/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl10" class="flip" onclick="flip('l10')">Show Reasoning</span><div id="l10" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[9]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[9]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[9].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'Encounter'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[10] (l380/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0</b> <span id="sl11" class="flip" onclick="flip('l11')">Show Reasoning</span><div id="l11" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report|1.0.0<ul><li>Bundle.entry[10]: discriminator = true and resource.conformsTo('http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen')</li>, <li>Bundle.entry[10]: Profile http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[10].resource: Specified profile type was 'Patient' in profile 'http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen|1.0.0', but found type 'Condition'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Condition&#8203;/BrunoAktionsdiagnoseRequest*&#8203;/&#8203;.code&#8203;.coding[0] (l89&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;.code&#8203;.coding[0] (l89&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoAfklarendeSamtale"> </a>
+<h2><a href="CarePlan-BrunoAfklarendeSamtale.html">fsh-generated/resources/CarePlan-BrunoAfklarendeSamtale.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l47&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l57/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.performer[0] (l37&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoKostvejledning"> </a>
+<h2><a href="CarePlan-BrunoKostvejledning.html">fsh-generated/resources/CarePlan-BrunoKostvejledning.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l48&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.basedOn[0] (l61/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l57/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.performer[0] (l38&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoKostvejledningValidationError"> </a>
+<h2><a href="CarePlan-BrunoKostvejledningValidationError.html">fsh-generated/resources/CarePlan-BrunoKostvejledningValidationError.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-planned-intervention.html">KLGateway119PlannedIntervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan (l1/c2)</b></td><td><b>error</b></td><td title="Rule klgateway-119-intervention-1: 'Plannend interventions with a treatment focus, should have its basedOn attribute populated with a carePlan.' Failed (defined in http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-planned-intervention)"><b>Rule klgateway-119-intervention-1: 'Plannend interventions with a treatment focus, should have its basedOn attribute populated with a carePlan.' Failed (defined in http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-planned-intervention)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l48&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l57/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.performer[0] (l38&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKost"> </a>
+<h2><a href="CarePlan-BrunoforloebKost.html">fsh-generated/resources/CarePlan-BrunoforloebKost.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l24/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.performer[0] (l32&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKostAfbrudt"> </a>
+<h2><a href="CarePlan-BrunoforloebKostAfbrudt.html">fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudt.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l24/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.performer[0] (l40&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKostAfbrudtValidationerror"> </a>
+<h2><a href="CarePlan-BrunoforloebKostAfbrudtValidationerror.html">fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudtValidationerror.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan (l1/c2)</b></td><td><b>error</b></td><td title="Rule klgateway-119-care-plan-1: 'status reason is mandatory if status is cancelled or stopped. Otherwise it is prohibited' Failed (defined in http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-care-plan)"><b>Rule klgateway-119-care-plan-1: 'status reason is mandatory if status is cancelled or stopped. Otherwise it is prohibited' Failed (defined in http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-care-plan)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l24/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.performer[0] (l32&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CarePlan-BrunoforloebKostValidationerror"> </a>
+<h2><a href="CarePlan-BrunoforloebKostValidationerror.html">fsh-generated/resources/CarePlan-BrunoforloebKostValidationerror.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l24/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.performer[0] (l32&#8203;/c12)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_CodeSystem-Tempcodes"> </a>
+<h2><a href="CodeSystem-Tempcodes.html">fsh-generated/resources/CodeSystem-Tempcodes.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Condition-BrunoAktionsdiagnoseRequest"> </a>
+<h2><a href="Condition-BrunoAktionsdiagnoseRequest.html">fsh-generated/resources/Condition-BrunoAktionsdiagnoseRequest.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-focus-condition.html">KLGateway119FocusCondition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Condition-BrunoTilstand"> </a>
+<h2><a href="Condition-BrunoTilstand.html">fsh-generated/resources/Condition-BrunoTilstand.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-condition.html">KLGateway119Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.subject (l35/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Encounter-BrunoKontakt1Kost"> </a>
+<h2><a href="Encounter-BrunoKontakt1Kost.html">fsh-generated/resources/Encounter-BrunoKontakt1Kost.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Encounter: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-encounter.html">KLGateway119Encounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l12&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter.subject (l26/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Encounter-BrunoKontaktAfklarende"> </a>
+<h2><a href="Encounter-BrunoKontaktAfklarende.html">fsh-generated/resources/Encounter-BrunoKontaktAfklarende.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>Encounter: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-encounter.html">KLGateway119Encounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l12&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter.subject (l26/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ImplementationGuide-kl.dk.fhir.prevention"> </a>
+<h2><a href="ImplementationGuide-kl.dk.fhir.prevention.html">fsh-generated/resources/ImplementationGuide-kl.dk.fhir.prevention.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Organization-AfsenderAfBrunosHenvisning"> </a>
+<h2><a href="Organization-AfsenderAfBrunosHenvisning.html">fsh-generated/resources/Organization-AfsenderAfBrunosHenvisning.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-organization.html">KLGateway119Organization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Organization-UdfoererAfBrunosForebyggelse"> </a>
+<h2><a href="Organization-UdfoererAfBrunosForebyggelse.html">fsh-generated/resources/Organization-UdfoererAfBrunosForebyggelse.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-organization.html">KLGateway119Organization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_Patient-BrunoTestElmer"> </a>
+<h2><a href="Patient-BrunoTestElmer.html">fsh-generated/resources/Patient-BrunoTestElmer.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-citizen.html">KLGateway119Citizen</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ServiceRequest-BrunoRequestInformation"> </a>
+<h2><a href="ServiceRequest-BrunoRequestInformation.html">fsh-generated/resources/ServiceRequest-BrunoRequestInformation.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-servicerequest.html">KLGateway119ServiceRequest</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ServiceRequest.subject (l27/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ServiceRequest.requester (l10/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ServiceRequest&#8203;.reasonReference[0] (l23&#8203;/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ServiceRequest-BrunoTidligereRequestInformation"> </a>
+<h2><a href="ServiceRequest-BrunoTidligereRequestInformation.html">fsh-generated/resources/ServiceRequest-BrunoTidligereRequestInformation.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <i>this.</i><a href="StructureDefinition-klgateway-119-servicerequest.html">KLGateway119ServiceRequest</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ServiceRequest.subject (l19/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-BasedOnCarePlanExtension"> </a>
+<h2><a href="StructureDefinition-BasedOnCarePlanExtension.html">fsh-generated/resources/StructureDefinition-BasedOnCarePlanExtension.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-BasedOnServiceRequestExtension"> </a>
+<h2><a href="StructureDefinition-BasedOnServiceRequestExtension.html">fsh-generated/resources/StructureDefinition-BasedOnServiceRequestExtension.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-DeliveryType"> </a>
+<h2><a href="StructureDefinition-DeliveryType.html">fsh-generated/resources/StructureDefinition-DeliveryType.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-care-plan"> </a>
+<h2><a href="StructureDefinition-klgateway-119-care-plan.html">fsh-generated/resources/StructureDefinition-klgateway-119-care-plan.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-citizen"> </a>
+<h2><a href="StructureDefinition-klgateway-119-citizen.html">fsh-generated/resources/StructureDefinition-klgateway-119-citizen.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-condition"> </a>
+<h2><a href="StructureDefinition-klgateway-119-condition.html">fsh-generated/resources/StructureDefinition-klgateway-119-condition.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-delivery-report"> </a>
+<h2><a href="StructureDefinition-klgateway-119-delivery-report.html">fsh-generated/resources/StructureDefinition-klgateway-119-delivery-report.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-encounter"> </a>
+<h2><a href="StructureDefinition-klgateway-119-encounter.html">fsh-generated/resources/StructureDefinition-klgateway-119-encounter.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-focus-condition"> </a>
+<h2><a href="StructureDefinition-klgateway-119-focus-condition.html">fsh-generated/resources/StructureDefinition-klgateway-119-focus-condition.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-organization"> </a>
+<h2><a href="StructureDefinition-klgateway-119-organization.html">fsh-generated/resources/StructureDefinition-klgateway-119-organization.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-planned-intervention"> </a>
+<h2><a href="StructureDefinition-klgateway-119-planned-intervention.html">fsh-generated/resources/StructureDefinition-klgateway-119-planned-intervention.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'f30cab6d-2a42-4358-99d7-811127fb6e05'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'f30cab6d-2a42-4358-99d7-811127fb6e05'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'e71b7d85-5c78-49c2-8624-8499d162317b'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'e71b7d85-5c78-49c2-8624-8499d162317b'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '01a500f6-c221-4fd0-b518-cd361218b60d'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '01a500f6-c221-4fd0-b518-cd361218b60d'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'c203c6b5-3be0-40a8-8204-e93751deabf5'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'c203c6b5-3be0-40a8-8204-e93751deabf5'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'c9a99304-1788-43b7-b7be-e187b092ae9c'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'c9a99304-1788-43b7-b7be-e187b092ae9c'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'ab87c0b5-40be-4e0a-b749-d9f833bfed2d'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'ab87c0b5-40be-4e0a-b749-d9f833bfed2d'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '61692d91-69b8-4830-9453-3d58454e49d3'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '61692d91-69b8-4830-9453-3d58454e49d3'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'abe847e0-1ce0-44dc-a675-ce05b66f47e6'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'abe847e0-1ce0-44dc-a675-ce05b66f47e6'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'd1e016b5-150a-4ac4-97ba-d3e19e28471e'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'd1e016b5-150a-4ac4-97ba-d3e19e28471e'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'cf7a55c2-7061-47ed-b7c5-e29620fe93bf'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'cf7a55c2-7061-47ed-b7c5-e29620fe93bf'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[5] (l1&#8203;/c5664)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '924e9828-84cf-4689-9551-0ebb6dc71b98'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-1: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '924e9828-84cf-4689-9551-0ebb6dc71b98'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[6] (l1&#8203;/c6196)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-2: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '03a3ebdb-9e2d-4be1-b32b-42f0bd2a3362'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-2: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '03a3ebdb-9e2d-4be1-b32b-42f0bd2a3362'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[6] (l1&#8203;/c6196)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-2: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'ee5606ac-1bed-487e-aa3c-72dcc30ec037'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-2: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = 'ee5606ac-1bed-487e-aa3c-72dcc30ec037'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[6] (l1&#8203;/c6196)</b></td><td><b>warning</b></td><td title="klgateway-119-intervention-2: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '6eddbaf7-2a73-49d4-91e7-6138d419f58c'' may fail or return false if there is more than one item in the content being evaluated"><b>klgateway-119-intervention-2: The left side is inherently a collection, and so the expression 'activity.detail.code.coding.code = '6eddbaf7-2a73-49d4-91e7-6138d419f58c'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_StructureDefinition-klgateway-119-servicerequest"> </a>
+<h2><a href="StructureDefinition-klgateway-119-servicerequest.html">fsh-generated/resources/StructureDefinition-klgateway-119-servicerequest.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-CancellationTypes"> </a>
+<h2><a href="ValueSet-CancellationTypes.html">fsh-generated/resources/ValueSet-CancellationTypes.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-CarePlanCategories119"> </a>
+<h2><a href="ValueSet-CarePlanCategories119.html">fsh-generated/resources/ValueSet-CarePlanCategories119.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-DeliveryTypes119"> </a>
+<h2><a href="ValueSet-DeliveryTypes119.html">fsh-generated/resources/ValueSet-DeliveryTypes119.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi34"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-KLInterventionCodes119"> </a>
+<h2><a href="ValueSet-KLInterventionCodes119.html">fsh-generated/resources/ValueSet-KLInterventionCodes119.json</a> <span id="svi35" class="toggle" onclick="toggle('vi35')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi35')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi35"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_jkiddo_work_temp_kl.dk.fhir.prevention_1.0.0-milestone_fsh-generated_resources_ValueSet-ServiceTypes119"> </a>
+<h2><a href="ValueSet-ServiceTypes119.html">fsh-generated/resources/ValueSet-ServiceTypes119.json</a> <span id="svi36" class="toggle" onclick="toggle('vi36')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi36')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi36"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Reference_REF_Aggregation"> </a>
+<h2>Reference_REF_Aggregation</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoAfklarendeSamtale.html">fsh-generated/resources/CarePlan-BrunoAfklarendeSamtale.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoAfklarendeSamtale.html">fsh-generated/resources/CarePlan-BrunoAfklarendeSamtale.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoAfklarendeSamtale.html">fsh-generated/resources/CarePlan-BrunoAfklarendeSamtale.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoKostvejledning.html">fsh-generated/resources/CarePlan-BrunoKostvejledning.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoKostvejledning.html">fsh-generated/resources/CarePlan-BrunoKostvejledning.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoKostvejledning.html">fsh-generated/resources/CarePlan-BrunoKostvejledning.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoKostvejledning.html">fsh-generated/resources/CarePlan-BrunoKostvejledning.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoKostvejledningValidationError.html">fsh-generated/resources/CarePlan-BrunoKostvejledningValidationError.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoKostvejledningValidationError.html">fsh-generated/resources/CarePlan-BrunoKostvejledningValidationError.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoKostvejledningValidationError.html">fsh-generated/resources/CarePlan-BrunoKostvejledningValidationError.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKost.html">fsh-generated/resources/CarePlan-BrunoforloebKost.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKost.html">fsh-generated/resources/CarePlan-BrunoforloebKost.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKostAfbrudt.html">fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudt.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKostAfbrudt.html">fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudt.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKostAfbrudtValidationerror.html">fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudtValidationerror.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKostAfbrudtValidationerror.html">fsh-generated/resources/CarePlan-BrunoforloebKostAfbrudtValidationerror.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKostValidationerror.html">fsh-generated/resources/CarePlan-BrunoforloebKostValidationerror.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-BrunoforloebKostValidationerror.html">fsh-generated/resources/CarePlan-BrunoforloebKostValidationerror.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-BrunoTilstand.html">fsh-generated/resources/Condition-BrunoTilstand.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-BrunoKontakt1Kost.html">fsh-generated/resources/Encounter-BrunoKontakt1Kost.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-BrunoKontakt1Kost.html">fsh-generated/resources/Encounter-BrunoKontakt1Kost.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-BrunoKontaktAfklarende.html">fsh-generated/resources/Encounter-BrunoKontaktAfklarende.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-BrunoKontaktAfklarende.html">fsh-generated/resources/Encounter-BrunoKontaktAfklarende.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ServiceRequest-BrunoRequestInformation.html">fsh-generated/resources/ServiceRequest-BrunoRequestInformation.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ServiceRequest-BrunoRequestInformation.html">fsh-generated/resources/ServiceRequest-BrunoRequestInformation.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ServiceRequest-BrunoRequestInformation.html">fsh-generated/resources/ServiceRequest-BrunoRequestInformation.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ServiceRequest-BrunoTidligereRequestInformation.html">fsh-generated/resources/ServiceRequest-BrunoTidligereRequestInformation.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BrunoIndberetningsrapport.html">fsh-generated/resources/Bundle-BrunoIndberetningsrapport.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-BrunoIndberetningsrapport.html">fsh-generated/resources/Bundle-BrunoIndberetningsrapport.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-BrunoAktionsdiagnoseRequest.html">fsh-generated/resources/Condition-BrunoAktionsdiagnoseRequest.json</a></td><td><b>Code System URI 'urn:oid:1.2.208.176.2.4.12' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>
