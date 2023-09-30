@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/EncounterTypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EncounterTypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a> where concept  is-a  <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-6c2a4f15-d775-47f3-9868-b26fbff9ff8b\">6c2a4f15-d775-47f3-9868-b26fbff9ff8b</a></li><li>Include codes from <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a> where concept  is-a  <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-4b039ba1-4005-42e6-b672-09b81ad7578a\">4b039ba1-4005-42e6-b672-09b81ad7578a</a></li><li>Include codes from <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a> where concept  is-a  <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-b30f139c-fac5-416e-b84a-a3429f0222c2\">b30f139c-fac5-416e-b84a-a3429f0222c2</a></li><li>Include codes from <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a> where concept  is-a  <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb\">9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb</a></li><li>Include codes from <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a> where concept  is-a  <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-606c6585-444b-4ecd-885c-2ee59dc33f32\">606c6585-444b-4ecd-885c-2ee59dc33f32</a></li><li>Include codes from <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a> where concept  is-a  <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-17f5f9fa-3e1c-42fe-9ef3-178bc7900f67\">17f5f9fa-3e1c-42fe-9ef3-178bc7900f67</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/EncounterTypes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EncounterTypes"] ; # 
+  fhir:title [ fhir:v "EncounterTypes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-30T15:40:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Extension on encountertype valueset, to be implemented in KL-term and FKI, does not use exciting codes only those specific to childrens nursing"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "6c2a4f15-d775-47f3-9868-b26fbff9ff8b" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "4b039ba1-4005-42e6-b672-09b81ad7578a" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "b30f139c-fac5-416e-b84a-a3429f0222c2" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "606c6585-444b-4ecd-885c-2ee59dc33f32" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "17f5f9fa-3e1c-42fe-9ef3-178bc7900f67" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

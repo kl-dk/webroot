@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/IndicatorResultsChildren> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IndicatorResultsChildren"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a\">96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a</a></td><td style=\"color: #cccccc\">Problem/bemærkning</td><td>Der er konstateret et problem, og lavet en bemærkning</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html#FBOE-1b64f768-5133-4633-85a4-2b97fcaa1f7a\">1b64f768-5133-4633-85a4-2b97fcaa1f7a</a></td><td style=\"color: #cccccc\">Intet at bemærke</td><td>Der er intet at bemærke</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/IndicatorResultsChildren"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "IndicatorResultsChildren"] ; # 
+  fhir:title [ fhir:v "IndicatorResultsChildren"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-30T15:40:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Result values for children indicators"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a" ]
+       ] [
+         fhir:code [ fhir:v "1b64f768-5133-4633-85a4-2b97fcaa1f7a" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

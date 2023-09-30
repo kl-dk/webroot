@@ -1,0 +1,363 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/Bundle/RikkeDeliveryReport2months> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RikkeDeliveryReport2months"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2020-07-08T23:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "Patient/Rikke"^^xsd:anyURI ] ;
+     fhir:resource ( <Patient/Rikke> )
+  ] [
+     fhir:fullUrl [ fhir:v "Patient/Kirsten"^^xsd:anyURI ] ;
+     fhir:resource ( <Patient/Kirsten> )
+  ] [
+     fhir:fullUrl [ fhir:v "RelatedPerson/RikkesParent"^^xsd:anyURI ] ;
+     fhir:resource ( <RelatedPerson/RikkesParent> )
+  ] [
+     fhir:fullUrl [ fhir:v "Encounter/2mthEncounter"^^xsd:anyURI ] ;
+     fhir:resource ( <Encounter/2mthEncounter> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/RikkeHeadCircum"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/RikkeHeadCircum> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/RikkeTobaccoObservation"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/RikkeTobaccoObservation> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/RikkeFeedingObservation"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/RikkeFeedingObservation> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/RikkeIndicatorSK"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/RikkeIndicatorSK> )
+  ] [
+     fhir:fullUrl [ fhir:v "Observation/KirstenIndicatorMS"^^xsd:anyURI ] ;
+     fhir:resource ( <Observation/KirstenIndicatorMS> )
+  ] ) . # 
+
+<Patient/Rikke> a fhir:Patient ;
+  fhir:id [ fhir:v "Rikke"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Rikke\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Rikke&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-citizen.html\">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: id: 0505209996 (use: OFFICIAL)</p><p><b>managingOrganization</b>: <span>id: 123456789012345 (use: OFFICIAL)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0505209996" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "123456789012345" ]
+     ]
+  ] . # 
+
+<Patient/Kirsten> a fhir:Patient ;
+  fhir:id [ fhir:v "Kirsten"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Kirsten\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Kirsten&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-citizen.html\">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: id: 2911829996 (use: OFFICIAL)</p><p><b>managingOrganization</b>: <span>id: 123456789012345 (use: OFFICIAL)</span></p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#RelatedPerson_RikkesParent\">See above (RelatedPerson/RikkesParent)</a></td><td>seealso</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2911829996" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "123456789012345" ]
+     ]
+  ] ; # 
+  fhir:link ( [
+     fhir:other [
+       fhir:link <http://fhir.kl.dk/children/RelatedPerson/RikkesParent> ;
+       fhir:reference [ fhir:v "RelatedPerson/RikkesParent" ]
+     ] ;
+     fhir:type [ fhir:v "seealso" ]
+  ] ) . # 
+
+<RelatedPerson/RikkesParent> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "RikkesParent"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"RikkesParent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;RikkesParent&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-related-parent.html\">KLGatewayChildrenRelatedParent</a></p></div><p><b>patient</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>relationship</b>: parent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#PRN)</span></p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PRN" ]
+     ] )
+  ] ) . # 
+
+<Encounter/2mthEncounter> a fhir:Encounter ;
+  fhir:id [ fhir:v "2mthEncounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2mthEncounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2mthEncounter&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-encounter.html\">KLGatewayChildrenEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: Besøg ved det ca. 2 måneder gamle barn <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\">FBOE</a>#51f30d1c-d60e-4e3e-ac22-ec9712ea962d)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>period</b>: 2020-07-07 12:45:00+0000 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "51f30d1c-d60e-4e3e-ac22-ec9712ea962d" ] ;
+       fhir:display [ fhir:v "Besøg ved det ca. 2 måneder gamle barn" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-07-07T12:45:00.000Z"^^xsd:dateTime ]
+  ] . # 
+
+<Observation/RikkeHeadCircum> a fhir:Observation ;
+  fhir:id [ fhir:v "RikkeHeadCircum"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"RikkeHeadCircum\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;RikkeHeadCircum&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-headcircum.html\">KLGatewayChildrenHeadCircumference</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Head circumference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9843-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#363812007)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href=\"#Encounter_2mthEncounter\">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-07-07 12:45:00+0000</p><p><b>value</b>: 38.3 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:9843-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9843-4" ]
+     ] [
+       a sct:363812007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "363812007" ] ;
+       fhir:display [ fhir:v "Head circumference" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/2mthEncounter> ;
+     fhir:reference [ fhir:v "Encounter/2mthEncounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-07-07T12:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "38.3"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "cm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<Observation/RikkeTobaccoObservation> a fhir:Observation ;
+  fhir:id [ fhir:v "RikkeTobaccoObservation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-tobacco-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-tobacco-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"RikkeTobaccoObservation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;RikkeTobaccoObservation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-tobacco-observation.html\">KLGatewayChildrenTobaccoObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Tobacco use and exposure (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#229819007)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href=\"#Encounter_2mthEncounter\">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: Exposed to tobacco smoke at home <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#228524006)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:229819007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "229819007" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/2mthEncounter> ;
+     fhir:reference [ fhir:v "Encounter/2mthEncounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-07-07T00:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:228524006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "228524006" ]
+     ] )
+  ] . # 
+
+<Observation/RikkeFeedingObservation> a fhir:Observation ;
+  fhir:id [ fhir:v "RikkeFeedingObservation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"RikkeFeedingObservation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;RikkeFeedingObservation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-feeding-observation.html\">KLGatewayChildrenFeedingObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Infant feeding method <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#169740003)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href=\"#Encounter_2mthEncounter\">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-05-05 00:00:00+0000 --&gt; 2020-07-07 00:00:00+0000</p><p><b>value</b>: Exclusively breastfed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1145307003)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:169740003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "169740003" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/2mthEncounter> ;
+     fhir:reference [ fhir:v "Encounter/2mthEncounter" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2020-05-05T00:00:00.000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2020-07-07T00:00:00.000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:1145307003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1145307003" ]
+     ] )
+  ] . # 
+
+<Observation/RikkeIndicatorSK> a fhir:Observation ;
+  fhir:id [ fhir:v "RikkeIndicatorSK"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-indicator"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-indicator>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"RikkeIndicatorSK\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;RikkeIndicatorSK&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-indicator.html\">KLGatewayChildrenIndicator</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Samvær, kontakt, forældre-barn relation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\">FBOE</a>#bee30064-8436-4762-83ed-e47d65f23fc6)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href=\"#Encounter_2mthEncounter\">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: Problem/bemærkning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\">FBOE</a>#96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "bee30064-8436-4762-83ed-e47d65f23fc6" ] ;
+       fhir:display [ fhir:v "Samvær, kontakt, forældre-barn relation" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/2mthEncounter> ;
+     fhir:reference [ fhir:v "Encounter/2mthEncounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-07-07T00:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a" ] ;
+       fhir:display [ fhir:v "Problem/bemærkning" ]
+     ] )
+  ] . # 
+
+<Observation/KirstenIndicatorMS> a fhir:Observation ;
+  fhir:id [ fhir:v "KirstenIndicatorMS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-indicator"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-indicator>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"KirstenIndicatorMS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;KirstenIndicatorMS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-indicator.html\">KLGatewayChildrenIndicator</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Forælders psykiske tilstand <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\">FBOE</a>#2c39af9f-8e45-4c88-962f-e7a9e2cd31b6)</span></p><p><b>subject</b>: <a href=\"#Patient_Kirsten\">See above (Patient/Kirsten)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: Problem/bemærkning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\">FBOE</a>#96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2c39af9f-8e45-4c88-962f-e7a9e2cd31b6" ] ;
+       fhir:display [ fhir:v "Forælders psykiske tilstand" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Kirsten> ;
+     fhir:reference [ fhir:v "Patient/Kirsten" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-07-07T00:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a" ] ;
+       fhir:display [ fhir:v "Problem/bemærkning" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

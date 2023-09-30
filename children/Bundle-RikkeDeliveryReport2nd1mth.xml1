@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="RikkeDeliveryReport2nd1mth"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-06-01T23:45:00.000Z"/>
+  <entry>
+    <fullUrl value="Patient/Rikke"/>
+    <resource>
+      <Patient>
+        <id value="Rikke"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="Rikke"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;Rikke&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-citizen.html">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: id: 0505209996 (use: OFFICIAL)</p><p><b>managingOrganization</b>: <span>id: 123456789012345 (use: OFFICIAL)</span></p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="0505209996"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <use value="official"/>
+            <system value="urn:oid:1.2.208.176.1.1"/>
+            <value value="123456789012345"/>
+          </identifier>
+        </managingOrganization>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Encounter/2nd1mthEncounter"/>
+    <resource>
+      <Encounter>
+        <id value="2nd1mthEncounter"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="2nd1mthEncounter"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;2nd1mthEncounter&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-encounter.html">KLGatewayChildrenEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: Andet besøg i barnets første levemåned <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html">FBOE</a>#563c4174-f451-4c87-8db8-8d5472ca7ff6)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>period</b>: 2020-06-01 --&gt; (ongoing)</p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="HH"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+            <code value="563c4174-f451-4c87-8db8-8d5472ca7ff6"/>
+            <display value="Andet besøg i barnets første levemåned"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <period>
+          <start value="2020-06-01"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/RikkeBodyHeight"/>
+    <resource>
+      <Observation>
+        <id value="RikkeBodyHeight"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="RikkeBodyHeight"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;RikkeBodyHeight&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-bodyheight.html">KLGatewayChildrenBodyHeight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 8302-2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8302-2; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1153637007)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href="#Encounter_2nd1mthEncounter">See above (Encounter/2nd1mthEncounter)</a></p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: 57 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8302-2"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1153637007"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/2nd1mthEncounter"/>
+        </encounter>
+        <effectiveDateTime value="2020-06-01"/>
+        <valueQuantity>
+          <value value="57"/>
+          <unit value="cm"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/RikkeBodyWeight"/>
+    <resource>
+      <Observation>
+        <id value="RikkeBodyWeight"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="RikkeBodyWeight"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;RikkeBodyWeight&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-bodyweight.html">KLGatewayChildrenBodyWeight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 29463-7 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#425024002)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href="#Encounter_2nd1mthEncounter">See above (Encounter/2nd1mthEncounter)</a></p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: 5100 g<span style="background: LightGoldenRodYellow"> (Details: UCUM code g = 'g')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="425024002"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/2nd1mthEncounter"/>
+        </encounter>
+        <effectiveDateTime value="2020-06-01"/>
+        <valueQuantity>
+          <value value="5100"/>
+          <unit value="g"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="g"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="RikkeDeliveryReport2months"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-07-08T23:45:00.000Z"/>
+  <entry>
+    <fullUrl value="Patient/Rikke"/>
+    <resource>
+      <Patient>
+        <id value="Rikke"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="Rikke"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;Rikke&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-citizen.html">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: id: 0505209996 (use: OFFICIAL)</p><p><b>managingOrganization</b>: <span>id: 123456789012345 (use: OFFICIAL)</span></p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="0505209996"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <use value="official"/>
+            <system value="urn:oid:1.2.208.176.1.1"/>
+            <value value="123456789012345"/>
+          </identifier>
+        </managingOrganization>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Patient/Kirsten"/>
+    <resource>
+      <Patient>
+        <id value="Kirsten"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="Kirsten"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;Kirsten&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-citizen.html">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: id: 2911829996 (use: OFFICIAL)</p><p><b>managingOrganization</b>: <span>id: 123456789012345 (use: OFFICIAL)</span></p><h3>Links</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td><a href="#RelatedPerson_RikkesParent">See above (RelatedPerson/RikkesParent)</a></td><td>seealso</td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="2911829996"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <use value="official"/>
+            <system value="urn:oid:1.2.208.176.1.1"/>
+            <value value="123456789012345"/>
+          </identifier>
+        </managingOrganization>
+        <link>
+          <other>
+            <reference value="RelatedPerson/RikkesParent"/>
+          </other>
+          <type value="seealso"/>
+        </link>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="RelatedPerson/RikkesParent"/>
+    <resource>
+      <RelatedPerson>
+        <id value="RikkesParent"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RelatedPerson</b><a name="RikkesParent"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RelatedPerson &quot;RikkesParent&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-related-parent.html">KLGatewayChildrenRelatedParent</a></p></div><p><b>patient</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>relationship</b>: parent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#PRN)</span></p></div>
+        </text>
+        <patient>
+          <reference value="Patient/Rikke"/>
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="PRN"/>
+          </coding>
+        </relationship>
+      </RelatedPerson>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Encounter/2mthEncounter"/>
+    <resource>
+      <Encounter>
+        <id value="2mthEncounter"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="2mthEncounter"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;2mthEncounter&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-encounter.html">KLGatewayChildrenEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: Besøg ved det ca. 2 måneder gamle barn <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html">FBOE</a>#51f30d1c-d60e-4e3e-ac22-ec9712ea962d)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>period</b>: 2020-07-07 12:45:00+0000 --&gt; (ongoing)</p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="HH"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+            <code value="51f30d1c-d60e-4e3e-ac22-ec9712ea962d"/>
+            <display value="Besøg ved det ca. 2 måneder gamle barn"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <period>
+          <start value="2020-07-07T12:45:00.000Z"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/RikkeHeadCircum"/>
+    <resource>
+      <Observation>
+        <id value="RikkeHeadCircum"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="RikkeHeadCircum"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;RikkeHeadCircum&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-headcircum.html">KLGatewayChildrenHeadCircumference</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Head circumference <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9843-4; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#363812007)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href="#Encounter_2mthEncounter">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-07-07 12:45:00+0000</p><p><b>value</b>: 38.3 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="9843-4"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="363812007"/>
+            <display value="Head circumference"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/2mthEncounter"/>
+        </encounter>
+        <effectiveDateTime value="2020-07-07T12:45:00.000Z"/>
+        <valueQuantity>
+          <value value="38.3"/>
+          <unit value="cm"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/RikkeTobaccoObservation"/>
+    <resource>
+      <Observation>
+        <id value="RikkeTobaccoObservation"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-tobacco-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="RikkeTobaccoObservation"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;RikkeTobaccoObservation&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-tobacco-observation.html">KLGatewayChildrenTobaccoObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Tobacco use and exposure (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#229819007)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href="#Encounter_2mthEncounter">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: Exposed to tobacco smoke at home <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#228524006)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="229819007"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/2mthEncounter"/>
+        </encounter>
+        <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="228524006"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/RikkeFeedingObservation"/>
+    <resource>
+      <Observation>
+        <id value="RikkeFeedingObservation"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="RikkeFeedingObservation"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;RikkeFeedingObservation&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-feeding-observation.html">KLGatewayChildrenFeedingObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Infant feeding method <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#169740003)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href="#Encounter_2mthEncounter">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-05-05 00:00:00+0000 --&gt; 2020-07-07 00:00:00+0000</p><p><b>value</b>: Exclusively breastfed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1145307003)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="169740003"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/2mthEncounter"/>
+        </encounter>
+        <effectivePeriod>
+          <start value="2020-05-05T00:00:00.000Z"/>
+          <end value="2020-07-07T00:00:00.000Z"/>
+        </effectivePeriod>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1145307003"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/RikkeIndicatorSK"/>
+    <resource>
+      <Observation>
+        <id value="RikkeIndicatorSK"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-indicator"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="RikkeIndicatorSK"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;RikkeIndicatorSK&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-indicator.html">KLGatewayChildrenIndicator</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Samvær, kontakt, forældre-barn relation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html">FBOE</a>#bee30064-8436-4762-83ed-e47d65f23fc6)</span></p><p><b>subject</b>: <a href="#Patient_Rikke">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href="#Encounter_2mthEncounter">See above (Encounter/2mthEncounter)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: Problem/bemærkning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html">FBOE</a>#96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+            <code value="bee30064-8436-4762-83ed-e47d65f23fc6"/>
+            <display value="Samvær, kontakt, forældre-barn relation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/2mthEncounter"/>
+        </encounter>
+        <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+            <code value="96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a"/>
+            <display value="Problem/bemærkning"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/KirstenIndicatorMS"/>
+    <resource>
+      <Observation>
+        <id value="KirstenIndicatorMS"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-indicator"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="KirstenIndicatorMS"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;KirstenIndicatorMS&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-children-indicator.html">KLGatewayChildrenIndicator</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Forælders psykiske tilstand <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html">FBOE</a>#2c39af9f-8e45-4c88-962f-e7a9e2cd31b6)</span></p><p><b>subject</b>: <a href="#Patient_Kirsten">See above (Patient/Kirsten)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: Problem/bemærkning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html">FBOE</a>#96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+            <code value="2c39af9f-8e45-4c88-962f-e7a9e2cd31b6"/>
+            <display value="Forælders psykiske tilstand"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Kirsten"/>
+        </subject>
+        <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+            <code value="96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a"/>
+            <display value="Problem/bemærkning"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

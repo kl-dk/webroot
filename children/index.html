@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home -  v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-09-30
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">KLChildren</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#klchildren" id="markdown-toc-klchildren">KLChildren</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#special-constraints-and-resulting-reporting-practises" id="markdown-toc-special-constraints-and-resulting-reporting-practises">Special constraints, and resulting reporting practises</a></li>
+      <li><a href="#citizen" id="markdown-toc-citizen">Citizen</a></li>
+      <li><a href="#parentrelation" id="markdown-toc-parentrelation">ParentRelation</a></li>
+      <li><a href="#encounter" id="markdown-toc-encounter">Encounter</a></li>
+      <li><a href="#indicator" id="markdown-toc-indicator">Indicator</a></li>
+      <li><a href="#bodyweight" id="markdown-toc-bodyweight">BodyWeight</a></li>
+      <li><a href="#bodyheight" id="markdown-toc-bodyheight">BodyHeight</a></li>
+      <li><a href="#headcircumference" id="markdown-toc-headcircumference">HeadCircumference</a></li>
+      <li><a href="#feedingobservation" id="markdown-toc-feedingobservation">FeedingObservation</a></li>
+      <li><a href="#tobaccoobservation" id="markdown-toc-tobaccoobservation">TobaccoObservation</a></li>
+      <li><a href="#mentalstate" id="markdown-toc-mentalstate">MentalState</a>        <ul>
+          <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+          <li><a href="#cross-version-analysis" id="markdown-toc-cross-version-analysis">Cross Version Analysis</a></li>
+          <li><a href="#global-profiles" id="markdown-toc-global-profiles">Global Profiles</a></li>
+          <li><a href="#ip-statements" id="markdown-toc-ip-statements">IP Statements</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="klchildren">KLChildren</h1>
+<p>This implementation guide describes the delivery of children health data to KL Gateway. The data originates from the documantation made by health nurses (sundhedsplejersker) in the Danish municipalities.The reporting aims for compliance with the Danish core profiles and the current work on a shared information model (FKI) for data in the Danish municipalities.</p>
+
+<p>The profiles for the reporting are restricted to allow only the information that is required to report to the KL Gateway.</p>
+
+<h2 id="overview">Overview</h2>
+<p>The data is reported as a collection of instances. A report may contain instances that conforms to the profiles defined in this implementation guide. See figure below.</p>
+
+<p><img alt="OverviewModel" src="./ReportStructure.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" /></p>
+
+<h2 id="special-constraints-and-resulting-reporting-practises">Special constraints, and resulting reporting practises</h2>
+<p>Whereas the report may seem unconstrained, each profile define constraints on attributes, datatypes and cardinalities. In addition, extra constraints are implemented to accomodate the rules of reporting data to The National Child Health Register, see <a href="https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/indberetning_sei/vejledninger_indberetning/bornedatabasen">guidance</a>. Extra constraints are as follows:</p>
+<ul>
+  <li>Tobacco exposure should be reported, at the visit known as ‘Etableringsbesøg’</li>
+  <li>Length/Height and weight should be reported, at the visits/encounters known as ‘Andet besøg i barnets første levemåned’, ‘Besøg ved det 4-6 måneder gamle barn’, ‘indskolingsundersøgelse’ and’udskolingsundersøgelse’</li>
+</ul>
+
+<p>The applied rules mean that an observation without a value must be reported if one of the menitioned encounters are completed without the data being obtained, and an appropriate dataAbsentReason must be given. In addition, the correct encounter-type must be applied, for the rules to take effect correctly. See more in the descriptions below and in the <a href="StructureDefinition-klgateway-children-encounter.html">Enconter-profile</a></p>
+
+<h2 id="citizen">Citizen</h2>
+<p>Information about the citizens that are the subjects of the report. This resource is used to get a reference to the child. However, sometimes a report holds data about the child’s parents. To ensure that this data goes into the parent’s record, the data should be related to the parent represented as a citizen. Citizen and relatedPerson resources for the parents should only be included when and if, they are relevant for the child’s report.</p>
+
+<h5 id="attributes">Attributes</h5>
+<ul>
+  <li>civil registration number (CPR-nr)</li>
+  <li>identification of the municipality holding and reporting the data</li>
+  <li>a reference to ParentRelation that holds additional information about the citizen’s children.</li>
+</ul>
+
+<h5 id="validation">Validation</h5>
+<ul>
+  <li>One and only one civil registration number exists, and is a syntactically valid CPR-nr</li>
+  <li>One and only one managing organization exitis, and is a syntactically valid SOR code (only code length is currently validated in the profile, but the authorization validates the actual SOR code)</li>
+  <li>One reference to ParentRelation may exist</li>
+</ul>
+
+<h2 id="parentrelation">ParentRelation</h2>
+<p>Information about the relationship between a child and its parents. Citizen and relatedPerson resources for the parents should only be included when and if, they are relevant for the child’s report.</p>
+
+<h5 id="attributes-1">Attributes</h5>
+<ul>
+  <li>a reference to the Citizen instance that holds the child’s information</li>
+  <li>a relationship type that states that this is a ‘parent’-relationship.</li>
+</ul>
+
+<h5 id="validation-1">Validation</h5>
+<ul>
+  <li>one and only one reference to the Citizen exists</li>
+  <li>one and only one relationship type exists, and the value is fixed to ‘PRN’ for parent.</li>
+</ul>
+
+<h2 id="encounter">Encounter</h2>
+<p>Information about when a child with or without family members meet the health nurse (sundhedsplejerske) in a Danish municipality context.</p>
+
+<h5 id="attributes-2">Attributes</h5>
+<ul>
+  <li>Type of encounter. The attribute describe which health nurse visit/enconter is deliverd using a code.</li>
+  <li>Encounter class. The attriute holds a code which describe the place of delivery e.g. home visit or ambulatory.</li>
+  <li>The encounter start-time</li>
+  <li>The encounter end-time</li>
+  <li>A reference to the Citizen instance that holds the child’s information</li>
+  <li>A FHIR status atrribute</li>
+</ul>
+
+<h5 id="validation-2">Validation</h5>
+<ul>
+  <li>One and only one encounter-type exists, and should be drawn from a specific ValueSet, no other codes may be reported.</li>
+  <li>One ond only one encounter class exists, and should be drawn from the standard FHIR-ValueSet</li>
+  <li>One and only one encounter start-time exists</li>
+  <li>One encounter start-time may exist</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h2 id="indicator">Indicator</h2>
+<p>A simple form of observation where a whole area of concern is evaluated.</p>
+
+<h5 id="attributes-3">Attributes</h5>
+<ul>
+  <li>Code that describe the kind of indicator</li>
+  <li>Value that describes whether a concern is present or not (bemærkning eller ingen bemærkninger)</li>
+  <li>A reference to the Citizen instance that holds either the parents or the child’s information</li>
+  <li>A reference to the Encounter in which the indicator have been evaluated</li>
+  <li>The time of the evaluation</li>
+  <li>A dataAbsentReason, which is a possiblity to describe why data is absent</li>
+  <li>A FHIR status attribute</li>
+</ul>
+
+<h5 id="validation-3">Validation</h5>
+<ul>
+  <li>One and only one code exists to describe the kind of indicator. It should be drawn from a specific ValueSet, no other codes may be reported.</li>
+  <li>One value may exist. It should be drawn from a specific ValueSet, no other codes may be reported.</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>A reference to an Encounter may exist</li>
+  <li>The time of the evaluation is mandatory</li>
+  <li>DataAbsentReason is possible when the value is absent, and should be drawn from the standard FHIR ValueSet</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h2 id="bodyweight">BodyWeight</h2>
+<p>A child’s weight</p>
+
+<h5 id="attributes-4">Attributes</h5>
+<ul>
+  <li>A category that is used for commonly used vital-signs observations internationally</li>
+  <li>Two codes that describes that this is a weigth observable</li>
+  <li>A value that describes how much the child weighs</li>
+  <li>A dataAbsentReason, which makes it possible to describe why data is absent</li>
+  <li>An observation-time</li>
+  <li>A reference to the Citizen instance that holds the child’s information</li>
+  <li>A reference to the Encounter in which the observation occured</li>
+  <li>A FHIR status attribute</li>
+</ul>
+
+<h5 id="validation-4">Validation</h5>
+<ul>
+  <li>The category should be present, and fixed to a specific code</li>
+  <li>The two weight codes should be present, and fixed to a specific LOINC and SNOMED CT code respectively</li>
+  <li>The value should be given as a decimal point in grams, and the UCUM-unit is applied</li>
+  <li>One dataAbsentReason is mandatory if the value is empty</li>
+  <li>The time is mandatory</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>A reference to an Encounter may exist</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h2 id="bodyheight">BodyHeight</h2>
+<p>A child’s length/height</p>
+
+<h5 id="attributes-5">Attributes</h5>
+<ul>
+  <li>A category that is used for commonly used vital-signs observations internationally</li>
+  <li>Two codes that describes that this is a height/length observable</li>
+  <li>A value that describes how long/tall the child is</li>
+  <li>A dataAbsentReason, which makes it possible to describe why data is absent</li>
+  <li>An observation-time</li>
+  <li>A reference to the Citizen instance that holds the child’s information</li>
+  <li>A reference to the Encounter in which the observation occured</li>
+  <li>A FHIR status attribute</li>
+</ul>
+
+<h5 id="validation-5">Validation</h5>
+<ul>
+  <li>The category should be present, and fixed to a specific code</li>
+  <li>The two weight codes should be present. One is a fixed LOINC code. The other is either a SNOMED CT length or a SNOMED CT height code.</li>
+  <li>The value should be given as an integer in cm, and the UCUM-unit is applied</li>
+  <li>One dataAbsentReason is mandatory if the value is empty</li>
+  <li>The time is mandatory</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>A reference to an Encounter may exist</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h2 id="headcircumference">HeadCircumference</h2>
+<p>The child’s head circumference</p>
+
+<h5 id="attributes-6">Attributes</h5>
+<ul>
+  <li>A category that is used for commonly used vital-signs observations internationally</li>
+  <li>Two codes that describes that this is a head circumference observable</li>
+  <li>A value that describes the child’s head circumference</li>
+  <li>A dataAbsentReason, which makes it possible to describe why data is absent</li>
+  <li>An observation-time</li>
+  <li>A reference to the Citizen instance that holds the child’s information</li>
+  <li>A reference to the Encounter in which the observation occured</li>
+  <li>A FHIR status attribute</li>
+</ul>
+
+<h5 id="validation-6">Validation</h5>
+<ul>
+  <li>The category should be present, and fixed to a specific code</li>
+  <li>The two observation codes should be present, and fixed to a specific LOINC and SNOMED CT code respectively</li>
+  <li>The value should be given as a decimal point in cm, and the UCUM-unit is applied</li>
+  <li>One dataAbsentReason is possible if the value is empty</li>
+  <li>The time is mandatory</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>A reference to an Encounter may exist</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h2 id="feedingobservation">FeedingObservation</h2>
+<p>Information about how small children are fed. It is used for observations of a childs breastfeeding.</p>
+
+<h5 id="attributes-7">Attributes</h5>
+<ul>
+  <li>One codes that describes that this is a feeding observation</li>
+  <li>A value that describes what feeding method the observation is about</li>
+  <li>A dataAbsentReason, which makes it possible to describe why data is absent</li>
+  <li>An observation period in which the feeding method is used.</li>
+  <li>A reference to the Citizen instance that holds the child’s information</li>
+  <li>A reference to the Encounter in which the observation occured</li>
+  <li>A FHIR status attributeFHIR-ValueSet</li>
+</ul>
+
+<h5 id="validation-7">Validation</h5>
+<ul>
+  <li>The observation code should be present, and fixed to a specific SNOMED CT code</li>
+  <li>One value may exist. It should be drawn from a specific ValueSet, no other codes may be reported.</li>
+  <li>One dataAbsentReason is possible if the value is empty</li>
+  <li>The period start and end is mandatory, unless you give a date for when breastfeeding was stopped, then it is only one date.</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>A reference to an Encounter may exist</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h2 id="tobaccoobservation">TobaccoObservation</h2>
+<p>Information about small childrens’ exposue to tobacco, and teenagers’ tocacco use.</p>
+
+<h5 id="attributes-8">Attributes</h5>
+<ul>
+  <li>One codes that describes that this is a tobacco observation</li>
+  <li>A value that describes the actual exposure or use using a code.</li>
+  <li>A dataAbsentReason, which makes it possible to describe why data is absent</li>
+  <li>An observation-time</li>
+  <li>A reference to the Citizen instance that holds the child’s information</li>
+  <li>A reference to the Encounter in which the observation occured</li>
+  <li>A FHIR status attributeFHIR-ValueSet</li>
+</ul>
+
+<h5 id="validation-8">Validation</h5>
+<ul>
+  <li>The observation code should be present, and fixed to a specific SNOMED CT code</li>
+  <li>One value may exist. It should be drawn from a specific ValueSet, no other codes may be reported.</li>
+  <li>One dataAbsentReason is possible if the value is empty</li>
+  <li>The observation-time is mandatory</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>A reference to an Encounter may exist</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h2 id="mentalstate">MentalState</h2>
+<p>Information about how children in school self-report that they thrive.</p>
+
+<h5 id="attributes-9">Attributes</h5>
+<ul>
+  <li>One codes that describes that this is an observation about how the child thrives</li>
+  <li>A value which is a code that describes how the child rated how happy they are in general or at school</li>
+  <li>A dataAbsentReason, which makes it possible to describe why data is absent</li>
+  <li>An observation-time</li>
+  <li>A reference to the Citizen instance that holds the child’s information</li>
+  <li>A reference to the Encounter in which the observation occured</li>
+  <li>A FHIR status attributeFHIR-ValueSet</li>
+</ul>
+
+<h5 id="validation-9">Validation</h5>
+<ul>
+  <li>The observation code should be present, and fixed to a specific SNOMED CT code</li>
+  <li>One value may exist. It should be drawn from a specific ValueSet, no other codes may be reported.</li>
+  <li>One dataAbsentReason is possible if the value is empty</li>
+  <li>The observation-time is mandatory</li>
+  <li>One and only one reference to the Citizen exists</li>
+  <li>A reference to an Encounter may exist</li>
+  <li>One and only one FHIR status exists, and should be drawn from the standard FHIR-ValueSet</li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+<div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.children#1.0.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <span title="Canonical: http://fhir.kl.dk/children">KLChildren</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/kl.dk.fhir.children/1.0.0">kl.dk.fhir.children#1.0.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" /></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.children#1.0.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/5.3.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/5.3.0">hl7.terminology.r4#5.3.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.children#1.0.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://hl7.org/fhir/extensions/1.0.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r4/1.0.0">hl7.fhir.uv.extensions.r4#1.0.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on the HL7 Extension Pack</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.children#1.0.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://hl7.dk/fhir/core/2.1.0" title="Canonical: http://hl7.dk/fhir/core">HL7 FHIR Implementation Guide: DK Core</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.dk.core/2.1.0">hl7.fhir.dk.core#2.1.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" /></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.children#1.0.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/5.0.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/5.0.0">hl7.terminology.r4#5.0.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" /></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/jkiddo/work/temp/kl.dk.fhir.children#1.0.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://fhir.kl.dk/term/1.1.0" title="Canonical: http://fhir.kl.dk/term" /></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/kl.dk.fhir.term/1.1.0">kl.dk.fhir.term#1.1.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" /></tr>
+</table></div>
+<table class="grid"><tr><td><p><b>Package hl7.fhir.uv.extensions.r4#1.0.0</b></p>
+<p>This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used (built Sun, Mar 26, 2023 08:46+1100+11:00)</p>
+</td></tr></table>
+<table class="grid"><tr><td><p><b>Package hl7.fhir.dk.core#2.1.0</b></p>
+<p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors (built Tue, Nov 8, 2022 22:28+0100+01:00)</p>
+</td></tr></table>
+<!--$$3$$-->
+
+<h3 id="cross-version-analysis">Cross Version Analysis</h3>
+<p>This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both <a href="package.r4.tgz">R4 (kl.dk.fhir.children.r4)</a> and <a href="package.r4b.tgz">R4B (kl.dk.fhir.children.r4b)</a> are available.</p>
+<!--$$2$$-->
+
+<h3 id="global-profiles">Global Profiles</h3>
+<p><i>There are no Global profiles defined</i></p>
+<!--$$4$$-->
+
+<h3 id="ip-statements">IP Statements</h3>
+<p>This publication includes IP covered under the following statements.</p>
+<ul>
+<li>The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. https://ucum.org/trac/wiki/TermsOfUse<div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>: <a href="Bundle-RikkeDeliveryReport2months.html">Bundle/RikkeDeliveryReport2months</a>, <a href="Bundle-RikkeDeliveryReport2nd1mth.html">Bundle/RikkeDeliveryReport2nd1mth</a><span id="ips_1" onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span></span><span id="ips2_1" style="display: none">, <a href="Observation-RikkeBodyHeight.html">Observation/RikkeBodyHeight</a>, <a href="Observation-RikkeBodyWeight.html">Observation/RikkeBodyWeight</a>, <a href="Observation-RikkeHeadCircum.html">Observation/RikkeHeadCircum</a> and <a href="ValueSet-ObservationUnitsChildren.html">ObservationUnitsChildren</a></span></li>
+</ul>
+</div></li>
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.<div id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="Bundle-RikkeDeliveryReport2months.html">Bundle/RikkeDeliveryReport2months</a>, <a href="Bundle-RikkeDeliveryReport2nd1mth.html">Bundle/RikkeDeliveryReport2nd1mth</a>, <a href="Observation-RikkeBodyHeight.html">Observation/RikkeBodyHeight</a>, <a href="Observation-RikkeBodyWeight.html">Observation/RikkeBodyWeight</a> and <a href="Observation-RikkeHeadCircum.html">Observation/RikkeHeadCircum</a></li>
+</ul>
+</div></li>
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div id="ipp_3" onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<ul>
+<li><a href="CodeSystem-SNOMED-CT-INT.html">SNOMED Clinical Terms® (SNOMED CT®)</a>: <a href="ValueSet-BodyheightSCTobservablesChildren.html">BodyheightSCTobservablesChildren</a>, <a href="ValueSet-BodyweightSCTobservablesChildren.html">BodyweightSCTobservablesChildren</a><span id="ips_3" onclick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 24 more</span></span><span id="ips2_3" style="display: none">, <a href="Bundle-RikkeDeliveryReport2months.html">Bundle/RikkeDeliveryReport2months</a>, <a href="Bundle-RikkeDeliveryReport2nd1mth.html">Bundle/RikkeDeliveryReport2nd1mth</a>, <a href="ValueSet-FeedingObservablesChildren.html">FeedingObservablesChildren</a>, <a href="ValueSet-FeedingResultsChildren.html">FeedingResultsChildren</a>, <a href="ValueSet-HeadCircumSCTobservablesChildren.html">HeadCircumSCTobservablesChildren</a>, <a href="StructureDefinition-klgateway-children-bodyheight.html">KLGatewayChildrenBodyHeight</a>, <a href="StructureDefinition-klgateway-children-bodyweight.html">KLGatewayChildrenBodyWeight</a>, <a href="StructureDefinition-klgateway-children-feeding-observation.html">KLGatewayChildrenFeedingObservation</a>, <a href="StructureDefinition-klgateway-children-headcircum.html">KLGatewayChildrenHeadCircum</a>, <a href="StructureDefinition-klgateway-children-mental-state.html">KLGatewayChildrenMentalState</a>, <a href="StructureDefinition-klgateway-children-tobacco-observation.html">KLGatewayChildrenTobaccoObservation</a>, <a href="ValueSet-MentalStateObservablesChildren.html">MentalStateObservablesChildren</a>, <a href="Observation-LarsmentalStateObservation.html">Observation/LarsmentalStateObservation</a>, <a href="Observation-RikkeBodyHeight.html">Observation/RikkeBodyHeight</a>, <a href="Observation-RikkeBodyWeight.html">Observation/RikkeBodyWeight</a>, <a href="Observation-RikkeFeedingObservation.html">Observation/RikkeFeedingObservation</a>, <a href="Observation-RikkeFeedingObservation2.html">Observation/RikkeFeedingObservation2</a>, <a href="Observation-RikkeFeedingObservationError.html">Observation/RikkeFeedingObservationError</a>, <a href="Observation-RikkeHeadCircum.html">Observation/RikkeHeadCircum</a>, <a href="Observation-RikkeTobaccoObservation.html">Observation/RikkeTobaccoObservation</a>, <a href="ValueSet-ObservationResultsChildren.html">ObservationResultsChildren</a>, <a href="ValueSet-ObservationSCTChildren.html">ObservationSCTChildren</a>, <a href="ValueSet-TobaccoObservablesChildren.html">TobaccoObservablesChildren</a> and <a href="ValueSet-TobaccoResultsChildren.html">TobaccoResultsChildren</a></span></li>
+</ul>
+</div></li>
+</ul>
+<!--$$1$$-->
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Sep 30, 2023 15:40+0200">2023-09-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

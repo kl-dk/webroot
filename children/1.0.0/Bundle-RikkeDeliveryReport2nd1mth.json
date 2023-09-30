@@ -1,0 +1,155 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "RikkeDeliveryReport2nd1mth",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"]
+  },
+  "type" : "collection",
+  "timestamp" : "2020-06-01T23:45:00.000Z",
+  "entry" : [{
+    "fullUrl" : "Patient/Rikke",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Rikke",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"Rikke\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;Rikke&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-citizen.html\">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: id:\u00a00505209996\u00a0(use:\u00a0OFFICIAL)</p><p><b>managingOrganization</b>: <span>id:\u00a0123456789012345\u00a0(use:\u00a0OFFICIAL)</span></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0505209996"
+      }],
+      "managingOrganization" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "urn:oid:1.2.208.176.1.1",
+          "value" : "123456789012345"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "Encounter/2nd1mthEncounter",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "2nd1mthEncounter",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2nd1mthEncounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2nd1mthEncounter&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-encounter.html\">KLGatewayChildrenEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: Andet besøg i barnets første levemåned <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html\">FBOE</a>#563c4174-f451-4c87-8db8-8d5472ca7ff6)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>period</b>: 2020-06-01 --&gt; (ongoing)</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "HH"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+          "code" : "563c4174-f451-4c87-8db8-8d5472ca7ff6",
+          "display" : "Andet besøg i barnets første levemåned"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/Rikke"
+      },
+      "period" : {
+        "start" : "2020-06-01"
+      }
+    }
+  },
+  {
+    "fullUrl" : "Observation/RikkeBodyHeight",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "RikkeBodyHeight",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"RikkeBodyHeight\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;RikkeBodyHeight&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-bodyheight.html\">KLGatewayChildrenBodyHeight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 8302-2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1153637007)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href=\"#Encounter_2nd1mthEncounter\">See above (Encounter/2nd1mthEncounter)</a></p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: 57 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1153637007"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Rikke"
+      },
+      "encounter" : {
+        "reference" : "Encounter/2nd1mthEncounter"
+      },
+      "effectiveDateTime" : "2020-06-01",
+      "valueQuantity" : {
+        "value" : 57,
+        "unit" : "cm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    }
+  },
+  {
+    "fullUrl" : "Observation/RikkeBodyWeight",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "RikkeBodyWeight",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"RikkeBodyWeight\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;RikkeBodyWeight&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-bodyweight.html\">KLGatewayChildrenBodyWeight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: 29463-7 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#425024002)</span></p><p><b>subject</b>: <a href=\"#Patient_Rikke\">See above (Patient/Rikke)</a></p><p><b>encounter</b>: <a href=\"#Encounter_2nd1mthEncounter\">See above (Encounter/2nd1mthEncounter)</a></p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: 5100 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "425024002"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Rikke"
+      },
+      "encounter" : {
+        "reference" : "Encounter/2nd1mthEncounter"
+      },
+      "effectiveDateTime" : "2020-06-01",
+      "valueQuantity" : {
+        "value" : 5100,
+        "unit" : "g",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
+      }
+    }
+  }]
+}
