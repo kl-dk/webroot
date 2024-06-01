@@ -3,15 +3,15 @@
   "id" : "KLGeneralInformationFSIII",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-F\">F</a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-370e6178-9a5d-45f9-a2c9-f658186059c9\">370e6178-9a5d-45f9-a2c9-f658186059c9</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-F\">F</a></li></ul></div>"
   },
   "url" : "http://fhir.kl.dk/term/ValueSet/KLGeneralInformationFSIII",
-  "version" : "1.1.0",
+  "version" : "2.0.0",
   "name" : "KLGeneralInformationFSIII",
   "title" : "KLGenerelInformationFSIII",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-07-10T23:08:03+02:00",
+  "date" : "2024-06-01T22:25:19+02:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -23,6 +23,14 @@
   "description" : "Generel information codes (observations) as defined by FSIII",
   "compose" : {
     "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "370e6178-9a5d-45f9-a2c9-f658186059c9"
+      }]
+    },
+    {
       "system" : "urn:oid:1.2.208.176.2.21",
       "filter" : [{
         "property" : "concept",

@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -16,7 +16,7 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/term/Parameters-"+id+".xml");
   else if (id == "expParam")
-    Response.Redirect("http://fhir.kl.dk/term/1.0.0/Parameters-expParam.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.0.0/Parameters-expParam.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/term/Parameters.html");
 
@@ -25,6 +25,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from -milestone/output/crparameters.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from -milestone\output\crparameters.asp) .
 </body>
 </html>

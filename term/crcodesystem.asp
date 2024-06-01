@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -16,17 +16,17 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/term/CodeSystem-"+id+".xml");
   else if (id == "FFB")
-    Response.Redirect("http://fhir.kl.dk/term/1.1.0/CodeSystem-FFB.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.0.0/CodeSystem-FFB.html");
   else if (id == "CareSocialCodes")
-    Response.Redirect("http://fhir.kl.dk/term/1.1.0/CodeSystem-CareSocialCodes.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.0.0/CodeSystem-CareSocialCodes.html");
   else if (id == "FBOE")
-    Response.Redirect("http://fhir.kl.dk/term/1.1.0/CodeSystem-FBOE.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html");
   else if (id == "KLCommonproprietary")
-    Response.Redirect("http://fhir.kl.dk/term/1.1.0/CodeSystem-KLCommonproprietary.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.0.0/CodeSystem-KLCommonproprietary.html");
   else if (id == "FSIII")
-    Response.Redirect("http://fhir.kl.dk/term/1.1.0/CodeSystem-FSIII.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.0.0/CodeSystem-FSIII.html");
   else if (id == "NPU")
-    Response.Redirect("http://fhir.kl.dk/term/1.1.0/CodeSystem-NPU.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.0.0/CodeSystem-NPU.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/term/CodeSystem.html");
 
@@ -35,6 +35,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from -milestone/output/crcodesystem.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from -milestone\output\crcodesystem.asp) .
 </body>
 </html>

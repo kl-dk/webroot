@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLInformationCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLGeneralInformationFSIII.html\">KLGenerelInformationFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLNursingAreasFSIII.html\">KLSygeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLHomeCareAreasFSIII.html\">KLHjemmeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLTheraphyAreasFSIII.html\">KLTræningOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLPreventionAreasFSIII.html\">KLForebyggelseOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLThemesFFB.html\">KLTemaerFFB</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLInformationCodes",
+  "version" : "2.0.0",
+  "name" : "KLInformationCodes",
+  "title" : "KLOplysningKoder",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-01T22:19:27+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLGeneralInformationFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLNursingAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLHomeCareAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLTheraphyAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLPreventionAreasFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLThemesFFB"]
+    }]
+  }
+}

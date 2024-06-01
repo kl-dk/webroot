@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConditionCodesFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesHomeCare.html\">KLTilstandeKoderHjemmepleje</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesNursing.html\">KLTilstandeKoderSygepleje</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesTheraphy.html\">KLTilstandKoderTræning</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesPrevention.html\">KLTilstandKoderForebyggelse</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionCodesFSIII",
+  "version" : "2.0.0",
+  "name" : "KLConditionCodesFSIII",
+  "title" : "KLTilstandKoderFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-01T22:19:27+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Danish municipality FSIII condition codes",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLConditionCodesNursing"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLConditionCodesTheraphy"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLConditionCodesPrevention"]
+    }]
+  }
+}
