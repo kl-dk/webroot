@@ -6,11 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLTerm</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term</pre></div>"
   },
   "url" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
-  "version" : "2.0.0",
+  "version" : "1.1.0",
   "name" : "KLTerm",
-  "title" : "KL Terminologi",
   "status" : "active",
-  "date" : "2024-06-01T22:25:19+02:00",
+  "date" : "2023-07-10T23:08:03+02:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -30,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.5.0"
+    "version" : "5.0.0"
   },
   {
     "id" : "hl7ext",
@@ -40,7 +39,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "1.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -288,17 +287,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "active-tables"
       },
       {
@@ -353,7 +341,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#current"
     },
     {
       "extension" : [{
@@ -600,17 +588,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -684,19 +661,7 @@
         "reference" : "CodeSystem/CareSocialCodes"
       },
       "name" : "CareSocialCodes",
-      "description" : "Administrative/technical codes in Local Govenment Denmark (KL), associated with common use cases across areas or kl-core",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
-      }],
-      "reference" : {
-        "reference" : "Parameters/expParam"
-      },
-      "name" : "expParam",
-      "description" : "SNOMED CT expansion parameter",
+      "description" : "Administrative/technical codes in Local Govenment Denmark (KL), associated with KLCommonCareSocial",
       "exampleBoolean" : false
     },
     {
@@ -924,7 +889,7 @@
         "reference" : "ValueSet/KLMatterOfInterestValues"
       },
       "name" : "KLIngenOplysningerKoder",
-      "description" : "Matter of interest values to support when no observations have been made",
+      "description" : "Matter of interes values to support when no observations have been made",
       "exampleBoolean" : false
     },
     {
