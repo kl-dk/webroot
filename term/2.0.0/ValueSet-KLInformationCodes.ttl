@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/ValueSet/KLInformationCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLInformationCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLGeneralInformationFSIII.html\">KLGenerelInformationFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLNursingAreasFSIII.html\">KLSygeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLHomeCareAreasFSIII.html\">KLHjemmeplejeOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLTheraphyAreasFSIII.html\">KLTræningOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLPreventionAreasFSIII.html\">KLForebyggelseOmråderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLThemesFFB.html\">KLTemaerFFB</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/term/ValueSet/KLInformationCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "KLInformationCodes"] ; # 
+  fhir:title [ fhir:v "KLOplysningKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-03T10:43:02+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLGeneralInformationFSIII"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLGeneralInformationFSIII>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLNursingAreasFSIII"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLNursingAreasFSIII>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLHomeCareAreasFSIII"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLHomeCareAreasFSIII>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLTheraphyAreasFSIII"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLTheraphyAreasFSIII>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLPreventionAreasFSIII"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLPreventionAreasFSIII>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLThemesFFB"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLThemesFFB>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

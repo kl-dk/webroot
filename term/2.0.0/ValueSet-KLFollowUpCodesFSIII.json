@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLFollowUpCodesFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-ad78224f-b339-462c-9f2c-90b3120605cb\">ad78224f-b339-462c-9f2c-90b3120605cb</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-E\">E</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLFollowUpCodesFSIII",
+  "version" : "2.0.0",
+  "name" : "KLFollowUpCodesFSIII",
+  "title" : "KLOpfølgningKoderFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-03T10:43:02+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Follow-up codes used in FSIII",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "ad78224f-b339-462c-9f2c-90b3120605cb"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "E"
+      }]
+    }]
+  }
+}

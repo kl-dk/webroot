@@ -1,0 +1,23 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/Parameters/expParam> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "expParam"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "displayLanguage" ] ;
+     fhir:value [ fhir:v "da" ]
+  ] [
+     fhir:name [ fhir:v "system-version" ] ;
+     fhir:value [
+       fhir:v "http://snomed.info/sct|http://snomed.info/sct/554471000005108"^^xsd:anyURI ;
+       fhir:link <http://snomed.info/sct|http://snomed.info/sct/554471000005108>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

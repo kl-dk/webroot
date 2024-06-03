@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/ValueSet/KLConditionCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLConditionCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesHomeCare.html\">KLTilstandeKoderHjemmepleje</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesNursing.html\">KLTilstandeKoderSygepleje</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesTheraphy.html\">KLTilstandKoderTræning</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesPrevention.html\">KLTilstandKoderForebyggelse</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLConditionCodesFFB.html\">KLTilstandKoderFFB</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/term/ValueSet/KLConditionCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "KLConditionCodes"] ; # 
+  fhir:title [ fhir:v "KLTilstandKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-03T10:43:02+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Danish municipality condition codes"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLConditionCodesNursing"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLConditionCodesNursing>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLConditionCodesTheraphy"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLConditionCodesTheraphy>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLConditionCodesPrevention"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLConditionCodesPrevention>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLConditionCodesFFB"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLConditionCodesFFB>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

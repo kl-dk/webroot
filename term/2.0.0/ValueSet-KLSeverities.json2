@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLSeverities",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLSeveritiesFFB.html\">KLFunktionsevneniveauFFB</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLSeveritiesFSIII.html\">KLFunktionsevneniveauFSIII</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLSeverities",
+  "version" : "2.0.0",
+  "name" : "KLSeverities",
+  "title" : "KLSværhedgrader",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-03T10:43:02+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Severities related to conditions",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLSeveritiesFFB"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLSeveritiesFSIII"]
+    }]
+  }
+}

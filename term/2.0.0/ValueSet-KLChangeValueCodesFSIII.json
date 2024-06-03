@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLChangeValueCodesFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-e182c5dc-9f91-474a-92e8-f62be3d498f4\">e182c5dc-9f91-474a-92e8-f62be3d498f4</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLChangeValueCodesFSIII",
+  "version" : "2.0.0",
+  "name" : "KLChangeValueCodesFSIII",
+  "title" : "KLMåltypeKoderFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-03T10:43:02+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Change values for goals in FSIII (FSIII måltype). Express the target value for change of a health condition or funtional condition",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "e182c5dc-9f91-474a-92e8-f62be3d498f4"
+      }]
+    }]
+  }
+}

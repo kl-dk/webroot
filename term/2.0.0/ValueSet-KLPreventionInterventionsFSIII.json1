@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLPreventionInterventionsFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-102ea764-d2cf-4a24-979d-68c2e8d638cf\">102ea764-d2cf-4a24-979d-68c2e8d638cf</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLPreventionInterventionsFSIII",
+  "version" : "2.0.0",
+  "name" : "KLPreventionInterventionsFSIII",
+  "title" : "KLForebyggelseIndsatserFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-03T10:43:02+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Prevention and health promotion interventions as defined by FSIII",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "102ea764-d2cf-4a24-979d-68c2e8d638cf"
+      }]
+    }]
+  }
+}
