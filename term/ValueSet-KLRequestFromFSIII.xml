@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="KLRequestFromFSIII"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="CodeSystem-FSIII.html"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href="CodeSystem-FSIII.html#FSIII-A">A</a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="CodeSystem-FSIII.html"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href="CodeSystem-FSIII.html#FSIII-95851822-5a33-4349-a1f2-9b1245369bf5">95851822-5a33-4349-a1f2-9b1245369bf5</a></li><li>Include codes from<a href="CodeSystem-FSIII.html"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href="CodeSystem-FSIII.html#FSIII-A">A</a></li></ul></div>
   </text>
   <url value="http://fhir.kl.dk/term/ValueSet/KLRequestFromFSIII"/>
-  <version value="1.1.0"/>
+  <version value="2.0.0"/>
   <name value="KLRequestFromFSIII"/>
   <title value="KLHenvendelseHenvisningFraFSIII"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-07-10T23:08:03+02:00"/>
+  <date value="2024-06-04T14:59:10+02:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -22,6 +22,14 @@
   </contact>
   <description value="Type of service requesters as defined by FSIII"/>
   <compose>
+    <include>
+      <system value="urn:oid:1.2.208.176.2.21"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="95851822-5a33-4349-a1f2-9b1245369bf5"/>
+      </filter>
+    </include>
     <include>
       <system value="urn:oid:1.2.208.176.2.21"/>
       <filter>

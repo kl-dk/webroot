@@ -13,10 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLTerm</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "KLTerm"] ; # 
+  fhir:title [ fhir:v "KL Terminologi"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-07-10T23:08:03+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-04T14:59:10+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
@@ -39,7 +40,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.0.0" ]
+     fhir:version [ fhir:v "5.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -51,7 +52,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -255,6 +256,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -299,7 +309,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -501,6 +511,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -566,7 +585,7 @@
          fhir:reference [ fhir:v "CodeSystem/CareSocialCodes" ]
        ] ;
        fhir:name [ fhir:v "CareSocialCodes" ] ;
-       fhir:description [ fhir:v "Administrative/technical codes in Local Govenment Denmark (KL), associated with KLCommonCareSocial" ] ;
+       fhir:description [ fhir:v "Administrative/technical codes in Local Govenment Denmark (KL), associated with common use cases across areas or kl-core" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -794,7 +813,7 @@
          fhir:reference [ fhir:v "ValueSet/KLMatterOfInterestValues" ]
        ] ;
        fhir:name [ fhir:v "KLIngenOplysningerKoder" ] ;
-       fhir:description [ fhir:v "Matter of interes values to support when no observations have been made" ] ;
+       fhir:description [ fhir:v "Matter of interest values to support when no observations have been made" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

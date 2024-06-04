@@ -1,0 +1,176 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/ValueSet/KLHomeCareInterventionsFSIII> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLHomeCareInterventionsFSIII"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-23a80ae9-ab88-48ed-a689-36bdd3cc6e41\">23a80ae9-ab88-48ed-a689-36bdd3cc6e41</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-3823d4cd-c38f-49f7-bb15-bd2488b07cd9\">3823d4cd-c38f-49f7-bb15-bd2488b07cd9</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-6cacf7a2-97ef-4981-a16a-338d571fc115\">6cacf7a2-97ef-4981-a16a-338d571fc115</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-fe266687-9efd-4aea-a37c-49c88632d4f3\">fe266687-9efd-4aea-a37c-49c88632d4f3</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-4bfff76f-cc05-4635-96e5-282f4abb2986\">4bfff76f-cc05-4635-96e5-282f4abb2986</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-90910722-a79d-4c35-8110-3adc988b206b\">90910722-a79d-4c35-8110-3adc988b206b</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-aeb52f84-c587-4e12-8793-69ebf83819f5\">aeb52f84-c587-4e12-8793-69ebf83819f5</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-db582ef3-121c-4061-9569-3dbede361d47\">db582ef3-121c-4061-9569-3dbede361d47</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-ae759142-4006-454f-a585-ca02519e5579\">ae759142-4006-454f-a585-ca02519e5579</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-6f9ed46f-6498-4567-9637-2324dbfaa0a0\">6f9ed46f-6498-4567-9637-2324dbfaa0a0</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-83_stk_1_nr_1_Personlig_hjaelp_og_pleje\">83_stk_1_nr_1_Personlig_hjaelp_og_pleje</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet\">83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-83_stk_1_nr_3_Madservice\">83_stk_1_nr_3_Madservice</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-83a_Rehabilitering_personlig_hjaelp_og_pleje\">83a_Rehabilitering_personlig_hjaelp_og_pleje</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-83a_Rehabilitering_praktisk_hjaelp_i_hjemmet\">83a_Rehabilitering_praktisk_hjaelp_i_hjemmet</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-H3\">H3</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-H4\">H4</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-H5\">H5</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-H6\">H6</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-H7\">H7</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/term/ValueSet/KLHomeCareInterventionsFSIII"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "KLHomeCareInterventionsFSIII"] ; # 
+  fhir:title [ fhir:v "KLHjemmeplejeIndsatserFSIII"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-04T14:56:17+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Home Care Interventions as described by FSIII"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "23a80ae9-ab88-48ed-a689-36bdd3cc6e41" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "3823d4cd-c38f-49f7-bb15-bd2488b07cd9" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "6cacf7a2-97ef-4981-a16a-338d571fc115" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "fe266687-9efd-4aea-a37c-49c88632d4f3" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "4bfff76f-cc05-4635-96e5-282f4abb2986" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "90910722-a79d-4c35-8110-3adc988b206b" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "aeb52f84-c587-4e12-8793-69ebf83819f5" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "db582ef3-121c-4061-9569-3dbede361d47" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "ae759142-4006-454f-a585-ca02519e5579" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "6f9ed46f-6498-4567-9637-2324dbfaa0a0" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "83_stk_1_nr_1_Personlig_hjaelp_og_pleje" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "83_stk_1_nr_3_Madservice" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "83a_Rehabilitering_personlig_hjaelp_og_pleje" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "83a_Rehabilitering_praktisk_hjaelp_i_hjemmet" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "H3" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "H4" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "H5" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "H6" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "H7" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KLConditionCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-KLConditionCodesHomeCare.html">KLTilstandeKoderHjemmepleje</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLConditionCodesNursing.html">KLTilstandeKoderSygepleje</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLConditionCodesTheraphy.html">KLTilstandKoderTræning</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLConditionCodesPrevention.html">KLTilstandKoderForebyggelse</a></li><li>Import all the codes that are contained in <a href="ValueSet-KLConditionCodesFFB.html">KLTilstandKoderFFB</a></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/term/ValueSet/KLConditionCodes"/>
+  <version value="2.0.0"/>
+  <name value="KLConditionCodes"/>
+  <title value="KLTilstandKoder"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-04T14:56:17+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Danish municipality condition codes"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLConditionCodesNursing"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLConditionCodesTheraphy"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLConditionCodesPrevention"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.kl.dk/term/ValueSet/KLConditionCodesFFB"/>
+    </include>
+  </compose>
+</ValueSet>

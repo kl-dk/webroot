@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLPerformanceLevelCodesFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-d6d48a71-b96f-4b88-86f9-b13bd3c03560\">d6d48a71-b96f-4b88-86f9-b13bd3c03560</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-C\">C</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLPerformanceLevelCodesFSIII",
+  "version" : "2.0.0",
+  "name" : "KLPerformanceLevelCodesFSIII",
+  "title" : "KLUdførelsesKoderFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-04T14:56:17+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Performance level codes (Udførelse), as evaluated by the citizen",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "d6d48a71-b96f-4b88-86f9-b13bd3c03560"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "C"
+      }]
+    }]
+  }
+}

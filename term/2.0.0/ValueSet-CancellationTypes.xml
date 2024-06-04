@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CancellationTypes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from<a href="CodeSystem-CareSocialCodes.html"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-2c059407-fed5-4852-92d8-6bb5ad63d7bb">2c059407-fed5-4852-92d8-6bb5ad63d7bb</a></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/term/ValueSet/CancellationTypes"/>
+  <version value="2.0.0"/>
+  <name value="CancellationTypes"/>
+  <title value="CancellationTypes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-04T14:56:17+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Cancellation valueset, to be implemented in KL-term and FKI"/>
+  <compose>
+    <include>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="2c059407-fed5-4852-92d8-6bb5ad63d7bb"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

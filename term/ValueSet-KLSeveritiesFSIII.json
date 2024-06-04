@@ -3,15 +3,15 @@
   "id" : "KLSeveritiesFSIII",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from  <a href=\"CodeSystem-FSIII.html#FSIII-B\">B</a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-2c02a704-deee-4878-9378-1167613b3da6\">2c02a704-deee-4878-9378-1167613b3da6</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-B\">B</a></li></ul></div>"
   },
   "url" : "http://fhir.kl.dk/term/ValueSet/KLSeveritiesFSIII",
-  "version" : "1.1.0",
+  "version" : "2.0.0",
   "name" : "KLSeveritiesFSIII",
   "title" : "KLFunktionsevneniveauFSIII",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-07-10T23:08:03+02:00",
+  "date" : "2024-06-04T14:59:10+02:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -23,6 +23,14 @@
   "description" : "Severities related to conditions in FSIII home care (funktionsniveau)",
   "compose" : {
     "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "2c02a704-deee-4878-9378-1167613b3da6"
+      }]
+    },
+    {
       "system" : "urn:oid:1.2.208.176.2.21",
       "filter" : [{
         "property" : "concept",

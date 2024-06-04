@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLEvaluationTypeCodesSCT",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 225400002 (Personal assessment)</li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLEvaluationTypeCodesSCT",
+  "version" : "2.0.0",
+  "name" : "KLEvaluationTypeCodesSCT",
+  "title" : "KLVurderingTypekoderSCT",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-04T14:56:17+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "SNOMED CT codes used to distinguish different kinds of evaluations",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "225400002"
+      }]
+    }]
+  }
+}
