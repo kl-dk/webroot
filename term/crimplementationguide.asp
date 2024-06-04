@@ -1,4 +1,4 @@
-<%@ language="javascript"%>
+﻿<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -16,7 +16,7 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/term/ImplementationGuide-"+id+".xml");
   else if (id == "kl.dk.fhir.term")
-    Response.Redirect("http://fhir.kl.dk/term/2.0.0/index.html");
+    Response.Redirect("http://fhir.kl.dk/term/1.1.0/ImplementationGuide-kl.dk.fhir.term.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/term/ImplementationGuide.html");
 
@@ -25,6 +25,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from -milestone\output\crimplementationguide.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from -milestone/output/crimplementationguide.asp) .
 </body>
 </html>
