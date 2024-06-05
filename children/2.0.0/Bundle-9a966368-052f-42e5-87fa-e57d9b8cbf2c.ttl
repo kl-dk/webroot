@@ -1,0 +1,154 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/Bundle/9a966368-052f-42e5-87fa-e57d9b8cbf2c> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "9a966368-052f-42e5-87fa-e57d9b8cbf2c"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2021-10-09T23:25:12Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Patient/4ced31e7-f852-4bad-a320-fe2a02640434"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Patient/4ced31e7-f852-4bad-a320-fe2a02640434> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Encounter/c170882f-0e2f-4b89-ad82-3b4b57fd4c2b"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Encounter/c170882f-0e2f-4b89-ad82-3b4b57fd4c2b> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Location/d1a03c42-7fdf-43da-9132-404a321c30b8"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Location/d1a03c42-7fdf-43da-9132-404a321c30b8> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/CarePlan/a0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/CarePlan/a0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e> )
+  ] ) . # 
+
+<https://test.fhir.dk/Patient/4ced31e7-f852-4bad-a320-fe2a02640434> a fhir:Patient ;
+  fhir:id [ fhir:v "4ced31e7-f852-4bad-a320-fe2a02640434"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_4ced31e7-f852-4bad-a320-fe2a02640434\"> </a><p><b>Generated Narrative: Patient </b><a name=\"4ced31e7-f852-4bad-a320-fe2a02640434\"> </a><a name=\"hc4ced31e7-f852-4bad-a320-fe2a02640434\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePatient &quot;4ced31e7-f852-4bad-a320-fe2a02640434&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-citizen.html\">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/0505159995 (use: official)</p><p><b>managingOrganization</b>: <span><code>urn:oid:1.2.208.176.1.1</code>/451000016003 (use: official)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0505159995" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "451000016003" ]
+     ]
+  ] . # 
+
+<https://test.fhir.dk/Encounter/c170882f-0e2f-4b89-ad82-3b4b57fd4c2b> a fhir:Encounter ;
+  fhir:id [ fhir:v "c170882f-0e2f-4b89-ad82-3b4b57fd4c2b"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_c170882f-0e2f-4b89-ad82-3b4b57fd4c2b\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"c170882f-0e2f-4b89-ad82-3b4b57fd4c2b\"> </a><a name=\"hcc170882f-0e2f-4b89-ad82-3b4b57fd4c2b\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;c170882f-0e2f-4b89-ad82-3b4b57fd4c2b&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-encounter.html\">KLGatewayChildrenEncounter</a></p></div><p><b>status</b>: entered-in-error</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' null ')</p><p><b>type</b>: Behovskontakt med skolesundhedsplejen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#606c6585-444b-4ecd-885c-2ee59dc33f32)</span></p><p><b>subject</b>: See on this page: Patient/4ced31e7-f852-4bad-a320-fe2a02640434</p><p><b>period</b>: 2021-10-09 11:15:00+0000 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td>See on this page: Location/d1a03c42-7fdf-43da-9132-404a321c30b8</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "entered-in-error"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "606c6585-444b-4ecd-885c-2ee59dc33f32" ] ;
+       fhir:display [ fhir:v "Behovskontakt med skolesundhedsplejen" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/4ced31e7-f852-4bad-a320-fe2a02640434> ;
+     fhir:reference [ fhir:v "Patient/4ced31e7-f852-4bad-a320-fe2a02640434" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2021-10-09T11:15:00.000Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <http://fhir.kl.dk/children/Location/d1a03c42-7fdf-43da-9132-404a321c30b8> ;
+       fhir:reference [ fhir:v "Location/d1a03c42-7fdf-43da-9132-404a321c30b8" ]
+     ]
+  ] ) . # 
+
+<https://test.fhir.dk/Location/d1a03c42-7fdf-43da-9132-404a321c30b8> a fhir:Location ;
+  fhir:id [ fhir:v "d1a03c42-7fdf-43da-9132-404a321c30b8"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-location"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_d1a03c42-7fdf-43da-9132-404a321c30b8\"> </a><p><b>Generated Narrative: Location </b><a name=\"d1a03c42-7fdf-43da-9132-404a321c30b8\"> </a><a name=\"hcd1a03c42-7fdf-43da-9132-404a321c30b8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceLocation &quot;d1a03c42-7fdf-43da-9132-404a321c30b8&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-location.html\">KLGatewayChildrenLocation</a></p></div><p><b>identifier</b>: <code>https://viden.stil.dk/display/OFFINSTREG/Institutionsregisteret</code>/280295</p><p><b>type</b>: school <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#SCHOOL)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://viden.stil.dk/display/OFFINSTREG/Institutionsregisteret"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "280295" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SCHOOL" ]
+     ] )
+  ] ) . # 
+
+<https://test.fhir.dk/CarePlan/a0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e> a fhir:CarePlan ;
+  fhir:id [ fhir:v "a0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-intervention"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_a0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e\"> </a><p><b>Generated Narrative: CarePlan </b><a name=\"a0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e\"> </a><a name=\"hca0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCarePlan &quot;a0a6a0f4-f58c-4cc8-b2af-cc636aaceb3e&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-intervention.html\">KLGatewayChildrenIntervention</a></p></div><p><b>status</b>: entered-in-error</p><p><b>intent</b>: plan</p><p><b>subject</b>: See on this page: Patient/4ced31e7-f852-4bad-a320-fe2a02640434</p><p><b>period</b>: 2021-10-06 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Opsporing og vejledning ved overvægt <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#b45c3d0e-7d19-4c75-bdf1-fe838b439b86)</span></td><td>unknown</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "entered-in-error"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/4ced31e7-f852-4bad-a320-fe2a02640434> ;
+     fhir:reference [ fhir:v "Patient/4ced31e7-f852-4bad-a320-fe2a02640434" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2021-10-06"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "b45c3d0e-7d19-4c75-bdf1-fe838b439b86" ] ;
+           fhir:display [ fhir:v "Opsporing og vejledning ved overvægt" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "unknown" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

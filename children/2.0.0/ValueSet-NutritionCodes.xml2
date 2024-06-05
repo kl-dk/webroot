@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="NutritionCodes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-78dcf013-8ae9-4541-b175-100cde77a9f0">78dcf013-8ae9-4541-b175-100cde77a9f0</a></td><td style="color: #cccccc">Almindeligt kostindtag</td><td>Skolebørn: Barnet spiser mad i tilstrækkelig mængde, og med passende sammensætning.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-abecea75-32cd-4388-80fd-319a30701bf6">abecea75-32cd-4388-80fd-319a30701bf6</a></td><td style="color: #cccccc">Enkelte udfordringer med kost</td><td>Skolebørn: Der er enkelte udfordringer med barnets kost. Fx for meget sukker og fedt, får sjældent fisk, eller barnet drikker ikke mælk.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-019e3a2d-775c-4660-8183-75206b47048f">019e3a2d-775c-4660-8183-75206b47048f</a></td><td style="color: #cccccc">Problem med kost</td><td>Skolebørn: Der er problemer med barnets kost. Fx barnet er meget småtspisende, overspisende eller får meget ensidig kost. Fx ikke frugt/grønt, mælk og for meget sukker og fedt.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/children/ValueSet/NutritionCodes"/>
+  <version value="2.0.0"/>
+  <name value="NutritionCodes"/>
+  <title value="ErnæringKoder"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-05T10:42:00+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Mandatory result values for nutrition in school children"/>
+  <compose>
+    <include>
+      <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+      <concept>
+        <code value="78dcf013-8ae9-4541-b175-100cde77a9f0"/>
+      </concept>
+      <concept>
+        <code value="abecea75-32cd-4388-80fd-319a30701bf6"/>
+      </concept>
+      <concept>
+        <code value="019e3a2d-775c-4660-8183-75206b47048f"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

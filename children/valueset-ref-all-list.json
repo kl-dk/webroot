@@ -1,0 +1,1560 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/BodyheightSCTobservablesChildren",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "BodyheightSCTobservablesChildren",
+      "title" : "HøjdeObservationskoderSCT",
+      "description" : "SNOMED CT observables for length/height",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/ChildrenParentRelationshipCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ChildrenParentRelationshipCodes",
+      "title" : "ForældreBarnRelationsKoder",
+      "description" : "Mandatory result values for parent child relationship in small children and school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/CommunicationCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CommunicationCodes",
+      "title" : "KommunikationKoder",
+      "description" : "Mandatory result values for ability to communicate in small children and school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/EncounterClassCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "EncounterClassCodes",
+      "title" : "KontaktKlasseKoder",
+      "description" : "Codes to describe the mode of delivery of an encounter",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/EncounterTypes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "EncounterTypes",
+      "title" : "SundhedsplejeKontaktTyper",
+      "description" : "Extension on encountertype valueset, to be implemented in KL-term and FKI, does not use exciting codes only those specific to childrens nursing",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/ExamResults",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ExamResults",
+      "title" : "UndersøgelsesResultatKoder",
+      "description" : "Valueset for optional history and examination findings in small children and school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "ValueSet-KLHealthNurseConditions.html" : "Sundhedsplejetilstande"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/FeedingResultsChildren",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "FeedingResultsChildren",
+      "title" : "ResultatkoderSmåbørnMad",
+      "description" : "Resultcodes for feeding",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/FindingInformerCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "FindingInformerCodes",
+      "title" : "KildeTilOplysningKoder",
+      "description" : "Codes for who informed the findings",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"],
+      "uses" : {
+      },
+      "StructureDefinition-FindingInformer.html" : "FindingInformer",
+      "StructureDefinition-klgateway-children-questionnaire-response.html" : "KLGatewayChildrenQuestionnaireResponse"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/HearingCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "HearingCodes",
+      "title" : "HørelseKoder",
+      "description" : "Mandatory result values for hearning in school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/IndicatorCodesChildren",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "IndicatorCodesChildren",
+      "title" : "SundhedsplejeIndikatorkoder",
+      "description" : "Indicator-observables for parents and children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/KLHealthNurseConditions",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "KLHealthNurseConditions",
+      "title" : "Sundhedsplejetilstande",
+      "description" : "Health nurse conditions, that relates to nursing problem areas and/or challenges found in examinations and evaluations made by the health nurse (sundhedsplejerske)",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/KLHealthNurseInterventions",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "KLHealthNurseInterventions",
+      "title" : "Sundhedsplejeindsatser",
+      "description" : "Need based interventions used in municipality health nursing (sundhedsplejen)",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/MotorFunctionCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "MotorFunctionCodes",
+      "title" : "MotorikKoder",
+      "description" : "Mandatory result values for motor function in small children and school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/NicotineCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "NicotineCodes",
+      "title" : "NikotinKoder",
+      "description" : "Mandatory result values for nicotine use in school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/NutritionCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "NutritionCodes",
+      "title" : "ErnæringKoder",
+      "description" : "Mandatory result values for nutrition in school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/ObservationUnitsWeight",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ObservationUnitsWeight",
+      "title" : "ObservationsEnhederVægt",
+      "description" : "UCUM units for childrens weight",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/ParentSocialStatusCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ParentSocialStatusCodes",
+      "title" : "ForældresSårbarhedKoder",
+      "description" : "Mandatory result values for parents social status. Only documented in parents of small children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/ParentTypes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ParentTypes",
+      "title" : "ForælderTyper",
+      "description" : "Limitation on HL7 role class to only represent parent-relationships, as accepted in the children data-set",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-related-parent.html" : "KLGatewayChildrenRelatedParent"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/ParentsMentalCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ParentsMentalCodes",
+      "title" : "ForældresPsykiskeTilstandKoder",
+      "description" : "Mandatory result values for parents mental state",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/PassiveSmokingCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "PassiveSmokingCodes",
+      "title" : "PassivRygningKoder",
+      "description" : "Mandatory result values for passive smoking in small- and school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/PhysicalActivityCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "PhysicalActivityCodes",
+      "title" : "FysiskAktiviteteKoder",
+      "description" : "Mandatory result values for physical activity in school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/SightCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SightCodes",
+      "title" : "SynKoder",
+      "description" : "Mandatory result values for sight in school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/SleepCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SleepCodes",
+      "title" : "SøvnKoder",
+      "description" : "Mandatory result values for challenges in sleeping pattern in small children and school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/SocialInteractionCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SocialInteractionCodes",
+      "title" : "SocialKontaktKoder",
+      "description" : "Mandatory result values for social interaction in small children and school children",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction"
+    },
+    {
+      "url" : "http://fhir.kl.dk/children/ValueSet/SocialSupportNetworkCodes",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SocialSupportNetworkCodes",
+      "title" : "NetværkKoder",
+      "description" : "Mandatory result values for social support network of the family",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/FBOE"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "IEEEBasicObservation",
+      "title" : "Dk Core IEEE Basic Observation",
+      "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
+      "systems" : ["urn:iso:std:iso:11073:10101"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "LoincBasicObservation",
+      "title" : "DK Core LOINC Basic Observations",
+      "description" : "LOINC codes describing Basic Observations usable in Denmark.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "NPUBasicObservation",
+      "title" : "DK Core NPU Basic Observation",
+      "description" : "NPU codes for Basic Observations usable in Denmark",
+      "systems" : ["urn:oid:1.2.208.176.2.1"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "RelatedPersonRelationshipTypes",
+      "title" : "DK Related Person Relationship Types",
+      "description" : "DK Related Person Relationship Types",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "SCTBasicObservation",
+      "title" : "DK Core SNOMED CT Basic Observation",
+      "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "TechniquesSCTCodes",
+      "title" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "UCUMBasicUnits",
+      "title" : "DK Core UCUM Basic Units",
+      "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : null,
+      "title" : "DK MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-related-parent.html" : "KLGatewayChildrenRelatedParent",
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-delivery-report.html" : "KLGatewayChildrenDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-delivery-report.html" : "KLGatewayChildrenDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-delivery-report.html" : "KLGatewayChildrenDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/item-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemType",
+      "title" : "QuestionnaireItemType",
+      "description" : "Distinguishes groups from questions and display text and indicates data type for questions.",
+      "systems" : ["http://hl7.org/fhir/item-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.444"],
+      "sources" : ["2.16.840.1.113883.4.642.3.444"],
+      "uses" : {
+      },
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Jurisdiction ValueSet",
+      "title" : "Jurisdiction",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-questionnaire-response.html" : "KLGatewayChildrenQuestionnaireResponse",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention",
+      "StructureDefinition-klgateway-children-related-parent.html" : "KLGatewayChildrenRelatedParent",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-delivery-report.html" : "KLGatewayChildrenDeliveryReport",
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire",
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "systems" : ["http://hl7.org/fhir/location-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.330"],
+      "sources" : ["2.16.840.1.113883.4.642.3.330"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter",
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "systems" : ["http://hl7.org/fhir/location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.332"],
+      "sources" : ["2.16.840.1.113883.4.642.3.332"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-related-parent.html" : "KLGatewayChildrenRelatedParent",
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireAnswerCodes",
+      "title" : "Questionnaire Answer Codes",
+      "description" : "Example list of codes for answers to questions. (Not complete or necessarily appropriate.)",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.446"],
+      "sources" : ["2.16.840.1.113883.4.642.3.446"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-questionnaire-response.html" : "KLGatewayChildrenQuestionnaireResponse",
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireResponseStatus",
+      "title" : "QuestionnaireResponseStatus",
+      "description" : "Lifecycle status of the questionnaire response.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-answers-status"],
+      "oids" : ["required"],
+      "sources" : ["required"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-questionnaire-response.html" : "KLGatewayChildrenQuestionnaireResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EnableWhenBehavior",
+      "title" : "EnableWhenBehavior",
+      "description" : "Controls how multiple enableWhen values are interpreted -  whether all or any must be true.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-enable-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1007"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1007"],
+      "uses" : {
+      },
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-enable-operator",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemOperator",
+      "title" : "QuestionnaireItemOperator",
+      "description" : "The criteria by which a question is enabled.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-enable-operator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1005"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1005"],
+      "uses" : {
+      },
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-questions",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireQuestionCodes",
+      "title" : "Questionnaire Question Codes",
+      "description" : "Example list of codes for questions and groups of questions. (Not necessarily complete or appropriate.)",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.443"],
+      "sources" : ["2.16.840.1.113883.4.642.3.443"],
+      "uses" : {
+      },
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-parent-relationship.html" : "KLGatewayChildrenIndicatorParentRelationship",
+      "StructureDefinition-klgateway-children-communication.html" : "KLGatewayChildrenIndicatorCommunication",
+      "StructureDefinition-klgateway-children-social-support-network.html" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "StructureDefinition-klgateway-children-physical-activity.html" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "StructureDefinition-klgateway-children-sleep.html" : "KLGatewayChildrenIndicatorSleep",
+      "StructureDefinition-klgateway-children-social-interaction.html" : "KLGatewayChildrenIndicatorInteraction",
+      "StructureDefinition-klgateway-children-hearing.html" : "KLGatewayChildrenIndicatorHearing",
+      "StructureDefinition-klgateway-children-exam-result.html" : "KLGatewayChildrenExamResult",
+      "StructureDefinition-klgateway-children-motor-function.html" : "KLGatewayChildrenIndicatorMotorFunction",
+      "StructureDefinition-klgateway-children-indicator.html" : "KLGatewayChildrenIndicator",
+      "StructureDefinition-klgateway-children-nutrition.html" : "KLGatewayChildrenIndicatorNutrition",
+      "StructureDefinition-klgateway-children-sight.html" : "KLGatewayChildrenIndicatorSight",
+      "StructureDefinition-klgateway-children-passive-smoking.html" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "StructureDefinition-klgateway-children-parent-mental-status.html" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "StructureDefinition-klgateway-children-headcircum.html" : "KLGatewayChildrenHeadCircumference",
+      "StructureDefinition-klgateway-children-nicotine.html" : "KLGatewayChildrenIndicatorNicotine",
+      "StructureDefinition-klgateway-children-bodyheight.html" : "KLGatewayChildrenBodyHeight",
+      "StructureDefinition-klgateway-children-feeding-observation.html" : "KLGatewayChildrenFeedingObservation",
+      "StructureDefinition-klgateway-children-bodyweight.html" : "KLGatewayChildrenBodyWeight",
+      "StructureDefinition-klgateway-children-parent-social-status.html" : "KLGatewayChildrenIndicatorParentSocialStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-intervention.html" : "KLGatewayChildrenIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-citizen.html" : "KLGatewayChildrenCitizen",
+      "StructureDefinition-KLGatewayChildrenQuestionnaire.html" : "KLGatewayChildrenQuestionnaire"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-delivery-report.html" : "KLGatewayChildrenDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-delivery-report.html" : "KLGatewayChildrenDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSBedStatus",
+      "title" : "hl7VS-bedStatus",
+      "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+      "oids" : ["2.16.840.1.113883.21.51"],
+      "sources" : ["2.16.840.1.113883.21.51"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "ValueSet-EncounterClassCodes.html" : "KontaktKlasseKoder",
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-encounter.html" : "KLGatewayChildrenEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-children-location.html" : "KLGatewayChildrenLocation"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/NutritionCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NutritionCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-78dcf013-8ae9-4541-b175-100cde77a9f0\">78dcf013-8ae9-4541-b175-100cde77a9f0</a></td><td style=\"color: #cccccc\">Almindeligt kostindtag</td><td>Skolebørn: Barnet spiser mad i tilstrækkelig mængde, og med passende sammensætning.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-abecea75-32cd-4388-80fd-319a30701bf6\">abecea75-32cd-4388-80fd-319a30701bf6</a></td><td style=\"color: #cccccc\">Enkelte udfordringer med kost</td><td>Skolebørn: Der er enkelte udfordringer med barnets kost. Fx for meget sukker og fedt, får sjældent fisk, eller barnet drikker ikke mælk.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-019e3a2d-775c-4660-8183-75206b47048f\">019e3a2d-775c-4660-8183-75206b47048f</a></td><td style=\"color: #cccccc\">Problem med kost</td><td>Skolebørn: Der er problemer med barnets kost. Fx barnet er meget småtspisende, overspisende eller får meget ensidig kost. Fx ikke frugt/grønt, mælk og for meget sukker og fedt.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/NutritionCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "NutritionCodes"] ; # 
+  fhir:title [ fhir:v "ErnæringKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-05T10:42:00+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mandatory result values for nutrition in school children"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "78dcf013-8ae9-4541-b175-100cde77a9f0" ]
+       ] [
+         fhir:code [ fhir:v "abecea75-32cd-4388-80fd-319a30701bf6" ]
+       ] [
+         fhir:code [ fhir:v "019e3a2d-775c-4660-8183-75206b47048f" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

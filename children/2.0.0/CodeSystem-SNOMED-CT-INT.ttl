@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/CodeSystem/SNOMED-CT-INT> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SNOMED-CT-INT"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This case-sensitive code system <code>http://snomed.info/sct</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">27113001<a name=\"SNOMED-CT-INT-27113001\"> </a></td><td>Body weight</td></tr><tr><td style=\"white-space:nowrap\">363812007<a name=\"SNOMED-CT-INT-363812007\"> </a></td><td>Head circumference</td></tr><tr><td style=\"white-space:nowrap\">229819007<a name=\"SNOMED-CT-INT-229819007\"> </a></td><td>Tobacco use and exposure (observable entity)</td></tr><tr><td style=\"white-space:nowrap\">285854004<a name=\"SNOMED-CT-INT-285854004\"> </a></td><td>Emotion</td></tr><tr><td style=\"white-space:nowrap\">276885007<a name=\"SNOMED-CT-INT-276885007\"> </a></td><td>Core body temperature</td></tr><tr><td style=\"white-space:nowrap\">1153637007<a name=\"SNOMED-CT-INT-1153637007\"> </a></td><td>Body height (observable entity)</td></tr><tr><td style=\"white-space:nowrap\">248333004<a name=\"SNOMED-CT-INT-248333004\"> </a></td><td>Standing height</td></tr><tr><td style=\"white-space:nowrap\">1149101003<a name=\"SNOMED-CT-INT-1149101003\"> </a></td><td>Recumbent body height (observable entity)</td></tr><tr><td style=\"white-space:nowrap\">225597007<a name=\"SNOMED-CT-INT-225597007\"> </a></td><td>Ability to interact with others (observable entity)</td></tr><tr><td style=\"white-space:nowrap\">450320001<a name=\"SNOMED-CT-INT-450320001\"> </a></td><td>Edinburgh postnatal depression scale score</td></tr><tr><td style=\"white-space:nowrap\">718133008<a name=\"SNOMED-CT-INT-718133008\"> </a></td><td>Strengths and Difficulties Questionnaire for parents or teachers of 4-17 year olds score</td></tr><tr><td style=\"white-space:nowrap\">717639006<a name=\"SNOMED-CT-INT-717639006\"> </a></td><td>Strengths and Difficulties Questionnaire self-rated for 11-17 year old score</td></tr><tr><td style=\"white-space:nowrap\">169740003<a name=\"SNOMED-CT-INT-169740003\"> </a></td><td>Infant feeding method (observable entity)</td></tr><tr><td style=\"white-space:nowrap\">363788007<a name=\"SNOMED-CT-INT-363788007\"> </a></td><td>Clinical history/examination observable (observable entity)</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-properties-mode"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "not-present" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://snomed.info/sct"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.6.96" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "SNOMED_CT_INT"] ; # 
+  fhir:title [ fhir:v "SNOMED CT International Edition"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SNOMED CT is a core clinical healthcare terminology that contains concepts with unique meanings and formal logic based definitions organized into hierarchies."] ; # 
+  fhir:copyright [ fhir:v "This artefact includes content from SNOMED Clinical Terms (SNOMED CT) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "27113001" ] ;
+     fhir:display [ fhir:v "Body weight" ]
+  ] [
+     fhir:code [ fhir:v "363812007" ] ;
+     fhir:display [ fhir:v "Head circumference" ]
+  ] [
+     fhir:code [ fhir:v "229819007" ] ;
+     fhir:display [ fhir:v "Tobacco use and exposure (observable entity)" ]
+  ] [
+     fhir:code [ fhir:v "285854004" ] ;
+     fhir:display [ fhir:v "Emotion" ]
+  ] [
+     fhir:code [ fhir:v "276885007" ] ;
+     fhir:display [ fhir:v "Core body temperature" ]
+  ] [
+     fhir:code [ fhir:v "1153637007" ] ;
+     fhir:display [ fhir:v "Body height (observable entity)" ]
+  ] [
+     fhir:code [ fhir:v "248333004" ] ;
+     fhir:display [ fhir:v "Standing height" ]
+  ] [
+     fhir:code [ fhir:v "1149101003" ] ;
+     fhir:display [ fhir:v "Recumbent body height (observable entity)" ]
+  ] [
+     fhir:code [ fhir:v "225597007" ] ;
+     fhir:display [ fhir:v "Ability to interact with others (observable entity)" ]
+  ] [
+     fhir:code [ fhir:v "450320001" ] ;
+     fhir:display [ fhir:v "Edinburgh postnatal depression scale score" ]
+  ] [
+     fhir:code [ fhir:v "718133008" ] ;
+     fhir:display [ fhir:v "Strengths and Difficulties Questionnaire for parents or teachers of 4-17 year olds score" ]
+  ] [
+     fhir:code [ fhir:v "717639006" ] ;
+     fhir:display [ fhir:v "Strengths and Difficulties Questionnaire self-rated for 11-17 year old score" ]
+  ] [
+     fhir:code [ fhir:v "169740003" ] ;
+     fhir:display [ fhir:v "Infant feeding method (observable entity)" ]
+  ] [
+     fhir:code [ fhir:v "363788007" ] ;
+     fhir:display [ fhir:v "Clinical history/examination observable (observable entity)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

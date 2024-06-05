@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example - KLChildren implementation guide, an implementation of FBU v2.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="example.html">Example small children</a>
+  </li>
+  <li>
+    <a href="example2.html">Example school children</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Example</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#first-event-february-5th-2020" id="markdown-toc-first-event-february-5th-2020">First Event February 5th, 2020</a></li>
+  <li><a href="#second-event-may-7th-2020" id="markdown-toc-second-event-may-7th-2020">Second Event May 7th, 2020</a></li>
+  <li><a href="#third-event-may-17th-2020" id="markdown-toc-third-event-may-17th-2020">Third Event May 17th, 2020</a></li>
+  <li><a href="#fourth-event-june-1st-2020" id="markdown-toc-fourth-event-june-1st-2020">Fourth Event June 1st, 2020</a></li>
+  <li><a href="#fifth-event-july-7th-2020" id="markdown-toc-fifth-event-july-7th-2020">Fifth Event July 7th, 2020</a></li>
+  <li><a href="#sixth-event-july-9th-2020" id="markdown-toc-sixth-event-july-9th-2020">Sixth Event July 9th, 2020</a></li>
+  <li><a href="#seventh-event-july-14th-2020" id="markdown-toc-seventh-event-july-14th-2020">Seventh Event July 14th, 2020</a></li>
+  <li><a href="#eighth-event-july-23rd-2020" id="markdown-toc-eighth-event-july-23rd-2020">Eighth Event July 23rd, 2020</a></li>
+</ul>
+
+</div>
+<p>This page describes subsequent delivery reports for the child Rikke Test Berggren and her parents Kirsten Test Berggren and Knud Odvar Test Mosebryggersen. The three citizens all come from MedCom’s set of test patients, but MedCom’s original family-connections had to be ignored to form a coherent example. For each delivery report the story is told (in Danish), and a reporting example is given.</p>
+
+<h3 id="first-event-february-5th-2020">First Event February 5th, 2020</h3>
+<h4 id="story">Story</h4>
+<p>Kirsten er gravid, og er i uge 27. Hun møder sundhedsplejersken sammen med sin mand Knud. Der er kommet et graviditetsbesøg i stand, fordi Kirsten af jordemoderen er blevet vurderet sårbar. Kirsten har haft en svær opvækst præget af omsorgssvigt. Hun har tidligere haft en depression, men har det nu godt i hverdagen. Ellers er der ikke noget at bemærke ved forældrene.</p>
+<h4 id="reporting">Reporting</h4>
+<p>The delivery report contains two Citizens (Kirsten and Knud), one Encounter (Type: ‘Graviditetsbesøg’), and an instance of the mandatory Observations for each parent IndicatorParentSocialStatus (Kirsten’s psychological vulnerability is marked as “Potentiel sårbarhed”) , IndicatorParentMentalStatus, IndicatorSocialSupportNetwork. In addition, Kirsten has an instance of ExamResult (her childhood trauma is registered as ‘Traumatiske oplevelser’).</p>
+
+<p>The report for this is found here: <a href="Bundle-b9479825-6be1-4fa1-a2ae-74fe67014caa.html">DeliveryReport-Rikke-1</a></p>
+
+<h3 id="second-event-may-7th-2020">Second Event May 7th, 2020</h3>
+<h4 id="story-1">Story</h4>
+<p>Rikke blev født d. 5. maj. D. 7. maj kommer sundhedsplejersken på barselsbesøg. Kirsten er kommet godt i gang med at amme. Vægten er 3100g og forældre-barn relation er normal.
+Sundhedsplejersken får dog ved en fejl ikke registreret forældre-barn-relationen i journalen. Derfor fejler indberetningen. Næste nat forsøges data afsendt igen, og fejler af samme årsag. Herefter afsendes rapporten med en registrering af, at data mangler for forældre-barn-relationen.</p>
+
+<h4 id="failed-reporting">Failed reporting</h4>
+<p>The delivery report contains one Citizen (Rikke), one Encounter (Type: ‘Barselsbesøg’), and two instances of the mandatory Observation FeedingObservation (One feeding periode and one feeding status), and one instance of BodyWeight. The report fails because IndicatorParentRelationship is missing.</p>
+
+<p>The report for this is found here: <a href="Bundle-c5b55e0e-3bc4-468a-8600-1b23617dbb58.html">DeliveryReport-Rikke-2a</a></p>
+
+<h4 id="successful-reporting">Successful reporting</h4>
+<p>IndicatorParentRelationship is added to the report with no value and a dataAbsentReason, and the content is validated and send.</p>
+
+<p>The report for this is found here: <a href="Bundle-74dcb49e-dd6a-4450-9fb8-85ad0e7bed38.html">DeliveryReport-Rikke-2b</a></p>
+
+<h3 id="third-event-may-17th-2020">Third Event May 17th, 2020</h3>
+<h4 id="story-2">Story</h4>
+<p>Ved etableringsbesøget er alt som det skal være. Kirsten ammer fortsat, vægten er 3400g, længden 51cm og hovedomfang 35cm. Der skal på besøget rapporteres på forældres sårbarhed, ligesom på graviditetsbesøget. Da der ikke er noget der har ændret sig, bliver forældre og sundhedsplejerske hurtigt enige om, at det er samme situation som før fødslen. Der ryges ikke i hjemmet, ej heller hvor Rikke hyppigt opholder sig. Derfor registreres det, at Rikke ikke udsættes for passiv rygning.</p>
+
+<h4 id="reporting-1">Reporting</h4>
+<p>The delivery report contains three Citizens (Rikke, Kirsten, Knud), two RelatedParent instances to maintain the relationship between the three,  one Encounter (Type: ‘Etableringsbesøg’). For Rikke, there is an instance of the mandatory Observations IndicatorParentRelationship, BodyWeight, BodyHeight, HeadCircumference, IndicatorPassiveSmoking, and FeedingObservation.
+The parent’s Observations result in two instances of IndicatorParentSocialStatus and IndicatorSocialSupportNetwork respectively.</p>
+
+<p>The report for this is found here: <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.html">DeliveryReport-Rikke-3</a></p>
+
+<h3 id="fourth-event-june-1st-2020">Fourth Event June 1st, 2020</h3>
+<h4 id="story-3">Story</h4>
+<p>Ved 2. besøg i barnets første levemåned, kommer sundhedsplejersken forbi sen eftermiddag. Alt er normalt. Rikke vejer 4150g, er 53,5 cm og har et hovedomfang på 36,5cm. Kirsten fuldammer stadig.
+Desværre når sundhedsplejersken ikke at skrive resultaterne fra besøget ind i systemet fordi hun har fyraften lige efter besøget. Derfor fejler afleveringen af data første nat. Næste dag skrives de resterende data ind i systemet, hvormed data kan valideres og afsendes følgende nat.</p>
+
+<h4 id="failed-reporting-1">Failed reporting</h4>
+<p>The delivery report contains one Citizen (Rikke), one Encounter (Type: ‘2. Besøg i barnets første levemåned’). The report fails because the mandatory observations are missing.</p>
+
+<p>The report for this is found here: <a href="Bundle-c60604d1-692b-4e6d-86e5-03046b2d2f16.html">DeliveryReport-Rikke-4a</a></p>
+
+<h4 id="successful-reporting-1">Successful reporting</h4>
+<p>The observations are added. In addition to the instances mentioned above, the report contains IndicatorParentRelationship, BodyWeight, BodyHeight, HeadCircumference, FeedingObservation, IndicatorCommunication.</p>
+
+<p>The report for this is found here: <a href="Bundle-84cf4f74-0cc7-47fe-8301-3bc8eb0ddd8f.html">DeliveryReport-Rikke-4b</a></p>
+
+<h3 id="fifth-event-july-7th-2020">Fifth Event July 7th, 2020</h3>
+<h4 id="story-4">Story</h4>
+<p>Ved 2 måneders besøget udfylder begge forældre EPDS.  Kirstens score ligger på 15, og sundhedsplejen må konstatere at Kirsten, når der spørges ind, er påvirket særligt med nedtrykthed, dårlig selvfølelse og selvbebrejdelse (de to sidstnævnte er depressive ledsagesymptomer).  Der registreres derfor en psykisk reaktion i journalen, som også nuanceres med Kirstens symptomer. Knuds EPDS er normal, og hans psykiske reaktion er forventelig.
+Sandsynligvis pga. sin mors mistrivsel, kan sundhedsplejersken konstatere let påvirket forældre-barn-relation, fordi Kirsten nogle gange har svært ved at dække Rikkes følelsesmæssige behov, de timer, hvor de er alene. Desuden græder Rikke meget både ifm. besøget, og ellers, og sundhedsplejersken vurderer, at hendes egen kontakt med barnet ikke er alderssvarende, særligt er der afvigende øjenkontakt. Alt andet er normalt. Vægten er 5100g, længden er 57cm og hovedomfanget er 38cm.
+Sundhedsplejersken opstarter vejledning i kontakt, samspil og barnets behov.
+Sundhedsplejersken opfordrer Kirsten til at søge egen læge hurtigst muligt med henblik på diagnosticering af fødselsdepression og psykologhjælp, dvs. indsatsen ’Anbefalet kontakt til praktiserende læge’. Desuden takker Kirsten ja til at deltage i en forældregruppe med andre forældre der har en psykisk reaktion, dvs. indsatsen ’Forældregruppe hvor forælder har psykisk reaktion’.
+Sundhedsplejen igangsætter desuden indsatsen ’Støtte ved psykisk reaktion eller sårbarhed’ i Kirstens journal. Og indsatsen ’Vejledning i kontakt, samspil og barnets behov’ i Rikkes journal. De aftaler at sundhedsplejersken ringer et par dage efter for at følge op, og kommer forbi fysisk efter en uge.</p>
+<h4 id="reporting-2">Reporting</h4>
+<p>The delivery report contains three Citizens (Rikke, Kirsten, Knud), two RelatedParent instances to maintain the relationship between the three, and one Encounter (Type: ‘Besøg hos det ca. 2 måneder gamle barn’). 
+For Knud, there is an instance of QuestionnaireResponse (EPDS), IndicatorParentMentalStatus
+For Kirsten, there is an instance of QuestionnaireResponse (EPDS), IndicatorParentMentalStatus and two instances of ExamResult to contain Kirsten’s depression symptoms. In addition, three instances of Intervention contains the three need-based interventions that are started for Kirsten.
+For Rikke, there is an instance of IndicatorSocialInteraction, IndicatorParentRelationship, BodyWeight, BodyHeight, HeadCircumference, FeedingObservation, IndicatorCommunication and IndicatorSleep. In addition, three instances of ExamResult, that holds the observations related to social interaction (græder meget, afvigende øjenkontakt) and child-parent relationship (‘Følelsesmæssige behov opfyldes ikke’). Rikke’s need-based intervention is also reported as an instance of Intervention.</p>
+
+<p>The report for this is found here: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html">DeliveryReport-Rikke-5</a></p>
+
+<h3 id="sixth-event-july-9th-2020">Sixth Event July 9th, 2020</h3>
+<h4 id="story-5">Story</h4>
+<p>Sundhedsplejersken ringer til Kirsten, i en behovskontakt leveret som telefonopkald. Kirsten fortæller blandt andet, at hun siden sidst har kontaktet egen læge, og at Knud har talt med sin arbejdsgiver om, at kunne være meget mere hjemme i den kommende tid. Ud over at spørge ind til familien fortsætter sundhedsplejersken sin vejledning i kontakt, samspil og barnets behov.</p>
+<h4 id="reporting-3">Reporting</h4>
+<p>The delivery report contains two citizens (Rikke, Kirsten), and a RelatedParent instances to maintain the relationship between them.
+For Kirsten, it is registered that she had an Encounter (Type: ‘Behovskontakt med småbørnssundhedsplejen’), and that this encounter was a delivery of her intervention ’Støtte ved psykisk  eller sårbarhed’, which means that an Instance of her Intervention is also included.
+For Rikke, it is registered that she had an Encounter (Type: ‘Behovskontakt med småbørnssundhedsplejen’), and that this encounter was a delivery of her intervention ‘Vejledning i kontakt, samspil og barnets behov’, which means that an Instance of her Intervention is also included.
+Note that two instances of Encounter is related to one visit. This is done for two reasons: Not mixing up Rikkes and Kirstens patient journals, and keeping the FHIR standard, which says that encounters are personal i.e. has one subject. For ease of registration, just use the same start-time, and (if registered at all) the same end-time.</p>
+
+<p>The report for this is found here: <a href="Bundle-dbe422ac-dd15-4562-838d-1f5ff9ae45d8.html">DeliveryReport-Rikke-6</a></p>
+
+<h3 id="seventh-event-july-14th-2020">Seventh Event July 14th, 2020</h3>
+<h4 id="story-6">Story</h4>
+<p>Sundhedsplejersken besøger Kirsten, Knud og Rikke, i en behovskontakt. Familien fortæller, at det går bedre. Kirsten er allerede begyndt i sin nye forældregruppe og til psykolog, og Knud er mere hjemme. Sundhedsplejen vurderer, at der nu gøres det der kan i andet regi mht. Kirstens psykiske tilstand, og afslutter derfor Kirstens indsats vedr. ’Støtte ved psykisk reaktion eller sårbarhed’.
+Rikke er stadig ikke alderssvarende i sin sociale kontakt, særligt ikke mht. øjenkontakt, men der er forbedring og forældrene responderer godt på sundhedsplejerskens vejledning. Derfor fortsætter indsatsen ‘Vejledning i kontakt samspil og barnets behov’. Sundhedsplejersken afslutter besøget med at lave aftale om nyt besøg 9 dage efter.</p>
+<h4 id="reporting-4">Reporting</h4>
+<p>The delivery report contains two citizens (Rikke, Kirsten), and a RelatedParent instances to maintain the relationship between them.
+For Kirsten, it is registered that she had an Encounter (Type: “Behovskontakt med småbørnssundhedsplejen”), and that this encounter was a delivery of her intervention ’Støtte ved psykisk reaktion eller sårbarhed’, which means that an Instance of her Intervention is also included. This Intervention is now ended (i.e. given an end-date).
+For Rikke, it is registered that she had an Encounter (Type: “Behovskontakt med småbørnssundhedsplejen”), and that this encounter was a delivery of her intervention ‘Vejledning i kontakt samspil og barnets behov’, which means that an Instance of her Intervention is also included.</p>
+
+<p>The report for this is found here:
+<a href="Bundle-a50c7477-c817-4f98-92a8-b8c15f015d9e.html">DeliveryReport-Rikke-7</a></p>
+
+<h3 id="eighth-event-july-23rd-2020">Eighth Event July 23rd, 2020</h3>
+<h4 id="story-7">Story</h4>
+<p>Sundhedsplejersken besøger Kirsten, Knud og Rikke, i en behovskontakt. Familien fortæller at de har det rigtig godt og synes Rikke er i trivsel.
+Sundhedsplejersken vurderer, at Rikke nu er alderssvarende i sin sociale kontakt. Derfor afsluttes ‘Vejledning i kontakt samspil og barnets behov’.
+Sundhedsplejersken aftaler med familien, at de ser hinanden næste gang til 4-6 måneders besøget.</p>
+<h4 id="reporting-5">Reporting</h4>
+<p>The delivery report contains one citizens (Rikke). It is registered that she had an Encounter (Type: ‘Behovskontakt med småbørnssundhedsplejen’), and that this encounter was a delivery of her intervention ‘Vejledning i kontakt samspil og barnets behov’, which means that an Instance of her Intervention is also included. This Intervention is now ended (i.e. given an end-date).</p>
+
+<p>The report for this is found here:
+<a href="Bundle-d2e57785-7d0e-4b30-9e51-62c14185b9ed.html">DeliveryReport-Rikke-8</a></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 5, 2024 11:21+0200">2024-06-05</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

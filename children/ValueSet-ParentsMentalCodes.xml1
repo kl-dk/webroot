@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ParentsMentalCodes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-0e5db980-8c6e-4034-abab-054e0eb40935">0e5db980-8c6e-4034-abab-054e0eb40935</a></td><td style="color: #cccccc">Forventelig psykisk reaktion</td><td>Småbørn: Forælder har ingen eller mild psykisk reaktion indenfor normalen i forbindelse med forældreskab.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-b8220216-e185-451b-8d2a-67cdf73c42c3">b8220216-e185-451b-8d2a-67cdf73c42c3</a></td><td style="color: #cccccc">Let psykisk reaktion</td><td>Småbørn: Forælder har få, ikke-kritiske tegn på psykisk reaktion i forbindelse med forældreskab. Fx kan lettere søvnforstyrrelser og træthed i en periode give dårligt humør, uden at der samlet er tegn på psykisk reaktion. Tegnene kræver opmærksomhed, men ikke indsats.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-f86c2526-3b04-454c-a99e-d350f699dc94">f86c2526-3b04-454c-a99e-d350f699dc94</a></td><td style="color: #cccccc">Psykisk reaktion</td><td>Småbørn: Forælder har psykisk reaktion i forbindelse med forældreskab, mest typisk depressions- eller angstsymptomer, men der kan også være tale om andre symptombilleder. Kræver en indsats.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/children/ValueSet/ParentsMentalCodes"/>
+  <version value="2.0.0"/>
+  <name value="ParentsMentalCodes"/>
+  <title value="ForældresPsykiskeTilstandKoder"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-05T11:21:47+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Mandatory result values for parents mental state"/>
+  <compose>
+    <include>
+      <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+      <concept>
+        <code value="0e5db980-8c6e-4034-abab-054e0eb40935"/>
+      </concept>
+      <concept>
+        <code value="b8220216-e185-451b-8d2a-67cdf73c42c3"/>
+      </concept>
+      <concept>
+        <code value="f86c2526-3b04-454c-a99e-d350f699dc94"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

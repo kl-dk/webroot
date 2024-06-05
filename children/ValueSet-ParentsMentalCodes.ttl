@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/ParentsMentalCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ParentsMentalCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-0e5db980-8c6e-4034-abab-054e0eb40935\">0e5db980-8c6e-4034-abab-054e0eb40935</a></td><td style=\"color: #cccccc\">Forventelig psykisk reaktion</td><td>Småbørn: Forælder har ingen eller mild psykisk reaktion indenfor normalen i forbindelse med forældreskab.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-b8220216-e185-451b-8d2a-67cdf73c42c3\">b8220216-e185-451b-8d2a-67cdf73c42c3</a></td><td style=\"color: #cccccc\">Let psykisk reaktion</td><td>Småbørn: Forælder har få, ikke-kritiske tegn på psykisk reaktion i forbindelse med forældreskab. Fx kan lettere søvnforstyrrelser og træthed i en periode give dårligt humør, uden at der samlet er tegn på psykisk reaktion. Tegnene kræver opmærksomhed, men ikke indsats.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-f86c2526-3b04-454c-a99e-d350f699dc94\">f86c2526-3b04-454c-a99e-d350f699dc94</a></td><td style=\"color: #cccccc\">Psykisk reaktion</td><td>Småbørn: Forælder har psykisk reaktion i forbindelse med forældreskab, mest typisk depressions- eller angstsymptomer, men der kan også være tale om andre symptombilleder. Kræver en indsats.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/ParentsMentalCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "ParentsMentalCodes"] ; # 
+  fhir:title [ fhir:v "ForældresPsykiskeTilstandKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-05T11:21:47+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mandatory result values for parents mental state"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0e5db980-8c6e-4034-abab-054e0eb40935" ]
+       ] [
+         fhir:code [ fhir:v "b8220216-e185-451b-8d2a-67cdf73c42c3" ]
+       ] [
+         fhir:code [ fhir:v "f86c2526-3b04-454c-a99e-d350f699dc94" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

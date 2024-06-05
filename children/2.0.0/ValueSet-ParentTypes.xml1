@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ParentTypes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PRN">PRN</a></td><td style="color: #cccccc">parent</td><td>The player of the role is one who begets, gives birth to, or nurtures and raises the scoping entity (child).</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/children/ValueSet/ParentTypes"/>
+  <version value="2.0.0"/>
+  <name value="ParentTypes"/>
+  <title value="ForælderTyper"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-05T10:42:00+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Limitation on HL7 role class to only represent parent-relationships, as accepted in the children data-set"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <concept>
+        <code value="PRN"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

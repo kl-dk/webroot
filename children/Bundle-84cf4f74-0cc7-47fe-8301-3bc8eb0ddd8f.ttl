@@ -1,0 +1,370 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/Bundle/84cf4f74-0cc7-47fe-8301-3bc8eb0ddd8f> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "84cf4f74-0cc7-47fe-8301-3bc8eb0ddd8f"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2020-06-02T23:25:12Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/a85a7271-1838-4b93-ad2e-8a115a91fff7"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/a85a7271-1838-4b93-ad2e-8a115a91fff7> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/f1bc69fc-c059-4b3a-8277-e45e985f74d6"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/f1bc69fc-c059-4b3a-8277-e45e985f74d6> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/f71f887e-cf4b-44fc-b211-76230e56f5cd"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/f71f887e-cf4b-44fc-b211-76230e56f5cd> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/44655dde-e380-4df2-8bea-b3e64a18d49f"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/44655dde-e380-4df2-8bea-b3e64a18d49f> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/e10d5d17-9f63-41ca-96b9-f43caee79efb"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/e10d5d17-9f63-41ca-96b9-f43caee79efb> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/0db05d8b-00b9-4125-8cb1-2edc064394a4"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/0db05d8b-00b9-4125-8cb1-2edc064394a4> )
+  ] ) . # 
+
+<https://test.fhir.dk/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> a fhir:Patient ;
+  fhir:id [ fhir:v "e60106e2-413e-46c5-8a3f-62d8e77ce794"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794\"> </a><p><b>Generated Narrative: Patient </b><a name=\"e60106e2-413e-46c5-8a3f-62d8e77ce794\"> </a><a name=\"hce60106e2-413e-46c5-8a3f-62d8e77ce794\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePatient &quot;e60106e2-413e-46c5-8a3f-62d8e77ce794&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-citizen.html\">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/0505209996 (use: official)</p><p><b>active</b>: true</p><p><b>managingOrganization</b>: <span><code>urn:oid:1.2.208.176.1.1</code>/451000016003 (use: official)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0505209996" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "451000016003" ]
+     ]
+  ] . # 
+
+<https://test.fhir.dk/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> a fhir:Encounter ;
+  fhir:id [ fhir:v "78742a92-91b1-489f-9fea-6901f6d0b34b"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_78742a92-91b1-489f-9fea-6901f6d0b34b\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"78742a92-91b1-489f-9fea-6901f6d0b34b\"> </a><a name=\"hc78742a92-91b1-489f-9fea-6901f6d0b34b\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;78742a92-91b1-489f-9fea-6901f6d0b34b&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-encounter.html\">KLGatewayChildrenEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: ActCode code HH  = ' home health ', stated as ' null ')</p><p><b>type</b>: Andet besøg inden første måned <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#563c4174-f451-4c87-8db8-8d5472ca7ff6)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>period</b>: 2020-06-01 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "563c4174-f451-4c87-8db8-8d5472ca7ff6" ] ;
+       fhir:display [ fhir:v "Andet besøg inden første måned" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> ;
+     fhir:reference [ fhir:v "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-06-01"^^xsd:date ]
+  ] . # 
+
+<https://test.fhir.dk/Observation/a85a7271-1838-4b93-ad2e-8a115a91fff7> a fhir:Observation ;
+  fhir:id [ fhir:v "a85a7271-1838-4b93-ad2e-8a115a91fff7"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_a85a7271-1838-4b93-ad2e-8a115a91fff7\"> </a><p><b>Generated Narrative: Observation </b><a name=\"a85a7271-1838-4b93-ad2e-8a115a91fff7\"> </a><a name=\"hca85a7271-1838-4b93-ad2e-8a115a91fff7\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;a85a7271-1838-4b93-ad2e-8a115a91fff7&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-bodyweight.html\">KLGatewayChildrenBodyWeight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#27113001)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>encounter</b>: See on this page: Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b</p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: 4150 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ]
+     ] [
+       a sct:27113001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "27113001" ] ;
+       fhir:display [ fhir:v "Body weight" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> ;
+     fhir:reference [ fhir:v "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> ;
+     fhir:reference [ fhir:v "Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "4150"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "g" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "g" ]
+  ] . # 
+
+<https://test.fhir.dk/Observation/f1bc69fc-c059-4b3a-8277-e45e985f74d6> a fhir:Observation ;
+  fhir:id [ fhir:v "f1bc69fc-c059-4b3a-8277-e45e985f74d6"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_f1bc69fc-c059-4b3a-8277-e45e985f74d6\"> </a><p><b>Generated Narrative: Observation </b><a name=\"f1bc69fc-c059-4b3a-8277-e45e985f74d6\"> </a><a name=\"hcf1bc69fc-c059-4b3a-8277-e45e985f74d6\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;f1bc69fc-c059-4b3a-8277-e45e985f74d6&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-bodyheight.html\">KLGatewayChildrenBodyHeight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Recumbent body height (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1149101003)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>encounter</b>: See on this page: Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b</p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: 53.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8302-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8302-2" ]
+     ] [
+       a sct:1149101003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1149101003" ] ;
+       fhir:display [ fhir:v "Recumbent body height (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> ;
+     fhir:reference [ fhir:v "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> ;
+     fhir:reference [ fhir:v "Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "53.5"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "cm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<https://test.fhir.dk/Observation/f71f887e-cf4b-44fc-b211-76230e56f5cd> a fhir:Observation ;
+  fhir:id [ fhir:v "f71f887e-cf4b-44fc-b211-76230e56f5cd"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_f71f887e-cf4b-44fc-b211-76230e56f5cd\"> </a><p><b>Generated Narrative: Observation </b><a name=\"f71f887e-cf4b-44fc-b211-76230e56f5cd\"> </a><a name=\"hcf71f887e-cf4b-44fc-b211-76230e56f5cd\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;f71f887e-cf4b-44fc-b211-76230e56f5cd&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-headcircum.html\">KLGatewayChildrenHeadCircumference</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Head Occipital-frontal circumference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9843-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#363812007 &quot;Head circumference&quot;)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>encounter</b>: See on this page: Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b</p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: 36.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:9843-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9843-4" ] ;
+       fhir:display [ fhir:v "Head Occipital-frontal circumference" ]
+     ] [
+       a sct:363812007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "363812007" ] ;
+       fhir:display [ fhir:v "Head circumference" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> ;
+     fhir:reference [ fhir:v "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> ;
+     fhir:reference [ fhir:v "Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "36.5"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "cm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm" ]
+  ] . # 
+
+<https://test.fhir.dk/Observation/44655dde-e380-4df2-8bea-b3e64a18d49f> a fhir:Observation ;
+  fhir:id [ fhir:v "44655dde-e380-4df2-8bea-b3e64a18d49f"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_44655dde-e380-4df2-8bea-b3e64a18d49f\"> </a><p><b>Generated Narrative: Observation </b><a name=\"44655dde-e380-4df2-8bea-b3e64a18d49f\"> </a><a name=\"hc44655dde-e380-4df2-8bea-b3e64a18d49f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;44655dde-e380-4df2-8bea-b3e64a18d49f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-feeding-observation.html\">KLGatewayChildrenFeedingObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Infant feeding method <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#169740003; <a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#e61e4dab-54bb-4bf4-9b76-8d991cf4de08 &quot;Ernæring&quot;)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>encounter</b>: See on this page: Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b</p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: Fuldamning, inklusiv modermælk på flaske <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#77a008dd-21cc-452f-a1ee-ac8d025b7817)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:169740003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "169740003" ] ;
+       fhir:display [ fhir:v "Infant feeding method" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "e61e4dab-54bb-4bf4-9b76-8d991cf4de08" ] ;
+       fhir:display [ fhir:v "Ernæring" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> ;
+     fhir:reference [ fhir:v "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> ;
+     fhir:reference [ fhir:v "Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77a008dd-21cc-452f-a1ee-ac8d025b7817" ] ;
+       fhir:display [ fhir:v "Fuldamning, inklusiv modermælk på flaske" ]
+     ] )
+  ] . # 
+
+<https://test.fhir.dk/Observation/e10d5d17-9f63-41ca-96b9-f43caee79efb> a fhir:Observation ;
+  fhir:id [ fhir:v "e10d5d17-9f63-41ca-96b9-f43caee79efb"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-relationship"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-relationship>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_e10d5d17-9f63-41ca-96b9-f43caee79efb\"> </a><p><b>Generated Narrative: Observation </b><a name=\"e10d5d17-9f63-41ca-96b9-f43caee79efb\"> </a><a name=\"hce10d5d17-9f63-41ca-96b9-f43caee79efb\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;e10d5d17-9f63-41ca-96b9-f43caee79efb&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-parent-relationship.html\">KLGatewayChildrenIndicatorParentRelationship</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Forældre-barn-relation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#763c6f21-5467-4713-82fb-716c9d0a1fdf)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>encounter</b>: See on this page: Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b</p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: Velfungerende forældre-barn-relation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#7a107df6-8fb8-4744-8413-be10b4c5c1d9)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "763c6f21-5467-4713-82fb-716c9d0a1fdf" ] ;
+       fhir:display [ fhir:v "Forældre-barn-relation" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> ;
+     fhir:reference [ fhir:v "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> ;
+     fhir:reference [ fhir:v "Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7a107df6-8fb8-4744-8413-be10b4c5c1d9" ] ;
+       fhir:display [ fhir:v "Velfungerende forældre-barn-relation" ]
+     ] )
+  ] . # 
+
+<https://test.fhir.dk/Observation/0db05d8b-00b9-4125-8cb1-2edc064394a4> a fhir:Observation ;
+  fhir:id [ fhir:v "0db05d8b-00b9-4125-8cb1-2edc064394a4"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-communication"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-communication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_0db05d8b-00b9-4125-8cb1-2edc064394a4\"> </a><p><b>Generated Narrative: Observation </b><a name=\"0db05d8b-00b9-4125-8cb1-2edc064394a4\"> </a><a name=\"hc0db05d8b-00b9-4125-8cb1-2edc064394a4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;0db05d8b-00b9-4125-8cb1-2edc064394a4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-communication.html\">KLGatewayChildrenIndicatorCommunication</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Kommunikation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#653c2b0b-bb64-4906-888b-aea6fef3c3f8)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>encounter</b>: See on this page: Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b</p><p><b>effective</b>: 2020-06-01</p><p><b>value</b>: Kommunikerer alderssvarende <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#042d522d-0abe-46eb-a958-6e235b5d5408)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "653c2b0b-bb64-4906-888b-aea6fef3c3f8" ] ;
+       fhir:display [ fhir:v "Kommunikation" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794> ;
+     fhir:reference [ fhir:v "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.kl.dk/children/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b> ;
+     fhir:reference [ fhir:v "Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-06-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "042d522d-0abe-46eb-a958-6e235b5d5408" ] ;
+       fhir:display [ fhir:v "Kommunikerer alderssvarende" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
