@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLCitizenObservationResultCodesFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLPerformanceLevelCodesFSIII.html\">KLUdførelsesKoderFSIII</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLImportanceLevelCodesFSIII.html\">KLBetydningKoderFSIII</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLCitizenObservationResultCodesFSIII",
+  "version" : "2.1.0",
+  "name" : "KLCitizenObservationResultCodesFSIII",
+  "title" : "KLBorgervurderingsResultatkoderFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-13T16:55:49+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Performance and Importance level codes, as evaluated by the citizen",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLPerformanceLevelCodesFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLImportanceLevelCodesFSIII"]
+    }]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLConditionCodesPrevention",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-d03da587-94dc-46e6-ba71-eb1e43ec7df6\">d03da587-94dc-46e6-ba71-eb1e43ec7df6</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-7b3b3587-4ddd-4b93-a81b-455bfc601492\">7b3b3587-4ddd-4b93-a81b-455bfc601492</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-b349c7ec-86c5-4c52-aaf2-9034d98b0e3b\">b349c7ec-86c5-4c52-aaf2-9034d98b0e3b</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-3547a306-8623-4713-a8ce-db1e82839c50\">3547a306-8623-4713-a8ce-db1e82839c50</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionCodesPrevention",
+  "version" : "2.1.0",
+  "name" : "KLConditionCodesPrevention",
+  "title" : "KLTilstandKoderForebyggelse",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-13T16:55:49+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Danish municipality Prevention condition codes",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "d03da587-94dc-46e6-ba71-eb1e43ec7df6"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "7b3b3587-4ddd-4b93-a81b-455bfc601492"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "b349c7ec-86c5-4c52-aaf2-9034d98b0e3b"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "3547a306-8623-4713-a8ce-db1e82839c50"
+      }]
+    }]
+  }
+}

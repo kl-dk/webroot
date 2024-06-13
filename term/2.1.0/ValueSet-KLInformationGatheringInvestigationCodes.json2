@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLInformationGatheringInvestigationCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLEvaluationTypeCodes.html\">KLVurderingTypekoder</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLInformationCodes.html\">KLOplysningKoder</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLInformationGatheringInvestigationCodes",
+  "version" : "2.1.0",
+  "name" : "KLInformationGatheringInvestigationCodes",
+  "title" : "KLOplysningsaktivitetsOgVurderingskoder",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-13T16:55:49+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Codes that identify valid items in an investigation in Danish municipalities",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLEvaluationTypeCodes"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLInformationCodes"]
+    }]
+  }
+}

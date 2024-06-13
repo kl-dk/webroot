@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/term/ValueSet/KLInformationGatheringInvestigationCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KLInformationGatheringInvestigationCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-KLEvaluationTypeCodes.html\">KLVurderingTypekoder</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-KLInformationCodes.html\">KLOplysningKoder</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/term/ValueSet/KLInformationGatheringInvestigationCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "KLInformationGatheringInvestigationCodes"] ; # 
+  fhir:title [ fhir:v "KLOplysningsaktivitetsOgVurderingskoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-13T16:55:49+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes that identify valid items in an investigation in Danish municipalities"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLEvaluationTypeCodes"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLEvaluationTypeCodes>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.kl.dk/term/ValueSet/KLInformationCodes"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/term/ValueSet/KLInformationCodes>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

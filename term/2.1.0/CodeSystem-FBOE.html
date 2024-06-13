@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FBOE - KL Terminologi v2.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.59"}
+    h3,h4,h5,h6{--heading-prefix:"2.59"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KL Terminologi</span>
+            <br/>
+            <span style="display:inline-block;">2.1.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>FBOE</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-FBOE.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-FBOE.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-FBOE.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: FBOE
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.kl.dk/term/CodeSystem/FBOE<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/CodeSystem/FBOE"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/CodeSystem/FBOE|2.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-06-13
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">FBOE</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Concepts used for standardizing documentation for Danish postpartum nursing/childrens health promotion program in schools (Da: Sundhedsplejen). The concepts are utilized in the National Database for Children and Youth (LDBU).</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul><li>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</li></ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://fhir.kl.dk/term/CodeSystem/FBOE</code> defines the following codes in a Is-A hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">2034ac33-2cc1-4904-a804-2bd89caa2523<a name="FBOE-2034ac33-2cc1-4904-a804-2bd89caa2523"> </a></td>
+<td>Børnetilstande</td>
+<td><div><p>Børnetilstande</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;cbef5017-0a14-4d07-acdc-9d8ea148843d<a name="FBOE-cbef5017-0a14-4d07-acdc-9d8ea148843d"> </a></td>
+<td>Udfordring relateret til sygeplejefaglige problemområder</td>
+<td><div><p>Udfordring relateret til sygeplejefaglige problemområder</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;03b4d589-3ff5-437e-ba83-f212579d9707<a name="FBOE-03b4d589-3ff5-437e-ba83-f212579d9707"> </a></td>
+<td>Viden- og udviklingsudfordring</td>
+<td><div><p>Viden- og udviklingsudfordring</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;0ace6cd4-4d4a-44c9-8eab-8d45bd29000a<a name="FBOE-0ace6cd4-4d4a-44c9-8eab-8d45bd29000a"> </a></td>
+<td>Udfordring med seksualitet, køn og/eller kropsopfattelse</td>
+<td><div><p>Udfordring med seksualitet, køn og/eller kropsopfattelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;0e7c61be-403e-495b-90ec-348fd0647e66<a name="FBOE-0e7c61be-403e-495b-90ec-348fd0647e66"> </a></td>
+<td>Andet ernæringsproblem</td>
+<td><div><p>Andet ernæringsproblem</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;28a77e7c-c718-4187-9f46-84f50664a967<a name="FBOE-28a77e7c-c718-4187-9f46-84f50664a967"> </a></td>
+<td>Udfordring med smerte og/eller sanser</td>
+<td><div><p>Udfordring med smerte og/eller sanser</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;3bdc1cf9-dae1-40b1-9a82-b39ef72a433f<a name="FBOE-3bdc1cf9-dae1-40b1-9a82-b39ef72a433f"> </a></td>
+<td>Cirkulationsproblem</td>
+<td><div><p>Cirkulationsproblem</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;45144c31-9818-4dc8-9b63-4bf997a49961<a name="FBOE-45144c31-9818-4dc8-9b63-4bf997a49961"> </a></td>
+<td>Misdannelse</td>
+<td><div><p>Misdannelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;54f8263c-c4ac-494c-b276-90073c1f1a33<a name="FBOE-54f8263c-c4ac-494c-b276-90073c1f1a33"> </a></td>
+<td>Respirationsproblem</td>
+<td><div><p>Respirationsproblem</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;aabcb5b7-1523-4de9-9505-d685246beb04<a name="FBOE-aabcb5b7-1523-4de9-9505-d685246beb04"> </a></td>
+<td>Problem med hud og/eller slimhinder</td>
+<td><div><p>Problem med hud og/eller slimhinder</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;bdeb1505-7e6c-491a-bc7b-9869a69e8b30<a name="FBOE-bdeb1505-7e6c-491a-bc7b-9869a69e8b30"> </a></td>
+<td>Udfordring med funktionsniveau</td>
+<td><div><p>Udfordring med funktionsniveau</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;dc822827-a548-4e90-8bd6-90f231b89cb5<a name="FBOE-dc822827-a548-4e90-8bd6-90f231b89cb5"> </a></td>
+<td>Udfordring med udskillelser</td>
+<td><div><p>Udfordring med udskillelser</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;f4971268-d17b-41ec-a1d7-526ce0d08bec<a name="FBOE-f4971268-d17b-41ec-a1d7-526ce0d08bec"> </a></td>
+<td>Anden psykosocial udfordring</td>
+<td><div><p>Anden psykosocial udfordring</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;0bd43934-bd2e-4fd7-bf26-a98b653a1104<a name="FBOE-0bd43934-bd2e-4fd7-bf26-a98b653a1104"> </a></td>
+<td>Udfordring konstateret ifm. anamnese og observation</td>
+<td><div><p>Udfordring konstateret ifm. anamnese og observation</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;351b2b05-6ade-40df-89e0-f59753704230<a name="FBOE-351b2b05-6ade-40df-89e0-f59753704230"> </a></td>
+<td>Sårbarhed ved forælder</td>
+<td><div><p>Sårbarhed ved forælder</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15fc2e8e-b27b-4957-be98-954c1bc318a3<a name="FBOE-15fc2e8e-b27b-4957-be98-954c1bc318a3"> </a></td>
+<td>Konflikt med den anden forælder</td>
+<td><div><p>Småbørn: Konflikt med den anden forælder kan fx være voldsomme skænderier eller uenigheder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;577d33d5-2eff-47ba-b5d0-c4438b8f49c0<a name="FBOE-577d33d5-2eff-47ba-b5d0-c4438b8f49c0"> </a></td>
+<td>Dårlig fødselsoplevelse med dette barn</td>
+<td><div><p>Småbørn: Dårlig fødselsoplevelse med dette barn. Fx traumatisk eller voldsom fødsel.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7acf5936-6640-44a7-af6d-b20c7607dcfe<a name="FBOE-7acf5936-6640-44a7-af6d-b20c7607dcfe"> </a></td>
+<td>Traumatiske oplevelser</td>
+<td><div><p>Småbørn: Forælder har haft voldsomme oplevelser omfattende omsorgssvigt, ulykker, vold og overgreb. Fx har været udsat for partnervold, tortur eller incest, har tidligere fået anbragt et barn, eller har haft traumatiserende oplevelser ifm. det at være flygtning.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87fbc4e5-717a-4395-aa8f-c2c0c0bca763<a name="FBOE-87fbc4e5-717a-4395-aa8f-c2c0c0bca763"> </a></td>
+<td>Tab i familien</td>
+<td><div><p>Småbørn: Er i situationen påvirket af tidligere at have mistet nærtstående familiemedlem, eller anden person, hvor relationen havde særligt stor betydning.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b4032c0c-6e9a-4431-8ce4-97ba4f4574b3<a name="FBOE-b4032c0c-6e9a-4431-8ce4-97ba4f4574b3"> </a></td>
+<td>Misbrug</td>
+<td><div><p>Småbørn: Misbrug hos forælder kan fx være af alkohol, medicin eller stoffer, der nedsætter forælders omsorgsevne.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d126c096-30f0-49c0-8d15-7a50c888d50b<a name="FBOE-d126c096-30f0-49c0-8d15-7a50c888d50b"> </a></td>
+<td>Sygdom eller handicap</td>
+<td><div><p>Småbørn: Fysisk eller psykisk sygdom, som ikke er en efterfødselsreaktion.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d1cd9a33-3800-4901-ab7b-b630ee1be46e<a name="FBOE-d1cd9a33-3800-4901-ab7b-b630ee1be46e"> </a></td>
+<td>Tidligere dårlig fødselsoplevelse</td>
+<td><div><p>Småbørn: Tidligere dårlig fødselsoplevelse. Fx spædbarnsdød eller traumatisk eller voldsom fødsel.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de666a03-1211-4d75-b416-8c8785a40a4b<a name="FBOE-de666a03-1211-4d75-b416-8c8785a40a4b"> </a></td>
+<td>Problem med økonomi</td>
+<td><div><p>Småbørn: Familien har vanskeligheder ved at finde penge til fx udstyr, tøj til barnet, mad eller husleje.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;3c11e7e5-888e-42b8-bd22-9ee5c20c2156<a name="FBOE-3c11e7e5-888e-42b8-bd22-9ee5c20c2156"> </a></td>
+<td>Abnorm vægt/højde</td>
+<td><div><p>Abnorm vægt/højde</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03093611-8e3e-4d9b-9f65-6c9670c3fc91<a name="FBOE-03093611-8e3e-4d9b-9f65-6c9670c3fc91"> </a></td>
+<td>Vigende højdevækst</td>
+<td><div><p>Vigende højdevækst</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37ef9400-2229-4cea-877c-8d653c9ec5ca<a name="FBOE-37ef9400-2229-4cea-877c-8d653c9ec5ca"> </a></td>
+<td>Vigende hovedomfang</td>
+<td><div><p>Vigende hovedomfang</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3c8735c2-f599-44ea-840d-a0d09db4ce2b<a name="FBOE-3c8735c2-f599-44ea-840d-a0d09db4ce2b"> </a></td>
+<td>Vigende vægt</td>
+<td><div><p>Vigende vægt</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8bb204b0-9d83-4562-bcde-aea7aee78e34<a name="FBOE-8bb204b0-9d83-4562-bcde-aea7aee78e34"> </a></td>
+<td>Overvægt</td>
+<td><div><p>Overvægt</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ab33e243-34cd-4768-aca6-54a15fe3922b<a name="FBOE-ab33e243-34cd-4768-aca6-54a15fe3922b"> </a></td>
+<td>Forøget højdevækst</td>
+<td><div><p>Forøget højdevækst</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;3e3ed0b8-5315-43db-afd6-648f9597b49b<a name="FBOE-3e3ed0b8-5315-43db-afd6-648f9597b49b"> </a></td>
+<td>Udfordring i spiseadfærd</td>
+<td><div><p>Udfordring i spiseadfærd</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02788248-f5cf-4d87-99c7-d89fba446255<a name="FBOE-02788248-f5cf-4d87-99c7-d89fba446255"> </a></td>
+<td>Selektivt madvalg</td>
+<td><div><p>Skolebørn: Barnet har et selektivt madvalg og afviser derfor mange fødevarer</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07abb1dd-4853-4c3c-8fab-ebe89c10dbc8<a name="FBOE-07abb1dd-4853-4c3c-8fab-ebe89c10dbc8"> </a></td>
+<td>Springer måltider over</td>
+<td><div><p>Skolebørn: Barnet springer måltider over. Fx barnet spiser ikke morgenmad eller frokost eller barnet oplever ikke at have tid til at spise på skolen.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37862a2d-393d-4302-98bf-399d475cdb21<a name="FBOE-37862a2d-393d-4302-98bf-399d475cdb21"> </a></td>
+<td>Begrænser energiindtag</td>
+<td><div><p>Skolebørn: Barnet har tendens til at spise mindre end kroppen har brug for, eller kaster maden op med vilje.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4813e65d-4d24-4c82-8f17-ce9f084bb970<a name="FBOE-4813e65d-4d24-4c82-8f17-ce9f084bb970"> </a></td>
+<td>Udfordring med amning</td>
+<td><div><p>Småbørn: Forældrene har svært ved at få amningen til at fungere. Udfordring med amning kan have mange årsager fra uhensigtsmæssig lejring af barnet, dårlig sutteteknik, smerte ved mor, fysiologiske forhold hos mor eller barn og/eller sociale/psykologiske forhold.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;626b7b4b-eb0f-4561-a5d5-f9ac8119f4af<a name="FBOE-626b7b4b-eb0f-4561-a5d5-f9ac8119f4af"> </a></td>
+<td>Spiser sjældent sammen med andre</td>
+<td><div><p>Skolebørn: Barnet spiser sjældent sammen med andre, og/eller har ikke en fællesskabsorienteret måltidkultur. Fx familien spiser på forskellige tidspunkter, eller fokus er på noget andet mens der spises fx skærme.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8036b9f6-e00d-4956-8704-61ba08287735<a name="FBOE-8036b9f6-e00d-4956-8704-61ba08287735"> </a></td>
+<td>Overspisning</td>
+<td><div><p>Småbørn: Barnet viser ikke tydelige tegn på mæthed, og spiser altid når der tilbydes mad.</p>
+<p>Skolebørn: Barnet har tendens til at overspise.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;89ab2b34-bdb4-4c0a-95f5-d7cd5e0f94cc<a name="FBOE-89ab2b34-bdb4-4c0a-95f5-d7cd5e0f94cc"> </a></td>
+<td>Spiser overdrevet sundt</td>
+<td><div><p>Skolebørn: Barnet har tendens til at have et overdrevet fokus på sund spisning.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9b0e6538-a24f-47be-9c06-2988cfaef63a<a name="FBOE-9b0e6538-a24f-47be-9c06-2988cfaef63a"> </a></td>
+<td>Småt og/eller selektivt spisende eller vægrer sig ved at spise</td>
+<td><div><p>Småbørn: Barnet spiser ikke spontant tilstrækkeligt. Barnet viser fx ikke tydelige tegn på sult og/eller vægrer sig ved at spise, selv om det er længe siden, at det sidst har spist. Barnet kan også værge sig ved at spise varieret kost og kun indtage nogle få selektivt foretrukne typer af mad.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b887a387-c630-43a0-96a3-2b5c7c84e043<a name="FBOE-b887a387-c630-43a0-96a3-2b5c7c84e043"> </a></td>
+<td>Gylper meget/kaster meget op</td>
+<td><div><p>Småbørn: Barnet har reflux ud over det, der er alderssvarende, uden i øvrigt at være syg. Kan udvise tegn på at refluxen påvirker sundheden fx med synkebesvær, kolikagtige smerter, blod i afføring og vejrtrækningsproblemer.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;60d3e0e4-bfe4-46e3-bbd9-a387559f6ae3<a name="FBOE-60d3e0e4-bfe4-46e3-bbd9-a387559f6ae3"> </a></td>
+<td>Udfordring med kommunikation og sprog</td>
+<td><div><p>Udfordring med kommunikation og sprog</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;355959ff-6122-4e23-9b69-835f739dd42d<a name="FBOE-355959ff-6122-4e23-9b69-835f739dd42d"> </a></td>
+<td>Udfordring med sprogligt udtryk</td>
+<td><div><p>Småbørn: Udfordringer med sprogligt udtryk. Fx barnet udtrykker sig ikke alderssvarende med mimik/gestus, peger, pludrer i lydkæder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37bfe2f5-bdd2-42b0-a1c9-4787860ce624<a name="FBOE-37bfe2f5-bdd2-42b0-a1c9-4787860ce624"> </a></td>
+<td>Udfordring med gensidig kommunikation</td>
+<td><div><p>Småbørn: Udfordringer i gensidigheden i kommunikationen. Fx problemer med at anvende gestik, smil, pludren som indledning og svar på kontakt til forældrene og/eller sundhedsplejersken.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;54c87d2b-b4b2-40eb-89e7-46cca2be757e<a name="FBOE-54c87d2b-b4b2-40eb-89e7-46cca2be757e"> </a></td>
+<td>Udfordring med stammen</td>
+<td><div><p>Skolebørn: Barnet har problemer med stammen. Fx gentagelse af de første ord i sætningen, stopper op midt i en sætning og starter forfra eller tøver og leder efter ordene.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5e83b4b4-8bd0-442b-8e34-77c435105aed<a name="FBOE-5e83b4b4-8bd0-442b-8e34-77c435105aed"> </a></td>
+<td>Udfordring med opmærksomhed</td>
+<td><div><p>Småbørn: Udfordringer med at fastholde sin opmærksomhed. Fx udfordringer med at se på noget eller lytte mindst 1 minut.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8821649f-0f50-4dfa-87e3-8ac2d17d01d5<a name="FBOE-8821649f-0f50-4dfa-87e3-8ac2d17d01d5"> </a></td>
+<td>Udfordring med fælles opmærksomhed</td>
+<td><div><p>Småbørn: Udfordringer med fælles opmærksomhed. Fx barnet har problemer med at følge det forældrene peger på. Barnet har problemer med at holde fælles fokus.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b44d5315-41dc-4d02-a16a-3dbe1c31df0f<a name="FBOE-b44d5315-41dc-4d02-a16a-3dbe1c31df0f"> </a></td>
+<td>Udfordring med sproganvendelse</td>
+<td><div><p>Skolebørn: Barnet har problemer med at forstå, producere eller bruge det talte sprog. Fx fortæller usammenhængende om et emne eller svarer ikke relevant eller nuanceret på et spørgsmål. Barnet kan blive ked af det eller vred, når det ikke kan formulere sig.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;df3e0246-892e-4d5e-af1d-1d1443196f20<a name="FBOE-df3e0246-892e-4d5e-af1d-1d1443196f20"> </a></td>
+<td>Udfordring med sprogforståelse</td>
+<td><div><p>Småbørn: Udfordringer med sprogforståelse. Fx barnet reagerer ikke alderssvarende på kropssprog eller enkelte ord.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f3446cc5-9054-41e5-954d-c8c7a724f0c0<a name="FBOE-f3446cc5-9054-41e5-954d-c8c7a724f0c0"> </a></td>
+<td>Udfordring med udtale</td>
+<td><div><p>Skolebørn: Barnet har problemer med udtale. Fx sproglyde barnet udtaler forkert, lyde barnet bytter om på eller lyde barnet undlader at sige.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fbc23626-556f-4eeb-b494-0a5af1dd2dd6<a name="FBOE-fbc23626-556f-4eeb-b494-0a5af1dd2dd6"> </a></td>
+<td>Udfordring med at målrette opmærksomhed</td>
+<td><div><p>Skolebørn: Barnet har problemer med at målrette eller opretholde opmærksomheden i en samtale.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;72ff26d2-1a43-437c-9c2d-d29d2c41a9c4<a name="FBOE-72ff26d2-1a43-437c-9c2d-d29d2c41a9c4"> </a></td>
+<td>Udfordringer med nedsat evne til social kontakt</td>
+<td><div><p>Udfordringer med nedsat evne til social kontakt</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0ec86d42-83b9-4d2d-b56a-f6d352b58ccf<a name="FBOE-0ec86d42-83b9-4d2d-b56a-f6d352b58ccf"> </a></td>
+<td>Følelsesmæssigt nedtonet</td>
+<td><div><p>Småbørn: Barnet er nedtonet eller har manglende mimik. Barnet fremtræder trist og uden glæde.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15a16fbc-32f1-4eac-b18c-55ebe1887a57<a name="FBOE-15a16fbc-32f1-4eac-b18c-55ebe1887a57"> </a></td>
+<td>Konstant argumenterende</td>
+<td><div><p>Skolebørn: Barnet er konstant argumenterende og stiller fx modspørgsmål.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1e2fc60e-a56f-4523-8d45-df51b0c611bf<a name="FBOE-1e2fc60e-a56f-4523-8d45-df51b0c611bf"> </a></td>
+<td>Urolig/ukoncentreret</td>
+<td><div><p>Skolebørn: Barnet er urolig og ukoncentreret og målretter ikke opmærksomheden mod sundhedsplejersken. Fx sidder uroligt og bevæger arme og ben eller skal pille ved noget er omkringfarende og/eller har tanker, der springer i alle retninger og kan ikke fokusere.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1ff97bed-f371-4db6-8556-7ec7bfec2274<a name="FBOE-1ff97bed-f371-4db6-8556-7ec7bfec2274"> </a></td>
+<td>Trist</td>
+<td><div><p>Skolebørn: Barnet virker trist, nedtrykt eller modløs.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3c18d87b-af46-4305-9040-320d90b2f343<a name="FBOE-3c18d87b-af46-4305-9040-320d90b2f343"> </a></td>
+<td>Nedsat aktivitetsniveau</td>
+<td><div><p>Småbørn: Barnet er nedtonet i sin fysiske aktivitet. Barnet er passivt og tager ikke initiativ til leg.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3f30980a-7bf3-401e-ada8-a3818c352c29<a name="FBOE-3f30980a-7bf3-401e-ada8-a3818c352c29"> </a></td>
+<td>Ukritisk i kontakt</td>
+<td><div><p>Småbørn: Barnet har ikke alderssvarende tilbageholdenhed overfor fremmede fx i kropskontakt.</p>
+<p>Skolebørn: Barnet viser i kontakten med sundhedsplejersken ikke alderssvarende tilbageholdenhed overfor fremmede. Fx kan barnet opleves kontaktsøgende.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5eaa4b16-11de-44fa-88ed-639e2bb1dd11<a name="FBOE-5eaa4b16-11de-44fa-88ed-639e2bb1dd11"> </a></td>
+<td>Genert/stille</td>
+<td><div><p>Skolebørn: Barnet er så tilbageholdende, at det påvirker barnets udfoldelsesmuligheder fysisk, psykisk eller socialt.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a59cd6a9-b147-47ba-bd87-a9e3eaf7449f<a name="FBOE-a59cd6a9-b147-47ba-bd87-a9e3eaf7449f"> </a></td>
+<td>Afvisende</td>
+<td><div><p>Skolebørn: Barnet er afvisende og virker fx reserveret og holder følelsesmæssigt afstand. Fx svarer afvigende eller overfladisk på personlige spørgsmål, eller har afvisende kropssprog ved forsøg på omsorg. Afvisende adfærd bør ikke forveksles med stille/genert adfærd.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b5f8c711-8aa3-4a6d-8570-6e9312e86b09<a name="FBOE-b5f8c711-8aa3-4a6d-8570-6e9312e86b09"> </a></td>
+<td>Engagerer sig ikke i kontakt</td>
+<td><div><p>Småbørn: Barnet er ikke kontaktsøgende overfor fremmede på en måde der tilsvarer dets alder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b8611ea4-7235-4990-9ada-4dccd86448b7<a name="FBOE-b8611ea4-7235-4990-9ada-4dccd86448b7"> </a></td>
+<td>Svært ved at modtage instruktioner</td>
+<td><div><p>Skolebørn: Barnet har svært ved at modtage instruktioner og/eller reagerer ikke, når det får en besked. Fx skal have gentaget detaljeret besked om eller demonstreret hvordan man hinker, for at forstå instruktionen, og selv forsøge at gøre det.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;be8a4c9c-7898-4263-b853-c5d7347e8cec<a name="FBOE-be8a4c9c-7898-4263-b853-c5d7347e8cec"> </a></td>
+<td>Manglende vokalisering</td>
+<td><div><p>Småbørn: Barnet ses uden pludren, grin og hvin. Barnet opleves meget stille eller med skrigelyde.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bfd18100-d007-4465-95ce-5bf2ac8bc091<a name="FBOE-bfd18100-d007-4465-95ce-5bf2ac8bc091"> </a></td>
+<td>Afvigende øjenkontakt</td>
+<td><div><p>Småbørn: Barnet er ikke aldersvarende i fastholdelse af øjenkontakt. Barnet vægrer og/eller forholder sig passivt ved forsøg på øjenkontakt.</p>
+<p>Skolebørn: Barnet har udfordringer ved at holde øjenkontakten eller undgår direkte øjenkontakt.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e818645e-47a7-4125-a579-a68f556b7344<a name="FBOE-e818645e-47a7-4125-a579-a68f556b7344"> </a></td>
+<td>Græder meget</td>
+<td><div><p>Småbørn: Barnet græder mere end det er almindeligt for alderen og er svært at trøste. Barnet har svært ved at falde til ro.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;c45555ec-95a4-40dc-9189-0876b22b7ae9<a name="FBOE-c45555ec-95a4-40dc-9189-0876b22b7ae9"> </a></td>
+<td>Udfordring i forælders psykiske tilstand</td>
+<td><div><p>Udfordring i forælders psykiske tilstand</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1050e706-b685-4310-9194-89c6d8903865<a name="FBOE-1050e706-b685-4310-9194-89c6d8903865"> </a></td>
+<td>Nedsat energi/øget træthed</td>
+<td><div><p>Småbørn: Udpræget træthed og udmattelse. Fx en følelse af at alt kræver overvindelse. Kan være svært at måle pga. den almindelige træthed forbundet med at være blevet forælder. Registreres derfor kun hvis træthed og udmattelse når et niveau ud over det sædvanlige.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7820eaa8-72e0-4f4b-8da7-ddcd74f50c3a<a name="FBOE-7820eaa8-72e0-4f4b-8da7-ddcd74f50c3a"> </a></td>
+<td>Overbekymret/angst</td>
+<td><div><p>Småbørn: Angst eller overbekymring hos forælder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b2fcb139-2e61-480e-96f5-5a7cea82be4c<a name="FBOE-b2fcb139-2e61-480e-96f5-5a7cea82be4c"> </a></td>
+<td>Nedsat lyst/interesse</td>
+<td><div><p>Småbørn: Lysten til at gøre det man plejer at holde af falder. Forælderen har mistet interessen for andre mennesker og aktiviteter og har svært ved at glædes over det, der normalt giver glæde. Viser fx manglende initiativ til daglige gøremål.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;db926a42-517f-4cb0-94f7-0eebd74ce163<a name="FBOE-db926a42-517f-4cb0-94f7-0eebd74ce163"> </a></td>
+<td>Tanker om selvskade/selvmord</td>
+<td><div><p>Småbørn: Tanker om selvskade/selvmord er et af ledsagesymptomerne til depression, men i modsætning til de øvrige skal tanker om selvskade eller selvmord altid ledsages af en indsats, typisk henvisning til læge/psykiatri/psykiatrisk skadestue.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc7cdfb3-d33b-41cc-bb18-2be3592fe323<a name="FBOE-dc7cdfb3-d33b-41cc-bb18-2be3592fe323"> </a></td>
+<td>Depressive ledsagesymptomer</td>
+<td><div><p>Småbørn: Mindst to ledsagesymptomer er til stede. Dvs. nedsat selvtillid eller selvfølelse, selvbebrejdelse eller skyldfølelse, tanker om død og selvmord, tænke- eller koncentrationsbesvær, agitation eller hæmninger, søvnforstyrrelser, appetit- eller vægtændringer.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fc3d65d1-1509-47ef-8845-60adea5d7a65<a name="FBOE-fc3d65d1-1509-47ef-8845-60adea5d7a65"> </a></td>
+<td>Nedtrykthed</td>
+<td><div><p>Småbørn: Nedtonet stemningsleje. Forælderen er trist, negativ, præget af tomhedsfølelse og/eller håbløshed. Kan være grådlabil eller har følelsen af uro.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;d58e0e65-1510-4bfc-a057-3bbe6221b1b7<a name="FBOE-d58e0e65-1510-4bfc-a057-3bbe6221b1b7"> </a></td>
+<td>Problemer med søvn</td>
+<td><div><p>Problemer med søvn</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03c93c46-86ad-4102-a7d5-2c7b3ad0f616<a name="FBOE-03c93c46-86ad-4102-a7d5-2c7b3ad0f616"> </a></td>
+<td>Føler sig ikke udhvilet</td>
+<td><div><p>Skolebørn: Barnet føler sig ikke tilstrækkeligt frisk og veludhvilet.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39dedc66-fe8a-45bb-ad05-e1dee689428a<a name="FBOE-39dedc66-fe8a-45bb-ad05-e1dee689428a"> </a></td>
+<td>Usammenhængende søvn</td>
+<td><div><p>Småbørn: Barnet har ikke sammenhængende lure og/eller nattesøvn på en måde der svarer til dets alder.</p>
+<p>Skolebørn: Barnet har ikke sammenhængende nattesøvn på en måde der svarer til dets alder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a6808e88-8740-48a2-b67e-0ae6daf7aee2<a name="FBOE-a6808e88-8740-48a2-b67e-0ae6daf7aee2"> </a></td>
+<td>Ustabil døgnrytme</td>
+<td><div><p>Småbørn: Barnet er ikke alderssvarende i rytmen for, hvornår det sover, og hvornår det er vågen.</p>
+<p>Skolebørn: Barnet er ikke alderssvarende i rytmen for, hvornår det sover, og hvornår det er vågen.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c684526e-a922-4bba-936e-3741b51ae1a4<a name="FBOE-c684526e-a922-4bba-936e-3741b51ae1a4"> </a></td>
+<td>Lang indsovning</td>
+<td><div><p>Småbørn: Der går mere end en time inden barnet falder i søvn.</p>
+<p>Skolebørn: Der går mere end en time inden barnet falder i søvn.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fcb3733c-e438-4d67-bf02-bb3071e0ba79<a name="FBOE-fcb3733c-e438-4d67-bf02-bb3071e0ba79"> </a></td>
+<td>Sover for lidt</td>
+<td><div><p>Småbørn: Barnets søvnmængde svarer ikke til barnets behov for søvn.</p>
+<p>Skolebørn: Barnets søvnmængde svarer ikke til barnets behov for søvn.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;e36420a4-53d0-47f1-b6fe-b5c236d3e4ce<a name="FBOE-e36420a4-53d0-47f1-b6fe-b5c236d3e4ce"> </a></td>
+<td>Bekymrende adfærd</td>
+<td><div><p>Bekymrende adfærd</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1b3ec341-1441-44c1-88a9-795e47d307dd<a name="FBOE-1b3ec341-1441-44c1-88a9-795e47d307dd"> </a></td>
+<td>Udøver mobning</td>
+<td><div><p>Skolebørn: Barnet udøver mobning fx isolation, bagtalelse, verbal nedværdigelse eller fysiske eller psykiske trusler og/eller vold.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;47e6ea42-c32d-4fd7-ad0f-fdc66c8ba1f9<a name="FBOE-47e6ea42-c32d-4fd7-ad0f-fdc66c8ba1f9"> </a></td>
+<td>Risikoadfærd, andre rusmidler</td>
+<td><div><p>Skolebørn: Barnet har prøvet andre rusmidler end alkohol fx lattergas, hash eller andre former for euforiserende stoffer.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;56eca506-efe1-456b-a29d-86a392a02679<a name="FBOE-56eca506-efe1-456b-a29d-86a392a02679"> </a></td>
+<td>Besvær med at kontrollere adfærd</td>
+<td><div><p>Skolebørn: Barnet har svært ved at styre egen adfærd. Fx vanskeligheder i forhold til følelser, koncentration, opførsel, selvregulering.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;68d1e73a-7866-4cf9-b911-ba2b46e4ebda<a name="FBOE-68d1e73a-7866-4cf9-b911-ba2b46e4ebda"> </a></td>
+<td>Digital risikoadfærd</td>
+<td><div><p>Skolebørn: Barnet har et højt skærmforbrug af TV, telefon, tablets eller computer. Barnet er ukritisk i sin tilgang til hvad det ser og søger på/efter. Fx skærmtid mange timer hver dag, bruger sociale medier eller spiller voldelige computerspil uforholdsmæssigt meget ift. alder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9028ce3b-678c-483e-8e1a-336dde907767<a name="FBOE-9028ce3b-678c-483e-8e1a-336dde907767"> </a></td>
+<td>Risikoadfærd, alkohol</td>
+<td><div><p>Skolebørn: Barnet har et problematisk alkoholforbrug fx har været fuld som 13-årig eller yngre, drikker i hverdagen eller drikker regelmæssigt, flere gange om måneden.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbbcdccd-8410-4cfb-bfba-32fb54cec9ed<a name="FBOE-bbbcdccd-8410-4cfb-bfba-32fb54cec9ed"> </a></td>
+<td>Selvskadende adfærd</td>
+<td><div><p>Skolebørn: Barnet påfører sig intentionelt psykisk eller fysisk skade.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e252608e-b6b6-49f7-84a0-03685d3b5f74<a name="FBOE-e252608e-b6b6-49f7-84a0-03685d3b5f74"> </a></td>
+<td>Seksuel risikoadfærd</td>
+<td><div><p>Skolebørn: Barnet har en seksuel adfærd, som øger dets sårbarhed eller skader andre. Fx har svært ved at sige fra, har svært ved at forstå grænser. Det kan også være manglende brug af beskyttelse eller tidlig seksuel debut.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;e4279057-8349-499e-8ae3-6271aac55c2b<a name="FBOE-e4279057-8349-499e-8ae3-6271aac55c2b"> </a></td>
+<td>Udfordring i forældre-barn-relation</td>
+<td><div><p>Udfordring i forældre-barn-relation</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00a9f897-f784-4164-966c-eba94171ec82<a name="FBOE-00a9f897-f784-4164-966c-eba94171ec82"> </a></td>
+<td>Uforudsigelighed</td>
+<td><div><p>Småbørn: Forældrenes forhold til barnet bærer præg af uforudsigelighed. Dette kan både give sig til udtryk i manglende rutiner i løbet af døgnet og i forældrenes manglende evne til at skabe struktur og genkendelighed i forhold til fx søvn, mad, kontakt, aktivitet og omsorg. Det kan også give sig udtryk i at barnet fx nogle gange trøstes med det samme og andre gange får lov at græde.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51bc227a-3455-474d-bf42-fc7a7875513c<a name="FBOE-51bc227a-3455-474d-bf42-fc7a7875513c"> </a></td>
+<td>Følelsesmæssige behov opfyldes ikke</td>
+<td><div><p>Småbørn: Barnets følelsesmæssige behov opfyldes ikke tilstrækkeligt. Fx trøstes, holdes eller kontaktes barnet ikke tilstrækkeligt eller barnets behov for pauser mødes ikke (overstimulation).</p>
+<p>Skolebørn: Barnets følelsesmæssige behov opfyldes ikke af forældrene fx indgår de ikke i kontakt med barnet i tilstrækkeligt omfang, trøster det ikke tilstrækkeligt og støtter ikke barnet tilstrækkeligt i følelser som vrede, skam, glæde, stolthed, nysgerrighed, frygt eller ængstelse.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53db2598-28be-4d04-8b3a-0005581f1fda<a name="FBOE-53db2598-28be-4d04-8b3a-0005581f1fda"> </a></td>
+<td>Forældreudfordring ved særlige behov</td>
+<td><div><p>Småbørn: Forældrene mangler viden og/eller overskud til at reagere på barnets særlige behov. Det, der registreres her, er altså IKKE, at barnet har særlige behov. Det registreres, hvis barnets særlige behov er en medvirkende forklaring på, at barnets behov ikke mødes. Det kan fx være et præmaturt barn, der spiser meget ofte og er meget grædende, og hvor forældrenes manglende overskud, viden og forståelse kan føre til momenter med manglende omsorg.</p>
+<p>Skolebørn: Barnet har særlige behov, og forældrene mangler viden og/eller overskud. Det der registreres her, er altså IKKE, at barnet har særlige behov. Det registreres hvis barnets særlige behov er en medvirkende forklaring på, at barnets behov ikke mødes.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a038c064-b57d-4a62-9333-c9456817595d<a name="FBOE-a038c064-b57d-4a62-9333-c9456817595d"> </a></td>
+<td>Fysiske behov opfyldes ikke</td>
+<td><div><p>Småbørn: Barnets fysiske behov opfyldes ikke tilstrækkeligt. Fx kan der være udfordringer med hygiejnisk pleje af barnet, passende ernæring, påklædning i forhold til omgivelser, tilpas fysisk stimulation, indeklima m.m.</p>
+<p>Skolebørn: Barnets fysiske behov opfyldes ikke tilstrækkeligt fx kan der være udfordringer med soignering og fysiske fornødenheder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a701d676-dfe5-49fc-862c-92befd64739a<a name="FBOE-a701d676-dfe5-49fc-862c-92befd64739a"> </a></td>
+<td>Konflikter i forældre-barn samspil</td>
+<td><div><p>Skolebørn: Samspil mellem barnet og forældre er præget af konflikter fx mange skænderier.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d3fc57b7-3a5d-4f69-bcb0-bdb8363650eb<a name="FBOE-d3fc57b7-3a5d-4f69-bcb0-bdb8363650eb"> </a></td>
+<td>Udfordring i forældre-barn samspil</td>
+<td><div><p>Småbørn: Barnet viser utryg tilknytning. Fx foretrækker ikke forældre, eller er ikke interesseret i kontakt med dem. Opleves meget ked af det og urolig eller passivt, tilbagetrukket og/eller uden mimik i samspillet med forældre</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fc4b6e6d-a055-49bf-adab-474e0a810675<a name="FBOE-fc4b6e6d-a055-49bf-adab-474e0a810675"> </a></td>
+<td>Aktiviteter ikke afpasset</td>
+<td><div><p>Småbørn: Aktiviteter afpasses ikke efter barnets behov. Fx for få, for mange eller for forskellige aktiviteter i løbet af dagene. Kan også være manglende hensyn i forhold til barnets tilstand og aktivitet.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;f28f3aac-d161-4235-b225-4c90becc3ce5<a name="FBOE-f28f3aac-d161-4235-b225-4c90becc3ce5"> </a></td>
+<td>Mistrivsel</td>
+<td><div><p>Mistrivsel</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;178e96b1-35a4-412c-9525-0b0112fd6984<a name="FBOE-178e96b1-35a4-412c-9525-0b0112fd6984"> </a></td>
+<td>Bekymrede tanker</td>
+<td><div><p>Skolebørn: Barnet er bekymret, ængstelig eller angst. Fx bange for sociale situationer, for bestemte ting og situationer eller stærk angst som kommer i anfald. Det kan også være vedvarende ængstelighed og bekymring som præger hele hverdagen.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19b79e85-8259-4aba-a0a9-3f492fd6aa04<a name="FBOE-19b79e85-8259-4aba-a0a9-3f492fd6aa04"> </a></td>
+<td>Mangler venskaber</td>
+<td><div><p>Skolebørn: Barnet har det ikke godt med jævnaldrende, eller savner at have det godt med jævnaldrende. Fx følelse af ikke at have venner, ofte i konflikt med andre eller sporadisk kontakt med jævnaldrende i skole eller fritid.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2e1f0a6c-7554-4eb4-bbdf-837c25af2607<a name="FBOE-2e1f0a6c-7554-4eb4-bbdf-837c25af2607"> </a></td>
+<td>Anden mistrivsel</td>
+<td><div><p>Skolebørn: Barnet er berørt af psykisk sårbarhed, som ikke er omfattet af ovenstående kategorier, hvor barnets mentale trivsel og velbefindende påvirkes negativt. Fx tvangstanker, følelse af mindreværd, særligt sensitiv eller udsat for seksuelt pres.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3c39b305-16e4-4d0a-98b8-305b76f8e22b<a name="FBOE-3c39b305-16e4-4d0a-98b8-305b76f8e22b"> </a></td>
+<td>Mangler nære relationer</td>
+<td><div><p>Skolebørn: Barnet oplever at mangle nogen at tale med om svære ting. Nære relationer kan både findes blandt familie og venner, voksne og børn.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49aedea9-cbe2-492b-a268-de7f2673a438<a name="FBOE-49aedea9-cbe2-492b-a268-de7f2673a438"> </a></td>
+<td>Fysiske symptomer på mistrivsel</td>
+<td><div><p>Skolebørn: Barnet har fysiske symptomer på mistrivsel fx ondt i maven, hovedpine, hjertebanken, virker rastløs, har manglende appetit eller er energiforladt. Dårlig søvn kan også være et tegn, men dokumenteres i denne sammenhæng under søvn, hvis det er eneste symptom.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;772f3089-9742-4b3e-8d12-662a66bebfef<a name="FBOE-772f3089-9742-4b3e-8d12-662a66bebfef"> </a></td>
+<td>Udsat for mobning</td>
+<td><div><p>Skolebørn: Barnet er udsat for mobning fx bagtalelse, verbal nedværdigelse eller fysiske eller psykiske trusler og/eller vold.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a7ccd6bb-0718-473e-84c6-37d97e8402a5<a name="FBOE-a7ccd6bb-0718-473e-84c6-37d97e8402a5"> </a></td>
+<td>Depressive tanker</td>
+<td><div><p>Skolebørn: Barnet har depressive tanker karateristeret ved nedtrykthed, nedsat interesse eller nedsat energi. Fx børn der oplever at have brug for at trække sig. Lægge sig under dynen, og ønske at sove sig fra det hele. Kan føre til øget skolefravær og trækken sig fra det sociale liv med venner, kammerater, fritidsaktiviteter og familie.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ae2192f1-cade-4d71-9321-fa79b6356a09<a name="FBOE-ae2192f1-cade-4d71-9321-fa79b6356a09"> </a></td>
+<td>Stressfølelse</td>
+<td><div><p>Skolebørn: Barnet føler sig presset af egne og/eller andres forventninger til de ting, som det skal nå eller præstere. Fx lektier, fremtid, sociale medier og/eller fritidsaktiviteter. Følelsen af stress, som der undersøges her, bør ikke forveksles med diagnosen stress.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b9293b2f-881d-4822-9877-bcbdaef298ca<a name="FBOE-b9293b2f-881d-4822-9877-bcbdaef298ca"> </a></td>
+<td>Tanker om selvskade</td>
+<td><div><p>Skolebørn: Barnet har tanker om at skade sig selv, om døden og/eller om at tage sit eget liv.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e774a9f9-d6dd-4b55-95ce-5e3f6df17695<a name="FBOE-e774a9f9-d6dd-4b55-95ce-5e3f6df17695"> </a></td>
+<td>Bekymrende kropsopfattelse</td>
+<td><div><p>Skolebørn: Barnet har en bekymrende kropsopfattelse fx restriktive eller negative tanker om vægt og udseende.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;f9bd933c-3b9d-4015-a4de-dc04cbcf2f00<a name="FBOE-f9bd933c-3b9d-4015-a4de-dc04cbcf2f00"> </a></td>
+<td>Inkontinens</td>
+<td><div><p>Inkontinens</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;54f42eb5-18f9-4e82-98e0-1c83988189b9<a name="FBOE-54f42eb5-18f9-4e82-98e0-1c83988189b9"> </a></td>
+<td>Naturininkontinens</td>
+<td><div><p>Skolebørn: Når et barn på over 5 år har mindst én våd nat hver 14. dag</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9642daa3-7ec8-41a8-b5a0-111123de4193<a name="FBOE-9642daa3-7ec8-41a8-b5a0-111123de4193"> </a></td>
+<td>Afføringsinkontinens</td>
+<td><div><p>Skolebørn: Når et barn er fyldt 4 år og har uheld med afføring på et hvilket som helst tidspunkt.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b79078ce-c5b1-44ad-ad55-7e01b6edc3c5<a name="FBOE-b79078ce-c5b1-44ad-ad55-7e01b6edc3c5"> </a></td>
+<td>Dagurininkontinens</td>
+<td><div><p>Skolebørn: Når et barn over 5 år har tisseuheld mindst én gang hver 14. dag i dagtimer.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;fb0eac61-28dc-4d60-91c4-6da0e07c276d<a name="FBOE-fb0eac61-28dc-4d60-91c4-6da0e07c276d"> </a></td>
+<td>Egenvurderet uglad</td>
+<td><div><p>Egenvurderet uglad</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10edfc52-3632-453b-8db1-af6691049885<a name="FBOE-10edfc52-3632-453b-8db1-af6691049885"> </a></td>
+<td>For det meste ikke glad</td>
+<td><div><p>Barnet vurderer selv for det meste ikke at være glad.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2c945a43-a07b-4b26-b4cc-205ba15a1251<a name="FBOE-2c945a43-a07b-4b26-b4cc-205ba15a1251"> </a></td>
+<td>For det meste midt imellem</td>
+<td><div><p>Barnet vurderer selv for det meste at være midt imellem glad og ikke glad.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2e026475-a2ec-45e3-92d8-f0bed307cceb<a name="FBOE-2e026475-a2ec-45e3-92d8-f0bed307cceb"> </a></td>
+<td>For det meste midt imellem i skolen</td>
+<td><div><p>Barnet vurderer selv for det meste at være midt imellem glad og ikke glad i skolen.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;822dffb2-3b29-4f86-9784-757954d6a047<a name="FBOE-822dffb2-3b29-4f86-9784-757954d6a047"> </a></td>
+<td>For det meste ikke glad i skolen</td>
+<td><div><p>Barnet vurderer selv for det meste ikke at være glad i skolen.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;ef8113b6-f6b2-45f0-8804-930fb2f3ae52<a name="FBOE-ef8113b6-f6b2-45f0-8804-930fb2f3ae52"> </a></td>
+<td>Indikatortilstand</td>
+<td><div><p>Indikatortilstand</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;12654b4f-7db5-4245-b622-9e558d446dba<a name="FBOE-12654b4f-7db5-4245-b622-9e558d446dba"> </a></td>
+<td>Tilstand vedr. forælders psykiske tilstand</td>
+<td><div><p>Tilstand vedr. forælders psykiske tilstand</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b8220216-e185-451b-8d2a-67cdf73c42c3<a name="FBOE-b8220216-e185-451b-8d2a-67cdf73c42c3"> </a></td>
+<td>Let psykisk reaktion</td>
+<td><div><p>Småbørn: Forælder har få, ikke-kritiske tegn på psykisk reaktion i forbindelse med forældreskab. Fx kan lettere søvnforstyrrelser og træthed i en periode give dårligt humør, uden at der samlet er tegn på psykisk reaktion. Tegnene kræver opmærksomhed, men ikke indsats.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f86c2526-3b04-454c-a99e-d350f699dc94<a name="FBOE-f86c2526-3b04-454c-a99e-d350f699dc94"> </a></td>
+<td>Psykisk reaktion</td>
+<td><div><p>Småbørn: Forælder har psykisk reaktion i forbindelse med forældreskab, mest typisk depressions- eller angstsymptomer, men der kan også være tale om andre symptombilleder. Kræver en indsats.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;22fdc548-7456-47ac-9dc0-504285000b9c<a name="FBOE-22fdc548-7456-47ac-9dc0-504285000b9c"> </a></td>
+<td>Tilstand vedr. kost</td>
+<td><div><p>Tilstand vedr. kost</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;019e3a2d-775c-4660-8183-75206b47048f<a name="FBOE-019e3a2d-775c-4660-8183-75206b47048f"> </a></td>
+<td>Problem med kost</td>
+<td><div><p>Skolebørn: Der er problemer med barnets kost. Fx barnet er meget småtspisende, overspisende eller får meget ensidig kost. Fx ikke frugt/grønt, mælk og for meget sukker og fedt.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abecea75-32cd-4388-80fd-319a30701bf6<a name="FBOE-abecea75-32cd-4388-80fd-319a30701bf6"> </a></td>
+<td>Enkelte udfordringer med kost</td>
+<td><div><p>Skolebørn: Der er enkelte udfordringer med barnets kost. Fx for meget sukker og fedt, får sjældent fisk, eller barnet drikker ikke mælk.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;2f1e8de1-090d-4eea-8726-1a1224f03d23<a name="FBOE-2f1e8de1-090d-4eea-8726-1a1224f03d23"> </a></td>
+<td>Tilstand vedr. social kontakt</td>
+<td><div><p>Tilstand vedr. social kontakt</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18938eb0-3f40-48c5-9971-7255aa86336a<a name="FBOE-18938eb0-3f40-48c5-9971-7255aa86336a"> </a></td>
+<td>Få tegn på udfordringer i social kontakt</td>
+<td><div><p>Småbørn: Barnet indgår i kontakt og deltager i samspil, men har få tegn på udfordringer. Fx viser barnet i mindre grad interesse for kontakt, har uro, gråd, flygtig øjenkontakt, virker mindre tilpas og/eller er mindre aktiv i samspillet.</p>
+<p>Skolebørn: Barnet indgår i samspil. Der er dog få ikke-kritiske tegn på udfordringer, der kræver opmærksomhed fx urolig, ukoncentreret eller genert.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e1c1674c-9384-4d95-999f-763f3868f444<a name="FBOE-e1c1674c-9384-4d95-999f-763f3868f444"> </a></td>
+<td>Udfordring i social kontakt</td>
+<td><div><p>Småbørn: Barnet fastholder ikke øjenkontakten. Det indgår ikke i kontakt og deltager ikke aktivt i samspil. Barnet viser f.eks. ikke interesse for kontakt, har udtalt gråd/uro, er passivt og/eller har nedtonet mimik.</p>
+<p>Skolebørn: Barnet har problemer med at indgå i kontakt og samspil, der kræver en indsats. Barnet udviser fx utryghed eller er ukritisk i kontakten. Barnet udviser manglende initiativ, glæde og begejstring.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;48348674-243c-4eb5-9d23-73cb0c2b781a<a name="FBOE-48348674-243c-4eb5-9d23-73cb0c2b781a"> </a></td>
+<td>Tilstand vedr. fysisk aktivitet</td>
+<td><div><p>Tilstand vedr. fysisk aktivitet</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2ef19cdf-f6e6-4b2c-aaef-f466e33cf261<a name="FBOE-2ef19cdf-f6e6-4b2c-aaef-f466e33cf261"> </a></td>
+<td>Overdreven motion</td>
+<td><div><p>Skolebørn: Barnet dyrker overdreven motion, hvor motionen eller træningen bliver tvangspræget.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2effe989-0cc3-4dce-ad93-9f6503b91eaa<a name="FBOE-2effe989-0cc3-4dce-ad93-9f6503b91eaa"> </a></td>
+<td>Moderat fysisk aktiv</td>
+<td><div><p>Skolebørn: Barnet bevæger sig ikke en time dagligt. Barnet bevæger sig dog én time eller mere flere gange på en uge.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;38f72570-630f-40c6-8a60-cf2e1bddc8eb<a name="FBOE-38f72570-630f-40c6-8a60-cf2e1bddc8eb"> </a></td>
+<td>Meget stillesiddende aktivitet</td>
+<td><div><p>Skolebørn: Barnet har ofte stillesiddende adfærd og bevæger sig ikke én time dagligt. Undgår og vægrer sig ved fysisk aktivitet.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;4dde96de-2c3c-4973-adcc-3258765fcdac<a name="FBOE-4dde96de-2c3c-4973-adcc-3258765fcdac"> </a></td>
+<td>Tilstand vedr. syn</td>
+<td><div><p>Tilstand vedr. syn</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0896610c-1322-44f2-836c-774de52fc3f1<a name="FBOE-0896610c-1322-44f2-836c-774de52fc3f1"> </a></td>
+<td>Potentielt problem med syn</td>
+<td><div><p>Skolebørn: Screening viser potentielt problem med syn. Barnets syn skal undersøges nærmere.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e489119b-de75-47cc-a53b-6ba90ed2c7e8<a name="FBOE-e489119b-de75-47cc-a53b-6ba90ed2c7e8"> </a></td>
+<td>Allerede kendt synsproblematik</td>
+<td><div><p>Skolebørn: Barnet har en allerede kendt synsproblematik, som er identificeret ved tidligere undersøgelse(r) af barnets syn. Tidligere undersøgelser behøver ikke nødvendigvis at være foretaget af sundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;70e08e9c-d210-490e-a019-b3f2477983f5<a name="FBOE-70e08e9c-d210-490e-a019-b3f2477983f5"> </a></td>
+<td>Tilstand vedr. netværk</td>
+<td><div><p>Tilstand vedr. netværk</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;983ff338-2e77-413d-b157-66d0141a4a96<a name="FBOE-983ff338-2e77-413d-b157-66d0141a4a96"> </a></td>
+<td>Sparsomt netværk</td>
+<td><div><p>Småbørn: Familien har et sparsomt netværk eller føler sig på anden måde isolerede med deres barn.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;94e357fc-d28d-45b3-a89e-b9accdb50c34<a name="FBOE-94e357fc-d28d-45b3-a89e-b9accdb50c34"> </a></td>
+<td>Tilstand vedr. nikotin</td>
+<td><div><p>Tilstand vedr. nikotin</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5bc59698-bdf9-48db-ab97-20c43d7ff4f1<a name="FBOE-5bc59698-bdf9-48db-ab97-20c43d7ff4f1"> </a></td>
+<td>Udsat for tobaksrøg</td>
+<td><div><p>Småbørn: Barnet er udsat for tobaksrøg. Ved udsættelse for tobaksrøg menes i denne sammenhæng, at der ryges i den bolig, hvor barnet opholder sig. Udsættelse for tobaksrøg kommer fx fra cigaretter eller pibe. Omfatter ikke damp fra e-cigaretter og lignende. Rygning i bolig, er rygning i rum, hvor barnet opholder sig, også selvom barnet ikke er der lige når der ryges. Dette gælder også selvom der ryges ud af vinduet, eller med tændt emhætte.</p>
+<p>Skolebørn: Barnet er udsat for tobaksrøg. Ved udsættelse for tobaksrøg menes i denne sammenhæng, at der ryges i den bolig, hvor barnet opholder sig. Udsættelse for tobaksrøg kommer fx fra cigaretter eller pibe. Omfatter ikke damp fra e-cigaretter og lignende. Rygning i bolig, er rygning i rum, hvor barnet opholder sig, også selvom barnet ikke er der lige når der ryges. Dette gælder også selvom der ryges ud af vinduet, eller med tændt emhætte.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cfe9150e-380e-4ce3-a120-2e2b227c8b9f<a name="FBOE-cfe9150e-380e-4ce3-a120-2e2b227c8b9f"> </a></td>
+<td>Bruger nikotin</td>
+<td><div><p>Skolebørn: Barnet bruger nikotinholdige produkter fx cigaretter, snus, e-cigaretter, vandpibe, nikotinposer, Puff Bars. Med brug menes at barnet har prøvet mere end to gange.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fd145ea6-b7de-466c-9053-8b4a0be960ac<a name="FBOE-fd145ea6-b7de-466c-9053-8b4a0be960ac"> </a></td>
+<td>Har prøvet nikotin</td>
+<td><div><p>Skolebørn: Barnet har prøvet nikotinholdige produkter højst et par gange fx cigaretter, snus, e-cigaretter, vandpibe, nikotinposer, Puff Bars.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;9943e883-44d1-492c-a5d8-d8ce164a7240<a name="FBOE-9943e883-44d1-492c-a5d8-d8ce164a7240"> </a></td>
+<td>Tilstand vedr. forælders sårbarhed</td>
+<td><div><p>Tilstand vedr. forælders sårbarhed</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2461e246-b75c-46bb-b6ad-c68d529ace7e<a name="FBOE-2461e246-b75c-46bb-b6ad-c68d529ace7e"> </a></td>
+<td>Sårbarhed</td>
+<td><div><p>Småbørn: Forælder har en eller flere sociale risikofaktorer og/eller helbredsproblemer, som har betydning for forældreskabet.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;546e7bef-7a22-451e-971a-326fcd78a843<a name="FBOE-546e7bef-7a22-451e-971a-326fcd78a843"> </a></td>
+<td>Potentiel sårbarhed</td>
+<td><div><p>Småbørn: Forælder har en eller flere sociale risikofaktorer og/eller helbredsproblemer som dog aktuelt ikke udgør risiko for forældreskabet.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;9b57564c-2d5a-4205-a88c-4c0731efa60b<a name="FBOE-9b57564c-2d5a-4205-a88c-4c0731efa60b"> </a></td>
+<td>Tilstand vedr. søvn</td>
+<td><div><p>Tilstand vedr. søvn</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c25b5cda-3f6b-4ef7-998d-c22c58c6dd18<a name="FBOE-c25b5cda-3f6b-4ef7-998d-c22c58c6dd18"> </a></td>
+<td>Udfordring med søvn</td>
+<td><div><p>Småbørn: Barnet har udfordringer med søvn og/eller døgnrytme. Der er tegn på udfordringer med søvnmængde og/eller søvnkvalitet på en måde som har negativ indflydelse på barnets kontakt, spisning og/eller trivsel. Fx barnet vender om på dag og nat, barnet sover alt for lidt eller vågner mange gange og har svært ved at falde i søvn.</p>
+<p>Skolebørn: Barnet har udfordringer med søvn og/eller døgnrytme. Der er tegn på udfordringer med søvnmængde og/eller søvnkvalitet på en måde som har negativ indflydelse på barnets læring/aktivitet, spisning og/eller trivsel. Fx barnet vender om på dag og nat, barnet sover alt for lidt eller vågner mange gange og har svært ved at falde i søvn.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d13ad530-d8f6-4933-be18-bb77e2334f9f<a name="FBOE-d13ad530-d8f6-4933-be18-bb77e2334f9f"> </a></td>
+<td>Let forstyrret søvn</td>
+<td><div><p>Småbørn: Barnets søvn og døgnrytme svarer grundlæggende til barnets behov for søvn. Der er dog enkelte tegn på udfordringer med søvnmængde og/eller kvalitet. Fx sover lidt mindre end det har behov for, udfordringer med indsovning eller at barnet vågner om natten og har svært ved at sove igen.</p>
+<p>Skolebørn: Barnets søvn og døgnrytme svarer grundlæggende til barnets behov for søvn. Der er dog enkelte tegn på udfordringer med søvnmængde og/eller kvalitet. Fx sover lidt for lidt, udfordringer med indsovning eller at barnet vågner om natten og har svært ved at sove igen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;9ea9b44b-e708-476a-8c41-8314d9b09c5d<a name="FBOE-9ea9b44b-e708-476a-8c41-8314d9b09c5d"> </a></td>
+<td>Tilstand vedr. hørelse</td>
+<td><div><p>Tilstand vedr. hørelse</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4d4b20b6-0159-4014-ac1c-46a7a860b204<a name="FBOE-4d4b20b6-0159-4014-ac1c-46a7a860b204"> </a></td>
+<td>Allerede kendt høreproblematik</td>
+<td><div><p>Skolebørn: Barnet har en allerede kendt høreproblematik, som er identificeret ved tidligere undersøgelse(r) af barnets hørelse. Tidligere undersøgelser behøver ikke nødvendigvis at være foretaget af sundhedsplejen.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c4c79311-ba80-4890-9008-c2f62ab00eda<a name="FBOE-c4c79311-ba80-4890-9008-c2f62ab00eda"> </a></td>
+<td>Potentielt problem med hørelse</td>
+<td><div><p>Skolebørn: Screening viser potentielt problem med hørelse. Barnets hørelse skal undersøges nærmere.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;a12574d2-c180-4f76-9e77-c917b2823bfa<a name="FBOE-a12574d2-c180-4f76-9e77-c917b2823bfa"> </a></td>
+<td>Tilstand vedr. kommunikation</td>
+<td><div><p>Tilstand vedr. kommunikation</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;851ad2f2-a805-4d81-a1d8-15c3b09f5949<a name="FBOE-851ad2f2-a805-4d81-a1d8-15c3b09f5949"> </a></td>
+<td>Få tegn på udfordret kommunikation</td>
+<td><div><p>Småbørn: Grundlæggende kommunikerer barnet som forventet i forhold til alder. Der er dog få tegn på udfordringer. Det kan fx være at barnet ikke reagerer på ord eller kropssprog.</p>
+<p>Skolebørn: Barnet kommunikerer grundlæggende som forventet i forhold til alder. Der er dog få tegn på udfordringer. Fx små udfordringer med sproglyde, eller forkortet opmærksomhedsspænd.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d9f00ad4-4305-4bd0-aedf-2e51bef602e2<a name="FBOE-d9f00ad4-4305-4bd0-aedf-2e51bef602e2"> </a></td>
+<td>Udfordring med kommunikation</td>
+<td><div><p>Småbørn: Barnet har udfordringer med at kommunikere alderssvarende og udviser tegn på forsinket tale- og sprogudvikling.</p>
+<p>Skolebørn: Barnet har udfordringer med at kommunikere alderssvarende. Fx udfordringer med udtale, stammen, sproganvendelse eller med at målrette opmærksomhed.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;c24e84cf-f119-4a4e-bb26-1858140620f8<a name="FBOE-c24e84cf-f119-4a4e-bb26-1858140620f8"> </a></td>
+<td>Tilstand vedr. motorik</td>
+<td><div><p>Tilstand vedr. motorik</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;936a0163-08eb-4fdb-bf0c-bcf5bc7cb3f6<a name="FBOE-936a0163-08eb-4fdb-bf0c-bcf5bc7cb3f6"> </a></td>
+<td>Få tegn på udfordret motorik</td>
+<td><div><p>Småbørn: Barnet viser enkelte tegn på forsinket motorisk udvikling i forhold til alder.</p>
+<p>Skolebørn: Barnet viser enkelte tegn på motoriske problemer eller forsinket motorisk udvikling. Viser sig typisk ved usikker mestring af almindelige motoriske færdigheder, eller én til to ukritiske problemer i en screening. Registreres kun, hvis udfordringerne kræver opmærksomhed, men ikke indsats.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aeade013-b14a-4ad3-80da-66742782411e<a name="FBOE-aeade013-b14a-4ad3-80da-66742782411e"> </a></td>
+<td>Udfordring med motorik</td>
+<td><div><p>Småbørn: Barnet har problemer med motorik. Der kan fx være tale om en forsinket motorisk udvikling i forhold til barnets alder.</p>
+<p>Skolebørn: Barnet har problemer med motorik eller forsinket motorisk udvikling i forhold til barnets alder. Viser sig typisk ved dårlig mestring af almindelige motoriske færdigheder eller ved mere end to bemærkninger i motoriske screeninger. Registreres kun, hvis udfordringerne er af en karakter, der kræver indsats eller overlevering til anden faggruppe.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;e64c378a-edca-4366-854e-b3dfb89bbc31<a name="FBOE-e64c378a-edca-4366-854e-b3dfb89bbc31"> </a></td>
+<td>Tilstand vedr. forældre-barn relation</td>
+<td><div><p>Tilstand vedr. forældre-barn relation</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;274791a5-094d-4e6a-831e-e712d3d66aeb<a name="FBOE-274791a5-094d-4e6a-831e-e712d3d66aeb"> </a></td>
+<td>Let påvirket forældre-barn-relation</td>
+<td><div><p>Småbørn: Barnets fysiske og psykiske omsorgsbehov opfyldes, men er påvirket, da forældrene ikke i tilstrækkelig grad tolker og/eller reagerer afstemt i forhold til barnets behov og signaler.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80aa0dab-aa41-45b1-a2cc-16d7e3733fdd<a name="FBOE-80aa0dab-aa41-45b1-a2cc-16d7e3733fdd"> </a></td>
+<td>Udfordring i forældre-barn-relation</td>
+<td><div><p>Småbørn: Barnets fysiske eller psykiske omsorgsbehov opfyldes ikke. Forældrene reagerer ikke afstemt i forhold til barnets behov og signaler. Barnet viser tegn på utryg tilknytning til forældrene.</p>
+</div></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">6d41809a-54e5-4ce6-955f-357b20d063d1<a name="FBOE-6d41809a-54e5-4ce6-955f-357b20d063d1"> </a></td>
+<td>Kontakt</td>
+<td><div><p>Type af kontakte der foretages i sundhedsplejen.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;4b039ba1-4005-42e6-b672-09b81ad7578a<a name="FBOE-4b039ba1-4005-42e6-b672-09b81ad7578a"> </a></td>
+<td>Behovskontakt med småbørnssundhedsplejen</td>
+<td><div><p>Sundhedsplejens kontakter i barnets første 5 leveår efter behov.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;606c6585-444b-4ecd-885c-2ee59dc33f32<a name="FBOE-606c6585-444b-4ecd-885c-2ee59dc33f32"> </a></td>
+<td>Behovskontakt med skolesundhedsplejen</td>
+<td><div><p>Sundhedsplejens kontakter ifm. barnets skolegang efter behov.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb<a name="FBOE-9f3d853c-88d3-47e9-92a1-c7bbe0f9b4eb"> </a></td>
+<td>Kontakt i almindelige forløb for skolebørn</td>
+<td><div><p>Kontakter i almindelige forløb for skolebørn  som beskrevet i vejledning for forebyggende sundhedsydelser for børn og unge.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;0ddb3661-51da-471f-94d7-2a50b81f5fc6<a name="FBOE-0ddb3661-51da-471f-94d7-2a50b81f5fc6"> </a></td>
+<td>1. klasses undersøgelse</td>
+<td><div><ol>
+<li>klasses undersøgelse foretaget af skolesundhedsplejen.</li>
+</ol>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;17f5f9fa-3e1c-42fe-9ef3-178bc7900f67<a name="FBOE-17f5f9fa-3e1c-42fe-9ef3-178bc7900f67"> </a></td>
+<td>Almindelig forebyggende skolebørnskontakt</td>
+<td><div><p>Kontakt, der ikke er beskrevet i vejledning om forebyggende sundhedsydelser til børn og unge, men som stadig er del af den almindelige forebyggende småbørnsindsats.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;c06ed6f1-be9d-460e-a45e-34821bcbd533<a name="FBOE-c06ed6f1-be9d-460e-a45e-34821bcbd533"> </a></td>
+<td>Indskolingsundersøgelse</td>
+<td><div><p>Indskolingsundersøgelse foretaget af skolesundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;d01bcb90-2b29-44f4-834c-191d6dd4a08a<a name="FBOE-d01bcb90-2b29-44f4-834c-191d6dd4a08a"> </a></td>
+<td>Undersøgelse i mellemtrin, med måling</td>
+<td><div><p>Undersøgelse i mellemtrin foretaget af skolesundhedsplejen, hvor der måles højde og vægt.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;dd766967-4d02-4c17-8ed3-021852785fdf<a name="FBOE-dd766967-4d02-4c17-8ed3-021852785fdf"> </a></td>
+<td>Udskolingsundersøgelse</td>
+<td><div><p>Udskolingsundersøgelse foretaget af skolesundhedsplejen.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;6c2a4f15-d775-47f3-9868-b26fbff9ff8b<a name="FBOE-6c2a4f15-d775-47f3-9868-b26fbff9ff8b"> </a></td>
+<td>Kontakt i almindelige forløb for småbørn</td>
+<td><div><p>Kontakt i almindelige forløb for småbørn, som beskrevet i vejledning om forebyggende sundhedsydelser til børn og unge.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;3f3e6489-31bd-44cf-9920-3c632868feb7<a name="FBOE-3f3e6489-31bd-44cf-9920-3c632868feb7"> </a></td>
+<td>Besøg hos det 8-11 måneder gamle barn</td>
+<td><div><p>Besøg hos det 8-11 måneder gamle barn foretaget af småbørnssundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;51f30d1c-d60e-4e3e-ac22-ec9712ea962d<a name="FBOE-51f30d1c-d60e-4e3e-ac22-ec9712ea962d"> </a></td>
+<td>Besøg hos det ca. 2 måneder gamle barn</td>
+<td><div><p>Besøg hos det ca. 2 måneder gamle barn foretaget af småbørnssundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;563c4174-f451-4c87-8db8-8d5472ca7ff6<a name="FBOE-563c4174-f451-4c87-8db8-8d5472ca7ff6"> </a></td>
+<td>Andet besøg inden første måned</td>
+<td><div><p>Andet besøg i barnets første måned foretaget af småbørnssundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;58ff370b-a775-4bec-b24a-91604e0a5fe7<a name="FBOE-58ff370b-a775-4bec-b24a-91604e0a5fe7"> </a></td>
+<td>Besøg hos det 4-6 måneder gamle barn</td>
+<td><div><p>Besøg hos det 4-6 måneder gamle barn foretaget af småbørnssundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;7d35a193-e808-4e77-b361-6c0d114d021f<a name="FBOE-7d35a193-e808-4e77-b361-6c0d114d021f"> </a></td>
+<td>Barselsbesøg</td>
+<td><div><p>Barselsbesøg foretaget af småbørnssundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;b4bf6058-502a-4d64-bb8e-369661f43b47<a name="FBOE-b4bf6058-502a-4d64-bb8e-369661f43b47"> </a></td>
+<td>Etableringsbesøg</td>
+<td><div><p>Etableringsbesøg foretaget af småbørnssundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;d3c00541-f1d3-4c43-b5fc-16e8914ca1df<a name="FBOE-d3c00541-f1d3-4c43-b5fc-16e8914ca1df"> </a></td>
+<td>Graviditetsbesøg</td>
+<td><div><p>Graviditetsbesøg foretaget af småbørnssundhedsplejen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;b30f139c-fac5-416e-b84a-a3429f0222c2<a name="FBOE-b30f139c-fac5-416e-b84a-a3429f0222c2"> </a></td>
+<td>Almindelig forebyggende småbørnskontakt</td>
+<td><div><p>Kontakt, der ikke er beskrevet i vejledning om forebyggende sundhedsydelser til børn og unge, men som stadig er del af den almindelige forebyggende småbørnsindsats.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;644dd6c1-5c80-4412-ae59-f6e0767cead5<a name="FBOE-644dd6c1-5c80-4412-ae59-f6e0767cead5"> </a></td>
+<td>Kontakt med sundhedsplejen i åben konsultation</td>
+<td><div><p>Kontakt med sundhedsplejen i åben konsultation</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a08d3cf6-58ef-4631-8893-3fa44bd67363<a name="FBOE-a08d3cf6-58ef-4631-8893-3fa44bd67363"> </a></td>
+<td>Kontakt med sundhedsplejen ifm. gruppeaktivitet</td>
+<td><div><p>Kontakt med sundhedsplejen ifm. gruppeaktivitet fx mødre-, fædre- eller forældregrupper, åbent hus og undervisning.</p>
+</div></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">7110c91c-2be6-4beb-be73-c58cfc147a83<a name="FBOE-7110c91c-2be6-4beb-be73-c58cfc147a83"> </a></td>
+<td>Observationsresultat</td>
+<td><div><p>Resultat af observation foretaget af sundhedsplejen</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;0d512b22-80e6-4bed-9b79-4b13dc22eafb<a name="FBOE-0d512b22-80e6-4bed-9b79-4b13dc22eafb"> </a></td>
+<td>Resultat, egenvurderet trivsel</td>
+<td><div><p>Resultat af børns egenvurderede trivsel i regi af skolesundhedsplejen</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;700d6a6d-43b7-4a4a-ac06-9c74253d0112<a name="FBOE-700d6a6d-43b7-4a4a-ac06-9c74253d0112"> </a></td>
+<td>Indikator resultat</td>
+<td><div><p>Resultat af vurdering af én af de sundhedsplejefaglige indikatorer</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;1b64f768-5133-4633-85a4-2b97fcaa1f7a<a name="FBOE-1b64f768-5133-4633-85a4-2b97fcaa1f7a"> </a></td>
+<td>Intet at bemærke</td>
+<td><div><p>Der er intet at bemærke</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a<a name="FBOE-96e3eda6-3eb7-4fbb-9850-fc6dfafadb4a"> </a></td>
+<td>Problem/bemærkning</td>
+<td><div><p>Der er konstateret et problem, og lavet en bemærkning</p>
+</div></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">7c8eceee-3591-497f-b78d-0d56eb046f35<a name="FBOE-7c8eceee-3591-497f-b78d-0d56eb046f35"> </a></td>
+<td>Børneobservationer</td>
+<td><div><p>Observationskoder, for områder der er relavnte. for at vurdere barnets sundhed og trivsel.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;01fddd46-ed7c-423d-b191-ffdd977dd61e<a name="FBOE-01fddd46-ed7c-423d-b191-ffdd977dd61e"> </a></td>
+<td>Syn</td>
+<td><div><p>Skolebørn: Resultat af screening af barnets evne til at se.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;28972d4b-fea3-42ec-b2a5-e2a26f79b14d<a name="FBOE-28972d4b-fea3-42ec-b2a5-e2a26f79b14d"> </a></td>
+<td>Passiv rygning</td>
+<td><div><p>Småbørn: Udsættelse for tobaksrøg, fx fra cigaretter eller pibe. Omfatter ikke damp fra e-cigaretter og lignende.</p>
+<p>Skolebørn: Udsættelse for tobaksrøg, fx fra cigaretter eller pibe. Omfatter ikke damp fra e-cigaretter og lignende.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;2c39af9f-8e45-4c88-962f-e7a9e2cd31b6<a name="FBOE-2c39af9f-8e45-4c88-962f-e7a9e2cd31b6"> </a></td>
+<td>Forælders psykiske tilstand</td>
+<td><div><p>Småbørn: Sundhedsplejerskens vurdering af den øjeblikkelige psykiske og emotionelle tilstand ifm. at få et barn. Fx nedtrykthed, modløshed, irritabilitet, ængstelse eller overbekymrethed.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;58997614-ba43-4534-90bd-10c7e76802f4<a name="FBOE-58997614-ba43-4534-90bd-10c7e76802f4"> </a></td>
+<td>Forælders sårbarhed</td>
+<td><div><p>Småbørn: Sundhedsplejerskens vurdering af forældrenes sociale eller helbredsmæssige udfordringer. Fx traumatiske oplevelser, fattigdom, misbrug, eller sygdom.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;653c2b0b-bb64-4906-888b-aea6fef3c3f8<a name="FBOE-653c2b0b-bb64-4906-888b-aea6fef3c3f8"> </a></td>
+<td>Kommunikation</td>
+<td><div><p>Småbørn: Barnets frembringelse og udveksling af lyd, og tale eller kropssprog med andre. Fx alderssvarende reaktion på ord og kropssprog samt pludren.</p>
+<p>Skolebørn: Barnets frembringelse og udveksling af lyd, og tale eller kropssprog med andre. Fx aldersvarende sproganvendelse og evne til at fastholde opmærksomhed.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;68605f88-49fb-44b9-b327-86947af6aa93<a name="FBOE-68605f88-49fb-44b9-b327-86947af6aa93"> </a></td>
+<td>Social kontakt</td>
+<td><div><p>Småbørn: Sundhedsplejerskens vurdering af barnets evne til at interagere med andre. Fx øjenkontakt, kontaktsmil, respons på stimulation og selektivitet ved at foretrække omsorgspersoner.</p>
+<p>Skolebørn: Sundhedsplejerskens vurdering af barnets evne til at interagere med andre. Fx evnen til at aflæse andres følelser, vise hensyn og respekt eller reagere på andres følelser.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;73f981f8-455a-4158-b435-7c6d83ab84da<a name="FBOE-73f981f8-455a-4158-b435-7c6d83ab84da"> </a></td>
+<td>Søvn</td>
+<td><div><p>Småbørn: Omfatter mængden og kvaliteten af søvn samt forhold omkring indsovning og gennemsovning, og hvorvidt der er tale om en naturlig søvn med optimal fysisk og psykisk hvile og afslapning.</p>
+<p>Skolebørn: Omfatter mængden og kvaliteten af søvn samt forhold omkring indsovning og gennemsovning, og hvorvidt der er tale om en naturlig søvn med optimal fysisk og psykisk hvile og afslapning.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;763c6f21-5467-4713-82fb-716c9d0a1fdf<a name="FBOE-763c6f21-5467-4713-82fb-716c9d0a1fdf"> </a></td>
+<td>Forældre-barn-relation</td>
+<td><div><p>Småbørn: Sundhedsplejerskens vurdering af om barnets behov opfyldes i relationen til en eller begge forældre. Fx barnets behov for mad, søvn, nærvær samt forudsigelighed i responsen på barnets signaler.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;76891f7b-cf49-4cb2-88d6-728a509eb75d<a name="FBOE-76891f7b-cf49-4cb2-88d6-728a509eb75d"> </a></td>
+<td>Brug af nikotin</td>
+<td><div><p>Skolebørn: Barnets forbrug af nikotinholdige produkter, fx cigaretter, snus og e-cigaretter, vandpibe eller puff-bars.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;7e7fab2f-278a-4b14-9bc9-efc36fffcba5<a name="FBOE-7e7fab2f-278a-4b14-9bc9-efc36fffcba5"> </a></td>
+<td>Netværk</td>
+<td><div><p>Forældrenes oplevelse af at have støtte fra venner, familie eller relationer omkring sig.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;a22c4b53-b622-4394-ba13-910a7b0d7b0d<a name="FBOE-a22c4b53-b622-4394-ba13-910a7b0d7b0d"> </a></td>
+<td>Hørelse</td>
+<td><div><p>Skolebørn: Resultat af screening af barnets opfattelse af lyde.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;b331fe02-a781-4abd-b6db-9331d6a69b15<a name="FBOE-b331fe02-a781-4abd-b6db-9331d6a69b15"> </a></td>
+<td>Fysisk aktivitet</td>
+<td><div><p>Skolebørn: Barnets fysiske aktivitetsniveau. Fx ved leg, fritidsaktiviteter, gåture og aktiv transport til og fra skole.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;e04f2ca1-888a-4671-a97a-371b525cd2a3<a name="FBOE-e04f2ca1-888a-4671-a97a-371b525cd2a3"> </a></td>
+<td>Motorik</td>
+<td><div><p>Småbørn: Barnets evne til at koordinere bevægelser mod et givent mål eller mestre en given opgave.</p>
+<p>Skolebørn: Barnets evne til at koordinere bevægelser mod et givent mål eller mestre en given opgave.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;e61e4dab-54bb-4bf4-9b76-8d991cf4de08<a name="FBOE-e61e4dab-54bb-4bf4-9b76-8d991cf4de08"> </a></td>
+<td>Ernæring</td>
+<td><div><p>Småbørn: Barnets indtagelse af føde. Fx om barnet ammes, får flaske eller overgangskost.</p>
+<p>Skolebørn: Barnets indtagelse af føde fx indtagelse af fødemidler og kostens sammensætning.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;08a7b81a-3633-41ce-9e27-941ce3b4276b<a name="FBOE-08a7b81a-3633-41ce-9e27-941ce3b4276b"> </a></td>
+<td>Indikator ifm. indskolingsundersøgelse</td>
+<td><div><p>Indikator anvendt af skolesundhedsplejen ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;0e24a41d-6bb6-4c84-89e1-5635cd4ea481<a name="FBOE-0e24a41d-6bb6-4c84-89e1-5635cd4ea481"> </a></td>
+<td>Evne til at kaste bold med højre hånd</td>
+<td><div><p>Observation af evne til at kaste bold med højre hånd ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;1c4b0adf-cd19-42af-ba43-80c28fcbc7e3<a name="FBOE-1c4b0adf-cd19-42af-ba43-80c28fcbc7e3"> </a></td>
+<td>Evne til at stå på venstre ben</td>
+<td><div><p>Observation af evne til at stå på venstre ben ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;2a8ebbc5-a4f0-485c-850f-1e95db492a6f<a name="FBOE-2a8ebbc5-a4f0-485c-850f-1e95db492a6f"> </a></td>
+<td>Evne til at gå</td>
+<td><div><p>Observation af evne til at gå ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;51a91eca-5a66-4e1a-bbf7-be4ccf12810f<a name="FBOE-51a91eca-5a66-4e1a-bbf7-be4ccf12810f"> </a></td>
+<td>Relation, kontakt, omsorg</td>
+<td><div><p>Observation vedr. forældre-barn relation, kontakt, omsorg ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;550cad89-6036-453f-9536-d1adb4eae879<a name="FBOE-550cad89-6036-453f-9536-d1adb4eae879"> </a></td>
+<td>Evne til at løbe gadedrengeløb</td>
+<td><div><p>Observation af evne til at løbe gadedrengeløb ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;5697e7df-3009-44d2-a495-ca8e4da167fb<a name="FBOE-5697e7df-3009-44d2-a495-ca8e4da167fb"> </a></td>
+<td>Evne til at holde balance</td>
+<td><div><p>Observation af evne til at holde balance ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;58464451-5fbb-4607-871d-1e01212c38d7<a name="FBOE-58464451-5fbb-4607-871d-1e01212c38d7"> </a></td>
+<td>Sundhedsplejerskens observationer og kontakt</td>
+<td><div><p>Observation vedr. sundhedsplejerskens observationer og kontakt med barnet ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;5f4a21bb-6314-477a-a0fe-7924ff83954a<a name="FBOE-5f4a21bb-6314-477a-a0fe-7924ff83954a"> </a></td>
+<td>Sprog</td>
+<td><div><p>Observation af sprog ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;7dbe4d6a-a486-4d8a-bd85-d8803ecb9688<a name="FBOE-7dbe4d6a-a486-4d8a-bd85-d8803ecb9688"> </a></td>
+<td>Synstest</td>
+<td><div><p>Observation vedr. synstest ifm indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;877a3705-ddd4-4e54-a6eb-f94a95276f99<a name="FBOE-877a3705-ddd4-4e54-a6eb-f94a95276f99"> </a></td>
+<td>Høretest</td>
+<td><div><p>Observation vedr. høretest ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;998d1b1e-b165-43c9-861f-0b620f753df3<a name="FBOE-998d1b1e-b165-43c9-861f-0b620f753df3"> </a></td>
+<td>Evne til at kaste bold med venstre hånd</td>
+<td><div><p>Observation af evne til at kaste bold med venstre hånd ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;a3e32326-283d-47db-af92-3d8554fb7977<a name="FBOE-a3e32326-283d-47db-af92-3d8554fb7977"> </a></td>
+<td>Evne til at gribe bold</td>
+<td><div><p>Observation af evne til at gribe bold ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;c05a5706-c0df-4a66-a6a1-a01e948d9326<a name="FBOE-c05a5706-c0df-4a66-a6a1-a01e948d9326"> </a></td>
+<td>Evne til at stå på højre ben</td>
+<td><div><p>Observation af evne til at stå på højre ben ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;c61e0e57-b1fd-4e4a-9eb9-5086b14b7504<a name="FBOE-c61e0e57-b1fd-4e4a-9eb9-5086b14b7504"> </a></td>
+<td>Evne til at hoppe</td>
+<td><div><p>Observation af evne til at hoppe ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;d240cad7-04ca-4f36-9dd7-86fb1987856a<a name="FBOE-d240cad7-04ca-4f36-9dd7-86fb1987856a"> </a></td>
+<td>Mad og måltider</td>
+<td><div><p>Observation vedr. mad og måltider ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;dfa9a5e4-c542-4491-8a4b-1dee0bab8b17<a name="FBOE-dfa9a5e4-c542-4491-8a4b-1dee0bab8b17"> </a></td>
+<td>Evne til at holde om en blyant</td>
+<td><div><p>Observation af evne til at holde om en blyant ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;f8d7fba7-acc4-4481-bb8d-4b3112f411a9<a name="FBOE-f8d7fba7-acc4-4481-bb8d-4b3112f411a9"> </a></td>
+<td>Fysisk aktivitet</td>
+<td><div><p>Observation vedr. fysisk aktivitet ifm. indskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;2ba8931c-0c02-4928-a876-a30ee92adc20<a name="FBOE-2ba8931c-0c02-4928-a876-a30ee92adc20"> </a></td>
+<td>Indikator ifm. udskolingsundersøgelse</td>
+<td><div><p>Indikator anvendt af skolesundhedsplejen ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;089c064d-3e14-47d2-9e34-b753fcf18c7a<a name="FBOE-089c064d-3e14-47d2-9e34-b753fcf18c7a"> </a></td>
+<td>Spisning, kost og motion</td>
+<td><div><p>Observation vedr. spisning, kost og motion ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;20a41422-1ea1-483e-8070-7ffd79c493c0<a name="FBOE-20a41422-1ea1-483e-8070-7ffd79c493c0"> </a></td>
+<td>Søvn/træthed</td>
+<td><div><p>Observation vedr. søvn/træthed ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;5a517611-64d6-4ebd-af33-f2b30d0ad874<a name="FBOE-5a517611-64d6-4ebd-af33-f2b30d0ad874"> </a></td>
+<td>Mental sundhed</td>
+<td><div><p>Observation vedr. mental sundhed ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;6be08133-feca-4d2f-a45d-cb36d141011e<a name="FBOE-6be08133-feca-4d2f-a45d-cb36d141011e"> </a></td>
+<td>Høretest</td>
+<td><div><p>Observation vedr. høretest ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;9069b5aa-d62c-48f9-a0d9-d17ecd12920a<a name="FBOE-9069b5aa-d62c-48f9-a0d9-d17ecd12920a"> </a></td>
+<td>Syntest</td>
+<td><div><p>Observation vedr. syntest ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;933d7ded-0c10-48e0-9645-b84b7c8946c7<a name="FBOE-933d7ded-0c10-48e0-9645-b84b7c8946c7"> </a></td>
+<td>Trivsel</td>
+<td><div><p>Observation vedr. trivsel ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;ae0bc3c6-7084-4e62-8e83-427f14a09646<a name="FBOE-ae0bc3c6-7084-4e62-8e83-427f14a09646"> </a></td>
+<td>Seksuel adfærd</td>
+<td><div><p>Observation vedr. seksuel adfærd ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;aeded840-d8da-408e-bb6d-d2d8560a6b79<a name="FBOE-aeded840-d8da-408e-bb6d-d2d8560a6b79"> </a></td>
+<td>Alkohol</td>
+<td><div><p>Observation vedr. alkohol ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;d59a5f7f-805c-44a6-9ab7-a4e7a1d9bd1e<a name="FBOE-d59a5f7f-805c-44a6-9ab7-a4e7a1d9bd1e"> </a></td>
+<td>Andre rusmidler</td>
+<td><div><p>Observation vedr. andre rusmidler ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;da541ade-cbc9-4377-bff7-5ec153c93a89<a name="FBOE-da541ade-cbc9-4377-bff7-5ec153c93a89"> </a></td>
+<td>Fysisk trivsel</td>
+<td><div><p>Observation vedr. fysisk trivsel ifm. udskolingsundersøgelse</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;bf5d7844-6175-41e1-a117-e5d60e755477<a name="FBOE-bf5d7844-6175-41e1-a117-e5d60e755477"> </a></td>
+<td>Indikator ifm. forebyggelsesindsats for småbørn</td>
+<td><div><p>Indikator anvendet ifm. sundhedsplejens forebyggelsesindsats for småbørn</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;0701a892-2e6b-4b76-a041-97ceda78f973<a name="FBOE-0701a892-2e6b-4b76-a041-97ceda78f973"> </a></td>
+<td>Motorik</td>
+<td><div><p>Observation af motorik ifm. forebyggelsesindsats for småbørn</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;bee30064-8436-4762-83ed-e47d65f23fc6<a name="FBOE-bee30064-8436-4762-83ed-e47d65f23fc6"> </a></td>
+<td>Samvær, kontakt, forældre-barn relation</td>
+<td><div><p>Observation af samvær, kontakt, forældre-barn relation ifm. forebyggelsesindsats for småbørn</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;bfc7062e-d529-4516-a698-fc87b339033a<a name="FBOE-bfc7062e-d529-4516-a698-fc87b339033a"> </a></td>
+<td>Søvn, døgnrytme</td>
+<td><div><p>Observation af søvn, døgnrytme ifm. forebyggelsesindsats for småbørn</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;e88ddd81-4aa5-4c84-89fb-52de961a7c17<a name="FBOE-e88ddd81-4aa5-4c84-89fb-52de961a7c17"> </a></td>
+<td>Signaler, reaktioner, kommunikation</td>
+<td><div><p>Observation af signaler, reaktioner, kommunikation ifm. forebyggelsesindsats for småbørn</p>
+</div></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">9062645d-f991-4448-b13c-720131b334eb<a name="FBOE-9062645d-f991-4448-b13c-720131b334eb"> </a></td>
+<td>Fund for spædbørns ernæring</td>
+<td><div><p>Fund for spædbørns ernæring</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;0a993974-e314-4f76-8c80-c3770fdefe37<a name="FBOE-0a993974-e314-4f76-8c80-c3770fdefe37"> </a></td>
+<td>Ammes primært</td>
+<td><div><p>Småbørn: Barnets ernæres primært med modermælk ved bryst eller i sutteflaske og får supplering med modermælkserstatning/overgangskost. Hermed menes, at det skønnes, at over halvdelen af barnets energiindtag kommer fra modermælken.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;3edc905c-2830-442a-98cc-463cc3701dd1<a name="FBOE-3edc905c-2830-442a-98cc-463cc3701dd1"> </a></td>
+<td>Ammes som supplement til anden kost</td>
+<td><div><p>Småbørn: Barnet ernæres primært med modermælkserstatning/overgangskost og ammes supplerende. Hermed menes, at det skønnes, at modermælk udgør under halvdelen af barnets energiindtag.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;5101d1ac-b96f-4dd9-a42e-e3f765f747e1<a name="FBOE-5101d1ac-b96f-4dd9-a42e-e3f765f747e1"> </a></td>
+<td>Udelukkende familiens mad</td>
+<td><div><p>Småbørn: Barnet spiser stort set den mad resten af familien spiser. Får ikke modermælk eller modermælkserstatning.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;77a008dd-21cc-452f-a1ee-ac8d025b7817<a name="FBOE-77a008dd-21cc-452f-a1ee-ac8d025b7817"> </a></td>
+<td>Fuldamning, inklusiv modermælk på flaske</td>
+<td><div><p>Småbørn: Barnet ernæres fuldt med modermælk enten ved amning eller med udmalket modermælk i sutteflaske. Der må højst gives et måltid modermælkserstatning på flaske per uge.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;dfab6d07-b1b6-4210-ac8a-b8a0d095c8ab<a name="FBOE-dfab6d07-b1b6-4210-ac8a-b8a0d095c8ab"> </a></td>
+<td>Modermælkserstatning og/eller overgangskost</td>
+<td><div><p>Småbørn: Barnet ernæres med modermælkserstatning og/eller overgangskost som fx grød og mos og/eller familiens mad. Barnet får ingen modermælk.</p>
+</div></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">9fffaadc-dd7a-4047-95ba-408a753d41ad<a name="FBOE-9fffaadc-dd7a-4047-95ba-408a753d41ad"> </a></td>
+<td>Normale børnefund</td>
+<td><div><p>Resultat af observation, hvor det der observeres ligger indenfor normalen. Der er ikke udfordringer med barnets sundhed og trivsel.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;008b1890-4be5-463a-b618-0ab3d89515d0<a name="FBOE-008b1890-4be5-463a-b618-0ab3d89515d0"> </a></td>
+<td>Alderssvarende social kontakt</td>
+<td><div><p>Småbørn: Barnet viser interesse for kontakt og deltager aktivt i samspil. Barnet giver udtryk for sine behov, fx sult, trøst, glæde. Reagerer relevant på stimuli, som fx øjenkontakt, mimik og brug af stemme. Barnet virker rolig og veltilpas. Barnet kan trøstes og falder til ro, når behov bliver opfyldt.</p>
+<p>Skolebørn: Barnet indgår i en god stabil kontakt og deltager aktivt i samspil. Barnet er glad og virker veltilpas.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;042d522d-0abe-46eb-a958-6e235b5d5408<a name="FBOE-042d522d-0abe-46eb-a958-6e235b5d5408"> </a></td>
+<td>Kommunikerer alderssvarende</td>
+<td><div><p>Småbørn: Barnet kommunikerer som forventet i forhold til alder. Det 0-3 måneder gamle barn smiler og reagerer på ord og kropssprog. Det 4-6 måneder gamle barn begynder at pludre varieret og leger med lyde. Det 8-11 måneder gamle barn pludrer i stavelser og begynder at anvende enkelte ord og reagerer på fx eget navn og udtrykker sig ved at pege og gestikulere.</p>
+<p>Skolebørn: Barnet kommunikerer som forventet i forhold til alder. Fx holder barnet opmærksomhed på udvekslingen, og kan give og forstå beskeder.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;05086dad-8718-4a6c-b096-54c7101d0b2c<a name="FBOE-05086dad-8718-4a6c-b096-54c7101d0b2c"> </a></td>
+<td>Fysisk aktiv</td>
+<td><div><p>Skolebørn: Barnet bevæger sig dagligt én time eller mere. Fx aktiviteter såsom cykling, løb, hop, spring og kast. For de ældre børn kan aktiviteter, som styrker de store muskelgrupper også være en del af den daglige fysiske aktivitet.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;0e5db980-8c6e-4034-abab-054e0eb40935<a name="FBOE-0e5db980-8c6e-4034-abab-054e0eb40935"> </a></td>
+<td>Forventelig psykisk reaktion</td>
+<td><div><p>Småbørn: Forælder har ingen eller mild psykisk reaktion indenfor normalen i forbindelse med forældreskab.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;57dd67d7-175a-4541-87ff-db1381c4e1d9<a name="FBOE-57dd67d7-175a-4541-87ff-db1381c4e1d9"> </a></td>
+<td>Ingen sårbarhed</td>
+<td><div><p>Småbørn: Forælder har ingen sårbarhed. Med dette menes at forælderens sociale forhold og helbred, ikke udgør en risiko for varetagelse af forældreskabet.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;5dc857f6-1220-4762-a718-31a6101b5d61<a name="FBOE-5dc857f6-1220-4762-a718-31a6101b5d61"> </a></td>
+<td>For det meste glad i skolen</td>
+<td><div><p>Skolebørn: Barnet vurderer selv for det meste at være glad i skolen. Barnet markerer selv smiley der er grøn og smiler.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;6bea1014-8e30-40e7-9274-2b02376c0b1b<a name="FBOE-6bea1014-8e30-40e7-9274-2b02376c0b1b"> </a></td>
+<td>For det meste glad</td>
+<td><div><p>Skolebørn: Barnet vurderer selv for det meste at være glad. Barnet markerer selv smiley der er grøn og smiler.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;78dcf013-8ae9-4541-b175-100cde77a9f0<a name="FBOE-78dcf013-8ae9-4541-b175-100cde77a9f0"> </a></td>
+<td>Almindeligt kostindtag</td>
+<td><div><p>Skolebørn: Barnet spiser mad i tilstrækkelig mængde, og med passende sammensætning.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;7a107df6-8fb8-4744-8413-be10b4c5c1d9<a name="FBOE-7a107df6-8fb8-4744-8413-be10b4c5c1d9"> </a></td>
+<td>Velfungerende forældre-barn-relation</td>
+<td><div><p>Småbørn: Barnets fysiske og psykiske omsorgsbehov opfyldes. Fx får barnet mad, søvn og nærvær. Barnet viser tegn på tryg tilknytning til mindst én forælder.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;9628db65-7460-4ecc-bbb1-48c0ac4b3f02<a name="FBOE-9628db65-7460-4ecc-bbb1-48c0ac4b3f02"> </a></td>
+<td>Normal hørelse</td>
+<td><div><p>Skolebørn: Screening viser intet problem med hørelse.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;9b4b5194-cf7f-4274-a691-734c24adb0b7<a name="FBOE-9b4b5194-cf7f-4274-a691-734c24adb0b7"> </a></td>
+<td>For det meste meget glad i skolen</td>
+<td><div><p>Skolebørn: Barnet vurderer selv for det meste at være meget glad i skolen. Barnet markerer selv smiley der er grøn og smiler meget.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;a7a53cfd-c7bb-4573-a4ae-2eb18e3dda1f<a name="FBOE-a7a53cfd-c7bb-4573-a4ae-2eb18e3dda1f"> </a></td>
+<td>Ikke prøvet nikotin</td>
+<td><div><p>Skolebørn: Barnet har aldrig prøvet nikotinholdige produkter fx cigaretter, snus, e-cigaretter, vandpibe, nikotinposer, Puff Bars.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;b07eec60-941d-484d-8c2a-aeaa2ba798bf<a name="FBOE-b07eec60-941d-484d-8c2a-aeaa2ba798bf"> </a></td>
+<td>Søvn med normale variationer</td>
+<td><div><p>Småbørn: Barnets søvn og døgnrytme dækker barnets behov for søvn og hvile. Det er tilstrækkeligt for at barnet har energi i de vågne timer til at indgå i kontakt, spise tilstrækkeligt og være fysisk aktivt i passende grad.</p>
+<p>Skolebørn: Barnets søvn og døgnrytme dækker barnets behov for søvn og hvile. Det er tilstrækkeligt for at barnet har energi i de vågne timer til at indgå i kontakt og relationer, spise tilstrækkeligt og være fysisk aktivt i passende grad samt at aktivt indgå i læring og aktiviteter i skolen.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;b54723cf-3114-4119-b1cb-28107a283a99<a name="FBOE-b54723cf-3114-4119-b1cb-28107a283a99"> </a></td>
+<td>Ikke udsat for tobaksrøg</td>
+<td><div><p>Småbørn: Barnet er ikke udsat for tobaksrøg i hjemmet.</p>
+<p>Skolebørn: Barnet er ikke udsat for tobaksrøg i hjemmet.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;bdcb835d-6ef6-4c4f-9fdf-94c3ebd17182<a name="FBOE-bdcb835d-6ef6-4c4f-9fdf-94c3ebd17182"> </a></td>
+<td>Normalt syn</td>
+<td><div><p>Skolebørn: Screening viser intet problem med syn.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;be128c20-851d-4217-b8df-744d8af39cac<a name="FBOE-be128c20-851d-4217-b8df-744d8af39cac"> </a></td>
+<td>For det meste meget glad</td>
+<td><div><p>Skolebørn: Barnet vurderer selv for det meste at være meget glad. Barnet markerer selv smiley der er grøn og smiler meget.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;d5b876e1-a86c-4768-b46d-cd795eaa89e4<a name="FBOE-d5b876e1-a86c-4768-b46d-cd795eaa89e4"> </a></td>
+<td>Alderssvarende motorik</td>
+<td><div><p>Småbørn: Barnet har de forventelige motoriske færdigheder i forhold til alder.</p>
+<p>Skolebørn: Barnet er passende udviklet motorisk i forhold til sin alder, og i forhold til de motoriske aktiviteter som barnet har øvelse i. Der kan altså godt vurderes alderssvarende motorik selv om barnet fx ikke kan løbe gadedrengeløb, hvis alt andet er fint. Særligt hvis barnet ikke har prøvet det før.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;fbd9a8a5-0ed6-4e1a-9841-066ade34b071<a name="FBOE-fbd9a8a5-0ed6-4e1a-9841-066ade34b071"> </a></td>
+<td>Godt netværk</td>
+<td><div><p>Småbørn: Familien har et godt netværk og oplever at få hjælp og støtte med til omsorgen for barnet. Fx aflastning ved sygdom.</p>
+</div></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">ec8111c5-70c9-4c1e-9528-82630247160f<a name="FBOE-ec8111c5-70c9-4c1e-9528-82630247160f"> </a></td>
+<td>Behovsindsatser</td>
+<td><div><p>Behovsindsatser</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;b062a901-1364-4ed6-8d40-f4f14cfc737a<a name="FBOE-b062a901-1364-4ed6-8d40-f4f14cfc737a"> </a></td>
+<td>Samarbejdsindsatser</td>
+<td><div><p>Samarbejdsindsatser</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;02c1e91e-475f-4b56-9731-755087329982<a name="FBOE-02c1e91e-475f-4b56-9731-755087329982"> </a></td>
+<td>Koordinering ved overgange</td>
+<td><div><p>Indsatsen omfatter en overlevering af oplysninger og vejledning ifm. barnets overgange fx når det starter i dagtilbud, og overgang fra børnehave til skole. Indsatsen kan omfatte almindelige aktiviteter som fx overleveringsskema og korte telefonsamtaler, men kan også omfatte overleverings- og netværksmøder. Indhentelse af samtykke er omfattet.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;04cc94e7-1d89-4070-8bda-55f65637ab68<a name="FBOE-04cc94e7-1d89-4070-8bda-55f65637ab68"> </a></td>
+<td>Sparring med anden faggruppe</td>
+<td><div><p>Indsatsen omfatter, at sundhedsplejen forudsat at der er indhentet samtykke, sparrer med en anden faggruppe, om en konkret families/barns behov og muligheder. Dette kan både være nødvendigt for at hjælpe familie/barn videre, med den rette henvisning, eller for selv at kunne målrette hjælpen til familien/barnet. Kontakten behøver ikke være initieret af sundhedsplejen. Sparring kan være med andre sundhedsprofessionelle, men indsatsen omfatter også sparring med andre fx barnets lærere i skolen.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;11bae71b-89f5-4903-ab59-c516e638b44a<a name="FBOE-11bae71b-89f5-4903-ab59-c516e638b44a"> </a></td>
+<td>Underretning til kommunale socialområde</td>
+<td><div><p>Indsatsen omfatter at lave en underretning til det kommunale socialområde på en familie. Indsatsen omfatter indsamling og overlevering af oplysninger og sundhedsplejens opfølgning.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;68c3cf91-6f42-484a-922f-e75569f2991a<a name="FBOE-68c3cf91-6f42-484a-922f-e75569f2991a"> </a></td>
+<td>Henvisning til regionalt tilbud</td>
+<td><div><p>Indsatsen omfatter at opdage, at familien kunne have gavn af et regionalt tilbud i forbindelse med en eller flere problemstillinger, og tage kontakt samt indhente samtykke og overlevere oplysninger. Indsatsen er kun mulig i de kommuner, der har aftale med regionen om, at sundhedsplejen må henvise direkte til bestemte funktioner fx børneafdeling eller overvægtsklinikker. Indsatsen omfatter sundhedsplejens opfølgning.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;7416c8d9-970c-4131-9314-b0b1d92e8253<a name="FBOE-7416c8d9-970c-4131-9314-b0b1d92e8253"> </a></td>
+<td>Anbefaling af kontakt til andet kommunalt område</td>
+<td><div><p>Indsatsen omfatter at opdage, at familien kunne have gavn af kommunale tilbud, og bede dem om at tage kontakt selv. Kommunale områder kunne være specialgruppe, vægttabstilbud, skole, kommunal logopæd, PPR, ergo-/fysioterapi eller diætistteam.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;90089a0d-10a6-4cd7-8733-3a6d8b784932<a name="FBOE-90089a0d-10a6-4cd7-8733-3a6d8b784932"> </a></td>
+<td>Overlevering til andet kommunalt område</td>
+<td><div><p>Indsatsen omfatter at opdage, at familien kunne have gavn af kommunale tilbud, indhente samtykke, og overlevere oplysninger eller koordinere. Kommunale områder kunne være specialgruppe, vægttabstilbud, skole, kommunal logopæd, PPR, ergo-/fysioterapi eller diætistteam. Indsatsen omfatter sundhedsplejens opfølgning. Indsatsen gives når sundhedsplejen afslutter sin egen opsporing, og eventuelle behovsindsats, for at andre skal tage over. Hvis der er en mere løs gensidig orientering, anvendes indsatsen sparring med anden faggruppe. Hvis der er tale om en fælles indsats med socialområdet eller PPR registreres en helhedsindsats.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;b23adb79-91a1-4644-9b2c-6ed3d41a1388<a name="FBOE-b23adb79-91a1-4644-9b2c-6ed3d41a1388"> </a></td>
+<td>Anbefalet kontakt til regionalt tilbud</td>
+<td><div><p>Indsatsen omfatter at opdage, at familien kunne have gavn af et regionalt tilbud i forbindelse med en eller flere problemstillinger, og anbefale dem at tage kontakt.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;b708c983-0bb8-4303-a442-9af4c8b950bb<a name="FBOE-b708c983-0bb8-4303-a442-9af4c8b950bb"> </a></td>
+<td>Anbefaling af kontakt til praktiserende læge</td>
+<td><div><p>Indsatsen omfatter at opdage, at familien kunne have gavn af egen læge eller privatpraktiserende speciallæge, og anbefale dem at tage kontakt.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;d2a33ec9-5f61-4cf5-b4d1-c99df83e4c9b<a name="FBOE-d2a33ec9-5f61-4cf5-b4d1-c99df83e4c9b"> </a></td>
+<td>Henvisning til praktiserende læge</td>
+<td><div><p>Indsatsen omfatter at opdage, at familien kunne have gavn af egen læge eller privatpraktiserende speciallæge ifm. en eller flere problemstillinger, indhente samtykke, og overlevere oplysninger. Indsatsen omfatter sundhedsplejens opfølgning.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;67adc79a-a09f-4166-9d4a-f7fce64dfe85<a name="FBOE-67adc79a-a09f-4166-9d4a-f7fce64dfe85"> </a></td>
+<td>Behovsindsatser skolebørn</td>
+<td><div><p>Behovsindsatser skolebørn</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;3cd144c0-7b1e-4ca3-9f21-28f9c8918a74<a name="FBOE-3cd144c0-7b1e-4ca3-9f21-28f9c8918a74"> </a></td>
+<td>Familie- og trivselsindsatser</td>
+<td><div><p>Familie- og trivselsindsatser</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;260a3000-9af0-4cc5-ae3a-cc90683772a5<a name="FBOE-260a3000-9af0-4cc5-ae3a-cc90683772a5"> </a></td>
+<td>Opsporing og vejledning ved trivselsproblem</td>
+<td><div><p>Indsatsen gives til børn og hvis relevant deres familier, hvis barnet mistrives. Sundhedsplejen opsporer, rådgiver og motiverer fx til et styrket forældre-barn samspil, til at barnet kortlægger handlemuligheder og ser fornyet på egne ressourcer, til at styrke mental sundhed, og til at gøre dagligdagen overskuelig for barnet. Indsatsen omfatter en løbende vurdering af behovet for at inddrage andre fagligheder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550971e9-9581-4a3b-aa2f-da1520ad0e1c<a name="FBOE-550971e9-9581-4a3b-aa2f-da1520ad0e1c"> </a></td>
+<td>Helhedsindsats ved trivselsproblem</td>
+<td><div><p>Indsatsen gives til familier, der er bevilliget sociale indsatser/ydelser eller støtte gennem PPR fra kommunen, hvor sundhedsplejersken, som en blandt flere fagpersoner, er med til at styrke barnets trivsel. Indsatsen kan både omfatte direkte kontakt med barn og forældre, men også netværksmøder og andet tværfagligt samarbejde.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c3100c9e-636e-4249-bc9a-b70644c04972<a name="FBOE-c3100c9e-636e-4249-bc9a-b70644c04972"> </a></td>
+<td>Tryghedsindsats</td>
+<td><div><p>Indsatsen gives til forælder, hvis sundhedsplejen ser behov for at opspore problematikker, der ikke relaterer sig til en kendt problematik ved barnet. Det kan fx være, hvis man i samtale med barnet får kendskab til et tab i familien og har brug for at vurdere, om der er en påvirkning hos barnet. Tryghedsindsats kan også gives, hvis en forælder henvender sig med en bekymring, som udløser en behovskontakt fx bekymringer om barnets vækst eller vægt. Tryghedsindsats udløser typisk kun én efterfølgende kontakt. Kontakten bruges blandt andet på at vurdere, om problematikken ligger indenfor sundhedsplejens formål. Gør den det, registreres efterfølgende aktivitet mere specifikt vha. en af de øvrige behovsindsatser.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d877b771-0729-4e35-8ce0-1cc5972fdffb<a name="FBOE-d877b771-0729-4e35-8ce0-1cc5972fdffb"> </a></td>
+<td>Forældreuddannelse i kontakt og samspil</td>
+<td><div><p>Indsatsen gives til forældre, der vurderes at kunne have gavn af at styrke relationen til deres barn. Indsatsen omfatter et planlagt uddannelsesforløb i grupper eller individuelt, der styrker forældrenes viden og giver nye handlemuligheder i kontakten med deres barn.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;52d1d013-4fdd-49b1-bba0-b7c00458852c<a name="FBOE-52d1d013-4fdd-49b1-bba0-b7c00458852c"> </a></td>
+<td>Sundhedsindsatser</td>
+<td><div><p>Sundhedsindsatser</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3acaa88c-4227-415c-82e5-66d8699d23f8<a name="FBOE-3acaa88c-4227-415c-82e5-66d8699d23f8"> </a></td>
+<td>Opsporing og vejledning ved vigende vægt/vækst</td>
+<td><div><p>Indsatsen gives til børn der falder uhensigtsmæssig på deres vægt eller vækstkurver. Indsatsen omfatter vurdering af, om der også bør henvises til læge.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4f247b6f-e937-42b8-a82b-be1a12405ad0<a name="FBOE-4f247b6f-e937-42b8-a82b-be1a12405ad0"> </a></td>
+<td>Opsporing af potentiel syns- eller hørenedsættelse</td>
+<td><div><p>Indsatsen gives til børn, hvor resultatet af tidligere syns- og hørescreeninger har været af en sådan karakter, at barnet bør måles igen før næste rutinemæssige undersøgelse. Det kan fx være at barnet har fået et dårligt resultat i høretest, men har været forkølet, hvorfor man vælger at måle igen, før der evt. viderehenvises.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;79691b19-c141-4979-a95c-5dc719ad1fd7<a name="FBOE-79691b19-c141-4979-a95c-5dc719ad1fd7"> </a></td>
+<td>Øvrig vejledning om sundhed og sundhedsadfærd</td>
+<td><div><p>Indsatsen gives til børn, og hvis relevant deres familier, hvor barnet har en skadelig sundhedsadfærd eller problemer med deres sundhed, som ikke er omfattet af andre indsatser. Skadelig sundhedsadfærd er fx brug af nikotin/alkohol/stoffer, søvnadfærd, seksuel adfærd, skærmvaner, for lidt/for meget motion, og begyndende tegn på uhensigtsmæssige spisemønstre/spiseforstyrrelser, som der vejledes om i sundhedspleje-regi. Indsatsen omfatter at vejlede og motivere til adfærdsændringer relateret til sundhedsadfærd. Indsatsen omfatter vurdering af, om andre faggrupper bør inddrages.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b45c3d0e-7d19-4c75-bdf1-fe838b439b86<a name="FBOE-b45c3d0e-7d19-4c75-bdf1-fe838b439b86"> </a></td>
+<td>Opsporing og vejledning ved overvægt</td>
+<td><div><p>Indsatsen gives til børn og hvis relevant deres familier, hvor der er behov for at opspore og vejlede vedr. overvægt. Indsatsen omfatter at følge med i barnets vægt og/eller vejlede vedr. overvægt og ernæring. Hvis indsatsen foretages i andet regi end sundhedsplejen, registreres der i stedet en henvisning.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b7efe8ff-a502-4f06-9a97-a30b28b1d878<a name="FBOE-b7efe8ff-a502-4f06-9a97-a30b28b1d878"> </a></td>
+<td>Opsporing og vejledning ved uventet højdeøgning/tidlig pubertet</td>
+<td><div><p>Indsatsen gives til børn der stiger uhensigtsmæssig på deres vækstkurver, eller som udviser tegn på tidlig pubertet. Indsatsen omfatter vurdering af, om der også bør henvises til læge.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bc2fc09c-594b-40f5-bfd4-b4da0307fb64<a name="FBOE-bc2fc09c-594b-40f5-bfd4-b4da0307fb64"> </a></td>
+<td>Vejledning ved udskillelsesproblematik</td>
+<td><div><p>Indsatsen gives til børn, med afførings- eller vandladningsproblemer fx inkontinensproblematikker. Indsatsen omfatter vurdering af, om der også bør henvises til læge.</p>
+</div></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;7620766c-6d3d-487b-9896-bfcf7f883f0f<a name="FBOE-7620766c-6d3d-487b-9896-bfcf7f883f0f"> </a></td>
+<td>Behovsindsatser småbørn</td>
+<td><div><p>Behovsindsatser småbørn</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;5a45df21-d80c-4b41-9e5a-4896a519c6c6<a name="FBOE-5a45df21-d80c-4b41-9e5a-4896a519c6c6"> </a></td>
+<td>Indsats til forælder</td>
+<td><div><p>Indsats til forælder</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09a24a80-1669-4984-850c-de1f66ad86f8<a name="FBOE-09a24a80-1669-4984-850c-de1f66ad86f8"> </a></td>
+<td>Forældregruppe, hvor forælder har et særligt behov</td>
+<td><div><p>Indsatsen gives til forældre der har et særlig behov fx adoptivforældre, forældre af anden etnisk herkomst, og unge mødre. Indsatsen omfatter at mødes i grupper med andre forældre, med samme udfordringer, så man kan lære af og støtte hinanden.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8af7f611-2bae-4ba5-923a-d748501d1ad3<a name="FBOE-8af7f611-2bae-4ba5-923a-d748501d1ad3"> </a></td>
+<td>Støtte ved psykisk reaktion eller sårbarhed</td>
+<td><div><p>Indsatsen gives til forælder med en psykisk reaktion på det at blive forælder eller en anden sårbarhed fx tidligere dårlig fødselsoplevelse, sørgende, omsorgssvigtede som børn eller kendt psykisk sygdom. Indsatsen omfatter at støtte forælderen i deres forældrerolle. Indsatsen omfatter ikke at vurdere og støtte op om barnets behov. Disse indsatser gives separat.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cf5d4171-eb86-4bca-afe6-5ded5b1107ee<a name="FBOE-cf5d4171-eb86-4bca-afe6-5ded5b1107ee"> </a></td>
+<td>Støtte ved psykisk reaktion eller sårbarhed som del af helhedsindsats</td>
+<td><div><p>Indsatsen gives til forælder, der er bevilliget sociale indsatser fra kommunen og/eller tilknyttet i psykiatrien, men hvor sundhedsplejen som en blandt flere fagpersoner er med til at støtte op om en forælder med psykisk reaktion/sårbarhed. Indsatsen omfatter primært at støtte forælderen i deres forældrerolle, men kan også omfatte netværksmøder og andet tværprofessionelt samarbejde. Indsatsen erstatter ofte en eksisterende støtte-indsats. Denne indsats må registreres i stedet, når der er sociale indsatser visiteret til familien eller et psykiatrisk forløb i gang, som sundhedsplejen er orienteret om af familie eller fagpersoner, også selvom der ikke er etableret et egentligt samarbejde mellem fagpersonerne endnu. Indsatsen omfatter ikke at vurdere og støtte op om barnets behov. Er der grund til at give familieindsatser, gives disse separat.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d7985f9a-b714-4bbd-a116-75f7a55504ba<a name="FBOE-d7985f9a-b714-4bbd-a116-75f7a55504ba"> </a></td>
+<td>Tryghedsindsats</td>
+<td><div><p>Indsatsen gives til forælder, hvis sundhedsplejen ser behov for at opspore problematikker, der ikke umiddelbart har med barnet at gøre. Det kan fx være at besøge en familie med højt konfliktniveau, eller nyligt tab for at vurdere påvirkningen på barnet. Tryghedsindsats kan også gives hvis en forælder henvender sig med en bekymring som udløser et behovsbesøg fx usikkerhed om hvorvidt barnet tager på. Tryghedsindsats udløser typisk kun én efterfølgende kontakt. Kontakten bruges blandt andet på at vurdere om problematikken ligger indenfor sundhedsplejens formål. Gør den det, registreres efterfølgende aktivitet vha. en af de øvrige behovsindsatser.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e535fc78-ce61-4f97-b717-5901d5330ca9<a name="FBOE-e535fc78-ce61-4f97-b717-5901d5330ca9"> </a></td>
+<td>Forældregruppe, hvor forælder har psykisk reaktion</td>
+<td><div><p>Indsatsen gives til forældre med psykisk reaktion på det at blive forælder fx tegn på fødselsdepression (perinatal depression) eller meget højt bekymringsniveau. Indsatsen omfatter at mødes i grupper med andre forældre, med samme udfordringer, så man kan lære af og støtte hinanden.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;6cbf8b19-5aff-4f6f-a7dc-9a411197bcff<a name="FBOE-6cbf8b19-5aff-4f6f-a7dc-9a411197bcff"> </a></td>
+<td>Familieindsatser</td>
+<td><div><p>Familieindsatser</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14ddb640-c2ce-4e79-9269-6302f72f02aa<a name="FBOE-14ddb640-c2ce-4e79-9269-6302f72f02aa"> </a></td>
+<td>Forældreuddannelse, hvor barnet har særlige behov</td>
+<td><div><p>Indsatsen gives til forældre, der gennem et planlagt uddannelsesforløb i grupper eller individuelt/par, styrker deres viden og får nye handlemuligheder i forhold til de særlige udfordringer, som deres barn lever med.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4c53b10a-6384-413a-b131-b94354337541<a name="FBOE-4c53b10a-6384-413a-b131-b94354337541"> </a></td>
+<td>Forældregruppe, hvor barnet har særlige behov</td>
+<td><div><p>Indsatsen gives til forældre til børn med særlige behov. Indsatsen omfatter at mødes i grupper med andre forældre, med samme udfordringer, så man kan lære af og støtte hinanden.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;69b3ad8c-f228-405c-b556-b2ea78e196ee<a name="FBOE-69b3ad8c-f228-405c-b556-b2ea78e196ee"> </a></td>
+<td>Forældreuddannelse i kontakt og samspil</td>
+<td><div><p>Indsatsen gives til forældre, der gennem et planlagt uddannelsesforløb i grupper eller individuelt/par, styrker deres viden og får nye handlemuligheder i kontakten med deres barn. Forældreuddannelse kunne fx være COS-P.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7f6488a9-f01c-4776-973c-846fdca75acc<a name="FBOE-7f6488a9-f01c-4776-973c-846fdca75acc"> </a></td>
+<td>Helhedsindsats med fokus på kontakt og samspil</td>
+<td><div><p>Indsatsen gives til familier, der er bevilliget sociale indsatser/ydelser fra kommunen, og hvor sundhedsplejen, som en blandt flere fagpersoner styrker samspil og kontakt i småbørnsfamilien. Indsatsen omfatter vejledning vedr. kontakt og samspil, men omfatter også netværksmøder og andet tværfagligt samarbejde. Indsatsen kan også omfatte anden sundhedsplejefaglig støtte fx vejledning i relation til dagligdagens struktur og barnets fysiske sundhed. Indsatsen erstatter ofte indsatsen ”Vejledning i kontakt, samspil og barnets behov” (som altså ikke gives sideløbende). Der skiftes fra vejledning til helhedsindsats, når der er sociale indsatser visiteret til familien, som sundhedsplejen er orienteret om af familie eller fagpersoner, også selvom der ikke er etableret et egentligt samarbejde mellem fagpersonerne endnu. Henvisninger, og støtteforanstaltninger målrettet forældrene i forbindelse med psykisk reaktion/sårbarhed registreres separat.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ab058b70-6557-4844-957b-a16d71ea46f3<a name="FBOE-ab058b70-6557-4844-957b-a16d71ea46f3"> </a></td>
+<td>Vejledning til forældre, hvor barnet har særlige behov</td>
+<td><div><p>Indsatsen gives til familier, hvor barnet har særlige behov fx præmature og børn med funktionsnedsættelser. Det kan også være mistanke om eller diagnosticerede udviklingsforstyrrelser. Desuden kan det være børn med almindelige problematikker som meget gråd, ondt i maven eller dårlig søvn, uden at der er tegn på sygdom eller trivselsproblematikker. Indsatsen omfatter vejledning og motivation, samt en løbende vurdering af behovet for at inddrage andre fagligheder.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b3de92ea-ac5e-4f87-809e-a9e40b59cc34<a name="FBOE-b3de92ea-ac5e-4f87-809e-a9e40b59cc34"> </a></td>
+<td>Vejledning i kontakt, samspil og barnets behov</td>
+<td><div><p>Indsatsen gives til familier, som har brug for støtte til at opbygge et godt samspil med barnet eller møde barnets behov. Sundhedsplejen rådgiver og vejleder om muligheder for at styrke kontakt/samspil og/eller om dagligdagen med et spædbarn inklusiv forudsigelighed og fysiske behov. Indsatsen kan omfatte at sundhedsplejen viser ved egen kontakt med barnet, hvordan man kan styrke kontakt/samspil, samt at sundhedsplejen støtter forældrene i samspilssituationer. Sundhedsplejen motiverer gennem sit ressourcesyn til forbedringer. Indsatsen omfatter vurdering af tilstrækkelighed.</p>
+</div></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;76a96391-7b5a-4d29-8471-9b7d238cb9df<a name="FBOE-76a96391-7b5a-4d29-8471-9b7d238cb9df"> </a></td>
+<td>Indsatser vedr. fysisk sundhed</td>
+<td><div><p>Indsatser vedr. fysisk sundhed</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1abd67eb-498a-4033-aebd-8285c1bf6ecb<a name="FBOE-1abd67eb-498a-4033-aebd-8285c1bf6ecb"> </a></td>
+<td>Opsporing og vejledning ved overvægt</td>
+<td><div><p>Indsatsen gives til børn, der har stigende vægtkurve, ud over det normale. Indsatsen omfatter fx ekstra-målinger, vejledning om gode spiserutiner, og energibehov. Indsatsen omfatter vurdering af, om der også bør henvises til læge.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2d9d7a6b-0d8c-4202-9434-876a1a6833b8<a name="FBOE-2d9d7a6b-0d8c-4202-9434-876a1a6833b8"> </a></td>
+<td>Øvrig vejledning om fysisk sundhed</td>
+<td><div><p>Indsatsen gives til barn og forældre til at afhjælpe problematikker relateret til udskillelser, overgangskost, sundheds-/risikoadfærd i familien, barnets døgnrytme, og barnets motorik.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;712ef286-161c-4b9d-b2b9-b43e3f432646<a name="FBOE-712ef286-161c-4b9d-b2b9-b43e3f432646"> </a></td>
+<td>Ammeindsats</td>
+<td><div><p>Indsatsen gives til forældre, der har behov for støtte til at amme fx pga. øget forbrug af MME indenfor barnets første levemåneder, vigende vægt ved barnet, utryghed eller ubehag ved amningen eller observeret uhensigtsmæssig amme-teknik. Indsatsen omfatter opsporing, vejledning og motivation.</p>
+</div></td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8e557f2c-43a6-4b5a-bfac-2cd78bad4c25<a name="FBOE-8e557f2c-43a6-4b5a-bfac-2cd78bad4c25"> </a></td>
+<td>Opsporing og vejledning ved vigende vægt/vækst</td>
+<td><div><p>Indsatsen gives til børn, der har vigende vægt eller længdekurver. Indsatsen omfatter fx ekstra-målinger, vejledning om gode spiserutiner, energibehov og vejledning om hvordan forældrene kan holde øje med udskillelser. Indsatsen omfatter vurdering af, om der også bør henvises til læge.</p>
+</div></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 16:55+0200">2024-06-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
