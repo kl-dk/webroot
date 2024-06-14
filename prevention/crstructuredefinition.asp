@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -16,29 +16,29 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/prevention/StructureDefinition-"+id+".xml");
   else if (id == "DeliveryType")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-DeliveryType.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-DeliveryType.html");
   else if (id == "klgateway-119-focus-condition")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-focus-condition.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-focus-condition.html");
   else if (id == "klgateway-119-encounter")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-encounter.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-encounter.html");
   else if (id == "klgateway-119-planned-intervention")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-planned-intervention.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-planned-intervention.html");
   else if (id == "BasedOnServiceRequestExtension")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-BasedOnServiceRequestExtension.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-BasedOnServiceRequestExtension.html");
   else if (id == "klgateway-119-organization")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-organization.html");
-  else if (id == "klgateway-119-delivery-report")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-delivery-report.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-organization.html");
   else if (id == "BasedOnCarePlanExtension")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-BasedOnCarePlanExtension.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-BasedOnCarePlanExtension.html");
+  else if (id == "klgateway-119-delivery-report")
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-delivery-report.html");
   else if (id == "klgateway-119-condition")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-condition.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-condition.html");
   else if (id == "klgateway-119-care-plan")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-care-plan.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-care-plan.html");
   else if (id == "klgateway-119-servicerequest")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-servicerequest.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-servicerequest.html");
   else if (id == "klgateway-119-citizen")
-    Response.Redirect("http://fhir.kl.dk/prevention/1.0.0/StructureDefinition-klgateway-119-citizen.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/StructureDefinition-klgateway-119-citizen.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/prevention/StructureDefinition.html");
 
@@ -47,6 +47,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from #1.0.0-milestone/output/crstructuredefinition.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.0.0-milestone\output\crstructuredefinition.asp) .
 </body>
 </html>

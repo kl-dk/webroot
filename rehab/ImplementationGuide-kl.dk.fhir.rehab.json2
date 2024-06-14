@@ -3,13 +3,13 @@
   "id" : "kl.dk.fhir.rehab",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLGatewayRehab</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab</pre><div><p>Danish municipalities implementation guide for §140 rehabilitation reporting</p>\n</div></div>"
   },
   "url" : "http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab",
-  "version" : "1.0.0",
+  "version" : "2.0.0",
   "name" : "KLGatewayRehab",
   "status" : "active",
-  "date" : "2023-09-28T10:05:19+02:00",
+  "date" : "2024-06-14T10:48:54+02:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -18,6 +18,7 @@
       "value" : "http://kl.dk"
     }]
   }],
+  "description" : "Danish municipalities implementation guide for §140 rehabilitation reporting",
   "packageId" : "kl.dk.fhir.rehab",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
@@ -29,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.3.0"
+    "version" : "5.5.0"
   },
   {
     "id" : "hl7ext",
@@ -39,19 +40,19 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   },
   {
     "id" : "hl7_fhir_dk_core",
     "uri" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
     "packageId" : "hl7.fhir.dk.core",
-    "version" : "2.1.0"
+    "version" : "3.2.0"
   },
   {
     "id" : "kl_dk_fhir_term",
     "uri" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
     "packageId" : "kl.dk.fhir.term",
-    "version" : "1.1.0"
+    "version" : "2.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -331,7 +332,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{
@@ -611,6 +612,42 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/4a391f69-a909-4a79-92bd-1b0f812dc52a"
+      },
+      "name" : "4a391f69-a909-4a79-92bd-1b0f812dc52a",
+      "description" : "DeliveryReport-Ruddi-6",
+      "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/4b9443a2-7231-4387-8e3d-614bf193df49"
+      },
+      "name" : "4b9443a2-7231-4387-8e3d-614bf193df49",
+      "description" : "DeliveryReport-Ruddi-2",
+      "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/9960b8dc-5ebf-4166-83d7-b042bcc6aca5"
+      },
+      "name" : "9960b8dc-5ebf-4166-83d7-b042bcc6aca5",
+      "description" : "DeliveryReport-Ruddi-7",
+      "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -643,6 +680,18 @@
       "name" : "basedOnServiceRequestExtension",
       "description" : "Extension for pointing to the servicerequest, that started an intervention",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/c2f75bbf-2027-41bf-b597-de5e242f2b3d"
+      },
+      "name" : "c2f75bbf-2027-41bf-b597-de5e242f2b3d",
+      "description" : "DeliveryReport-Ruddi-8",
+      "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"
     },
     {
       "extension" : [{
@@ -691,6 +740,18 @@
       "name" : "DeliveryTypes",
       "description" : "The delivery context types allowed in §140 rehabilitation",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/e87d5e68-e5f3-476f-988f-4efda86b0645"
+      },
+      "name" : "e87d5e68-e5f3-476f-988f-4efda86b0645",
+      "description" : "DeliveryReport-Ruddi-1",
+      "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"
     },
     {
       "extension" : [{
@@ -917,7 +978,7 @@
         "reference" : "Condition/RuddiTilstand"
       },
       "name" : "RuddiTilstand",
-      "description" : "Ruddis Tilstand vedrørende gang og bevægelse",
+      "description" : "Ruddis Tilstand vedrørende mobilitet og bevægelse",
       "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-condition"
     },
     {
@@ -983,18 +1044,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/Tempcodes"
-      },
-      "name" : "Tempcodes",
-      "description" : "Tempcodes to be implemented in KL-term",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -1003,6 +1052,30 @@
       "name" : "UdførerAfRuddisGenoptræning",
       "description" : "Genoptræningscenteret Holbæk kommune, der er udfører af Ruddis genoptræning",
       "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/7fdd6dc0-3f9f-4914-b34a-7c6495ba0880"
+      },
+      "name" : "UdførerAfRuddisGenoptræning",
+      "description" : "Genoptræningscenteret Holbæk kommune, der er udfører af Ruddis genoptræning",
+      "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Conditions140"
+      },
+      "name" : "§140 tilstande",
+      "description" : "Danish municipality theraphy condition codes",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1019,6 +1092,15 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "example.html"
+        }],
+        "nameUrl" : "example.html",
+        "title" : "Example",
         "generation" : "markdown"
       }]
     },

@@ -10,13 +10,13 @@
   fhir:id [ fhir:v "kl.dk.fhir.prevention"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLGatewayPrevention</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention</pre><div><p>Danish municipalities implementation guide for reporting §119 disease prevention and health promotion</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "KLGatewayPrevention"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-28T10:27:14+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-14T10:04:53+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
@@ -25,6 +25,7 @@
        fhir:value [ fhir:v "http://kl.dk" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Danish municipalities implementation guide for reporting §119 disease prevention and health promotion"] ; # 
   fhir:packageId [ fhir:v "kl.dk.fhir.prevention"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -39,7 +40,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.3.0" ]
+     fhir:version [ fhir:v "5.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -51,15 +52,15 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_dk_core" ] ;
      fhir:uri [
-       fhir:v "https://hl7.dk/fhir/core"^^xsd:anyURI ;
-       fhir:link <https://hl7.dk/fhir/core>
+       fhir:v "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.dk.core" ] ;
-     fhir:version [ fhir:v "2.1.0" ]
+     fhir:version [ fhir:v "3.2.0" ]
   ] [
      fhir:id [ fhir:v "kl_dk_fhir_term" ] ;
      fhir:uri [
@@ -67,7 +68,7 @@
        fhir:link <http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term>
      ] ;
      fhir:packageId [ fhir:v "kl.dk.fhir.term" ] ;
-     fhir:version [ fhir:v "1.1.0" ]
+     fhir:version [ fhir:v "2.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -297,7 +298,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -525,6 +526,81 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/Bundle/5135080e-fbaf-4575-afe6-f037d4541e06> ;
+         fhir:reference [ fhir:v "Bundle/5135080e-fbaf-4575-afe6-f037d4541e06" ]
+       ] ;
+       fhir:name [ fhir:v "5135080e-fbaf-4575-afe6-f037d4541e06" ] ;
+       fhir:description [ fhir:v "DeliveryReport-Bruno-5" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/Bundle/738ec570-6bb6-4690-9a88-1dbed46d65ed> ;
+         fhir:reference [ fhir:v "Bundle/738ec570-6bb6-4690-9a88-1dbed46d65ed" ]
+       ] ;
+       fhir:name [ fhir:v "738ec570-6bb6-4690-9a88-1dbed46d65ed" ] ;
+       fhir:description [ fhir:v "DeliveryReport-Bruno-8" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/Bundle/88889c22-b86d-4ceb-81d8-38a158f12bf4> ;
+         fhir:reference [ fhir:v "Bundle/88889c22-b86d-4ceb-81d8-38a158f12bf4" ]
+       ] ;
+       fhir:name [ fhir:v "88889c22-b86d-4ceb-81d8-38a158f12bf4" ] ;
+       fhir:description [ fhir:v "DeliveryReport-Bruno-7" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/Bundle/8c3f35d7-7437-4fcf-90d2-49e04701d0ec> ;
+         fhir:reference [ fhir:v "Bundle/8c3f35d7-7437-4fcf-90d2-49e04701d0ec" ]
+       ] ;
+       fhir:name [ fhir:v "8c3f35d7-7437-4fcf-90d2-49e04701d0ec" ] ;
+       fhir:description [ fhir:v "DeliveryReport-Bruno-2" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/Bundle/974cabc7-d2e0-4db0-bfa4-6cd5af7103de> ;
+         fhir:reference [ fhir:v "Bundle/974cabc7-d2e0-4db0-bfa4-6cd5af7103de" ]
+       ] ;
+       fhir:name [ fhir:v "974cabc7-d2e0-4db0-bfa4-6cd5af7103de" ] ;
+       fhir:description [ fhir:v "DeliveryReport-Bruno-6" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report>
+       ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Organization" ]
@@ -839,6 +915,33 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/Bundle/e87d5e68-e5f3-476f-988f-4efda86b0645> ;
+         fhir:reference [ fhir:v "Bundle/e87d5e68-e5f3-476f-988f-4efda86b0645" ]
+       ] ;
+       fhir:name [ fhir:v "e87d5e68-e5f3-476f-988f-4efda86b0645" ] ;
+       fhir:description [ fhir:v "DeliveryReport-Bruno-1" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/ValueSet/KLConditionCodes119> ;
+         fhir:reference [ fhir:v "ValueSet/KLConditionCodes119" ]
+       ] ;
+       fhir:name [ fhir:v "KLConditionCodes119" ] ;
+       fhir:description [ fhir:v "Condition codes allowed in this implementation guide." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -954,7 +1057,7 @@
          fhir:reference [ fhir:v "ValueSet/KLInterventionCodes119" ]
        ] ;
        fhir:name [ fhir:v "KLInterventionCodes119" ] ;
-       fhir:description [ fhir:v "Intervention codes allowed in this implementation guide. Notice that codes are excluded to pinpoint that information about group/individual treatment must be included for some interventions" ] ;
+       fhir:description [ fhir:v "Intervention codes allowed in this implementation guide." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -967,18 +1070,6 @@
        ] ;
        fhir:name [ fhir:v "ServiceTypes" ] ;
        fhir:description [ fhir:v "The service types allowed in §119" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.kl.dk/prevention/CodeSystem/Tempcodes> ;
-         fhir:reference [ fhir:v "CodeSystem/Tempcodes" ]
-       ] ;
-       fhir:name [ fhir:v "Tempcodes" ] ;
-       fhir:description [ fhir:v "Tempcodes to be implemented in KL-term" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1011,6 +1102,14 @@
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "example.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "example.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Example" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

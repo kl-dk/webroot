@@ -3,13 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="kl.dk.fhir.prevention"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>KLGatewayPrevention</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention</pre><div><p>Danish municipalities implementation guide for reporting §119 disease prevention and health promotion</p>
+</div></div>
   </text>
   <url value="http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention"/>
-  <version value="1.0.0"/>
+  <version value="2.0.0"/>
   <name value="KLGatewayPrevention"/>
   <status value="active"/>
-  <date value="2023-09-28T10:27:14+02:00"/>
+  <date value="2024-06-14T10:04:53+02:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -18,6 +19,7 @@
       <value value="http://kl.dk"/>
     </telecom>
   </contact>
+  <description value="Danish municipalities implementation guide for reporting §119 disease prevention and health promotion"/>
   <packageId value="kl.dk.fhir.prevention"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -27,7 +29,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.3.0"/>
+    <version value="5.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -35,17 +37,17 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_dk_core">
-    <uri value="https://hl7.dk/fhir/core"/>
+    <uri value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
     <packageId value="hl7.fhir.dk.core"/>
-    <version value="2.1.0"/>
+    <version value="3.2.0"/>
   </dependsOn>
   <dependsOn id="kl_dk_fhir_term">
     <uri value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
     <packageId value="kl.dk.fhir.term"/>
-    <version value="1.1.0"/>
+    <version value="2.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -249,7 +251,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -451,6 +453,61 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/5135080e-fbaf-4575-afe6-f037d4541e06"/>
+      </reference>
+      <name value="5135080e-fbaf-4575-afe6-f037d4541e06"/>
+      <description value="DeliveryReport-Bruno-5"/>
+      <exampleCanonical value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/738ec570-6bb6-4690-9a88-1dbed46d65ed"/>
+      </reference>
+      <name value="738ec570-6bb6-4690-9a88-1dbed46d65ed"/>
+      <description value="DeliveryReport-Bruno-8"/>
+      <exampleCanonical value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/88889c22-b86d-4ceb-81d8-38a158f12bf4"/>
+      </reference>
+      <name value="88889c22-b86d-4ceb-81d8-38a158f12bf4"/>
+      <description value="DeliveryReport-Bruno-7"/>
+      <exampleCanonical value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/8c3f35d7-7437-4fcf-90d2-49e04701d0ec"/>
+      </reference>
+      <name value="8c3f35d7-7437-4fcf-90d2-49e04701d0ec"/>
+      <description value="DeliveryReport-Bruno-2"/>
+      <exampleCanonical value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/974cabc7-d2e0-4db0-bfa4-6cd5af7103de"/>
+      </reference>
+      <name value="974cabc7-d2e0-4db0-bfa4-6cd5af7103de"/>
+      <description value="DeliveryReport-Bruno-6"/>
+      <exampleCanonical value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
@@ -695,6 +752,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/e87d5e68-e5f3-476f-988f-4efda86b0645"/>
+      </reference>
+      <name value="e87d5e68-e5f3-476f-988f-4efda86b0645"/>
+      <description value="DeliveryReport-Bruno-1"/>
+      <exampleCanonical value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLConditionCodes119"/>
+      </reference>
+      <name value="KLConditionCodes119"/>
+      <description value="Condition codes allowed in this implementation guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -800,7 +879,7 @@
         <reference value="ValueSet/KLInterventionCodes119"/>
       </reference>
       <name value="KLInterventionCodes119"/>
-      <description value="Intervention codes allowed in this implementation guide. Notice that codes are excluded to pinpoint that information about group/individual treatment must be included for some interventions"/>
+      <description value="Intervention codes allowed in this implementation guide."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -812,17 +891,6 @@
       </reference>
       <name value="ServiceTypes"/>
       <description value="The service types allowed in §119"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/Tempcodes"/>
-      </reference>
-      <name value="Tempcodes"/>
-      <description value="Tempcodes to be implemented in KL-term"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -849,6 +917,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example.html"/>
+        </extension>
+        <nameUrl value="example.html"/>
+        <title value="Example"/>
         <generation value="markdown"/>
       </page>
     </page>

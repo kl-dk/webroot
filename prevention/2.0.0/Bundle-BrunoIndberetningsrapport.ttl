@@ -1,0 +1,447 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/prevention/Bundle/BrunoIndberetningsrapport> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BrunoIndberetningsrapport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-delivery-report>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2020-08-14T00:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/Patient/BrunoTestElmer"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/Patient/BrunoTestElmer> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/Organization/UdfoererAfBrunosForebyggelse"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/Organization/UdfoererAfBrunosForebyggelse> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/Organization/AfsenderAfBrunosHenvisning"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/Organization/AfsenderAfBrunosHenvisning> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/Condition/BrunoAktionsdiagnoseRequest"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/Condition/BrunoAktionsdiagnoseRequest> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/ServiceRequest/BrunoRequestInformation"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/ServiceRequest/BrunoRequestInformation> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoAfklarendeSamtale"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoAfklarendeSamtale> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/Encounter/BrunoKontaktAfklarende"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/Encounter/BrunoKontaktAfklarende> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoforloebKost"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoforloebKost> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoKostvejledning"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoKostvejledning> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/Encounter/BrunoKontakt1Kost"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/Encounter/BrunoKontakt1Kost> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://care-gateway.test001.ehealth.sundhed.dk/fhir/Condition/BrunoTilstand"^^xsd:anyURI ] ;
+     fhir:resource ( <https://care-gateway.test001.ehealth.sundhed.dk/fhir/Condition/BrunoTilstand> )
+  ] ) . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/Patient/BrunoTestElmer> a fhir:Patient ;
+  fhir:id [ fhir:v "BrunoTestElmer"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-citizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_BrunoTestElmer\"> </a><p><b>Generated Narrative: Patient </b><a name=\"BrunoTestElmer\"> </a><a name=\"hcBrunoTestElmer\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePatient &quot;BrunoTestElmer&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-citizen.html\">KLGateway119Citizen</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/2509479989 (use: official)</p><p><b>deceased</b>: false</p><p><b>managingOrganization</b>: <span><code>urn:oid:1.2.208.176.1.1</code>/451000016003 (use: official)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2509479989" ]
+  ] ) ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "451000016003" ]
+     ]
+  ] . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/Organization/UdfoererAfBrunosForebyggelse> a fhir:Organization ;
+  fhir:id [ fhir:v "UdfoererAfBrunosForebyggelse"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_UdfoererAfBrunosForebyggelse\"> </a><p><b>Generated Narrative: Organization </b><a name=\"UdfoererAfBrunosForebyggelse\"> </a><a name=\"hcUdfoererAfBrunosForebyggelse\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;UdfoererAfBrunosForebyggelse&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-organization.html\">KLGateway119Organization</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.1</code>/1037791000016002 (use: official)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1037791000016002" ]
+  ] ) . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/Organization/AfsenderAfBrunosHenvisning> a fhir:Organization ;
+  fhir:id [ fhir:v "AfsenderAfBrunosHenvisning"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_AfsenderAfBrunosHenvisning\"> </a><p><b>Generated Narrative: Organization </b><a name=\"AfsenderAfBrunosHenvisning\"> </a><a name=\"hcAfsenderAfBrunosHenvisning\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;AfsenderAfBrunosHenvisning&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-organization.html\">KLGateway119Organization</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.1</code>/391951000016006 (use: official)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "391951000016006" ]
+  ] ) . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/Condition/BrunoAktionsdiagnoseRequest> a fhir:Condition ;
+  fhir:id [ fhir:v "BrunoAktionsdiagnoseRequest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-focus-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-focus-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_BrunoAktionsdiagnoseRequest\"> </a><p><b>Generated Narrative: Condition </b><a name=\"BrunoAktionsdiagnoseRequest\"> </a><a name=\"hcBrunoAktionsdiagnoseRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;BrunoAktionsdiagnoseRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-focus-condition.html\">KLGateway119FocusCondition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Tidligere myokardieinfarkt (Q-tak, anteriort) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#DI252B)</span></p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4.12"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DI252B" ] ;
+       fhir:display [ fhir:v "Tidligere myokardieinfarkt (Q-tak, anteriort)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/ServiceRequest/BrunoRequestInformation> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "BrunoRequestInformation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-servicerequest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-servicerequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_BrunoRequestInformation\"> </a><p><b>Generated Narrative: ServiceRequest </b><a name=\"BrunoRequestInformation\"> </a><a name=\"hcBrunoRequestInformation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceServiceRequest &quot;BrunoRequestInformation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-servicerequest.html\">KLGateway119ServiceRequest</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>code</b>: Kommunal Sundhedsfremme og forebyggelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#a71921ea-fe83-441d-933b-cc21d0b3c8c3)</span></p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>authoredOn</b>: 2022-05-29</p><p><b>requester</b>: See on this page: Organization/AfsenderAfBrunosHenvisning</p><p><b>reasonReference</b>: See on this page: Condition/BrunoAktionsdiagnoseRequest</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "a71921ea-fe83-441d-933b-cc21d0b3c8c3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2022-05-29"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://fhir.kl.dk/prevention/Organization/AfsenderAfBrunosHenvisning> ;
+     fhir:reference [ fhir:v "Organization/AfsenderAfBrunosHenvisning" ]
+  ] ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://fhir.kl.dk/prevention/Condition/BrunoAktionsdiagnoseRequest> ;
+     fhir:reference [ fhir:v "Condition/BrunoAktionsdiagnoseRequest" ]
+  ] ) . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoAfklarendeSamtale> a fhir:CarePlan ;
+  fhir:id [ fhir:v "BrunoAfklarendeSamtale"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-planned-intervention"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-planned-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_BrunoAfklarendeSamtale\"> </a><p><b>Generated Narrative: CarePlan </b><a name=\"BrunoAfklarendeSamtale\"> </a><a name=\"hcBrunoAfklarendeSamtale\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCarePlan &quot;BrunoAfklarendeSamtale&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-planned-intervention.html\">KLGateway119PlannedIntervention</a></p></div><p><b>basedOnServiceRequestExtension</b>: See on this page: ServiceRequest/BrunoRequestInformation</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-05-31 --&gt; 2022-06-02</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Afklarende samtale <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FSIII.html\">FSIII</a>#6eddbaf7-2a73-49d4-91e7-6138d419f58c)</span></td><td>completed</td><td>See on this page: Organization/UdfoererAfBrunosForebyggelse</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/BasedOnServiceRequestExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/prevention/ServiceRequest/BrunoRequestInformation> ;
+       fhir:reference [ fhir:v "ServiceRequest/BrunoRequestInformation" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-05-31"^^xsd:date ] ;
+     fhir:end [ fhir:v "2022-06-02"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/DeliveryType"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "8d12d74c-17da-47a7-a4fe-e69dbaec0a8c" ] ;
+             fhir:display [ fhir:v "Individuel indsats" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "6eddbaf7-2a73-49d4-91e7-6138d419f58c" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "completed" ] ;
+       fhir:performer ( [
+         fhir:link <http://fhir.kl.dk/prevention/Organization/UdfoererAfBrunosForebyggelse> ;
+         fhir:reference [ fhir:v "Organization/UdfoererAfBrunosForebyggelse" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/Encounter/BrunoKontaktAfklarende> a fhir:Encounter ;
+  fhir:id [ fhir:v "BrunoKontaktAfklarende"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_BrunoKontaktAfklarende\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"BrunoKontaktAfklarende\"> </a><a name=\"hcBrunoKontaktAfklarende\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;BrunoKontaktAfklarende&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-encounter.html\">KLGateway119Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: See on this page: CarePlan/BrunoAfklarendeSamtale</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' null ')</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-02 12:10:00+0000 --&gt; 2022-06-02 12:40:00+0000</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/BasedOnCarePlanExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/prevention/CarePlan/BrunoAfklarendeSamtale> ;
+       fhir:reference [ fhir:v "CarePlan/BrunoAfklarendeSamtale" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-06-02T12:10:00.000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2022-06-02T12:40:00.000Z"^^xsd:dateTime ]
+  ] . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoforloebKost> a fhir:CarePlan ;
+  fhir:id [ fhir:v "BrunoforloebKost"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-care-plan"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-care-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_BrunoforloebKost\"> </a><p><b>Generated Narrative: CarePlan </b><a name=\"BrunoforloebKost\"> </a><a name=\"hcBrunoforloebKost\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCarePlan &quot;BrunoforloebKost&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-care-plan.html\">KLGateway119CarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>category</b>: Interventionsforløb efter §119 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#5c160c02-e858-4c1f-925a-71ed64844749)</span></p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-02 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td>in-progress</td><td>See on this page: Organization/UdfoererAfBrunosForebyggelse</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5c160c02-e858-4c1f-925a-71ed64844749" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-06-02"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:status [ fhir:v "in-progress" ] ;
+       fhir:performer ( [
+         fhir:link <http://fhir.kl.dk/prevention/Organization/UdfoererAfBrunosForebyggelse> ;
+         fhir:reference [ fhir:v "Organization/UdfoererAfBrunosForebyggelse" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/CarePlan/BrunoKostvejledning> a fhir:CarePlan ;
+  fhir:id [ fhir:v "BrunoKostvejledning"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-planned-intervention"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-planned-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_BrunoKostvejledning\"> </a><p><b>Generated Narrative: CarePlan </b><a name=\"BrunoKostvejledning\"> </a><a name=\"hcBrunoKostvejledning\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCarePlan &quot;BrunoKostvejledning&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-planned-intervention.html\">KLGateway119PlannedIntervention</a></p></div><p><b>basedOnServiceRequestExtension</b>: See on this page: ServiceRequest/BrunoRequestInformation</p><p><b>basedOn</b>: See on this page: CarePlan/BrunoforloebKost</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-02 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Kostvejledning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FSIII.html\">FSIII</a>#c9a99304-1788-43b7-b7be-e187b092ae9c)</span></td><td>in-progress</td><td>See on this page: Organization/UdfoererAfBrunosForebyggelse</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/BasedOnServiceRequestExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/prevention/ServiceRequest/BrunoRequestInformation> ;
+       fhir:reference [ fhir:v "ServiceRequest/BrunoRequestInformation" ]
+     ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://fhir.kl.dk/prevention/CarePlan/BrunoforloebKost> ;
+     fhir:reference [ fhir:v "CarePlan/BrunoforloebKost" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-06-02"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/DeliveryType"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "8d12d74c-17da-47a7-a4fe-e69dbaec0a8c" ] ;
+             fhir:display [ fhir:v "Individuel indsats" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "c9a99304-1788-43b7-b7be-e187b092ae9c" ] ;
+           fhir:display [ fhir:v "Kostvejledning" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "in-progress" ] ;
+       fhir:performer ( [
+         fhir:link <http://fhir.kl.dk/prevention/Organization/UdfoererAfBrunosForebyggelse> ;
+         fhir:reference [ fhir:v "Organization/UdfoererAfBrunosForebyggelse" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/Encounter/BrunoKontakt1Kost> a fhir:Encounter ;
+  fhir:id [ fhir:v "BrunoKontakt1Kost"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_BrunoKontakt1Kost\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"BrunoKontakt1Kost\"> </a><a name=\"hcBrunoKontakt1Kost\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;BrunoKontakt1Kost&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-encounter.html\">KLGateway119Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: See on this page: CarePlan/BrunoforloebKost</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' null ')</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-09 10:00:00+0000 --&gt; 2022-06-09 10:30:00+0000</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/BasedOnCarePlanExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/prevention/CarePlan/BrunoforloebKost> ;
+       fhir:reference [ fhir:v "CarePlan/BrunoforloebKost" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-06-09T10:00:00.000Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2022-06-09T10:30:00.000Z"^^xsd:dateTime ]
+  ] . # 
+
+<https://care-gateway.test001.ehealth.sundhed.dk/fhir/Condition/BrunoTilstand> a fhir:Condition ;
+  fhir:id [ fhir:v "BrunoTilstand"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_BrunoTilstand\"> </a><p><b>Generated Narrative: Condition </b><a name=\"BrunoTilstand\"> </a><a name=\"hcBrunoTilstand\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;BrunoTilstand&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-condition.html\">KLGateway119Condition</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Vægt <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FSIII.html\">FSIII</a>#febbd20d-f5ff-41e7-bf12-dfa0700678e0)</span></p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>recordedDate</b>: 2022-06-02</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "febbd20d-f5ff-41e7-bf12-dfa0700678e0" ] ;
+       fhir:display [ fhir:v "Vægt" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2022-06-02"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

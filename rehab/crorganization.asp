@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -16,9 +16,11 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/rehab/Organization-"+id+".xml");
   else if (id == "UdfoererAfRuddisRehab")
-    Response.Redirect("http://fhir.kl.dk/rehab/1.0.0/Organization-UdfoererAfRuddisRehab.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/Organization-UdfoererAfRuddisRehab.html");
   else if (id == "AfsenderAfRuddisGGOP")
-    Response.Redirect("http://fhir.kl.dk/rehab/1.0.0/Organization-AfsenderAfRuddisGGOP.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/Organization-AfsenderAfRuddisGGOP.html");
+  else if (id == "7fdd6dc0-3f9f-4914-b34a-7c6495ba0880")
+    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/Organization-7fdd6dc0-3f9f-4914-b34a-7c6495ba0880.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/rehab/Organization.html");
 
@@ -27,6 +29,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 0-milestone/output/crorganization.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 0-milestone\output\crorganization.asp) .
 </body>
 </html>

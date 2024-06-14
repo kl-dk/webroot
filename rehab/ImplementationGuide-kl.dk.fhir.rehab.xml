@@ -3,13 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="kl.dk.fhir.rehab"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>KLGatewayRehab</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab</pre><div><p>Danish municipalities implementation guide for §140 rehabilitation reporting</p>
+</div></div>
   </text>
   <url value="http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab"/>
-  <version value="1.0.0"/>
+  <version value="2.0.0"/>
   <name value="KLGatewayRehab"/>
   <status value="active"/>
-  <date value="2023-09-28T10:05:19+02:00"/>
+  <date value="2024-06-14T10:48:54+02:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -18,6 +19,7 @@
       <value value="http://kl.dk"/>
     </telecom>
   </contact>
+  <description value="Danish municipalities implementation guide for §140 rehabilitation reporting"/>
   <packageId value="kl.dk.fhir.rehab"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -27,7 +29,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.3.0"/>
+    <version value="5.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -35,17 +37,17 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_dk_core">
     <uri value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
     <packageId value="hl7.fhir.dk.core"/>
-    <version value="2.1.0"/>
+    <version value="3.2.0"/>
   </dependsOn>
   <dependsOn id="kl_dk_fhir_term">
     <uri value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
     <packageId value="kl.dk.fhir.term"/>
-    <version value="1.1.0"/>
+    <version value="2.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -249,7 +251,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -453,6 +455,39 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/4a391f69-a909-4a79-92bd-1b0f812dc52a"/>
+      </reference>
+      <name value="4a391f69-a909-4a79-92bd-1b0f812dc52a"/>
+      <description value="DeliveryReport-Ruddi-6"/>
+      <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/4b9443a2-7231-4387-8e3d-614bf193df49"/>
+      </reference>
+      <name value="4b9443a2-7231-4387-8e3d-614bf193df49"/>
+      <description value="DeliveryReport-Ruddi-2"/>
+      <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/9960b8dc-5ebf-4166-83d7-b042bcc6aca5"/>
+      </reference>
+      <name value="9960b8dc-5ebf-4166-83d7-b042bcc6aca5"/>
+      <description value="DeliveryReport-Ruddi-7"/>
+      <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -483,6 +518,17 @@
       <name value="basedOnServiceRequestExtension"/>
       <description value="Extension for pointing to the servicerequest, that started an intervention"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/c2f75bbf-2027-41bf-b597-de5e242f2b3d"/>
+      </reference>
+      <name value="c2f75bbf-2027-41bf-b597-de5e242f2b3d"/>
+      <description value="DeliveryReport-Ruddi-8"/>
+      <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -527,6 +573,17 @@
       <name value="DeliveryTypes"/>
       <description value="The delivery context types allowed in §140 rehabilitation"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/e87d5e68-e5f3-476f-988f-4efda86b0645"/>
+      </reference>
+      <name value="e87d5e68-e5f3-476f-988f-4efda86b0645"/>
+      <description value="DeliveryReport-Ruddi-1"/>
+      <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -734,7 +791,7 @@
         <reference value="Condition/RuddiTilstand"/>
       </reference>
       <name value="RuddiTilstand"/>
-      <description value="Ruddis Tilstand vedrørende gang og bevægelse"/>
+      <description value="Ruddis Tilstand vedrørende mobilitet og bevægelse"/>
       <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-condition"/>
     </resource>
     <resource>
@@ -794,17 +851,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/Tempcodes"/>
-      </reference>
-      <name value="Tempcodes"/>
-      <description value="Tempcodes to be implemented in KL-term"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -813,6 +859,28 @@
       <name value="UdførerAfRuddisGenoptræning"/>
       <description value="Genoptræningscenteret Holbæk kommune, der er udfører af Ruddis genoptræning"/>
       <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/7fdd6dc0-3f9f-4914-b34a-7c6495ba0880"/>
+      </reference>
+      <name value="UdførerAfRuddisGenoptræning"/>
+      <description value="Genoptræningscenteret Holbæk kommune, der er udfører af Ruddis genoptræning"/>
+      <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Conditions140"/>
+      </reference>
+      <name value="§140 tilstande"/>
+      <description value="Danish municipality theraphy condition codes"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -827,6 +895,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example.html"/>
+        </extension>
+        <nameUrl value="example.html"/>
+        <title value="Example"/>
         <generation value="markdown"/>
       </page>
     </page>

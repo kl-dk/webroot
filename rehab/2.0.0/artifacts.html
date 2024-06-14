@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary -  v2.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">2.0.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="example.html">Example</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLGatewayRehab (v2.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/rehab/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-citizen.html"
+                  title="StructureDefinition/klgateway-140-citizen">KLGateway140Citizen</a>
+            </td>
+            <td>
+<p>Administrative information about a citizen receiving care or care related services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-condition.html"
+                  title="StructureDefinition/klgateway-140-condition">KLGateway140Condition</a>
+            </td>
+            <td>
+<p>Detailed information about condition relating to §140 care pathways</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-delivery-report.html"
+                  title="StructureDefinition/klgateway-140-delivery-report">KLGateway140DeliveryReport</a>
+            </td>
+            <td>
+<p>Delivery report to deliver data for each citizen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-encounter.html"
+                  title="StructureDefinition/klgateway-140-encounter">KLGateway140Encounter</a>
+            </td>
+            <td>
+<p>Encounter for first planned visits and all executed activities in a §140 care pathway</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-focus-condition.html"
+                  title="StructureDefinition/klgateway-140-focus-condition">KLGateway140FocusCondition</a>
+            </td>
+            <td>
+<p>Conditions which may be used to express the problem of a citizen in Danish municipalities. Mostly used for cross sector use cases.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-organization.html"
+                  title="StructureDefinition/klgateway-140-organization">KLGateway140Organization</a>
+            </td>
+            <td>
+<p>Organization as expressed in KLGateway for rehabilitation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-planned-intervention.html"
+                  title="StructureDefinition/klgateway-140-planned-intervention">KLGateway140PlannedIntervention</a>
+            </td>
+            <td>
+<p>Planned interventions for §140 rehabilitation in Danish Municipalities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-servicerequest.html"
+                  title="StructureDefinition/klgateway-140-servicerequest">KLGateway140ServiceRequest</a>
+            </td>
+            <td>
+<p>Referal used to represent information about the training-referal (GGOP) from a hospital to a Danish municipalities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-klgateway-140-care-plan.html"
+                  title="StructureDefinition/klgateway-140-care-plan">KLGateway140care-plan</a>
+            </td>
+            <td>
+<p>Care plans for §140 rehabilitation in Danish Municipalities.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DeliveryType.html"
+                  title="StructureDefinition/DeliveryType">DeliveryType</a>
+            </td>
+            <td>
+<p>Extension for a code that specifies some context of how a treatment-activity is delivered to a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PreconditionDate.html"
+                  title="StructureDefinition/PreconditionDate">PreconditionDate</a>
+            </td>
+            <td>
+<p>Extension for a date that needs to occur before the service requested can be performed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BasedOnCarePlanExtension.html"
+                  title="StructureDefinition/BasedOnCarePlanExtension">basedOnCarePlanExtension</a>
+            </td>
+            <td>
+<p>Extension for pointing to the careplan describing why this encounter is taking place, will be part of R5 without needing the extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BasedOnServiceRequestExtension.html"
+                  title="StructureDefinition/BasedOnServiceRequestExtension">basedOnServiceRequestExtension</a>
+            </td>
+            <td>
+<p>Extension for pointing to the servicerequest, that started an intervention</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-CancellationTypes.html"
+                  title="ValueSet/CancellationTypes">CancellationTypes</a>
+            </td>
+            <td>
+<p>Cancellation valueset, to be implemented in KL-term or MedCom-term</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-CarePlanCategories140.html"
+                  title="ValueSet/CarePlanCategories140">CarePlanCategories</a>
+            </td>
+            <td>
+<p>The care plan categories usefull for §140</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DeliveryTypes140.html" title="ValueSet/DeliveryTypes140">DeliveryTypes</a>
+            </td>
+            <td>
+<p>The delivery context types allowed in §140 rehabilitation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ServiceRequestStatusReasons140.html"
+                  title="ValueSet/ServiceRequestStatusReasons140">ServiceRequestStatusReasons</a>
+            </td>
+            <td>
+<p>Status Reason codes as used in §140 rehabilitation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ServiceRequestTypes140.html"
+                  title="ValueSet/ServiceRequestTypes140">ServiceRequestTypes</a>
+            </td>
+            <td>
+<p>The type of ServicRequest (GGOP), as defined by MedCom, supplemented by the two municipality specific types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ServiceTypes140.html" title="ValueSet/ServiceTypes140">ServiceTypes</a>
+            </td>
+            <td>
+<p>The service types allowed in §140</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-Conditions140.html" title="ValueSet/Conditions140">§140 tilstande</a>
+            </td>
+            <td>
+<p>Danish municipality theraphy condition codes</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-4a391f69-a909-4a79-92bd-1b0f812dc52a.html"
+                  title="Bundle/4a391f69-a909-4a79-92bd-1b0f812dc52a">4a391f69-a909-4a79-92bd-1b0f812dc52a</a>
+            </td>
+            <td>
+<p>DeliveryReport-Ruddi-6</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-4b9443a2-7231-4387-8e3d-614bf193df49.html"
+                  title="Bundle/4b9443a2-7231-4387-8e3d-614bf193df49">4b9443a2-7231-4387-8e3d-614bf193df49</a>
+            </td>
+            <td>
+<p>DeliveryReport-Ruddi-2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-9960b8dc-5ebf-4166-83d7-b042bcc6aca5.html"
+                  title="Bundle/9960b8dc-5ebf-4166-83d7-b042bcc6aca5">9960b8dc-5ebf-4166-83d7-b042bcc6aca5</a>
+            </td>
+            <td>
+<p>DeliveryReport-Ruddi-7</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-AfsenderAfRuddisGGOP.html"
+                  title="Organization/AfsenderAfRuddisGGOP">AfsenderAfRuddisGGOP</a>
+            </td>
+            <td>
+<p>Ortopædkirurgisk afdeling Holbæk sygehus, der er afsender af Ruddis GGOP</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-RuddiAktionsdiagnoseGGOP.html"
+                  title="Condition/RuddiAktionsdiagnoseGGOP">RuddiAktionsdiagnoseGGOP</a>
+            </td>
+            <td>
+<p>Ruddis aktionsdiagnose fra GGOP, hvor man kan se, at han har haft en pertrokantær femurfraktur</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-RuddiFunctionalTraening.html"
+                  title="CarePlan/RuddiFunctionalTraening">RuddiFundktionsTræning</a>
+            </td>
+            <td>
+<p>Ruddi’s funktions-træningsindsats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-RuddiGGOPInformation.html"
+                  title="ServiceRequest/RuddiGGOPInformation">RuddiGGOPInformation</a>
+            </td>
+            <td>
+<p>Information fra Ruddis GGOP, der er baggrunden for at igangsætte indsatsen i kommunen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RuddiIndberetningsrapport.html"
+                  title="Bundle/RuddiIndberetningsrapport">RuddiIndberetningsrapport</a>
+            </td>
+            <td>
+<p>Indberetning for Ruddi</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-RuddiKontakt1Traening.html"
+                  title="Encounter/RuddiKontakt1Traening">RuddiKontakt1Traening</a>
+            </td>
+            <td>
+<p>Ruddis kontakt, hvor han har første træningsgang</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-RuddiKontaktUndersoegelse.html"
+                  title="Encounter/RuddiKontaktUndersoegelse">RuddiKontaktUndersøgelse</a>
+            </td>
+            <td>
+<p>Ruddis kontakt, hvor der er udført en terapeutfaglig undersøgelse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-RuddiTerapeutfagligUndersoegelse.html"
+                  title="CarePlan/RuddiTerapeutfagligUndersoegelse">RuddiTerapeutfagligUndersøgelse</a>
+            </td>
+            <td>
+<p>Ruddi’s terapeutfaglige undersøgelse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-RuddiTestBerggren.html" title="Patient/RuddiTestBerggren">RuddiTestBerggren</a>
+            </td>
+            <td>
+<p>Test personen Ruddi, fra MedCom test-cprnumre. Holbæk kommune er journalførende organisation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-RuddiTilstand.html" title="Condition/RuddiTilstand">RuddiTilstand</a>
+            </td>
+            <td>
+<p>Ruddis Tilstand vedrørende mobilitet og bevægelse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-RuddiTraening.html" title="CarePlan/RuddiTraening">RuddiTræning</a>
+            </td>
+            <td>
+<p>Ruddi’s træningsindsats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-RuddiTraeningsforloeb.html"
+                  title="CarePlan/RuddiTraeningsforloeb">RuddiTræningsforløb</a>
+            </td>
+            <td>
+<p>Ruddi’s træningsforløb</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-7fdd6dc0-3f9f-4914-b34a-7c6495ba0880.html"
+                  title="Organization/7fdd6dc0-3f9f-4914-b34a-7c6495ba0880">UdførerAfRuddisGenoptræning</a>
+            </td>
+            <td>
+<p>Genoptræningscenteret Holbæk kommune, der er udfører af Ruddis genoptræning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-UdfoererAfRuddisRehab.html"
+                  title="Organization/UdfoererAfRuddisRehab">UdførerAfRuddisGenoptræning</a>
+            </td>
+            <td>
+<p>Genoptræningscenteret Holbæk kommune, der er udfører af Ruddis genoptræning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-c2f75bbf-2027-41bf-b597-de5e242f2b3d.html"
+                  title="Bundle/c2f75bbf-2027-41bf-b597-de5e242f2b3d">c2f75bbf-2027-41bf-b597-de5e242f2b3d</a>
+            </td>
+            <td>
+<p>DeliveryReport-Ruddi-8</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-e87d5e68-e5f3-476f-988f-4efda86b0645.html"
+                  title="Bundle/e87d5e68-e5f3-476f-988f-4efda86b0645">e87d5e68-e5f3-476f-988f-4efda86b0645</a>
+            </td>
+            <td>
+<p>DeliveryReport-Ruddi-1</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.rehab#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 14, 2024 10:45+0200">2024-06-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
