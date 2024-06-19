@@ -16,7 +16,7 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/rehab/ServiceRequest-"+id+".xml");
   else if (id == "RuddiGGOPInformation")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/ServiceRequest-RuddiGGOPInformation.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/ServiceRequest-RuddiGGOPInformation.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/rehab/ServiceRequest.html");
 

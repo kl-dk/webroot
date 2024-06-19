@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLGatewayPrevention</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention</pre><div><p>Danish municipalities implementation guide for reporting §119 disease prevention and health promotion</p>\n</div></div>"
   },
   "url" : "http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "KLGatewayPrevention",
   "status" : "active",
-  "date" : "2024-06-14T10:04:53+02:00",
+  "date" : "2024-06-19T12:57:23+02:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -798,7 +798,7 @@
         "reference" : "Encounter/BrunoKontakt1Kost"
       },
       "name" : "BrunoKontakt1Kost",
-      "description" : "Brunos kontakt, hvor han har første kostvejledning",
+      "description" : "Brunos kontakt, hvor han har første kostvejledning som skærmbesøg",
       "exampleCanonical" : "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter"
     },
     {
@@ -1075,6 +1075,18 @@
       },
       "name" : "KLInterventionCodes119",
       "description" : "Intervention codes allowed in this implementation guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/EncounterClassCodes"
+      },
+      "name" : "KontaktKlasseKoder",
+      "description" : "Codes to describe the mode of delivery of an encounter",
       "exampleBoolean" : false
     },
     {

@@ -6,7 +6,7 @@
     <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-encounter"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter </b><a name="RuddiKontakt1Traening"> </a><a name="hcRuddiKontakt1Traening"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceEncounter &quot;RuddiKontakt1Traening&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-140-encounter.html">KLGateway140Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: <a href="CarePlan-RuddiTraeningsforloeb.html">CarePlan/RuddiTraeningsforloeb</a></p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' null ')</p><p><b>subject</b>: <a href="Patient-RuddiTestBerggren.html">Patient/RuddiTestBerggren</a></p><p><b>period</b>: 2022-05-31 10:00:00+0000 --&gt; 2022-05-31 10:30:00+0000</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter </b><a name="RuddiKontakt1Traening"> </a><a name="hcRuddiKontakt1Traening"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceEncounter &quot;RuddiKontakt1Traening&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-140-encounter.html">KLGateway140Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: <a href="CarePlan-RuddiTraeningsforloeb.html">CarePlan/RuddiTraeningsforloeb</a></p><p><b>status</b>: finished</p><p><b>class</b>: Skærmbesøg (Details: CareSocialCodes code 124be95d-6924-4609-9d2a-e7c73ae3ab3d  = ' Skærmbesøg ', stated as ' Skærmbesøg ')</p><p><b>subject</b>: <a href="Patient-RuddiTestBerggren.html">Patient/RuddiTestBerggren</a></p><p><b>period</b>: 2022-05-31 10:00:00+0000 --&gt; 2022-05-31 10:30:00+0000</p></div>
   </text>
   <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnCarePlanExtension">
     <valueReference>
@@ -15,8 +15,9 @@
   </extension>
   <status value="finished"/>
   <class>
-    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-    <code value="AMB"/>
+    <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+    <code value="124be95d-6924-4609-9d2a-e7c73ae3ab3d"/>
+    <display value="Skærmbesøg"/>
   </class>
   <subject>
     <reference value="Patient/RuddiTestBerggren"/>

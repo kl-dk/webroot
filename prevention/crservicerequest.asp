@@ -16,9 +16,9 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/prevention/ServiceRequest-"+id+".xml");
   else if (id == "BrunoRequestInformation")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ServiceRequest-BrunoRequestInformation.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ServiceRequest-BrunoRequestInformation.html");
   else if (id == "BrunoTidligereRequestInformation")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ServiceRequest-BrunoTidligereRequestInformation.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ServiceRequest-BrunoTidligereRequestInformation.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/prevention/ServiceRequest.html");
 
@@ -27,6 +27,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.0.0-milestone\output\crservicerequest.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.1.0-milestone\output\crservicerequest.asp) .
 </body>
 </html>

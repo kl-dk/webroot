@@ -376,7 +376,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_BrunoKontakt1Kost\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"BrunoKontakt1Kost\"> </a><a name=\"hcBrunoKontakt1Kost\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;BrunoKontakt1Kost&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-encounter.html\">KLGateway119Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: See on this page: CarePlan/BrunoforloebKost</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' null ')</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-09 10:00:00+0000 --&gt; 2022-06-09 10:30:00+0000</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_BrunoKontakt1Kost\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"BrunoKontakt1Kost\"> </a><a name=\"hcBrunoKontakt1Kost\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;BrunoKontakt1Kost&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-encounter.html\">KLGateway119Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: See on this page: CarePlan/BrunoforloebKost</p><p><b>status</b>: finished</p><p><b>class</b>: Skærmbesøg (Details: CareSocialCodes code 124be95d-6924-4609-9d2a-e7c73ae3ab3d  = ' Skærmbesøg ', stated as ' Skærmbesøg ')</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-09 10:00:00+0000 --&gt; 2022-06-09 10:30:00+0000</p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/BasedOnCarePlanExtension"^^xsd:anyURI ] ;
@@ -388,8 +388,9 @@
   ] ) ; # 
   fhir:status [ fhir:v "finished"] ; # 
   fhir:class [
-     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
-     fhir:code [ fhir:v "AMB" ]
+     fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "124be95d-6924-4609-9d2a-e7c73ae3ab3d" ] ;
+     fhir:display [ fhir:v "Skærmbesøg" ]
   ] ; # 
   fhir:subject [
      fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;

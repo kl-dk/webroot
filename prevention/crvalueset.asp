@@ -16,17 +16,19 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/prevention/ValueSet-"+id+".xml");
   else if (id == "ServiceTypes119")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ValueSet-ServiceTypes119.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ValueSet-ServiceTypes119.html");
   else if (id == "CancellationTypes")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ValueSet-CancellationTypes.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ValueSet-CancellationTypes.html");
+  else if (id == "EncounterClassCodes")
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ValueSet-EncounterClassCodes.html");
   else if (id == "CarePlanCategories119")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ValueSet-CarePlanCategories119.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ValueSet-CarePlanCategories119.html");
   else if (id == "DeliveryTypes119")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ValueSet-DeliveryTypes119.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ValueSet-DeliveryTypes119.html");
   else if (id == "KLInterventionCodes119")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ValueSet-KLInterventionCodes119.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ValueSet-KLInterventionCodes119.html");
   else if (id == "KLConditionCodes119")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.0.0/ValueSet-KLConditionCodes119.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/ValueSet-KLConditionCodes119.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/prevention/ValueSet.html");
 
@@ -35,6 +37,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.0.0-milestone\output\crvalueset.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.1.0-milestone\output\crvalueset.asp) .
 </body>
 </html>

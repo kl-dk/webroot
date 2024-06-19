@@ -315,7 +315,7 @@
           <profile value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_BrunoKontakt1Kost"> </a><p><b>Generated Narrative: Encounter </b><a name="BrunoKontakt1Kost"> </a><a name="hcBrunoKontakt1Kost"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceEncounter &quot;BrunoKontakt1Kost&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-119-encounter.html">KLGateway119Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: See on this page: CarePlan/BrunoforloebKost</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' null ')</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-09 10:00:00+0000 --&gt; 2022-06-09 10:30:00+0000</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_BrunoKontakt1Kost"> </a><p><b>Generated Narrative: Encounter </b><a name="BrunoKontakt1Kost"> </a><a name="hcBrunoKontakt1Kost"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceEncounter &quot;BrunoKontakt1Kost&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-119-encounter.html">KLGateway119Encounter</a></p></div><p><b>basedOnCarePlanExtension</b>: See on this page: CarePlan/BrunoforloebKost</p><p><b>status</b>: finished</p><p><b>class</b>: Skærmbesøg (Details: CareSocialCodes code 124be95d-6924-4609-9d2a-e7c73ae3ab3d  = ' Skærmbesøg ', stated as ' Skærmbesøg ')</p><p><b>subject</b>: See on this page: Patient/BrunoTestElmer</p><p><b>period</b>: 2022-06-09 10:00:00+0000 --&gt; 2022-06-09 10:30:00+0000</p></div>
         </text>
         <extension url="http://fhir.kl.dk/prevention/StructureDefinition/BasedOnCarePlanExtension">
           <valueReference>
@@ -324,8 +324,9 @@
         </extension>
         <status value="finished"/>
         <class>
-          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-          <code value="AMB"/>
+          <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+          <code value="124be95d-6924-4609-9d2a-e7c73ae3ab3d"/>
+          <display value="Skærmbesøg"/>
         </class>
         <subject>
           <reference value="Patient/BrunoTestElmer"/>

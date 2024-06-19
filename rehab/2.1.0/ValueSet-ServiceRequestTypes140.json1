@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ServiceRequestTypes140",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html\"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-ffd81f78-352e-4589-a195-5350dd1df2a4\">ffd81f78-352e-4589-a195-5350dd1df2a4</a></td><td style=\"color: #cccccc\">Almen</td><td>Midlertidig kopi af MedComs kode for genoptræning på alment niveau, som specificeret af den gode genoptræningsplan, https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/GGOP/Dokumentation/GGOP.pdf</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-8b962281-2ab6-4b10-9c91-4bac592d6d49\">8b962281-2ab6-4b10-9c91-4bac592d6d49</a></td><td style=\"color: #cccccc\">Basal</td><td>Almen genoptræning på basalt niveau</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-b679c454-2da2-46dd-9425-0e52d4aa2bf3\">b679c454-2da2-46dd-9425-0e52d4aa2bf3</a></td><td style=\"color: #cccccc\">Avanceret</td><td>Almen genoptræning på avanceret niveau</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-0c8e2bfc-1350-45d1-90da-c07e2645d073\">0c8e2bfc-1350-45d1-90da-c07e2645d073</a></td><td style=\"color: #cccccc\">Specialiseret</td><td>Midlertidig kopi af MedComs kode for genoptræning på specialieret niveau, som specificeret af den gode genoptræningsplan, https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/GGOP/Dokumentation/GGOP.pdf</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-83c89857-8fb8-4163-97b1-eb1a56345c29\">83c89857-8fb8-4163-97b1-eb1a56345c29</a></td><td style=\"color: #cccccc\">Rehabilitering</td><td>Midlertidig kopi af MedComs kode for rehabilitering på specialiseret niveau, som specificeret af den gode genoptræningsplan, https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/GGOP/Dokumentation/GGOP.pdf</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/rehab/ValueSet/ServiceRequestTypes140",
+  "version" : "2.1.0",
+  "name" : "ServiceRequestTypes140",
+  "title" : "ServiceRequestTypes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-19T13:07:39+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "The type of ServicRequest (GGOP), as defined by MedCom, supplemented by the two municipality specific types",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "concept" : [{
+        "code" : "ffd81f78-352e-4589-a195-5350dd1df2a4"
+      },
+      {
+        "code" : "8b962281-2ab6-4b10-9c91-4bac592d6d49"
+      },
+      {
+        "code" : "b679c454-2da2-46dd-9425-0e52d4aa2bf3"
+      },
+      {
+        "code" : "0c8e2bfc-1350-45d1-90da-c07e2645d073"
+      },
+      {
+        "code" : "83c89857-8fb8-4163-97b1-eb1a56345c29"
+      }]
+    }]
+  }
+}

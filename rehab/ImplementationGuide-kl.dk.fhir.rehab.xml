@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab"/>
-  <version value="2.0.0"/>
+  <version value="2.1.0"/>
   <name value="KLGatewayRehab"/>
   <status value="active"/>
-  <date value="2024-06-14T10:48:54+02:00"/>
+  <date value="2024-06-19T13:11:07+02:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -686,6 +686,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EncounterClassCodes"/>
+      </reference>
+      <name value="KontaktKlasseKoder"/>
+      <description value="Codes to describe the mode of delivery of an encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -747,7 +758,7 @@
         <reference value="Encounter/RuddiKontakt1Traening"/>
       </reference>
       <name value="RuddiKontakt1Traening"/>
-      <description value="Ruddis kontakt, hvor han har første træningsgang"/>
+      <description value="Ruddis kontakt, hvor han har første træningsgang, leveret som skærmbesøg"/>
       <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-encounter"/>
     </resource>
     <resource>

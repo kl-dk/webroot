@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention"/>
-  <version value="2.0.0"/>
+  <version value="2.1.0"/>
   <name value="KLGatewayPrevention"/>
   <status value="active"/>
-  <date value="2024-06-14T10:04:53+02:00"/>
+  <date value="2024-06-19T12:57:23+02:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -626,7 +626,7 @@
         <reference value="Encounter/BrunoKontakt1Kost"/>
       </reference>
       <name value="BrunoKontakt1Kost"/>
-      <description value="Brunos kontakt, hvor han har første kostvejledning"/>
+      <description value="Brunos kontakt, hvor han har første kostvejledning som skærmbesøg"/>
       <exampleCanonical value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter"/>
     </resource>
     <resource>
@@ -880,6 +880,17 @@
       </reference>
       <name value="KLInterventionCodes119"/>
       <description value="Intervention codes allowed in this implementation guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EncounterClassCodes"/>
+      </reference>
+      <name value="KontaktKlasseKoder"/>
+      <description value="Codes to describe the mode of delivery of an encounter"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

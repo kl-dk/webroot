@@ -16,7 +16,7 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/rehab/ImplementationGuide-"+id+".xml");
   else if (id == "kl.dk.fhir.rehab")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/index.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/index.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/rehab/ImplementationGuide.html");
 

@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLGatewayPrevention</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention</pre><div><p>Danish municipalities implementation guide for reporting §119 disease prevention and health promotion</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.kl.dk/prevention/ImplementationGuide/kl.dk.fhir.prevention"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
   fhir:name [ fhir:v "KLGatewayPrevention"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-14T10:04:53+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-19T12:57:23+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
@@ -754,7 +754,7 @@
          fhir:reference [ fhir:v "Encounter/BrunoKontakt1Kost" ]
        ] ;
        fhir:name [ fhir:v "BrunoKontakt1Kost" ] ;
-       fhir:description [ fhir:v "Brunos kontakt, hvor han har første kostvejledning" ] ;
+       fhir:description [ fhir:v "Brunos kontakt, hvor han har første kostvejledning som skærmbesøg" ] ;
        fhir:example [
          fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter"^^xsd:anyURI ;
          fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-encounter>
@@ -1058,6 +1058,18 @@
        ] ;
        fhir:name [ fhir:v "KLInterventionCodes119" ] ;
        fhir:description [ fhir:v "Intervention codes allowed in this implementation guide." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/prevention/ValueSet/EncounterClassCodes> ;
+         fhir:reference [ fhir:v "ValueSet/EncounterClassCodes" ]
+       ] ;
+       fhir:name [ fhir:v "KontaktKlasseKoder" ] ;
+       fhir:description [ fhir:v "Codes to describe the mode of delivery of an encounter" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

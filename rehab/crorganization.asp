@@ -16,11 +16,11 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/rehab/Organization-"+id+".xml");
   else if (id == "UdfoererAfRuddisRehab")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/Organization-UdfoererAfRuddisRehab.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/Organization-UdfoererAfRuddisRehab.html");
   else if (id == "AfsenderAfRuddisGGOP")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/Organization-AfsenderAfRuddisGGOP.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/Organization-AfsenderAfRuddisGGOP.html");
   else if (id == "7fdd6dc0-3f9f-4914-b34a-7c6495ba0880")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/Organization-7fdd6dc0-3f9f-4914-b34a-7c6495ba0880.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/Organization-7fdd6dc0-3f9f-4914-b34a-7c6495ba0880.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/rehab/Organization.html");
 

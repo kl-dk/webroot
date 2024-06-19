@@ -16,13 +16,13 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/rehab/CarePlan-"+id+".xml");
   else if (id == "RuddiTerapeutfagligUndersoegelse")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/CarePlan-RuddiTerapeutfagligUndersoegelse.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/CarePlan-RuddiTerapeutfagligUndersoegelse.html");
   else if (id == "RuddiFunctionalTraening")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/CarePlan-RuddiFunctionalTraening.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/CarePlan-RuddiFunctionalTraening.html");
   else if (id == "RuddiTraeningsforloeb")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/CarePlan-RuddiTraeningsforloeb.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/CarePlan-RuddiTraeningsforloeb.html");
   else if (id == "RuddiTraening")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.0.0/CarePlan-RuddiTraening.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/CarePlan-RuddiTraening.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/rehab/CarePlan.html");
 
