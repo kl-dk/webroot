@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/Observation/KirstenParentMentalStatus> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KirstenParentMentalStatus"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-mental-status"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-mental-status>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation </b><a name=\"KirstenParentMentalStatus\"> </a><a name=\"hcKirstenParentMentalStatus\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;KirstenParentMentalStatus&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-parent-mental-status.html\">KLGatewayChildrenIndicatorParentMentalStatus</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Forælders psykiske tilstand <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#2c39af9f-8e45-4c88-962f-e7a9e2cd31b6)</span></p><p><b>subject</b>: <a href=\"Patient-Kirsten.html\">Patient/Kirsten</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: Let psykisk reaktion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#b8220216-e185-451b-8d2a-67cdf73c42c3)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2c39af9f-8e45-4c88-962f-e7a9e2cd31b6" ] ;
+       fhir:display [ fhir:v "Forælders psykiske tilstand" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Kirsten> ;
+     fhir:reference [ fhir:v "Patient/Kirsten" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-07-07T00:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "b8220216-e185-451b-8d2a-67cdf73c42c3" ] ;
+       fhir:display [ fhir:v "Let psykisk reaktion" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SightCodes",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-bdcb835d-6ef6-4c4f-9fdf-94c3ebd17182\">bdcb835d-6ef6-4c4f-9fdf-94c3ebd17182</a></td><td style=\"color: #cccccc\">Normalt syn</td><td>Skolebørn: Screening viser intet problem med syn.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-0896610c-1322-44f2-836c-774de52fc3f1\">0896610c-1322-44f2-836c-774de52fc3f1</a></td><td style=\"color: #cccccc\">Potentielt problem med syn</td><td>Skolebørn: Screening viser potentielt problem med syn. Barnets syn skal undersøges nærmere.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html#FBOE-e489119b-de75-47cc-a53b-6ba90ed2c7e8\">e489119b-de75-47cc-a53b-6ba90ed2c7e8</a></td><td style=\"color: #cccccc\">Allerede kendt synsproblematik</td><td>Skolebørn: Barnet har en allerede kendt synsproblematik, som er identificeret ved tidligere undersøgelse(r) af barnets syn. Tidligere undersøgelser behøver ikke nødvendigvis at være foretaget af sundhedsplejen.</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/children/ValueSet/SightCodes",
+  "version" : "2.0.1",
+  "name" : "SightCodes",
+  "title" : "SynKoder",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-21T14:09:21+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Mandatory result values for sight in school children",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+      "concept" : [{
+        "code" : "bdcb835d-6ef6-4c4f-9fdf-94c3ebd17182"
+      },
+      {
+        "code" : "0896610c-1322-44f2-836c-774de52fc3f1"
+      },
+      {
+        "code" : "e489119b-de75-47cc-a53b-6ba90ed2c7e8"
+      }]
+    }]
+  }
+}

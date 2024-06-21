@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="BrunoforloebKostAfbrudtValidationerror"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-care-plan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan </b><a name="BrunoforloebKostAfbrudtValidationerror"> </a><a name="hcBrunoforloebKostAfbrudtValidationerror"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceCarePlan &quot;BrunoforloebKostAfbrudtValidationerror&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-klgateway-119-care-plan.html">KLGateway119CarePlan</a></p></div><p><b>status</b>: unknown</p><p><b>intent</b>: plan</p><p><b>category</b>: Interventionsforløb efter §119 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html">CareSocialCodes</a>#5c160c02-e858-4c1f-925a-71ed64844749)</span></p><p><b>subject</b>: <a href="Patient-BrunoTestElmer.html">Patient/BrunoTestElmer</a></p><p><b>period</b>: 2022-06-02 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Status</b></td><td><b>Performer</b></td></tr><tr><td style="display: none">*</td><td>cancelled</td><td><a href="Organization-UdfoererAfBrunosForebyggelse.html">Organization/UdfoererAfBrunosForebyggelse</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="unknown"/>
+  <intent value="plan"/>
+  <category>
+    <coding>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <code value="5c160c02-e858-4c1f-925a-71ed64844749"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/BrunoTestElmer"/>
+  </subject>
+  <period>
+    <start value="2022-06-02"/>
+  </period>
+  <activity>
+    <detail>
+      <status value="cancelled"/>
+      <performer>
+        <reference value="Organization/UdfoererAfBrunosForebyggelse"/>
+      </performer>
+    </detail>
+  </activity>
+</CarePlan>

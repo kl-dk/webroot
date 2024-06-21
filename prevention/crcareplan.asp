@@ -16,19 +16,19 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/prevention/CarePlan-"+id+".xml");
   else if (id == "BrunoKostvejledning")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/CarePlan-BrunoKostvejledning.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/CarePlan-BrunoKostvejledning.html");
   else if (id == "BrunoforloebKost")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/CarePlan-BrunoforloebKost.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/CarePlan-BrunoforloebKost.html");
   else if (id == "BrunoforloebKostAfbrudt")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/CarePlan-BrunoforloebKostAfbrudt.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/CarePlan-BrunoforloebKostAfbrudt.html");
   else if (id == "BrunoforloebKostAfbrudtValidationerror")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/CarePlan-BrunoforloebKostAfbrudtValidationerror.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/CarePlan-BrunoforloebKostAfbrudtValidationerror.html");
   else if (id == "BrunoKostvejledningValidationError")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/CarePlan-BrunoKostvejledningValidationError.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/CarePlan-BrunoKostvejledningValidationError.html");
   else if (id == "BrunoforloebKostValidationerror")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/CarePlan-BrunoforloebKostValidationerror.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/CarePlan-BrunoforloebKostValidationerror.html");
   else if (id == "BrunoAfklarendeSamtale")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/CarePlan-BrunoAfklarendeSamtale.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/CarePlan-BrunoAfklarendeSamtale.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/prevention/CarePlan.html");
 
@@ -37,6 +37,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.1.0-milestone\output\crcareplan.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.1.1-milestone\output\crcareplan.asp) .
 </body>
 </html>

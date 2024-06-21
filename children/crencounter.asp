@@ -16,15 +16,15 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/children/Encounter-"+id+".xml");
   else if (id == "10mthEncounter")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Encounter-10mthEncounter.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Encounter-10mthEncounter.html");
   else if (id == "2mthEncounter")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Encounter-2mthEncounter.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Encounter-2mthEncounter.html");
   else if (id == "NeedBasedEncounterRikke")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Encounter-NeedBasedEncounterRikke.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Encounter-NeedBasedEncounterRikke.html");
   else if (id == "2nd1mthEncounter")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Encounter-2nd1mthEncounter.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Encounter-2nd1mthEncounter.html");
   else if (id == "SchoolStartEncounter")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Encounter-SchoolStartEncounter.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Encounter-SchoolStartEncounter.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/children/Encounter.html");
 
@@ -33,6 +33,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from .0.0-milestone\output\crencounter.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from .0.1-milestone\output\crencounter.asp) .
 </body>
 </html>

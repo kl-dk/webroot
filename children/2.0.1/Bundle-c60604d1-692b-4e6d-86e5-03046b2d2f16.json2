@@ -1,0 +1,68 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "c60604d1-692b-4e6d-86e5-03046b2d2f16",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"]
+  },
+  "type" : "collection",
+  "timestamp" : "2020-06-01T23:25:12Z",
+  "entry" : [{
+    "fullUrl" : "https://test.fhir.dk/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "e60106e2-413e-46c5-8a3f-62d8e77ce794",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794\"> </a><p><b>Generated Narrative: Patient </b><a name=\"e60106e2-413e-46c5-8a3f-62d8e77ce794\"> </a><a name=\"hce60106e2-413e-46c5-8a3f-62d8e77ce794\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePatient &quot;e60106e2-413e-46c5-8a3f-62d8e77ce794&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-citizen.html\">KLGatewayChildrenCitizen</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/0505209996\u00a0(use:\u00a0official)</p><p><b>active</b>: true</p><p><b>managingOrganization</b>: <span><code>urn:oid:1.2.208.176.1.1</code>/451000016003\u00a0(use:\u00a0official)</span></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0505209996"
+      }],
+      "active" : true,
+      "managingOrganization" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "urn:oid:1.2.208.176.1.1",
+          "value" : "451000016003"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Encounter/78742a92-91b1-489f-9fea-6901f6d0b34b",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "78742a92-91b1-489f-9fea-6901f6d0b34b",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_78742a92-91b1-489f-9fea-6901f6d0b34b\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"78742a92-91b1-489f-9fea-6901f6d0b34b\"> </a><a name=\"hc78742a92-91b1-489f-9fea-6901f6d0b34b\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;78742a92-91b1-489f-9fea-6901f6d0b34b&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-children-encounter.html\">KLGatewayChildrenEncounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: home health (Details: ActCode code HH  = ' home health ', stated as ' null ')</p><p><b>type</b>: Andet besøg inden første måned <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.0.0/CodeSystem-FBOE.html\">FBOE</a>#563c4174-f451-4c87-8db8-8d5472ca7ff6)</span></p><p><b>subject</b>: See on this page: Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p><b>period</b>: 2020-06-01 --&gt; (ongoing)</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "HH"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+          "code" : "563c4174-f451-4c87-8db8-8d5472ca7ff6",
+          "display" : "Andet besøg inden første måned"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794"
+      },
+      "period" : {
+        "start" : "2020-06-01"
+      }
+    }
+  }]
+}
