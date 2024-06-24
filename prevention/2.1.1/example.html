@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example -  v2.1.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">2.1.1 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="example.html">Example</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLGatewayPrevention (v2.1.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/prevention/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Example</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#first-event-june-2nd-2022" id="markdown-toc-first-event-june-2nd-2022">First Event June 2nd, 2022</a></li>
+  <li><a href="#second-event-june-10th-2022" id="markdown-toc-second-event-june-10th-2022">Second Event June 10th, 2022</a></li>
+  <li><a href="#third-to-fifth-event-june-15th-to-june29th" id="markdown-toc-third-to-fifth-event-june-15th-to-june29th">Third to fifth event June 15th to June29th</a></li>
+  <li><a href="#sixth-event-july-4th" id="markdown-toc-sixth-event-july-4th">Sixth event July 4th</a></li>
+  <li><a href="#seventh-event-july-9th" id="markdown-toc-seventh-event-july-9th">Seventh event July 9th</a></li>
+</ul>
+
+</div>
+
+<p>This page describes subsequent delivery reports for the citizen Bruno Test Elmer.
+For each delivery report the story is told (in Danish), and a reporting example is given.</p>
+
+<h3 id="first-event-june-2nd-2022">First Event June 2nd, 2022</h3>
+
+<h4 id="story">Story</h4>
+<p>Bruno med CPR: 1502779995, har indberetter Holbæk kommune (SOR: 451000016003). Bruno har både diabetes type 2 og KOL.</p>
+
+<p>Bruno er af egen læge henvist til afklarende samtale ved Holbæk kommunes forebyggelsestilbud til borgere med kronisk sygdom pga. sin type-2 diabetes. Lægen vurderer at han har brug for fokus på ernæring. Henvisningen modtages af Holbæk kommune d. 2. juni 2022, og samme dag planlægges Brunos afklarende samtale.</p>
+
+<h4 id="reporting">Reporting</h4>
+<p>The delivery report contains a Citizen (Bruno), ServiceRequest (vedr. henvisningen), two Organization (egen læge og udføreren af afklarende samtale),  FocusCondition (Type-2 diabetes), PlannedIntervention (afklarende samtale).</p>
+
+<p>The report for this is found here: <a href="Bundle-e87d5e68-e5f3-476f-988f-4efda86b0645.html">DeliveryReport-Bruno-1</a></p>
+
+<h3 id="second-event-june-10th-2022">Second Event June 10th, 2022</h3>
+<p>Til Brunos afklarende samtale fortæller han både om sin KOL og diabetes, og de mange udfordringer det giver i hverdagen. I samråd med den sundhedsprofessionelle bliver de enige om at fokusere på de problemer der er ift. tilstanden ‘ernæring’ og igangsætte indsatsen ‘madlavning i praksis’</p>
+
+<h4 id="reporting-1">Reporting</h4>
+<p>A delivery report is generated containing the Citizen and an Organization (the one delivering the intervention). These are not updated from last time, but they are reported because the new content references these instances.</p>
+
+<p>The delivery report also contains the updated PlannedIntervention (Afklarende samtale).</p>
+
+<p>The new content in the delivery report is an Enconter (Afklarende samtale), a Condition (ernæring), a CarePlan (§119 forbyggelsesforløb) and a PlannedIntervetion (Madlavning i praksis).</p>
+
+<p>The report for this is found here: <a href="Bundle-8c3f35d7-7437-4fcf-90d2-49e04701d0ec.html">DeliveryReport-Bruno-2</a></p>
+
+<h3 id="third-to-fifth-event-june-15th-to-june29th">Third to fifth event June 15th to June29th</h3>
+<p>Bruno har første gang på holdet ‘Madlavning i praksis’ d. 15. juni, og møder i alt tre gange af to timer. Dette medfører en indberetning til Gateway af tid forbrugt på kontakterne.</p>
+
+<p>De tre rapporter vil være næsten ens, og derfor er det udelukkende rapporten fra 29. juni, der vises her. Læg mærke til at rapporten ikke indeholder tidligere indberettede kontakter - det er fordi de hverken ændrer sig eller refereres.</p>
+
+<h4 id="reporting-2">Reporting</h4>
+<p>The delivery report contains a Citizen, an Organization (the one delivering the intervention) and a CarePlan (§119 forebyggelsesforløbet). These are not updated from last time, but they are reported because the new content references these instances.</p>
+
+<p>The new content in the delivery report is an Encounter (kontakt på indsatsforløbet der omhandler madlavning i praksis)</p>
+
+<p>The report for this is found here: <a href="Bundle-5135080e-fbaf-4575-afe6-f037d4541e06.html">DeliveryReport-Bruno-5</a></p>
+
+<h3 id="sixth-event-july-4th">Sixth event July 4th</h3>
+<h4 id="story-1">Story</h4>
+<p>Bruno bliver indlagt d. 1.-3. juli pga. en forværring i sin KOL. D. 4. juli sender Sygehuslægen en henvisning til kommunen angående iværksættelse af et 119 forløb, gerne med fokus på sygdomsmestring. Fordi Bruno allerede er i §119 forløb planlægges der en behovssamtale (ikke en afklarende samtale).</p>
+
+<p>(d. 6. juli er der igen en kontakt på ‘Madlavning i praksis’. Rapporten dog ikke er medtaget her, fordi den ligner foregående)</p>
+
+<h4 id="reporting-3">Reporting</h4>
+<p>The delivery report contains a Citizen, and an Organization (the one delivering the intervention). These are not updated from last time, but they are reported because the new content references these instances.</p>
+
+<p>The new content in the delivery report is an Organization (Medicinsk observationsafdeling, Holbæk sygehus), FocusCondition (KOL), ServiceRequest (henvisning til 119-forløb) og PlannedIntervention (behovssamtale).</p>
+
+<p>The report for this is found here: <a href="Bundle-974cabc7-d2e0-4db0-bfa4-6cd5af7103de.html">DeliveryReport-Bruno-6</a></p>
+
+<h3 id="seventh-event-july-9th">Seventh event July 9th</h3>
+
+<h4 id="story-2">Story</h4>
+<p>Bruno er til behovssamtale. Bruno og den sundhedsprofessionelle bliver enige om, at Bruno bør styrke sin tilstand ‘Sundhedskompetence’ ved at indgå i et hold med fokus på KOL dvs. indsatsen ‘Sygdomshåndtering’. Denne indsats skal køre parallelt med at Bruno gør sit forløb vedr. ‘Madlavning i praksis’ færdig, som han er blevet meget glad for.</p>
+
+<p>(herefter rapporteres en række kontakter på de to forløb, og Madlavning i praksis og ernærings-tilstanden afsluttes. Dette er ikke er med i eksemplet)</p>
+
+<h4 id="reporting-4">Reporting</h4>
+<p>The delivery report contains a Citizen, and an Organization (the one delivering the intervention). These are not updated from last time, but they are reported because the new content references these instances.</p>
+
+<p>Updated content is the PlannedIntervention (Behovssamtale), it is changed because it is completed.</p>
+
+<p>The new content in the delivery report is an Encounter (behovssamtale kontakt), Condition (Sundhedskompetence), CarePlan (nyt 119 indsatsforløb), PlannedIntervention (Sygdomshåndtering).</p>
+
+<p>The report for this is found here: <a href="Bundle-88889c22-b86d-4ceb-81d8-38a158f12bf4.html">DeliveryReport-Bruno-7</a></p>
+
+<h4 id="eighth-event-september-30th-2022">Eighth event September 30th 2022</h4>
+
+<h4 id="story-3">Story</h4>
+<p>Ved sin afslutningssamtale får Bruno afsluttet sin tilstand ‘Sundhedskompetence’ og indsats ‘Sygdomshåndtering’, som er gået rigtig godt. Holbæk kommune har fokus på systematisk opfølgning. Det betyder, at der oprettes et opfølgningsforløb til Bruno i forbindelse med afslutningen.</p>
+
+<h4 id="reporting-5">Reporting</h4>
+<p>The delivery report contains a Citizen, and an Organization (the one delivering the intervention). These are not updated from last time, but they are reported because the new content references these instances.</p>
+
+<p>The updated content in this delivery report is a CarePlan (§119 indsatsforløbet) and a PlannedIntervention (Madlavning i praksis) which are completed. In addition a Condition (Sundhedskopmpetencer) is ended.</p>
+
+<p>The new content is a PlannedIntervention (afsluttende samtale) and its Encounter (afsluttende samtale kontakten), a CarePlan (Opfølgningsforløb) and its PlannedIntervention (opfølgning).</p>
+
+<p>The report for this is found here: <a href="Bundle-738ec570-6bb6-4690-9a88-1dbed46d65ed.html">DeliveryReport-Bruno-8</a></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.prevention#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 24, 2024 12:35+0200">2024-06-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

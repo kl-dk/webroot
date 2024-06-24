@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/prevention/ServiceRequest/BrunoRequestInformation> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BrunoRequestInformation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-servicerequest"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/prevention/StructureDefinition/klgateway-119-servicerequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest </b><a name=\"BrunoRequestInformation\"> </a><a name=\"hcBrunoRequestInformation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceServiceRequest &quot;BrunoRequestInformation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-119-servicerequest.html\">KLGateway119ServiceRequest</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>code</b>: Kommunal Sundhedsfremme og forebyggelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#a71921ea-fe83-441d-933b-cc21d0b3c8c3)</span></p><p><b>subject</b>: <a href=\"Patient-BrunoTestElmer.html\">Patient/BrunoTestElmer</a></p><p><b>authoredOn</b>: 2022-05-29</p><p><b>requester</b>: <a href=\"Organization-AfsenderAfBrunosHenvisning.html\">Organization/AfsenderAfBrunosHenvisning</a></p><p><b>reasonReference</b>: <a href=\"Condition-BrunoAktionsdiagnoseRequest.html\">Condition/BrunoAktionsdiagnoseRequest</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "a71921ea-fe83-441d-933b-cc21d0b3c8c3" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/prevention/Patient/BrunoTestElmer> ;
+     fhir:reference [ fhir:v "Patient/BrunoTestElmer" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2022-05-29"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://fhir.kl.dk/prevention/Organization/AfsenderAfBrunosHenvisning> ;
+     fhir:reference [ fhir:v "Organization/AfsenderAfBrunosHenvisning" ]
+  ] ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://fhir.kl.dk/prevention/Condition/BrunoAktionsdiagnoseRequest> ;
+     fhir:reference [ fhir:v "Condition/BrunoAktionsdiagnoseRequest" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
