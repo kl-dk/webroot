@@ -16,9 +16,9 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/prevention/Encounter-"+id+".xml");
   else if (id == "BrunoKontakt1Kost")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/Encounter-BrunoKontakt1Kost.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/Encounter-BrunoKontakt1Kost.html");
   else if (id == "BrunoKontaktAfklarende")
-    Response.Redirect("http://fhir.kl.dk/prevention/2.1.1/Encounter-BrunoKontaktAfklarende.html");
+    Response.Redirect("http://fhir.kl.dk/prevention/2.1.0/Encounter-BrunoKontaktAfklarende.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/prevention/Encounter.html");
 
@@ -27,6 +27,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.1.1-milestone\output\crencounter.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from #2.1.0-milestone\output\crencounter.asp) .
 </body>
 </html>

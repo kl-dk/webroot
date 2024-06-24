@@ -16,11 +16,11 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/children/Patient-"+id+".xml");
   else if (id == "Kirsten")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Patient-Kirsten.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Patient-Kirsten.html");
   else if (id == "Rikke")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Patient-Rikke.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Patient-Rikke.html");
   else if (id == "Lars")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Patient-Lars.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.0/Patient-Lars.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/children/Patient.html");
 
@@ -29,6 +29,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from .0.1-milestone\output\crpatient.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from .0.0-milestone\output\crpatient.asp) .
 </body>
 </html>
