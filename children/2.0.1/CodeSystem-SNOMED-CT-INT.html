@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SNOMED CT International Edition - KLChildren implementation guide, an implementation of FBU v2.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4.64"}
+    h3,h4,h5,h6{--heading-prefix:"4.64"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
+            <br/>
+            <span style="display:inline-block;">2.0.1 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="example.html">Example small children</a>
+  </li>
+  <li>
+    <a href="example2.html">Example school children</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SNOMED CT International Edition</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-SNOMED-CT-INT.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SNOMED-CT-INT.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SNOMED-CT-INT.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: SNOMED CT International Edition
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://snomed.info/sct<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://snomed.info/sct"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.0.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://snomed.info/sct|2.0.1"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-09-30
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SNOMED_CT_INT</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.6.96
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This artefact includes content from SNOMED Clinical Terms (SNOMED CT) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>SNOMED CT is a core clinical healthcare terminology that contains concepts with unique meanings and formal logic based definitions organized into hierarchies.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-BodyheightSCTobservablesChildren.html">BodyheightSCTobservablesChildren</a></li>
+ <li><a href="http://fhir.kl.dk/term/2.1.0/ValueSet-KLComplicationCodesSCT.html">KLComplicationCodesSCT</a></li>
+ <li><a href="http://fhir.kl.dk/term/2.1.0/ValueSet-KLEvaluationTypeCodesSCT.html">KLEvaluationTypeCodesSCT</a></li>
+ <li><a href="http://fhir.kl.dk/term/2.1.0/ValueSet-KLObservationCodes.html">KLObservationCodes</a></li>
+ <li><a href="http://hl7.dk/fhir/core/3.2.0/ValueSet-dk-core-SCTBasicObservation.html">SCTBasicObservation</a></li>
+ <li><a href="http://hl7.dk/fhir/core/3.2.0/ValueSet-dk-core-TechniquesSCTCodes.html">TechniquesSCTCodes</a></li>
+ <li><a href="http://hl7.dk/fhir/core/3.2.0/ValueSet-sor-organization-type.html">SorOrganizationType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMEDCTAdditionalDosageInstructions</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-adverse-event-type.html">SNOMEDCTClinicalFindings</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html">AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-animal-breeds.html">AnimalBreeds</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-animal-species.html">AnimalSpecies</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-barrier.html">Barrier</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-bodysite-laterality.html">Laterality</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-bodystructure-code.html">SNOMEDCTMorphologicAbnormalities</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html">BodystructureLocationQualifier</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html">FacilityTypeCodeValueSet</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-c80-practice-codes.html">PracticeSettingCodeValueSet</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html">CarePlanActivityOutcome</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-care-plan-category.html">CarePlanCategory</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-clinicalimpression-prognosis.html">ClinicalImpressionPrognosis</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-condition-cause.html">ConditionCauseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-condition-course.html">ConditionCourseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-outcome.html">ConditionOutcomeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-condition-predecessor.html">ConditionPredecessorCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-consistency-type.html">FluidConsistencyTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-container-material.html">ContainerMaterials</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-dataelement-sdcobjectclass.html">DataElementSDCObjectClass</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-dataelement-sdcobjectclassproperty.html">DataElementSDCObjectClassProperty</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-designation-use.html">DesignationUse</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-device-action.html">ProcedureDeviceActionCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-device-kind.html">FHIRDeviceTypes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-device-type.html">DeviceType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-diagnostic-based-on-snomed.html">DiagnosticAttachmentType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-diet-type.html">DietCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-entformula-type.html">EnteralFormulaTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-feeding-device.html">FeedingDeviceCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-flag-code.html">FlagCode</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-focal-subject.html">FocalSubjectCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-food-type.html">FoodTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-goal-start-event.html">GoalStartEvent</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-evaluation-target-disease.html">ImmunizationEvaluationTargetDiseaseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-reason.html">ImmunizationReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-recommendation-reason.html">ImmunizationRecommendationReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-recommendation-target-disease.html">ImmunizationRecommendationTargetDiseaseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-status-reason.html">ImmunizationStatusReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-target-disease.html">ImmunizationTargetDiseaseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-investigation-sets.html">InvestigationType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-media-view.html">MediaCollectionView/Projection</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-modified-foodtype.html">TextureModifiedFoodTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-nutrient-code.html">NutrientModifierCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">PractitionerRole</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-prepare-patient-prior-specimen-collection.html">PreparePatient</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-category.html">ProcedureCategoryCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-followup.html">ProcedureFollowUpCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html">ProcedureNotPerformedReason(SNOMED-CT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-outcome.html">ProcedureOutcomeCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-protective-factor.html">ProtectiveFactor</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-questionnaire-category.html">QuestionnaireCategoryCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html">SNOMEDCTReasonMedicationNotGivenCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html">SNOMEDCTDrugTherapyStatusCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-sequence-species.html">SNOMEDCTCodesForSpecies</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">ServiceRequestCategoryCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html">ServiceRequestOrderDetailsCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-specimen-additive-substance.html">SpecimenAdditiveSubstanceCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-specimen-collection.html">SpecimenCollection</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-specimen-collection-method.html">FHIRSpecimenCollectionMethod</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-specimen-container-type.html">SpecimenContainerType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-substance-code.html">SubstanceCode</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-supplement-type.html">SupplementTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-supply-item.html">SNOMEDCTSupplyItem</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-texture-code.html">TextureModifierCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-use-context.html">Context of Use ValueSet</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-device-kind.html">FHIRDeviceTypes</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-edible-substance-type.html">TypesOfEdibleSubstances</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-gender-identity.html">GenderIdentity</a></li>
+ <li><a href="http://terminology.hl7.org/3.1.0/ValueSet-snomed-intl-gps.html">SnomedIntlGps</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-AllergyStatus.html">AllergyStatus</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-KnowledgeSubjectObservationValue.html">KnowledgeSubjectObservationValue</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-KnowledgeSubtopicObservationValue.html">KnowledgeSubtopicObservationValue</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-ObservationMeasureCountableItems.html">ObservationMeasureCountableItems</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-immunizationForecastStatusObservationValue.html">ImmunizationForecastStatusObservationValue</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This case-sensitive code system <code>http://snomed.info/sct</code> provides <b>a fragment</b> that includes following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">27113001<a name="SNOMED-CT-INT-27113001"> </a></td>
+<td>Body weight</td></tr>
+<tr><td style="white-space:nowrap">363812007<a name="SNOMED-CT-INT-363812007"> </a></td>
+<td>Head circumference</td></tr>
+<tr><td style="white-space:nowrap">229819007<a name="SNOMED-CT-INT-229819007"> </a></td>
+<td>Tobacco use and exposure (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">285854004<a name="SNOMED-CT-INT-285854004"> </a></td>
+<td>Emotion</td></tr>
+<tr><td style="white-space:nowrap">276885007<a name="SNOMED-CT-INT-276885007"> </a></td>
+<td>Core body temperature</td></tr>
+<tr><td style="white-space:nowrap">1153637007<a name="SNOMED-CT-INT-1153637007"> </a></td>
+<td>Body height (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">248333004<a name="SNOMED-CT-INT-248333004"> </a></td>
+<td>Standing height</td></tr>
+<tr><td style="white-space:nowrap">1149101003<a name="SNOMED-CT-INT-1149101003"> </a></td>
+<td>Recumbent body height (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">225597007<a name="SNOMED-CT-INT-225597007"> </a></td>
+<td>Ability to interact with others (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">450320001<a name="SNOMED-CT-INT-450320001"> </a></td>
+<td>Edinburgh postnatal depression scale score</td></tr>
+<tr><td style="white-space:nowrap">718133008<a name="SNOMED-CT-INT-718133008"> </a></td>
+<td>Strengths and Difficulties Questionnaire for parents or teachers of 4-17 year olds score</td></tr>
+<tr><td style="white-space:nowrap">717639006<a name="SNOMED-CT-INT-717639006"> </a></td>
+<td>Strengths and Difficulties Questionnaire self-rated for 11-17 year old score</td></tr>
+<tr><td style="white-space:nowrap">169740003<a name="SNOMED-CT-INT-169740003"> </a></td>
+<td>Infant feeding method (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">363788007<a name="SNOMED-CT-INT-363788007"> </a></td>
+<td>Clinical history/examination observable (observable entity)</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 24, 2024 13:04+0200">2024-06-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="kl.dk.fhir.children"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>
+</div></div>
+  </text>
+  <url value="http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children"/>
+  <version value="2.0.1"/>
+  <name value="KLChildren"/>
+  <title value="KLChildren implementation guide, an implementation of FBU"/>
+  <status value="active"/>
+  <date value="2024-06-24T13:04:27+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway"/>
+  <packageId value="kl.dk.fhir.children"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="5.5.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_dk_core">
+    <uri value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
+    <packageId value="hl7.fhir.dk.core"/>
+    <version value="3.2.0"/>
+  </dependsOn>
+  <dependsOn id="kl_dk_fhir_term">
+    <uri value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
+    <packageId value="kl.dk.fhir.term"/>
+    <version value="2.1.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://snomed.info/sct"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://loinc.org"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.kl.dk/children/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://snomed.info/sct"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://loinc.org"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.kl.dk/children/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/10mthEncounter"/>
+      </reference>
+      <name value="10 måneders besøg ved Rikke"/>
+      <description value="Kontakt, hvor der leveres Besøg hos det 8-11 måneder gamle barn til Rikke og hendes familie"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/2mthEncounter"/>
+      </reference>
+      <name value="2 måneders besøg ved Rikke"/>
+      <description value="Kontakt, hvor der leveres Besøg hos det ca. 2 måneder gamle barn til Rikke og hendes familie"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/4cda6c3c-856c-4fe3-ac90-9b6f968207c3"/>
+      </reference>
+      <name value="4cda6c3c-856c-4fe3-ac90-9b6f968207c3"/>
+      <description value="DeliveryReport-Lars-2a"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/567a4d32-b3eb-46d6-8564-c7c2a1a1b903"/>
+      </reference>
+      <name value="567a4d32-b3eb-46d6-8564-c7c2a1a1b903"/>
+      <description value="DeliveryReport-Rikke-5"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/5f1d5816-a906-4314-a6f4-69b400682ec6"/>
+      </reference>
+      <name value="5f1d5816-a906-4314-a6f4-69b400682ec6"/>
+      <description value="DeliveryReport-Lars-1"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/74dcb49e-dd6a-4450-9fb8-85ad0e7bed38"/>
+      </reference>
+      <name value="74dcb49e-dd6a-4450-9fb8-85ad0e7bed38"/>
+      <description value="DeliveryReport-Rikke-2b"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/84cf4f74-0cc7-47fe-8301-3bc8eb0ddd8f"/>
+      </reference>
+      <name value="84cf4f74-0cc7-47fe-8301-3bc8eb0ddd8f"/>
+      <description value="DeliveryReport-Rikke-4b"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/9a966368-052f-42e5-87fa-e57d9b8cbf2c"/>
+      </reference>
+      <name value="9a966368-052f-42e5-87fa-e57d9b8cbf2c"/>
+      <description value="DeliveryReport-Lars-2b"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/a27ab0ea-4018-4516-900c-f1249a28dc37"/>
+      </reference>
+      <name value="a27ab0ea-4018-4516-900c-f1249a28dc37"/>
+      <description value="DeliveryReport-Rikke-3"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/a50c7477-c817-4f98-92a8-b8c15f015d9e"/>
+      </reference>
+      <name value="a50c7477-c817-4f98-92a8-b8c15f015d9e"/>
+      <description value="DeliveryReport-Rikke-7"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/ADBBAnswerRikke"/>
+      </reference>
+      <name value="ADBBAnswerRikke"/>
+      <description value="Udfyldt ADBB skema for Rikke"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/AIMSAnswerRikke"/>
+      </reference>
+      <name value="AIMSAnswerRikke"/>
+      <description value="Udfyldt AIMS skema for Rikke"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/2nd1mthEncounter"/>
+      </reference>
+      <name value="Andet besøg inden første måned ved Rikke"/>
+      <description value="Kontakt, hvor der leveres Andet besøg inden første måned til Rikke og hendes familie"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/b9479825-6be1-4fa1-a2ae-74fe67014caa"/>
+      </reference>
+      <name value="b9479825-6be1-4fa1-a2ae-74fe67014caa"/>
+      <description value="DeliveryReport-Rikke-1"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BasedOnInterventionExtension"/>
+      </reference>
+      <name value="basedOnInterventionExtension"/>
+      <description value="Extension for pointing to the intervention describing why this encounter is taking place (will be part of R5 and comming FHIR versions without needing the extension)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/NeedBasedEncounterRikke"/>
+      </reference>
+      <name value="Behovskontakt ved Rikke på skærm"/>
+      <description value="Kontakt, hvor der leveres behovskontakt på skærm ved Rikke og hendes familie"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/c5b55e0e-3bc4-468a-8600-1b23617dbb58"/>
+      </reference>
+      <name value="c5b55e0e-3bc4-468a-8600-1b23617dbb58"/>
+      <description value="DeliveryReport-Rikke-2a"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/c60604d1-692b-4e6d-86e5-03046b2d2f16"/>
+      </reference>
+      <name value="c60604d1-692b-4e6d-86e5-03046b2d2f16"/>
+      <description value="DeliveryReport-Rikke-4a"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/d2e57785-7d0e-4b30-9e51-62c14185b9ed"/>
+      </reference>
+      <name value="d2e57785-7d0e-4b30-9e51-62c14185b9ed"/>
+      <description value="DeliveryReport-Rikke-8"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/dbe422ac-dd15-4562-838d-1f5ff9ae45d8"/>
+      </reference>
+      <name value="dbe422ac-dd15-4562-838d-1f5ff9ae45d8"/>
+      <description value="DeliveryReport-Rikke-6"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/EPDSAnswerKirsten"/>
+      </reference>
+      <name value="EPDSAnswerKirsten"/>
+      <description value="EPDS besvarelse mor, Kirsten"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NutritionCodes"/>
+      </reference>
+      <name value="ErnæringKoder"/>
+      <description value="Mandatory result values for nutrition in school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FindingInformer"/>
+      </reference>
+      <name value="FindingInformer"/>
+      <description value="Extension for pointing to who the source of information is"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ParentTypes"/>
+      </reference>
+      <name value="ForælderTyper"/>
+      <description value="Limitation on HL7 role class to only represent parent-relationships, as accepted in the children data-set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ChildrenParentRelationshipCodes"/>
+      </reference>
+      <name value="ForældreBarnRelationsKoder"/>
+      <description value="Mandatory result values for parent child relationship in small children and school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ParentsMentalCodes"/>
+      </reference>
+      <name value="ForældresPsykiskeTilstandKoder"/>
+      <description value="Mandatory result values for parents mental state"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ParentSocialStatusCodes"/>
+      </reference>
+      <name value="ForældresSårbarhedKoder"/>
+      <description value="Mandatory result values for parents social status. Only documented in parents of small children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PhysicalActivityCodes"/>
+      </reference>
+      <name value="FysiskAktiviteteKoder"/>
+      <description value="Mandatory result values for physical activity in school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BodyheightSCTobservablesChildren"/>
+      </reference>
+      <name value="HøjdeObservationskoderSCT"/>
+      <description value="SNOMED CT observables for length/height"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/HearingCodes"/>
+      </reference>
+      <name value="HørelseKoder"/>
+      <description value="Mandatory result values for hearning in school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/SchoolStartEncounter"/>
+      </reference>
+      <name value="Indskolingsundersøgelse Lars"/>
+      <description value="Kontakt, der er Lars' indskolingsundersøgelse"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FindingInformerCodes"/>
+      </reference>
+      <name value="KildeTilOplysningKoder"/>
+      <description value="Codes for who informed the findings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Kirsten"/>
+      </reference>
+      <name value="Kirsten"/>
+      <description value="Borger, Kirsten"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/KirstenParentMentalStatus"/>
+      </reference>
+      <name value="KirstenParentMentalStatus"/>
+      <description value="Kirstens psykiske tilstand ved Rikkes 2mrd"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-mental-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/klgateway-children-adbb"/>
+      </reference>
+      <name value="KLGatewayChildrenADBB"/>
+      <description value="Alarm Distress Baby Scale (ADBB)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/klgateway-children-aims"/>
+      </reference>
+      <name value="KLGatewayChildrenAIMS"/>
+      <description value="Alberta Infant Motor Scale (AIMS)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-bodyheight"/>
+      </reference>
+      <name value="KLGatewayChildrenBodyHeight"/>
+      <description value="Body height profile used in Danish Municipalities, derived from HL7 DK standard profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-bodyweight"/>
+      </reference>
+      <name value="KLGatewayChildrenBodyWeight"/>
+      <description value="Profile of HL7 body weight profile used in Danish Municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-citizen"/>
+      </reference>
+      <name value="KLGatewayChildrenCitizen"/>
+      <description value="Administrative information about a citizen receiving care or care related services."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-delivery-report"/>
+      </reference>
+      <name value="KLGatewayChildrenDeliveryReport"/>
+      <description value="Delivery report to deliver data for each child, including state of the family."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-encounter"/>
+      </reference>
+      <name value="KLGatewayChildrenEncounter"/>
+      <description value="Encounter for health prevention and need-based visits from childrens nurses"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/klgateway-children-epds"/>
+      </reference>
+      <name value="KLGatewayChildrenEPDS"/>
+      <description value="Edinburgh postnatale depressionscore (EPDS)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-exam-result"/>
+      </reference>
+      <name value="KLGatewayChildrenExamResult"/>
+      <description value="Observation used to express qualitative examination results to be reported to the children database"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-feeding-observation"/>
+      </reference>
+      <name value="KLGatewayChildrenFeedingObservation"/>
+      <description value="Feeding observation profile used in the children database"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-headcircum"/>
+      </reference>
+      <name value="KLGatewayChildrenHeadCircumference"/>
+      <description value="Head circumference profile used in Danish Municipalities, derived from HL7 Denmark standard profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-indicator"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicator"/>
+      <description value="Abstract indicator profile, used in the children database"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-communication"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorCommunication"/>
+      <description value="Childrens communication, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-hearing"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorHearing"/>
+      <description value="Childrens hearing, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-social-interaction"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorInteraction"/>
+      <description value="Childrens social interaction, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-motor-function"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorMotorFunction"/>
+      <description value="Childrens motor function, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-nicotine"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorNicotine"/>
+      <description value="Children's use of nicotine, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-nutrition"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorNutrition"/>
+      <description value="Childrens nutrition, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-parent-mental-status"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorParentMentalStatus"/>
+      <description value="Parent's mental status, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-parent-relationship"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorParentRelationship"/>
+      <description value="Parent-child relationship, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-parent-social-status"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorParentSocialStatus"/>
+      <description value="parent's social status, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-passive-smoking"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorPassiveSmoking"/>
+      <description value="Children's passive smoking, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-physical-activity"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorPhysicalActivity"/>
+      <description value="Childrens physical activity, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-sight"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorSight"/>
+      <description value="Childrens sight, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-sleep"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorSleep"/>
+      <description value="Childrens sleep observation, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-social-support-network"/>
+      </reference>
+      <name value="KLGatewayChildrenIndicatorSocialSupportNetwork"/>
+      <description value="Families social support network, that inherits from Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-intervention"/>
+      </reference>
+      <name value="KLGatewayChildrenIntervention"/>
+      <description value="Profile representing interventions in the children database"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-location"/>
+      </reference>
+      <name value="KLGatewayChildrenLocation"/>
+      <description value="Profile representing a location, in this implementation guide only used to represent a school"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/klgateway-children-puf"/>
+      </reference>
+      <name value="KLGatewayChildrenPUF"/>
+      <description value="Copenhagen Infant Mental Health Screening/PSYKISK UDVIKLING OG FUNKTION (PUF)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KLGatewayChildrenQuestionnaire"/>
+      </reference>
+      <name value="KLGatewayChildrenQuestionnaire"/>
+      <description value="Questionnaire profile, for all Questionaires in kl-children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-questionnaire-response"/>
+      </reference>
+      <name value="KLGatewayChildrenQuestionnaireResponse"/>
+      <description value="Questionnaire response profile, for all questionaires in kl-children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-related-parent"/>
+      </reference>
+      <name value="KLGatewayChildrenRelatedParent"/>
+      <description value="Profile for describing the relationship between the child, and the parents who are also relevant for the journal"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/klgateway-children-sdq11-17"/>
+      </reference>
+      <name value="KLGatewayChildrenSDQ1117"/>
+      <description value="Strength and Difficulties Questionnaire (SDQ), including impact supplement for self-completion by 11-17 year olds (SDQ S11-17)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/klgateway-children-sdq4-10"/>
+      </reference>
+      <name value="KLGatewayChildrenSDQ410"/>
+      <description value="Strength and Difficulties Questionnaire (SDQ), including impact supplement for completion by parents of 4-10 year olds (SDQ P4-10)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/klgateway-children-topi"/>
+      </reference>
+      <name value="KLGatewayChildrenTOPI"/>
+      <description value="Tidlig opsporing og indsats (TOPI), samlet faglig vurdering lavet af sundhedsplejersker og evt. samarbejdspartnere"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CommunicationCodes"/>
+      </reference>
+      <name value="KommunikationKoder"/>
+      <description value="Mandatory result values for ability to communicate in small children and school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EncounterClassCodes"/>
+      </reference>
+      <name value="KontaktKlasseKoder"/>
+      <description value="Codes to describe the mode of delivery of an encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Lars"/>
+      </reference>
+      <name value="Lars"/>
+      <description value="Barnet Lars"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LarsIncontinenceObservation"/>
+      </reference>
+      <name value="LarsIncontinenceObservation"/>
+      <description value="Lars' unrininkontinens ved indskolingsundersøgelsen"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-exam-result"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LarsMentalStateObservation"/>
+      </reference>
+      <name value="LarsMentalState"/>
+      <description value="Lars' egenvurderede generelle trivsel ved indskolingsundersøgelsen"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-exam-result"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LOINC"/>
+      </reference>
+      <name value="Logical Observation Identifiers, Names and Codes (LOINC)"/>
+      <description value="LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MotorFunctionCodes"/>
+      </reference>
+      <name value="MotorikKoder"/>
+      <description value="Mandatory result values for motor function in small children and school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SocialSupportNetworkCodes"/>
+      </reference>
+      <name value="NetværkKoder"/>
+      <description value="Mandatory result values for social support network of the family"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NicotineCodes"/>
+      </reference>
+      <name value="NikotinKoder"/>
+      <description value="Mandatory result values for nicotine use in school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ObservationUnitsWeight"/>
+      </reference>
+      <name value="ObservationsEnhederVægt"/>
+      <description value="UCUM units for childrens weight"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PassiveSmokingCodes"/>
+      </reference>
+      <name value="PassivRygningKoder"/>
+      <description value="Mandatory result values for passive smoking in small- and school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/PUFAnswerRikke"/>
+      </reference>
+      <name value="PUFAnswerRikke"/>
+      <description value="PUF besvarelse Rikke"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FeedingResultsChildren"/>
+      </reference>
+      <name value="ResultatkoderSmåbørnMad"/>
+      <description value="Resultcodes for feeding"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Rikke"/>
+      </reference>
+      <name value="Rikke"/>
+      <description value="Barnet Rikke"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeBodyHeight"/>
+      </reference>
+      <name value="RikkeBodyHeight"/>
+      <description value="Rikkes kropslængde"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeBodyHeight2mth"/>
+      </reference>
+      <name value="RikkeBodyHeight2mth"/>
+      <description value="Rikkes kropslængde"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeBodyWeight2mth"/>
+      </reference>
+      <name value="RikkeBodyWeight"/>
+      <description value="Rikkes vægt"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeBodyWeight"/>
+      </reference>
+      <name value="RikkeBodyWeight"/>
+      <description value="Rikkes vægt"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeChildrenParentRelationship"/>
+      </reference>
+      <name value="RikkeChildrenParentRelationship"/>
+      <description value="Rikkes relation til forældre ved 2mrd"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeCommunication2mth"/>
+      </reference>
+      <name value="RikkeCommunication2mth"/>
+      <description value="Rikkes kommunikation ved 2mrd"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-communication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/RikkeDeliveryReport2months"/>
+      </reference>
+      <name value="RikkeDeliveryReport2months"/>
+      <description value="Indberetning for Rikke 2 måneder"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeEyeContact2mth"/>
+      </reference>
+      <name value="RikkeEyeContact2mth"/>
+      <description value="Rikke har afvigende øjenkontakt ved 2 måneder"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-exam-result"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeFeedingObservationNewPeriod"/>
+      </reference>
+      <name value="RikkeFeedingObservationNewPeriod"/>
+      <description value="Rikkes periode-start for ammes som supplement til anden kost"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeFeedingObservationPeriod"/>
+      </reference>
+      <name value="RikkeFeedingObservationPeriod"/>
+      <description value="Rikkes periode for fuldamning"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeFeedingObservationStatus"/>
+      </reference>
+      <name value="RikkeFeedingObservationStatus"/>
+      <description value="Rikkes status på madning ved 2 mrd"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeFeedingObservationStatus10mth"/>
+      </reference>
+      <name value="RikkeFeedingObservationStatus10mth"/>
+      <description value="Rikkes status, ved 10 måneder, udelukkende status fordi perioden er startet tidligere, og ikke er afsluttet"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeHeadCircum"/>
+      </reference>
+      <name value="RikkeHeadCircum"/>
+      <description value="Rikkes hovedomkreds"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/RikkeInterventionSocialContact"/>
+      </reference>
+      <name value="RikkeInterventionSocialContact"/>
+      <description value="Rikkes behovsindsats vedr. social kontakt"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-intervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeMotorFunction2mth"/>
+      </reference>
+      <name value="RikkeMotorFunction2mth"/>
+      <description value="Rikkes motorik ved 2mrd"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-motor-function"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeSleep2mth"/>
+      </reference>
+      <name value="RikkeSleep2mth"/>
+      <description value="Rikkes søvn ved 2mrd"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-sleep"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RikkeSocialInteraction"/>
+      </reference>
+      <name value="RikkeSocialInteraction"/>
+      <description value="Rikkes sociale kontakt ved 2mrd"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-social-interaction"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RikkesParent"/>
+      </reference>
+      <name value="RikkesParent"/>
+      <description value="RikkesParent"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/SchoolHolbaek"/>
+      </reference>
+      <name value="SchoolHolbaek"/>
+      <description value="Skole i Holbæk"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/SDQ11-17AnswerRikke"/>
+      </reference>
+      <name value="SDQ11-17AnswerRikke"/>
+      <description value="SDQ svar lavet af Rikke (Rikkes alder passer ikke til spørgeskemaet)"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/SDQ4-10AnswerLars"/>
+      </reference>
+      <name value="SDQ4-10AnswerLars"/>
+      <description value="SDQ svar om Lars lavet af Lars' mor eller far"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SNOMED-CT-INT"/>
+      </reference>
+      <name value="SNOMED CT International Edition"/>
+      <description value="SNOMED CT is a core clinical healthcare terminology that contains concepts with unique meanings and formal logic based definitions organized into hierarchies."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SocialInteractionCodes"/>
+      </reference>
+      <name value="SocialKontaktKoder"/>
+      <description value="Mandatory result values for social interaction in small children and school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/IndicatorCodesChildren"/>
+      </reference>
+      <name value="SundhedsplejeIndikatorkoder"/>
+      <description value="Indicator-observables for parents and children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLHealthNurseInterventions"/>
+      </reference>
+      <name value="Sundhedsplejeindsatser"/>
+      <description value="Need based interventions used in municipality health nursing (sundhedsplejen)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EncounterTypes"/>
+      </reference>
+      <name value="SundhedsplejeKontaktTyper"/>
+      <description value="Extension on encountertype valueset, to be implemented in KL-term and FKI, does not use exciting codes only those specific to childrens nursing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLHealthNurseConditions"/>
+      </reference>
+      <name value="Sundhedsplejetilstande"/>
+      <description value="Health nurse conditions, that relates to nursing problem areas and/or challenges found in examinations and evaluations made by the health nurse (sundhedsplejerske)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SightCodes"/>
+      </reference>
+      <name value="SynKoder"/>
+      <description value="Mandatory result values for sight in school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SleepCodes"/>
+      </reference>
+      <name value="SøvnKoder"/>
+      <description value="Mandatory result values for challenges in sleeping pattern in small children and school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/TOPIRikke"/>
+      </reference>
+      <name value="TOPIAnswerRikke"/>
+      <description value="TOPI vurdering af Rikke lavet af sundhedsplejersker og eventuelle samarbejdspartnere."/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ExamResults"/>
+      </reference>
+      <name value="UndersøgelsesResultatKoder"/>
+      <description value="Valueset for optional history and examination findings in small children and school children"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example.html"/>
+        </extension>
+        <nameUrl value="example.html"/>
+        <title value="Example"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example2.html"/>
+        </extension>
+        <nameUrl value="example2.html"/>
+        <title value="Example 2"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

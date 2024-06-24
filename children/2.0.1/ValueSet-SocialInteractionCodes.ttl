@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/SocialInteractionCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SocialInteractionCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-008b1890-4be5-463a-b618-0ab3d89515d0\">008b1890-4be5-463a-b618-0ab3d89515d0</a></td><td style=\"color: #cccccc\">Alderssvarende social kontakt</td><td>Småbørn: Barnet viser interesse for kontakt og deltager aktivt i samspil. Barnet giver udtryk for sine behov, fx sult, trøst, glæde. Reagerer relevant på stimuli, som fx øjenkontakt, mimik og brug af stemme. Barnet virker rolig og veltilpas. Barnet kan trøstes og falder til ro, når behov bliver opfyldt.\n\nSkolebørn: Barnet indgår i en god stabil kontakt og deltager aktivt i samspil. Barnet er glad og virker veltilpas.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-18938eb0-3f40-48c5-9971-7255aa86336a\">18938eb0-3f40-48c5-9971-7255aa86336a</a></td><td style=\"color: #cccccc\">Få tegn på udfordringer i social kontakt</td><td>Småbørn: Barnet indgår i kontakt og deltager i samspil, men har få tegn på udfordringer. Fx viser barnet i mindre grad interesse for kontakt, har uro, gråd, flygtig øjenkontakt, virker mindre tilpas og/eller er mindre aktiv i samspillet.\n\nSkolebørn: Barnet indgår i samspil. Der er dog få ikke-kritiske tegn på udfordringer, der kræver opmærksomhed fx urolig, ukoncentreret eller genert.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-e1c1674c-9384-4d95-999f-763f3868f444\">e1c1674c-9384-4d95-999f-763f3868f444</a></td><td style=\"color: #cccccc\">Udfordring i social kontakt</td><td>Småbørn: Barnet fastholder ikke øjenkontakten. Det indgår ikke i kontakt og deltager ikke aktivt i samspil. Barnet viser f.eks. ikke interesse for kontakt, har udtalt gråd/uro, er passivt og/eller har nedtonet mimik.\n\nSkolebørn: Barnet har problemer med at indgå i kontakt og samspil, der kræver en indsats. Barnet udviser fx utryghed eller er ukritisk i kontakten. Barnet udviser manglende initiativ, glæde og begejstring.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/SocialInteractionCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:name [ fhir:v "SocialInteractionCodes"] ; # 
+  fhir:title [ fhir:v "SocialKontaktKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-24T13:04:27+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mandatory result values for social interaction in small children and school children"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "008b1890-4be5-463a-b618-0ab3d89515d0" ]
+       ] [
+         fhir:code [ fhir:v "18938eb0-3f40-48c5-9971-7255aa86336a" ]
+       ] [
+         fhir:code [ fhir:v "e1c1674c-9384-4d95-999f-763f3868f444" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

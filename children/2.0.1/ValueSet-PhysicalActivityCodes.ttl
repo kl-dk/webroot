@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/PhysicalActivityCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PhysicalActivityCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-05086dad-8718-4a6c-b096-54c7101d0b2c\">05086dad-8718-4a6c-b096-54c7101d0b2c</a></td><td style=\"color: #cccccc\">Fysisk aktiv</td><td>Skolebørn: Barnet bevæger sig dagligt én time eller mere. Fx aktiviteter såsom cykling, løb, hop, spring og kast. For de ældre børn kan aktiviteter, som styrker de store muskelgrupper også være en del af den daglige fysiske aktivitet.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-2effe989-0cc3-4dce-ad93-9f6503b91eaa\">2effe989-0cc3-4dce-ad93-9f6503b91eaa</a></td><td style=\"color: #cccccc\">Moderat fysisk aktiv</td><td>Skolebørn: Barnet bevæger sig ikke en time dagligt. Barnet bevæger sig dog én time eller mere flere gange på en uge.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-38f72570-630f-40c6-8a60-cf2e1bddc8eb\">38f72570-630f-40c6-8a60-cf2e1bddc8eb</a></td><td style=\"color: #cccccc\">Meget stillesiddende aktivitet</td><td>Skolebørn: Barnet har ofte stillesiddende adfærd og bevæger sig ikke én time dagligt. Undgår og vægrer sig ved fysisk aktivitet.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-2ef19cdf-f6e6-4b2c-aaef-f466e33cf261\">2ef19cdf-f6e6-4b2c-aaef-f466e33cf261</a></td><td style=\"color: #cccccc\">Overdreven motion</td><td>Skolebørn: Barnet dyrker overdreven motion, hvor motionen eller træningen bliver tvangspræget.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/PhysicalActivityCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:name [ fhir:v "PhysicalActivityCodes"] ; # 
+  fhir:title [ fhir:v "FysiskAktiviteteKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-24T13:04:27+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mandatory result values for physical activity in school children"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "05086dad-8718-4a6c-b096-54c7101d0b2c" ]
+       ] [
+         fhir:code [ fhir:v "2effe989-0cc3-4dce-ad93-9f6503b91eaa" ]
+       ] [
+         fhir:code [ fhir:v "38f72570-630f-40c6-8a60-cf2e1bddc8eb" ]
+       ] [
+         fhir:code [ fhir:v "2ef19cdf-f6e6-4b2c-aaef-f466e33cf261" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="FeedingResultsChildren"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-77a008dd-21cc-452f-a1ee-ac8d025b7817">77a008dd-21cc-452f-a1ee-ac8d025b7817</a></td><td style="color: #cccccc">Fuldamning, inklusiv modermælk på flaske</td><td>Småbørn: Barnet ernæres fuldt med modermælk enten ved amning eller med udmalket modermælk i sutteflaske. Der må højst gives et måltid modermælkserstatning på flaske per uge.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-0a993974-e314-4f76-8c80-c3770fdefe37">0a993974-e314-4f76-8c80-c3770fdefe37</a></td><td style="color: #cccccc">Ammes primært</td><td>Småbørn: Barnets ernæres primært med modermælk ved bryst eller i sutteflaske og får supplering med modermælkserstatning/overgangskost. Hermed menes, at det skønnes, at over halvdelen af barnets energiindtag kommer fra modermælken.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-3edc905c-2830-442a-98cc-463cc3701dd1">3edc905c-2830-442a-98cc-463cc3701dd1</a></td><td style="color: #cccccc">Ammes som supplement til anden kost</td><td>Småbørn: Barnet ernæres primært med modermælkserstatning/overgangskost og ammes supplerende. Hermed menes, at det skønnes, at modermælk udgør under halvdelen af barnets energiindtag.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-dfab6d07-b1b6-4210-ac8a-b8a0d095c8ab">dfab6d07-b1b6-4210-ac8a-b8a0d095c8ab</a></td><td style="color: #cccccc">Modermælkserstatning og/eller overgangskost</td><td>Småbørn: Barnet ernæres med modermælkserstatning og/eller overgangskost som fx grød og mos og/eller familiens mad. Barnet får ingen modermælk.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-5101d1ac-b96f-4dd9-a42e-e3f765f747e1">5101d1ac-b96f-4dd9-a42e-e3f765f747e1</a></td><td style="color: #cccccc">Udelukkende familiens mad</td><td>Småbørn: Barnet spiser stort set den mad resten af familien spiser. Får ikke modermælk eller modermælkserstatning.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/children/ValueSet/FeedingResultsChildren"/>
+  <version value="2.0.1"/>
+  <name value="FeedingResultsChildren"/>
+  <title value="ResultatkoderSmåbørnMad"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-24T13:04:27+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Resultcodes for feeding"/>
+  <compose>
+    <include>
+      <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+      <concept>
+        <code value="77a008dd-21cc-452f-a1ee-ac8d025b7817"/>
+      </concept>
+      <concept>
+        <code value="0a993974-e314-4f76-8c80-c3770fdefe37"/>
+      </concept>
+      <concept>
+        <code value="3edc905c-2830-442a-98cc-463cc3701dd1"/>
+      </concept>
+      <concept>
+        <code value="dfab6d07-b1b6-4210-ac8a-b8a0d095c8ab"/>
+      </concept>
+      <concept>
+        <code value="5101d1ac-b96f-4dd9-a42e-e3f765f747e1"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

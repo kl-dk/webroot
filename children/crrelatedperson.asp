@@ -16,7 +16,7 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/children/RelatedPerson-"+id+".xml");
   else if (id == "RikkesParent")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.0/RelatedPerson-RikkesParent.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.0.1/RelatedPerson-RikkesParent.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/children/RelatedPerson.html");
 
@@ -25,6 +25,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from .0.0-milestone\output\crrelatedperson.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from .0.1-milestone\output\crrelatedperson.asp) .
 </body>
 </html>

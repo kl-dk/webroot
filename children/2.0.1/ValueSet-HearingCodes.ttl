@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/HearingCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HearingCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-9628db65-7460-4ecc-bbb1-48c0ac4b3f02\">9628db65-7460-4ecc-bbb1-48c0ac4b3f02</a></td><td style=\"color: #cccccc\">Normal hørelse</td><td>Skolebørn: Screening viser intet problem med hørelse.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-c4c79311-ba80-4890-9008-c2f62ab00eda\">c4c79311-ba80-4890-9008-c2f62ab00eda</a></td><td style=\"color: #cccccc\">Potentielt problem med hørelse</td><td>Skolebørn: Screening viser potentielt problem med hørelse. Barnets hørelse skal undersøges nærmere.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-4d4b20b6-0159-4014-ac1c-46a7a860b204\">4d4b20b6-0159-4014-ac1c-46a7a860b204</a></td><td style=\"color: #cccccc\">Allerede kendt høreproblematik</td><td>Skolebørn: Barnet har en allerede kendt høreproblematik, som er identificeret ved tidligere undersøgelse(r) af barnets hørelse. Tidligere undersøgelser behøver ikke nødvendigvis at være foretaget af sundhedsplejen.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/HearingCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:name [ fhir:v "HearingCodes"] ; # 
+  fhir:title [ fhir:v "HørelseKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-24T13:04:27+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mandatory result values for hearning in school children"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "9628db65-7460-4ecc-bbb1-48c0ac4b3f02" ]
+       ] [
+         fhir:code [ fhir:v "c4c79311-ba80-4890-9008-c2f62ab00eda" ]
+       ] [
+         fhir:code [ fhir:v "4d4b20b6-0159-4014-ac1c-46a7a860b204" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

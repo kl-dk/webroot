@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/MotorFunctionCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MotorFunctionCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-d5b876e1-a86c-4768-b46d-cd795eaa89e4\">d5b876e1-a86c-4768-b46d-cd795eaa89e4</a></td><td style=\"color: #cccccc\">Alderssvarende motorik</td><td>Småbørn: Barnet har de forventelige motoriske færdigheder i forhold til alder.\n\nSkolebørn: Barnet er passende udviklet motorisk i forhold til sin alder, og i forhold til de motoriske aktiviteter som barnet har øvelse i. Der kan altså godt vurderes alderssvarende motorik selv om barnet fx ikke kan løbe gadedrengeløb, hvis alt andet er fint. Særligt hvis barnet ikke har prøvet det før.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-936a0163-08eb-4fdb-bf0c-bcf5bc7cb3f6\">936a0163-08eb-4fdb-bf0c-bcf5bc7cb3f6</a></td><td style=\"color: #cccccc\">Få tegn på udfordret motorik</td><td>Småbørn: Barnet viser enkelte tegn på forsinket motorisk udvikling i forhold til alder.\n\nSkolebørn: Barnet viser enkelte tegn på motoriske problemer eller forsinket motorisk udvikling. Viser sig typisk ved usikker mestring af almindelige motoriske færdigheder, eller én til to ukritiske problemer i en screening. Registreres kun, hvis udfordringerne kræver opmærksomhed, men ikke indsats.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-aeade013-b14a-4ad3-80da-66742782411e\">aeade013-b14a-4ad3-80da-66742782411e</a></td><td style=\"color: #cccccc\">Udfordring med motorik</td><td>Småbørn: Barnet har problemer med motorik. Der kan fx være tale om en forsinket motorisk udvikling i forhold til barnets alder.\n\nSkolebørn: Barnet har problemer med motorik eller forsinket motorisk udvikling i forhold til barnets alder. Viser sig typisk ved dårlig mestring af almindelige motoriske færdigheder eller ved mere end to bemærkninger i motoriske screeninger. Registreres kun, hvis udfordringerne er af en karakter, der kræver indsats eller overlevering til anden faggruppe.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/MotorFunctionCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:name [ fhir:v "MotorFunctionCodes"] ; # 
+  fhir:title [ fhir:v "MotorikKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-24T13:04:27+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mandatory result values for motor function in small children and school children"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "d5b876e1-a86c-4768-b46d-cd795eaa89e4" ]
+       ] [
+         fhir:code [ fhir:v "936a0163-08eb-4fdb-bf0c-bcf5bc7cb3f6" ]
+       ] [
+         fhir:code [ fhir:v "aeade013-b14a-4ad3-80da-66742782411e" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
