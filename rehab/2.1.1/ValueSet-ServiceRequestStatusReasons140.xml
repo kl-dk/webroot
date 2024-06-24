@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ServiceRequestStatusReasons140"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-f64b8f5e-8ced-4a8b-ab73-8994fb524915">f64b8f5e-8ced-4a8b-ab73-8994fb524915</a></td><td style="color: #cccccc">Anden kommmune</td><td>Overgivet til anden kommune, på borgers anmodning</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-a8632e22-bf0c-4f5a-92a7-70977ba104d5">a8632e22-bf0c-4f5a-92a7-70977ba104d5</a></td><td style="color: #cccccc">Udskudt</td><td>Udskudt opstart påkrævet fordi det er specificeret sådan i den anmodning kommunen har modtaget. Fx kan udskudt opstart af træning fordi sår skal ophele være beskrives i en genoptræningsplan (GGOP).</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-3796fa11-305f-47d6-b164-45b05489afb2">3796fa11-305f-47d6-b164-45b05489afb2</a></td><td style="color: #cccccc">Frit valg</td><td>Borger er overgået til frit valg af service. Fx frit valg af privat genoptræning som borger har ret til, hvis kommunen ikke kan levere inden 7 dage.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-8ac7be88-5d16-4dbd-a61a-ab02673f4b34">8ac7be88-5d16-4dbd-a61a-ab02673f4b34</a></td><td style="color: #cccccc">Fejl</td><td>Fejlafsendt anmodning. Fx fejlafsendt genoptræningsplan.</td></tr><tr><td><a href="http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-46a6bc1f-bfe8-4390-a71f-44ad4a384b9d">46a6bc1f-bfe8-4390-a71f-44ad4a384b9d</a></td><td style="color: #cccccc">Frit valg afslået</td><td>Borgeren er tilbudt frit valg af leverandør af service, men vil hellere vente.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.kl.dk/rehab/ValueSet/ServiceRequestStatusReasons140"/>
+  <version value="2.1.1"/>
+  <name value="ServiceRequestStatusReasons140"/>
+  <title value="ServiceRequestStatusReasons"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-24T12:46:18+02:00"/>
+  <publisher value="Kommunernes Landsforening"/>
+  <contact>
+    <name value="Kommunernes Landsforening"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://kl.dk"/>
+    </telecom>
+  </contact>
+  <description value="Status Reason codes as used in §140 rehabilitation"/>
+  <compose>
+    <include>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <concept>
+        <code value="f64b8f5e-8ced-4a8b-ab73-8994fb524915"/>
+      </concept>
+      <concept>
+        <code value="a8632e22-bf0c-4f5a-92a7-70977ba104d5"/>
+      </concept>
+      <concept>
+        <code value="3796fa11-305f-47d6-b164-45b05489afb2"/>
+      </concept>
+      <concept>
+        <code value="8ac7be88-5d16-4dbd-a61a-ab02673f4b34"/>
+      </concept>
+      <concept>
+        <code value="46a6bc1f-bfe8-4390-a71f-44ad4a384b9d"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
