@@ -1,0 +1,2122 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "kl.dk.fhir.children",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.children</b></p><a name=\"kl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children-en-US\"> </a><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>\n</div></div>"
+  },
+  "url" : "http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children",
+  "version" : "2.0.1",
+  "name" : "KLChildren",
+  "title" : "KLChildren implementation guide, an implementation of FBU",
+  "status" : "active",
+  "date" : "2024-07-01T22:45:30+02:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway",
+  "packageId" : "kl.dk.fhir.children",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "5.5.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.1.0"
+  },
+  {
+    "id" : "hl7_fhir_dk_core",
+    "uri" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
+    "packageId" : "hl7.fhir.dk.core",
+    "version" : "3.2.0"
+  },
+  {
+    "id" : "kl_dk_fhir_term",
+    "uri" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
+    "packageId" : "kl.dk.fhir.term",
+    "version" : "2.1.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2023+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "Release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://snomed.info/sct"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://loinc.org"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://fhir.kl.dk/children/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2023+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "Release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://snomed.info/sct"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://loinc.org"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://fhir.kl.dk/children/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/10mthEncounter"
+      },
+      "name" : "10 måneders besøg ved Rikke",
+      "description" : "Kontakt, hvor der leveres Besøg hos det 8-11 måneder gamle barn til Rikke og hendes familie",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/2mthEncounter"
+      },
+      "name" : "2 måneders besøg ved Rikke",
+      "description" : "Kontakt, hvor der leveres Besøg hos det ca. 2 måneder gamle barn til Rikke og hendes familie",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/4cda6c3c-856c-4fe3-ac90-9b6f968207c3"
+      },
+      "name" : "4cda6c3c-856c-4fe3-ac90-9b6f968207c3",
+      "description" : "DeliveryReport-Lars-2a",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/567a4d32-b3eb-46d6-8564-c7c2a1a1b903"
+      },
+      "name" : "567a4d32-b3eb-46d6-8564-c7c2a1a1b903",
+      "description" : "DeliveryReport-Rikke-5",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/5f1d5816-a906-4314-a6f4-69b400682ec6"
+      },
+      "name" : "5f1d5816-a906-4314-a6f4-69b400682ec6",
+      "description" : "DeliveryReport-Lars-1",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/74dcb49e-dd6a-4450-9fb8-85ad0e7bed38"
+      },
+      "name" : "74dcb49e-dd6a-4450-9fb8-85ad0e7bed38",
+      "description" : "DeliveryReport-Rikke-2b",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/84cf4f74-0cc7-47fe-8301-3bc8eb0ddd8f"
+      },
+      "name" : "84cf4f74-0cc7-47fe-8301-3bc8eb0ddd8f",
+      "description" : "DeliveryReport-Rikke-4b",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/9a966368-052f-42e5-87fa-e57d9b8cbf2c"
+      },
+      "name" : "9a966368-052f-42e5-87fa-e57d9b8cbf2c",
+      "description" : "DeliveryReport-Lars-2b",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/a27ab0ea-4018-4516-900c-f1249a28dc37"
+      },
+      "name" : "a27ab0ea-4018-4516-900c-f1249a28dc37",
+      "description" : "DeliveryReport-Rikke-3",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/a50c7477-c817-4f98-92a8-b8c15f015d9e"
+      },
+      "name" : "a50c7477-c817-4f98-92a8-b8c15f015d9e",
+      "description" : "DeliveryReport-Rikke-7",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/ADBBAnswerRikke"
+      },
+      "name" : "ADBBAnswerRikke",
+      "description" : "Udfyldt ADBB skema for Rikke",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/AIMSAnswerRikke"
+      },
+      "name" : "AIMSAnswerRikke",
+      "description" : "Udfyldt AIMS skema for Rikke",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/2nd1mthEncounter"
+      },
+      "name" : "Andet besøg inden første måned ved Rikke",
+      "description" : "Kontakt, hvor der leveres Andet besøg inden første måned til Rikke og hendes familie",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/b9479825-6be1-4fa1-a2ae-74fe67014caa"
+      },
+      "name" : "b9479825-6be1-4fa1-a2ae-74fe67014caa",
+      "description" : "DeliveryReport-Rikke-1",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BasedOnInterventionExtension"
+      },
+      "name" : "basedOnInterventionExtension",
+      "description" : "Extension for pointing to the intervention describing why this encounter is taking place (will be part of R5 and comming FHIR versions without needing the extension)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/NeedBasedEncounterRikke"
+      },
+      "name" : "Behovskontakt ved Rikke på skærm",
+      "description" : "Kontakt, hvor der leveres behovskontakt på skærm ved Rikke og hendes familie",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/c5b55e0e-3bc4-468a-8600-1b23617dbb58"
+      },
+      "name" : "c5b55e0e-3bc4-468a-8600-1b23617dbb58",
+      "description" : "DeliveryReport-Rikke-2a",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/c60604d1-692b-4e6d-86e5-03046b2d2f16"
+      },
+      "name" : "c60604d1-692b-4e6d-86e5-03046b2d2f16",
+      "description" : "DeliveryReport-Rikke-4a",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/d2e57785-7d0e-4b30-9e51-62c14185b9ed"
+      },
+      "name" : "d2e57785-7d0e-4b30-9e51-62c14185b9ed",
+      "description" : "DeliveryReport-Rikke-8",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/dbe422ac-dd15-4562-838d-1f5ff9ae45d8"
+      },
+      "name" : "dbe422ac-dd15-4562-838d-1f5ff9ae45d8",
+      "description" : "DeliveryReport-Rikke-6",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/EPDSAnswerKirsten"
+      },
+      "name" : "EPDSAnswerKirsten",
+      "description" : "EPDS besvarelse mor, Kirsten",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/NutritionCodes"
+      },
+      "name" : "ErnæringKoder",
+      "description" : "Mandatory result values for nutrition in school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FindingInformer"
+      },
+      "name" : "FindingInformer",
+      "description" : "Extension for pointing to who the source of information is",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ParentTypes"
+      },
+      "name" : "ForælderTyper",
+      "description" : "Limitation on HL7 role class to only represent parent-relationships, as accepted in the children data-set",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ChildrenParentRelationshipCodes"
+      },
+      "name" : "ForældreBarnRelationsKoder",
+      "description" : "Mandatory result values for parent child relationship in small children and school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ParentsMentalCodes"
+      },
+      "name" : "ForældresPsykiskeTilstandKoder",
+      "description" : "Mandatory result values for parents mental state",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ParentSocialStatusCodes"
+      },
+      "name" : "ForældresSårbarhedKoder",
+      "description" : "Mandatory result values for parents social status. Only documented in parents of small children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PhysicalActivityCodes"
+      },
+      "name" : "FysiskAktiviteteKoder",
+      "description" : "Mandatory result values for physical activity in school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/BodyheightSCTobservablesChildren"
+      },
+      "name" : "HøjdeObservationskoderSCT",
+      "description" : "SNOMED CT observables for length/height",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/HearingCodes"
+      },
+      "name" : "HørelseKoder",
+      "description" : "Mandatory result values for hearning in school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/SchoolStartEncounter"
+      },
+      "name" : "Indskolingsundersøgelse Lars",
+      "description" : "Kontakt, der er Lars' indskolingsundersøgelse",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FindingInformerCodes"
+      },
+      "name" : "KildeTilOplysningKoder",
+      "description" : "Codes for who informed the findings",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Kirsten"
+      },
+      "name" : "Kirsten",
+      "description" : "Borger, Kirsten",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/KirstenParentMentalStatus"
+      },
+      "name" : "KirstenParentMentalStatus",
+      "description" : "Kirstens psykiske tilstand ved Rikkes 2mrd",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-mental-status"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/klgateway-children-adbb"
+      },
+      "name" : "KLGatewayChildrenADBB",
+      "description" : "Alarm Distress Baby Scale (ADBB)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/klgateway-children-aims"
+      },
+      "name" : "KLGatewayChildrenAIMS",
+      "description" : "Alberta Infant Motor Scale (AIMS)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-bodyheight"
+      },
+      "name" : "KLGatewayChildrenBodyHeight",
+      "description" : "Body height profile used in Danish Municipalities, derived from HL7 DK standard profile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-bodyweight"
+      },
+      "name" : "KLGatewayChildrenBodyWeight",
+      "description" : "Profile of HL7 body weight profile used in Danish Municipalities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-citizen"
+      },
+      "name" : "KLGatewayChildrenCitizen",
+      "description" : "Administrative information about a citizen receiving care or care related services.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-delivery-report"
+      },
+      "name" : "KLGatewayChildrenDeliveryReport",
+      "description" : "Delivery report to deliver data for each child, including state of the family.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-encounter"
+      },
+      "name" : "KLGatewayChildrenEncounter",
+      "description" : "Encounter for health prevention and need-based visits from childrens nurses",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/klgateway-children-epds"
+      },
+      "name" : "KLGatewayChildrenEPDS",
+      "description" : "Edinburgh postnatale depressionscore (EPDS)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-exam-result"
+      },
+      "name" : "KLGatewayChildrenExamResult",
+      "description" : "Observation used to express qualitative examination results to be reported to the children database",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-feeding-observation"
+      },
+      "name" : "KLGatewayChildrenFeedingObservation",
+      "description" : "Feeding observation profile used in the children database",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-headcircum"
+      },
+      "name" : "KLGatewayChildrenHeadCircumference",
+      "description" : "Head circumference profile used in Danish Municipalities, derived from HL7 Denmark standard profile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-indicator"
+      },
+      "name" : "KLGatewayChildrenIndicator",
+      "description" : "Abstract indicator profile, used in the children database",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-communication"
+      },
+      "name" : "KLGatewayChildrenIndicatorCommunication",
+      "description" : "Childrens communication, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-hearing"
+      },
+      "name" : "KLGatewayChildrenIndicatorHearing",
+      "description" : "Childrens hearing, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-social-interaction"
+      },
+      "name" : "KLGatewayChildrenIndicatorInteraction",
+      "description" : "Childrens social interaction, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-motor-function"
+      },
+      "name" : "KLGatewayChildrenIndicatorMotorFunction",
+      "description" : "Childrens motor function, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-nicotine"
+      },
+      "name" : "KLGatewayChildrenIndicatorNicotine",
+      "description" : "Children's use of nicotine, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-nutrition"
+      },
+      "name" : "KLGatewayChildrenIndicatorNutrition",
+      "description" : "Childrens nutrition, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-parent-mental-status"
+      },
+      "name" : "KLGatewayChildrenIndicatorParentMentalStatus",
+      "description" : "Parent's mental status, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-parent-relationship"
+      },
+      "name" : "KLGatewayChildrenIndicatorParentRelationship",
+      "description" : "Parent-child relationship, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-parent-social-status"
+      },
+      "name" : "KLGatewayChildrenIndicatorParentSocialStatus",
+      "description" : "parent's social status, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-passive-smoking"
+      },
+      "name" : "KLGatewayChildrenIndicatorPassiveSmoking",
+      "description" : "Children's passive smoking, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-physical-activity"
+      },
+      "name" : "KLGatewayChildrenIndicatorPhysicalActivity",
+      "description" : "Childrens physical activity, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-sight"
+      },
+      "name" : "KLGatewayChildrenIndicatorSight",
+      "description" : "Childrens sight, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-sleep"
+      },
+      "name" : "KLGatewayChildrenIndicatorSleep",
+      "description" : "Childrens sleep observation, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-social-support-network"
+      },
+      "name" : "KLGatewayChildrenIndicatorSocialSupportNetwork",
+      "description" : "Families social support network, that inherits from Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-intervention"
+      },
+      "name" : "KLGatewayChildrenIntervention",
+      "description" : "Profile representing interventions in the children database",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-location"
+      },
+      "name" : "KLGatewayChildrenLocation",
+      "description" : "Profile representing a location, in this implementation guide only used to represent a school",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/klgateway-children-puf"
+      },
+      "name" : "KLGatewayChildrenPUF",
+      "description" : "Copenhagen Infant Mental Health Screening/PSYKISK UDVIKLING OG FUNKTION (PUF)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/KLGatewayChildrenQuestionnaire"
+      },
+      "name" : "KLGatewayChildrenQuestionnaire",
+      "description" : "Questionnaire profile, for all Questionaires in kl-children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-questionnaire-response"
+      },
+      "name" : "KLGatewayChildrenQuestionnaireResponse",
+      "description" : "Questionnaire response profile, for all questionaires in kl-children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-related-parent"
+      },
+      "name" : "KLGatewayChildrenRelatedParent",
+      "description" : "Profile for describing the relationship between the child, and the parents who are also relevant for the journal",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/klgateway-children-sdq11-17"
+      },
+      "name" : "KLGatewayChildrenSDQ1117",
+      "description" : "Strength and Difficulties Questionnaire (SDQ), including impact supplement for self-completion by 11-17 year olds (SDQ S11-17)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/klgateway-children-sdq4-10"
+      },
+      "name" : "KLGatewayChildrenSDQ410",
+      "description" : "Strength and Difficulties Questionnaire (SDQ), including impact supplement for completion by parents of 4-10 year olds (SDQ P4-10)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/klgateway-children-topi"
+      },
+      "name" : "KLGatewayChildrenTOPI",
+      "description" : "Tidlig opsporing og indsats (TOPI), samlet faglig vurdering lavet af sundhedsplejersker og evt. samarbejdspartnere",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/CommunicationCodes"
+      },
+      "name" : "KommunikationKoder",
+      "description" : "Mandatory result values for ability to communicate in small children and school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/EncounterClassCodes"
+      },
+      "name" : "KontaktKlasseKoder",
+      "description" : "Codes to describe the mode of delivery of an encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Lars"
+      },
+      "name" : "Lars",
+      "description" : "Barnet Lars",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/LarsIncontinenceObservation"
+      },
+      "name" : "LarsIncontinenceObservation",
+      "description" : "Lars' unrininkontinens ved indskolingsundersøgelsen",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-exam-result"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/LarsMentalStateObservation"
+      },
+      "name" : "LarsMentalState",
+      "description" : "Lars' egenvurderede generelle trivsel ved indskolingsundersøgelsen",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-exam-result"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LOINC"
+      },
+      "name" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MotorFunctionCodes"
+      },
+      "name" : "MotorikKoder",
+      "description" : "Mandatory result values for motor function in small children and school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SocialSupportNetworkCodes"
+      },
+      "name" : "NetværkKoder",
+      "description" : "Mandatory result values for social support network of the family",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/NicotineCodes"
+      },
+      "name" : "NikotinKoder",
+      "description" : "Mandatory result values for nicotine use in school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ObservationUnitsWeight"
+      },
+      "name" : "ObservationsEnhederVægt",
+      "description" : "UCUM units for childrens weight",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PassiveSmokingCodes"
+      },
+      "name" : "PassivRygningKoder",
+      "description" : "Mandatory result values for passive smoking in small- and school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/PUFAnswerRikke"
+      },
+      "name" : "PUFAnswerRikke",
+      "description" : "PUF besvarelse Rikke",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FeedingResultsChildren"
+      },
+      "name" : "ResultatkoderSmåbørnMad",
+      "description" : "Resultcodes for feeding",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Rikke"
+      },
+      "name" : "Rikke",
+      "description" : "Barnet Rikke",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeBodyHeight"
+      },
+      "name" : "RikkeBodyHeight",
+      "description" : "Rikkes kropslængde",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeBodyHeight2mth"
+      },
+      "name" : "RikkeBodyHeight2mth",
+      "description" : "Rikkes kropslængde",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeBodyWeight2mth"
+      },
+      "name" : "RikkeBodyWeight",
+      "description" : "Rikkes vægt",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeBodyWeight"
+      },
+      "name" : "RikkeBodyWeight",
+      "description" : "Rikkes vægt",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeChildrenParentRelationship"
+      },
+      "name" : "RikkeChildrenParentRelationship",
+      "description" : "Rikkes relation til forældre ved 2mrd",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-relationship"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeCommunication2mth"
+      },
+      "name" : "RikkeCommunication2mth",
+      "description" : "Rikkes kommunikation ved 2mrd",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-communication"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/RikkeDeliveryReport2months"
+      },
+      "name" : "RikkeDeliveryReport2months",
+      "description" : "Indberetning for Rikke 2 måneder",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeEyeContact2mth"
+      },
+      "name" : "RikkeEyeContact2mth",
+      "description" : "Rikke har afvigende øjenkontakt ved 2 måneder",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-exam-result"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeFeedingObservationNewPeriod"
+      },
+      "name" : "RikkeFeedingObservationNewPeriod",
+      "description" : "Rikkes periode-start for ammes som supplement til anden kost",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeFeedingObservationPeriod"
+      },
+      "name" : "RikkeFeedingObservationPeriod",
+      "description" : "Rikkes periode for fuldamning",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeFeedingObservationStatus"
+      },
+      "name" : "RikkeFeedingObservationStatus",
+      "description" : "Rikkes status på madning ved 2 mrd",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeFeedingObservationStatus10mth"
+      },
+      "name" : "RikkeFeedingObservationStatus10mth",
+      "description" : "Rikkes status, ved 10 måneder, udelukkende status fordi perioden er startet tidligere, og ikke er afsluttet",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeHeadCircum"
+      },
+      "name" : "RikkeHeadCircum",
+      "description" : "Rikkes hovedomkreds",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/RikkeInterventionSocialContact"
+      },
+      "name" : "RikkeInterventionSocialContact",
+      "description" : "Rikkes behovsindsats vedr. social kontakt",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-intervention"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeMotorFunction2mth"
+      },
+      "name" : "RikkeMotorFunction2mth",
+      "description" : "Rikkes motorik ved 2mrd",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-motor-function"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeSleep2mth"
+      },
+      "name" : "RikkeSleep2mth",
+      "description" : "Rikkes søvn ved 2mrd",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-sleep"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/RikkeSocialInteraction"
+      },
+      "name" : "RikkeSocialInteraction",
+      "description" : "Rikkes sociale kontakt ved 2mrd",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-social-interaction"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RikkesParent"
+      },
+      "name" : "RikkesParent",
+      "description" : "RikkesParent",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/SchoolHolbaek"
+      },
+      "name" : "SchoolHolbaek",
+      "description" : "Skole i Holbæk",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/SDQ11-17AnswerRikke"
+      },
+      "name" : "SDQ11-17AnswerRikke",
+      "description" : "SDQ svar lavet af Rikke (Rikkes alder passer ikke til spørgeskemaet)",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/SDQ4-10AnswerLars"
+      },
+      "name" : "SDQ4-10AnswerLars",
+      "description" : "SDQ svar om Lars lavet af Lars' mor eller far",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/SNOMED-CT-INT"
+      },
+      "name" : "SNOMED CT International Edition",
+      "description" : "SNOMED CT is a core clinical healthcare terminology that contains concepts with unique meanings and formal logic based definitions organized into hierarchies.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SocialInteractionCodes"
+      },
+      "name" : "SocialKontaktKoder",
+      "description" : "Mandatory result values for social interaction in small children and school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/IndicatorCodesChildren"
+      },
+      "name" : "SundhedsplejeIndikatorkoder",
+      "description" : "Indicator-observables for parents and children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLHealthNurseInterventions"
+      },
+      "name" : "Sundhedsplejeindsatser",
+      "description" : "Need based interventions used in municipality health nursing (sundhedsplejen)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/EncounterTypes"
+      },
+      "name" : "SundhedsplejeKontaktTyper",
+      "description" : "Extension on encountertype valueset, to be implemented in KL-term and FKI, does not use exciting codes only those specific to childrens nursing",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLHealthNurseConditions"
+      },
+      "name" : "Sundhedsplejetilstande",
+      "description" : "Health nurse conditions, that relates to nursing problem areas and/or challenges found in examinations and evaluations made by the health nurse (sundhedsplejerske)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SightCodes"
+      },
+      "name" : "SynKoder",
+      "description" : "Mandatory result values for sight in school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SleepCodes"
+      },
+      "name" : "SøvnKoder",
+      "description" : "Mandatory result values for challenges in sleeping pattern in small children and school children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/TOPIRikke"
+      },
+      "name" : "TOPIAnswerRikke",
+      "description" : "TOPI vurdering af Rikke lavet af sundhedsplejersker og eventuelle samarbejdspartnere.",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ExamResults"
+      },
+      "name" : "UndersøgelsesResultatKoder",
+      "description" : "Valueset for optional history and examination findings in small children and school children",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "example.html"
+        }],
+        "nameUrl" : "example.html",
+        "title" : "Example",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "example2.html"
+        }],
+        "nameUrl" : "example2.html",
+        "title" : "Example 2",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

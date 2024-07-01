@@ -2,45 +2,45 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
-      "version" : "2.0.0",
+      "version" : "2.1.0",
       "status" : "active",
       "name" : "CareSocialCodes",
       "title" : "CareSocialCodes",
       "description" : "Administrative/technical codes in Local Govenment Denmark (KL), associated with common use cases across areas or kl-core",
       "uses" : {
       },
-      "ValueSet-FindingInformerCodes.html" : "KildeTilOplysningKoder",
-      "ValueSet-EncounterClassCodes.html" : "KontaktKlasseKoder"
+      "ValueSet-EncounterClassCodes.html" : "KontaktKlasseKoder",
+      "ValueSet-FindingInformerCodes.html" : "KildeTilOplysningKoder"
     },
     {
       "url" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
-      "version" : "2.0.0",
+      "version" : "2.1.0",
       "status" : "active",
       "name" : "FBOE",
       "title" : "FBOE",
       "description" : "Concepts used for standardizing documentation for Danish postpartum nursing/childrens health promotion program in schools (Da: Sundhedsplejen). The concepts are utilized in the National Database for Children and Youth (LDBU).",
       "uses" : {
       },
-      "ValueSet-PhysicalActivityCodes.html" : "FysiskAktiviteteKoder",
-      "ValueSet-ExamResults.html" : "UndersøgelsesResultatKoder",
-      "ValueSet-MotorFunctionCodes.html" : "MotorikKoder",
-      "ValueSet-PassiveSmokingCodes.html" : "PassivRygningKoder",
-      "ValueSet-CommunicationCodes.html" : "KommunikationKoder",
-      "ValueSet-NicotineCodes.html" : "NikotinKoder",
-      "ValueSet-KLHealthNurseConditions.html" : "Sundhedsplejetilstande",
-      "ValueSet-SleepCodes.html" : "SøvnKoder",
-      "ValueSet-SocialInteractionCodes.html" : "SocialKontaktKoder",
-      "ValueSet-ParentSocialStatusCodes.html" : "ForældresSårbarhedKoder",
       "ValueSet-HearingCodes.html" : "HørelseKoder",
+      "ValueSet-ChildrenParentRelationshipCodes.html" : "ForældreBarnRelationsKoder",
+      "ValueSet-ExamResults.html" : "UndersøgelsesResultatKoder",
       "ValueSet-SightCodes.html" : "SynKoder",
       "ValueSet-SocialSupportNetworkCodes.html" : "NetværkKoder",
+      "ValueSet-CommunicationCodes.html" : "KommunikationKoder",
+      "ValueSet-SleepCodes.html" : "SøvnKoder",
+      "ValueSet-EncounterTypes.html" : "SundhedsplejeKontaktTyper",
+      "ValueSet-ParentSocialStatusCodes.html" : "ForældresSårbarhedKoder",
       "ValueSet-IndicatorCodesChildren.html" : "SundhedsplejeIndikatorkoder",
       "ValueSet-KLHealthNurseInterventions.html" : "Sundhedsplejeindsatser",
-      "ValueSet-ChildrenParentRelationshipCodes.html" : "ForældreBarnRelationsKoder",
+      "ValueSet-KLHealthNurseConditions.html" : "Sundhedsplejetilstande",
+      "ValueSet-SocialInteractionCodes.html" : "SocialKontaktKoder",
+      "ValueSet-NicotineCodes.html" : "NikotinKoder",
+      "ValueSet-ParentsMentalCodes.html" : "ForældresPsykiskeTilstandKoder",
+      "ValueSet-PassiveSmokingCodes.html" : "PassivRygningKoder",
       "ValueSet-FeedingResultsChildren.html" : "ResultatkoderSmåbørnMad",
-      "ValueSet-EncounterTypes.html" : "SundhedsplejeKontaktTyper",
-      "ValueSet-NutritionCodes.html" : "ErnæringKoder",
-      "ValueSet-ParentsMentalCodes.html" : "ForældresPsykiskeTilstandKoder"
+      "ValueSet-PhysicalActivityCodes.html" : "FysiskAktiviteteKoder",
+      "ValueSet-MotorFunctionCodes.html" : "MotorikKoder",
+      "ValueSet-NutritionCodes.html" : "ErnæringKoder"
     },
     {
       "url" : "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
@@ -349,8 +349,8 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
-      "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind"
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -366,7 +366,7 @@
     },
     {
       "url" : "http://loinc.org",
-      "version" : "2.0.0",
+      "version" : "2.0.1",
       "status" : "active",
       "name" : "LOINC",
       "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
@@ -380,7 +380,7 @@
     },
     {
       "url" : "http://snomed.info/sct",
-      "version" : "2.0.0",
+      "version" : "2.0.1",
       "status" : "active",
       "name" : "SNOMED_CT_INT",
       "title" : "SNOMED CT International Edition",
@@ -388,19 +388,19 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
-      "ValueSet-BodyheightSCTobservablesChildren.html" : "HøjdeObservationskoderSCT",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "http://hl7.dk/fhir/core/3.2.0/ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.dk/fhir/core/3.2.0/ValueSet-dk-core-SCTBasicObservation.html" : "DK Core SNOMED CT Basic Observation",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
+      "ValueSet-BodyheightSCTobservablesChildren.html" : "HøjdeObservationskoderSCT",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.dk/fhir/core/3.2.0/ValueSet-dk-core-TechniquesSCTCodes.html" : "DK TechniquesSCTCodes",
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -664,9 +664,9 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
       "ValueSet-ParentTypes.html" : "ForælderTyper",
-      "http://hl7.dk/fhir/core/3.2.0/ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types"
+      "http://hl7.dk/fhir/core/3.2.0/ValueSet-dk-core-RelatedPersonRelationshipTypes.html" : "DK Related Person Relationship Types",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
       "url" : "http://unitsofmeasure.org",
@@ -731,7 +731,7 @@
     },
     {
       "url" : "urn:oid:1.2.208.176.2.1",
-      "version" : "2.0.0",
+      "version" : "2.1.0",
       "status" : "active",
       "name" : "NPU",
       "title" : "NPU",
