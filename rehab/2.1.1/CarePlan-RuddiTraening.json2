@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "RuddiTraening",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan RuddiTraening</b></p><a name=\"RuddiTraening\"> </a><a name=\"hcRuddiTraening\"> </a><a name=\"hcRuddiTraening-en-US\"> </a><p><b>basedOn</b>: <a href=\"CarePlan-RuddiTraeningsforloeb.html\">CarePlan: extension = No display for Extension ; status = active; intent = plan; category = Interventionsforløb efter §140; period = 2022-05-30 --&gt; (ongoing)</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-RuddiTestBerggren.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#1502779995\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2022-05-30 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 2abe20c7-c0b4-41c1-b397-52acf36499ef}\">Fysisk træning</span></td><td>In Progress</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+    "valueReference" : {
+      "reference" : "ServiceRequest/RuddiGGOPInformation"
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/RuddiTraeningsforloeb"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/RuddiTestBerggren"
+  },
+  "period" : {
+    "start" : "2022-05-30"
+  },
+  "activity" : [{
+    "detail" : {
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+            "code" : "2865f123-15a7-4a36-a514-32ea37c400ca",
+            "display" : "Gruppebaseret indsats"
+          }]
+        }
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "2abe20c7-c0b4-41c1-b397-52acf36499ef",
+          "display" : "Fysisk træning"
+        }]
+      },
+      "status" : "in-progress"
+    }
+  }]
+}

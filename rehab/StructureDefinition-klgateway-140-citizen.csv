@@ -47,8 +47,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","An identifier intended for computation","An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","CX / EI (occasionally, more often EI maps to a resource id or a URL)"
-"Patient.active","Patient.active","","","",0,0,"","Y","Y","boolean {[]} {[]}
-","Whether this patient's record is in active use","Whether this patient record is in active use. 
+"Patient.active","Patient.active","","","",0,1,"","Y","Y","boolean {[]} {[]}
+","[DK] harAktivJournal","Whether this patient record is in active use. 
 Many systems use this property to mark as non-current patients, such as those that have not been seen for a period of time based on an organization's business rules.
 
 It is often used to filter patient lists to exclude inactive patients

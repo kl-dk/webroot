@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/rehab/Condition/RuddiAktionsdiagnoseGGOP> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RuddiAktionsdiagnoseGGOP"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-focus-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-focus-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition RuddiAktionsdiagnoseGGOP</b></p><a name=\"RuddiAktionsdiagnoseGGOP\"> </a><a name=\"hcRuddiAktionsdiagnoseGGOP\"> </a><a name=\"hcRuddiAktionsdiagnoseGGOP-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.4.12 DS721}\">Pertrokantær femurfraktur</span></p><p><b>subject</b>: <a href=\"Patient-RuddiTestBerggren.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#1502779995 (use: official, ))</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4.12"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DS721" ] ;
+       fhir:display [ fhir:v "Pertrokantær femurfraktur" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/rehab/Patient/RuddiTestBerggren> ;
+     fhir:reference [ fhir:v "Patient/RuddiTestBerggren" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
