@@ -16,9 +16,9 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/rehab/Condition-"+id+".xml");
   else if (id == "RuddiAktionsdiagnoseGGOP")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.1.1/Condition-RuddiAktionsdiagnoseGGOP.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/Condition-RuddiAktionsdiagnoseGGOP.html");
   else if (id == "RuddiTilstand")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.1.1/Condition-RuddiTilstand.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.1.0/Condition-RuddiTilstand.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/rehab/Condition.html");
 
@@ -27,6 +27,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1-milestone\output\crcondition.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 0-milestone\output\crcondition.asp) .
 </body>
 </html>
