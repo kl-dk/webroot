@@ -1,0 +1,454 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"]
+  },
+  "type" : "collection",
+  "timestamp" : "2021-02-15T08:39:34Z",
+  "entry" : [{
+    "fullUrl" : "https://test.fhir.dk/Patient/eec9e8e9-221d-4eae-a54d-cdd403661def",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "eec9e8e9-221d-4eae-a54d-cdd403661def",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient eec9e8e9-221d-4eae-a54d-cdd403661def</b></p><a name=\"eec9e8e9-221d-4eae-a54d-cdd403661def\"> </a><a name=\"hceec9e8e9-221d-4eae-a54d-cdd403661def\"> </a><a name=\"eec9e8e9-221d-4eae-a54d-cdd403661def-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101410001\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/123456789012345\u00a0(use:\u00a0official,\u00a0)</li></ul></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0101410001"
+      }],
+      "managingOrganization" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "urn:oid:1.2.208.176.1.1",
+          "value" : "123456789012345"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/d45b02d1-be76-4968-812b-6b32338ad8ad",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "d45b02d1-be76-4968-812b-6b32338ad8ad",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_d45b02d1-be76-4968-812b-6b32338ad8ad\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition d45b02d1-be76-4968-812b-6b32338ad8ad</b></p><a name=\"d45b02d1-be76-4968-812b-6b32338ad8ad\"> </a><a name=\"hcd45b02d1-be76-4968-812b-6b32338ad8ad\"> </a><a name=\"d45b02d1-be76-4968-812b-6b32338ad8ad-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html#Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\">Bundle: type = collection; timestamp = 2021-02-15 08:39:34+0000</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B4}\">3</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J1.3}\">Af- og påklædning</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "B4"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "J1.3"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/34665f6d-7573-46fb-8b4d-72f30641284b",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "34665f6d-7573-46fb-8b4d-72f30641284b",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_34665f6d-7573-46fb-8b4d-72f30641284b\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 34665f6d-7573-46fb-8b4d-72f30641284b</b></p><a name=\"34665f6d-7573-46fb-8b4d-72f30641284b\"> </a><a name=\"hc34665f6d-7573-46fb-8b4d-72f30641284b\"> </a><a name=\"34665f6d-7573-46fb-8b4d-72f30641284b-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html#Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\">Bundle: type = collection; timestamp = 2021-02-15 08:39:34+0000</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B4}\">3</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J2.3}\">Udføre daglige rutiner</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "B4"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "J2.3"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/067e0542-1d8a-404d-b6db-f2bfa6a03c2e",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "067e0542-1d8a-404d-b6db-f2bfa6a03c2e",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_067e0542-1d8a-404d-b6db-f2bfa6a03c2e\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 067e0542-1d8a-404d-b6db-f2bfa6a03c2e</b></p><a name=\"067e0542-1d8a-404d-b6db-f2bfa6a03c2e\"> </a><a name=\"hc067e0542-1d8a-404d-b6db-f2bfa6a03c2e\"> </a><a name=\"067e0542-1d8a-404d-b6db-f2bfa6a03c2e-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html#Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\">Bundle: type = collection; timestamp = 2021-02-15 08:39:34+0000</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B4}\">3</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J2.2}\">Lave mad</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "B4"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "J2.2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/cd8643fd-8a42-4ef8-81b4-bf5ec2253f14",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "cd8643fd-8a42-4ef8-81b4-bf5ec2253f14",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_cd8643fd-8a42-4ef8-81b4-bf5ec2253f14\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition cd8643fd-8a42-4ef8-81b4-bf5ec2253f14</b></p><a name=\"cd8643fd-8a42-4ef8-81b4-bf5ec2253f14\"> </a><a name=\"hccd8643fd-8a42-4ef8-81b4-bf5ec2253f14\"> </a><a name=\"cd8643fd-8a42-4ef8-81b4-bf5ec2253f14-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html#Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\">Bundle: type = collection; timestamp = 2021-02-15 08:39:34+0000</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B4}\">3</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J2.1}\">Lave husligt arbejde</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "B4"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "J2.1"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd</b></p><a name=\"806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd\"> </a><a name=\"hc806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd\"> </a><a name=\"806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html#Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\">Bundle: type = collection; timestamp = 2021-02-15 08:39:34+0000</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B3}\">2</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J3.8}\">Gå</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "B3"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "J3.8"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/5ad5649a-6317-41de-8cc4-364b9bafd298",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "5ad5649a-6317-41de-8cc4-364b9bafd298",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_5ad5649a-6317-41de-8cc4-364b9bafd298\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 5ad5649a-6317-41de-8cc4-364b9bafd298</b></p><a name=\"5ad5649a-6317-41de-8cc4-364b9bafd298\"> </a><a name=\"hc5ad5649a-6317-41de-8cc4-364b9bafd298\"> </a><a name=\"5ad5649a-6317-41de-8cc4-364b9bafd298-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html#Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\">Bundle: type = collection; timestamp = 2021-02-15 08:39:34+0000</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B3}\">2</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J3.2}\">Bevæge sig omkring</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "B3"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "J3.2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/fcc4040a-1803-434f-b633-8b354c5fbfb4",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "fcc4040a-1803-434f-b633-8b354c5fbfb4",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_fcc4040a-1803-434f-b633-8b354c5fbfb4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition fcc4040a-1803-434f-b633-8b354c5fbfb4</b></p><a name=\"fcc4040a-1803-434f-b633-8b354c5fbfb4\"> </a><a name=\"hcfcc4040a-1803-434f-b633-8b354c5fbfb4\"> </a><a name=\"fcc4040a-1803-434f-b633-8b354c5fbfb4-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html#Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\">Bundle: type = collection; timestamp = 2021-02-15 08:39:34+0000</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B4}\">3</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J3.7}\">Muskelstyrke</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+        "valueReference" : {
+          "reference" : "Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "B4"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "J3.7"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "recordedDate" : "2021-02-10"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Encounter/56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter 56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b</b></p><a name=\"56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\"> </a><a name=\"hc56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b\"> </a><a name=\"56c8d2c3-5da1-4a33-a358-d3ecfb67ef3b-en-US\"> </a><p><b>status</b>: Planned</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>type</b>: <span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 9f03dfbb-7a97-45a5-94db-d4c3501714a9}\">opfølgning</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>period</b>: 2021-02-24 --&gt; (ongoing)</p></div>"
+      },
+      "status" : "planned",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "HH"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+          "code" : "9f03dfbb-7a97-45a5-94db-d4c3501714a9"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "period" : {
+        "start" : "2021-02-24"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Observation/4438410f-c879-45ec-9626-75c85fa1449a",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "4438410f-c879-45ec-9626-75c85fa1449a",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_4438410f-c879-45ec-9626-75c85fa1449a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation 4438410f-c879-45ec-9626-75c85fa1449a</b></p><a name=\"4438410f-c879-45ec-9626-75c85fa1449a\"> </a><a name=\"hc4438410f-c879-45ec-9626-75c85fa1449a\"> </a><a name=\"4438410f-c879-45ec-9626-75c85fa1449a-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Patient_eec9e8e9-221d-4eae-a54d-cdd403661def\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>focus</b>: </p><ul><li><a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Condition_d45b02d1-be76-4968-812b-6b32338ad8ad\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></li><li><a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Condition_34665f6d-7573-46fb-8b4d-72f30641284b\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></li><li><a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Condition_067e0542-1d8a-404d-b6db-f2bfa6a03c2e\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></li><li><a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Condition_cd8643fd-8a42-4ef8-81b4-bf5ec2253f14\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></li><li><a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Condition_806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></li><li><a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Condition_5ad5649a-6317-41de-8cc4-364b9bafd298\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></li><li><a href=\"Bundle-3304e5f8-4b3f-4c19-8c68-e36c573f3f98.html#Condition_fcc4040a-1803-434f-b633-8b354c5fbfb4\">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></li></ul><p><b>effective</b>: 2021-02-15</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "712744002"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/eec9e8e9-221d-4eae-a54d-cdd403661def"
+      },
+      "focus" : [{
+        "reference" : "Condition/d45b02d1-be76-4968-812b-6b32338ad8ad"
+      },
+      {
+        "reference" : "Condition/34665f6d-7573-46fb-8b4d-72f30641284b"
+      },
+      {
+        "reference" : "Condition/067e0542-1d8a-404d-b6db-f2bfa6a03c2e"
+      },
+      {
+        "reference" : "Condition/cd8643fd-8a42-4ef8-81b4-bf5ec2253f14"
+      },
+      {
+        "reference" : "Condition/806d1cf8-5a4a-4c0d-a020-8a3bb3eacebd"
+      },
+      {
+        "reference" : "Condition/5ad5649a-6317-41de-8cc4-364b9bafd298"
+      },
+      {
+        "reference" : "Condition/fcc4040a-1803-434f-b633-8b354c5fbfb4"
+      }],
+      "effectiveDateTime" : "2021-02-15",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "E1"
+        }]
+      }
+    }
+  }]
+}

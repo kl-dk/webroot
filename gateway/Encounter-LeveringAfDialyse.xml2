@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="LeveringAfDialyse"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter LeveringAfDialyse</b></p><a name="LeveringAfDialyse"> </a><a name="hcLeveringAfDialyse"> </a><a name="LeveringAfDialyse-en-US"> </a><p><b>basedOnInterventionExtension</b>: <a href="CarePlan-Dialyse.html">CarePlan: status = active; intent = plan; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">ActCode HH</a>: home health</p><p><b>type</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 784275f1-6822-4a88-b361-d958007d5253}">udførelse af planlagt indsats</span></p><p><b>subject</b>: <a href="Patient-TestPerson.html">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>period</b>: 2020-08-16 --&gt; (ongoing)</p></div>
+  </text>
+  <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+    <valueReference>
+      <reference value="CarePlan/Dialyse"/>
+    </valueReference>
+  </extension>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="HH"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+      <code value="784275f1-6822-4a88-b361-d958007d5253"/>
+      <display value="udførelse af planlagt indsats"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/TestPerson"/>
+  </subject>
+  <period>
+    <start value="2020-08-16"/>
+  </period>
+</Encounter>

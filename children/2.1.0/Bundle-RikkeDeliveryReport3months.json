@@ -1,0 +1,78 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "RikkeDeliveryReport3months",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"]
+  },
+  "type" : "collection",
+  "timestamp" : "2020-08-08T23:45:00.000Z",
+  "entry" : [{
+    "fullUrl" : "http://fhir.kl.dk/children/Patient/Rikke",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Rikke",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Rikke\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Rikke</b></p><a name=\"Rikke\"> </a><a name=\"hcRikke\"> </a><a name=\"Rikke-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/123456789012345\u00a0(use:\u00a0official,\u00a0)</li></ul></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0505209996"
+      }],
+      "active" : true,
+      "managingOrganization" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "urn:oid:1.2.208.176.1.1",
+          "value" : "123456789012345"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.kl.dk/children/Observation/RikkeBodyWeight3mth",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "RikkeBodyWeight3mth",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RikkeBodyWeight3mth\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RikkeBodyWeight3mth</b></p><a name=\"RikkeBodyWeight3mth\"> </a><a name=\"hcRikkeBodyWeight3mth\"> </a><a name=\"RikkeBodyWeight3mth-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}, {http://snomed.info/sct 27113001}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-Rikke.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2020-08-08</p><p><b>value</b>: 7100 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "27113001",
+          "display" : "Body weight"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Rikke"
+      },
+      "effectiveDateTime" : "2020-08-08",
+      "valueQuantity" : {
+        "value" : 7100,
+        "unit" : "g",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
+      }
+    }
+  }]
+}

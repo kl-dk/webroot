@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/gateway/Encounter/LeveringAfDialyse> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LeveringAfDialyse"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter LeveringAfDialyse</b></p><a name=\"LeveringAfDialyse\"> </a><a name=\"hcLeveringAfDialyse\"> </a><a name=\"LeveringAfDialyse-en-US\"> </a><p><b>basedOnInterventionExtension</b>: <a href=\"CarePlan-Dialyse.html\">CarePlan: status = active; intent = plan; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>type</b>: <span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 784275f1-6822-4a88-b361-d958007d5253}\">udførelse af planlagt indsats</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>period</b>: 2020-08-16 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/gateway/CarePlan/Dialyse> ;
+       fhir:reference [ fhir:v "CarePlan/Dialyse" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "784275f1-6822-4a88-b361-d958007d5253" ] ;
+       fhir:display [ fhir:v "udførelse af planlagt indsats" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-08-16"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

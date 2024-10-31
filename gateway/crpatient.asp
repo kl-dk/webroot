@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -15,8 +15,10 @@
     Response.Redirect("http://fhir.kl.dk/gateway/Patient-"+id+".json");
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/gateway/Patient-"+id+".xml");
+  else if (id == "TestPersonError")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Patient-TestPersonError.html");
   else if (id == "TestPerson")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/Patient-TestPerson.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Patient-TestPerson.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/gateway/Patient.html");
 
@@ -25,6 +27,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1.0-milestone/output/crpatient.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 2.0-milestone\output\crpatient.asp) .
 </body>
 </html>

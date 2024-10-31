@@ -3,14 +3,14 @@
   "id" : "kl.dk.fhir.children",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.children</b></p><a name=\"kl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children-en-US\"> </a><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.children</b></p><a name=\"kl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children\"> </a><a name=\"kl.dk.fhir.children-en-US\"> </a><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>\n</div></div>"
   },
   "url" : "http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children",
-  "version" : "2.0.1",
+  "version" : "2.1.0",
   "name" : "KLChildren",
   "title" : "KLChildren implementation guide, an implementation of FBU",
   "status" : "active",
-  "date" : "2024-07-01T22:52:03+02:00",
+  "date" : "2024-10-31T20:37:15+01:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -31,7 +31,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.5.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -53,7 +53,7 @@
     "id" : "kl_dk_fhir_term",
     "uri" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
     "packageId" : "kl.dk.fhir.term",
-    "version" : "2.1.0"
+    "version" : "2.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -355,7 +355,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -869,6 +869,18 @@
       "name" : "c60604d1-692b-4e6d-86e5-03046b2d2f16",
       "description" : "DeliveryReport-Rikke-4a",
       "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-children-incremental-delivery"
+      },
+      "name" : "CareIncrementalDelivery",
+      "description" : "Delivery for all delivery reports made since last update (unordered).",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1704,6 +1716,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/RikkeBodyWeight3mth"
+      },
+      "name" : "RikkeBodyWeight3mth",
+      "description" : "Rikkes vægt ved 3 måneder",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/RikkeChildrenParentRelationship"
       },
       "name" : "RikkeChildrenParentRelationship",
@@ -1732,6 +1756,18 @@
       },
       "name" : "RikkeDeliveryReport2months",
       "description" : "Indberetning for Rikke 2 måneder",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/RikkeDeliveryReport3months"
+      },
+      "name" : "RikkeDeliveryReport3months",
+      "description" : "Indberetning for Rikke 3 måneder - eksempel på at der er foretaget en enkelt vægtmåling udenfor standardkontakter",
       "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
     },
     {
@@ -1997,6 +2033,18 @@
       "name" : "SøvnKoder",
       "description" : "Mandatory result values for challenges in sleeping pattern in small children and school children",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/TestIncrementalDelivery"
+      },
+      "name" : "TestIncrementalDelivery",
+      "description" : "Example of an incremental delivery with one delivery report",
+      "exampleCanonical" : "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-incremental-delivery"
     },
     {
       "extension" : [{

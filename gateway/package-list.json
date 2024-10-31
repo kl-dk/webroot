@@ -1,4 +1,4 @@
-﻿{
+{
   "list" : [
     {
       "version" : "current",
@@ -7,13 +7,23 @@
       "sequence" : "ci-build"
     },
     {
+      "version" : "1.2.0",
+      "path" : "http://fhir.kl.dk/gateway/1.2.0",
+      "status" : "release",
+      "sequence" : "Releases",
+      "fhirversion" : "4.0.1",
+      "date" : "2024-10-31",
+      "current" : true,
+      "desc" : "Compliant with the simplification of FSIII (Forenklingen), but without breaking changes. Adding ældrelovsindsaster",
+      "descmd" : "Release 1.2.0. Dependency to kl-term 2.2.0 established. Updated to be compliant with the simplification of FSIII (Forenklingen), but without breaking changes. New home care interventions added, as a concequence of ældreloven. Old FSIII codes and terms are still accepted. A new encounter called GeneralEncounter has been included.\r\nThe citizen profile has two new attributes: Patient.active and Patient.deceased. deliveryType on PlannedIntervention has been added. Incremental delivery have been added, so that FLIS may use this IG for data delivery."
+    },
+    {
       "version" : "1.1.0",
       "path" : "http://fhir.kl.dk/gateway/1.1.0",
       "status" : "release",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
       "date" : "2023-06-21",
-      "current" : true,
       "descmd" : "Initial release of KL-Gateway for nursing and home care\n\nThis is the same content as earlier released as hl7.fhir.dk.kl.gateway.care#1.0.4 with cannonical  http://gateway.kl.dk/1.0. However, canonical and package id have changed to accomodate new naming conventions. Additionally, this version inherit its terminologi from KLTerm rather than from KL's core models (FKI)."
     }
   ],

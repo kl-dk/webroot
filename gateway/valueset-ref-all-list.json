@@ -1,0 +1,1222 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/DeliveryTypes",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "DeliveryTypes",
+      "title" : "DeliveryTypes",
+      "description" : "The delivery context types",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/EncounterClassCodes",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "EncounterClassCodes",
+      "title" : "KontaktKlasseKoder",
+      "description" : "Codes to describe the mode of delivery of an encounter",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareConditions",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareConditions",
+      "title" : "FSIIICareConditions",
+      "description" : "Conditions defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-finding-context-at-risk-extension.html" : "CareFindingContextAtRiskExtension",
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareGoalTypes",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareGoalTypes",
+      "title" : "FSIIICareGoalTypes",
+      "description" : "Goal Types defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"]
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareInterventions",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareInterventions",
+      "title" : "FSIIICareInterventions",
+      "description" : "Interventions defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention",
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareMatterOfInterests",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareMatterOfInterests",
+      "title" : "FSIIICareMatterOfInterests",
+      "description" : "Matters of Interests (areas) defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/KLGatewayCareMatterOfInterestValues",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "KLGatewayCareMatterOfInterestValues",
+      "title" : "KLGatewayCareMatterOfInterestValues",
+      "description" : "Values of Matters of Interests (areas)",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLCitizenObservationCodesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLCitizenObservationCodesFSIII",
+      "title" : "KLBorgervurderingsObservationskoderFSIII",
+      "description" : "Observation codes for citizens own observations as defined by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLCitizenObservationResultCodesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLCitizenObservationResultCodesFSIII",
+      "title" : "KLBorgervurderingsResultatkoderFSIII",
+      "description" : "Performance and Importance level codes, as evaluated by the citizen",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLConditionCodesHomeCare",
+      "title" : "KLTilstandeKoderHjemmepleje",
+      "description" : "Danish municipality home care condition codes (funktionsevnetilstande)",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareConditions.html" : "FSIIICareConditions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionCodesNursing",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLConditionCodesNursing",
+      "title" : "KLTilstandeKoderSygepleje",
+      "description" : "Danish municipality nursing condition codes",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareConditions.html" : "FSIIICareConditions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLEncounterTypes",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLEncounterTypes",
+      "title" : "KLKontaktTyper",
+      "description" : "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLFollowUpCodesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLFollowUpCodesFSIII",
+      "title" : "KLOpfølgningKoderFSIII",
+      "description" : "Follow-up codes used in FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLGoalTypeCodes",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLGoalTypeCodes",
+      "title" : "KLMålKategoriKoder",
+      "description" : "Codes used to distinguish different kinds of goals",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLHomeCareAreasFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLHomeCareAreasFSIII",
+      "title" : "KLHjemmeplejeOmråderFSIII",
+      "description" : "Observation codes for the five home care areas as defined by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareMatterOfInterests.html" : "FSIIICareMatterOfInterests"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLHomeCareInterventionsFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLHomeCareInterventionsFSIII",
+      "title" : "KLHjemmeplejeIndsatserFSIII",
+      "description" : "Home Care Interventions as described by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareInterventions.html" : "FSIIICareInterventions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLNursingAreasFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLNursingAreasFSIII",
+      "title" : "KLSygeplejeOmråderFSIII",
+      "description" : "Observation codes for the 12 nursing areas as defined by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareMatterOfInterests.html" : "FSIIICareMatterOfInterests"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLNursingInterventionsFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLNursingInterventionsFSIII",
+      "title" : "KLSygeplejeIndsatserFSIII",
+      "description" : "Nursing interventions as described by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareInterventions.html" : "FSIIICareInterventions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLSeveritiesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLSeveritiesFSIII",
+      "title" : "KLFunktionsevneniveauFSIII",
+      "description" : "Severities related to conditions in FSIII home care (funktionsniveau)",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal",
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLTargetMeasureCodes",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLTargetMeasureCodes",
+      "title" : "KLTypeAfObservationPåMål",
+      "description" : "Target measure code, that determines whether the target is expressed as a severity, change value or using another observation",
+      "systems" : [
+        "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+        "http://snomed.info/sct",
+        "urn:oid:1.2.208.176.2.1"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "RelatedPersonRelationshipTypes",
+      "title" : "DK Related Person Relationship Types",
+      "description" : "DK Related Person Relationship Types",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : null,
+      "title" : "DK MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation",
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-incremental-delivery.html" : "CareIncrementalDelivery",
+      "StructureDefinition-klgateway-care-delivery-report.html" : "CareDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal",
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-action",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureDeviceActionCodes",
+      "title" : "Procedure Device Action Codes",
+      "description" : "Example codes indicating the change that happened to the device during the procedure.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.425"],
+      "sources" : ["2.16.840.1.113883.4.642.3.425"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceTypes",
+      "title" : "FHIR Device Types",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.208"],
+      "sources" : ["2.16.840.1.113883.4.642.3.208"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.109"],
+      "sources" : ["2.16.840.1.113883.4.642.3.109"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-achievement",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalAchievementStatus",
+      "title" : "Goal achievement status",
+      "description" : "Describes the progression, or lack thereof, towards the goal against the target.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-achievement"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1374"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalPriority",
+      "title" : "Goal priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.273"],
+      "sources" : ["2.16.840.1.113883.4.642.3.273"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalLifecycleStatus",
+      "title" : "GoalLifecycleStatus",
+      "description" : "Codes that reflect the current state of a goal and whether the goal is still being targeted.",
+      "systems" : ["http://hl7.org/fhir/goal-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.271"],
+      "sources" : ["2.16.840.1.113883.4.642.3.271"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-incremental-delivery.html" : "CareIncrementalDelivery",
+      "StructureDefinition-klgateway-care-delivery-report.html" : "CareDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal",
+      "StructureDefinition-klgateway-care-incremental-delivery.html" : "CareIncrementalDelivery",
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention",
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation",
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen",
+      "StructureDefinition-klgateway-care-delivery-report.html" : "CareDeliveryReport",
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCategoryCodes(SNOMEDCT)",
+      "title" : "Procedure Category Codes (SNOMED CT)",
+      "description" : "Procedure Category code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.430"],
+      "sources" : ["2.16.840.1.113883.4.642.3.430"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention",
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureFollowUpCodes(SNOMEDCT)",
+      "title" : "Procedure Follow up Codes (SNOMED CT)",
+      "description" : "Procedure follow up codes: A selection of SNOMED CT codes relevant to procedure follow up.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.429"],
+      "sources" : ["2.16.840.1.113883.4.642.3.429"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ProcedureNotPerformedReason(SNOMED-CT)",
+      "title" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "description" : "Situation codes describing the reason that a procedure, which might otherwise be expected, was not performed, or a procedure that was started and was not completed. Consists of SNOMED CT codes, children of procedure contraindicated (183932001), procedure discontinued (416406003), procedure not done (416237000), procedure not indicated (428119001), procedure not offered (416064006), procedure not wanted (416432009), procedure refused (183944003), and procedure stopped (394908001).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.431"],
+      "sources" : ["2.16.840.1.113883.4.642.3.431"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureOutcomeCodes(SNOMEDCT)",
+      "title" : "Procedure Outcome Codes (SNOMED CT)",
+      "description" : "Procedure Outcome code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.428"],
+      "sources" : ["2.16.840.1.113883.4.642.3.428"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation",
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation",
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizen.html" : "CareCitizen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-incremental-delivery.html" : "CareIncrementalDelivery",
+      "StructureDefinition-klgateway-care-delivery-report.html" : "CareDeliveryReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "ValueSet-EncounterClassCodes.html" : "KontaktKlasseKoder",
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    }
+  ]
+}

@@ -3,13 +3,13 @@
   "id" : "kl.dk.fhir.rehab",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.rehab</b></p><a name=\"kl.dk.fhir.rehab\"> </a><a name=\"hckl.dk.fhir.rehab\"> </a><a name=\"hckl.dk.fhir.rehab-en-US\"> </a><h2>KLGatewayRehab</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab</pre><div><p>Danish municipalities implementation guide for §140 rehabilitation reporting</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.rehab</b></p><a name=\"kl.dk.fhir.rehab\"> </a><a name=\"hckl.dk.fhir.rehab\"> </a><a name=\"kl.dk.fhir.rehab-en-US\"> </a><h2>KLGatewayRehab</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab</pre><div><p>Danish municipalities implementation guide for §140 rehabilitation reporting</p>\n</div></div>"
   },
   "url" : "http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab",
-  "version" : "2.1.1",
+  "version" : "2.2.0",
   "name" : "KLGatewayRehab",
   "status" : "active",
-  "date" : "2024-07-01T23:09:09+02:00",
+  "date" : "2024-10-31T15:40:44+01:00",
   "publisher" : "Kommunernes Landsforening",
   "contact" : [{
     "name" : "Kommunernes Landsforening",
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.5.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -52,7 +52,7 @@
     "id" : "kl_dk_fhir_term",
     "uri" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
     "packageId" : "kl.dk.fhir.term",
-    "version" : "2.1.0"
+    "version" : "2.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -332,7 +332,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -708,6 +708,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-140-incremental-delivery"
+      },
+      "name" : "CareIncrementalDelivery",
+      "description" : "Delivery for all delivery reports made since last update (unordered).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1052,6 +1064,18 @@
       "name" : "ServiceTypes",
       "description" : "The service types allowed in §140",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/TestIncrementalDelivery"
+      },
+      "name" : "TestIncrementalDelivery",
+      "description" : "Example of an incremental delivery with one delivery report",
+      "exampleCanonical" : "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-incremental-delivery"
     },
     {
       "extension" : [{

@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "RuddiTerapeutfagligUndersoegelse",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan RuddiTerapeutfagligUndersoegelse</b></p><a name=\"RuddiTerapeutfagligUndersoegelse\"> </a><a name=\"hcRuddiTerapeutfagligUndersoegelse\"> </a><a name=\"RuddiTerapeutfagligUndersoegelse-en-US\"> </a><p><b>basedOnServiceRequestExtension</b>: <a href=\"ServiceRequest-RuddiGGOPInformation.html\">ServiceRequest Kommunal genoptræning efter sygehusophold</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-RuddiTestBerggren.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#1502779995\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2022-05-23 --&gt; 2022-06-02</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 1130ad70-6553-490d-87f8-5e8941687a0c}\">Terapeutfaglig udredning</span></td><td>Completed</td><td><a href=\"Organization-UdfoererAfRuddisRehab.html\">Organization: identifier = urn:oid:1.2.208.176.1.1#1037801000016003\u00a0(use:\u00a0official,\u00a0)</a></td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+    "valueReference" : {
+      "reference" : "ServiceRequest/RuddiGGOPInformation"
+    }
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/RuddiTestBerggren"
+  },
+  "period" : {
+    "start" : "2022-05-23",
+    "end" : "2022-06-02"
+  },
+  "activity" : [{
+    "detail" : {
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+            "code" : "8d12d74c-17da-47a7-a4fe-e69dbaec0a8c",
+            "display" : "Individuel indsats"
+          }]
+        }
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "1130ad70-6553-490d-87f8-5e8941687a0c"
+        }]
+      },
+      "status" : "completed",
+      "performer" : [{
+        "reference" : "Organization/UdfoererAfRuddisRehab"
+      }]
+    }
+  }]
+}

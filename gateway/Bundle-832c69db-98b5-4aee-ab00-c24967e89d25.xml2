@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="832c69db-98b5-4aee-ab00-c24967e89d25"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2021-02-14T02:47:35Z"/>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+    <resource>
+      <Patient>
+        <id value="0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624"> </a><p class="res-header-id"><b>Generated Narrative: Patient 0533e773-c9e6-4cf5-b42d-f3ee07a9c624</b></p><a name="0533e773-c9e6-4cf5-b42d-f3ee07a9c624"> </a><a name="hc0533e773-c9e6-4cf5-b42d-f3ee07a9c624"> </a><a name="0533e773-c9e6-4cf5-b42d-f3ee07a9c624-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101410001 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/123456789012345 (use: official, )</li></ul></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="0101410001"/>
+        </identifier>
+        <deceasedBoolean value="false"/>
+        <managingOrganization>
+          <identifier>
+            <use value="official"/>
+            <system value="urn:oid:1.2.208.176.1.1"/>
+            <value value="123456789012345"/>
+          </identifier>
+        </managingOrganization>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Encounter/dc15e643-1ca7-4a94-a581-641efb9bb890"/>
+    <resource>
+      <Encounter>
+        <id value="dc15e643-1ca7-4a94-a581-641efb9bb890"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_dc15e643-1ca7-4a94-a581-641efb9bb890"> </a><p class="res-header-id"><b>Generated Narrative: Encounter dc15e643-1ca7-4a94-a581-641efb9bb890</b></p><a name="dc15e643-1ca7-4a94-a581-641efb9bb890"> </a><a name="hcdc15e643-1ca7-4a94-a581-641efb9bb890"> </a><a name="dc15e643-1ca7-4a94-a581-641efb9bb890-en-US"> </a><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_0aff84ce-2b70-4677-bfa8-78c599d0eaf9">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_4404487e-978d-4377-bd92-c219e0f1a456">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_749857f9-fdae-4d9c-b180-cf1a2c6019cb">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">ActCode HH</a>: home health</p><p><b>type</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 784275f1-6822-4a88-b361-d958007d5253}">udførelse af planlagt indsats</span></p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>period</b>: 2021-02-13 08:05:00+0000 --&gt; 2021-02-13 08:25:00+0000</p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/0aff84ce-2b70-4677-bfa8-78c599d0eaf9"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/4404487e-978d-4377-bd92-c219e0f1a456"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/749857f9-fdae-4d9c-b180-cf1a2c6019cb"/>
+          </valueReference>
+        </extension>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="HH"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="784275f1-6822-4a88-b361-d958007d5253"/>
+            <display value="udførelse af planlagt indsats"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <period>
+          <start value="2021-02-13T08:05:00Z"/>
+          <end value="2021-02-13T08:25:00Z"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Encounter/66e5facc-4231-4fcf-a277-58d67360e6a6"/>
+    <resource>
+      <Encounter>
+        <id value="66e5facc-4231-4fcf-a277-58d67360e6a6"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_66e5facc-4231-4fcf-a277-58d67360e6a6"> </a><p class="res-header-id"><b>Generated Narrative: Encounter 66e5facc-4231-4fcf-a277-58d67360e6a6</b></p><a name="66e5facc-4231-4fcf-a277-58d67360e6a6"> </a><a name="hc66e5facc-4231-4fcf-a277-58d67360e6a6"> </a><a name="66e5facc-4231-4fcf-a277-58d67360e6a6-en-US"> </a><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_0aff84ce-2b70-4677-bfa8-78c599d0eaf9">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_4404487e-978d-4377-bd92-c219e0f1a456">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_749857f9-fdae-4d9c-b180-cf1a2c6019cb">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">ActCode HH</a>: home health</p><p><b>type</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 784275f1-6822-4a88-b361-d958007d5253}">udførelse af planlagt indsats</span></p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>period</b>: 2021-02-13 13:25:00+0000 --&gt; 2021-02-13 13:45:00+0000</p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/0aff84ce-2b70-4677-bfa8-78c599d0eaf9"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/4404487e-978d-4377-bd92-c219e0f1a456"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/749857f9-fdae-4d9c-b180-cf1a2c6019cb"/>
+          </valueReference>
+        </extension>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="HH"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="784275f1-6822-4a88-b361-d958007d5253"/>
+            <display value="udførelse af planlagt indsats"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <period>
+          <start value="2021-02-13T13:25:00Z"/>
+          <end value="2021-02-13T13:45:00Z"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Encounter/4177484b-b96a-4661-8664-dc8bd8df4dfe"/>
+    <resource>
+      <Encounter>
+        <id value="4177484b-b96a-4661-8664-dc8bd8df4dfe"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_4177484b-b96a-4661-8664-dc8bd8df4dfe"> </a><p class="res-header-id"><b>Generated Narrative: Encounter 4177484b-b96a-4661-8664-dc8bd8df4dfe</b></p><a name="4177484b-b96a-4661-8664-dc8bd8df4dfe"> </a><a name="hc4177484b-b96a-4661-8664-dc8bd8df4dfe"> </a><a name="4177484b-b96a-4661-8664-dc8bd8df4dfe-en-US"> </a><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_0aff84ce-2b70-4677-bfa8-78c599d0eaf9">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_4404487e-978d-4377-bd92-c219e0f1a456">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>basedOnInterventionExtension</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#CarePlan_749857f9-fdae-4d9c-b180-cf1a2c6019cb">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">ActCode HH</a>: home health</p><p><b>type</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 784275f1-6822-4a88-b361-d958007d5253}">udførelse af planlagt indsats</span></p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>period</b>: 2021-02-13 21:00:00+0000 --&gt; 2021-02-13 21:20:00+0000</p></div>
+        </text>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/0aff84ce-2b70-4677-bfa8-78c599d0eaf9"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/4404487e-978d-4377-bd92-c219e0f1a456"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension">
+          <valueReference>
+            <reference value="CarePlan/749857f9-fdae-4d9c-b180-cf1a2c6019cb"/>
+          </valueReference>
+        </extension>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="HH"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+            <code value="784275f1-6822-4a88-b361-d958007d5253"/>
+            <display value="udførelse af planlagt indsats"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <period>
+          <start value="2021-02-13T21:00:00Z"/>
+          <end value="2021-02-13T21:20:00Z"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/CarePlan/0aff84ce-2b70-4677-bfa8-78c599d0eaf9"/>
+    <resource>
+      <CarePlan>
+        <id value="0aff84ce-2b70-4677-bfa8-78c599d0eaf9"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="CarePlan_0aff84ce-2b70-4677-bfa8-78c599d0eaf9"> </a><p class="res-header-id"><b>Generated Narrative: CarePlan 0aff84ce-2b70-4677-bfa8-78c599d0eaf9</b></p><a name="0aff84ce-2b70-4677-bfa8-78c599d0eaf9"> </a><a name="hc0aff84ce-2b70-4677-bfa8-78c599d0eaf9"> </a><a name="0aff84ce-2b70-4677-bfa8-78c599d0eaf9-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>period</b>: 2021-02-12 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>ReasonReference</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:oid:1.2.208.176.2.21 17312894-b23f-43d9-9723-b725ac25d872}">Personlig hygiejne</span></td><td><a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Condition_38ea1a7f-251a-4817-aa4a-b59d556db92a">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></td><td>In Progress</td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <period>
+          <start value="2021-02-12"/>
+        </period>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.21"/>
+                <code value="17312894-b23f-43d9-9723-b725ac25d872"/>
+                <display value="Personlig hygiejne"/>
+              </coding>
+            </code>
+            <reasonReference>
+              <reference value="Condition/38ea1a7f-251a-4817-aa4a-b59d556db92a"/>
+            </reasonReference>
+            <status value="in-progress"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/CarePlan/4404487e-978d-4377-bd92-c219e0f1a456"/>
+    <resource>
+      <CarePlan>
+        <id value="4404487e-978d-4377-bd92-c219e0f1a456"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="CarePlan_4404487e-978d-4377-bd92-c219e0f1a456"> </a><p class="res-header-id"><b>Generated Narrative: CarePlan 4404487e-978d-4377-bd92-c219e0f1a456</b></p><a name="4404487e-978d-4377-bd92-c219e0f1a456"> </a><a name="hc4404487e-978d-4377-bd92-c219e0f1a456"> </a><a name="4404487e-978d-4377-bd92-c219e0f1a456-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>period</b>: 2021-02-12 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>ReasonReference</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:oid:1.2.208.176.2.21 1ae7906b-5f16-4ba4-9077-7f59067cbedb}">Hverdagens aktiviteter</span></td><td><a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Condition_4f47118b-25a0-4998-8f71-86b1ce220f11">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></td><td>In Progress</td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <period>
+          <start value="2021-02-12"/>
+        </period>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.21"/>
+                <code value="1ae7906b-5f16-4ba4-9077-7f59067cbedb"/>
+                <display value="Hverdagens aktiviteter"/>
+              </coding>
+            </code>
+            <reasonReference>
+              <reference value="Condition/4f47118b-25a0-4998-8f71-86b1ce220f11"/>
+            </reasonReference>
+            <status value="in-progress"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/CarePlan/749857f9-fdae-4d9c-b180-cf1a2c6019cb"/>
+    <resource>
+      <CarePlan>
+        <id value="749857f9-fdae-4d9c-b180-cf1a2c6019cb"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="CarePlan_749857f9-fdae-4d9c-b180-cf1a2c6019cb"> </a><p class="res-header-id"><b>Generated Narrative: CarePlan 749857f9-fdae-4d9c-b180-cf1a2c6019cb</b></p><a name="749857f9-fdae-4d9c-b180-cf1a2c6019cb"> </a><a name="hc749857f9-fdae-4d9c-b180-cf1a2c6019cb"> </a><a name="749857f9-fdae-4d9c-b180-cf1a2c6019cb-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>period</b>: 2021-02-12 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>ReasonReference</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:oid:1.2.208.176.2.21 ef8ee035-00d2-48b9-b366-27753ccd5504}">Mobilitet</span></td><td><a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Condition_1c13a997-628d-4d01-af7c-9adb7c19b2a6">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></td><td>In Progress</td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <period>
+          <start value="2021-02-12"/>
+        </period>
+        <activity>
+          <detail>
+            <code>
+              <coding>
+                <system value="urn:oid:1.2.208.176.2.21"/>
+                <code value="ef8ee035-00d2-48b9-b366-27753ccd5504"/>
+                <display value="Mobilitet"/>
+              </coding>
+            </code>
+            <reasonReference>
+              <reference value="Condition/1c13a997-628d-4d01-af7c-9adb7c19b2a6"/>
+            </reasonReference>
+            <status value="in-progress"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Condition/38ea1a7f-251a-4817-aa4a-b59d556db92a"/>
+    <resource>
+      <Condition>
+        <id value="38ea1a7f-251a-4817-aa4a-b59d556db92a"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_38ea1a7f-251a-4817-aa4a-b59d556db92a"> </a><p class="res-header-id"><b>Generated Narrative: Condition 38ea1a7f-251a-4817-aa4a-b59d556db92a</b></p><a name="38ea1a7f-251a-4817-aa4a-b59d556db92a"> </a><a name="hc38ea1a7f-251a-4817-aa4a-b59d556db92a"> </a><a name="38ea1a7f-251a-4817-aa4a-b59d556db92a-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>severity</b>: <span title="Codes:{urn:oid:1.2.208.176.2.21 1ceef776-0cfa-4acd-b222-c5bb2424e0c1}">3</span></p><p><b>code</b>: <span title="Codes:{urn:oid:1.2.208.176.2.21 feb38b55-c2d7-4d57-99c2-93622eaa0025}">Personlig pleje</span></p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <severity>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.21"/>
+            <code value="1ceef776-0cfa-4acd-b222-c5bb2424e0c1"/>
+            <display value="3"/>
+          </coding>
+        </severity>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.21"/>
+            <code value="feb38b55-c2d7-4d57-99c2-93622eaa0025"/>
+            <display value="Personlig pleje"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <recordedDate value="2021-02-10"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Condition/4f47118b-25a0-4998-8f71-86b1ce220f11"/>
+    <resource>
+      <Condition>
+        <id value="4f47118b-25a0-4998-8f71-86b1ce220f11"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_4f47118b-25a0-4998-8f71-86b1ce220f11"> </a><p class="res-header-id"><b>Generated Narrative: Condition 4f47118b-25a0-4998-8f71-86b1ce220f11</b></p><a name="4f47118b-25a0-4998-8f71-86b1ce220f11"> </a><a name="hc4f47118b-25a0-4998-8f71-86b1ce220f11"> </a><a name="4f47118b-25a0-4998-8f71-86b1ce220f11-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>severity</b>: <span title="Codes:{urn:oid:1.2.208.176.2.21 1ceef776-0cfa-4acd-b222-c5bb2424e0c1}">3</span></p><p><b>code</b>: <span title="Codes:{urn:oid:1.2.208.176.2.21 a7ac8429-513f-43cd-bc69-96a8d0e0f0ff}">Lave husligt arbejde</span></p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <severity>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.21"/>
+            <code value="1ceef776-0cfa-4acd-b222-c5bb2424e0c1"/>
+            <display value="3"/>
+          </coding>
+        </severity>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.21"/>
+            <code value="a7ac8429-513f-43cd-bc69-96a8d0e0f0ff"/>
+            <display value="Lave husligt arbejde"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <recordedDate value="2021-02-10"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Condition/1c13a997-628d-4d01-af7c-9adb7c19b2a6"/>
+    <resource>
+      <Condition>
+        <id value="1c13a997-628d-4d01-af7c-9adb7c19b2a6"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_1c13a997-628d-4d01-af7c-9adb7c19b2a6"> </a><p class="res-header-id"><b>Generated Narrative: Condition 1c13a997-628d-4d01-af7c-9adb7c19b2a6</b></p><a name="1c13a997-628d-4d01-af7c-9adb7c19b2a6"> </a><a name="hc1c13a997-628d-4d01-af7c-9adb7c19b2a6"> </a><a name="1c13a997-628d-4d01-af7c-9adb7c19b2a6-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>severity</b>: <span title="Codes:{urn:oid:1.2.208.176.2.21 d984ad21-48fe-4619-845e-2aa0303048e7}">2</span></p><p><b>code</b>: <span title="Codes:{urn:oid:1.2.208.176.2.21 d8aa5f09-cd9c-4996-a853-1c95ee98f25c}">Mobilitet og bevægelse</span></p><p><b>subject</b>: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html#Patient_0533e773-c9e6-4cf5-b42d-f3ee07a9c624">Bundle: type = collection; timestamp = 2021-02-10 11:14:09+0000</a></p><p><b>recordedDate</b>: 2021-02-10</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <severity>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.21"/>
+            <code value="d984ad21-48fe-4619-845e-2aa0303048e7"/>
+            <display value="2"/>
+          </coding>
+        </severity>
+        <code>
+          <coding>
+            <system value="urn:oid:1.2.208.176.2.21"/>
+            <code value="d8aa5f09-cd9c-4996-a853-1c95ee98f25c"/>
+            <display value="Mobilitet og bevægelse"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/0533e773-c9e6-4cf5-b42d-f3ee07a9c624"/>
+        </subject>
+        <recordedDate value="2021-02-10"/>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

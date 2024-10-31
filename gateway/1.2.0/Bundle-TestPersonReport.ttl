@@ -1,0 +1,615 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/gateway/Bundle/TestPersonReport> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TestPersonReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2020-08-14T00:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Patient/TestPerson"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Patient/TestPerson> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Goal/ForventetIngenBegraensninger"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Goal/ForventetIngenBegraensninger> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/UdfoererSelvVaskeSig"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/UdfoererSelvVaskeSig> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Condition/ProblemerMedPersonligPleje"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Condition/ProblemerMedPersonligPleje> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/CarePlan/PersonligHygiejne"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/CarePlan/PersonligHygiejne> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/CarePlan/Dialyse"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/CarePlan/Dialyse> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Procedure/Saarbehandling"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Procedure/Saarbehandling> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/EgensomsorgBegraensninger"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/EgensomsorgBegraensninger> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/VaskeSigFortsaettes"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/VaskeSigFortsaettes> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/PersonligPlejeFortsaettes"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/PersonligPlejeFortsaettes> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://test.fhir.dk/Observation/DialyseFortsaettes"^^xsd:anyURI ] ;
+     fhir:resource ( <https://test.fhir.dk/Observation/DialyseFortsaettes> )
+  ] ) . # 
+
+<https://test.fhir.dk/Patient/TestPerson> a fhir:Patient ;
+  fhir:id [ fhir:v "TestPerson"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_TestPerson\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient TestPerson</b></p><a name=\"TestPerson\"> </a><a name=\"hcTestPerson\"> </a><a name=\"TestPerson-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/123456789012345 (use: official, )</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0101010101" ]
+  ] ) ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:managingOrganization [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "123456789012345" ]
+     ]
+  ] . # 
+
+<https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger> a fhir:Condition ;
+  fhir:id [ fhir:v "VaskeSigLetteBegraensninger"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_VaskeSigLetteBegraensninger\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition VaskeSigLetteBegraensninger</b></p><a name=\"VaskeSigLetteBegraensninger\"> </a><a name=\"hcVaskeSigLetteBegraensninger\"> </a><a name=\"VaskeSigLetteBegraensninger-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Encounter-NaesteOpfoelgningsdato.html\">Encounter: status = planned; class = home health (ActCode#HH); type = opfølgning; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B2}\">1</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J1.1}\">Vaske sig</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/gateway/Encounter/NaesteOpfoelgningsdato> ;
+       fhir:reference [ fhir:v "Encounter/NaesteOpfoelgningsdato" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:severity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "B2" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J1.1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-08-14"^^xsd:date] . # 
+
+<https://test.fhir.dk/Goal/ForventetIngenBegraensninger> a fhir:Goal ;
+  fhir:id [ fhir:v "ForventetIngenBegraensninger"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-goal"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-goal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_ForventetIngenBegraensninger\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Goal ForventetIngenBegraensninger</b></p><a name=\"ForventetIngenBegraensninger\"> </a><a name=\"hcForventetIngenBegraensninger\"> </a><a name=\"ForventetIngenBegraensninger-en-US\"> </a><p><b>lifecycleStatus</b>: Planned</p><p><b>category</b>: <span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes ca552020-6ed1-4cdc-b0d4-32697f1f27ad}\">FSIII tilstandsmål</span></p><p><b>description</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 e182c5dc-9f91-474a-92e8-f62be3d498f4}\">Tilstand forsvinder, mindskes eller forbliver uændret</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>start</b>: 2020-08-14</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 66959f77-6e2a-4574-8423-3ff097f8b9fa}\">funktionsevneniveau</span></td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 B2}\">1</span></td></tr></table><p><b>addresses</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p></div>"
+  ] ; # 
+  fhir:lifecycleStatus [ fhir:v "planned"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ca552020-6ed1-4cdc-b0d4-32697f1f27ad" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "e182c5dc-9f91-474a-92e8-f62be3d498f4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:start [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:target ( [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "66959f77-6e2a-4574-8423-3ff097f8b9fa" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B2" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:addresses ( [
+     fhir:link <http://fhir.kl.dk/gateway/Condition/VaskeSigLetteBegraensninger> ;
+     fhir:reference [ fhir:v "Condition/VaskeSigLetteBegraensninger" ]
+  ] ) . # 
+
+<https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig> a fhir:Observation ;
+  fhir:id [ fhir:v "OpleverIkkeBegraensningerMedVaskeSig"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_OpleverIkkeBegraensningerMedVaskeSig\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation OpleverIkkeBegraensningerMedVaskeSig</b></p><a name=\"OpleverIkkeBegraensningerMedVaskeSig\"> </a><a name=\"hcOpleverIkkeBegraensningerMedVaskeSig\"> </a><a name=\"OpleverIkkeBegraensningerMedVaskeSig-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 D}\">Betydning</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 D1}\">Oplever ikke begrænsninger</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "D" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.kl.dk/gateway/Condition/VaskeSigLetteBegraensninger> ;
+     fhir:reference [ fhir:v "Condition/VaskeSigLetteBegraensninger" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "D1" ]
+     ] )
+  ] . # 
+
+<https://test.fhir.dk/Observation/UdfoererSelvVaskeSig> a fhir:Observation ;
+  fhir:id [ fhir:v "UdfoererSelvVaskeSig"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_UdfoererSelvVaskeSig\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation UdfoererSelvVaskeSig</b></p><a name=\"UdfoererSelvVaskeSig\"> </a><a name=\"hcUdfoererSelvVaskeSig\"> </a><a name=\"UdfoererSelvVaskeSig-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 C}\">Udførelse</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 C1}\">Udfører selv</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.kl.dk/gateway/Condition/VaskeSigLetteBegraensninger> ;
+     fhir:reference [ fhir:v "Condition/VaskeSigLetteBegraensninger" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C1" ]
+     ] )
+  ] . # 
+
+<https://test.fhir.dk/Condition/ProblemerMedPersonligPleje> a fhir:Condition ;
+  fhir:id [ fhir:v "ProblemerMedPersonligPleje"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ProblemerMedPersonligPleje\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ProblemerMedPersonligPleje</b></p><a name=\"ProblemerMedPersonligPleje\"> </a><a name=\"hcProblemerMedPersonligPleje\"> </a><a name=\"ProblemerMedPersonligPleje-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Encounter-NaesteOpfoelgningsdato.html\">Encounter: status = planned; class = home health (ActCode#HH); type = opfølgning; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 I1.1}\">Problemer med personlig pleje</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/gateway/Encounter/NaesteOpfoelgningsdato> ;
+       fhir:reference [ fhir:v "Encounter/NaesteOpfoelgningsdato" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "I1.1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-08-14"^^xsd:date] . # 
+
+<https://test.fhir.dk/CarePlan/PersonligHygiejne> a fhir:CarePlan ;
+  fhir:id [ fhir:v "PersonligHygiejne"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_PersonligHygiejne\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan PersonligHygiejne</b></p><a name=\"PersonligHygiejne\"> </a><a name=\"hcPersonligHygiejne\"> </a><a name=\"PersonligHygiejne-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 H1.1}, {http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions H1.1.1}\">Speciel personlig pleje</span></td><td>In Progress</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-08-14"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "H1.1" ]
+         ] [
+           fhir:system [ fhir:v "http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "H1.1.1" ] ;
+           fhir:display [ fhir:v "Speciel personlig pleje" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "in-progress" ]
+     ]
+  ] ) . # 
+
+<https://test.fhir.dk/CarePlan/Dialyse> a fhir:CarePlan ;
+  fhir:id [ fhir:v "Dialyse"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_Dialyse\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan Dialyse</b></p><a name=\"Dialyse\"> </a><a name=\"hcDialyse\"> </a><a name=\"Dialyse-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 G1.10}\">Dialyse</span></td><td>In Progress</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-08-14"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "G1.10" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "in-progress" ]
+     ]
+  ] ) . # 
+
+<https://test.fhir.dk/Procedure/Saarbehandling> a fhir:Procedure ;
+  fhir:id [ fhir:v "Saarbehandling"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-completed-intervention"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-completed-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_Saarbehandling\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure Saarbehandling</b></p><a name=\"Saarbehandling\"> </a><a name=\"hcSaarbehandling\"> </a><a name=\"Saarbehandling-en-US\"> </a><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 G1.39}\">Sårbehandling</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>performed</b>: 2020-08-14 10:15:00+0000</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "G1.39" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:performed [ fhir:v "2020-08-14T10:15:00Z"^^xsd:dateTime] . # 
+
+<https://test.fhir.dk/Observation/EgensomsorgBegraensninger> a fhir:Observation ;
+  fhir:id [ fhir:v "EgensomsorgBegraensninger"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EgensomsorgBegraensninger\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EgensomsorgBegraensninger</b></p><a name=\"EgensomsorgBegraensninger\"> </a><a name=\"hcEgensomsorgBegraensninger\"> </a><a name=\"EgensomsorgBegraensninger-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J1}\">Egenomsorg</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>effective</b>: 2020-08-14</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] . # 
+
+<https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato> a fhir:Encounter ;
+  fhir:id [ fhir:v "NaesteOpfoelgningsdato"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_NaesteOpfoelgningsdato\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter NaesteOpfoelgningsdato</b></p><a name=\"NaesteOpfoelgningsdato\"> </a><a name=\"hcNaesteOpfoelgningsdato\"> </a><a name=\"NaesteOpfoelgningsdato-en-US\"> </a><p><b>status</b>: Planned</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>type</b>: <span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 9f03dfbb-7a97-45a5-94db-d4c3501714a9}\">opfølgning</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "planned"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9f03dfbb-7a97-45a5-94db-d4c3501714a9" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-08-14"^^xsd:date ]
+  ] . # 
+
+<https://test.fhir.dk/Observation/VaskeSigFortsaettes> a fhir:Observation ;
+  fhir:id [ fhir:v "VaskeSigFortsaettes"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_VaskeSigFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation VaskeSigFortsaettes</b></p><a name=\"VaskeSigFortsaettes\"> </a><a name=\"hcVaskeSigFortsaettes\"> </a><a name=\"VaskeSigFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:712744002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "712744002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.kl.dk/gateway/Condition/VaskeSigLetteBegraensninger> ;
+     fhir:reference [ fhir:v "Condition/VaskeSigLetteBegraensninger" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "E1" ]
+     ] )
+  ] . # 
+
+<https://test.fhir.dk/Observation/PersonligPlejeFortsaettes> a fhir:Observation ;
+  fhir:id [ fhir:v "PersonligPlejeFortsaettes"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PersonligPlejeFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PersonligPlejeFortsaettes</b></p><a name=\"PersonligPlejeFortsaettes\"> </a><a name=\"hcPersonligPlejeFortsaettes\"> </a><a name=\"PersonligPlejeFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Condition-ProblemerMedPersonligPleje.html\">Condition Problemer med personlig pleje</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:712744002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "712744002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.kl.dk/gateway/Condition/ProblemerMedPersonligPleje> ;
+     fhir:reference [ fhir:v "Condition/ProblemerMedPersonligPleje" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "E1" ]
+     ] )
+  ] . # 
+
+<https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes> a fhir:Observation ;
+  fhir:id [ fhir:v "PersonligHygiejneFortsaettes"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PersonligHygiejneFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PersonligHygiejneFortsaettes</b></p><a name=\"PersonligHygiejneFortsaettes\"> </a><a name=\"hcPersonligHygiejneFortsaettes\"> </a><a name=\"PersonligHygiejneFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>focus</b>: <a href=\"CarePlan-PersonligHygiejne.html\">CarePlan: status = active; intent = plan; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:712744002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "712744002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.kl.dk/gateway/CarePlan/PersonligHygiejne> ;
+     fhir:reference [ fhir:v "CarePlan/PersonligHygiejne" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "E1" ]
+     ] )
+  ] . # 
+
+<https://test.fhir.dk/Observation/DialyseFortsaettes> a fhir:Observation ;
+  fhir:id [ fhir:v "DialyseFortsaettes"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_DialyseFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation DialyseFortsaettes</b></p><a name=\"DialyseFortsaettes\"> </a><a name=\"hcDialyseFortsaettes\"> </a><a name=\"DialyseFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>focus</b>: <a href=\"CarePlan-Dialyse.html\">CarePlan: status = active; intent = plan; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:712744002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "712744002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.kl.dk/gateway/CarePlan/Dialyse> ;
+     fhir:reference [ fhir:v "CarePlan/Dialyse" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "E1" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

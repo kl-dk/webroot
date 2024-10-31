@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/Encounter/10mthEncounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "10mthEncounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter 10mthEncounter</b></p><a name=\"10mthEncounter\"> </a><a name=\"hc10mthEncounter\"> </a><a name=\"10mthEncounter-en-US\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>type</b>: <span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 3f3e6489-31bd-44cf-9920-3c632868feb7}\">Besøg hos det 8-11 måneder gamle barn</span></p><p><b>subject</b>: <a href=\"Patient-Rikke.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996 (use: official, ))</a></p><p><b>period</b>: 2021-03-09 10:15:00+0000 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3f3e6489-31bd-44cf-9920-3c632868feb7" ] ;
+       fhir:display [ fhir:v "Besøg hos det 8-11 måneder gamle barn" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2021-03-09T10:15:00.000Z"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

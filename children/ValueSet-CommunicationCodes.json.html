@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>KommunikationKoder - JSON Representation - KLChildren implementation guide, an implementation of FBU v2.0.1</title>
+    <title>KommunikationKoder - JSON Representation - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,9 +41,10 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"4.47"}
-    h3,h4,h5,h6{--heading-prefix:"4.47"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.48"}
+    h3,h4,h5,h6{--heading-prefix:"4.48"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -60,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
             <br/>
-            <span style="display:inline-block;">2.0.1 - Release
+            <span style="display:inline-block;">2.1.0 - Release
 
 
             </span>
@@ -124,7 +125,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -179,7 +180,7 @@
         
           Active
           
-            as of 2024-07-01
+            as of 2024-10-31
           
         
       </td>
@@ -195,21 +196,20 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
-{
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "CommunicationCodes",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet CommunicationCodes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CommunicationCodes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCommunicationCodes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCommunicationCodes-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-042d522d-0abe-46eb-a958-6e235b5d5408\&quot;&gt;042d522d-0abe-46eb-a958-6e235b5d5408&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;color: #cccccc\&quot;&gt;Kommunikerer alderssvarende&lt;/td&gt;&lt;td&gt;Småbørn: Barnet kommunikerer som forventet i forhold til alder. Det 0-3 måneder gamle barn smiler og reagerer på ord og kropssprog. Det 4-6 måneder gamle barn begynder at pludre varieret og leger med lyde. Det 8-11 måneder gamle barn pludrer i stavelser og begynder at anvende enkelte ord og reagerer på fx eget navn og udtrykker sig ved at pege og gestikulere.\n\nSkolebørn: Barnet kommunikerer som forventet i forhold til alder. Fx holder barnet opmærksomhed på udvekslingen, og kan give og forstå beskeder.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-851ad2f2-a805-4d81-a1d8-15c3b09f5949\&quot;&gt;851ad2f2-a805-4d81-a1d8-15c3b09f5949&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;color: #cccccc\&quot;&gt;Få tegn på udfordret kommunikation&lt;/td&gt;&lt;td&gt;Småbørn: Grundlæggende kommunikerer barnet som forventet i forhold til alder. Der er dog få tegn på udfordringer. Det kan fx være at barnet ikke reagerer på ord eller kropssprog.\n\nSkolebørn: Barnet kommunikerer grundlæggende som forventet i forhold til alder. Der er dog få tegn på udfordringer. Fx små udfordringer med sproglyde, eller forkortet opmærksomhedsspænd.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-d9f00ad4-4305-4bd0-aedf-2e51bef602e2\&quot;&gt;d9f00ad4-4305-4bd0-aedf-2e51bef602e2&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;color: #cccccc\&quot;&gt;Udfordring med kommunikation&lt;/td&gt;&lt;td&gt;Småbørn: Barnet har udfordringer med at kommunikere alderssvarende og udviser tegn på forsinket tale- og sprogudvikling.\n\nSkolebørn: Barnet har udfordringer med at kommunikere alderssvarende. Fx udfordringer med udtale, stammen, sproganvendelse eller med at målrette opmærksomhed.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet CommunicationCodes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CommunicationCodes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCommunicationCodes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CommunicationCodes-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-042d522d-0abe-46eb-a958-6e235b5d5408\&quot;&gt;042d522d-0abe-46eb-a958-6e235b5d5408&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;color: #cccccc\&quot;&gt;Kommunikerer alderssvarende&lt;/td&gt;&lt;td&gt;Småbørn: Barnet kommunikerer som forventet i forhold til alder. Det 0-3 måneder gamle barn smiler og reagerer på ord og kropssprog. Det 4-6 måneder gamle barn begynder at pludre varieret og leger med lyde. Det 8-11 måneder gamle barn pludrer i stavelser og begynder at anvende enkelte ord og reagerer på fx eget navn og udtrykker sig ved at pege og gestikulere.\n\nSkolebørn: Barnet kommunikerer som forventet i forhold til alder. Fx holder barnet opmærksomhed på udvekslingen, og kan give og forstå beskeder.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-851ad2f2-a805-4d81-a1d8-15c3b09f5949\&quot;&gt;851ad2f2-a805-4d81-a1d8-15c3b09f5949&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;color: #cccccc\&quot;&gt;Få tegn på udfordret kommunikation&lt;/td&gt;&lt;td&gt;Småbørn: Grundlæggende kommunikerer barnet som forventet i forhold til alder. Der er dog få tegn på udfordringer. Det kan fx være at barnet ikke reagerer på ord eller kropssprog.\n\nSkolebørn: Barnet kommunikerer grundlæggende som forventet i forhold til alder. Der er dog få tegn på udfordringer. Fx små udfordringer med sproglyde, eller forkortet opmærksomhedsspænd.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-d9f00ad4-4305-4bd0-aedf-2e51bef602e2\&quot;&gt;d9f00ad4-4305-4bd0-aedf-2e51bef602e2&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;color: #cccccc\&quot;&gt;Udfordring med kommunikation&lt;/td&gt;&lt;td&gt;Småbørn: Barnet har udfordringer med at kommunikere alderssvarende og udviser tegn på forsinket tale- og sprogudvikling.\n\nSkolebørn: Barnet har udfordringer med at kommunikere alderssvarende. Fx udfordringer med udtale, stammen, sproganvendelse eller med at målrette opmærksomhed.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.kl.dk/children/ValueSet/CommunicationCodes",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.0.1",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.1.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "CommunicationCodes",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "KommunikationKoder",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-07-01T22:52:03+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-10-31T20:37:15+01:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Kommunernes Landsforening",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -265,7 +265,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 22:52+0200">2024-07-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:37+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -282,7 +282,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -293,7 +293,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

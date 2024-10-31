@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/gateway/Observation/PersonligPlejeFortsaettes> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PersonligPlejeFortsaettes"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PersonligPlejeFortsaettes</b></p><a name=\"PersonligPlejeFortsaettes\"> </a><a name=\"hcPersonligPlejeFortsaettes\"> </a><a name=\"PersonligPlejeFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Condition-ProblemerMedPersonligPleje.html\">Condition Problemer med personlig pleje</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:712744002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "712744002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/gateway/Patient/TestPerson> ;
+     fhir:reference [ fhir:v "Patient/TestPerson" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.kl.dk/gateway/Condition/ProblemerMedPersonligPleje> ;
+     fhir:reference [ fhir:v "Condition/ProblemerMedPersonligPleje" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2020-08-14"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "E1" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

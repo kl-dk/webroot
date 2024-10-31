@@ -2,27 +2,20 @@
   "resourceType" : "ImplementationGuide",
   "id" : "kl.dk.fhir.gateway",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLGateway</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway</pre></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.gateway</b></p><a name=\"kl.dk.fhir.gateway\"> </a><a name=\"hckl.dk.fhir.gateway\"> </a><a name=\"kl.dk.fhir.gateway-en-US\"> </a><h2>KLGateway</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway</pre></div>"
   },
   "url" : "http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway",
-  "version" : "1.1.0",
+  "version" : "1.2.0",
   "name" : "KLGateway",
   "status" : "active",
-  "date" : "2023-06-21T21:59:46+02:00",
+  "date" : "2024-10-31T19:21:51+01:00",
   "publisher" : "KL",
   "contact" : [{
     "name" : "KL",
     "telecom" : [{
       "system" : "url",
       "value" : "http://www.kl.dk"
-    }]
-  }],
-  "jurisdiction" : [{
-    "coding" : [{
-      "system" : "urn:iso:std:iso:3166",
-      "code" : "DK",
-      "display" : "Denmark"
     }]
   }],
   "packageId" : "kl.dk.fhir.gateway",
@@ -36,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.0.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -46,19 +39,19 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   },
   {
     "id" : "hl7_fhir_dk_core",
-    "uri" : "https://hl7.dk/fhir/core",
+    "uri" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
     "packageId" : "hl7.fhir.dk.core",
-    "version" : "1.1.0"
+    "version" : "3.2.0"
   },
   {
     "id" : "kl_dk_fhir_term",
     "uri" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
     "packageId" : "kl.dk.fhir.term",
-    "version" : "1.0.0"
+    "version" : "2.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -87,17 +80,6 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-juristiction"
       },
       {
         "url" : "value",
@@ -284,6 +266,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "active-tables"
       },
       {
@@ -338,7 +331,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -366,17 +359,6 @@
       "extension" : [{
         "url" : "code",
         "valueCode" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-juristiction"
       },
       {
         "url" : "value",
@@ -563,6 +545,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -618,14 +611,14 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"
+        "reference" : "StructureDefinition/BasedOnInterventionExtension"
       },
-      "name" : "bfa70a76-318d-453d-9abc-76982f8d13ca",
-      "description" : "Encounter documenting the next date for a follow-up",
-      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"
+      "name" : "basedOnInterventionExtension",
+      "description" : "Extension for pointing to the intervention describing why this encounter is taking place (will be part of R5 and comming FHIR versions without needing the extension)",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -741,10 +734,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-general-encounter"
+      },
+      "name" : "CareGeneralEncounter",
+      "description" : "Encounter for planned and completed meetings between citizens and care staff.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/klgateway-care-goal"
       },
       "name" : "CareGoal",
       "description" : "Describes the intended or expected functional level for a condition of a citizen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-incremental-delivery"
+      },
+      "name" : "CareIncrementalDelivery",
+      "description" : "Delivery for all delivery reports made since last update (unordered).",
       "exampleBoolean" : false
     },
     {
@@ -801,6 +818,18 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
+        "reference" : "Bundle/8ec154f2-1429-4a41-aca7-f900e1d3bee2"
+      },
+      "name" : "DeliveryReport-JensHansen-2",
+      "description" : "Reporting of Jens Hansen after second encounter with Home Care Assessor updating follow-up date",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
         "reference" : "Bundle/643c3e42-ab90-4354-9b98-f01b4740d3d9"
       },
       "name" : "DeliveryReport-JensHansen-3",
@@ -813,7 +842,55 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
+        "reference" : "Bundle/89071c96-e053-40d5-8873-105b7bad40f9"
+      },
+      "name" : "DeliveryReport-JensHansen-3",
+      "description" : "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/832c69db-98b5-4aee-ab00-c24967e89d25"
+      },
+      "name" : "DeliveryReport-JensHansen-InterventionDelivery",
+      "description" : "Reporting of Jens Hansen's delivered intervention on Febrauary 13th",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/5c20b1b0-ec06-4d25-89e2-13521ebcf642"
+      },
+      "name" : "DeliveryReport-JensHansen-new-1",
+      "description" : "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
         "reference" : "Bundle/d54206de-c95b-4c53-9517-6eb155dca99a"
+      },
+      "name" : "DeliveryReport-PeterOlsen-1",
+      "description" : "Reporting of Peter Olsen after first encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/4768772b-67f3-4468-9a2f-ee9a0254a323"
       },
       "name" : "DeliveryReport-PeterOlsen-1",
       "description" : "Reporting of Peter Olsen after first encounter with the Acute Team",
@@ -837,7 +914,31 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
+        "reference" : "Bundle/bad12c80-85ff-4b36-8396-414a1b58cd0d"
+      },
+      "name" : "DeliveryReport-PeterOlsen-2",
+      "description" : "Reporting of Peter Olsen after second encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
         "reference" : "Bundle/0c1112c3-77b5-4d85-965c-0c26228ec7ef"
+      },
+      "name" : "DeliveryReport-PeterOlsen-3",
+      "description" : "Reporting of Peter Olsen after third encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/3c4919f9-aec9-485f-808a-3f9ff6c95786"
       },
       "name" : "DeliveryReport-PeterOlsen-3",
       "description" : "Reporting of Peter Olsen after third encounter with the Acute Team",
@@ -861,7 +962,31 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
+        "reference" : "Bundle/d85460fb-b39e-4cf7-9750-12be44417dfd"
+      },
+      "name" : "DeliveryReport-PeterOlsen-4",
+      "description" : "Reporting of Peter Olsen after first encounter with home nursing",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
         "reference" : "Bundle/cc93afc5-7849-4895-84eb-00bb5c129c0b"
+      },
+      "name" : "DeliveryReport-PeterOlsen-5",
+      "description" : "Reporting of Peter Olsen after second encounter with home nursing",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/616ce3ef-b7e8-46e1-aefc-ff5bde81b153"
       },
       "name" : "DeliveryReport-PeterOlsen-5",
       "description" : "Reporting of Peter Olsen after second encounter with home nursing",
@@ -878,6 +1003,30 @@
       "name" : "DeliveryReport-PeterOlsen-6",
       "description" : "Reporting of Peter Olsen after first encounter with training",
       "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DeliveryType"
+      },
+      "name" : "DeliveryType",
+      "description" : "Extension for a code that specifies some context of how a treatment-activity is delivered to a patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DeliveryTypes"
+      },
+      "name" : "DeliveryTypes",
+      "description" : "The delivery context types",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1014,6 +1163,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/EncounterClassCodes"
+      },
+      "name" : "KontaktKlasseKoder",
+      "description" : "Codes to describe the mode of delivery of an encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/LeveringAfDialyse"
+      },
+      "name" : "LeveringAfDialyse",
+      "description" : "General encounter used to document delivery of an intervention",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1022,6 +1195,30 @@
       "name" : "LocallyDefinedInterventions",
       "description" : "Coding system to indicate a code defined locally in the managing organization",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/NaesteOpfoelgning"
+      },
+      "name" : "NaesteOpfoelgning",
+      "description" : "General encounter used to document the next date for a follow-up",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/NaesteOpfoelgningsdato"
+      },
+      "name" : "NaesteOpfoelgningsdato",
+      "description" : "Encounter documenting the next date for a follow-up",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"
     },
     {
       "extension" : [{
@@ -1098,12 +1295,36 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/TestIncrementalDelivery"
+      },
+      "name" : "TestIncrementalDelivery",
+      "description" : "Example of an incremental delivery with one delivery report",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-incremental-delivery"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
         "reference" : "Patient/TestPerson"
       },
       "name" : "TestPerson",
+      "description" : "Test person used in the examples of the implementation guide.",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/TestPersonError"
+      },
+      "name" : "TestPersonError",
       "description" : "Test person used in the examples of the implementation guide.",
       "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"
     },
@@ -1154,6 +1375,18 @@
       "name" : "VaskeSigLetteBegraensninger",
       "description" : "Assessed ability for the test person to wash himself",
       "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/VaskeSigLetteBegraensningerNy"
+      },
+      "name" : "VaskeSigLetteBegraensningerNy",
+      "description" : "Assessed ability for the test person to wash himself - new way of defining followUp Encounter",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"
     }],
     "page" : {
       "extension" : [{
@@ -1193,10 +1426,37 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "HomecareNew.html"
+        }],
+        "nameUrl" : "HomecareNew.html",
+        "title" : "Homecare New",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "indexOld.html"
+        }],
+        "nameUrl" : "indexOld.html",
+        "title" : "Index Old",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "Nursing.html"
         }],
         "nameUrl" : "Nursing.html",
         "title" : "Nursing",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "NursingNew.html"
+        }],
+        "nameUrl" : "NursingNew.html",
+        "title" : "Nursing New",
         "generation" : "markdown"
       }]
     },

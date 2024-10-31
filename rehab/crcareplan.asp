@@ -16,13 +16,13 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/rehab/CarePlan-"+id+".xml");
   else if (id == "RuddiTerapeutfagligUndersoegelse")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.1.1/CarePlan-RuddiTerapeutfagligUndersoegelse.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.2.0/CarePlan-RuddiTerapeutfagligUndersoegelse.html");
   else if (id == "RuddiFunctionalTraening")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.1.1/CarePlan-RuddiFunctionalTraening.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.2.0/CarePlan-RuddiFunctionalTraening.html");
   else if (id == "RuddiTraeningsforloeb")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.1.1/CarePlan-RuddiTraeningsforloeb.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.2.0/CarePlan-RuddiTraeningsforloeb.html");
   else if (id == "RuddiTraening")
-    Response.Redirect("http://fhir.kl.dk/rehab/2.1.1/CarePlan-RuddiTraening.html");
+    Response.Redirect("http://fhir.kl.dk/rehab/2.2.0/CarePlan-RuddiTraening.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/rehab/CarePlan.html");
 
@@ -31,6 +31,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1-milestone\output\crcareplan.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 0-milestone\output\crcareplan.asp) .
 </body>
 </html>

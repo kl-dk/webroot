@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Sundhedsplejeindsatser - JSON Representation - KLChildren implementation guide, an implementation of FBU v2.0.1</title>
+    <title>Sundhedsplejeindsatser - JSON Representation - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,9 +41,10 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"4.57"}
-    h3,h4,h5,h6{--heading-prefix:"4.57"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.58"}
+    h3,h4,h5,h6{--heading-prefix:"4.58"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -60,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
             <br/>
-            <span style="display:inline-block;">2.0.1 - Release
+            <span style="display:inline-block;">2.1.0 - Release
 
 
             </span>
@@ -124,7 +125,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -179,7 +180,7 @@
         
           Active
           
-            as of 2024-07-01
+            as of 2024-10-31
           
         
       </td>
@@ -195,21 +196,20 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
-{
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "KLHealthNurseInterventions",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet KLHealthNurseInterventions&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;KLHealthNurseInterventions\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcKLHealthNurseInterventions\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcKLHealthNurseInterventions-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-6cbf8b19-5aff-4f6f-a7dc-9a411197bcff\&quot;&gt;6cbf8b19-5aff-4f6f-a7dc-9a411197bcff&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-5a45df21-d80c-4b41-9e5a-4896a519c6c6\&quot;&gt;5a45df21-d80c-4b41-9e5a-4896a519c6c6&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-76a96391-7b5a-4d29-8471-9b7d238cb9df\&quot;&gt;76a96391-7b5a-4d29-8471-9b7d238cb9df&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-3cd144c0-7b1e-4ca3-9f21-28f9c8918a74\&quot;&gt;3cd144c0-7b1e-4ca3-9f21-28f9c8918a74&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-52d1d013-4fdd-49b1-bba0-b7c00458852c\&quot;&gt;52d1d013-4fdd-49b1-bba0-b7c00458852c&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html#FBOE-b062a901-1364-4ed6-8d40-f4f14cfc737a\&quot;&gt;b062a901-1364-4ed6-8d40-f4f14cfc737a&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet KLHealthNurseInterventions&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;KLHealthNurseInterventions\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcKLHealthNurseInterventions\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;KLHealthNurseInterventions-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-6cbf8b19-5aff-4f6f-a7dc-9a411197bcff\&quot;&gt;6cbf8b19-5aff-4f6f-a7dc-9a411197bcff&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-5a45df21-d80c-4b41-9e5a-4896a519c6c6\&quot;&gt;5a45df21-d80c-4b41-9e5a-4896a519c6c6&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-76a96391-7b5a-4d29-8471-9b7d238cb9df\&quot;&gt;76a96391-7b5a-4d29-8471-9b7d238cb9df&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-3cd144c0-7b1e-4ca3-9f21-28f9c8918a74\&quot;&gt;3cd144c0-7b1e-4ca3-9f21-28f9c8918a74&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-52d1d013-4fdd-49b1-bba0-b7c00458852c\&quot;&gt;52d1d013-4fdd-49b1-bba0-b7c00458852c&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\&quot;&gt;&lt;code&gt;http://fhir.kl.dk/term/CodeSystem/FBOE&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-b062a901-1364-4ed6-8d40-f4f14cfc737a\&quot;&gt;b062a901-1364-4ed6-8d40-f4f14cfc737a&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.kl.dk/children/ValueSet/KLHealthNurseInterventions",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.0.1",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.1.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "KLHealthNurseInterventions",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Sundhedsplejeindsatser",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-07-01T22:52:03+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-10-31T20:37:15+01:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Kommunernes Landsforening",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -311,7 +311,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 22:52+0200">2024-07-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:37+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -328,7 +328,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -339,7 +339,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

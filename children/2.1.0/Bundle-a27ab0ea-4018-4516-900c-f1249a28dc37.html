@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>a27ab0ea-4018-4516-900c-f1249a28dc37 - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.74"}
+    h3,h4,h5,h6{--heading-prefix:"4.74"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
+            <br/>
+            <span style="display:inline-block;">2.1.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="example.html">Example small children</a>
+  </li>
+  <li>
+    <a href="example2.html">Example school children</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>a27ab0ea-4018-4516-900c-f1249a28dc37</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: a27ab0ea-4018-4516-900c-f1249a28dc37</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><p class="res-header-id"><b>Generated Narrative: Bundle a27ab0ea-4018-4516-900c-f1249a28dc37</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37-en-US"> </a><p>Bundle a27ab0ea-4018-4516-900c-f1249a28dc37 of type collection</p><a name="https-//test.fhir.dk/Patient/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8"> </a><a name="Patient_fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8"> </a><a name="hcPatient_fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8"> </a><hr/><p>Entry 1 - fullUrl = https://test.fhir.dk/Patient/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8</p><p>Resource Patient:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Patient fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2911829996 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/451000016003 (use: official, )</li><li>Also see: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#RelatedPerson_a4b064a0-7fdd-467f-81cc-d1575b52b7f8">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></li></ul></td></tr></table></blockquote><a name="https-//test.fhir.dk/Patient/e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a"> </a><a name="Patient_e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a"> </a><a name="hcPatient_e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a"> </a><hr/><p>Entry 2 - fullUrl = https://test.fhir.dk/Patient/e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a</p><p>Resource Patient:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Patient e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#1502829995 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/451000016003 (use: official, )</li><li>Also see: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#RelatedPerson_e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></li></ul></td></tr></table></blockquote><a name="https-//test.fhir.dk/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794"> </a><a name="Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794"> </a><a name="hcPatient_e60106e2-413e-46c5-8a3f-62d8e77ce794"> </a><hr/><p>Entry 3 - fullUrl = https://test.fhir.dk/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794</p><p>Resource Patient:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Patient e60106e2-413e-46c5-8a3f-62d8e77ce794</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/e60106e2-413e-46c5-8a3f-62d8e77ce794"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/e60106e2-413e-46c5-8a3f-62d8e77ce794"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/e60106e2-413e-46c5-8a3f-62d8e77ce794-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/451000016003 (use: official, )</li></ul></td></tr></table></blockquote><a name="https-//test.fhir.dk/RelatedPerson/a4b064a0-7fdd-467f-81cc-d1575b52b7f8"> </a><a name="RelatedPerson_a4b064a0-7fdd-467f-81cc-d1575b52b7f8"> </a><a name="hcRelatedPerson_a4b064a0-7fdd-467f-81cc-d1575b52b7f8"> </a><hr/><p>Entry 4 - fullUrl = https://test.fhir.dk/RelatedPerson/a4b064a0-7fdd-467f-81cc-d1575b52b7f8</p><p>Resource RelatedPerson:</p><blockquote><p class="res-header-id"><b>Generated Narrative: RelatedPerson a4b064a0-7fdd-467f-81cc-d1575b52b7f8</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/a4b064a0-7fdd-467f-81cc-d1575b52b7f8"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/a4b064a0-7fdd-467f-81cc-d1575b52b7f8"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/a4b064a0-7fdd-467f-81cc-d1575b52b7f8-en-US"> </a><p><b>patient</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode PRN}">parent</span></p></blockquote><a name="https-//test.fhir.dk/RelatedPerson/e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c"> </a><a name="RelatedPerson_e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c"> </a><a name="hcRelatedPerson_e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c"> </a><hr/><p>Entry 5 - fullUrl = https://test.fhir.dk/RelatedPerson/e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c</p><p>Resource RelatedPerson:</p><blockquote><p class="res-header-id"><b>Generated Narrative: RelatedPerson e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/e9704ba6-f6ca-46b1-9d19-d9b4bcdc864c-en-US"> </a><p><b>patient</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode PRN}">parent</span></p></blockquote><a name="https-//test.fhir.dk/Encounter/62c429e2-fdc5-4e33-83e1-0db858175e08"> </a><a name="Encounter_62c429e2-fdc5-4e33-83e1-0db858175e08"> </a><a name="hcEncounter_62c429e2-fdc5-4e33-83e1-0db858175e08"> </a><hr/><p>Entry 6 - fullUrl = https://test.fhir.dk/Encounter/62c429e2-fdc5-4e33-83e1-0db858175e08</p><p>Resource Encounter:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Encounter 62c429e2-fdc5-4e33-83e1-0db858175e08</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/62c429e2-fdc5-4e33-83e1-0db858175e08"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/62c429e2-fdc5-4e33-83e1-0db858175e08"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/62c429e2-fdc5-4e33-83e1-0db858175e08-en-US"> </a><p><b>status</b>: completed</p><p><b>class</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}">home health</span></p><p><b>type</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE b4bf6058-502a-4d64-bb8e-369661f43b47}">Etableringsbesøg</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p></blockquote><a name="https-//test.fhir.dk/Observation/711081e9-46d7-4841-98cd-3f64130318b7"> </a><a name="Observation_711081e9-46d7-4841-98cd-3f64130318b7"> </a><a name="hcObservation_711081e9-46d7-4841-98cd-3f64130318b7"> </a><hr/><p>Entry 7 - fullUrl = https://test.fhir.dk/Observation/711081e9-46d7-4841-98cd-3f64130318b7</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation 711081e9-46d7-4841-98cd-3f64130318b7</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/711081e9-46d7-4841-98cd-3f64130318b7"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/711081e9-46d7-4841-98cd-3f64130318b7"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/711081e9-46d7-4841-98cd-3f64130318b7-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 169740003}, {http://fhir.kl.dk/term/CodeSystem/FBOE e61e4dab-54bb-4bf4-9b76-8d991cf4de08}">Infant feeding method</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>encounter</b>: <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.html#Encounter_62c429e2-fdc5-4e33-83e1-0db858175e08">Bundle: type = collection; timestamp = 2020-05-17 23:25:12+0000</a></p><p><b>effective</b>: 2020-05-17 00:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 77a008dd-21cc-452f-a1ee-ac8d025b7817}">Fuldamning, inklusiv modermælk på flaske</span></p></blockquote><a name="https-//test.fhir.dk/Observation/5b9a6ff2-c941-41e9-9c4c-9f4667bc063a"> </a><a name="Observation_5b9a6ff2-c941-41e9-9c4c-9f4667bc063a"> </a><a name="hcObservation_5b9a6ff2-c941-41e9-9c4c-9f4667bc063a"> </a><hr/><p>Entry 8 - fullUrl = https://test.fhir.dk/Observation/5b9a6ff2-c941-41e9-9c4c-9f4667bc063a</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation 5b9a6ff2-c941-41e9-9c4c-9f4667bc063a</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/5b9a6ff2-c941-41e9-9c4c-9f4667bc063a"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/5b9a6ff2-c941-41e9-9c4c-9f4667bc063a"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/5b9a6ff2-c941-41e9-9c4c-9f4667bc063a-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}, {http://snomed.info/sct 27113001}">Body weight</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>encounter</b>: <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.html#Encounter_62c429e2-fdc5-4e33-83e1-0db858175e08">Bundle: type = collection; timestamp = 2020-05-17 23:25:12+0000</a></p><p><b>effective</b>: 2020-05-17</p><p><b>value</b>: 3400 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></p></blockquote><a name="https-//test.fhir.dk/Observation/d07d8d25-bc06-487e-a4b5-e180601c62d9"> </a><a name="Observation_d07d8d25-bc06-487e-a4b5-e180601c62d9"> </a><a name="hcObservation_d07d8d25-bc06-487e-a4b5-e180601c62d9"> </a><hr/><p>Entry 9 - fullUrl = https://test.fhir.dk/Observation/d07d8d25-bc06-487e-a4b5-e180601c62d9</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation d07d8d25-bc06-487e-a4b5-e180601c62d9</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/d07d8d25-bc06-487e-a4b5-e180601c62d9"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/d07d8d25-bc06-487e-a4b5-e180601c62d9"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/d07d8d25-bc06-487e-a4b5-e180601c62d9-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8302-2}, {http://snomed.info/sct 1149101003}">Recumbent body height (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>encounter</b>: <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.html#Encounter_62c429e2-fdc5-4e33-83e1-0db858175e08">Bundle: type = collection; timestamp = 2020-05-17 23:25:12+0000</a></p><p><b>effective</b>: 2020-05-17</p><p><b>value</b>: 51 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><a name="https-//test.fhir.dk/Observation/258e2623-abf5-499b-887b-3b70dc19507c"> </a><a name="Observation_258e2623-abf5-499b-887b-3b70dc19507c"> </a><a name="hcObservation_258e2623-abf5-499b-887b-3b70dc19507c"> </a><hr/><p>Entry 10 - fullUrl = https://test.fhir.dk/Observation/258e2623-abf5-499b-887b-3b70dc19507c</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation 258e2623-abf5-499b-887b-3b70dc19507c</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/258e2623-abf5-499b-887b-3b70dc19507c"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/258e2623-abf5-499b-887b-3b70dc19507c"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/258e2623-abf5-499b-887b-3b70dc19507c-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 9843-4}, {http://snomed.info/sct 363812007}">Head Occipital-frontal circumference</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>encounter</b>: <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.html#Encounter_62c429e2-fdc5-4e33-83e1-0db858175e08">Bundle: type = collection; timestamp = 2020-05-17 23:25:12+0000</a></p><p><b>effective</b>: 2020-05-17</p><p><b>value</b>: 35 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><a name="https-//test.fhir.dk/Observation/62855009-6fbb-481e-9dd0-8a4c369bde0d"> </a><a name="Observation_62855009-6fbb-481e-9dd0-8a4c369bde0d"> </a><a name="hcObservation_62855009-6fbb-481e-9dd0-8a4c369bde0d"> </a><hr/><p>Entry 11 - fullUrl = https://test.fhir.dk/Observation/62855009-6fbb-481e-9dd0-8a4c369bde0d</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation 62855009-6fbb-481e-9dd0-8a4c369bde0d</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/62855009-6fbb-481e-9dd0-8a4c369bde0d"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/62855009-6fbb-481e-9dd0-8a4c369bde0d"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/62855009-6fbb-481e-9dd0-8a4c369bde0d-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 763c6f21-5467-4713-82fb-716c9d0a1fdf}">Forældre-barn-relation</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>encounter</b>: <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.html#Encounter_62c429e2-fdc5-4e33-83e1-0db858175e08">Bundle: type = collection; timestamp = 2020-05-17 23:25:12+0000</a></p><p><b>effective</b>: 2020-05-07</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 7a107df6-8fb8-4744-8413-be10b4c5c1d9}">Velfungerende forældre-barn-relation</span></p></blockquote><a name="https-//test.fhir.dk/Observation/0f6ddfae-2882-4ad5-aec4-1144d600eee8"> </a><a name="Observation_0f6ddfae-2882-4ad5-aec4-1144d600eee8"> </a><a name="hcObservation_0f6ddfae-2882-4ad5-aec4-1144d600eee8"> </a><hr/><p>Entry 12 - fullUrl = https://test.fhir.dk/Observation/0f6ddfae-2882-4ad5-aec4-1144d600eee8</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation 0f6ddfae-2882-4ad5-aec4-1144d600eee8</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/0f6ddfae-2882-4ad5-aec4-1144d600eee8"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/0f6ddfae-2882-4ad5-aec4-1144d600eee8"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/0f6ddfae-2882-4ad5-aec4-1144d600eee8-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 28972d4b-fea3-42ec-b2a5-e2a26f79b14d}">Passiv rygning</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>encounter</b>: <a href="Bundle-a27ab0ea-4018-4516-900c-f1249a28dc37.html#Encounter_62c429e2-fdc5-4e33-83e1-0db858175e08">Bundle: type = collection; timestamp = 2020-05-17 23:25:12+0000</a></p><p><b>effective</b>: 2020-05-07</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE b54723cf-3114-4119-b1cb-28107a283a99}">Ikke udsat for tobaksrøg</span></p></blockquote><a name="https-//test.fhir.dk/Observation/5bc41bc3-b762-4a98-853d-d3daeac05ea4"> </a><a name="Observation_5bc41bc3-b762-4a98-853d-d3daeac05ea4"> </a><a name="hcObservation_5bc41bc3-b762-4a98-853d-d3daeac05ea4"> </a><hr/><p>Entry 13 - fullUrl = https://test.fhir.dk/Observation/5bc41bc3-b762-4a98-853d-d3daeac05ea4</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation 5bc41bc3-b762-4a98-853d-d3daeac05ea4</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/5bc41bc3-b762-4a98-853d-d3daeac05ea4"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/5bc41bc3-b762-4a98-853d-d3daeac05ea4"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/5bc41bc3-b762-4a98-853d-d3daeac05ea4-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 58997614-ba43-4534-90bd-10c7e76802f4}">Forælders sårbarhed</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>effective</b>: 2020-02-05 00:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 546e7bef-7a22-451e-971a-326fcd78a843}">Potentiel sårbarhed</span></p></blockquote><a name="https-//test.fhir.dk/Observation/a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7"> </a><a name="Observation_a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7"> </a><a name="hcObservation_a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7"> </a><hr/><p>Entry 14 - fullUrl = https://test.fhir.dk/Observation/a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/a8cdc6fc-2bf8-457c-aa15-f7e547cf74f7-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 58997614-ba43-4534-90bd-10c7e76802f4}">Forælders sårbarhed</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>effective</b>: 2020-02-05 00:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 57dd67d7-175a-4541-87ff-db1381c4e1d9}">Ingen sårbarhed</span></p></blockquote><a name="https-//test.fhir.dk/Observation/d4df27ce-86f1-4330-b166-c4c4724a633e"> </a><a name="Observation_d4df27ce-86f1-4330-b166-c4c4724a633e"> </a><a name="hcObservation_d4df27ce-86f1-4330-b166-c4c4724a633e"> </a><hr/><p>Entry 15 - fullUrl = https://test.fhir.dk/Observation/d4df27ce-86f1-4330-b166-c4c4724a633e</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation d4df27ce-86f1-4330-b166-c4c4724a633e</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/d4df27ce-86f1-4330-b166-c4c4724a633e"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/d4df27ce-86f1-4330-b166-c4c4724a633e"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/d4df27ce-86f1-4330-b166-c4c4724a633e-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 7e7fab2f-278a-4b14-9bc9-efc36fffcba5}">Netværk</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>effective</b>: 2020-02-05 00:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE fbd9a8a5-0ed6-4e1a-9841-066ade34b071}">Godt netværk</span></p></blockquote><a name="https-//test.fhir.dk/Observation/0083e1d2-46d4-4da2-8497-596464cfc4b1"> </a><a name="Observation_0083e1d2-46d4-4da2-8497-596464cfc4b1"> </a><a name="hcObservation_0083e1d2-46d4-4da2-8497-596464cfc4b1"> </a><hr/><p>Entry 16 - fullUrl = https://test.fhir.dk/Observation/0083e1d2-46d4-4da2-8497-596464cfc4b1</p><p>Resource Observation:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Observation 0083e1d2-46d4-4da2-8497-596464cfc4b1</b></p><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/0083e1d2-46d4-4da2-8497-596464cfc4b1"> </a><a name="hca27ab0ea-4018-4516-900c-f1249a28dc37/0083e1d2-46d4-4da2-8497-596464cfc4b1"> </a><a name="a27ab0ea-4018-4516-900c-f1249a28dc37/0083e1d2-46d4-4da2-8497-596464cfc4b1-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 7e7fab2f-278a-4b14-9bc9-efc36fffcba5}">Netværk</span></p><p><b>subject</b>: <a href="Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e2cbbca1-ac3d-4bb1-b43b-c0d62b48b33a">Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000</a></p><p><b>effective</b>: 2020-02-05 00:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE fbd9a8a5-0ed6-4e1a-9841-066ade34b071}">Godt netværk</span></p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:28+0100">2024-10-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

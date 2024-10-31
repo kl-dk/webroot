@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ForælderTyper - KLChildren implementation guide, an implementation of FBU v2.0.1</title>
+    <title>ForælderTyper - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,9 +39,10 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"4.39"}
-    h3,h4,h5,h6{--heading-prefix:"4.39"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.40"}
+    h3,h4,h5,h6{--heading-prefix:"4.40"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -58,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
             <br/>
-            <span style="display:inline-block;">2.0.1 - Release
+            <span style="display:inline-block;">2.1.0 - Release
 
 
             </span>
@@ -122,7 +123,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -174,7 +175,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.kl.dk/children/ValueSet/ParentTypes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/children/ValueSet/ParentTypes"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.0.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/children/ValueSet/ParentTypes|2.0.1"/></span>
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/children/ValueSet/ParentTypes|2.1.0"/></span>
       </td>
     </tr>
 
@@ -190,7 +191,7 @@
         
           Active
           
-            as of 2024-07-01
+            as of 2024-10-31
           
         
       </td>
@@ -229,14 +230,14 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ParentTypes</b></p><a name="ParentTypes"> </a><a name="hcParentTypes"> </a><a name="hcParentTypes-en-US"> </a>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ParentTypes</b></p><a name="ParentTypes"> </a><a name="hcParentTypes"> </a><a name="ParentTypes-en-US"> </a>
 <ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PRN">PRN</a></td><td style="color: #cccccc">parent</td><td>The player of the role is one who begets, gives birth to, or nurtures and raises the scoping entity (child).</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on:</p><ul><li><a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html">codesystem RoleCode v3.0.0 (CodeSystem)</a></li><li><a href="http://hl7.dk/fhir/core/3.2.0/CodeSystem-role-code-dk-supplement.html">supplement DK Role Code v3.2.0 (CodeSystem)</a></li></ul></div><p>This value set contains 1 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="null-x-http---terminology.hl7.org-CodeSystem-v3-RoleCode-PRN"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PRN">PRN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>parent</td><td><div><p>The player of the role is one who begets, gives birth to, or nurtures and raises the scoping entity (child).</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on:</p><ul><li><a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html">codesystem RoleCode v3.0.0 (CodeSystem)</a></li><li><a href="http://hl7.dk/fhir/core/3.2.0/CodeSystem-role-code-dk-supplement.html">supplement DK Role Code v3.2.0 (CodeSystem)</a></li></ul></div><p>This value set contains 1 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PRN"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PRN">PRN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>parent</td><td><div><p>The player of the role is one who begets, gives birth to, or nurtures and raises the scoping entity (child).</p>
 </div></td></tr></table></div>
 
   <hr/>
@@ -296,7 +297,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 22:52+0200">2024-07-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:37+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -313,7 +314,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -324,7 +325,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

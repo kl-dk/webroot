@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="TestIncrementalDelivery"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-incremental-delivery"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-08-14T00:00:00Z"/>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Bundle/RuddiIndberetningsrapport"/>
+    <resource>
+      <Bundle>
+        <id value="RuddiIndberetningsrapport"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"/>
+        </meta>
+        <type value="collection"/>
+        <timestamp value="2020-08-14T00:00:00Z"/>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Patient/RuddiTestBerggren"/>
+          <resource>
+            <Patient>
+              <id value="RuddiTestBerggren"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-citizen"/>
+              </meta>
+              <identifier>
+                <use value="official"/>
+                <system value="urn:oid:1.2.208.176.1.2"/>
+                <value value="1502779995"/>
+              </identifier>
+              <deceasedBoolean value="false"/>
+              <managingOrganization>
+                <identifier>
+                  <use value="official"/>
+                  <system value="urn:oid:1.2.208.176.1.1"/>
+                  <value value="451000016003"/>
+                </identifier>
+              </managingOrganization>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Organization/AfsenderAfRuddisGGOP"/>
+          <resource>
+            <Organization>
+              <id value="AfsenderAfRuddisGGOP"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"/>
+              </meta>
+              <identifier>
+                <use value="official"/>
+                <system value="urn:oid:1.2.208.176.1.1"/>
+                <value value="227871000016001"/>
+              </identifier>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Organization/UdfoererAfRuddisRehab"/>
+          <resource>
+            <Organization>
+              <id value="UdfoererAfRuddisRehab"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"/>
+              </meta>
+              <identifier>
+                <use value="official"/>
+                <system value="urn:oid:1.2.208.176.1.1"/>
+                <value value="1037801000016003"/>
+              </identifier>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Condition/RuddiAktionsdiagnoseGGOP"/>
+          <resource>
+            <Condition>
+              <id value="RuddiAktionsdiagnoseGGOP"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-focus-condition"/>
+              </meta>
+              <clinicalStatus>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                  <code value="active"/>
+                </coding>
+              </clinicalStatus>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.4.12"/>
+                  <code value="DS721"/>
+                  <display value="Pertrokantær femurfraktur"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+            </Condition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/ServiceRequest/RuddiGGOPInformation"/>
+          <resource>
+            <ServiceRequest>
+              <id value="RuddiGGOPInformation"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-servicerequest"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate">
+                <valueDate value="2022-05-24"/>
+              </extension>
+              <status value="active"/>
+              <intent value="plan"/>
+              <category>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                  <code value="ffd81f78-352e-4589-a195-5350dd1df2a4"/>
+                  <display value="almen"/>
+                </coding>
+              </category>
+              <category>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                  <code value="8b962281-2ab6-4b10-9c91-4bac592d6d49"/>
+                  <display value="basal"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                  <code value="7fc66c15-0cb3-4c89-9e18-f3a01e6a6592"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <occurrencePeriod>
+                <start value="2022-05-28"/>
+              </occurrencePeriod>
+              <authoredOn value="2022-05-23"/>
+              <requester>
+                <reference value="Organization/AfsenderAfRuddisGGOP"/>
+              </requester>
+              <reasonReference>
+                <reference value="Condition/RuddiAktionsdiagnoseGGOP"/>
+              </reasonReference>
+            </ServiceRequest>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/CarePlan/RuddiTerapeutfagligUndersoegelse"/>
+          <resource>
+            <CarePlan>
+              <id value="RuddiTerapeutfagligUndersoegelse"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension">
+                <valueReference>
+                  <reference value="ServiceRequest/RuddiGGOPInformation"/>
+                </valueReference>
+              </extension>
+              <status value="active"/>
+              <intent value="plan"/>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <period>
+                <start value="2022-05-23"/>
+                <end value="2022-06-02"/>
+              </period>
+              <activity>
+                <detail>
+                  <extension url="http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType">
+                    <valueCodeableConcept>
+                      <coding>
+                        <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                        <code value="8d12d74c-17da-47a7-a4fe-e69dbaec0a8c"/>
+                        <display value="Individuel indsats"/>
+                      </coding>
+                    </valueCodeableConcept>
+                  </extension>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.208.176.2.21"/>
+                      <code value="1130ad70-6553-490d-87f8-5e8941687a0c"/>
+                    </coding>
+                  </code>
+                  <status value="completed"/>
+                  <performer>
+                    <reference value="Organization/UdfoererAfRuddisRehab"/>
+                  </performer>
+                </detail>
+              </activity>
+            </CarePlan>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Encounter/RuddiKontaktUndersoegelse"/>
+          <resource>
+            <Encounter>
+              <id value="RuddiKontaktUndersoegelse"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-encounter"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnCarePlanExtension">
+                <valueReference>
+                  <reference value="CarePlan/RuddiTerapeutfagligUndersoegelse"/>
+                </valueReference>
+              </extension>
+              <status value="finished"/>
+              <class>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="AMB"/>
+              </class>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <period>
+                <start value="2022-06-02T12:10:00.000Z"/>
+                <end value="2022-06-02T12:40:00.000Z"/>
+              </period>
+            </Encounter>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/CarePlan/RuddiTraeningsforloeb"/>
+          <resource>
+            <CarePlan>
+              <id value="RuddiTraeningsforloeb"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-care-plan"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension">
+                <valueReference>
+                  <reference value="ServiceRequest/RuddiGGOPInformation"/>
+                </valueReference>
+              </extension>
+              <status value="active"/>
+              <intent value="plan"/>
+              <category>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                  <code value="f15b2663-94d9-4d0c-a5de-d8bd8e1e4ebb"/>
+                </coding>
+              </category>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <period>
+                <start value="2022-05-30"/>
+              </period>
+              <activity>
+                <detail>
+                  <status value="in-progress"/>
+                  <performer>
+                    <reference value="Organization/UdfoererAfRuddisRehab"/>
+                  </performer>
+                </detail>
+              </activity>
+            </CarePlan>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/CarePlan/RuddiTraening"/>
+          <resource>
+            <CarePlan>
+              <id value="RuddiTraening"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension">
+                <valueReference>
+                  <reference value="ServiceRequest/RuddiGGOPInformation"/>
+                </valueReference>
+              </extension>
+              <basedOn>
+                <reference value="CarePlan/RuddiTraeningsforloeb"/>
+              </basedOn>
+              <status value="active"/>
+              <intent value="plan"/>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <period>
+                <start value="2022-05-30"/>
+              </period>
+              <activity>
+                <detail>
+                  <extension url="http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType">
+                    <valueCodeableConcept>
+                      <coding>
+                        <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                        <code value="2865f123-15a7-4a36-a514-32ea37c400ca"/>
+                        <display value="Gruppebaseret indsats"/>
+                      </coding>
+                    </valueCodeableConcept>
+                  </extension>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.208.176.2.21"/>
+                      <code value="2abe20c7-c0b4-41c1-b397-52acf36499ef"/>
+                      <display value="Fysisk træning"/>
+                    </coding>
+                  </code>
+                  <status value="in-progress"/>
+                </detail>
+              </activity>
+            </CarePlan>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/CarePlan/RuddiFunctionalTraening"/>
+          <resource>
+            <CarePlan>
+              <id value="RuddiFunctionalTraening"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension">
+                <valueReference>
+                  <reference value="ServiceRequest/RuddiGGOPInformation"/>
+                </valueReference>
+              </extension>
+              <basedOn>
+                <reference value="CarePlan/RuddiTraeningsforloeb"/>
+              </basedOn>
+              <status value="active"/>
+              <intent value="plan"/>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <period>
+                <start value="2022-05-30"/>
+              </period>
+              <activity>
+                <detail>
+                  <extension url="http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType">
+                    <valueCodeableConcept>
+                      <coding>
+                        <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                        <code value="2865f123-15a7-4a36-a514-32ea37c400ca"/>
+                        <display value="Gruppebaseret indsats"/>
+                      </coding>
+                    </valueCodeableConcept>
+                  </extension>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.208.176.2.21"/>
+                      <code value="58293f63-00d7-4730-8dbc-c784d40f9e23"/>
+                      <display value="Funktionstræning"/>
+                    </coding>
+                  </code>
+                  <status value="in-progress"/>
+                </detail>
+              </activity>
+            </CarePlan>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Encounter/RuddiKontakt1Traening"/>
+          <resource>
+            <Encounter>
+              <id value="RuddiKontakt1Traening"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-encounter"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/rehab/StructureDefinition/BasedOnCarePlanExtension">
+                <valueReference>
+                  <reference value="CarePlan/RuddiTraeningsforloeb"/>
+                </valueReference>
+              </extension>
+              <status value="finished"/>
+              <class>
+                <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                <code value="124be95d-6924-4609-9d2a-e7c73ae3ab3d"/>
+                <display value="Skærmbesøg"/>
+              </class>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <period>
+                <start value="2022-05-31T10:00:00.000Z"/>
+                <end value="2022-05-31T10:30:00.000Z"/>
+              </period>
+            </Encounter>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Condition/RuddiTilstand"/>
+          <resource>
+            <Condition>
+              <id value="RuddiTilstand"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-condition"/>
+              </meta>
+              <clinicalStatus>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                  <code value="active"/>
+                </coding>
+              </clinicalStatus>
+              <verificationStatus>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                  <code value="confirmed"/>
+                </coding>
+              </verificationStatus>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                  <code value="problem-list-item"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="dd41df82-3c13-4523-b9c5-e83676425299"/>
+                  <display value="Mobilitet og bevægelse"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/RuddiTestBerggren"/>
+              </subject>
+              <recordedDate value="2022-06-02"/>
+            </Condition>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

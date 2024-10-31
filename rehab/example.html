@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Example -  v2.1.1</title>
+    <title>Example -  v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,7 +39,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2"}
     h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -58,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">2.1.1 - Release
+            <span style="display:inline-block;">2.2.0 - Release
 
 
             </span>
@@ -126,7 +127,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLGatewayRehab (v2.1.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/rehab/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLGatewayRehab (v2.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/rehab/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Example</h2>
   
 
@@ -160,8 +161,8 @@ For each delivery report the story is told (in Danish), and a reporting example 
 
 <h4 id="story">Story</h4>
 <p>Ruddis forløb er startet ved at der er sendt en GGOP fra Holbæk sygehus’ ortopædkirurgiske afdeling, med en anmodning om, at Holbæk kommune skal forestå §140 genoptræning.
-Den modtages og behandles d. 23. maj 2022 af Holbæk kommunes genoptræningscenter SOR: 1037801000016003. GGOP’en angiver aktionsdiagnosen til ’Pertrokantær femurfraktur’, typen af GGOP er angivet til ‘almen’ og forventet udskrivningsdato til 24. maj 2022.
-I kommunens modtage-enhed vurderes GGOP’en, og det planlægges at igangsætte Ruddis forløb d. 28. maj, som derved ligger indenfor 7-dages ventetidsgarantien. Typen af genoptræning specificeres af kommunen som ‘basal’.
+Den modtages og behandles d. 23. maj 2022 af Holbæk kommunes genoptræningscenter SOR: 1037801000016003. GGOP'en angiver aktionsdiagnosen til ’Pertrokantær femurfraktur', typen af GGOP er angivet til 'almen' og forventet udskrivningsdato til 24. maj 2022.
+I kommunens modtage-enhed vurderes GGOP'en, og det planlægges at igangsætte Ruddis forløb d. 28. maj, som derved ligger indenfor 7-dages ventetidsgarantien. Typen af genoptræning specificeres af kommunen som 'basal'.
 I første omgang planlægges en terapeutfaglig udredning.</p>
 
 <h4 id="reporting">Reporting</h4>
@@ -172,8 +173,8 @@ I første omgang planlægges en terapeutfaglig udredning.</p>
 <h3 id="second-event-may-28th-2022">Second Event May 28th, 2022</h3>
 
 <h4 id="story-1">Story</h4>
-<p>Der gennemføres en terapeutfaglig udredning – hvor der beskrives udfordringer på tilstandene ‘Mobilitet og bevæge sig’ og ‘forflytte sig’.
-På denne baggrund planlægges et træningsforløb med indsatsen ‘fysisk træning’. Da den terapeutfaglig udredning hermed er gennemført, afsluttes indsatsen ‘Terapeutfaglig udredning’.</p>
+<p>Der gennemføres en terapeutfaglig udredning – hvor der beskrives udfordringer på tilstandene 'Mobilitet og bevæge sig' og 'forflytte sig'.
+På denne baggrund planlægges et træningsforløb med indsatsen 'fysisk træning'. Da den terapeutfaglig udredning hermed er gennemført, afsluttes indsatsen 'Terapeutfaglig udredning'.</p>
 
 <h4 id="reporting-1">Reporting</h4>
 <p>A delivery report is generated containing the Citizen, two Organizations  (The sender of the GGOP and the one delivering the intervention), a FocusCondition, and a ServiceRequest. These are not updated from last time, but they are reported because the new content references these instances.</p>
@@ -201,7 +202,7 @@ På denne baggrund planlægges et træningsforløb med indsatsen ‘fysisk træn
 <h3 id="seventh-event-june-22nd">Seventh event June 22nd</h3>
 
 <h4 id="story-3">Story</h4>
-<p>En terapeut planlægger et træningsforløb med indsatserne ‘fysisk træning’ og ‘funktionstræning’, og ved en fejl gør hun det i Ruddis journal, i stedet for Peters journal. Fejlen sker fordi Ruddi var den sidste borger hun havde, og hun glemte at lukke hans journal ned. Da fejlen ikke er opdaget endnu, indrapporters de som et nyt indsatsforløb i Ruddis journal.</p>
+<p>En terapeut planlægger et træningsforløb med indsatserne 'fysisk træning' og 'funktionstræning', og ved en fejl gør hun det i Ruddis journal, i stedet for Peters journal. Fejlen sker fordi Ruddi var den sidste borger hun havde, og hun glemte at lukke hans journal ned. Da fejlen ikke er opdaget endnu, indrapporters de som et nyt indsatsforløb i Ruddis journal.</p>
 
 <h4 id="reporting-3">Reporting</h4>
 <p>A delivery report is generated containing the Citizen, one Organizations  (the one delivering the intervention). These are not updated from last time, but they are reported because the new content references these instances.</p>
@@ -243,7 +244,7 @@ På denne baggrund planlægges et træningsforløb med indsatsen ‘fysisk træn
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.rehab#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 23:09+0200">2024-07-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.rehab#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 15:40+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -260,7 +261,7 @@ På denne baggrund planlægges et træningsforløb med indsatsen ‘fysisk træn
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -271,7 +272,6 @@ På denne baggrund planlægges et træningsforløb med indsatsen ‘fysisk træn
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

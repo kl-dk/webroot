@@ -1,0 +1,1524 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "kl.dk.fhir.gateway",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.gateway</b></p><a name=\"kl.dk.fhir.gateway\"> </a><a name=\"hckl.dk.fhir.gateway\"> </a><a name=\"kl.dk.fhir.gateway-en-US\"> </a><h2>KLGateway</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway</pre></div>"
+  },
+  "url" : "http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway",
+  "version" : "1.2.0",
+  "name" : "KLGateway",
+  "status" : "active",
+  "date" : "2024-10-31T19:17:05+01:00",
+  "publisher" : "KL",
+  "contact" : [{
+    "name" : "KL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.kl.dk"
+    }]
+  }],
+  "packageId" : "kl.dk.fhir.gateway",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "6.0.2"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.1.0"
+  },
+  {
+    "id" : "hl7_fhir_dk_core",
+    "uri" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
+    "packageId" : "hl7.fhir.dk.core",
+    "version" : "3.2.0"
+  },
+  {
+    "id" : "kl_dk_fhir_term",
+    "uri" : "http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term",
+    "packageId" : "kl.dk.fhir.term",
+    "version" : "2.2.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2021+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://fhir.kl.dk/gateway/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2021+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://fhir.kl.dk/gateway/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BasedOnInterventionExtension"
+      },
+      "name" : "basedOnInterventionExtension",
+      "description" : "Extension for pointing to the intervention describing why this encounter is taking place (will be part of R5 and comming FHIR versions without needing the extension)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-citizen"
+      },
+      "name" : "CareCitizen",
+      "description" : "Administrative information about a citizen receiving care or care related services.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-citizens-own-observation"
+      },
+      "name" : "CareCitizensOwnObservation",
+      "description" : "Measurements and simple assertions made about a patient by the patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-completed-intervention"
+      },
+      "name" : "CareCompletedIntervention",
+      "description" : "Documentation for completed interventions (activities related to one and only one encounter) in Danish municipalities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-condition"
+      },
+      "name" : "CareCondition",
+      "description" : "Detailed information about conditions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-delivery-report"
+      },
+      "name" : "CareDeliveryReport",
+      "description" : "Deliver report to deliver for each citizen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-encounter"
+      },
+      "name" : "CareEncounter",
+      "description" : "Encounter for following up on conditions, care plans, or observations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-finding-context-at-risk-extension"
+      },
+      "name" : "CareFindingContextAtRiskExtension",
+      "description" : "Context at risk for a given matter of interest given as a condition code.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-follow-up-encounter-extension"
+      },
+      "name" : "CareFollowUpEncounterExtension",
+      "description" : "Encounter for following up on this information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-follow-up-observation"
+      },
+      "name" : "CareFollowUpObservation",
+      "description" : "Structured result or outcome of a follow up.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-general-encounter"
+      },
+      "name" : "CareGeneralEncounter",
+      "description" : "Encounter for planned and completed meetings between citizens and care staff.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-goal"
+      },
+      "name" : "CareGoal",
+      "description" : "Describes the intended or expected functional level for a condition of a citizen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-incremental-delivery"
+      },
+      "name" : "CareIncrementalDelivery",
+      "description" : "Delivery for all delivery reports made since last update (unordered).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-matter-of-interest-observation"
+      },
+      "name" : "CareMatterOfInterestObservation",
+      "description" : "Matter or area of interest in relation to the care of the citizen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/klgateway-care-planned-intervention"
+      },
+      "name" : "CarePlannedIntervention",
+      "description" : "Planned interventions for nursing and home care in Danish Municipalities.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/3304e5f8-4b3f-4c19-8c68-e36c573f3f98"
+      },
+      "name" : "DeliveryReport-JensHansen-1",
+      "description" : "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff"
+      },
+      "name" : "DeliveryReport-JensHansen-2",
+      "description" : "Reporting of Jens Hansen after second encounter with Home Care Assessor updating follow-up date",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/8ec154f2-1429-4a41-aca7-f900e1d3bee2"
+      },
+      "name" : "DeliveryReport-JensHansen-2",
+      "description" : "Reporting of Jens Hansen after second encounter with Home Care Assessor updating follow-up date",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/643c3e42-ab90-4354-9b98-f01b4740d3d9"
+      },
+      "name" : "DeliveryReport-JensHansen-3",
+      "description" : "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/89071c96-e053-40d5-8873-105b7bad40f9"
+      },
+      "name" : "DeliveryReport-JensHansen-3",
+      "description" : "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/832c69db-98b5-4aee-ab00-c24967e89d25"
+      },
+      "name" : "DeliveryReport-JensHansen-InterventionDelivery",
+      "description" : "Reporting of Jens Hansen's delivered intervention on Febrauary 13th",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/5c20b1b0-ec06-4d25-89e2-13521ebcf642"
+      },
+      "name" : "DeliveryReport-JensHansen-new-1",
+      "description" : "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/d54206de-c95b-4c53-9517-6eb155dca99a"
+      },
+      "name" : "DeliveryReport-PeterOlsen-1",
+      "description" : "Reporting of Peter Olsen after first encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/4768772b-67f3-4468-9a2f-ee9a0254a323"
+      },
+      "name" : "DeliveryReport-PeterOlsen-1",
+      "description" : "Reporting of Peter Olsen after first encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb"
+      },
+      "name" : "DeliveryReport-PeterOlsen-2",
+      "description" : "Reporting of Peter Olsen after second encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/bad12c80-85ff-4b36-8396-414a1b58cd0d"
+      },
+      "name" : "DeliveryReport-PeterOlsen-2",
+      "description" : "Reporting of Peter Olsen after second encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/0c1112c3-77b5-4d85-965c-0c26228ec7ef"
+      },
+      "name" : "DeliveryReport-PeterOlsen-3",
+      "description" : "Reporting of Peter Olsen after third encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/3c4919f9-aec9-485f-808a-3f9ff6c95786"
+      },
+      "name" : "DeliveryReport-PeterOlsen-3",
+      "description" : "Reporting of Peter Olsen after third encounter with the Acute Team",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/374484d0-00cb-4b63-94d1-a0d984afc339"
+      },
+      "name" : "DeliveryReport-PeterOlsen-4",
+      "description" : "Reporting of Peter Olsen after first encounter with home nursing",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/d85460fb-b39e-4cf7-9750-12be44417dfd"
+      },
+      "name" : "DeliveryReport-PeterOlsen-4",
+      "description" : "Reporting of Peter Olsen after first encounter with home nursing",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/cc93afc5-7849-4895-84eb-00bb5c129c0b"
+      },
+      "name" : "DeliveryReport-PeterOlsen-5",
+      "description" : "Reporting of Peter Olsen after second encounter with home nursing",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/616ce3ef-b7e8-46e1-aefc-ff5bde81b153"
+      },
+      "name" : "DeliveryReport-PeterOlsen-5",
+      "description" : "Reporting of Peter Olsen after second encounter with home nursing",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/1652f2a9-510a-4cd3-8fc4-8b69d0ffedae"
+      },
+      "name" : "DeliveryReport-PeterOlsen-6",
+      "description" : "Reporting of Peter Olsen after first encounter with training",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DeliveryType"
+      },
+      "name" : "DeliveryType",
+      "description" : "Extension for a code that specifies some context of how a treatment-activity is delivered to a patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DeliveryTypes"
+      },
+      "name" : "DeliveryTypes",
+      "description" : "The delivery context types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/Dialyse"
+      },
+      "name" : "Dialyse",
+      "description" : "Planned intervention doing dialysis according to FSIII on the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DialyseFortsaettes"
+      },
+      "name" : "DialyseFortsaettes",
+      "description" : "Follow-up observation documenting that the planned intervention on dialysis should be continued for the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EgensomsorgBegraensninger"
+      },
+      "name" : "EgensomsorgBegraensninger",
+      "description" : "An observation that self-care is an area that is a matter of interest regarding the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EgensomsorgBegraensningerOmkringKropspleje"
+      },
+      "name" : "EgensomsorgBegraensningerOmkringKropspleje",
+      "description" : "An observation that self-care is an area that is a matter of interest regarding the test person with potential problems around bodily care",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/ForventetIngenBegraensninger"
+      },
+      "name" : "ForventetIngenBegraensninger",
+      "description" : "A goal for the test person on the ability to wash himself",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-goal"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FSIIICareConditions"
+      },
+      "name" : "FSIIICareConditions",
+      "description" : "Conditions defined by FSIII for nursing and home care",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FSIIICareGoalTypes"
+      },
+      "name" : "FSIIICareGoalTypes",
+      "description" : "Goal Types defined by FSIII for nursing and home care",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FSIIICareInterventions"
+      },
+      "name" : "FSIIICareInterventions",
+      "description" : "Interventions defined by FSIII for nursing and home care",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FSIIICareMatterOfInterests"
+      },
+      "name" : "FSIIICareMatterOfInterests",
+      "description" : "Matters of Interests (areas) defined by FSIII for nursing and home care",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/klgateway"
+      },
+      "name" : "klgateway",
+      "description" : "The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KLGatewayCareMatterOfInterestValues"
+      },
+      "name" : "KLGatewayCareMatterOfInterestValues",
+      "description" : "Values of Matters of Interests (areas)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/EncounterClassCodes"
+      },
+      "name" : "KontaktKlasseKoder",
+      "description" : "Codes to describe the mode of delivery of an encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/LeveringAfDialyse"
+      },
+      "name" : "LeveringAfDialyse",
+      "description" : "General encounter used to document delivery of an intervention",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LocallyDefinedInterventions"
+      },
+      "name" : "LocallyDefinedInterventions",
+      "description" : "Coding system to indicate a code defined locally in the managing organization",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/NaesteOpfoelgning"
+      },
+      "name" : "NaesteOpfoelgning",
+      "description" : "General encounter used to document the next date for a follow-up",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/NaesteOpfoelgningsdato"
+      },
+      "name" : "NaesteOpfoelgningsdato",
+      "description" : "Encounter documenting the next date for a follow-up",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/OpleverIkkeBegraensningerMedVaskeSig"
+      },
+      "name" : "OpleverIkkeBegraensningerMedVaskeSig",
+      "description" : "Citizens own observation regarding the importance of the limitations on the ability to wash himself",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/PersonligHygiejne"
+      },
+      "name" : "PersonligHygiejne",
+      "description" : "Planned intervention doing personal hygiene according to FSIII on the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/PersonligHygiejneFortsaettes"
+      },
+      "name" : "PersonligHygiejneFortsaettes",
+      "description" : "Follow-up observation documenting that the planned intervention on personal hygiene should be continued for the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/PersonligPlejeFortsaettes"
+      },
+      "name" : "PersonligPlejeFortsaettes",
+      "description" : "Follow-up observation documenting that focus on personal care should be continued for the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ProblemerMedPersonligPleje"
+      },
+      "name" : "ProblemerMedPersonligPleje",
+      "description" : "Assessed ability for the test person to perform personal care",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/Saarbehandling"
+      },
+      "name" : "Saarbehandling",
+      "description" : "Completed intervention doing wound treatment according to FSIII on the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-completed-intervention"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/TestIncrementalDelivery"
+      },
+      "name" : "TestIncrementalDelivery",
+      "description" : "Example of an incremental delivery with one delivery report",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-incremental-delivery"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/TestPerson"
+      },
+      "name" : "TestPerson",
+      "description" : "Test person used in the examples of the implementation guide.",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/TestPersonError"
+      },
+      "name" : "TestPersonError",
+      "description" : "Test person used in the examples of the implementation guide.",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/TestPersonReport"
+      },
+      "name" : "TestPersonReport",
+      "description" : "Example of a delivery report for the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/UdfoererSelvVaskeSig"
+      },
+      "name" : "UdfoererSelvVaskeSig",
+      "description" : "Citizens own observation regarding abililty to wash himself",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/VaskeSigFortsaettes"
+      },
+      "name" : "VaskeSigFortsaettes",
+      "description" : "Follow-up observation documenting that focus on ability to wash himself should be continued for the test person",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/VaskeSigLetteBegraensninger"
+      },
+      "name" : "VaskeSigLetteBegraensninger",
+      "description" : "Assessed ability for the test person to wash himself",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/VaskeSigLetteBegraensningerNy"
+      },
+      "name" : "VaskeSigLetteBegraensningerNy",
+      "description" : "Assessed ability for the test person to wash himself - new way of defining followUp Encounter",
+      "exampleCanonical" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Homecare.html"
+        }],
+        "nameUrl" : "Homecare.html",
+        "title" : "Homecare",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "HomecareNew.html"
+        }],
+        "nameUrl" : "HomecareNew.html",
+        "title" : "Homecare New",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "indexOld.html"
+        }],
+        "nameUrl" : "indexOld.html",
+        "title" : "Index Old",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Nursing.html"
+        }],
+        "nameUrl" : "Nursing.html",
+        "title" : "Nursing",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "NursingNew.html"
+        }],
+        "nameUrl" : "NursingNew.html",
+        "title" : "Nursing New",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

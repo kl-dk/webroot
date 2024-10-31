@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Kirsten - XML Representation - KLChildren implementation guide, an implementation of FBU v2.0.1</title>
+    <title>Kirsten - XML Representation - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,9 +41,10 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"4.86"}
-    h3,h4,h5,h6{--heading-prefix:"4.86"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.87"}
+    h3,h4,h5,h6{--heading-prefix:"4.87"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -60,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
             <br/>
-            <span style="display:inline-block;">2.0.1 - Release
+            <span style="display:inline-block;">2.1.0 - Release
 
 
             </span>
@@ -124,7 +125,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -180,8 +181,7 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kirsten&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>&gt;
@@ -190,7 +190,7 @@
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Patient Kirsten&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Kirsten&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcKirsten&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcKirsten-en-US&quot;&gt; &lt;/a&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2911829996 (use: official, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Patient Links&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;Managing Organization: Identifier: &lt;code&gt;urn:oid:1.2.208.176.1.1&lt;/code&gt;/123456789012345 (use: official, )&lt;/li&gt;&lt;li&gt;Also see: &lt;a href=&quot;RelatedPerson-RikkesParent.html&quot;&gt;RelatedPerson: relationship = parent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Patient Kirsten&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Kirsten&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcKirsten&quot;&gt; &lt;/a&gt;&lt;a name=&quot;Kirsten-en-US&quot;&gt; &lt;/a&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2911829996 (use: official, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Patient Links&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;Managing Organization: Identifier: &lt;code&gt;urn:oid:1.2.208.176.1.1&lt;/code&gt;/123456789012345 (use: official, )&lt;/li&gt;&lt;li&gt;Also see: &lt;a href=&quot;RelatedPerson-RikkesParent.html&quot;&gt;RelatedPerson: relationship = parent&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
@@ -234,7 +234,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 22:52+0200">2024-07-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:37+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -251,7 +251,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -262,7 +262,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

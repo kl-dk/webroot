@@ -1,0 +1,155 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "616ce3ef-b7e8-46e1-aefc-ff5bde81b153",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"]
+  },
+  "type" : "collection",
+  "timestamp" : "2021-02-17T11:51:44Z",
+  "entry" : [{
+    "fullUrl" : "https://test.fhir.dk/Patient/17911a9f-69ff-4041-8dd0-6fc96864d04b",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "17911a9f-69ff-4041-8dd0-6fc96864d04b",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_17911a9f-69ff-4041-8dd0-6fc96864d04b\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient 17911a9f-69ff-4041-8dd0-6fc96864d04b</b></p><a name=\"17911a9f-69ff-4041-8dd0-6fc96864d04b\"> </a><a name=\"hc17911a9f-69ff-4041-8dd0-6fc96864d04b\"> </a><a name=\"17911a9f-69ff-4041-8dd0-6fc96864d04b-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101570001\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/123456789012345\u00a0(use:\u00a0official,\u00a0)</li></ul></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0101570001"
+      }],
+      "deceasedBoolean" : false,
+      "managingOrganization" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "urn:oid:1.2.208.176.1.1",
+          "value" : "123456789012345"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Condition/9c818a37-6525-49bb-bcea-5fe5df01f6f4",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "9c818a37-6525-49bb-bcea-5fe5df01f6f4",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_9c818a37-6525-49bb-bcea-5fe5df01f6f4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 9c818a37-6525-49bb-bcea-5fe5df01f6f4</b></p><a name=\"9c818a37-6525-49bb-bcea-5fe5df01f6f4\"> </a><a name=\"hc9c818a37-6525-49bb-bcea-5fe5df01f6f4\"> </a><a name=\"9c818a37-6525-49bb-bcea-5fe5df01f6f4-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 92caace8-60e3-4861-80ac-6e372a700e1d}\">Problemer med mobilitet og bevægelse</span></p><p><b>subject</b>: <a href=\"Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html#Patient_17911a9f-69ff-4041-8dd0-6fc96864d04b\">Bundle: type = collection; timestamp = 2021-02-14 15:23:12+0000</a></p><p><b>recordedDate</b>: 2021-02-15</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "inactive"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "92caace8-60e3-4861-80ac-6e372a700e1d",
+          "display" : "Problemer med mobilitet og bevægelse"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/17911a9f-69ff-4041-8dd0-6fc96864d04b"
+      },
+      "recordedDate" : "2021-02-15"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/CarePlan/9a07e8ad-4e71-42c7-a67f-96f5944f51a6",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "9a07e8ad-4e71-42c7-a67f-96f5944f51a6",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_9a07e8ad-4e71-42c7-a67f-96f5944f51a6\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan 9a07e8ad-4e71-42c7-a67f-96f5944f51a6</b></p><a name=\"9a07e8ad-4e71-42c7-a67f-96f5944f51a6\"> </a><a name=\"hc9a07e8ad-4e71-42c7-a67f-96f5944f51a6\"> </a><a name=\"9a07e8ad-4e71-42c7-a67f-96f5944f51a6-en-US\"> </a><p><b>status</b>: Completed</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html#Patient_17911a9f-69ff-4041-8dd0-6fc96864d04b\">Bundle: type = collection; timestamp = 2021-02-14 15:23:12+0000</a></p><p><b>period</b>: 2021-02-10 --&gt; 2021-02-17</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>ReasonReference</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 3198a6ba-879c-4d2e-914b-560ba1e0d63a}\">Respirationsbehandling</span></td><td><a href=\"Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html#Condition_9c818a37-6525-49bb-bcea-5fe5df01f6f4\">Bundle: type = collection; timestamp = 2021-02-14 15:23:12+0000</a></td><td>In Progress</td></tr></table></blockquote></div>"
+      },
+      "status" : "completed",
+      "intent" : "plan",
+      "subject" : {
+        "reference" : "Patient/17911a9f-69ff-4041-8dd0-6fc96864d04b"
+      },
+      "period" : {
+        "start" : "2021-02-10",
+        "end" : "2021-02-17"
+      },
+      "activity" : [{
+        "detail" : {
+          "code" : {
+            "coding" : [{
+              "system" : "urn:oid:1.2.208.176.2.21",
+              "code" : "3198a6ba-879c-4d2e-914b-560ba1e0d63a",
+              "display" : "Respirationsbehandling"
+            }]
+          },
+          "reasonReference" : [{
+            "reference" : "Condition/9c818a37-6525-49bb-bcea-5fe5df01f6f4"
+          }],
+          "status" : "in-progress"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Observation/dcd2273d-426d-421a-b82e-155ce7cc7173",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "dcd2273d-426d-421a-b82e-155ce7cc7173",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_dcd2273d-426d-421a-b82e-155ce7cc7173\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation dcd2273d-426d-421a-b82e-155ce7cc7173</b></p><a name=\"dcd2273d-426d-421a-b82e-155ce7cc7173\"> </a><a name=\"hcdcd2273d-426d-421a-b82e-155ce7cc7173\"> </a><a name=\"dcd2273d-426d-421a-b82e-155ce7cc7173-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 5bfe4bda-2358-41da-946e-1fdaa33d5fe8}\">Psykosociale forhold</span></p><p><b>subject</b>: <a href=\"Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html#Patient_17911a9f-69ff-4041-8dd0-6fc96864d04b\">Bundle: type = collection; timestamp = 2021-02-14 15:23:12+0000</a></p><p><b>effective</b>: 2021-02-17</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "5bfe4bda-2358-41da-946e-1fdaa33d5fe8"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/17911a9f-69ff-4041-8dd0-6fc96864d04b"
+      },
+      "effectiveDateTime" : "2021-02-17"
+    }
+  },
+  {
+    "fullUrl" : "https://test.fhir.dk/Observation/b2cff9f0-7b03-4f03-a443-70c17b1cd623",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "b2cff9f0-7b03-4f03-a443-70c17b1cd623",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_b2cff9f0-7b03-4f03-a443-70c17b1cd623\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation b2cff9f0-7b03-4f03-a443-70c17b1cd623</b></p><a name=\"b2cff9f0-7b03-4f03-a443-70c17b1cd623\"> </a><a name=\"hcb2cff9f0-7b03-4f03-a443-70c17b1cd623\"> </a><a name=\"b2cff9f0-7b03-4f03-a443-70c17b1cd623-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 8c539fd9-7f31-4b4e-8b30-8298c8ab640f}\">Søvn og hvile</span></p><p><b>subject</b>: <a href=\"Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html#Patient_17911a9f-69ff-4041-8dd0-6fc96864d04b\">Bundle: type = collection; timestamp = 2021-02-14 15:23:12+0000</a></p><p><b>effective</b>: 2021-02-17</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "8c539fd9-7f31-4b4e-8b30-8298c8ab640f"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/17911a9f-69ff-4041-8dd0-6fc96864d04b"
+      },
+      "effectiveDateTime" : "2021-02-17"
+    }
+  }]
+}

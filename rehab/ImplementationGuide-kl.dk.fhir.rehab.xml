@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="kl.dk.fhir.rehab"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.rehab</b></p><a name="kl.dk.fhir.rehab"> </a><a name="hckl.dk.fhir.rehab"> </a><a name="hckl.dk.fhir.rehab-en-US"> </a><h2>KLGatewayRehab</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab</pre><div><p>Danish municipalities implementation guide for §140 rehabilitation reporting</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.rehab</b></p><a name="kl.dk.fhir.rehab"> </a><a name="hckl.dk.fhir.rehab"> </a><a name="kl.dk.fhir.rehab-en-US"> </a><h2>KLGatewayRehab</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab</pre><div><p>Danish municipalities implementation guide for §140 rehabilitation reporting</p>
 </div></div>
   </text>
   <url value="http://fhir.kl.dk/rehab/ImplementationGuide/kl.dk.fhir.rehab"/>
-  <version value="2.1.1"/>
+  <version value="2.2.0"/>
   <name value="KLGatewayRehab"/>
   <status value="active"/>
-  <date value="2024-07-01T23:09:09+02:00"/>
+  <date value="2024-10-31T15:40:44+01:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -29,7 +29,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.5.0"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -47,7 +47,7 @@
   <dependsOn id="kl_dk_fhir_term">
     <uri value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
     <packageId value="kl.dk.fhir.term"/>
-    <version value="2.1.0"/>
+    <version value="2.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -251,7 +251,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -539,6 +539,17 @@
       </reference>
       <name value="CancellationTypes"/>
       <description value="Cancellation valueset, to be implemented in KL-term or MedCom-term"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-140-incremental-delivery"/>
+      </reference>
+      <name value="CareIncrementalDelivery"/>
+      <description value="Delivery for all delivery reports made since last update (unordered)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -859,6 +870,17 @@
       <name value="ServiceTypes"/>
       <description value="The service types allowed in §140"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/TestIncrementalDelivery"/>
+      </reference>
+      <name value="TestIncrementalDelivery"/>
+      <description value="Example of an incremental delivery with one delivery report"/>
+      <exampleCanonical value="http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-incremental-delivery"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "PersonligHygiejne",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan PersonligHygiejne</b></p><a name=\"PersonligHygiejne\"> </a><a name=\"hcPersonligHygiejne\"> </a><a name=\"PersonligHygiejne-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 H1.1}, {http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions H1.1.1}\">Speciel personlig pleje</span></td><td>In Progress</td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/TestPerson"
+  },
+  "period" : {
+    "start" : "2020-08-14"
+  },
+  "activity" : [{
+    "detail" : {
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "H1.1"
+        },
+        {
+          "system" : "http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions",
+          "code" : "H1.1.1",
+          "display" : "Speciel personlig pleje"
+        }]
+      },
+      "status" : "in-progress"
+    }
+  }]
+}

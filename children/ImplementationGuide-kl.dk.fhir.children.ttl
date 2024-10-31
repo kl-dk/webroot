@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "kl.dk.fhir.children"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.children</b></p><a name=\"kl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children-en-US\"> </a><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.children</b></p><a name=\"kl.dk.fhir.children\"> </a><a name=\"hckl.dk.fhir.children\"> </a><a name=\"kl.dk.fhir.children-en-US\"> </a><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
   fhir:name [ fhir:v "KLChildren"] ; # 
   fhir:title [ fhir:v "KLChildren implementation guide, an implementation of FBU"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-07-01T22:52:03+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-31T20:37:15+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
@@ -41,7 +41,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.5.0" ]
+     fhir:version [ fhir:v "6.0.2" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -69,7 +69,7 @@
        fhir:link <http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term>
      ] ;
      fhir:packageId [ fhir:v "kl.dk.fhir.term" ] ;
-     fhir:version [ fhir:v "2.1.0" ]
+     fhir:version [ fhir:v "2.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -317,7 +317,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -829,6 +829,18 @@
          fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"^^xsd:anyURI ;
          fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-incremental-delivery> ;
+         fhir:reference [ fhir:v "StructureDefinition/klgateway-children-incremental-delivery" ]
+       ] ;
+       fhir:name [ fhir:v "CareIncrementalDelivery" ] ;
+       fhir:description [ fhir:v "Delivery for all delivery reports made since last update (unordered)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1708,6 +1720,21 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.kl.dk/children/Observation/RikkeBodyWeight3mth> ;
+         fhir:reference [ fhir:v "Observation/RikkeBodyWeight3mth" ]
+       ] ;
+       fhir:name [ fhir:v "RikkeBodyWeight3mth" ] ;
+       fhir:description [ fhir:v "Rikkes vægt ved 3 måneder" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.kl.dk/children/Observation/RikkeChildrenParentRelationship> ;
          fhir:reference [ fhir:v "Observation/RikkeChildrenParentRelationship" ]
        ] ;
@@ -1743,6 +1770,21 @@
        ] ;
        fhir:name [ fhir:v "RikkeDeliveryReport2months" ] ;
        fhir:description [ fhir:v "Indberetning for Rikke 2 måneder" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/children/Bundle/RikkeDeliveryReport3months> ;
+         fhir:reference [ fhir:v "Bundle/RikkeDeliveryReport3months" ]
+       ] ;
+       fhir:name [ fhir:v "RikkeDeliveryReport3months" ] ;
+       fhir:description [ fhir:v "Indberetning for Rikke 3 måneder - eksempel på at der er foretaget en enkelt vægtmåling udenfor standardkontakter" ] ;
        fhir:example [
          fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"^^xsd:anyURI ;
          fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report>
@@ -2053,6 +2095,21 @@
        fhir:name [ fhir:v "SøvnKoder" ] ;
        fhir:description [ fhir:v "Mandatory result values for challenges in sleeping pattern in small children and school children" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/children/Bundle/TestIncrementalDelivery> ;
+         fhir:reference [ fhir:v "Bundle/TestIncrementalDelivery" ]
+       ] ;
+       fhir:name [ fhir:v "TestIncrementalDelivery" ] ;
+       fhir:description [ fhir:v "Example of an incremental delivery with one delivery report" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-incremental-delivery"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-incremental-delivery>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

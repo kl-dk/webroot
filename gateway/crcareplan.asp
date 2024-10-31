@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -15,10 +15,10 @@
     Response.Redirect("http://fhir.kl.dk/gateway/CarePlan-"+id+".json");
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/gateway/CarePlan-"+id+".xml");
-  else if (id == "Dialyse")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/CarePlan-Dialyse.html");
   else if (id == "PersonligHygiejne")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/CarePlan-PersonligHygiejne.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/CarePlan-PersonligHygiejne.html");
+  else if (id == "Dialyse")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/CarePlan-Dialyse.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/gateway/CarePlan.html");
 
@@ -27,6 +27,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1.0-milestone/output/crcareplan.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 2.0-milestone\output\crcareplan.asp) .
 </body>
 </html>

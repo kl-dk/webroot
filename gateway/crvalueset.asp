@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -15,16 +15,20 @@
     Response.Redirect("http://fhir.kl.dk/gateway/ValueSet-"+id+".json");
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/gateway/ValueSet-"+id+".xml");
+  else if (id == "DeliveryTypes")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/ValueSet-DeliveryTypes.html");
   else if (id == "FSIIICareConditions")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/ValueSet-FSIIICareConditions.html");
-  else if (id == "FSIIICareMatterOfInterests")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/ValueSet-FSIIICareMatterOfInterests.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/ValueSet-FSIIICareConditions.html");
   else if (id == "FSIIICareInterventions")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/ValueSet-FSIIICareInterventions.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/ValueSet-FSIIICareInterventions.html");
+  else if (id == "FSIIICareMatterOfInterests")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/ValueSet-FSIIICareMatterOfInterests.html");
+  else if (id == "EncounterClassCodes")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/ValueSet-EncounterClassCodes.html");
   else if (id == "FSIIICareGoalTypes")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/ValueSet-FSIIICareGoalTypes.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/ValueSet-FSIIICareGoalTypes.html");
   else if (id == "KLGatewayCareMatterOfInterestValues")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/ValueSet-KLGatewayCareMatterOfInterestValues.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/ValueSet-KLGatewayCareMatterOfInterestValues.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/gateway/ValueSet.html");
 
@@ -33,6 +37,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1.0-milestone/output/crvalueset.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 2.0-milestone\output\crvalueset.asp) .
 </body>
 </html>

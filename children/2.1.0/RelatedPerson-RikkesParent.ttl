@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/RelatedPerson/RikkesParent> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RikkesParent"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RikkesParent</b></p><a name=\"RikkesParent\"> </a><a name=\"hcRikkesParent\"> </a><a name=\"RikkesParent-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-Rikke.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996 (use: official, ))</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode PRN}\">parent</span></p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.kl.dk/children/Patient/Rikke> ;
+     fhir:reference [ fhir:v "Patient/Rikke" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PRN" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

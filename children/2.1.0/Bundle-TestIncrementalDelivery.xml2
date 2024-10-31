@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="TestIncrementalDelivery"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-incremental-delivery"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-07-08T23:45:00.000Z"/>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Bundle/RikkeDeliveryReport2months"/>
+    <resource>
+      <Bundle>
+        <id value="RikkeDeliveryReport2months"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+        </meta>
+        <type value="collection"/>
+        <timestamp value="2020-07-08T23:45:00.000Z"/>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Patient/Rikke"/>
+          <resource>
+            <Patient>
+              <id value="Rikke"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+              </meta>
+              <identifier>
+                <use value="official"/>
+                <system value="urn:oid:1.2.208.176.1.2"/>
+                <value value="0505209996"/>
+              </identifier>
+              <active value="true"/>
+              <managingOrganization>
+                <identifier>
+                  <use value="official"/>
+                  <system value="urn:oid:1.2.208.176.1.1"/>
+                  <value value="123456789012345"/>
+                </identifier>
+              </managingOrganization>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Patient/Kirsten"/>
+          <resource>
+            <Patient>
+              <id value="Kirsten"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+              </meta>
+              <identifier>
+                <use value="official"/>
+                <system value="urn:oid:1.2.208.176.1.2"/>
+                <value value="2911829996"/>
+              </identifier>
+              <managingOrganization>
+                <identifier>
+                  <use value="official"/>
+                  <system value="urn:oid:1.2.208.176.1.1"/>
+                  <value value="123456789012345"/>
+                </identifier>
+              </managingOrganization>
+              <link>
+                <other>
+                  <reference value="RelatedPerson/RikkesParent"/>
+                </other>
+                <type value="seealso"/>
+              </link>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/RelatedPerson/RikkesParent"/>
+          <resource>
+            <RelatedPerson>
+              <id value="RikkesParent"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent"/>
+              </meta>
+              <patient>
+                <reference value="Patient/Rikke"/>
+              </patient>
+              <relationship>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+                  <code value="PRN"/>
+                </coding>
+              </relationship>
+            </RelatedPerson>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Encounter/2mthEncounter"/>
+          <resource>
+            <Encounter>
+              <id value="2mthEncounter"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"/>
+              </meta>
+              <status value="finished"/>
+              <class>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="HH"/>
+              </class>
+              <type>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="51f30d1c-d60e-4e3e-ac22-ec9712ea962d"/>
+                  <display value="Besøg hos det ca. 2 måneder gamle barn"/>
+                </coding>
+              </type>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <period>
+                <start value="2020-07-07T12:45:00.000Z"/>
+              </period>
+            </Encounter>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/KirstenParentMentalStatus"/>
+          <resource>
+            <Observation>
+              <id value="KirstenParentMentalStatus"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-mental-status"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="2c39af9f-8e45-4c88-962f-e7a9e2cd31b6"/>
+                  <display value="Forælders psykiske tilstand"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Kirsten"/>
+              </subject>
+              <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="b8220216-e185-451b-8d2a-67cdf73c42c3"/>
+                  <display value="Let psykisk reaktion"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/QuestionnaireResponse/EPDSAnswerKirsten"/>
+          <resource>
+            <QuestionnaireResponse>
+              <id value="EPDSAnswerKirsten"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-questionnaire-response"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/children/StructureDefinition/FindingInformer">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                    <code value="25b4e705-2e9a-47a2-b11a-c829316b9d3a"/>
+                    <display value="Borger"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <questionnaire value="http://fhir.kl.dk/children/Questionnaire/klgateway-children-epds"/>
+              <status value="completed"/>
+              <subject>
+                <reference value="Patient/Kirsten"/>
+              </subject>
+              <authored value="2020-07-07"/>
+              <item>
+                <linkId value="1humor"/>
+                <answer>
+                  <valueInteger value="0"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="2happiness"/>
+                <answer>
+                  <valueInteger value="2"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="3blame"/>
+                <answer>
+                  <valueInteger value="1"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="4worry"/>
+                <answer>
+                  <valueInteger value="1"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="5anxious"/>
+                <answer>
+                  <valueInteger value="2"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="6grow"/>
+                <answer>
+                  <valueInteger value="1"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="7sleep"/>
+                <answer>
+                  <valueInteger value="3"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="8sad"/>
+                <answer>
+                  <valueInteger value="0"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="9cry"/>
+                <answer>
+                  <valueInteger value="0"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="10harm"/>
+                <answer>
+                  <valueInteger value="0"/>
+                </answer>
+              </item>
+              <item>
+                <linkId value="score"/>
+                <answer>
+                  <valueInteger value="10"/>
+                </answer>
+              </item>
+            </QuestionnaireResponse>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeSocialInteraction"/>
+          <resource>
+            <Observation>
+              <id value="RikkeSocialInteraction"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-social-interaction"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="68605f88-49fb-44b9-b327-86947af6aa93"/>
+                  <display value="Social kontakt"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="e1c1674c-9384-4d95-999f-763f3868f444"/>
+                  <display value="Udfordring i social kontakt"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeChildrenParentRelationship"/>
+          <resource>
+            <Observation>
+              <id value="RikkeChildrenParentRelationship"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-parent-relationship"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="763c6f21-5467-4713-82fb-716c9d0a1fdf"/>
+                  <display value="Forældre-barn-relation"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="7a107df6-8fb8-4744-8413-be10b4c5c1d9"/>
+                  <display value="Velfungerende forældre-barn-relation"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeBodyWeight2mth"/>
+          <resource>
+            <Observation>
+              <id value="RikkeBodyWeight2mth"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="29463-7"/>
+                </coding>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="27113001"/>
+                  <display value="Body weight"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-06-30"/>
+              <valueQuantity>
+                <value value="6200"/>
+                <unit value="g"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeBodyHeight2mth"/>
+          <resource>
+            <Observation>
+              <id value="RikkeBodyHeight2mth"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyheight"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="8302-2"/>
+                </coding>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="1153637007"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07"/>
+              <valueQuantity>
+                <value value="58"/>
+                <unit value="cm"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="cm"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeHeadCircum"/>
+          <resource>
+            <Observation>
+              <id value="RikkeHeadCircum"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-headcircum"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="9843-4"/>
+                  <display value="Head Occipital-frontal circumference"/>
+                </coding>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="363812007"/>
+                  <display value="Head circumference"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07T12:45:00.000Z"/>
+              <valueQuantity>
+                <value value="38.3"/>
+                <unit value="cm"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="cm"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeFeedingObservationPeriod"/>
+          <resource>
+            <Observation>
+              <id value="RikkeFeedingObservationPeriod"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="169740003"/>
+                  <display value="Infant feeding method"/>
+                </coding>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="e61e4dab-54bb-4bf4-9b76-8d991cf4de08"/>
+                  <display value="Ernæring"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectivePeriod>
+                <start value="2020-05-05T00:00:00.000Z"/>
+                <end value="2020-06-28T00:00:00.000Z"/>
+              </effectivePeriod>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="77a008dd-21cc-452f-a1ee-ac8d025b7817"/>
+                  <display value="Fuldamning, inklusiv modermælk på flaske"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeFeedingObservationStatus"/>
+          <resource>
+            <Observation>
+              <id value="RikkeFeedingObservationStatus"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="169740003"/>
+                  <display value="Infant feeding method"/>
+                </coding>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="e61e4dab-54bb-4bf4-9b76-8d991cf4de08"/>
+                  <display value="Ernæring"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="3edc905c-2830-442a-98cc-463cc3701dd1"/>
+                  <display value="Ammes som supplement til anden kost"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeFeedingObservationNewPeriod"/>
+          <resource>
+            <Observation>
+              <id value="RikkeFeedingObservationNewPeriod"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-feeding-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="169740003"/>
+                  <display value="Infant feeding method"/>
+                </coding>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="e61e4dab-54bb-4bf4-9b76-8d991cf4de08"/>
+                  <display value="Ernæring"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectivePeriod>
+                <start value="2020-06-28T00:00:00.000Z"/>
+              </effectivePeriod>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="3edc905c-2830-442a-98cc-463cc3701dd1"/>
+                  <display value="Ammes som supplement til anden kost"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeCommunication2mth"/>
+          <resource>
+            <Observation>
+              <id value="RikkeCommunication2mth"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-communication"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="653c2b0b-bb64-4906-888b-aea6fef3c3f8"/>
+                  <display value="Kommunikation"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="042d522d-0abe-46eb-a958-6e235b5d5408"/>
+                  <display value="Kommunikerer alderssvarende"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeSleep2mth"/>
+          <resource>
+            <Observation>
+              <id value="RikkeSleep2mth"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-sleep"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="73f981f8-455a-4158-b435-7c6d83ab84da"/>
+                  <display value="Søvn"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="b07eec60-941d-484d-8c2a-aeaa2ba798bf"/>
+                  <display value="Søvn med normale variationer"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeMotorFunction2mth"/>
+          <resource>
+            <Observation>
+              <id value="RikkeMotorFunction2mth"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-motor-function"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="e04f2ca1-888a-4671-a97a-371b525cd2a3"/>
+                  <display value="Motorik"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07T00:00:00.000Z"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="936a0163-08eb-4fdb-bf0c-bcf5bc7cb3f6"/>
+                  <display value="Få tegn på udfordret motorik"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeEyeContact2mth"/>
+          <resource>
+            <Observation>
+              <id value="RikkeEyeContact2mth"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-exam-result"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="363788007"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/Rikke"/>
+              </subject>
+              <encounter>
+                <reference value="Encounter/2mthEncounter"/>
+              </encounter>
+              <effectiveDateTime value="2020-07-07"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/FBOE"/>
+                  <code value="bfd18100-d007-4465-95ce-5bf2ac8bc091"/>
+                  <display value="Afvigende øjenkontakt"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

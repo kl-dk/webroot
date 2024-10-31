@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>KL.DK.FHIR.GATEWAY\TestPersonReport - TTL Representation - FHIR v4.0.1</title>
+    <title>TestPersonReport - TTL Representation -  v1.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,9 +41,10 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"5.42"}
-    h3,h4,h5,h6{--heading-prefix:"5.42"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8.61"}
+    h3,h4,h5,h6{--heading-prefix:"8.61"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -60,11 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">1.1.0 - release
-
-
-
-  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+            <span style="display:inline-block;">1.2.0 - release
 
 
             </span>
@@ -95,13 +92,22 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="indexOld.html">Old Home</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="Homecare.html">Homecare Example</a>
+    <a href="Homecare.html">Old Homecare Ex</a>
   </li>
   <li>
-    <a href="Nursing.html">Nursing Example</a>
+    <a href="Nursing.html">Old Nursing Ex</a>
+  </li>
+  <li>
+    <a href="HomecareNew.html">New Homecare Ex</a>
+  </li>
+  <li>
+    <a href="NursingNew.html">New Nursing Ex</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
@@ -131,7 +137,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KL Gateway (v1.1.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://fhir.kl.dk/gateway/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KL Gateway (v1.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/gateway/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -178,18 +184,6 @@
 
 
 <h2 id="root">: TestPersonReport - TTL Representation</h2>
-  <table class="">
-    <tr>
-
-      <td colspan="2">
-        
-          
-          
-        
-      </td>
-
-    </tr>
-  </table>
 
 
 <p><a href="Bundle-TestPersonReport.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-TestPersonReport.ttl" download>Download</a></p>
@@ -219,54 +213,54 @@
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;collection&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">fhir:timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2020-08-14T00:00:00Z&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:entry</a> ( [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Patient/TestPerson&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:resource</a> &lt;Patient/TestPerson&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Patient/TestPerson&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:resource</a> &lt;https://test.fhir.dk/Patient/TestPerson&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Condition/VaskeSigLetteBegraensninger&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:resource</a> &lt;Condition/VaskeSigLetteBegraensninger&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:resource</a> &lt;https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Goal/ForventetIngenBegraensninger&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:resource</a> &lt;Goal/ForventetIngenBegraensninger&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Goal/ForventetIngenBegraensninger&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:resource</a> &lt;https://test.fhir.dk/Goal/ForventetIngenBegraensninger&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Observation/OpleverIkkeBegraensningerMedVaskeSig&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;Observation/OpleverIkkeBegraensningerMedVaskeSig&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Observation/UdfoererSelvVaskeSig&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;Observation/UdfoererSelvVaskeSig&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Observation/UdfoererSelvVaskeSig&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;https://test.fhir.dk/Observation/UdfoererSelvVaskeSig&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Condition/ProblemerMedPersonligPleje&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:resource</a> &lt;Condition/ProblemerMedPersonligPleje&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Condition/ProblemerMedPersonligPleje&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:resource</a> &lt;https://test.fhir.dk/Condition/ProblemerMedPersonligPleje&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;CarePlan/PersonligHygiejne&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan">fhir:resource</a> &lt;CarePlan/PersonligHygiejne&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/CarePlan/PersonligHygiejne&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan">fhir:resource</a> &lt;https://test.fhir.dk/CarePlan/PersonligHygiejne&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;CarePlan/Dialyse&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan">fhir:resource</a> &lt;CarePlan/Dialyse&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/CarePlan/Dialyse&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan">fhir:resource</a> &lt;https://test.fhir.dk/CarePlan/Dialyse&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Procedure/Saarbehandling&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/procedure.html#Procedure">fhir:resource</a> &lt;Procedure/Saarbehandling&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Procedure/Saarbehandling&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/procedure.html#Procedure">fhir:resource</a> &lt;https://test.fhir.dk/Procedure/Saarbehandling&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Observation/EgensomsorgBegraensninger&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;Observation/EgensomsorgBegraensninger&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Observation/EgensomsorgBegraensninger&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;https://test.fhir.dk/Observation/EgensomsorgBegraensninger&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/encounter.html#Encounter">fhir:resource</a> &lt;Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/encounter.html#Encounter">fhir:resource</a> &lt;https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Observation/VaskeSigFortsaettes&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;Observation/VaskeSigFortsaettes&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Observation/VaskeSigFortsaettes&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;https://test.fhir.dk/Observation/VaskeSigFortsaettes&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Observation/PersonligPlejeFortsaettes&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;Observation/PersonligPlejeFortsaettes&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Observation/PersonligPlejeFortsaettes&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;https://test.fhir.dk/Observation/PersonligPlejeFortsaettes&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Observation/PersonligHygiejneFortsaettes&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;Observation/PersonligHygiejneFortsaettes&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Observation/DialyseFortsaettes&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;Observation/DialyseFortsaettes&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://test.fhir.dk/Observation/DialyseFortsaettes&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;https://test.fhir.dk/Observation/DialyseFortsaettes&gt; )
   ] ) . # 
 
-&lt;Patient/TestPerson&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;TestPerson&quot;] ; # 
+&lt;https://test.fhir.dk/Patient/TestPerson&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TestPerson&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen&quot;^^xsd:anyURI ;
@@ -274,13 +268,14 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Patient&lt;/b&gt;&lt;a name=\&quot;TestPerson\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Patient &amp;quot;TestPerson&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-citizen.html\&quot;&gt;CareCitizen&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 0101010101 (use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;span/&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_TestPerson\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient TestPerson&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;TestPerson\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcTestPerson\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;TestPerson-en-US\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Known status of Patient\&quot;&gt;Deceased:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Patient Links\&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;Managing Organization: Identifier: &lt;code&gt;urn:oid:1.2.208.176.1.1&lt;/code&gt;/123456789012345 (use: official, )&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:identifier</a> ( [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:1.2.208.176.1.2&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0101010101&quot; ]
   ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">fhir:deceased</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.managingOrganization">fhir:managingOrganization</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
@@ -288,7 +283,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123456789012345&quot; ]     ]
   ] . # 
 
-&lt;Condition/VaskeSigLetteBegraensninger&gt; <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition ;
+&lt;https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger&gt; <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition ;
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;VaskeSigLetteBegraensninger&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -297,13 +292,13 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;VaskeSigLetteBegraensninger\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition &amp;quot;VaskeSigLetteBegraensninger&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-condition.html\&quot;&gt;CareCondition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;CareFollowUpEncounterExtension&lt;/b&gt;: &lt;a href=\&quot;#Encounter_bfa70a76-318d-453d-9abc-76982f8d13ca\&quot;&gt;See above (Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\&quot;&gt;ConditionVerificationStatus&lt;/a&gt;#confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Problem List Item &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#problem-list-item)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;severity&lt;/b&gt;: Lette begrænsninger &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#B2)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Vaske sig &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#J1.1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Condition_VaskeSigLetteBegraensninger\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Condition VaskeSigLetteBegraensninger&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;VaskeSigLetteBegraensninger\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcVaskeSigLetteBegraensninger\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;VaskeSigLetteBegraensninger-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;CareFollowUpEncounterExtension&lt;/b&gt;: &lt;a href=\&quot;Encounter-NaesteOpfoelgningsdato.html\&quot;&gt;Encounter: status = planned; class = home health (ActCode#HH); type = opfølgning; period = 2020-08-14 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\&quot;&gt;Active&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\&quot;&gt;Confirmed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\&quot;&gt;Problem List Item&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;severity&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 B2}\&quot;&gt;1&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 J1.1}\&quot;&gt;Vaske sig&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.extension">fhir:extension</a> ( [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca&quot; ]     ]
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/NaesteOpfoelgningsdato&quot; ]     ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">fhir:clinicalStatus</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
@@ -335,7 +330,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.recordedDate">fhir:recordedDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2020-08-14&quot;^^xsd:date] . # 
 
-&lt;Goal/ForventetIngenBegraensninger&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal ;
+&lt;https://test.fhir.dk/Goal/ForventetIngenBegraensninger&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal ;
   <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;ForventetIngenBegraensninger&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/goal.html#Goal.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -344,7 +339,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Goal&lt;/b&gt;&lt;a name=\&quot;ForventetIngenBegraensninger\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Goal &amp;quot;ForventetIngenBegraensninger&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-goal.html\&quot;&gt;CareGoal&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: planned&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: FSIII tilstandsmål &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\&quot;&gt;CareSocialCodes&lt;/a&gt;#ca552020-6ed1-4cdc-b0d4-32697f1f27ad)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Tilstand forsvinder, mindskes eller forbliver uændret &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#e182c5dc-9f91-474a-92e8-f62be3d498f4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Measure&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Detail[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;funktionsevneniveau &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\&quot;&gt;CareSocialCodes&lt;/a&gt;#66959f77-6e2a-4574-8423-3ff097f8b9fa)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Lette begrænsninger &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#B2)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;addresses&lt;/b&gt;: &lt;a href=\&quot;#Condition_VaskeSigLetteBegraensninger\&quot;&gt;See above (Condition/VaskeSigLetteBegraensninger)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Goal_ForventetIngenBegraensninger\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Goal ForventetIngenBegraensninger&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ForventetIngenBegraensninger\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcForventetIngenBegraensninger\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ForventetIngenBegraensninger-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: Planned&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes ca552020-6ed1-4cdc-b0d4-32697f1f27ad}\&quot;&gt;FSIII tilstandsmål&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 e182c5dc-9f91-474a-92e8-f62be3d498f4}\&quot;&gt;Tilstand forsvinder, mindskes eller forbliver uændret&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Measure&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Detail[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 66959f77-6e2a-4574-8423-3ff097f8b9fa}\&quot;&gt;funktionsevneniveau&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 B2}\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;addresses&lt;/b&gt;: &lt;a href=\&quot;Condition-VaskeSigLetteBegraensninger.html\&quot;&gt;Condition Vaske sig&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;planned&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/goal.html#Goal.category">fhir:category</a> ( [
@@ -376,7 +371,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/VaskeSigLetteBegraensninger&quot; ]
   ] ) . # 
 
-&lt;Observation/OpleverIkkeBegraensningerMedVaskeSig&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+&lt;https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;OpleverIkkeBegraensningerMedVaskeSig&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -385,7 +380,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;OpleverIkkeBegraensningerMedVaskeSig\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;OpleverIkkeBegraensningerMedVaskeSig&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-citizens-own-observation.html\&quot;&gt;CareCitizensOwnObservation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Betydning &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#D)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#Condition_VaskeSigLetteBegraensninger\&quot;&gt;See above (Condition/VaskeSigLetteBegraensninger)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Oplever ikke begrænsninger &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#D1)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_OpleverIkkeBegraensningerMedVaskeSig\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation OpleverIkkeBegraensningerMedVaskeSig&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;OpleverIkkeBegraensningerMedVaskeSig\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcOpleverIkkeBegraensningerMedVaskeSig\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;OpleverIkkeBegraensningerMedVaskeSig-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 D}\&quot;&gt;Betydning&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;Condition-VaskeSigLetteBegraensninger.html\&quot;&gt;Condition Vaske sig&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 D1}\&quot;&gt;Oplever ikke begrænsninger&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -407,7 +402,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;D1&quot; ]     ] )
   ] . # 
 
-&lt;Observation/UdfoererSelvVaskeSig&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+&lt;https://test.fhir.dk/Observation/UdfoererSelvVaskeSig&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;UdfoererSelvVaskeSig&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -416,7 +411,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;UdfoererSelvVaskeSig\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;UdfoererSelvVaskeSig&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-citizens-own-observation.html\&quot;&gt;CareCitizensOwnObservation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Udførelse &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#C)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#Condition_VaskeSigLetteBegraensninger\&quot;&gt;See above (Condition/VaskeSigLetteBegraensninger)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Udfører selv &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#C1)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_UdfoererSelvVaskeSig\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation UdfoererSelvVaskeSig&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;UdfoererSelvVaskeSig\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcUdfoererSelvVaskeSig\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;UdfoererSelvVaskeSig-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 C}\&quot;&gt;Udførelse&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;Condition-VaskeSigLetteBegraensninger.html\&quot;&gt;Condition Vaske sig&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 C1}\&quot;&gt;Udfører selv&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -438,7 +433,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C1&quot; ]     ] )
   ] . # 
 
-&lt;Condition/ProblemerMedPersonligPleje&gt; <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition ;
+&lt;https://test.fhir.dk/Condition/ProblemerMedPersonligPleje&gt; <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition ;
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;ProblemerMedPersonligPleje&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -447,13 +442,13 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;ProblemerMedPersonligPleje\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition &amp;quot;ProblemerMedPersonligPleje&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-condition.html\&quot;&gt;CareCondition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;CareFollowUpEncounterExtension&lt;/b&gt;: &lt;a href=\&quot;#Encounter_bfa70a76-318d-453d-9abc-76982f8d13ca\&quot;&gt;See above (Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Problem List Item &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#problem-list-item)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Problemer med personlig pleje &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#I1.1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Condition_ProblemerMedPersonligPleje\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Condition ProblemerMedPersonligPleje&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ProblemerMedPersonligPleje\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcProblemerMedPersonligPleje\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ProblemerMedPersonligPleje-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;CareFollowUpEncounterExtension&lt;/b&gt;: &lt;a href=\&quot;Encounter-NaesteOpfoelgningsdato.html\&quot;&gt;Encounter: status = planned; class = home health (ActCode#HH); type = opfølgning; period = 2020-08-14 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\&quot;&gt;Active&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\&quot;&gt;Problem List Item&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 I1.1}\&quot;&gt;Problemer med personlig pleje&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.extension">fhir:extension</a> ( [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca&quot; ]     ]
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/NaesteOpfoelgningsdato&quot; ]     ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">fhir:clinicalStatus</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
@@ -475,7 +470,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/condition.html#Condition.recordedDate">fhir:recordedDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2020-08-14&quot;^^xsd:date] . # 
 
-&lt;CarePlan/PersonligHygiejne&gt; <a href="http://hl7.org/fhir/R4/careplan.html">a</a> fhir:CarePlan ;
+&lt;https://test.fhir.dk/CarePlan/PersonligHygiejne&gt; <a href="http://hl7.org/fhir/R4/careplan.html">a</a> fhir:CarePlan ;
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PersonligHygiejne&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -484,7 +479,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: CarePlan&lt;/b&gt;&lt;a name=\&quot;PersonligHygiejne\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource CarePlan &amp;quot;PersonligHygiejne&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-planned-intervention.html\&quot;&gt;CarePlannedIntervention&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-08-14 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Speciel personlig pleje &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#H1.1; &lt;a href=\&quot;CodeSystem-LocallyDefinedInterventions.html\&quot;&gt;LocallyDefinedInterventions&lt;/a&gt;#H1.1.1)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;in-progress&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;CarePlan_PersonligHygiejne\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CarePlan PersonligHygiejne&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PersonligHygiejne\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPersonligHygiejne\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PersonligHygiejne-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-08-14 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 H1.1}, {http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions H1.1.1}\&quot;&gt;Speciel personlig pleje&lt;/span&gt;&lt;/td&gt;&lt;td&gt;In Progress&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">fhir:intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;plan&quot;] ; # 
@@ -506,7 +501,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in-progress&quot; ]     ]
   ] ) . # 
 
-&lt;CarePlan/Dialyse&gt; <a href="http://hl7.org/fhir/R4/careplan.html">a</a> fhir:CarePlan ;
+&lt;https://test.fhir.dk/CarePlan/Dialyse&gt; <a href="http://hl7.org/fhir/R4/careplan.html">a</a> fhir:CarePlan ;
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Dialyse&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -515,7 +510,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: CarePlan&lt;/b&gt;&lt;a name=\&quot;Dialyse\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource CarePlan &amp;quot;Dialyse&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-planned-intervention.html\&quot;&gt;CarePlannedIntervention&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-08-14 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Dialyse &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#G1.10)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;in-progress&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;CarePlan_Dialyse\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CarePlan Dialyse&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Dialyse\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDialyse\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Dialyse-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-08-14 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 G1.10}\&quot;&gt;Dialyse&lt;/span&gt;&lt;/td&gt;&lt;td&gt;In Progress&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">fhir:intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;plan&quot;] ; # 
@@ -534,7 +529,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in-progress&quot; ]     ]
   ] ) . # 
 
-&lt;Procedure/Saarbehandling&gt; <a href="http://hl7.org/fhir/R4/procedure.html">a</a> fhir:Procedure ;
+&lt;https://test.fhir.dk/Procedure/Saarbehandling&gt; <a href="http://hl7.org/fhir/R4/procedure.html">a</a> fhir:Procedure ;
   <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Saarbehandling&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -543,7 +538,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Procedure&lt;/b&gt;&lt;a name=\&quot;Saarbehandling\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Procedure &amp;quot;Saarbehandling&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-completed-intervention.html\&quot;&gt;CareCompletedIntervention&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Sårbehandling &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#G1.39)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2020-08-14 10:15:00+0000&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Procedure_Saarbehandling\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Procedure Saarbehandling&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Saarbehandling\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSaarbehandling\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Saarbehandling-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 G1.39}\&quot;&gt;Sårbehandling&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2020-08-14 10:15:00+0000&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;completed&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">fhir:code</a> [
@@ -556,7 +551,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed[x]">fhir:performed</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2020-08-14T10:15:00Z&quot;^^xsd:dateTime] . # 
 
-&lt;Observation/EgensomsorgBegraensninger&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+&lt;https://test.fhir.dk/Observation/EgensomsorgBegraensninger&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EgensomsorgBegraensninger&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -565,7 +560,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;EgensomsorgBegraensninger\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;EgensomsorgBegraensninger&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-matter-of-interest-observation.html\&quot;&gt;CareMatterOfInterestObservation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Egenomsorg &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#J1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_EgensomsorgBegraensninger\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation EgensomsorgBegraensninger&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;EgensomsorgBegraensninger\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcEgensomsorgBegraensninger\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;EgensomsorgBegraensninger-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 J1}\&quot;&gt;Egenomsorg&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -578,8 +573,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2020-08-14&quot;^^xsd:date] . # 
 
-&lt;Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca&gt; <a href="http://hl7.org/fhir/R4/encounter.html">a</a> fhir:Encounter ;
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;bfa70a76-318d-453d-9abc-76982f8d13ca&quot;] ; # 
+&lt;https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato&gt; <a href="http://hl7.org/fhir/R4/encounter.html">a</a> fhir:Encounter ;
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;NaesteOpfoelgningsdato&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter&quot;^^xsd:anyURI ;
@@ -587,7 +582,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;bfa70a76-318d-453d-9abc-76982f8d13ca\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter &amp;quot;bfa70a76-318d-453d-9abc-76982f8d13ca&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-encounter.html\&quot;&gt;CareEncounter&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: planned&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: opfølgning &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\&quot;&gt;CareSocialCodes&lt;/a&gt;#9f03dfbb-7a97-45a5-94db-d4c3501714a9)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-08-14 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_NaesteOpfoelgningsdato\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter NaesteOpfoelgningsdato&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NaesteOpfoelgningsdato\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNaesteOpfoelgningsdato\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;NaesteOpfoelgningsdato-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Planned&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\&quot;&gt;ActCode HH&lt;/a&gt;: home health&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 9f03dfbb-7a97-45a5-94db-d4c3501714a9}\&quot;&gt;opfølgning&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-08-14 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;planned&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">fhir:class</a> [
@@ -606,7 +601,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2020-08-14&quot;^^xsd:date ]
   ] . # 
 
-&lt;Observation/VaskeSigFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+&lt;https://test.fhir.dk/Observation/VaskeSigFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;VaskeSigFortsaettes&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -615,7 +610,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;VaskeSigFortsaettes\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;VaskeSigFortsaettes&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-follow-up-observation.html\&quot;&gt;CareFollowUpObservation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Evaluation of care plan (procedure) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#712744002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#Condition_VaskeSigLetteBegraensninger\&quot;&gt;See above (Condition/VaskeSigLetteBegraensninger)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Fortsættes &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#E1)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_VaskeSigFortsaettes\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation VaskeSigFortsaettes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;VaskeSigFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcVaskeSigFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;VaskeSigFortsaettes-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 712744002}\&quot;&gt;Evaluation of care plan (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;Condition-VaskeSigLetteBegraensninger.html\&quot;&gt;Condition Vaske sig&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 E1}\&quot;&gt;Fortsættes&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -638,7 +633,7 @@ a sct:712744002 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;E1&quot; ]     ] )
   ] . # 
 
-&lt;Observation/PersonligPlejeFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+&lt;https://test.fhir.dk/Observation/PersonligPlejeFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PersonligPlejeFortsaettes&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -647,7 +642,7 @@ a sct:712744002 ;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;PersonligPlejeFortsaettes\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;PersonligPlejeFortsaettes&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-follow-up-observation.html\&quot;&gt;CareFollowUpObservation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Evaluation of care plan (procedure) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#712744002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#Condition_ProblemerMedPersonligPleje\&quot;&gt;See above (Condition/ProblemerMedPersonligPleje)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Fortsættes &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#E1)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_PersonligPlejeFortsaettes\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation PersonligPlejeFortsaettes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PersonligPlejeFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPersonligPlejeFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PersonligPlejeFortsaettes-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 712744002}\&quot;&gt;Evaluation of care plan (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;Condition-ProblemerMedPersonligPleje.html\&quot;&gt;Condition Problemer med personlig pleje&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 E1}\&quot;&gt;Fortsættes&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -670,7 +665,7 @@ a sct:712744002 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;E1&quot; ]     ] )
   ] . # 
 
-&lt;Observation/PersonligHygiejneFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+&lt;https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PersonligHygiejneFortsaettes&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -679,7 +674,7 @@ a sct:712744002 ;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;PersonligHygiejneFortsaettes\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;PersonligHygiejneFortsaettes&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-follow-up-observation.html\&quot;&gt;CareFollowUpObservation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Evaluation of care plan (procedure) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#712744002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#CarePlan_PersonligHygiejne\&quot;&gt;See above (CarePlan/PersonligHygiejne)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Fortsættes &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#E1)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_PersonligHygiejneFortsaettes\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation PersonligHygiejneFortsaettes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PersonligHygiejneFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPersonligHygiejneFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PersonligHygiejneFortsaettes-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 712744002}\&quot;&gt;Evaluation of care plan (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;CarePlan-PersonligHygiejne.html\&quot;&gt;CarePlan: status = active; intent = plan; period = 2020-08-14 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 E1}\&quot;&gt;Fortsættes&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -702,7 +697,7 @@ a sct:712744002 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;E1&quot; ]     ] )
   ] . # 
 
-&lt;Observation/DialyseFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+&lt;https://test.fhir.dk/Observation/DialyseFortsaettes&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;DialyseFortsaettes&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
@@ -711,7 +706,7 @@ a sct:712744002 ;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;DialyseFortsaettes\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;DialyseFortsaettes&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-klgateway-care-follow-up-observation.html\&quot;&gt;CareFollowUpObservation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Evaluation of care plan (procedure) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#712744002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_TestPerson\&quot;&gt;See above (Patient/TestPerson)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#CarePlan_Dialyse\&quot;&gt;See above (CarePlan/Dialyse)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Fortsættes &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\&quot;&gt;FSIII&lt;/a&gt;#E1)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_DialyseFortsaettes\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation DialyseFortsaettes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DialyseFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDialyseFortsaettes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;DialyseFortsaettes-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 712744002}\&quot;&gt;Evaluation of care plan (procedure)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-TestPerson.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101 (use: official, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;CarePlan-Dialyse.html\&quot;&gt;CarePlan: status = active; intent = plan; period = 2020-08-14 --&amp;gt; (ongoing)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2020-08-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:oid:1.2.208.176.2.21 E1}\&quot;&gt;Fortsættes&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -752,20 +747,14 @@ a sct:712744002 ;
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.kl.dk">KL</a>.  Package kl.dk.fhir.gateway#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 21, 2023 21:59+0200">2023-06-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.kl.dk">KL</a>.  Package kl.dk.fhir.gateway#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 19:21+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -782,7 +771,7 @@ a sct:712744002 ;
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -792,16 +781,7 @@ a sct:712744002 ;
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

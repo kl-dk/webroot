@@ -9,27 +9,20 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "kl.dk.fhir.gateway"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KLGateway</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway</pre></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.gateway</b></p><a name=\"kl.dk.fhir.gateway\"> </a><a name=\"hckl.dk.fhir.gateway\"> </a><a name=\"kl.dk.fhir.gateway-en-US\"> </a><h2>KLGateway</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
   fhir:name [ fhir:v "KLGateway"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-06-21T21:59:46+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-31T19:21:51+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "KL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "KL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "http://www.kl.dk" ]
-     ] )
-  ] ) ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DK" ] ;
-       fhir:display [ fhir:v "Denmark" ]
      ] )
   ] ) ; # 
   fhir:packageId [ fhir:v "kl.dk.fhir.gateway"] ; # 
@@ -46,7 +39,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.0.0" ]
+     fhir:version [ fhir:v "6.0.2" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -58,15 +51,15 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_dk_core" ] ;
      fhir:uri [
-       fhir:v "https://hl7.dk/fhir/core"^^xsd:anyURI ;
-       fhir:link <https://hl7.dk/fhir/core>
+       fhir:v "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.dk.core" ] ;
-     fhir:version [ fhir:v "1.1.0" ]
+     fhir:version [ fhir:v "3.2.0" ]
   ] [
      fhir:id [ fhir:v "kl_dk_fhir_term" ] ;
      fhir:uri [
@@ -74,7 +67,7 @@
        fhir:link <http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term>
      ] ;
      fhir:packageId [ fhir:v "kl.dk.fhir.term" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "2.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -99,15 +92,6 @@
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "apply-contact" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "true" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "apply-juristiction" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true" ]
@@ -252,6 +236,15 @@
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true" ]
@@ -304,7 +297,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -327,15 +320,6 @@
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "apply-contact" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "true" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "apply-juristiction" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true" ]
@@ -480,6 +464,15 @@
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true" ]
@@ -534,18 +527,15 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Encounter" ]
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.kl.dk/gateway/Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca> ;
-         fhir:reference [ fhir:v "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca" ]
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/BasedOnInterventionExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/BasedOnInterventionExtension" ]
        ] ;
-       fhir:name [ fhir:v "bfa70a76-318d-453d-9abc-76982f8d13ca" ] ;
-       fhir:description [ fhir:v "Encounter documenting the next date for a follow-up" ] ;
-       fhir:example [
-         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"^^xsd:anyURI ;
-         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter>
-       ]
+       fhir:name [ fhir:v "basedOnInterventionExtension" ] ;
+       fhir:description [ fhir:v "Extension for pointing to the intervention describing why this encounter is taking place (will be part of R5 and comming FHIR versions without needing the extension)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -660,11 +650,35 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/klgateway-care-general-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "CareGeneralEncounter" ] ;
+       fhir:description [ fhir:v "Encounter for planned and completed meetings between citizens and care staff." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-goal> ;
          fhir:reference [ fhir:v "StructureDefinition/klgateway-care-goal" ]
        ] ;
        fhir:name [ fhir:v "CareGoal" ] ;
        fhir:description [ fhir:v "Describes the intended or expected functional level for a condition of a citizen." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-incremental-delivery> ;
+         fhir:reference [ fhir:v "StructureDefinition/klgateway-care-incremental-delivery" ]
+       ] ;
+       fhir:name [ fhir:v "CareIncrementalDelivery" ] ;
+       fhir:description [ fhir:v "Delivery for all delivery reports made since last update (unordered)." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -726,6 +740,21 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/8ec154f2-1429-4a41-aca7-f900e1d3bee2> ;
+         fhir:reference [ fhir:v "Bundle/8ec154f2-1429-4a41-aca7-f900e1d3bee2" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-JensHansen-2" ] ;
+       fhir:description [ fhir:v "Reporting of Jens Hansen after second encounter with Home Care Assessor updating follow-up date" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.kl.dk/gateway/Bundle/643c3e42-ab90-4354-9b98-f01b4740d3d9> ;
          fhir:reference [ fhir:v "Bundle/643c3e42-ab90-4354-9b98-f01b4740d3d9" ]
        ] ;
@@ -741,8 +770,68 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/89071c96-e053-40d5-8873-105b7bad40f9> ;
+         fhir:reference [ fhir:v "Bundle/89071c96-e053-40d5-8873-105b7bad40f9" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-JensHansen-3" ] ;
+       fhir:description [ fhir:v "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/832c69db-98b5-4aee-ab00-c24967e89d25> ;
+         fhir:reference [ fhir:v "Bundle/832c69db-98b5-4aee-ab00-c24967e89d25" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-JensHansen-InterventionDelivery" ] ;
+       fhir:description [ fhir:v "Reporting of Jens Hansen's delivered intervention on Febrauary 13th" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/5c20b1b0-ec06-4d25-89e2-13521ebcf642> ;
+         fhir:reference [ fhir:v "Bundle/5c20b1b0-ec06-4d25-89e2-13521ebcf642" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-JensHansen-new-1" ] ;
+       fhir:description [ fhir:v "Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.kl.dk/gateway/Bundle/d54206de-c95b-4c53-9517-6eb155dca99a> ;
          fhir:reference [ fhir:v "Bundle/d54206de-c95b-4c53-9517-6eb155dca99a" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-PeterOlsen-1" ] ;
+       fhir:description [ fhir:v "Reporting of Peter Olsen after first encounter with the Acute Team" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/4768772b-67f3-4468-9a2f-ee9a0254a323> ;
+         fhir:reference [ fhir:v "Bundle/4768772b-67f3-4468-9a2f-ee9a0254a323" ]
        ] ;
        fhir:name [ fhir:v "DeliveryReport-PeterOlsen-1" ] ;
        fhir:description [ fhir:v "Reporting of Peter Olsen after first encounter with the Acute Team" ] ;
@@ -771,8 +860,38 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/bad12c80-85ff-4b36-8396-414a1b58cd0d> ;
+         fhir:reference [ fhir:v "Bundle/bad12c80-85ff-4b36-8396-414a1b58cd0d" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-PeterOlsen-2" ] ;
+       fhir:description [ fhir:v "Reporting of Peter Olsen after second encounter with the Acute Team" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.kl.dk/gateway/Bundle/0c1112c3-77b5-4d85-965c-0c26228ec7ef> ;
          fhir:reference [ fhir:v "Bundle/0c1112c3-77b5-4d85-965c-0c26228ec7ef" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-PeterOlsen-3" ] ;
+       fhir:description [ fhir:v "Reporting of Peter Olsen after third encounter with the Acute Team" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/3c4919f9-aec9-485f-808a-3f9ff6c95786> ;
+         fhir:reference [ fhir:v "Bundle/3c4919f9-aec9-485f-808a-3f9ff6c95786" ]
        ] ;
        fhir:name [ fhir:v "DeliveryReport-PeterOlsen-3" ] ;
        fhir:description [ fhir:v "Reporting of Peter Olsen after third encounter with the Acute Team" ] ;
@@ -801,8 +920,38 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/d85460fb-b39e-4cf7-9750-12be44417dfd> ;
+         fhir:reference [ fhir:v "Bundle/d85460fb-b39e-4cf7-9750-12be44417dfd" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-PeterOlsen-4" ] ;
+       fhir:description [ fhir:v "Reporting of Peter Olsen after first encounter with home nursing" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://fhir.kl.dk/gateway/Bundle/cc93afc5-7849-4895-84eb-00bb5c129c0b> ;
          fhir:reference [ fhir:v "Bundle/cc93afc5-7849-4895-84eb-00bb5c129c0b" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryReport-PeterOlsen-5" ] ;
+       fhir:description [ fhir:v "Reporting of Peter Olsen after second encounter with home nursing" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/616ce3ef-b7e8-46e1-aefc-ff5bde81b153> ;
+         fhir:reference [ fhir:v "Bundle/616ce3ef-b7e8-46e1-aefc-ff5bde81b153" ]
        ] ;
        fhir:name [ fhir:v "DeliveryReport-PeterOlsen-5" ] ;
        fhir:description [ fhir:v "Reporting of Peter Olsen after second encounter with home nursing" ] ;
@@ -825,6 +974,30 @@
          fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"^^xsd:anyURI ;
          fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/DeliveryType> ;
+         fhir:reference [ fhir:v "StructureDefinition/DeliveryType" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryType" ] ;
+       fhir:description [ fhir:v "Extension for a code that specifies some context of how a treatment-activity is delivered to a patient" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/ValueSet/DeliveryTypes> ;
+         fhir:reference [ fhir:v "ValueSet/DeliveryTypes" ]
+       ] ;
+       fhir:name [ fhir:v "DeliveryTypes" ] ;
+       fhir:description [ fhir:v "The delivery context types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -975,6 +1148,33 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/ValueSet/EncounterClassCodes> ;
+         fhir:reference [ fhir:v "ValueSet/EncounterClassCodes" ]
+       ] ;
+       fhir:name [ fhir:v "KontaktKlasseKoder" ] ;
+       fhir:description [ fhir:v "Codes to describe the mode of delivery of an encounter" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Encounter/LeveringAfDialyse> ;
+         fhir:reference [ fhir:v "Encounter/LeveringAfDialyse" ]
+       ] ;
+       fhir:name [ fhir:v "LeveringAfDialyse" ] ;
+       fhir:description [ fhir:v "General encounter used to document delivery of an intervention" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -984,6 +1184,36 @@
        fhir:name [ fhir:v "LocallyDefinedInterventions" ] ;
        fhir:description [ fhir:v "Coding system to indicate a code defined locally in the managing organization" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Encounter/NaesteOpfoelgning> ;
+         fhir:reference [ fhir:v "Encounter/NaesteOpfoelgning" ]
+       ] ;
+       fhir:name [ fhir:v "NaesteOpfoelgning" ] ;
+       fhir:description [ fhir:v "General encounter used to document the next date for a follow-up" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Encounter/NaesteOpfoelgningsdato> ;
+         fhir:reference [ fhir:v "Encounter/NaesteOpfoelgningsdato" ]
+       ] ;
+       fhir:name [ fhir:v "NaesteOpfoelgningsdato" ] ;
+       fhir:description [ fhir:v "Encounter documenting the next date for a follow-up" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1077,6 +1307,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Bundle/TestIncrementalDelivery> ;
+         fhir:reference [ fhir:v "Bundle/TestIncrementalDelivery" ]
+       ] ;
+       fhir:name [ fhir:v "TestIncrementalDelivery" ] ;
+       fhir:description [ fhir:v "Example of an incremental delivery with one delivery report" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-incremental-delivery"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-incremental-delivery>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
@@ -1084,6 +1329,21 @@
          fhir:reference [ fhir:v "Patient/TestPerson" ]
        ] ;
        fhir:name [ fhir:v "TestPerson" ] ;
+       fhir:description [ fhir:v "Test person used in the examples of the implementation guide." ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Patient/TestPersonError> ;
+         fhir:reference [ fhir:v "Patient/TestPersonError" ]
+       ] ;
+       fhir:name [ fhir:v "TestPersonError" ] ;
        fhir:description [ fhir:v "Test person used in the examples of the implementation guide." ] ;
        fhir:example [
          fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"^^xsd:anyURI ;
@@ -1149,6 +1409,21 @@
          fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"^^xsd:anyURI ;
          fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.kl.dk/gateway/Condition/VaskeSigLetteBegraensningerNy> ;
+         fhir:reference [ fhir:v "Condition/VaskeSigLetteBegraensningerNy" ]
+       ] ;
+       fhir:name [ fhir:v "VaskeSigLetteBegraensningerNy" ] ;
+       fhir:description [ fhir:v "Assessed ability for the test person to wash himself - new way of defining followUp Encounter" ] ;
+       fhir:example [
+         fhir:v "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"^^xsd:anyURI ;
+         fhir:link <http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition>
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -1185,10 +1460,34 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "HomecareNew.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "HomecareNew.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Homecare New" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "indexOld.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "indexOld.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Index Old" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Nursing.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "Nursing.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Nursing" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "NursingNew.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "NursingNew.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Nursing New" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

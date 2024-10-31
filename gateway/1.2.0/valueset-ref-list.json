@@ -1,0 +1,266 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/DeliveryTypes",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "DeliveryTypes",
+      "title" : "DeliveryTypes",
+      "description" : "The delivery context types",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/EncounterClassCodes",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "EncounterClassCodes",
+      "title" : "KontaktKlasseKoder",
+      "description" : "Codes to describe the mode of delivery of an encounter",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareConditions",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareConditions",
+      "title" : "FSIIICareConditions",
+      "description" : "Conditions defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition",
+      "StructureDefinition-klgateway-care-finding-context-at-risk-extension.html" : "CareFindingContextAtRiskExtension"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareGoalTypes",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareGoalTypes",
+      "title" : "FSIIICareGoalTypes",
+      "description" : "Goal Types defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"]
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareInterventions",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareInterventions",
+      "title" : "FSIIICareInterventions",
+      "description" : "Interventions defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-completed-intervention.html" : "CareCompletedIntervention",
+      "StructureDefinition-klgateway-care-planned-intervention.html" : "CarePlannedIntervention"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareMatterOfInterests",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "FSIIICareMatterOfInterests",
+      "title" : "FSIIICareMatterOfInterests",
+      "description" : "Matters of Interests (areas) defined by FSIII for nursing and home care",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/gateway/ValueSet/KLGatewayCareMatterOfInterestValues",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "KLGatewayCareMatterOfInterestValues",
+      "title" : "KLGatewayCareMatterOfInterestValues",
+      "description" : "Values of Matters of Interests (areas)",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-matter-of-interest-observation.html" : "CareMatterOfInterestObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLCitizenObservationCodesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLCitizenObservationCodesFSIII",
+      "title" : "KLBorgervurderingsObservationskoderFSIII",
+      "description" : "Observation codes for citizens own observations as defined by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLCitizenObservationResultCodesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLCitizenObservationResultCodesFSIII",
+      "title" : "KLBorgervurderingsResultatkoderFSIII",
+      "description" : "Performance and Importance level codes, as evaluated by the citizen",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-citizens-own-observation.html" : "CareCitizensOwnObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLConditionCodesHomeCare",
+      "title" : "KLTilstandeKoderHjemmepleje",
+      "description" : "Danish municipality home care condition codes (funktionsevnetilstande)",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareConditions.html" : "FSIIICareConditions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLConditionCodesNursing",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLConditionCodesNursing",
+      "title" : "KLTilstandeKoderSygepleje",
+      "description" : "Danish municipality nursing condition codes",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareConditions.html" : "FSIIICareConditions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLEncounterTypes",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLEncounterTypes",
+      "title" : "KLKontaktTyper",
+      "description" : "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-general-encounter.html" : "CareGeneralEncounter",
+      "StructureDefinition-klgateway-care-encounter.html" : "CareEncounter"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLFollowUpCodesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLFollowUpCodesFSIII",
+      "title" : "KLOpfølgningKoderFSIII",
+      "description" : "Follow-up codes used in FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-follow-up-observation.html" : "CareFollowUpObservation"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLGoalTypeCodes",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLGoalTypeCodes",
+      "title" : "KLMålKategoriKoder",
+      "description" : "Codes used to distinguish different kinds of goals",
+      "systems" : ["http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLHomeCareAreasFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLHomeCareAreasFSIII",
+      "title" : "KLHjemmeplejeOmråderFSIII",
+      "description" : "Observation codes for the five home care areas as defined by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareMatterOfInterests.html" : "FSIIICareMatterOfInterests"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLHomeCareInterventionsFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLHomeCareInterventionsFSIII",
+      "title" : "KLHjemmeplejeIndsatserFSIII",
+      "description" : "Home Care Interventions as described by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareInterventions.html" : "FSIIICareInterventions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLNursingAreasFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLNursingAreasFSIII",
+      "title" : "KLSygeplejeOmråderFSIII",
+      "description" : "Observation codes for the 12 nursing areas as defined by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareMatterOfInterests.html" : "FSIIICareMatterOfInterests"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLNursingInterventionsFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLNursingInterventionsFSIII",
+      "title" : "KLSygeplejeIndsatserFSIII",
+      "description" : "Nursing interventions as described by FSIII",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "ValueSet-FSIIICareInterventions.html" : "FSIIICareInterventions"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLSeveritiesFSIII",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLSeveritiesFSIII",
+      "title" : "KLFunktionsevneniveauFSIII",
+      "description" : "Severities related to conditions in FSIII home care (funktionsniveau)",
+      "systems" : ["urn:oid:1.2.208.176.2.21"],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-condition.html" : "CareCondition",
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://fhir.kl.dk/term/ValueSet/KLTargetMeasureCodes",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "KLTargetMeasureCodes",
+      "title" : "KLTypeAfObservationPåMål",
+      "description" : "Target measure code, that determines whether the target is expressed as a severity, change value or using another observation",
+      "systems" : [
+        "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+        "http://snomed.info/sct",
+        "urn:oid:1.2.208.176.2.1"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-klgateway-care-goal.html" : "CareGoal"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "ValueSet-EncounterClassCodes.html" : "KontaktKlasseKoder"
+    }
+  ]
+}

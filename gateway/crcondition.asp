@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -16,9 +16,11 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/gateway/Condition-"+id+".xml");
   else if (id == "ProblemerMedPersonligPleje")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/Condition-ProblemerMedPersonligPleje.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Condition-ProblemerMedPersonligPleje.html");
+  else if (id == "VaskeSigLetteBegraensningerNy")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Condition-VaskeSigLetteBegraensningerNy.html");
   else if (id == "VaskeSigLetteBegraensninger")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/Condition-VaskeSigLetteBegraensninger.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Condition-VaskeSigLetteBegraensninger.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/gateway/Condition.html");
 
@@ -27,6 +29,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1.0-milestone/output/crcondition.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 2.0-milestone\output\crcondition.asp) .
 </body>
 </html>

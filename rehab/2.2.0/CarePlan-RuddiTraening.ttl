@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/rehab/CarePlan/RuddiTraening> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RuddiTraening"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"^^xsd:anyURI ;
+       fhir:link <http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan RuddiTraening</b></p><a name=\"RuddiTraening\"> </a><a name=\"hcRuddiTraening\"> </a><a name=\"RuddiTraening-en-US\"> </a><p><b>basedOnServiceRequestExtension</b>: <a href=\"ServiceRequest-RuddiGGOPInformation.html\">ServiceRequest Kommunal genoptræning efter sygehusophold</a></p><p><b>basedOn</b>: <a href=\"CarePlan-RuddiTraeningsforloeb.html\">CarePlan: extension = -&gt;ServiceRequest Kommunal genoptræning efter sygehusophold; status = active; intent = plan; category = Interventionsforløb efter §140; period = 2022-05-30 --&gt; (ongoing)</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-RuddiTestBerggren.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#1502779995 (use: official, ))</a></p><p><b>period</b>: 2022-05-30 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 2abe20c7-c0b4-41c1-b397-52acf36499ef}\">Fysisk træning</span></td><td>In Progress</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.kl.dk/rehab/ServiceRequest/RuddiGGOPInformation> ;
+       fhir:reference [ fhir:v "ServiceRequest/RuddiGGOPInformation" ]
+     ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://fhir.kl.dk/rehab/CarePlan/RuddiTraeningsforloeb> ;
+     fhir:reference [ fhir:v "CarePlan/RuddiTraeningsforloeb" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.kl.dk/rehab/Patient/RuddiTestBerggren> ;
+     fhir:reference [ fhir:v "Patient/RuddiTestBerggren" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-05-30"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "2865f123-15a7-4a36-a514-32ea37c400ca" ] ;
+             fhir:display [ fhir:v "Gruppebaseret indsats" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:1.2.208.176.2.21"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2abe20c7-c0b4-41c1-b397-52acf36499ef" ] ;
+           fhir:display [ fhir:v "Fysisk træning" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "in-progress" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

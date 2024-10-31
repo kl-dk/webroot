@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="kl.dk.fhir.children"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.children</b></p><a name="kl.dk.fhir.children"> </a><a name="hckl.dk.fhir.children"> </a><a name="hckl.dk.fhir.children-en-US"> </a><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.children</b></p><a name="kl.dk.fhir.children"> </a><a name="hckl.dk.fhir.children"> </a><a name="kl.dk.fhir.children-en-US"> </a><h2>KLChildren</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children</pre><div><p>KLChildren contains the specification for reporting data from the Danish health promotion and disease prevention program for children in Denmark (Sundhedsplejen). Data is reported to FK Gateway</p>
 </div></div>
   </text>
   <url value="http://fhir.kl.dk/children/ImplementationGuide/kl.dk.fhir.children"/>
-  <version value="2.0.1"/>
+  <version value="2.1.0"/>
   <name value="KLChildren"/>
   <title value="KLChildren implementation guide, an implementation of FBU"/>
   <status value="active"/>
-  <date value="2024-07-01T22:52:03+02:00"/>
+  <date value="2024-10-31T20:37:15+01:00"/>
   <publisher value="Kommunernes Landsforening"/>
   <contact>
     <name value="Kommunernes Landsforening"/>
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.5.0"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -48,7 +48,7 @@
   <dependsOn id="kl_dk_fhir_term">
     <uri value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
     <packageId value="kl.dk.fhir.term"/>
-    <version value="2.1.0"/>
+    <version value="2.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -268,7 +268,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -683,6 +683,17 @@
       <name value="c60604d1-692b-4e6d-86e5-03046b2d2f16"/>
       <description value="DeliveryReport-Rikke-4a"/>
       <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-children-incremental-delivery"/>
+      </reference>
+      <name value="CareIncrementalDelivery"/>
+      <description value="Delivery for all delivery reports made since last update (unordered)."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1448,6 +1459,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/RikkeBodyWeight3mth"/>
+      </reference>
+      <name value="RikkeBodyWeight3mth"/>
+      <description value="Rikkes vægt ved 3 måneder"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/RikkeChildrenParentRelationship"/>
       </reference>
       <name value="RikkeChildrenParentRelationship"/>
@@ -1474,6 +1496,17 @@
       </reference>
       <name value="RikkeDeliveryReport2months"/>
       <description value="Indberetning for Rikke 2 måneder"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/RikkeDeliveryReport3months"/>
+      </reference>
+      <name value="RikkeDeliveryReport3months"/>
+      <description value="Indberetning for Rikke 3 måneder - eksempel på at der er foretaget en enkelt vægtmåling udenfor standardkontakter"/>
       <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
     </resource>
     <resource>
@@ -1717,6 +1750,17 @@
       <name value="SøvnKoder"/>
       <description value="Mandatory result values for challenges in sleeping pattern in small children and school children"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/TestIncrementalDelivery"/>
+      </reference>
+      <name value="TestIncrementalDelivery"/>
+      <description value="Example of an incremental delivery with one delivery report"/>
+      <exampleCanonical value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-incremental-delivery"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

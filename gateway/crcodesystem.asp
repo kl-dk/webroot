@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -16,7 +16,7 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/gateway/CodeSystem-"+id+".xml");
   else if (id == "LocallyDefinedInterventions")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/CodeSystem-LocallyDefinedInterventions.html");
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/CodeSystem-LocallyDefinedInterventions.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/gateway/CodeSystem.html");
 
@@ -25,6 +25,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1.0-milestone/output/crcodesystem.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 2.0-milestone\output\crcodesystem.asp) .
 </body>
 </html>

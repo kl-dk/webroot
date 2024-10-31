@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:ServiceRequest</sch:title>
     <sch:rule context="f:ServiceRequest">
+      <sch:assert test="count(f:extension[@url = 'http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate']) &gt;= 1">extension with URL = 'http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate']) &lt;= 1">extension with URL = 'http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/request-statusReason']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/request-statusReason': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>
@@ -24,6 +25,7 @@
       <sch:assert test="count(f:category) &lt;= 2">category: maximum cardinality of 'category' is 2</sch:assert>
       <sch:assert test="count(f:priority) &lt;= 0">priority: maximum cardinality of 'priority' is 0</sch:assert>
       <sch:assert test="count(f:doNotPerform) &lt;= 0">doNotPerform: maximum cardinality of 'doNotPerform' is 0</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:orderDetail) &lt;= 0">orderDetail: maximum cardinality of 'orderDetail' is 0</sch:assert>
       <sch:assert test="count(f:quantity[x]) &lt;= 0">quantity[x]: maximum cardinality of 'quantity[x]' is 0</sch:assert>
       <sch:assert test="count(f:encounter) &lt;= 0">encounter: maximum cardinality of 'encounter' is 0</sch:assert>

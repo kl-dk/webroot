@@ -7,7 +7,7 @@
   "type" : "collection",
   "timestamp" : "2020-08-14T00:00:00Z",
   "entry" : [{
-    "fullUrl" : "Patient/TestPerson",
+    "fullUrl" : "https://test.fhir.dk/Patient/TestPerson",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "TestPerson",
@@ -16,13 +16,14 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"TestPerson\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;TestPerson&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-citizen.html\">CareCitizen</a></p></div><p><b>identifier</b>: id:\u00a00101010101\u00a0(use:\u00a0OFFICIAL)</p><p><b>managingOrganization</b>: <span/></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_TestPerson\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient TestPerson</b></p><a name=\"TestPerson\"> </a><a name=\"hcTestPerson\"> </a><a name=\"TestPerson-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/123456789012345\u00a0(use:\u00a0official,\u00a0)</li></ul></td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
         "system" : "urn:oid:1.2.208.176.1.2",
         "value" : "0101010101"
       }],
+      "deceasedBoolean" : false,
       "managingOrganization" : {
         "identifier" : {
           "use" : "official",
@@ -33,7 +34,7 @@
     }
   },
   {
-    "fullUrl" : "Condition/VaskeSigLetteBegraensninger",
+    "fullUrl" : "https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "VaskeSigLetteBegraensninger",
@@ -42,12 +43,12 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"VaskeSigLetteBegraensninger\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;VaskeSigLetteBegraensninger&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-condition.html\">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href=\"#Encounter_bfa70a76-318d-453d-9abc-76982f8d13ca\">See above (Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca)</a></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>severity</b>: Lette begrænsninger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#B2)</span></p><p><b>code</b>: Vaske sig <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#J1.1)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_VaskeSigLetteBegraensninger\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition VaskeSigLetteBegraensninger</b></p><a name=\"VaskeSigLetteBegraensninger\"> </a><a name=\"hcVaskeSigLetteBegraensninger\"> </a><a name=\"VaskeSigLetteBegraensninger-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Encounter-NaesteOpfoelgningsdato.html\">Encounter: status = planned; class = home health (ActCode#HH); type = opfølgning; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 B2}\">1</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J1.1}\">Vaske sig</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
       },
       "extension" : [{
         "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
         "valueReference" : {
-          "reference" : "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"
+          "reference" : "Encounter/NaesteOpfoelgningsdato"
         }
       }],
       "clinicalStatus" : {
@@ -87,7 +88,7 @@
     }
   },
   {
-    "fullUrl" : "Goal/ForventetIngenBegraensninger",
+    "fullUrl" : "https://test.fhir.dk/Goal/ForventetIngenBegraensninger",
     "resource" : {
       "resourceType" : "Goal",
       "id" : "ForventetIngenBegraensninger",
@@ -96,7 +97,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"ForventetIngenBegraensninger\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;ForventetIngenBegraensninger&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-goal.html\">CareGoal</a></p></div><p><b>lifecycleStatus</b>: planned</p><p><b>category</b>: FSIII tilstandsmål <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#ca552020-6ed1-4cdc-b0d4-32697f1f27ad)</span></p><p><b>description</b>: Tilstand forsvinder, mindskes eller forbliver uændret <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#e182c5dc-9f91-474a-92e8-f62be3d498f4)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>start</b>: 2020-08-14</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td>*</td><td>funktionsevneniveau <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#66959f77-6e2a-4574-8423-3ff097f8b9fa)</span></td><td>Lette begrænsninger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#B2)</span></td></tr></table><p><b>addresses</b>: <a href=\"#Condition_VaskeSigLetteBegraensninger\">See above (Condition/VaskeSigLetteBegraensninger)</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Goal_ForventetIngenBegraensninger\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Goal ForventetIngenBegraensninger</b></p><a name=\"ForventetIngenBegraensninger\"> </a><a name=\"hcForventetIngenBegraensninger\"> </a><a name=\"ForventetIngenBegraensninger-en-US\"> </a><p><b>lifecycleStatus</b>: Planned</p><p><b>category</b>: <span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes ca552020-6ed1-4cdc-b0d4-32697f1f27ad}\">FSIII tilstandsmål</span></p><p><b>description</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 e182c5dc-9f91-474a-92e8-f62be3d498f4}\">Tilstand forsvinder, mindskes eller forbliver uændret</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>start</b>: 2020-08-14</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 66959f77-6e2a-4574-8423-3ff097f8b9fa}\">funktionsevneniveau</span></td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 B2}\">1</span></td></tr></table><p><b>addresses</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p></div>"
       },
       "lifecycleStatus" : "planned",
       "category" : [{
@@ -135,7 +136,7 @@
     }
   },
   {
-    "fullUrl" : "Observation/OpleverIkkeBegraensningerMedVaskeSig",
+    "fullUrl" : "https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "OpleverIkkeBegraensningerMedVaskeSig",
@@ -144,7 +145,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"OpleverIkkeBegraensningerMedVaskeSig\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;OpleverIkkeBegraensningerMedVaskeSig&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-citizens-own-observation.html\">CareCitizensOwnObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Betydning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#D)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href=\"#Condition_VaskeSigLetteBegraensninger\">See above (Condition/VaskeSigLetteBegraensninger)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Oplever ikke begrænsninger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#D1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_OpleverIkkeBegraensningerMedVaskeSig\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation OpleverIkkeBegraensningerMedVaskeSig</b></p><a name=\"OpleverIkkeBegraensningerMedVaskeSig\"> </a><a name=\"hcOpleverIkkeBegraensningerMedVaskeSig\"> </a><a name=\"OpleverIkkeBegraensningerMedVaskeSig-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 D}\">Betydning</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>focus</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 D1}\">Oplever ikke begrænsninger</span></p></div>"
       },
       "status" : "final",
       "code" : {
@@ -169,7 +170,7 @@
     }
   },
   {
-    "fullUrl" : "Observation/UdfoererSelvVaskeSig",
+    "fullUrl" : "https://test.fhir.dk/Observation/UdfoererSelvVaskeSig",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "UdfoererSelvVaskeSig",
@@ -178,7 +179,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"UdfoererSelvVaskeSig\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;UdfoererSelvVaskeSig&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-citizens-own-observation.html\">CareCitizensOwnObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Udførelse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#C)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href=\"#Condition_VaskeSigLetteBegraensninger\">See above (Condition/VaskeSigLetteBegraensninger)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Udfører selv <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#C1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_UdfoererSelvVaskeSig\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation UdfoererSelvVaskeSig</b></p><a name=\"UdfoererSelvVaskeSig\"> </a><a name=\"hcUdfoererSelvVaskeSig\"> </a><a name=\"UdfoererSelvVaskeSig-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 C}\">Udførelse</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>focus</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 C1}\">Udfører selv</span></p></div>"
       },
       "status" : "final",
       "code" : {
@@ -203,7 +204,7 @@
     }
   },
   {
-    "fullUrl" : "Condition/ProblemerMedPersonligPleje",
+    "fullUrl" : "https://test.fhir.dk/Condition/ProblemerMedPersonligPleje",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "ProblemerMedPersonligPleje",
@@ -212,12 +213,12 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ProblemerMedPersonligPleje\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ProblemerMedPersonligPleje&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-condition.html\">CareCondition</a></p></div><p><b>CareFollowUpEncounterExtension</b>: <a href=\"#Encounter_bfa70a76-318d-453d-9abc-76982f8d13ca\">See above (Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca)</a></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Problemer med personlig pleje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#I1.1)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ProblemerMedPersonligPleje\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ProblemerMedPersonligPleje</b></p><a name=\"ProblemerMedPersonligPleje\"> </a><a name=\"hcProblemerMedPersonligPleje\"> </a><a name=\"ProblemerMedPersonligPleje-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Encounter-NaesteOpfoelgningsdato.html\">Encounter: status = planned; class = home health (ActCode#HH); type = opfølgning; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 I1.1}\">Problemer med personlig pleje</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
       },
       "extension" : [{
         "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
         "valueReference" : {
-          "reference" : "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca"
+          "reference" : "Encounter/NaesteOpfoelgningsdato"
         }
       }],
       "clinicalStatus" : {
@@ -245,7 +246,7 @@
     }
   },
   {
-    "fullUrl" : "CarePlan/PersonligHygiejne",
+    "fullUrl" : "https://test.fhir.dk/CarePlan/PersonligHygiejne",
     "resource" : {
       "resourceType" : "CarePlan",
       "id" : "PersonligHygiejne",
@@ -254,7 +255,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"PersonligHygiejne\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;PersonligHygiejne&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-planned-intervention.html\">CarePlannedIntervention</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Speciel personlig pleje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#H1.1; <a href=\"CodeSystem-LocallyDefinedInterventions.html\">LocallyDefinedInterventions</a>#H1.1.1)</span></td><td>in-progress</td></tr></table></blockquote></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_PersonligHygiejne\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan PersonligHygiejne</b></p><a name=\"PersonligHygiejne\"> </a><a name=\"hcPersonligHygiejne\"> </a><a name=\"PersonligHygiejne-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 H1.1}, {http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions H1.1.1}\">Speciel personlig pleje</span></td><td>In Progress</td></tr></table></blockquote></div>"
       },
       "status" : "active",
       "intent" : "plan",
@@ -283,7 +284,7 @@
     }
   },
   {
-    "fullUrl" : "CarePlan/Dialyse",
+    "fullUrl" : "https://test.fhir.dk/CarePlan/Dialyse",
     "resource" : {
       "resourceType" : "CarePlan",
       "id" : "Dialyse",
@@ -292,7 +293,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"Dialyse\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;Dialyse&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-planned-intervention.html\">CarePlannedIntervention</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Dialyse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#G1.10)</span></td><td>in-progress</td></tr></table></blockquote></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_Dialyse\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan Dialyse</b></p><a name=\"Dialyse\"> </a><a name=\"hcDialyse\"> </a><a name=\"Dialyse-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 G1.10}\">Dialyse</span></td><td>In Progress</td></tr></table></blockquote></div>"
       },
       "status" : "active",
       "intent" : "plan",
@@ -316,7 +317,7 @@
     }
   },
   {
-    "fullUrl" : "Procedure/Saarbehandling",
+    "fullUrl" : "https://test.fhir.dk/Procedure/Saarbehandling",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "Saarbehandling",
@@ -325,7 +326,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"Saarbehandling\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;Saarbehandling&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-completed-intervention.html\">CareCompletedIntervention</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Sårbehandling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#G1.39)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>performed</b>: 2020-08-14 10:15:00+0000</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_Saarbehandling\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure Saarbehandling</b></p><a name=\"Saarbehandling\"> </a><a name=\"hcSaarbehandling\"> </a><a name=\"Saarbehandling-en-US\"> </a><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 G1.39}\">Sårbehandling</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>performed</b>: 2020-08-14 10:15:00+0000</p></div>"
       },
       "status" : "completed",
       "code" : {
@@ -341,7 +342,7 @@
     }
   },
   {
-    "fullUrl" : "Observation/EgensomsorgBegraensninger",
+    "fullUrl" : "https://test.fhir.dk/Observation/EgensomsorgBegraensninger",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "EgensomsorgBegraensninger",
@@ -350,7 +351,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"EgensomsorgBegraensninger\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;EgensomsorgBegraensninger&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-matter-of-interest-observation.html\">CareMatterOfInterestObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Egenomsorg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#J1)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>effective</b>: 2020-08-14</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EgensomsorgBegraensninger\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EgensomsorgBegraensninger</b></p><a name=\"EgensomsorgBegraensninger\"> </a><a name=\"hcEgensomsorgBegraensninger\"> </a><a name=\"EgensomsorgBegraensninger-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 J1}\">Egenomsorg</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>effective</b>: 2020-08-14</p></div>"
       },
       "status" : "final",
       "code" : {
@@ -366,16 +367,16 @@
     }
   },
   {
-    "fullUrl" : "Encounter/bfa70a76-318d-453d-9abc-76982f8d13ca",
+    "fullUrl" : "https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato",
     "resource" : {
       "resourceType" : "Encounter",
-      "id" : "bfa70a76-318d-453d-9abc-76982f8d13ca",
+      "id" : "NaesteOpfoelgningsdato",
       "meta" : {
         "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"bfa70a76-318d-453d-9abc-76982f8d13ca\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;bfa70a76-318d-453d-9abc-76982f8d13ca&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-encounter.html\">CareEncounter</a></p></div><p><b>status</b>: planned</p><p><b>class</b>: home health (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code HH = 'home health', stated as 'null')</p><p><b>type</b>: opfølgning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-CareSocialCodes.html\">CareSocialCodes</a>#9f03dfbb-7a97-45a5-94db-d4c3501714a9)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_NaesteOpfoelgningsdato\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter NaesteOpfoelgningsdato</b></p><a name=\"NaesteOpfoelgningsdato\"> </a><a name=\"hcNaesteOpfoelgningsdato\"> </a><a name=\"NaesteOpfoelgningsdato-en-US\"> </a><p><b>status</b>: Planned</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH\">ActCode HH</a>: home health</p><p><b>type</b>: <span title=\"Codes:{http://fhir.kl.dk/term/CodeSystem/CareSocialCodes 9f03dfbb-7a97-45a5-94db-d4c3501714a9}\">opfølgning</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2020-08-14 --&gt; (ongoing)</p></div>"
       },
       "status" : "planned",
       "class" : {
@@ -397,7 +398,7 @@
     }
   },
   {
-    "fullUrl" : "Observation/VaskeSigFortsaettes",
+    "fullUrl" : "https://test.fhir.dk/Observation/VaskeSigFortsaettes",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "VaskeSigFortsaettes",
@@ -406,7 +407,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"VaskeSigFortsaettes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;VaskeSigFortsaettes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-follow-up-observation.html\">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href=\"#Condition_VaskeSigLetteBegraensninger\">See above (Condition/VaskeSigLetteBegraensninger)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#E1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_VaskeSigFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation VaskeSigFortsaettes</b></p><a name=\"VaskeSigFortsaettes\"> </a><a name=\"hcVaskeSigFortsaettes\"> </a><a name=\"VaskeSigFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>focus</b>: <a href=\"Condition-VaskeSigLetteBegraensninger.html\">Condition Vaske sig</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
       },
       "status" : "final",
       "code" : {
@@ -431,7 +432,7 @@
     }
   },
   {
-    "fullUrl" : "Observation/PersonligPlejeFortsaettes",
+    "fullUrl" : "https://test.fhir.dk/Observation/PersonligPlejeFortsaettes",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "PersonligPlejeFortsaettes",
@@ -440,7 +441,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"PersonligPlejeFortsaettes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;PersonligPlejeFortsaettes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-follow-up-observation.html\">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href=\"#Condition_ProblemerMedPersonligPleje\">See above (Condition/ProblemerMedPersonligPleje)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#E1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PersonligPlejeFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PersonligPlejeFortsaettes</b></p><a name=\"PersonligPlejeFortsaettes\"> </a><a name=\"hcPersonligPlejeFortsaettes\"> </a><a name=\"PersonligPlejeFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>focus</b>: <a href=\"Condition-ProblemerMedPersonligPleje.html\">Condition Problemer med personlig pleje</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
       },
       "status" : "final",
       "code" : {
@@ -465,7 +466,7 @@
     }
   },
   {
-    "fullUrl" : "Observation/PersonligHygiejneFortsaettes",
+    "fullUrl" : "https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "PersonligHygiejneFortsaettes",
@@ -474,7 +475,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"PersonligHygiejneFortsaettes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;PersonligHygiejneFortsaettes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-follow-up-observation.html\">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href=\"#CarePlan_PersonligHygiejne\">See above (CarePlan/PersonligHygiejne)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#E1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PersonligHygiejneFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PersonligHygiejneFortsaettes</b></p><a name=\"PersonligHygiejneFortsaettes\"> </a><a name=\"hcPersonligHygiejneFortsaettes\"> </a><a name=\"PersonligHygiejneFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>focus</b>: <a href=\"CarePlan-PersonligHygiejne.html\">CarePlan: status = active; intent = plan; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
       },
       "status" : "final",
       "code" : {
@@ -499,7 +500,7 @@
     }
   },
   {
-    "fullUrl" : "Observation/DialyseFortsaettes",
+    "fullUrl" : "https://test.fhir.dk/Observation/DialyseFortsaettes",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "DialyseFortsaettes",
@@ -508,7 +509,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"DialyseFortsaettes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;DialyseFortsaettes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-klgateway-care-follow-up-observation.html\">CareFollowUpObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Evaluation of care plan (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#712744002)</span></p><p><b>subject</b>: <a href=\"#Patient_TestPerson\">See above (Patient/TestPerson)</a></p><p><b>focus</b>: <a href=\"#CarePlan_Dialyse\">See above (CarePlan/Dialyse)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: Fortsættes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://fhir.kl.dk/term/1.0.0/CodeSystem-FSIII.html\">FSIII</a>#E1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_DialyseFortsaettes\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation DialyseFortsaettes</b></p><a name=\"DialyseFortsaettes\"> </a><a name=\"hcDialyseFortsaettes\"> </a><a name=\"DialyseFortsaettes-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 712744002}\">Evaluation of care plan (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>focus</b>: <a href=\"CarePlan-Dialyse.html\">CarePlan: status = active; intent = plan; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>effective</b>: 2020-08-14</p><p><b>value</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 E1}\">Fortsættes</span></p></div>"
       },
       "status" : "final",
       "code" : {

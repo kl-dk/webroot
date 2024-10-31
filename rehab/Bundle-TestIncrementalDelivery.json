@@ -1,0 +1,430 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "TestIncrementalDelivery",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-incremental-delivery"]
+  },
+  "type" : "collection",
+  "timestamp" : "2020-08-14T00:00:00Z",
+  "entry" : [{
+    "fullUrl" : "https://test.fhir.dk/Bundle/RuddiIndberetningsrapport",
+    "resource" : {
+      "resourceType" : "Bundle",
+      "id" : "RuddiIndberetningsrapport",
+      "meta" : {
+        "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-delivery-report"]
+      },
+      "type" : "collection",
+      "timestamp" : "2020-08-14T00:00:00Z",
+      "entry" : [{
+        "fullUrl" : "https://test.fhir.dk/Patient/RuddiTestBerggren",
+        "resource" : {
+          "resourceType" : "Patient",
+          "id" : "RuddiTestBerggren",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-citizen"]
+          },
+          "identifier" : [{
+            "use" : "official",
+            "system" : "urn:oid:1.2.208.176.1.2",
+            "value" : "1502779995"
+          }],
+          "deceasedBoolean" : false,
+          "managingOrganization" : {
+            "identifier" : {
+              "use" : "official",
+              "system" : "urn:oid:1.2.208.176.1.1",
+              "value" : "451000016003"
+            }
+          }
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/Organization/AfsenderAfRuddisGGOP",
+        "resource" : {
+          "resourceType" : "Organization",
+          "id" : "AfsenderAfRuddisGGOP",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"]
+          },
+          "identifier" : [{
+            "use" : "official",
+            "system" : "urn:oid:1.2.208.176.1.1",
+            "value" : "227871000016001"
+          }]
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/Organization/UdfoererAfRuddisRehab",
+        "resource" : {
+          "resourceType" : "Organization",
+          "id" : "UdfoererAfRuddisRehab",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-organization"]
+          },
+          "identifier" : [{
+            "use" : "official",
+            "system" : "urn:oid:1.2.208.176.1.1",
+            "value" : "1037801000016003"
+          }]
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/Condition/RuddiAktionsdiagnoseGGOP",
+        "resource" : {
+          "resourceType" : "Condition",
+          "id" : "RuddiAktionsdiagnoseGGOP",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-focus-condition"]
+          },
+          "clinicalStatus" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }]
+          },
+          "code" : {
+            "coding" : [{
+              "system" : "urn:oid:1.2.208.176.2.4.12",
+              "code" : "DS721",
+              "display" : "Pertrokantær femurfraktur"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          }
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/ServiceRequest/RuddiGGOPInformation",
+        "resource" : {
+          "resourceType" : "ServiceRequest",
+          "id" : "RuddiGGOPInformation",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-servicerequest"]
+          },
+          "extension" : [{
+            "url" : "http://fhir.kl.dk/rehab/StructureDefinition/PreconditionDate",
+            "valueDate" : "2022-05-24"
+          }],
+          "status" : "active",
+          "intent" : "plan",
+          "category" : [{
+            "coding" : [{
+              "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+              "code" : "ffd81f78-352e-4589-a195-5350dd1df2a4",
+              "display" : "almen"
+            }]
+          },
+          {
+            "coding" : [{
+              "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+              "code" : "8b962281-2ab6-4b10-9c91-4bac592d6d49",
+              "display" : "basal"
+            }]
+          }],
+          "code" : {
+            "coding" : [{
+              "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+              "code" : "7fc66c15-0cb3-4c89-9e18-f3a01e6a6592"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "occurrencePeriod" : {
+            "start" : "2022-05-28"
+          },
+          "authoredOn" : "2022-05-23",
+          "requester" : {
+            "reference" : "Organization/AfsenderAfRuddisGGOP"
+          },
+          "reasonReference" : [{
+            "reference" : "Condition/RuddiAktionsdiagnoseGGOP"
+          }]
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/CarePlan/RuddiTerapeutfagligUndersoegelse",
+        "resource" : {
+          "resourceType" : "CarePlan",
+          "id" : "RuddiTerapeutfagligUndersoegelse",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"]
+          },
+          "extension" : [{
+            "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+            "valueReference" : {
+              "reference" : "ServiceRequest/RuddiGGOPInformation"
+            }
+          }],
+          "status" : "active",
+          "intent" : "plan",
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "period" : {
+            "start" : "2022-05-23",
+            "end" : "2022-06-02"
+          },
+          "activity" : [{
+            "detail" : {
+              "extension" : [{
+                "url" : "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType",
+                "valueCodeableConcept" : {
+                  "coding" : [{
+                    "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+                    "code" : "8d12d74c-17da-47a7-a4fe-e69dbaec0a8c",
+                    "display" : "Individuel indsats"
+                  }]
+                }
+              }],
+              "code" : {
+                "coding" : [{
+                  "system" : "urn:oid:1.2.208.176.2.21",
+                  "code" : "1130ad70-6553-490d-87f8-5e8941687a0c"
+                }]
+              },
+              "status" : "completed",
+              "performer" : [{
+                "reference" : "Organization/UdfoererAfRuddisRehab"
+              }]
+            }
+          }]
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/Encounter/RuddiKontaktUndersoegelse",
+        "resource" : {
+          "resourceType" : "Encounter",
+          "id" : "RuddiKontaktUndersoegelse",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-encounter"]
+          },
+          "extension" : [{
+            "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnCarePlanExtension",
+            "valueReference" : {
+              "reference" : "CarePlan/RuddiTerapeutfagligUndersoegelse"
+            }
+          }],
+          "status" : "finished",
+          "class" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code" : "AMB"
+          },
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "period" : {
+            "start" : "2022-06-02T12:10:00.000Z",
+            "end" : "2022-06-02T12:40:00.000Z"
+          }
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/CarePlan/RuddiTraeningsforloeb",
+        "resource" : {
+          "resourceType" : "CarePlan",
+          "id" : "RuddiTraeningsforloeb",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-care-plan"]
+          },
+          "extension" : [{
+            "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+            "valueReference" : {
+              "reference" : "ServiceRequest/RuddiGGOPInformation"
+            }
+          }],
+          "status" : "active",
+          "intent" : "plan",
+          "category" : [{
+            "coding" : [{
+              "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+              "code" : "f15b2663-94d9-4d0c-a5de-d8bd8e1e4ebb"
+            }]
+          }],
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "period" : {
+            "start" : "2022-05-30"
+          },
+          "activity" : [{
+            "detail" : {
+              "status" : "in-progress",
+              "performer" : [{
+                "reference" : "Organization/UdfoererAfRuddisRehab"
+              }]
+            }
+          }]
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/CarePlan/RuddiTraening",
+        "resource" : {
+          "resourceType" : "CarePlan",
+          "id" : "RuddiTraening",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"]
+          },
+          "extension" : [{
+            "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+            "valueReference" : {
+              "reference" : "ServiceRequest/RuddiGGOPInformation"
+            }
+          }],
+          "basedOn" : [{
+            "reference" : "CarePlan/RuddiTraeningsforloeb"
+          }],
+          "status" : "active",
+          "intent" : "plan",
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "period" : {
+            "start" : "2022-05-30"
+          },
+          "activity" : [{
+            "detail" : {
+              "extension" : [{
+                "url" : "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType",
+                "valueCodeableConcept" : {
+                  "coding" : [{
+                    "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+                    "code" : "2865f123-15a7-4a36-a514-32ea37c400ca",
+                    "display" : "Gruppebaseret indsats"
+                  }]
+                }
+              }],
+              "code" : {
+                "coding" : [{
+                  "system" : "urn:oid:1.2.208.176.2.21",
+                  "code" : "2abe20c7-c0b4-41c1-b397-52acf36499ef",
+                  "display" : "Fysisk træning"
+                }]
+              },
+              "status" : "in-progress"
+            }
+          }]
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/CarePlan/RuddiFunctionalTraening",
+        "resource" : {
+          "resourceType" : "CarePlan",
+          "id" : "RuddiFunctionalTraening",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"]
+          },
+          "extension" : [{
+            "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+            "valueReference" : {
+              "reference" : "ServiceRequest/RuddiGGOPInformation"
+            }
+          }],
+          "basedOn" : [{
+            "reference" : "CarePlan/RuddiTraeningsforloeb"
+          }],
+          "status" : "active",
+          "intent" : "plan",
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "period" : {
+            "start" : "2022-05-30"
+          },
+          "activity" : [{
+            "detail" : {
+              "extension" : [{
+                "url" : "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType",
+                "valueCodeableConcept" : {
+                  "coding" : [{
+                    "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+                    "code" : "2865f123-15a7-4a36-a514-32ea37c400ca",
+                    "display" : "Gruppebaseret indsats"
+                  }]
+                }
+              }],
+              "code" : {
+                "coding" : [{
+                  "system" : "urn:oid:1.2.208.176.2.21",
+                  "code" : "58293f63-00d7-4730-8dbc-c784d40f9e23",
+                  "display" : "Funktionstræning"
+                }]
+              },
+              "status" : "in-progress"
+            }
+          }]
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/Encounter/RuddiKontakt1Traening",
+        "resource" : {
+          "resourceType" : "Encounter",
+          "id" : "RuddiKontakt1Traening",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-encounter"]
+          },
+          "extension" : [{
+            "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnCarePlanExtension",
+            "valueReference" : {
+              "reference" : "CarePlan/RuddiTraeningsforloeb"
+            }
+          }],
+          "status" : "finished",
+          "class" : {
+            "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+            "code" : "124be95d-6924-4609-9d2a-e7c73ae3ab3d",
+            "display" : "Skærmbesøg"
+          },
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "period" : {
+            "start" : "2022-05-31T10:00:00.000Z",
+            "end" : "2022-05-31T10:30:00.000Z"
+          }
+        }
+      },
+      {
+        "fullUrl" : "https://test.fhir.dk/Condition/RuddiTilstand",
+        "resource" : {
+          "resourceType" : "Condition",
+          "id" : "RuddiTilstand",
+          "meta" : {
+            "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-condition"]
+          },
+          "clinicalStatus" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }]
+          },
+          "verificationStatus" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "confirmed"
+            }]
+          },
+          "category" : [{
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code" : "problem-list-item"
+            }]
+          }],
+          "code" : {
+            "coding" : [{
+              "system" : "urn:oid:1.2.208.176.2.21",
+              "code" : "dd41df82-3c13-4523-b9c5-e83676425299",
+              "display" : "Mobilitet og bevægelse"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/RuddiTestBerggren"
+          },
+          "recordedDate" : "2022-06-02"
+        }
+      }]
+    }
+  }]
+}

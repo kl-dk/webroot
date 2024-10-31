@@ -1,0 +1,1287 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 24, warn = 91, info = 0-->
+<head>
+  <title>KLGateway : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for KLGateway</h1>
+ <p>Generated Thu Oct 31 19:20:12 CET 2024, FHIR version 4.0.1 for kl.dk.fhir.gateway#1.2.0 (canonical = <a href="http://fhir.kl.dk/gateway">http://fhir.kl.dk/gateway</a> (<a href="http://fhir.kl.dk/gateway/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.1</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = kl.dk.fhir.gateway, Canonical = http://fhir.kl.dk/gateway</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>kl.dk.fhir.gateway</td></tr>
+ <tr><td>version</d><td>1.2.0</td></tr>
+ <tr><td>path</d><td>http://fhir.kl.dk/gateway/1.2.0</td></tr>
+ <tr><td>Pub-Mode</d><td>milestone</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>Release-Label</d><td>release</td></tr>
+ <tr><td>sequence</d><td>Releases</td></tr>
+ <tr><td>desc</d><td>Compliant with the simplification of FSIII (Forenklingen), but without breaking changes. Adding ældrelovsindsaster</td></tr>
+ <tr><td>descmd</d><td><p>Release 1.2.0. Dependency to kl-term 2.2.0 established. Updated to be compliant with the simplification of FSIII (Forenklingen), but without breaking changes. New home care interventions added, as a concequence of ældreloven. Old FSIII codes and terms are still accepted. A new encounter called GeneralEncounter has been included.
+The citizen profile has two new attributes: Patient.active and Patient.deceased. deliveryType on PlannedIntervention has been added. Incremental delivery have been added, so that FLIS may use this IG for data delivery.</p>
+</td></tr>
+</table>
+No Messages found - all good</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> kl.dk.fhir.gateway</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/gateway</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.dk.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core/3.2.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.5.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.5.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 6.0.2</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.phd</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/phd</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/phd/STU1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 1.1.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 6.0.2</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> kl.dk.fhir.term</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/term</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.kl.dk/term/2.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoQ0AMAwEsez6+8/QBqe4IJJPMrlKUpt0Zz4AAGCHZwAAAPxyAWqFQIAoZQ9kAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+</table><para>Templates: kl.dk.fhir.template#0.0.1 -&gt; fhir.base.template#current. Tools: 0.2.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (18 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/measure.html">Measure</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-event-status.html">EventStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-category.html">ProcedureCategoryCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-outcome.html">ProcedureOutcomeCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-followup.html">ProcedureFollowUpCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-action.html">ProcedureDeviceActionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-kind.html">FHIRDeviceTypes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/goal.html">Goal</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-status.html">GoalLifecycleStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-achievement.html">GoalAchievementStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-goal-priority.html">GoalPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-intent.html">CarePlanIntent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-category.html">CarePlanCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html">CarePlanActivityOutcome</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/task.html">Task</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/visionprescription.html">VisionPrescription</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html">CarePlanActivityKind</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html">CarePlanActivityStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (65 uses)
+  </li>
+  <li>
+hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-condition-category.html">ConditionCategoryCodes</a>
+ (57 uses),     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>
+ (4 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v1.1.0/index.html">Comparison with version 1.1.0</a></td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 24, warn = 91, info = 0, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-89071c96-e053-40d5-8873-105b7bad40f9"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-89071c96-e053-40d5-8873-105b7bad40f9</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-TestIncrementalDelivery"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-TestIncrementalDelivery</b></a></td><td><b>0</b></td><td><b>37</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-TestPersonReport"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-TestPersonReport</b></a></td><td><b>0</b></td><td><b>15</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_CarePlan-Dialyse"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\CarePlan-Dialyse</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_CarePlan-PersonligHygiejne"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\CarePlan-PersonligHygiejne</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Condition-ProblemerMedPersonligPleje"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Condition-ProblemerMedPersonligPleje</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Condition-VaskeSigLetteBegraensninger"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Condition-VaskeSigLetteBegraensninger</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Condition-VaskeSigLetteBegraensningerNy"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Condition-VaskeSigLetteBegraensningerNy</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Encounter-LeveringAfDialyse"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Encounter-LeveringAfDialyse</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Encounter-NaesteOpfoelgning"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Encounter-NaesteOpfoelgning</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Encounter-NaesteOpfoelgningsdato"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Encounter-NaesteOpfoelgningsdato</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Goal-ForventetIngenBegraensninger"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Goal-ForventetIngenBegraensninger</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-DialyseFortsaettes"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-DialyseFortsaettes</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-EgensomsorgBegraensninger"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-EgensomsorgBegraensninger</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-EgensomsorgBegraensningerOmkringKropspleje"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-EgensomsorgBegraensningerOmkringKropspleje</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-OpleverIkkeBegraensningerMedVaskeSig"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-OpleverIkkeBegraensningerMedVaskeSig</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-PersonligHygiejneFortsaettes"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-PersonligHygiejneFortsaettes</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-PersonligPlejeFortsaettes"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-PersonligPlejeFortsaettes</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-UdfoererSelvVaskeSig"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-UdfoererSelvVaskeSig</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-VaskeSigFortsaettes"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Observation-VaskeSigFortsaettes</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Patient-TestPersonError"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Patient-TestPersonError</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Procedure-Saarbehandling"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\Procedure-Saarbehandling</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_StructureDefinition-DeliveryType"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\StructureDefinition-DeliveryType</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_StructureDefinition-klgateway-care-citizens-own-observation"><b>C:\Users\KirstineRosenbeckGøe\Projects\temp\kl.dk.fhir.gateway#1.2.0\fsh-generated\resources\StructureDefinition-klgateway-care-citizens-own-observation</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef"> </a>
+<h2><a href="Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.html">fsh-generated\resources\Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(20)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/c0e46d1a-bcd2-4b4f-bc74-db1237157d4e*&#8203;/ (l122&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/4c160af3-dc6f-4405-a52a-b93447e06b68*&#8203;/ (l160&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource (l122/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource (l160/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae"> </a>
+<h2><a href="Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.html">fsh-generated\resources\Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(15)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Observation&#8203;/2d5aab71-9c3f-49b2-92e0-07619ae321e5*&#8203;/ (l98&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/f35aa1be-0ed2-4d86-8d62-178a7d20c923*&#8203;/ (l136&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource (l98/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource (l136/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786"> </a>
+<h2><a href="Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html">fsh-generated\resources\Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(16)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/388a4c08-42a2-4ad9-a6bb-41b26a7c5e28*&#8203;/ (l117&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource (l117/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153"> </a>
+<h2><a href="Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.html">fsh-generated\resources\Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(14)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/dcd2273d-426d-421a-b82e-155ce7cc7173*&#8203;/ (l116&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/b2cff9f0-7b03-4f03-a443-70c17b1cd623*&#8203;/ (l141&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource (l116/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource (l141/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9"> </a>
+<h2><a href="Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9.html">fsh-generated\resources\Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(33)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[9].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[10].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[11].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[12].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[13].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[14].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[15].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[16].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[17].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[18].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[19].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[20].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[21].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[22].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[22]&#8203;.resource&#8203;/*Observation&#8203;/e434699d-5f4e-491b-9f76-5c5dbd539edc*&#8203;/ (l1153&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[22].resource (l1153/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-89071c96-e053-40d5-8873-105b7bad40f9"> </a>
+<h2><a href="Bundle-89071c96-e053-40d5-8873-105b7bad40f9.html">fsh-generated\resources\Bundle-89071c96-e053-40d5-8873-105b7bad40f9.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(35)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[9].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[10].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[11].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[12].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[13].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[14].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[15].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[15]&#8203;.resource&#8203;/*Observation&#8203;/a80bb9e0-5838-4bf1-924b-31f88aecc3c7*&#8203;/ (l767&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[15].resource (l767/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2"> </a>
+<h2><a href="Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2.html">fsh-generated\resources\Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(27)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[7]&#8203;.resource&#8203;/*Observation&#8203;/58a9388b-87ff-4e09-842a-3109cfce1566*&#8203;/ (l345&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[7].resource (l345/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-TestIncrementalDelivery"> </a>
+<h2><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(45)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-incremental-delivery.html">CareIncrementalDelivery</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[0].resource.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[0].resource.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[0].resource.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li><li>Bundle.entry[0].resource.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li><li>Bundle.entry[0].resource.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[0].resource.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[0].resource.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[0].resource.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-completed-intervention.html">CareCompletedIntervention</a></li><li>Bundle.entry[0].resource.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></li><li>Bundle.entry[0].resource.entry[10].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[0].resource.entry[11].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[0].resource.entry[12].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[0].resource.entry[13].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[0].resource.entry[14].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[3]&#8203;.resource (l180&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[4]&#8203;.resource (l218&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[9]&#8203;.resource (l406&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[11]&#8203;.resource (l464&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[12]&#8203;.resource (l502&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[13]&#8203;.resource (l540&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[14]&#8203;.resource (l578&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[0]&#8203;.resource&#8203;/*Patient&#8203;/TestPerson*&#8203;/ (l27&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[1]&#8203;.resource&#8203;/*Condition&#8203;/VaskeSigLetteBegraensninger*&#8203;/ (l54&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[2]&#8203;.resource&#8203;/*Goal&#8203;/ForventetIngenBegraensninger*&#8203;/ (l120&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/OpleverIkkeBegraensningerMedVaskeSig*&#8203;/ (l180&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/OpleverIkkeBegraensningerMedVaskeSig*&#8203;/ (l180&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/UdfoererSelvVaskeSig*&#8203;/ (l218&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/UdfoererSelvVaskeSig*&#8203;/ (l218&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[5]&#8203;.resource&#8203;/*Condition&#8203;/ProblemerMedPersonligPleje*&#8203;/ (l256&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[6]&#8203;.resource&#8203;/*CarePlan&#8203;/PersonligHygiejne*&#8203;/&#8203;.activity[0]&#8203;.detail&#8203;.code&#8203;.coding[1]&#8203;.system (l318&#8203;/c22)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[6]&#8203;.resource&#8203;/*CarePlan&#8203;/PersonligHygiejne*&#8203;/ (l306&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[7]&#8203;.resource&#8203;/*CarePlan&#8203;/Dialyse*&#8203;/ (l346&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[8]&#8203;.resource&#8203;/*Procedure&#8203;/Saarbehandling*&#8203;/ (l381&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[9]&#8203;.resource&#8203;/*Observation&#8203;/EgensomsorgBegraensninger*&#8203;/ (l406&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[9]&#8203;.resource&#8203;/*Observation&#8203;/EgensomsorgBegraensninger*&#8203;/ (l406&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[10]&#8203;.resource&#8203;/*Encounter&#8203;/NaesteOpfoelgningsdato*&#8203;/ (l431&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[11]&#8203;.resource&#8203;/*Observation&#8203;/VaskeSigFortsaettes*&#8203;/ (l464&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[11]&#8203;.resource&#8203;/*Observation&#8203;/VaskeSigFortsaettes*&#8203;/ (l464&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[12]&#8203;.resource&#8203;/*Observation&#8203;/PersonligPlejeFortsaettes*&#8203;/ (l502&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[12]&#8203;.resource&#8203;/*Observation&#8203;/PersonligPlejeFortsaettes*&#8203;/ (l502&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[13]&#8203;.resource&#8203;/*Observation&#8203;/PersonligHygiejneFortsaettes*&#8203;/ (l540&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[13]&#8203;.resource&#8203;/*Observation&#8203;/PersonligHygiejneFortsaettes*&#8203;/ (l540&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[14]&#8203;.resource&#8203;/*Observation&#8203;/DialyseFortsaettes*&#8203;/ (l578&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Bundle&#8203;/TestPersonReport*&#8203;/&#8203;.entry[14]&#8203;.resource&#8203;/*Observation&#8203;/DialyseFortsaettes*&#8203;/ (l578&#8203;/c14)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.entry[3]&#8203;.resource (l180&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.entry[4]&#8203;.resource (l218&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.entry[9]&#8203;.resource (l406&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.entry[11]&#8203;.resource (l464&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.entry[12]&#8203;.resource (l502&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.entry[13]&#8203;.resource (l540&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.entry[14]&#8203;.resource (l578&#8203;/c14)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-TestPersonReport"> </a>
+<h2><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(44)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-completed-intervention.html">CareCompletedIntervention</a></li><li>Bundle.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></li><li>Bundle.entry[10].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[11].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[12].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[13].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[14].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/OpleverIkkeBegraensningerMedVaskeSig*&#8203;/ (l167&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/UdfoererSelvVaskeSig*&#8203;/ (l205&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*CarePlan&#8203;/PersonligHygiejne*&#8203;/&#8203;.activity[0]&#8203;.detail&#8203;.code&#8203;.coding[1]&#8203;.system (l305&#8203;/c16)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[9]&#8203;.resource&#8203;/*Observation&#8203;/EgensomsorgBegraensninger*&#8203;/ (l393&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[11]&#8203;.resource&#8203;/*Observation&#8203;/VaskeSigFortsaettes*&#8203;/ (l451&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[12]&#8203;.resource&#8203;/*Observation&#8203;/PersonligPlejeFortsaettes*&#8203;/ (l489&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[13]&#8203;.resource&#8203;/*Observation&#8203;/PersonligHygiejneFortsaettes*&#8203;/ (l527&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[14]&#8203;.resource&#8203;/*Observation&#8203;/DialyseFortsaettes*&#8203;/ (l565&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource (l167/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource (l205/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[9].resource (l393/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[11].resource (l451/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource (l489/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[13].resource (l527/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[14].resource (l565/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb"> </a>
+<h2><a href="Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.html">fsh-generated\resources\Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(15)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/ee421741-4e60-46f2-b4d6-fc60bf85c42b*&#8203;/ (l130&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource (l130/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff"> </a>
+<h2><a href="Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html">fsh-generated\resources\Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(20)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a> (per meta) and <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li><li>Bundle.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[9]&#8203;.resource&#8203;/*Observation&#8203;/4438410f-c879-45ec-9626-75c85fa1449a*&#8203;/ (l479&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[9].resource (l479/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b"> </a>
+<h2><a href="Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.html">fsh-generated\resources\Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(11)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-delivery-report.html">CareDeliveryReport</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a> (per meta), <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a>, <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a> and <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Observation&#8203;/d54367e4-c2c5-49f6-bd28-a154af029b36*&#8203;/ (l113&#8203;/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource (l113/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_CarePlan-Dialyse"> </a>
+<h2><a href="CarePlan-Dialyse.html">fsh-generated\resources\CarePlan-Dialyse.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l26/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_CarePlan-PersonligHygiejne"> </a>
+<h2><a href="CarePlan-PersonligHygiejne.html">fsh-generated\resources\CarePlan-PersonligHygiejne.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>CarePlan: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-planned-intervention.html">CarePlannedIntervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CarePlan.subject (l31/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CarePlan&#8203;.activity[0]&#8203;.detail&#8203;.code&#8203;.coding[1]&#8203;.system (l13&#8203;/c10)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Condition-ProblemerMedPersonligPleje"> </a>
+<h2><a href="Condition-ProblemerMedPersonligPleje.html">fsh-generated\resources\Condition-ProblemerMedPersonligPleje.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l12&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.subject (l43/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Condition-VaskeSigLetteBegraensninger"> </a>
+<h2><a href="Condition-VaskeSigLetteBegraensninger.html">fsh-generated\resources\Condition-VaskeSigLetteBegraensninger.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l12&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.subject (l59/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Condition-VaskeSigLetteBegraensningerNy"> </a>
+<h2><a href="Condition-VaskeSigLetteBegraensningerNy.html">fsh-generated\resources\Condition-VaskeSigLetteBegraensningerNy.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-condition.html">CareCondition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.subject (l51/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Encounter-LeveringAfDialyse"> </a>
+<h2><a href="Encounter-LeveringAfDialyse.html">fsh-generated\resources\Encounter-LeveringAfDialyse.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>Encounter: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l12&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter.subject (l33/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Encounter-NaesteOpfoelgning"> </a>
+<h2><a href="Encounter-NaesteOpfoelgning.html">fsh-generated\resources\Encounter-NaesteOpfoelgning.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>Encounter: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-general-encounter.html">CareGeneralEncounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter.subject (l25/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Encounter-NaesteOpfoelgningsdato"> </a>
+<h2><a href="Encounter-NaesteOpfoelgningsdato.html">fsh-generated\resources\Encounter-NaesteOpfoelgningsdato.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>Encounter: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-encounter.html">CareEncounter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter.subject (l24/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Goal-ForventetIngenBegraensninger"> </a>
+<h2><a href="Goal-ForventetIngenBegraensninger.html">fsh-generated\resources\Goal-ForventetIngenBegraensninger.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>Goal: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-goal.html">CareGoal</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Goal.subject (l48/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Goal.addresses[0] (l53/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-DialyseFortsaettes"> </a>
+<h2><a href="Observation-DialyseFortsaettes.html">fsh-generated\resources\Observation-DialyseFortsaettes.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-EgensomsorgBegraensninger"> </a>
+<h2><a href="Observation-EgensomsorgBegraensninger.html">fsh-generated\resources\Observation-EgensomsorgBegraensninger.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-EgensomsorgBegraensningerOmkringKropspleje"> </a>
+<h2><a href="Observation-EgensomsorgBegraensningerOmkringKropspleje.html">fsh-generated\resources\Observation-EgensomsorgBegraensningerOmkringKropspleje.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-matter-of-interest-observation.html">CareMatterOfInterestObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l27/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-OpleverIkkeBegraensningerMedVaskeSig"> </a>
+<h2><a href="Observation-OpleverIkkeBegraensningerMedVaskeSig.html">fsh-generated\resources\Observation-OpleverIkkeBegraensningerMedVaskeSig.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.focus[0] (l22/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-PersonligHygiejneFortsaettes"> </a>
+<h2><a href="Observation-PersonligHygiejneFortsaettes.html">fsh-generated\resources\Observation-PersonligHygiejneFortsaettes.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-PersonligPlejeFortsaettes"> </a>
+<h2><a href="Observation-PersonligPlejeFortsaettes.html">fsh-generated\resources\Observation-PersonligPlejeFortsaettes.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-UdfoererSelvVaskeSig"> </a>
+<h2><a href="Observation-UdfoererSelvVaskeSig.html">fsh-generated\resources\Observation-UdfoererSelvVaskeSig.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">CareCitizensOwnObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.focus[0] (l22/c6)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Observation-VaskeSigFortsaettes"> </a>
+<h2><a href="Observation-VaskeSigFortsaettes.html">fsh-generated\resources\Observation-VaskeSigFortsaettes.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-follow-up-observation.html">CareFollowUpObservation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Patient-TestPersonError"> </a>
+<h2><a href="Patient-TestPersonError.html">fsh-generated\resources\Patient-TestPersonError.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-citizen.html">CareCitizen</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient (l1/c2)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: data-about-deceased-citizen-warning: 'Warning: Data about deceased citizen is reported to kl-gateway' (defined in http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_Procedure-Saarbehandling"> </a>
+<h2><a href="Procedure-Saarbehandling.html">fsh-generated\resources\Procedure-Saarbehandling.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>Procedure: Validated against <i>this.</i><a href="StructureDefinition-klgateway-care-completed-intervention.html">CareCompletedIntervention</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.subject (l18/c4)</b></td><td><b>error</b></td><td title="Reference_REF_Aggregation"><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_StructureDefinition-DeliveryType"> </a>
+<h2><a href="StructureDefinition-DeliveryType.html">fsh-generated\resources\StructureDefinition-DeliveryType.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/fhir&#8203;.kl&#8203;.dk&#8203;/gateway&#8203;/StructureDefinition&#8203;/DeliveryType')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_KirstineRosenbeckGøe_Projects_temp_kl.dk.fhir.gateway_1.2.0_fsh-generated_resources_StructureDefinition-klgateway-care-citizens-own-observation"> </a>
+<h2><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">fsh-generated\resources\StructureDefinition-klgateway-care-citizens-own-observation.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[7] (l1&#8203;/c70690)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>klgateway-citizen-observation-code-and-value-must-match: The left side is inherently a collection, and so the expression 'code.coding.code = 'C'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.constraint[7] (l1&#8203;/c70690)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>klgateway-citizen-observation-code-and-value-must-match: The left side is inherently a collection, and so the expression 'code.coding.code = 'D'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="All_observations_should_have_a_performer"> </a>
+<h2>All_observations_should_have_a_performer</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.html">fsh-generated\resources\Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.html">fsh-generated\resources\Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.html">fsh-generated\resources\Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.html">fsh-generated\resources\Bundle-0c1112c3-77b5-4d85-965c-0c26228ec7ef.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.html">fsh-generated\resources\Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.html">fsh-generated\resources\Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.html">fsh-generated\resources\Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.html">fsh-generated\resources\Bundle-1652f2a9-510a-4cd3-8fc4-8b69d0ffedae.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html">fsh-generated\resources\Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.html">fsh-generated\resources\Bundle-3c4919f9-aec9-485f-808a-3f9ff6c95786.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.html">fsh-generated\resources\Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.html">fsh-generated\resources\Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.html">fsh-generated\resources\Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.html">fsh-generated\resources\Bundle-616ce3ef-b7e8-46e1-aefc-ff5bde81b153.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9.html">fsh-generated\resources\Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9.html">fsh-generated\resources\Bundle-643c3e42-ab90-4354-9b98-f01b4740d3d9.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-89071c96-e053-40d5-8873-105b7bad40f9.html">fsh-generated\resources\Bundle-89071c96-e053-40d5-8873-105b7bad40f9.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-89071c96-e053-40d5-8873-105b7bad40f9.html">fsh-generated\resources\Bundle-89071c96-e053-40d5-8873-105b7bad40f9.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2.html">fsh-generated\resources\Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2.html">fsh-generated\resources\Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestIncrementalDelivery.html">fsh-generated\resources\Bundle-TestIncrementalDelivery.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-TestPersonReport.html">fsh-generated\resources\Bundle-TestPersonReport.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.html">fsh-generated\resources\Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.html">fsh-generated\resources\Bundle-abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html">fsh-generated\resources\Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.html">fsh-generated\resources\Bundle-b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.html">fsh-generated\resources\Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.html">fsh-generated\resources\Bundle-cc93afc5-7849-4895-84eb-00bb5c129c0b.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-DialyseFortsaettes.html">fsh-generated\resources\Observation-DialyseFortsaettes.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-EgensomsorgBegraensninger.html">fsh-generated\resources\Observation-EgensomsorgBegraensninger.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-EgensomsorgBegraensningerOmkringKropspleje.html">fsh-generated\resources\Observation-EgensomsorgBegraensningerOmkringKropspleje.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-OpleverIkkeBegraensningerMedVaskeSig.html">fsh-generated\resources\Observation-OpleverIkkeBegraensningerMedVaskeSig.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-PersonligHygiejneFortsaettes.html">fsh-generated\resources\Observation-PersonligHygiejneFortsaettes.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-PersonligPlejeFortsaettes.html">fsh-generated\resources\Observation-PersonligPlejeFortsaettes.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-UdfoererSelvVaskeSig.html">fsh-generated\resources\Observation-UdfoererSelvVaskeSig.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-VaskeSigFortsaettes.html">fsh-generated\resources\Observation-VaskeSigFortsaettes.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"> </a>
+<h2>FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">fsh-generated\resources\StructureDefinition-klgateway-care-citizens-own-observation.json</a></td><td><b>klgateway-citizen-observation-code-and-value-must-match: The left side is inherently a collection, and so the expression 'code.coding.code = 'C'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-klgateway-care-citizens-own-observation.html">fsh-generated\resources\StructureDefinition-klgateway-care-citizens-own-observation.json</a></td><td><b>klgateway-citizen-observation-code-and-value-must-match: The left side is inherently a collection, and so the expression 'code.coding.code = 'D'' may fail or return false if there is more than one item in the content being evaluated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_Aggregation"> </a>
+<h2>Reference_REF_Aggregation</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-Dialyse.html">fsh-generated\resources\CarePlan-Dialyse.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CarePlan-PersonligHygiejne.html">fsh-generated\resources\CarePlan-PersonligHygiejne.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-ProblemerMedPersonligPleje.html">fsh-generated\resources\Condition-ProblemerMedPersonligPleje.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-ProblemerMedPersonligPleje.html">fsh-generated\resources\Condition-ProblemerMedPersonligPleje.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-VaskeSigLetteBegraensninger.html">fsh-generated\resources\Condition-VaskeSigLetteBegraensninger.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-VaskeSigLetteBegraensninger.html">fsh-generated\resources\Condition-VaskeSigLetteBegraensninger.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-VaskeSigLetteBegraensningerNy.html">fsh-generated\resources\Condition-VaskeSigLetteBegraensningerNy.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-LeveringAfDialyse.html">fsh-generated\resources\Encounter-LeveringAfDialyse.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-LeveringAfDialyse.html">fsh-generated\resources\Encounter-LeveringAfDialyse.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-NaesteOpfoelgning.html">fsh-generated\resources\Encounter-NaesteOpfoelgning.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-NaesteOpfoelgningsdato.html">fsh-generated\resources\Encounter-NaesteOpfoelgningsdato.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Goal-ForventetIngenBegraensninger.html">fsh-generated\resources\Goal-ForventetIngenBegraensninger.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Goal-ForventetIngenBegraensninger.html">fsh-generated\resources\Goal-ForventetIngenBegraensninger.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-DialyseFortsaettes.html">fsh-generated\resources\Observation-DialyseFortsaettes.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-EgensomsorgBegraensninger.html">fsh-generated\resources\Observation-EgensomsorgBegraensninger.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-EgensomsorgBegraensningerOmkringKropspleje.html">fsh-generated\resources\Observation-EgensomsorgBegraensningerOmkringKropspleje.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-OpleverIkkeBegraensningerMedVaskeSig.html">fsh-generated\resources\Observation-OpleverIkkeBegraensningerMedVaskeSig.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-OpleverIkkeBegraensningerMedVaskeSig.html">fsh-generated\resources\Observation-OpleverIkkeBegraensningerMedVaskeSig.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-PersonligHygiejneFortsaettes.html">fsh-generated\resources\Observation-PersonligHygiejneFortsaettes.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-PersonligPlejeFortsaettes.html">fsh-generated\resources\Observation-PersonligPlejeFortsaettes.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-UdfoererSelvVaskeSig.html">fsh-generated\resources\Observation-UdfoererSelvVaskeSig.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-UdfoererSelvVaskeSig.html">fsh-generated\resources\Observation-UdfoererSelvVaskeSig.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-VaskeSigFortsaettes.html">fsh-generated\resources\Observation-VaskeSigFortsaettes.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Procedure-Saarbehandling.html">fsh-generated\resources\Procedure-Saarbehandling.json</a></td><td><b>Reference is remote which isn't supported by the specified aggregation mode(s) for the reference (bundled)</b></td>
+   </tr>
+</table>
+</body>
+</html>

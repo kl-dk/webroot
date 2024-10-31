@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.kl.dk/children/ValueSet/SocialSupportNetworkCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SocialSupportNetworkCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SocialSupportNetworkCodes</b></p><a name=\"SocialSupportNetworkCodes\"> </a><a name=\"hcSocialSupportNetworkCodes\"> </a><a name=\"SocialSupportNetworkCodes-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html\"><code>http://fhir.kl.dk/term/CodeSystem/FBOE</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-fbd9a8a5-0ed6-4e1a-9841-066ade34b071\">fbd9a8a5-0ed6-4e1a-9841-066ade34b071</a></td><td style=\"color: #cccccc\">Godt netværk</td><td>Småbørn: Familien har et godt netværk og oplever at få hjælp og støtte med til omsorgen for barnet. Fx aflastning ved sygdom.</td></tr><tr><td><a href=\"http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html#FBOE-983ff338-2e77-413d-b157-66d0141a4a96\">983ff338-2e77-413d-b157-66d0141a4a96</a></td><td style=\"color: #cccccc\">Sparsomt netværk</td><td>Småbørn: Familien har et sparsomt netværk eller føler sig på anden måde isolerede med deres barn.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.kl.dk/children/ValueSet/SocialSupportNetworkCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "SocialSupportNetworkCodes"] ; # 
+  fhir:title [ fhir:v "NetværkKoder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-31T20:28:31+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kommunernes Landsforening"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kommunernes Landsforening" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://kl.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mandatory result values for social support network of the family"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.kl.dk/term/CodeSystem/FBOE"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "fbd9a8a5-0ed6-4e1a-9841-066ade34b071" ]
+       ] [
+         fhir:code [ fhir:v "983ff338-2e77-413d-b157-66d0141a4a96" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

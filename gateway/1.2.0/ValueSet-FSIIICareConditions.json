@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FSIIICareConditions",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FSIIICareConditions</b></p><a name=\"FSIIICareConditions\"> </a><a name=\"hcFSIIICareConditions\"> </a><a name=\"FSIIICareConditions-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://fhir.kl.dk/term/2.2.0/ValueSet-KLConditionCodesNursing.html\">KLTilstandeKoderSygepleje</a></li><li>Import all the codes that are contained in <a href=\"http://fhir.kl.dk/term/2.2.0/ValueSet-KLConditionCodesHomeCare.html\">KLTilstandeKoderHjemmepleje</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareConditions",
+  "version" : "1.2.0",
+  "name" : "FSIIICareConditions",
+  "title" : "FSIIICareConditions",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-31T19:17:05+01:00",
+  "publisher" : "KL",
+  "contact" : [{
+    "name" : "KL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.kl.dk"
+    }]
+  }],
+  "description" : "Conditions defined by FSIII for nursing and home care",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLConditionCodesNursing"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLConditionCodesHomeCare"]
+    }]
+  }
+}

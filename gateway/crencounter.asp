@@ -1,4 +1,4 @@
-﻿<%@ language="javascript"%>
+<%@ language="javascript"%>
 
 <%
   var s = String(Request.ServerVariables("HTTP_ACCEPT"));
@@ -15,8 +15,12 @@
     Response.Redirect("http://fhir.kl.dk/gateway/Encounter-"+id+".json");
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/gateway/Encounter-"+id+".xml");
-  else if (id == "bfa70a76-318d-453d-9abc-76982f8d13ca")
-    Response.Redirect("http://fhir.kl.dk/gateway/1.1.0/Encounter-bfa70a76-318d-453d-9abc-76982f8d13ca.html");
+  else if (id == "NaesteOpfoelgning")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Encounter-NaesteOpfoelgning.html");
+  else if (id == "LeveringAfDialyse")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Encounter-LeveringAfDialyse.html");
+  else if (id == "NaesteOpfoelgningsdato")
+    Response.Redirect("http://fhir.kl.dk/gateway/1.2.0/Encounter-NaesteOpfoelgningsdato.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/gateway/Encounter.html");
 
@@ -25,6 +29,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from 1.0-milestone/output/crencounter.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from 2.0-milestone\output\crencounter.asp) .
 </body>
 </html>

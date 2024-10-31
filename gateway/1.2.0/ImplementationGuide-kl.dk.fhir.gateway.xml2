@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="kl.dk.fhir.gateway"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide kl.dk.fhir.gateway</b></p><a name="kl.dk.fhir.gateway"> </a><a name="hckl.dk.fhir.gateway"> </a><a name="kl.dk.fhir.gateway-en-US"> </a><h2>KLGateway</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway</pre></div>
+  </text>
+  <url value="http://fhir.kl.dk/gateway/ImplementationGuide/kl.dk.fhir.gateway"/>
+  <version value="1.2.0"/>
+  <name value="KLGateway"/>
+  <status value="active"/>
+  <date value="2024-10-31T19:17:05+01:00"/>
+  <publisher value="KL"/>
+  <contact>
+    <name value="KL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.kl.dk"/>
+    </telecom>
+  </contact>
+  <packageId value="kl.dk.fhir.gateway"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_dk_core">
+    <uri value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
+    <packageId value="hl7.fhir.dk.core"/>
+    <version value="3.2.0"/>
+  </dependsOn>
+  <dependsOn id="kl_dk_fhir_term">
+    <uri value="http://fhir.kl.dk/term/ImplementationGuide/kl.dk.fhir.term"/>
+    <packageId value="kl.dk.fhir.term"/>
+    <version value="2.2.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.kl.dk/gateway/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://fhir.kl.dk/gateway/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BasedOnInterventionExtension"/>
+      </reference>
+      <name value="basedOnInterventionExtension"/>
+      <description value="Extension for pointing to the intervention describing why this encounter is taking place (will be part of R5 and comming FHIR versions without needing the extension)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-citizen"/>
+      </reference>
+      <name value="CareCitizen"/>
+      <description value="Administrative information about a citizen receiving care or care related services."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-citizens-own-observation"/>
+      </reference>
+      <name value="CareCitizensOwnObservation"/>
+      <description value="Measurements and simple assertions made about a patient by the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-completed-intervention"/>
+      </reference>
+      <name value="CareCompletedIntervention"/>
+      <description value="Documentation for completed interventions (activities related to one and only one encounter) in Danish municipalities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-condition"/>
+      </reference>
+      <name value="CareCondition"/>
+      <description value="Detailed information about conditions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-delivery-report"/>
+      </reference>
+      <name value="CareDeliveryReport"/>
+      <description value="Deliver report to deliver for each citizen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-encounter"/>
+      </reference>
+      <name value="CareEncounter"/>
+      <description value="Encounter for following up on conditions, care plans, or observations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-finding-context-at-risk-extension"/>
+      </reference>
+      <name value="CareFindingContextAtRiskExtension"/>
+      <description value="Context at risk for a given matter of interest given as a condition code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-follow-up-encounter-extension"/>
+      </reference>
+      <name value="CareFollowUpEncounterExtension"/>
+      <description value="Encounter for following up on this information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-follow-up-observation"/>
+      </reference>
+      <name value="CareFollowUpObservation"/>
+      <description value="Structured result or outcome of a follow up."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-general-encounter"/>
+      </reference>
+      <name value="CareGeneralEncounter"/>
+      <description value="Encounter for planned and completed meetings between citizens and care staff."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-goal"/>
+      </reference>
+      <name value="CareGoal"/>
+      <description value="Describes the intended or expected functional level for a condition of a citizen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-incremental-delivery"/>
+      </reference>
+      <name value="CareIncrementalDelivery"/>
+      <description value="Delivery for all delivery reports made since last update (unordered)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-matter-of-interest-observation"/>
+      </reference>
+      <name value="CareMatterOfInterestObservation"/>
+      <description value="Matter or area of interest in relation to the care of the citizen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/klgateway-care-planned-intervention"/>
+      </reference>
+      <name value="CarePlannedIntervention"/>
+      <description value="Planned interventions for nursing and home care in Danish Municipalities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/3304e5f8-4b3f-4c19-8c68-e36c573f3f98"/>
+      </reference>
+      <name value="DeliveryReport-JensHansen-1"/>
+      <description value="Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/b1c5348b-fe9f-4afc-96ff-8c42b6c6c7ff"/>
+      </reference>
+      <name value="DeliveryReport-JensHansen-2"/>
+      <description value="Reporting of Jens Hansen after second encounter with Home Care Assessor updating follow-up date"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/8ec154f2-1429-4a41-aca7-f900e1d3bee2"/>
+      </reference>
+      <name value="DeliveryReport-JensHansen-2"/>
+      <description value="Reporting of Jens Hansen after second encounter with Home Care Assessor updating follow-up date"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/643c3e42-ab90-4354-9b98-f01b4740d3d9"/>
+      </reference>
+      <name value="DeliveryReport-JensHansen-3"/>
+      <description value="Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/89071c96-e053-40d5-8873-105b7bad40f9"/>
+      </reference>
+      <name value="DeliveryReport-JensHansen-3"/>
+      <description value="Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/832c69db-98b5-4aee-ab00-c24967e89d25"/>
+      </reference>
+      <name value="DeliveryReport-JensHansen-InterventionDelivery"/>
+      <description value="Reporting of Jens Hansen's delivered intervention on Febrauary 13th"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/5c20b1b0-ec06-4d25-89e2-13521ebcf642"/>
+      </reference>
+      <name value="DeliveryReport-JensHansen-new-1"/>
+      <description value="Reporting of Jens Hansen after first encounter with Home Care Assessor at the hospital"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/d54206de-c95b-4c53-9517-6eb155dca99a"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-1"/>
+      <description value="Reporting of Peter Olsen after first encounter with the Acute Team"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/4768772b-67f3-4468-9a2f-ee9a0254a323"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-1"/>
+      <description value="Reporting of Peter Olsen after first encounter with the Acute Team"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/abc81b1f-b3ba-41f0-9f4b-2fc4df5aaabb"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-2"/>
+      <description value="Reporting of Peter Olsen after second encounter with the Acute Team"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bad12c80-85ff-4b36-8396-414a1b58cd0d"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-2"/>
+      <description value="Reporting of Peter Olsen after second encounter with the Acute Team"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/0c1112c3-77b5-4d85-965c-0c26228ec7ef"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-3"/>
+      <description value="Reporting of Peter Olsen after third encounter with the Acute Team"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/3c4919f9-aec9-485f-808a-3f9ff6c95786"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-3"/>
+      <description value="Reporting of Peter Olsen after third encounter with the Acute Team"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/374484d0-00cb-4b63-94d1-a0d984afc339"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-4"/>
+      <description value="Reporting of Peter Olsen after first encounter with home nursing"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/d85460fb-b39e-4cf7-9750-12be44417dfd"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-4"/>
+      <description value="Reporting of Peter Olsen after first encounter with home nursing"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cc93afc5-7849-4895-84eb-00bb5c129c0b"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-5"/>
+      <description value="Reporting of Peter Olsen after second encounter with home nursing"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/616ce3ef-b7e8-46e1-aefc-ff5bde81b153"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-5"/>
+      <description value="Reporting of Peter Olsen after second encounter with home nursing"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/1652f2a9-510a-4cd3-8fc4-8b69d0ffedae"/>
+      </reference>
+      <name value="DeliveryReport-PeterOlsen-6"/>
+      <description value="Reporting of Peter Olsen after first encounter with training"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DeliveryType"/>
+      </reference>
+      <name value="DeliveryType"/>
+      <description value="Extension for a code that specifies some context of how a treatment-activity is delivered to a patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DeliveryTypes"/>
+      </reference>
+      <name value="DeliveryTypes"/>
+      <description value="The delivery context types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/Dialyse"/>
+      </reference>
+      <name value="Dialyse"/>
+      <description value="Planned intervention doing dialysis according to FSIII on the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DialyseFortsaettes"/>
+      </reference>
+      <name value="DialyseFortsaettes"/>
+      <description value="Follow-up observation documenting that the planned intervention on dialysis should be continued for the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EgensomsorgBegraensninger"/>
+      </reference>
+      <name value="EgensomsorgBegraensninger"/>
+      <description value="An observation that self-care is an area that is a matter of interest regarding the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EgensomsorgBegraensningerOmkringKropspleje"/>
+      </reference>
+      <name value="EgensomsorgBegraensningerOmkringKropspleje"/>
+      <description value="An observation that self-care is an area that is a matter of interest regarding the test person with potential problems around bodily care"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/ForventetIngenBegraensninger"/>
+      </reference>
+      <name value="ForventetIngenBegraensninger"/>
+      <description value="A goal for the test person on the ability to wash himself"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-goal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FSIIICareConditions"/>
+      </reference>
+      <name value="FSIIICareConditions"/>
+      <description value="Conditions defined by FSIII for nursing and home care"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FSIIICareGoalTypes"/>
+      </reference>
+      <name value="FSIIICareGoalTypes"/>
+      <description value="Goal Types defined by FSIII for nursing and home care"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FSIIICareInterventions"/>
+      </reference>
+      <name value="FSIIICareInterventions"/>
+      <description value="Interventions defined by FSIII for nursing and home care"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FSIIICareMatterOfInterests"/>
+      </reference>
+      <name value="FSIIICareMatterOfInterests"/>
+      <description value="Matters of Interests (areas) defined by FSIII for nursing and home care"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/klgateway"/>
+      </reference>
+      <name value="klgateway"/>
+      <description value="The Care Gateway (henceforth gateway) is a service that recieves care delivery reports from the municipalities and asynchronously forwards them other data sources such as FLIS and SEI2. Care delivery reports follows the FHIR format specified in the KL-Gateway FHIR Implementation Guide (IG)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KLGatewayCareMatterOfInterestValues"/>
+      </reference>
+      <name value="KLGatewayCareMatterOfInterestValues"/>
+      <description value="Values of Matters of Interests (areas)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EncounterClassCodes"/>
+      </reference>
+      <name value="KontaktKlasseKoder"/>
+      <description value="Codes to describe the mode of delivery of an encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/LeveringAfDialyse"/>
+      </reference>
+      <name value="LeveringAfDialyse"/>
+      <description value="General encounter used to document delivery of an intervention"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LocallyDefinedInterventions"/>
+      </reference>
+      <name value="LocallyDefinedInterventions"/>
+      <description value="Coding system to indicate a code defined locally in the managing organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/NaesteOpfoelgning"/>
+      </reference>
+      <name value="NaesteOpfoelgning"/>
+      <description value="General encounter used to document the next date for a follow-up"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-general-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/NaesteOpfoelgningsdato"/>
+      </reference>
+      <name value="NaesteOpfoelgningsdato"/>
+      <description value="Encounter documenting the next date for a follow-up"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/OpleverIkkeBegraensningerMedVaskeSig"/>
+      </reference>
+      <name value="OpleverIkkeBegraensningerMedVaskeSig"/>
+      <description value="Citizens own observation regarding the importance of the limitations on the ability to wash himself"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/PersonligHygiejne"/>
+      </reference>
+      <name value="PersonligHygiejne"/>
+      <description value="Planned intervention doing personal hygiene according to FSIII on the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PersonligHygiejneFortsaettes"/>
+      </reference>
+      <name value="PersonligHygiejneFortsaettes"/>
+      <description value="Follow-up observation documenting that the planned intervention on personal hygiene should be continued for the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PersonligPlejeFortsaettes"/>
+      </reference>
+      <name value="PersonligPlejeFortsaettes"/>
+      <description value="Follow-up observation documenting that focus on personal care should be continued for the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ProblemerMedPersonligPleje"/>
+      </reference>
+      <name value="ProblemerMedPersonligPleje"/>
+      <description value="Assessed ability for the test person to perform personal care"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/Saarbehandling"/>
+      </reference>
+      <name value="Saarbehandling"/>
+      <description value="Completed intervention doing wound treatment according to FSIII on the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-completed-intervention"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/TestIncrementalDelivery"/>
+      </reference>
+      <name value="TestIncrementalDelivery"/>
+      <description value="Example of an incremental delivery with one delivery report"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-incremental-delivery"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/TestPerson"/>
+      </reference>
+      <name value="TestPerson"/>
+      <description value="Test person used in the examples of the implementation guide."/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/TestPersonError"/>
+      </reference>
+      <name value="TestPersonError"/>
+      <description value="Test person used in the examples of the implementation guide."/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/TestPersonReport"/>
+      </reference>
+      <name value="TestPersonReport"/>
+      <description value="Example of a delivery report for the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/UdfoererSelvVaskeSig"/>
+      </reference>
+      <name value="UdfoererSelvVaskeSig"/>
+      <description value="Citizens own observation regarding abililty to wash himself"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/VaskeSigFortsaettes"/>
+      </reference>
+      <name value="VaskeSigFortsaettes"/>
+      <description value="Follow-up observation documenting that focus on ability to wash himself should be continued for the test person"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/VaskeSigLetteBegraensninger"/>
+      </reference>
+      <name value="VaskeSigLetteBegraensninger"/>
+      <description value="Assessed ability for the test person to wash himself"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/VaskeSigLetteBegraensningerNy"/>
+      </reference>
+      <name value="VaskeSigLetteBegraensningerNy"/>
+      <description value="Assessed ability for the test person to wash himself - new way of defining followUp Encounter"/>
+      <exampleCanonical value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Homecare.html"/>
+        </extension>
+        <nameUrl value="Homecare.html"/>
+        <title value="Homecare"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="HomecareNew.html"/>
+        </extension>
+        <nameUrl value="HomecareNew.html"/>
+        <title value="Homecare New"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="indexOld.html"/>
+        </extension>
+        <nameUrl value="indexOld.html"/>
+        <title value="Index Old"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Nursing.html"/>
+        </extension>
+        <nameUrl value="Nursing.html"/>
+        <title value="Nursing"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="NursingNew.html"/>
+        </extension>
+        <nameUrl value="NursingNew.html"/>
+        <title value="Nursing New"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

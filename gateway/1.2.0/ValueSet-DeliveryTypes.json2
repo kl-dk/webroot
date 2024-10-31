@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DeliveryTypes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DeliveryTypes</b></p><a name=\"DeliveryTypes\"> </a><a name=\"hcDeliveryTypes\"> </a><a name=\"DeliveryTypes-en-US\"> </a><ul><li>Include codes from<a href=\"http://fhir.kl.dk/term/2.2.0/CodeSystem-CareSocialCodes.html\"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from <a href=\"http://fhir.kl.dk/term/2.2.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-3f79cee2-b148-4f2c-9cbd-387820e74685\">3f79cee2-b148-4f2c-9cbd-387820e74685</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/gateway/ValueSet/DeliveryTypes",
+  "version" : "1.2.0",
+  "name" : "DeliveryTypes",
+  "title" : "DeliveryTypes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-31T19:17:05+01:00",
+  "publisher" : "KL",
+  "contact" : [{
+    "name" : "KL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.kl.dk"
+    }]
+  }],
+  "description" : "The delivery context types",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "3f79cee2-b148-4f2c-9cbd-387820e74685"
+      }]
+    }]
+  }
+}

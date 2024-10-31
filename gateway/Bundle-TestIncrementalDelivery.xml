@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="TestIncrementalDelivery"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-incremental-delivery"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-08-14T00:00:00Z"/>
+  <entry>
+    <fullUrl value="https://test.fhir.dk/Bundle/TestPersonReport"/>
+    <resource>
+      <Bundle>
+        <id value="TestPersonReport"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-delivery-report"/>
+        </meta>
+        <type value="collection"/>
+        <timestamp value="2020-08-14T00:00:00Z"/>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Patient/TestPerson"/>
+          <resource>
+            <Patient>
+              <id value="TestPerson"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizen"/>
+              </meta>
+              <identifier>
+                <use value="official"/>
+                <system value="urn:oid:1.2.208.176.1.2"/>
+                <value value="0101010101"/>
+              </identifier>
+              <deceasedBoolean value="false"/>
+              <managingOrganization>
+                <identifier>
+                  <use value="official"/>
+                  <system value="urn:oid:1.2.208.176.1.1"/>
+                  <value value="123456789012345"/>
+                </identifier>
+              </managingOrganization>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Condition/VaskeSigLetteBegraensninger"/>
+          <resource>
+            <Condition>
+              <id value="VaskeSigLetteBegraensninger"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension">
+                <valueReference>
+                  <reference value="Encounter/NaesteOpfoelgningsdato"/>
+                </valueReference>
+              </extension>
+              <clinicalStatus>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                  <code value="active"/>
+                </coding>
+              </clinicalStatus>
+              <verificationStatus>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                  <code value="confirmed"/>
+                </coding>
+              </verificationStatus>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                  <code value="problem-list-item"/>
+                </coding>
+              </category>
+              <severity>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="B2"/>
+                </coding>
+              </severity>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="J1.1"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <recordedDate value="2020-08-14"/>
+            </Condition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Goal/ForventetIngenBegraensninger"/>
+          <resource>
+            <Goal>
+              <id value="ForventetIngenBegraensninger"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-goal"/>
+              </meta>
+              <lifecycleStatus value="planned"/>
+              <category>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                  <code value="ca552020-6ed1-4cdc-b0d4-32697f1f27ad"/>
+                </coding>
+              </category>
+              <description>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="e182c5dc-9f91-474a-92e8-f62be3d498f4"/>
+                </coding>
+              </description>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <startDate value="2020-08-14"/>
+              <target>
+                <measure>
+                  <coding>
+                    <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                    <code value="66959f77-6e2a-4574-8423-3ff097f8b9fa"/>
+                  </coding>
+                </measure>
+                <detailCodeableConcept>
+                  <coding>
+                    <system value="urn:oid:1.2.208.176.2.21"/>
+                    <code value="B2"/>
+                  </coding>
+                </detailCodeableConcept>
+              </target>
+              <addresses>
+                <reference value="Condition/VaskeSigLetteBegraensninger"/>
+              </addresses>
+            </Goal>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Observation/OpleverIkkeBegraensningerMedVaskeSig"/>
+          <resource>
+            <Observation>
+              <id value="OpleverIkkeBegraensningerMedVaskeSig"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="D"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <focus>
+                <reference value="Condition/VaskeSigLetteBegraensninger"/>
+              </focus>
+              <effectiveDateTime value="2020-08-14"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="D1"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Observation/UdfoererSelvVaskeSig"/>
+          <resource>
+            <Observation>
+              <id value="UdfoererSelvVaskeSig"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-citizens-own-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="C"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <focus>
+                <reference value="Condition/VaskeSigLetteBegraensninger"/>
+              </focus>
+              <effectiveDateTime value="2020-08-14"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="C1"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Condition/ProblemerMedPersonligPleje"/>
+          <resource>
+            <Condition>
+              <id value="ProblemerMedPersonligPleje"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"/>
+              </meta>
+              <extension url="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension">
+                <valueReference>
+                  <reference value="Encounter/NaesteOpfoelgningsdato"/>
+                </valueReference>
+              </extension>
+              <clinicalStatus>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                  <code value="active"/>
+                </coding>
+              </clinicalStatus>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                  <code value="problem-list-item"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="I1.1"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <recordedDate value="2020-08-14"/>
+            </Condition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/CarePlan/PersonligHygiejne"/>
+          <resource>
+            <CarePlan>
+              <id value="PersonligHygiejne"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"/>
+              </meta>
+              <status value="active"/>
+              <intent value="plan"/>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <period>
+                <start value="2020-08-14"/>
+              </period>
+              <activity>
+                <detail>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.208.176.2.21"/>
+                      <code value="H1.1"/>
+                    </coding>
+                    <coding>
+                      <system value="http://fhir.kl.dk/gateway/CodeSystem/LocallyDefinedInterventions"/>
+                      <code value="H1.1.1"/>
+                      <display value="Speciel personlig pleje"/>
+                    </coding>
+                  </code>
+                  <status value="in-progress"/>
+                </detail>
+              </activity>
+            </CarePlan>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/CarePlan/Dialyse"/>
+          <resource>
+            <CarePlan>
+              <id value="Dialyse"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-planned-intervention"/>
+              </meta>
+              <status value="active"/>
+              <intent value="plan"/>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <period>
+                <start value="2020-08-14"/>
+              </period>
+              <activity>
+                <detail>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.208.176.2.21"/>
+                      <code value="G1.10"/>
+                    </coding>
+                  </code>
+                  <status value="in-progress"/>
+                </detail>
+              </activity>
+            </CarePlan>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Procedure/Saarbehandling"/>
+          <resource>
+            <Procedure>
+              <id value="Saarbehandling"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-completed-intervention"/>
+              </meta>
+              <status value="completed"/>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="G1.39"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <performedDateTime value="2020-08-14T10:15:00Z"/>
+            </Procedure>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Observation/EgensomsorgBegraensninger"/>
+          <resource>
+            <Observation>
+              <id value="EgensomsorgBegraensninger"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-matter-of-interest-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="J1"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <effectiveDateTime value="2020-08-14"/>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Encounter/NaesteOpfoelgningsdato"/>
+          <resource>
+            <Encounter>
+              <id value="NaesteOpfoelgningsdato"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-encounter"/>
+              </meta>
+              <status value="planned"/>
+              <class>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="HH"/>
+              </class>
+              <type>
+                <coding>
+                  <system value="http://fhir.kl.dk/term/CodeSystem/CareSocialCodes"/>
+                  <code value="9f03dfbb-7a97-45a5-94db-d4c3501714a9"/>
+                </coding>
+              </type>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <period>
+                <start value="2020-08-14"/>
+              </period>
+            </Encounter>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Observation/VaskeSigFortsaettes"/>
+          <resource>
+            <Observation>
+              <id value="VaskeSigFortsaettes"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="712744002"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <focus>
+                <reference value="Condition/VaskeSigLetteBegraensninger"/>
+              </focus>
+              <effectiveDateTime value="2020-08-14"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="E1"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Observation/PersonligPlejeFortsaettes"/>
+          <resource>
+            <Observation>
+              <id value="PersonligPlejeFortsaettes"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="712744002"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <focus>
+                <reference value="Condition/ProblemerMedPersonligPleje"/>
+              </focus>
+              <effectiveDateTime value="2020-08-14"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="E1"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Observation/PersonligHygiejneFortsaettes"/>
+          <resource>
+            <Observation>
+              <id value="PersonligHygiejneFortsaettes"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="712744002"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <focus>
+                <reference value="CarePlan/PersonligHygiejne"/>
+              </focus>
+              <effectiveDateTime value="2020-08-14"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="E1"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="https://test.fhir.dk/Observation/DialyseFortsaettes"/>
+          <resource>
+            <Observation>
+              <id value="DialyseFortsaettes"/>
+              <meta>
+                <profile value="http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-observation"/>
+              </meta>
+              <status value="final"/>
+              <code>
+                <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="712744002"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/TestPerson"/>
+              </subject>
+              <focus>
+                <reference value="CarePlan/Dialyse"/>
+              </focus>
+              <effectiveDateTime value="2020-08-14"/>
+              <valueCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.208.176.2.21"/>
+                  <code value="E1"/>
+                </coding>
+              </valueCodeableConcept>
+            </Observation>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

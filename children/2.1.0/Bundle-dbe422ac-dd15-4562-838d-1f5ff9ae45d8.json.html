@@ -1,0 +1,546 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>dbe422ac-dd15-4562-838d-1f5ff9ae45d8 - JSON Representation - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.84"}
+    h3,h4,h5,h6{--heading-prefix:"4.84"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
+            <br/>
+            <span style="display:inline-block;">2.1.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="example.html">Example small children</a>
+  </li>
+  <li>
+    <a href="example2.html">Example school children</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>dbe422ac-dd15-4562-838d-1f5ff9ae45d8</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-dbe422ac-dd15-4562-838d-1f5ff9ae45d8.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-dbe422ac-dd15-4562-838d-1f5ff9ae45d8.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-dbe422ac-dd15-4562-838d-1f5ff9ae45d8.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: dbe422ac-dd15-4562-838d-1f5ff9ae45d8 - JSON Representation</h2>
+
+
+<p><a href="Bundle-dbe422ac-dd15-4562-838d-1f5ff9ae45d8.json" no-download="true">Raw json</a> | <a href="Bundle-dbe422ac-dd15-4562-838d-1f5ff9ae45d8.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "dbe422ac-dd15-4562-838d-1f5ff9ae45d8",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-klgateway-children-delivery-report.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "collection",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a>" : "2020-07-09T23:25:12Z",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test.fhir.dk/Patient/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-klgateway-children-citizen.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8-en-US\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2911829996\u00a0(use:\u00a0official,\u00a0))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Patient Links\&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;Managing Organization: Identifier: &lt;code&gt;urn:oid:1.2.208.176.1.1&lt;/code&gt;/451000016003\u00a0(use:\u00a0official,\u00a0)&lt;/li&gt;&lt;li&gt;Also see: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#RelatedPerson_a4b064a0-7fdd-467f-81cc-d1575b52b7f8\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.208.176.1.2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "2911829996"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.managingOrganization">managingOrganization</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.208.176.1.1",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "451000016003"
+          }
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.link">link</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.link.other">other</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "RelatedPerson/a4b064a0-7fdd-467f-81cc-d1575b52b7f8"
+            },
+            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.link.type">type</a>" : "seealso"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test.fhir.dk/Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "e60106e2-413e-46c5-8a3f-62d8e77ce794",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-klgateway-children-citizen.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient e60106e2-413e-46c5-8a3f-62d8e77ce794&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;e60106e2-413e-46c5-8a3f-62d8e77ce794\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hce60106e2-413e-46c5-8a3f-62d8e77ce794\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;e60106e2-413e-46c5-8a3f-62d8e77ce794-en-US\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996\u00a0(use:\u00a0official,\u00a0))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Patient Links\&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;Managing Organization: Identifier: &lt;code&gt;urn:oid:1.2.208.176.1.1&lt;/code&gt;/451000016003\u00a0(use:\u00a0official,\u00a0)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.208.176.1.2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "0505209996"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a>" : true,
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.managingOrganization">managingOrganization</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.208.176.1.1",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "451000016003"
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test.fhir.dk/RelatedPerson/a4b064a0-7fdd-467f-81cc-d1575b52b7f8",
+      "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/relatedperson.html">resourceType</a>" : "RelatedPerson",
+        "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.id">id</a>" : "a4b064a0-7fdd-467f-81cc-d1575b52b7f8",
+        "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-klgateway-children-related-parent.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-related-parent"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;RelatedPerson_a4b064a0-7fdd-467f-81cc-d1575b52b7f8\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: RelatedPerson a4b064a0-7fdd-467f-81cc-d1575b52b7f8&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;a4b064a0-7fdd-467f-81cc-d1575b52b7f8\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hca4b064a0-7fdd-467f-81cc-d1575b52b7f8\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;a4b064a0-7fdd-467f-81cc-d1575b52b7f8-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode PRN}\&quot;&gt;parent&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.patient">patient</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794"
+        },
+        "<a href="http://hl7.org/fhir/R4/relatedperson.html#RelatedPerson.relationship">relationship</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PRN"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test.fhir.dk/Encounter/96d43e08-4011-4003-9c37-4a2eabca0c4a",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "96d43e08-4011-4003-9c37-4a2eabca0c4a",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-klgateway-children-encounter.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_96d43e08-4011-4003-9c37-4a2eabca0c4a\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter 96d43e08-4011-4003-9c37-4a2eabca0c4a&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;96d43e08-4011-4003-9c37-4a2eabca0c4a\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc96d43e08-4011-4003-9c37-4a2eabca0c4a\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;96d43e08-4011-4003-9c37-4a2eabca0c4a-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;basedOnInterventionExtension&lt;/b&gt;: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#CarePlan_d3df60d0-4380-43b4-8d15-2e3fb3b4c50a\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-1b55a4b0-1156-4f58-b2df-b5c6014d9048\&quot;&gt;CareSocialCodes 1b55a4b0-1156-4f58-b2df-b5c6014d9048&lt;/a&gt;: Telefonisk&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 4b039ba1-4005-42e6-b672-09b81ad7578a}\&quot;&gt;Behovskontakt med småbørnssundhedsplejen&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-07-09 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir.kl.dk/children/StructureDefinition/BasedOnInterventionExtension",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/d3df60d0-4380-43b4-8d15-2e3fb3b4c50a"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1b55a4b0-1156-4f58-b2df-b5c6014d9048",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Telefonisk"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4b039ba1-4005-42e6-b672-09b81ad7578a",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Behovskontakt med småbørnssundhedsplejen"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-07-09"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test.fhir.dk/Encounter/8d097cb2-3b48-46e9-9d96-a097bbff0928",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "8d097cb2-3b48-46e9-9d96-a097bbff0928",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-klgateway-children-encounter.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-encounter"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_8d097cb2-3b48-46e9-9d96-a097bbff0928\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter 8d097cb2-3b48-46e9-9d96-a097bbff0928&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;8d097cb2-3b48-46e9-9d96-a097bbff0928\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc8d097cb2-3b48-46e9-9d96-a097bbff0928\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;8d097cb2-3b48-46e9-9d96-a097bbff0928-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;basedOnInterventionExtension&lt;/b&gt;: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#CarePlan_6122356d-a611-4660-8b0f-c86185f465f8\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://fhir.kl.dk/term/2.2.0/CodeSystem-CareSocialCodes.html#CareSocialCodes-1b55a4b0-1156-4f58-b2df-b5c6014d9048\&quot;&gt;CareSocialCodes 1b55a4b0-1156-4f58-b2df-b5c6014d9048&lt;/a&gt;: Telefonisk&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 4b039ba1-4005-42e6-b672-09b81ad7578a}\&quot;&gt;Behovskontakt med småbørnssundhedsplejen&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-07-09 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir.kl.dk/children/StructureDefinition/BasedOnInterventionExtension",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/6122356d-a611-4660-8b0f-c86185f465f8"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1b55a4b0-1156-4f58-b2df-b5c6014d9048",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Telefonisk"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4b039ba1-4005-42e6-b672-09b81ad7578a",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Behovskontakt med småbørnssundhedsplejen"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-07-09"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test.fhir.dk/CarePlan/d3df60d0-4380-43b4-8d15-2e3fb3b4c50a",
+      "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/careplan.html">resourceType</a>" : "CarePlan",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.id">id</a>" : "d3df60d0-4380-43b4-8d15-2e3fb3b4c50a",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-klgateway-children-intervention.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-intervention"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;CarePlan_d3df60d0-4380-43b4-8d15-2e3fb3b4c50a\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CarePlan d3df60d0-4380-43b4-8d15-2e3fb3b4c50a&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;d3df60d0-4380-43b4-8d15-2e3fb3b4c50a\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcd3df60d0-4380-43b4-8d15-2e3fb3b4c50a\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;d3df60d0-4380-43b4-8d15-2e3fb3b4c50a-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-07-07 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ReasonCode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 8af7f611-2bae-4ba5-923a-d748501d1ad3}\&quot;&gt;Støtte ved psykisk reaktion eller sårbarhed&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE f86c2526-3b04-454c-a99e-d350f699dc94}\&quot;&gt;Psykisk reaktion&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">intent</a>" : "plan",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/fa03ee6c-e38a-44cf-8ef4-79f8ea91b3b8"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.period">period</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-07-07"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity">activity</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail">detail</a>" : {
+              "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.code">code</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8af7f611-2bae-4ba5-923a-d748501d1ad3",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Støtte ved psykisk reaktion eller sårbarhed"
+                  }
+                ]
+              },
+              "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.reasonCode">reasonCode</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "f86c2526-3b04-454c-a99e-d350f699dc94",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Psykisk reaktion"
+                    }
+                  ]
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.status">status</a>" : "unknown"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://test.fhir.dk/CarePlan/6122356d-a611-4660-8b0f-c86185f465f8",
+      "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/careplan.html">resourceType</a>" : "CarePlan",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.id">id</a>" : "6122356d-a611-4660-8b0f-c86185f465f8",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-klgateway-children-intervention.html" style="color: Maroon">&#x1F517;</a> "http://fhir.kl.dk/children/StructureDefinition/klgateway-children-intervention"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;CarePlan_6122356d-a611-4660-8b0f-c86185f465f8\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CarePlan 6122356d-a611-4660-8b0f-c86185f465f8&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;6122356d-a611-4660-8b0f-c86185f465f8\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc6122356d-a611-4660-8b0f-c86185f465f8\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;6122356d-a611-4660-8b0f-c86185f465f8-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-567a4d32-b3eb-46d6-8564-c7c2a1a1b903.html#Patient_e60106e2-413e-46c5-8a3f-62d8e77ce794\&quot;&gt;Bundle: type = collection; timestamp = 2020-07-07 23:25:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2020-07-07 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ReasonCode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE b3de92ea-ac5e-4f87-809e-a9e40b59cc34}\&quot;&gt;Vejledning i kontakt, samspil og barnets behov&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE e1c1674c-9384-4d95-999f-763f3868f444}\&quot;&gt;Udfordring i social kontakt&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">intent</a>" : "plan",
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/e60106e2-413e-46c5-8a3f-62d8e77ce794"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.period">period</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-07-07"
+        },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity">activity</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail">detail</a>" : {
+              "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.code">code</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "b3de92ea-ac5e-4f87-809e-a9e40b59cc34",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Vejledning i kontakt, samspil og barnets behov"
+                  }
+                ]
+              },
+              "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.reasonCode">reasonCode</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.kl.dk/term/CodeSystem/FBOE",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "e1c1674c-9384-4d95-999f-763f3868f444",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Udfordring i social kontakt"
+                    }
+                  ]
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.status">status</a>" : "unknown"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:28+0100">2024-10-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

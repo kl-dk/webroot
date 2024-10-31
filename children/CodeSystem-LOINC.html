@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Logical Observation Identifiers, Names and Codes (LOINC) - KLChildren implementation guide, an implementation of FBU v2.0.1</title>
+    <title>Logical Observation Identifiers, Names and Codes (LOINC) - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,9 +39,10 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"4.63"}
-    h3,h4,h5,h6{--heading-prefix:"4.63"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.64"}
+    h3,h4,h5,h6{--heading-prefix:"4.64"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -58,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
             <br/>
-            <span style="display:inline-block;">2.0.1 - Release
+            <span style="display:inline-block;">2.1.0 - Release
 
 
             </span>
@@ -122,7 +123,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -175,7 +176,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://loinc.org<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://loinc.org"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.0.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://loinc.org|2.0.1"/></span>
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://loinc.org|2.1.0"/></span>
       </td>
     </tr>
 
@@ -211,14 +212,14 @@
 
 
     <tr>
-      <td colspan="5"><p><em>Copyright/Legal</em>: Per the LOINC License “Permission is hereby granted in perpetuity, without payment of license fees or royalties, to use, copy, or distribute the Licensed Materials for any commercial or non-commercial purpose, subject to the following terms and conditions” Please also note that some content (for example some of the assessment scale content) within LOINC is subject to copyright from third parties and is present in LOINC with permission or under the applicable terms of use from the third party.  Some included third party content requires attribution specific to a particular LOINC code or codes. Such third party content is identified in the LOINC Table and LOINC Table Core by the applicable copyright notice stored in the EXTERNAL_COPYRIGHT_NOTICE field. For further information and for details of how implementers should manage use of third party content (including license obligations) please see https://loinc.org/kb/license/</p>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Per the LOINC License "Permission is hereby granted in perpetuity, without payment of license fees or royalties, to use, copy, or distribute the Licensed Materials for any commercial or non-commercial purpose, subject to the following terms and conditions" Please also note that some content (for example some of the assessment scale content) within LOINC is subject to copyright from third parties and is present in LOINC with permission or under the applicable terms of use from the third party.  Some included third party content requires attribution specific to a particular LOINC code or codes. Such third party content is identified in the LOINC Table and LOINC Table Core by the applicable copyright notice stored in the EXTERNAL_COPYRIGHT_NOTICE field. For further information and for details of how implementers should manage use of third party content (including license obligations) please see https://loinc.org/kb/license/</p>
 </td>
     </tr>
 
   </table>
 
 <p>
-<p>LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC’s universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.</p>
+<p>LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.</p>
 
 </p>
 
@@ -266,7 +267,7 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p class="res-header-id"><b>Generated Narrative: CodeSystem LOINC</b></p><a name="LOINC"> </a><a name="hcLOINC"> </a><a name="hcLOINC-en-US"> </a>
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p class="res-header-id"><b>Generated Narrative: CodeSystem LOINC</b></p><a name="LOINC"> </a><a name="hcLOINC"> </a><a name="LOINC-en-US"> </a>
 <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p>This case-sensitive code system <code>http://loinc.org</code> provides <b>a fragment</b> that includes following codes:</p>
 <table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
 <tr><td style="white-space:nowrap">8302-2<a name="LOINC-8302-2"> </a></td>
@@ -301,7 +302,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 22:52+0200">2024-07-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:37+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -318,7 +319,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -329,7 +330,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

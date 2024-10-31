@@ -16,19 +16,19 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/children/Questionnaire-"+id+".xml");
   else if (id == "klgateway-children-aims")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Questionnaire-klgateway-children-aims.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.1.0/Questionnaire-klgateway-children-aims.html");
   else if (id == "klgateway-children-adbb")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Questionnaire-klgateway-children-adbb.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.1.0/Questionnaire-klgateway-children-adbb.html");
   else if (id == "klgateway-children-topi")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Questionnaire-klgateway-children-topi.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.1.0/Questionnaire-klgateway-children-topi.html");
   else if (id == "klgateway-children-puf")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Questionnaire-klgateway-children-puf.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.1.0/Questionnaire-klgateway-children-puf.html");
   else if (id == "klgateway-children-sdq4-10")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Questionnaire-klgateway-children-sdq4-10.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.1.0/Questionnaire-klgateway-children-sdq4-10.html");
   else if (id == "klgateway-children-epds")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Questionnaire-klgateway-children-epds.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.1.0/Questionnaire-klgateway-children-epds.html");
   else if (id == "klgateway-children-sdq11-17")
-    Response.Redirect("http://fhir.kl.dk/children/2.0.1/Questionnaire-klgateway-children-sdq11-17.html");
+    Response.Redirect("http://fhir.kl.dk/children/2.1.0/Questionnaire-klgateway-children-sdq11-17.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/children/Questionnaire.html");
 
@@ -37,6 +37,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-Internal Error - unknown id <%= Request.QueryString("id") %> (from .0.1-milestone\output\crquestionnaire.asp) .
+Internal Error - unknown id <%= Request.QueryString("id") %> (from .1.0-milestone\output\crquestionnaire.asp) .
 </body>
 </html>

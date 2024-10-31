@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "RuddiFunctionalTraening",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/rehab/StructureDefinition/klgateway-140-planned-intervention"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan RuddiFunctionalTraening</b></p><a name=\"RuddiFunctionalTraening\"> </a><a name=\"hcRuddiFunctionalTraening\"> </a><a name=\"RuddiFunctionalTraening-en-US\"> </a><p><b>basedOnServiceRequestExtension</b>: <a href=\"ServiceRequest-RuddiGGOPInformation.html\">ServiceRequest Kommunal genoptræning efter sygehusophold</a></p><p><b>basedOn</b>: <a href=\"CarePlan-RuddiTraeningsforloeb.html\">CarePlan: extension = -&gt;ServiceRequest Kommunal genoptræning efter sygehusophold; status = active; intent = plan; category = Interventionsforløb efter §140; period = 2022-05-30 --&gt; (ongoing)</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-RuddiTestBerggren.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#1502779995\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2022-05-30 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Code</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><span title=\"Codes:{urn:oid:1.2.208.176.2.21 58293f63-00d7-4730-8dbc-c784d40f9e23}\">Funktionstræning</span></td><td>In Progress</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.kl.dk/rehab/StructureDefinition/BasedOnServiceRequestExtension",
+    "valueReference" : {
+      "reference" : "ServiceRequest/RuddiGGOPInformation"
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/RuddiTraeningsforloeb"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/RuddiTestBerggren"
+  },
+  "period" : {
+    "start" : "2022-05-30"
+  },
+  "activity" : [{
+    "detail" : {
+      "extension" : [{
+        "url" : "http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+            "code" : "2865f123-15a7-4a36-a514-32ea37c400ca",
+            "display" : "Gruppebaseret indsats"
+          }]
+        }
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:1.2.208.176.2.21",
+          "code" : "58293f63-00d7-4730-8dbc-c784d40f9e23",
+          "display" : "Funktionstræning"
+        }]
+      },
+      "status" : "in-progress"
+    }
+  }]
+}

@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Condition",
+  "id" : "ProblemerMedPersonligPleje",
+  "meta" : {
+    "profile" : ["http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-condition"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ProblemerMedPersonligPleje</b></p><a name=\"ProblemerMedPersonligPleje\"> </a><a name=\"hcProblemerMedPersonligPleje\"> </a><a name=\"ProblemerMedPersonligPleje-en-US\"> </a><p><b>CareFollowUpEncounterExtension</b>: <a href=\"Encounter-NaesteOpfoelgningsdato.html\">Encounter: status = planned; class = home health (ActCode#HH); type = opfølgning; period = 2020-08-14 --&gt; (ongoing)</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.21 I1.1}\">Problemer med personlig pleje</span></p><p><b>subject</b>: <a href=\"Patient-TestPerson.html\">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0101010101\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>recordedDate</b>: 2020-08-14</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.kl.dk/gateway/StructureDefinition/klgateway-care-follow-up-encounter-extension",
+    "valueReference" : {
+      "reference" : "Encounter/NaesteOpfoelgningsdato"
+    }
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "code" : "I1.1"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/TestPerson"
+  },
+  "recordedDate" : "2020-08-14"
+}

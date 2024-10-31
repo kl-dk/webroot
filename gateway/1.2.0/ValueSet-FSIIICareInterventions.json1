@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "FSIIICareInterventions",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet FSIIICareInterventions</b></p><a name=\"FSIIICareInterventions\"> </a><a name=\"hcFSIIICareInterventions\"> </a><a name=\"FSIIICareInterventions-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://fhir.kl.dk/term/2.2.0/ValueSet-KLNursingInterventionsFSIII.html\">KLSygeplejeIndsatserFSIII</a></li><li>Import all the codes that are contained in <a href=\"http://fhir.kl.dk/term/2.2.0/ValueSet-KLHomeCareInterventionsFSIII.html\">KLHjemmeplejeIndsatserFSIII</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/gateway/ValueSet/FSIIICareInterventions",
+  "version" : "1.2.0",
+  "name" : "FSIIICareInterventions",
+  "title" : "FSIIICareInterventions",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-31T19:17:05+01:00",
+  "publisher" : "KL",
+  "contact" : [{
+    "name" : "KL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.kl.dk"
+    }]
+  }],
+  "description" : "Interventions defined by FSIII for nursing and home care",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLNursingInterventionsFSIII"]
+    },
+    {
+      "valueSet" : ["http://fhir.kl.dk/term/ValueSet/KLHomeCareInterventionsFSIII"]
+    }]
+  }
+}

@@ -69,7 +69,6 @@
     <sch:title>f:CarePlan/f:activity/f:detail</sch:title>
     <sch:rule context="f:CarePlan/f:activity/f:detail">
       <sch:assert test="count(f:extension[@url = 'http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType']) &gt;= 1">extension with URL = 'http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType']) &lt;= 1">extension with URL = 'http://fhir.kl.dk/rehab/StructureDefinition/DeliveryType': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:kind) &lt;= 0">kind: maximum cardinality of 'kind' is 0</sch:assert>
       <sch:assert test="count(f:instantiatesCanonical) &lt;= 0">instantiatesCanonical: maximum cardinality of 'instantiatesCanonical' is 0</sch:assert>
       <sch:assert test="count(f:instantiatesUri) &lt;= 0">instantiatesUri: maximum cardinality of 'instantiatesUri' is 0</sch:assert>

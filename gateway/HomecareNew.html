@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Homecare New -  v1.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">1.2.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="indexOld.html">Old Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="Homecare.html">Old Homecare Ex</a>
+  </li>
+  <li>
+    <a href="Nursing.html">Old Nursing Ex</a>
+  </li>
+  <li>
+    <a href="HomecareNew.html">New Homecare Ex</a>
+  </li>
+  <li>
+    <a href="NursingNew.html">New Nursing Ex</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Homecare New</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KL Gateway (v1.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/gateway/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Homecare New</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#first-event-february-10th-2021" id="markdown-toc-first-event-february-10th-2021">First Event February 10th, 2021</a></li>
+  <li><a href="#delivery-of-planned-interventions-between-february-12th-and-febrary-15th-2021" id="markdown-toc-delivery-of-planned-interventions-between-february-12th-and-febrary-15th-2021">Delivery of planned interventions between February 12th and Febrary 15th, 2021</a></li>
+  <li><a href="#second-event-february-15th-2021" id="markdown-toc-second-event-february-15th-2021">Second Event February 15th, 2021</a></li>
+  <li><a href="#third-event-february-24th-2021" id="markdown-toc-third-event-february-24th-2021">Third Event February 24th, 2021</a></li>
+</ul>
+
+</div>
+<p>This page describes three subsequent delivery reports for the citizen Jens Hansen.
+For each delivery report the story is told (in Danish), the FSIII documentation is listed, and the reporting example is given.</p>
+
+<h3 id="first-event-february-10th-2021">First Event February 10th, 2021</h3>
+
+<h4 id="story">Story</h4>
+<p>Jens Hansen har været indlagt på sygehus i 3 uger grundet en apopleksi med højresidige lammelser i overkroppen og generel funktionsnedsættelse til følge.
+Det betyder, at Jens Hansen vil få meget svært ved selvstændigt at håndtere egenomsorg og praktiske opgaver.
+Ved udskrivningskonferencen d. 10. februar på sygehuset deltager den kommunale visitator.
+Da Jens Hansens indlæggelse har været forholdsvis kort er der stadig forventning om spontan remission og dermed en bedring af hans funktionsevne.</p>
+
+<p>Visitator udarbejder en funktionsevnevurdering på baggrund af journaloplysninger og samtale med Jens Hansen og sygehuspersonalet.
+Da Jens Hansen er enkemand og bor alene, er der behov for iværksættelse af hjælp og støtte efter Servicelovens § 83 gældende fra udskrivningsdatoen d. 12. februar.
+Visitator laver en sagsåbning, og herefter en sagsoplysning på baggrund af ovennævnte udfordringer og behov. 
+Som udgangspunkt dokumenterer visitator på relevante tilstande og angiver niveau som vist i nedenstående skema.</p>
+
+<p>Visitator træffer afgørelse i sagen og bestiller udfører til at iværksætte indsatser i forhold til de respektive tilstande. Yderligere aftales det, at visitator kommer på hjemmebesøg d. 15. februar, når Jens Hansen er tilbage i egen bolig, hvor der skal foretages en ny funktionsevnevurdering. Her skal boligens beskaffenhed og indkøbsmuligheder vurderes.</p>
+
+<h4 id="fsiii-documentation">FSIII Documentation</h4>
+<p>The following FSIII documentation is documented in the record system.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Severity</th>
+      <th>Goal</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Personlig pleje</td>
+      <td>3 - Svære begrænsninger</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>Personlig hygiejne</td>
+    </tr>
+    <tr>
+      <td>Lave mad</td>
+      <td>3- Svære begrænsninger</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>Madservice</td>
+    </tr>
+    <tr>
+      <td>Lave husligt arbejde</td>
+      <td>3 - Svære begrænsninger</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>Hverdagens aktiviteter, Rengøring</td>
+    </tr>
+    <tr>
+      <td>Mobilitet og bevægelse</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>1 - Lette begrænsninger</td>
+      <td>Mobilitet</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reporting">Reporting</h4>
+<p>A delivery report is generated containing the citizen, 4 conditions, 4 goals, 5 planned interventions starting February 12th, and a follow-up encounter on February 15th for the conditions. The planned interventions reference the conditions according to the table above.</p>
+
+<p>The report for this is found here: <a href="Bundle-5c20b1b0-ec06-4d25-89e2-13521ebcf642.html">DeliveryReport-JensHansen-1</a></p>
+
+<h3 id="delivery-of-planned-interventions-between-february-12th-and-febrary-15th-2021">Delivery of planned interventions between February 12th and Febrary 15th, 2021</h3>
+<p><strong>Det er en mulighed at indberette på kontakter, for at kunne dokumentere tyngden af indsatserne. Det følgende er et eksempel herpå. Dette er ikke obligatorisk før udgangen af 2027.</strong></p>
+
+<h4 id="story-1">Story</h4>
+<p>Mellem udskrivningsdatoen frem til den 15. februar leverer hjemmeplejen de indsatser, der blev visiteret d. 10. februar. Der leveres tre hjemmebesøg pr. dag, hvor der leveres på Personlig hygiejne, Hverdagens aktiviteter og Mobilitet. Rengøring, som også er visiteret, er blevet bestilt til en gang hver 14. dag, men dette leveres der ikke på i perioden, og derfor sker der heller ingen indberetning af det. Madservice er ikke forbundet med en konkret opgave, men viser, at borger er tilknyttet madservice-ordning. Derfor er der ikke konkrete kontakter tilknyttet denne indsats. 
+Det følgende er et eksempel på en rapport fra d. 13. februar. For de øvrige dage ville det se tilsvarende ud.</p>
+
+<h4 id="reporting-1">Reporting</h4>
+<p>A delivery report is generated containing the citizen and three encounters from the 13th of february. The encounters reference the PlannedInterventions 'Personlig hygiejne', 'Hverdagens aktiviteter' and 'Mobilitet'. Consequently, these are added to the report as well even though they are unchanged. The PlannedInterventions reference three of the four Conditions, which are added as well.
+The report for this is found here: <a href="Bundle-832c69db-98b5-4aee-ab00-c24967e89d25.html">DeliveryReport-JensHansen-InterventionDelivery</a></p>
+
+<h3 id="second-event-february-15th-2021">Second Event February 15th, 2021</h3>
+
+<h4 id="story-2">Story</h4>
+<p>Ved hjemmebesøg tre dage efter udskrivelse, foretager visitator en fornyet funktionsevnevurdering.
+Hjælpen, som blev bevilliget ved udskrivelsen, har fungeret fint og der er sket mindre forbedringer i Jens Hansens funktionsevne.
+Desuden slapper Jens Hansen mere af i sin egen bolig, han har god tid til at udføre sine aktiviteter, og han har fået hjælp af sin søn til at indrette hjemmet lidt mere hensigtsmæssigt. (Kommunens hjælpemiddelterapeut har været på besøg og der er bevilliget badebænk, greb og toiletforhøjer).</p>
+
+<p>Hjælpen efter § 83 fortsættes uden ændringer frem til myndighedsopfølgning, svarende til 14 dage efter udskrivelse – d. 24. februar.</p>
+
+<h4 id="fsiii-documentation-1">FSIII Documentation</h4>
+<p>The previous FSIII documentation is unchanged, except that a follow-up observation is added and a new follow-up encounter is set to February 24th 2021. The previous follow-up encounter is marked as completed.</p>
+
+<h4 id="reporting-2">Reporting</h4>
+<p>A delivery report is generated containing the citizen, the follow-up observation, and the 4 conditions referenced from the follow-up observation. A new follow-up encounter, and the now completed follow-up encounter are also included (the latter is marked as finished. Note that it is not mandatory to report finished/completed follow-up encounters, neither is it mandatory to report follow-up observations.)</p>
+
+<p>The goals and planned interventions are unchanged and are thus not included in the report.</p>
+
+<p>The report for this is found here: <a href="Bundle-8ec154f2-1429-4a41-aca7-f900e1d3bee2.html">DeliveryReport-JensHansen-2</a></p>
+
+<h3 id="third-event-february-24th-2021">Third Event February 24th, 2021</h3>
+
+<h4 id="story-3">Story</h4>
+<p>Sosu-hjælperen, der kommer hos Jens Hansen, observerer markante fremskridt d. 18. februar, altså allerede 10 dage efter udskrivelsen.
+I den afficerede højre side er der kommet flere kræfter og øget kontrol, hvilket betyder, at Jens Hensen mere selvstændigt kan deltage/varetage flere aktiviteter.</p>
+
+<p>Sosu-hjælperen dokumenterer sin observationen.
+Det skal sikres, at oplysningerne om borgerne er opdateret. hun kontakter derfor ’planlægger’ og foreslår, at terapeuten fra Team-Hverdagsrehabilitering kommer ud til Jens Hansen og vurdere træningspotentiale og behov for RH-indsatser.</p>
+
+<p>Da, der er 6 dage til at myndighedsopfølgningen, skal ske kontakter terapeuten fra Team-Hverdagsrehabilitering visitator for at fortælle, at hun på baggrund af markante forbedringer i Jens Hansens funktionsevne vil foretage en vurdering i forhold til indsatser efter servicelovens § 83 a.</p>
+
+<p>Terapeuten vurderer de tidligere dokumenterede tilstande. Jens Hansen har potentiale til selv at kunne varetage dele af aktiviteterne, hvis han tilbydes et tidsafgrænset § 83 a Hverdagsrehabiliteringsforløb.</p>
+
+<p>Vurderingen bevirker altså en opdatering af Jens Hansen journal og aktuelle ændringer i forhold til de tidligere bevilligede indsatser skal opdateres.
+Opdaterede ændringer fremgår af nedenstående skema og der aftales en ny myndighedsopfølgning d. 10. marts.</p>
+
+<h4 id="fsiii-documentation-2">FSIII Documentation</h4>
+<p>The previous FSIII documentation is updated with new severities and goals, and some of the interventions are replaced by the correpsonding rehabilitating intervention.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Severity</th>
+      <th>Goal</th>
+      <th>Intervention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Personlig pleje</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>0 - Ingen eller ubetydelige begrænsninger</td>
+      <td>RH - Personlig hygiejne</td>
+    </tr>
+    <tr>
+      <td>Lave mad</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>1- Lette begrænsninger</td>
+      <td>Madservice</td>
+    </tr>
+    <tr>
+      <td>Lave husligt arbejde</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>1- Lette begrænsninger</td>
+      <td>Hverdagens aktiviteter, Rengøring</td>
+    </tr>
+    <tr>
+      <td>Mobilitet og bevægelse</td>
+      <td>2 - Moderate begrænsninger</td>
+      <td>0 - Ingen eller ubetydelige begrænsninger</td>
+      <td>RH - Mobilitet</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The follow-up observation is set to 'Revisitation'. The follow-up is marked as finished, and a new follow-up date is planned. Note that follow-up observations are not mandatory. Follow-up dates are still mandatory.</p>
+
+<h4 id="reporting-3">Reporting</h4>
+<p>A delivery report is generated containing the citizen and the 3 conditions with updated severities and the one condition which is not updated. (The latter is included because its goal and follow-up references it). The old and the new follow-up encounter references these conditions. The report also contain new goals, and a follow-up observation.</p>
+
+<p>In addition, 2 planned interventions are ended (Personlig pleje, Mobilitet). 2 new planned interventions are added (RH - Personlig hygiejne, RH - Mobilitet). 3 planned interventions (Hverdagens aktiviteter, Rengøring, Madservice) are unchanged and are thus not included in the report.</p>
+
+<p>The report for this is found here: <a href="Bundle-89071c96-e053-40d5-8873-105b7bad40f9.html">DeliveryReport-JensHansen-3</a></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.kl.dk">KL</a>.  Package kl.dk.fhir.gateway#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 19:21+0100">2024-10-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

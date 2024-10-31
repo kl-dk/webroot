@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>RikkeFeedingObservationStatus - KLChildren implementation guide, an implementation of FBU v2.0.1</title>
+    <title>RikkeFeedingObservationStatus - KLChildren implementation guide, an implementation of FBU v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,9 +39,10 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"4.103"}
-    h3,h4,h5,h6{--heading-prefix:"4.103"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.106"}
+    h3,h4,h5,h6{--heading-prefix:"4.106"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -58,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KLChildren implementation guide, an implementation of FBU</span>
             <br/>
-            <span style="display:inline-block;">2.0.1 - Release
+            <span style="display:inline-block;">2.1.0 - Release
 
 
             </span>
@@ -122,7 +123,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLChildren (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/children/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -179,7 +180,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation RikkeFeedingObservationStatus</b></p><a name="RikkeFeedingObservationStatus"> </a><a name="hcRikkeFeedingObservationStatus"> </a><a name="hcRikkeFeedingObservationStatus-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 169740003}, {http://fhir.kl.dk/term/CodeSystem/FBOE e61e4dab-54bb-4bf4-9b76-8d991cf4de08}">Infant feeding method</span></p><p><b>subject</b>: <a href="Patient-Rikke.html">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996 (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-2mthEncounter.html">Encounter: status = finished; class = home health (ActCode#HH); type = Besøg hos det ca. 2 måneder gamle barn; period = 2020-07-07 12:45:00+0000 --&gt; (ongoing)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 3edc905c-2830-442a-98cc-463cc3701dd1}">Ammes som supplement til anden kost</span></p></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation RikkeFeedingObservationStatus</b></p><a name="RikkeFeedingObservationStatus"> </a><a name="hcRikkeFeedingObservationStatus"> </a><a name="RikkeFeedingObservationStatus-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 169740003}, {http://fhir.kl.dk/term/CodeSystem/FBOE e61e4dab-54bb-4bf4-9b76-8d991cf4de08}">Infant feeding method</span></p><p><b>subject</b>: <a href="Patient-Rikke.html">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996 (use: official, ))</a></p><p><b>encounter</b>: <a href="Encounter-2mthEncounter.html">Encounter: status = finished; class = home health (ActCode#HH); type = Besøg hos det ca. 2 måneder gamle barn; period = 2020-07-07 12:45:00+0000 --&gt; (ongoing)</a></p><p><b>effective</b>: 2020-07-07 00:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://fhir.kl.dk/term/CodeSystem/FBOE 3edc905c-2830-442a-98cc-463cc3701dd1}">Ammes som supplement til anden kost</span></p></div>
 
   
 
@@ -204,7 +205,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 22:52+0200">2024-07-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.children#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 20:37+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -221,7 +222,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -232,7 +233,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

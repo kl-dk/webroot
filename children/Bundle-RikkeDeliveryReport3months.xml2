@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="RikkeDeliveryReport3months"/>
+  <meta>
+    <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-delivery-report"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2020-08-08T23:45:00.000Z"/>
+  <entry>
+    <fullUrl value="http://fhir.kl.dk/children/Patient/Rikke"/>
+    <resource>
+      <Patient>
+        <id value="Rikke"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-citizen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_Rikke"> </a><p class="res-header-id"><b>Generated Narrative: Patient Rikke</b></p><a name="Rikke"> </a><a name="hcRikke"> </a><a name="Rikke-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: Identifier: <code>urn:oid:1.2.208.176.1.1</code>/123456789012345 (use: official, )</li></ul></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="urn:oid:1.2.208.176.1.2"/>
+          <value value="0505209996"/>
+        </identifier>
+        <active value="true"/>
+        <managingOrganization>
+          <identifier>
+            <use value="official"/>
+            <system value="urn:oid:1.2.208.176.1.1"/>
+            <value value="123456789012345"/>
+          </identifier>
+        </managingOrganization>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.kl.dk/children/Observation/RikkeBodyWeight3mth"/>
+    <resource>
+      <Observation>
+        <id value="RikkeBodyWeight3mth"/>
+        <meta>
+          <profile value="http://fhir.kl.dk/children/StructureDefinition/klgateway-children-bodyweight"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_RikkeBodyWeight3mth"> </a><p class="res-header-id"><b>Generated Narrative: Observation RikkeBodyWeight3mth</b></p><a name="RikkeBodyWeight3mth"> </a><a name="hcRikkeBodyWeight3mth"> </a><a name="RikkeBodyWeight3mth-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}, {http://snomed.info/sct 27113001}">Body weight</span></p><p><b>subject</b>: <a href="Patient-Rikke.html">Anonymous Patient (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#0505209996 (use: official, ))</a></p><p><b>effective</b>: 2020-08-08</p><p><b>value</b>: 7100 g<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="27113001"/>
+            <display value="Body weight"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/Rikke"/>
+        </subject>
+        <effectiveDateTime value="2020-08-08"/>
+        <valueQuantity>
+          <value value="7100"/>
+          <unit value="g"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="g"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>
