@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FSIII - XML Representation - KL Terminologi v2.1.0</title>
+    <title>FSIII - XML Representation - KL Terminologi v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,7 +41,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2.61"}
     h3,h4,h5,h6{--heading-prefix:"2.61"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -60,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KL Terminologi</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - Release
+            <span style="display:inline-block;">2.2.0 - Release
 
 
             </span>
@@ -118,7 +119,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -173,7 +174,7 @@
         
           Active
           
-            as of 2024-06-13
+            as of 2024-10-31
           
         
       </td>
@@ -189,13 +190,12 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
-
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FSIII&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt; defines the following codes in a Is-A hierarchy:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;370e6178-9a5d-45f9-a2c9-f658186059c9&lt;a name=&quot;FSIII-370e6178-9a5d-45f9-a2c9-f658186059c9&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Generelle oplysninger&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Generelle oplysninger&lt;/p&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem FSIII&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;FSIII&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcFSIII&quot;&gt; &lt;/a&gt;&lt;a name=&quot;FSIII-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt; defines the following codes in a Is-A hierarchy:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;370e6178-9a5d-45f9-a2c9-f658186059c9&lt;a name=&quot;FSIII-370e6178-9a5d-45f9-a2c9-f658186059c9&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Generelle oplysninger&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Generelle oplysninger&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  041a8348-e77d-4d6d-a464-a46b4fd036d0&lt;a name=&quot;FSIII-041a8348-e77d-4d6d-a464-a46b4fd036d0&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ressourcer&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Fysiske som psykiske kræfter eksempelvis i form af fysiske sundhed og styrke samt psykiske sundhed og styrke, herunder tanker, måder at forholde sig til situationer og andre mennesker på.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  18eb83fc-a4fb-46ac-9d98-73ce76946c43&lt;a name=&quot;FSIII-18eb83fc-a4fb-46ac-9d98-73ce76946c43&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Motivation&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Beskriver den drivkraft, der får mennesker til at handle, som de gør. Motivation er en proces, hvor en målrettet aktivitet initieres og fastholdes.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  3769072e-79aa-466a-9385-baaba53b5b41&lt;a name=&quot;FSIII-3769072e-79aa-466a-9385-baaba53b5b41&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mestring&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;De strategier og den adfærd, hvor en person bevidst eller ubevidst mindsker sin sandsynlighed for at blive udsat for sygdom, funktionsnedsættelse, sociale problemer eller ulykker. (Også gældende i forhold til familie og netværk).&lt;/p&gt;
@@ -575,6 +575,25 @@ Eksempler på hjælpemidler/boligindretninger kan være toiletforhøjer, badetab
 &lt;p&gt;Eksempler: Tilstedeværelse ved måltider, indtagelse af mad og drikke.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    ef8ee035-00d2-48b9-b366-27753ccd5504&lt;a name=&quot;FSIII-ef8ee035-00d2-48b9-b366-27753ccd5504&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mobilitet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter omfatter hjælp, støtte eller guidning ifm. mobilitet eller ændringer i kroppens stilling og placering.&lt;/p&gt;
 &lt;p&gt;Eksempler: Forflytning, lejring, vending.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  2a668eb0-25f1-4101-863c-11e81c4bf210&lt;a name=&quot;FSIII-2a668eb0-25f1-4101-863c-11e81c4bf210&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ældrelovsindsats&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Ældrelovsindsats&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    52de9a13-8605-4a80-8a40-78101a55c4a3&lt;a name=&quot;FSIII-52de9a13-8605-4a80-8a40-78101a55c4a3&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Praktisk hjaelp i hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til rengøring, tøjvask, indkøb samt tilberede og anrette mad.&lt;/p&gt;
+&lt;p&gt;Eksempler: Støvsugning, rengøring af hjem, tøjvask i eget hjem eller på vaskeri/vaskeordning, sortering af vasketøj, tøring og sammenlægning af vasketøj, indkøb af dagligvarer, bestilling af varer, tilberede og anrette et måltid samt rydde op og vaske op efter et måltid. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    5aa18d37-d924-4613-b6b5-1538f471db15&lt;a name=&quot;FSIII-5aa18d37-d924-4613-b6b5-1538f471db15&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Madservice&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Visitation af madservice til borger, der modtager mad via en madserviceordning.&lt;/p&gt;
+&lt;p&gt;Eksempler: Visitation til madservice. Eksklusiv anrettelse af maden.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    649b3428-4018-47da-bb36-1f2bfab3c8c1&lt;a name=&quot;FSIII-649b3428-4018-47da-bb36-1f2bfab3c8c1&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afløsning i hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter afløsning af den pårørende. Dvs. kommunal tilstedeværelse således, at den pårørende fx kan deltage i sociale aktiviteter, som den pårørende ellers ville være afskåret fra at deltage i.&lt;/p&gt;
+&lt;p&gt;Eksempler: Fast vagt, tilstedeværelse&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    76bd54b0-87b8-453e-bfcd-48eec0737e5b&lt;a name=&quot;FSIII-76bd54b0-87b8-453e-bfcd-48eec0737e5b&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midlertidigt ophold&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter midlertidig ophold, som udelukkende er bevilling af en plads. De indsatser, der leveres under et midlertidigt ophold, vil være indsatser, der er visiteret efter § 9&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    8b92ac57-0200-4437-aacf-5b90898a3838&lt;a name=&quot;FSIII-8b92ac57-0200-4437-aacf-5b90898a3838&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Koordinering med pårørende og/eller civilsamfund&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter koordinering med pårørende og/ eller civilsamfund omkring levering af den hjælp og støtte, som borgeren modtager. Der kan også være inddragelse af civilsamfund og foreninger med fokus på borgerens generelle trivsel.&lt;/p&gt;
+&lt;p&gt;Eksempler: aftaler med pårørende omkring de pårørendes varetagelse af dele af praktisk hjælp og/eller personlig pleje.
+Koordinering med civilsamfund og foreningsliv omkring afhjælpelse af ensomhed m.v.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    8dc5f564-b8c6-4aa1-ba34-682d62d15f31&lt;a name=&quot;FSIII-8dc5f564-b8c6-4aa1-ba34-682d62d15f31&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Personlig hjælp og pleje&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til personlige hygiejne, udskillelser, ernæring, mobilitet, tilsyn/omsorg samt hverdagens aktiviteter.&lt;/p&gt;
+&lt;p&gt;Eksempler: Bad, øvre og nedre toilette, toiletbesøg, urindomskift, indtagelse af mad og drikke, forflytning, lejring, tilsyns- og omsorgsbesøg, støtte til egen kontakt til myndigheder og sundhedsvæsenet samt generel struktur i hverdagen. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    a07ffdd2-3c27-4a42-a860-58f6bb840d77&lt;a name=&quot;FSIII-a07ffdd2-3c27-4a42-a860-58f6bb840d77&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Genoptræning&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Træning med henblik på at opnå et funktionsniveau svarende til det borgeren havde forud for en hændelse.&lt;/p&gt;
+&lt;p&gt;Eksempler: Træning af borgere, der har været udsat for en hændelse som fx lungebetændelse eller lignende, hvor borgeren har behov for genoptræning for at opnå funktionsniveau svarende til før hændelsen.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    ceb5a58a-06ff-49c6-9da2-f65fc63847f6&lt;a name=&quot;FSIII-ceb5a58a-06ff-49c6-9da2-f65fc63847f6&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aflastningsophold uden for hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter aflastning af pårørende. Alle former for aflastningsophold uden for hjemmet, således, at pårørende kan aflastes og/eller deltage i sociale aktiviteter, som pårørende ellers ville være afskåret fra at deltage i.&lt;/p&gt;
+&lt;p&gt;Eksempler: Daghjem, nathjem, døgnophold.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    fd6e4caf-a844-482f-b43b-0b8a43391a11&lt;a name=&quot;FSIII-fd6e4caf-a844-482f-b43b-0b8a43391a11&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialog med borger om tilrettelæggelse af forløb&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter den første dialog med borgeren om udmøntning og tilrettelæggelse af det visiterede forløb.&lt;/p&gt;
+&lt;p&gt;Eksempler: Første møde mellem medarbejder og borger i forbindelse med udmøntning og konkret tilrettelæggelse af forløb. Her kan også drøftes borgerens mål i forhold til selvhjulpenhed. Indsatsen anvendes ikke ved den løbende dialog mellem borger og medarbejder omkring ændringer og koordinering af hjælp og støtte.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  3823d4cd-c38f-49f7-bb15-bd2488b07cd9&lt;a name=&quot;FSIII-3823d4cd-c38f-49f7-bb15-bd2488b07cd9&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;§ 83 stk. 1, nr. 2 Praktisk hjælp i hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;§ 83 stk. 1, nr. 2 Praktisk hjælp i hjemmet&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    074078e1-b78b-4167-b125-f7b76923469e&lt;a name=&quot;FSIII-074078e1-b78b-4167-b125-f7b76923469e&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Praktiske indsatser i relation til børn i husstanden&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter praktisk bistand til den forælder, der ikke selv er i stand til at udføre opgaven. De praktiske opgaver relaterer sig til børn i husstanden.&lt;/p&gt;
 &lt;p&gt;Eksempler: Vask og påklædning af børn, bleskift, tilberedning af måltider, følge børn i institution/skole, lægge børn i seng.&lt;/p&gt;
@@ -1145,6 +1164,25 @@ Eksempler på hjælpemidler/boligindretninger kan være toiletforhøjer, badetab
 &lt;p&gt;Eksempler: Tilstedeværelse ved måltider, indtagelse af mad og drikke.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    H1.4&lt;a name=&quot;FSIII-H1.464&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mobilitet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter omfatter hjælp, støtte eller guidning ifm. mobilitet eller ændringer i kroppens stilling og placering.&lt;/p&gt;
 &lt;p&gt;Eksempler: Forflytning, lejring, vending.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  Aeldrelovsindsats&lt;a name=&quot;FSIII-Aeldrelovsindsats&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ældrelovsindsats&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Ældrelovsindsats&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Praktisk_hjaelp_i_hjemmet&lt;a name=&quot;FSIII-Praktisk_hjaelp_i_hjemmet&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Praktisk hjaelp i hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til rengøring, tøjvask, indkøb samt tilberede og anrette mad.&lt;/p&gt;
+&lt;p&gt;Eksempler: Støvsugning, rengøring af hjem, tøjvask i eget hjem eller på vaskeri/vaskeordning, sortering af vasketøj, tøring og sammenlægning af vasketøj, indkøb af dagligvarer, bestilling af varer, tilberede og anrette et måltid samt rydde op og vaske op efter et måltid. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Madservice&lt;a name=&quot;FSIII-Madservice&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Madservice&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Visitation af madservice til borger, der modtager mad via en madserviceordning.&lt;/p&gt;
+&lt;p&gt;Eksempler: Visitation til madservice. Eksklusiv anrettelse af maden.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Afloesning_i_hjemmet&lt;a name=&quot;FSIII-Afloesning_i_hjemmet&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afløsning i hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter afløsning af den pårørende. Dvs. kommunal tilstedeværelse således, at den pårørende fx kan deltage i sociale aktiviteter, som den pårørende ellers ville være afskåret fra at deltage i.&lt;/p&gt;
+&lt;p&gt;Eksempler: Fast vagt, tilstedeværelse&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Midlertidigt_ophold&lt;a name=&quot;FSIII-Midlertidigt_ophold&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Midlertidigt ophold&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter midlertidig ophold, som udelukkende er bevilling af en plads. De indsatser, der leveres under et midlertidigt ophold, vil være indsatser, der er visiteret efter § 9&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Koordinering_med_paaroerende_og_eller_civilsamfund&lt;a name=&quot;FSIII-Koordinering_med_paaroerende_og_eller_civilsamfund&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Koordinering med pårørende og/eller civilsamfund&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter koordinering med pårørende og/ eller civilsamfund omkring levering af den hjælp og støtte, som borgeren modtager. Der kan også være inddragelse af civilsamfund og foreninger med fokus på borgerens generelle trivsel.&lt;/p&gt;
+&lt;p&gt;Eksempler: aftaler med pårørende omkring de pårørendes varetagelse af dele af praktisk hjælp og/eller personlig pleje.
+Koordinering med civilsamfund og foreningsliv omkring afhjælpelse af ensomhed m.v.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Personlig_hjaelp_og_pleje&lt;a name=&quot;FSIII-Personlig_hjaelp_og_pleje&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Personlig hjælp og pleje&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til personlige hygiejne, udskillelser, ernæring, mobilitet, tilsyn/omsorg samt hverdagens aktiviteter.&lt;/p&gt;
+&lt;p&gt;Eksempler: Bad, øvre og nedre toilette, toiletbesøg, urindomskift, indtagelse af mad og drikke, forflytning, lejring, tilsyns- og omsorgsbesøg, støtte til egen kontakt til myndigheder og sundhedsvæsenet samt generel struktur i hverdagen. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Genoptraening&lt;a name=&quot;FSIII-Genoptraening&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Genoptræning&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Træning med henblik på at opnå et funktionsniveau svarende til det borgeren havde forud for en hændelse.&lt;/p&gt;
+&lt;p&gt;Eksempler: Træning af borgere, der har været udsat for en hændelse som fx lungebetændelse eller lignende, hvor borgeren har behov for genoptræning for at opnå funktionsniveau svarende til før hændelsen.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Aflastningsophold_uden_for_hjemmet&lt;a name=&quot;FSIII-Aflastningsophold_uden_for_hjemmet&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aflastningsophold uden for hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter aflastning af pårørende. Alle former for aflastningsophold uden for hjemmet, således, at pårørende kan aflastes og/eller deltage i sociale aktiviteter, som pårørende ellers ville være afskåret fra at deltage i.&lt;/p&gt;
+&lt;p&gt;Eksempler: Daghjem, nathjem, døgnophold.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    Dialog_med_borger_om_tilrettelaeggelse_af_forloeb&lt;a name=&quot;FSIII-Dialog_med_borger_om_tilrettelaeggelse_af_forloeb&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialog med borger om tilrettelæggelse af forløb&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter den første dialog med borgeren om udmøntning og tilrettelæggelse af det visiterede forløb.&lt;/p&gt;
+&lt;p&gt;Eksempler: Første møde mellem medarbejder og borger i forbindelse med udmøntning og konkret tilrettelæggelse af forløb. Her kan også drøftes borgerens mål i forhold til selvhjulpenhed. Indsatsen anvendes ikke ved den løbende dialog mellem borger og medarbejder omkring ændringer og koordinering af hjælp og støtte.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet&lt;a name=&quot;FSIII-83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;§ 83 stk. 1, nr. 2 Praktisk hjælp i hjemmet&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;§ 83 stk. 1, nr. 2 Praktisk hjælp i hjemmet&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;    H1.12&lt;a name=&quot;FSIII-H1.4612&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Praktiske indsatser i relation til børn i husstanden&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Indsatsen omfatter praktisk bistand til den forælder, der ikke selv er i stand til at udføre opgaven. De praktiske opgaver relaterer sig til børn i husstanden.&lt;/p&gt;
 &lt;p&gt;Eksempler: Vask og påklædning af børn, bleskift, tilberedning af måltider, følge børn i institution/skole, lægge børn i seng.&lt;/p&gt;
@@ -1342,12 +1380,12 @@ Eksempler på hjælpemidler/boligindretninger kan være toiletforhøjer, badetab
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:oid:1.2.208.176.2.21&quot;/&gt;
   &lt;/identifier&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.2.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FSIII&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FSIII&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-06-13T16:58:41+02:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-10-31T13:18:46+01:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kommunernes Landsforening&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kommunernes Landsforening&quot;/&gt;
@@ -1360,7 +1398,7 @@ Eksempler på hjælpemidler/boligindretninger kan være toiletforhøjer, badetab
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.hierarchyMeaning">hierarchyMeaning</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;is-a&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;808&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;828&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;370e6178-9a5d-45f9-a2c9-f658186059c9&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Generelle oplysninger&quot;/&gt;
@@ -3059,6 +3097,82 @@ Eksempler: Tilstedeværelse ved måltider, indtagelse af mad og drikke.&quot;/&g
                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter omfatter hjælp, støtte eller guidning ifm. mobilitet eller ændringer i kroppens stilling og placering.
 
 Eksempler: Forflytning, lejring, vending.&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2a668eb0-25f1-4101-863c-11e81c4bf210&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ældrelovsindsats&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ældrelovsindsats&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;52de9a13-8605-4a80-8a40-78101a55c4a3&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Praktisk hjaelp i hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til rengøring, tøjvask, indkøb samt tilberede og anrette mad.
+
+Eksempler: Støvsugning, rengøring af hjem, tøjvask i eget hjem eller på vaskeri/vaskeordning, sortering af vasketøj, tøring og sammenlægning af vasketøj, indkøb af dagligvarer, bestilling af varer, tilberede og anrette et måltid samt rydde op og vaske op efter et måltid. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;5aa18d37-d924-4613-b6b5-1538f471db15&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Madservice&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Visitation af madservice til borger, der modtager mad via en madserviceordning.
+
+Eksempler: Visitation til madservice. Eksklusiv anrettelse af maden.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;649b3428-4018-47da-bb36-1f2bfab3c8c1&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Afløsning i hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter afløsning af den pårørende. Dvs. kommunal tilstedeværelse således, at den pårørende fx kan deltage i sociale aktiviteter, som den pårørende ellers ville være afskåret fra at deltage i.
+
+Eksempler: Fast vagt, tilstedeværelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;76bd54b0-87b8-453e-bfcd-48eec0737e5b&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Midlertidigt ophold&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter midlertidig ophold, som udelukkende er bevilling af en plads. De indsatser, der leveres under et midlertidigt ophold, vil være indsatser, der er visiteret efter § 9&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;8b92ac57-0200-4437-aacf-5b90898a3838&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Koordinering med pårørende og/eller civilsamfund&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter koordinering med pårørende og/ eller civilsamfund omkring levering af den hjælp og støtte, som borgeren modtager. Der kan også være inddragelse af civilsamfund og foreninger med fokus på borgerens generelle trivsel.
+
+Eksempler: aftaler med pårørende omkring de pårørendes varetagelse af dele af praktisk hjælp og/eller personlig pleje. 
+Koordinering med civilsamfund og foreningsliv omkring afhjælpelse af ensomhed m.v.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;8dc5f564-b8c6-4aa1-ba34-682d62d15f31&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Personlig hjælp og pleje&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til personlige hygiejne, udskillelser, ernæring, mobilitet, tilsyn/omsorg samt hverdagens aktiviteter.
+
+Eksempler: Bad, øvre og nedre toilette, toiletbesøg, urindomskift, indtagelse af mad og drikke, forflytning, lejring, tilsyns- og omsorgsbesøg, støtte til egen kontakt til myndigheder og sundhedsvæsenet samt generel struktur i hverdagen. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;a07ffdd2-3c27-4a42-a860-58f6bb840d77&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Genoptræning&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Træning med henblik på at opnå et funktionsniveau svarende til det borgeren havde forud for en hændelse.
+
+Eksempler: Træning af borgere, der har været udsat for en hændelse som fx lungebetændelse eller lignende, hvor borgeren har behov for genoptræning for at opnå funktionsniveau svarende til før hændelsen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ceb5a58a-06ff-49c6-9da2-f65fc63847f6&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Aflastningsophold uden for hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter aflastning af pårørende. Alle former for aflastningsophold uden for hjemmet, således, at pårørende kan aflastes og/eller deltage i sociale aktiviteter, som pårørende ellers ville være afskåret fra at deltage i.
+
+Eksempler: Daghjem, nathjem, døgnophold.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fd6e4caf-a844-482f-b43b-0b8a43391a11&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dialog med borger om tilrettelæggelse af forløb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter den første dialog med borgeren om udmøntning og tilrettelæggelse af det visiterede forløb. 
+
+Eksempler: Første møde mellem medarbejder og borger i forbindelse med udmøntning og konkret tilrettelæggelse af forløb. Her kan også drøftes borgerens mål i forhold til selvhjulpenhed. Indsatsen anvendes ikke ved den løbende dialog mellem borger og medarbejder omkring ændringer og koordinering af hjælp og støtte.&quot;/&gt;
       &lt;/concept&gt;
     &lt;/concept&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
@@ -5703,6 +5817,82 @@ Eksempler: Forflytning, lejring, vending.&quot;/&gt;
       &lt;/concept&gt;
     &lt;/concept&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Aeldrelovsindsats&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ældrelovsindsats&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ældrelovsindsats&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Praktisk_hjaelp_i_hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Praktisk hjaelp i hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til rengøring, tøjvask, indkøb samt tilberede og anrette mad.
+
+Eksempler: Støvsugning, rengøring af hjem, tøjvask i eget hjem eller på vaskeri/vaskeordning, sortering af vasketøj, tøring og sammenlægning af vasketøj, indkøb af dagligvarer, bestilling af varer, tilberede og anrette et måltid samt rydde op og vaske op efter et måltid. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Madservice&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Madservice&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Visitation af madservice til borger, der modtager mad via en madserviceordning.
+
+Eksempler: Visitation til madservice. Eksklusiv anrettelse af maden.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Afloesning_i_hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Afløsning i hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter afløsning af den pårørende. Dvs. kommunal tilstedeværelse således, at den pårørende fx kan deltage i sociale aktiviteter, som den pårørende ellers ville være afskåret fra at deltage i.
+
+Eksempler: Fast vagt, tilstedeværelse&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Midlertidigt_ophold&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Midlertidigt ophold&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter midlertidig ophold, som udelukkende er bevilling af en plads. De indsatser, der leveres under et midlertidigt ophold, vil være indsatser, der er visiteret efter § 9&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Koordinering_med_paaroerende_og_eller_civilsamfund&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Koordinering med pårørende og/eller civilsamfund&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter koordinering med pårørende og/ eller civilsamfund omkring levering af den hjælp og støtte, som borgeren modtager. Der kan også være inddragelse af civilsamfund og foreninger med fokus på borgerens generelle trivsel.
+
+Eksempler: aftaler med pårørende omkring de pårørendes varetagelse af dele af praktisk hjælp og/eller personlig pleje. 
+Koordinering med civilsamfund og foreningsliv omkring afhjælpelse af ensomhed m.v.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Personlig_hjaelp_og_pleje&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Personlig hjælp og pleje&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rehabiliterende og vedligeholdende indsats, der omfatter hjælp og støtte til personlige hygiejne, udskillelser, ernæring, mobilitet, tilsyn/omsorg samt hverdagens aktiviteter.
+
+Eksempler: Bad, øvre og nedre toilette, toiletbesøg, urindomskift, indtagelse af mad og drikke, forflytning, lejring, tilsyns- og omsorgsbesøg, støtte til egen kontakt til myndigheder og sundhedsvæsenet samt generel struktur i hverdagen. Fokus er på at understøtte borgeren i at være mest muligt deltagende og selvhjulpen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Genoptraening&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Genoptræning&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Træning med henblik på at opnå et funktionsniveau svarende til det borgeren havde forud for en hændelse.
+
+Eksempler: Træning af borgere, der har været udsat for en hændelse som fx lungebetændelse eller lignende, hvor borgeren har behov for genoptræning for at opnå funktionsniveau svarende til før hændelsen.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Aflastningsophold_uden_for_hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Aflastningsophold uden for hjemmet&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter aflastning af pårørende. Alle former for aflastningsophold uden for hjemmet, således, at pårørende kan aflastes og/eller deltage i sociale aktiviteter, som pårørende ellers ville være afskåret fra at deltage i.
+
+Eksempler: Daghjem, nathjem, døgnophold.&quot;/&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Dialog_med_borger_om_tilrettelaeggelse_af_forloeb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dialog med borger om tilrettelæggelse af forløb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indsatsen omfatter den første dialog med borgeren om udmøntning og tilrettelæggelse af det visiterede forløb. 
+
+Eksempler: Første møde mellem medarbejder og borger i forbindelse med udmøntning og konkret tilrettelæggelse af forløb. Her kan også drøftes borgerens mål i forhold til selvhjulpenhed. Indsatsen anvendes ikke ved den løbende dialog mellem borger og medarbejder omkring ændringer og koordinering af hjælp og støtte.&quot;/&gt;
+      &lt;/concept&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;§ 83 stk. 1, nr. 2 Praktisk hjælp i hjemmet&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;§ 83 stk. 1, nr. 2 Praktisk hjælp i hjemmet&quot;/&gt;
@@ -6667,7 +6857,7 @@ Eksempler: Vægmonteret klapsæde, fjernelse af dørtrin, fastmonteret rampe(r),
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 16:58+0200">2024-06-13</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 13:18+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -6684,7 +6874,7 @@ Eksempler: Vægmonteret klapsæde, fjernelse af dørtrin, fastmonteret rampe(r),
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -6695,7 +6885,6 @@ Eksempler: Vægmonteret klapsæde, fjernelse af dørtrin, fastmonteret rampe(r),
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

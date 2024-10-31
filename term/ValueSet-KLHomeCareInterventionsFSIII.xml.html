@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>KLHjemmeplejeIndsatserFSIII - XML Representation - KL Terminologi v2.1.0</title>
+    <title>KLHjemmeplejeIndsatserFSIII - XML Representation - KL Terminologi v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,7 +41,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2.12"}
     h3,h4,h5,h6{--heading-prefix:"2.12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -60,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KL Terminologi</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - Release
+            <span style="display:inline-block;">2.2.0 - Release
 
 
             </span>
@@ -118,7 +119,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -173,7 +174,7 @@
         
           Active
           
-            as of 2024-06-13
+            as of 2024-10-31
           
         
       </td>
@@ -189,21 +190,20 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KLHomeCareInterventionsFSIII&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-23a80ae9-ab88-48ed-a689-36bdd3cc6e41&quot;&gt;23a80ae9-ab88-48ed-a689-36bdd3cc6e41&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-3823d4cd-c38f-49f7-bb15-bd2488b07cd9&quot;&gt;3823d4cd-c38f-49f7-bb15-bd2488b07cd9&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-6cacf7a2-97ef-4981-a16a-338d571fc115&quot;&gt;6cacf7a2-97ef-4981-a16a-338d571fc115&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-fe266687-9efd-4aea-a37c-49c88632d4f3&quot;&gt;fe266687-9efd-4aea-a37c-49c88632d4f3&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-4bfff76f-cc05-4635-96e5-282f4abb2986&quot;&gt;4bfff76f-cc05-4635-96e5-282f4abb2986&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-90910722-a79d-4c35-8110-3adc988b206b&quot;&gt;90910722-a79d-4c35-8110-3adc988b206b&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-aeb52f84-c587-4e12-8793-69ebf83819f5&quot;&gt;aeb52f84-c587-4e12-8793-69ebf83819f5&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-db582ef3-121c-4061-9569-3dbede361d47&quot;&gt;db582ef3-121c-4061-9569-3dbede361d47&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-ae759142-4006-454f-a585-ca02519e5579&quot;&gt;ae759142-4006-454f-a585-ca02519e5579&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-6f9ed46f-6498-4567-9637-2324dbfaa0a0&quot;&gt;6f9ed46f-6498-4567-9637-2324dbfaa0a0&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83_stk_1_nr_1_Personlig_hjaelp_og_pleje&quot;&gt;83_stk_1_nr_1_Personlig_hjaelp_og_pleje&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet&quot;&gt;83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83_stk_1_nr_3_Madservice&quot;&gt;83_stk_1_nr_3_Madservice&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83a_Rehabilitering_personlig_hjaelp_og_pleje&quot;&gt;83a_Rehabilitering_personlig_hjaelp_og_pleje&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83a_Rehabilitering_praktisk_hjaelp_i_hjemmet&quot;&gt;83a_Rehabilitering_praktisk_hjaelp_i_hjemmet&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H3&quot;&gt;H3&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H4&quot;&gt;H4&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H5&quot;&gt;H5&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H6&quot;&gt;H6&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H7&quot;&gt;H7&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet KLHomeCareInterventionsFSIII&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;KLHomeCareInterventionsFSIII&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcKLHomeCareInterventionsFSIII&quot;&gt; &lt;/a&gt;&lt;a name=&quot;KLHomeCareInterventionsFSIII-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-23a80ae9-ab88-48ed-a689-36bdd3cc6e41&quot;&gt;23a80ae9-ab88-48ed-a689-36bdd3cc6e41&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-3823d4cd-c38f-49f7-bb15-bd2488b07cd9&quot;&gt;3823d4cd-c38f-49f7-bb15-bd2488b07cd9&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-6cacf7a2-97ef-4981-a16a-338d571fc115&quot;&gt;6cacf7a2-97ef-4981-a16a-338d571fc115&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-fe266687-9efd-4aea-a37c-49c88632d4f3&quot;&gt;fe266687-9efd-4aea-a37c-49c88632d4f3&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-4bfff76f-cc05-4635-96e5-282f4abb2986&quot;&gt;4bfff76f-cc05-4635-96e5-282f4abb2986&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-90910722-a79d-4c35-8110-3adc988b206b&quot;&gt;90910722-a79d-4c35-8110-3adc988b206b&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-aeb52f84-c587-4e12-8793-69ebf83819f5&quot;&gt;aeb52f84-c587-4e12-8793-69ebf83819f5&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-db582ef3-121c-4061-9569-3dbede361d47&quot;&gt;db582ef3-121c-4061-9569-3dbede361d47&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-ae759142-4006-454f-a585-ca02519e5579&quot;&gt;ae759142-4006-454f-a585-ca02519e5579&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-6f9ed46f-6498-4567-9637-2324dbfaa0a0&quot;&gt;6f9ed46f-6498-4567-9637-2324dbfaa0a0&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-2a668eb0-25f1-4101-863c-11e81c4bf210&quot;&gt;2a668eb0-25f1-4101-863c-11e81c4bf210&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83_stk_1_nr_1_Personlig_hjaelp_og_pleje&quot;&gt;83_stk_1_nr_1_Personlig_hjaelp_og_pleje&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet&quot;&gt;83_stk_1_nr_2_Praktisk_hjaelp_i_hjemmet&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83_stk_1_nr_3_Madservice&quot;&gt;83_stk_1_nr_3_Madservice&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83a_Rehabilitering_personlig_hjaelp_og_pleje&quot;&gt;83a_Rehabilitering_personlig_hjaelp_og_pleje&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-83a_Rehabilitering_praktisk_hjaelp_i_hjemmet&quot;&gt;83a_Rehabilitering_praktisk_hjaelp_i_hjemmet&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H3&quot;&gt;H3&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H4&quot;&gt;H4&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H5&quot;&gt;H5&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H6&quot;&gt;H6&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-H7&quot;&gt;H7&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include codes from&lt;a href=&quot;CodeSystem-FSIII.html&quot;&gt;&lt;code&gt;urn:oid:1.2.208.176.2.21&lt;/code&gt;&lt;/a&gt; where concept  descends from &lt;a href=&quot;CodeSystem-FSIII.html#FSIII-Aeldrelovsindsats&quot;&gt;Aeldrelovsindsats&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.kl.dk/term/ValueSet/KLHomeCareInterventionsFSIII&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.2.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KLHomeCareInterventionsFSIII&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KLHjemmeplejeIndsatserFSIII&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-06-13T16:58:41+02:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-10-31T13:18:46+01:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kommunernes Landsforening&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kommunernes Landsforening&quot;/&gt;
@@ -299,6 +299,14 @@
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter">filter</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.property">property</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;concept&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.op">op</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;descendent-of&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2a668eb0-25f1-4101-863c-11e81c4bf210&quot;/&gt;
+      &lt;/filter&gt;
+    &lt;/include&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:1.2.208.176.2.21&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter">filter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.property">property</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;concept&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.op">op</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;descendent-of&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;83_stk_1_nr_1_Personlig_hjaelp_og_pleje&quot;/&gt;
       &lt;/filter&gt;
     &lt;/include&gt;
@@ -374,6 +382,14 @@
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;H7&quot;/&gt;
       &lt;/filter&gt;
     &lt;/include&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:1.2.208.176.2.21&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter">filter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.property">property</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;concept&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.op">op</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;descendent-of&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Aeldrelovsindsats&quot;/&gt;
+      &lt;/filter&gt;
+    &lt;/include&gt;
   &lt;/compose&gt;
 &lt;/ValueSet&gt;</code></pre>
 
@@ -399,7 +415,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 16:58+0200">2024-06-13</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 13:18+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -416,7 +432,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -427,7 +443,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

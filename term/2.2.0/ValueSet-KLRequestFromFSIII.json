@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLRequestFromFSIII",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KLRequestFromFSIII</b></p><a name=\"KLRequestFromFSIII\"> </a><a name=\"hcKLRequestFromFSIII\"> </a><a name=\"KLRequestFromFSIII-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-95851822-5a33-4349-a1f2-9b1245369bf5\">95851822-5a33-4349-a1f2-9b1245369bf5</a></li><li>Include codes from<a href=\"CodeSystem-FSIII.html\"><code>urn:oid:1.2.208.176.2.21</code></a> where concept  descends from <a href=\"CodeSystem-FSIII.html#FSIII-A\">A</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLRequestFromFSIII",
+  "version" : "2.2.0",
+  "name" : "KLRequestFromFSIII",
+  "title" : "KLHenvendelseHenvisningFraFSIII",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-31T13:15:50+01:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Type of service requesters as defined by FSIII",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "95851822-5a33-4349-a1f2-9b1245369bf5"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.208.176.2.21",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "A"
+      }]
+    }]
+  }
+}

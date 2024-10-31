@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>KLOplysningKoder - JSON Representation - KL Terminologi v2.1.0</title>
+    <title>KLOplysningKoder - JSON Representation - KL Terminologi v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,7 +41,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2.30"}
     h3,h4,h5,h6{--heading-prefix:"2.30"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -60,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KL Terminologi</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - Release
+            <span style="display:inline-block;">2.2.0 - Release
 
 
             </span>
@@ -118,7 +119,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -173,7 +174,7 @@
         
           Active
           
-            as of 2024-06-13
+            as of 2024-10-31
           
         
       </td>
@@ -189,21 +190,20 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
-{
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "KLInformationCodes",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLGeneralInformationFSIII.html\&quot;&gt;KLGenerelInformationFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLNursingAreasFSIII.html\&quot;&gt;KLSygeplejeOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLHomeCareAreasFSIII.html\&quot;&gt;KLHjemmeplejeOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLTheraphyAreasFSIII.html\&quot;&gt;KLTræningOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLPreventionAreasFSIII.html\&quot;&gt;KLForebyggelseOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLThemesFFB.html\&quot;&gt;KLTemaerFFB&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet KLInformationCodes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;KLInformationCodes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcKLInformationCodes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;KLInformationCodes-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLGeneralInformationFSIII.html\&quot;&gt;KLGenerelInformationFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLNursingAreasFSIII.html\&quot;&gt;KLSygeplejeOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLHomeCareAreasFSIII.html\&quot;&gt;KLHjemmeplejeOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLTheraphyAreasFSIII.html\&quot;&gt;KLTræningOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLPreventionAreasFSIII.html\&quot;&gt;KLForebyggelseOmråderFSIII&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in &lt;a href=\&quot;ValueSet-KLThemesFFB.html\&quot;&gt;KLTemaerFFB&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.kl.dk/term/ValueSet/KLInformationCodes",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.1.0",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.2.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "KLInformationCodes",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "KLOplysningKoder",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-06-13T16:58:41+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2024-10-31T13:18:46+01:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Kommunernes Landsforening",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -275,7 +275,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 16:58+0200">2024-06-13</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 13:18+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -292,7 +292,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -303,7 +303,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

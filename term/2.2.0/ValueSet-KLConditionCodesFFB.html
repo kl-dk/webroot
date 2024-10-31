@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>KLTilstandKoderFFB - KL Terminologi v2.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/kl-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.46"}
+    h3,h4,h5,h6{--heading-prefix:"2.46"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.kl.dk">
+            <img height="50" alt="Visit KL's website" src="assets/images/KL_logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://kl.dk/fhir"><img height="50" alt="Visit KL's FHIR website" src="assets/images/KL-fhir-logo.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">KL Terminologi</span>
+            <br/>
+            <span style="display:inline-block;">2.2.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>KLTilstandKoderFFB</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-KLConditionCodesFFB.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-KLConditionCodesFFB.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-KLConditionCodesFFB.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: KLTilstandKoderFFB
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.kl.dk/term/ValueSet/KLConditionCodesFFB<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLConditionCodesFFB"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLConditionCodesFFB|2.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-10-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">KLConditionCodesFFB</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Danish municipality FFB condition codes</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li>Included into <a href="ValueSet-KLConditionCodes.html">KLConditionCodes</a></li>
+ <li>Included into <a href="ValueSet-KLConditionsAndTargetGroupsFFB.html">KLConditionsAndTargetGroupsFFB</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet KLConditionCodesFFB</b></p><a name="KLConditionCodesFFB"> </a><a name="hcKLConditionCodesFFB"> </a><a name="KLConditionCodesFFB-en-US"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Import all the codes that are contained in <a href="ValueSet-KLConditionFFCodesFFB.html">KLTilstandFFKoderFFB</a></li>
+<li>Import all the codes that are contained in <a href="ValueSet-KLConditionADCodesFFB.html">KLTilstandADKoderFFB</a></li>
+<li>Import all the codes that are contained in <a href="ValueSet-KLConditionOCodesFFB.html">KLTilstandOKoderFFB</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on:</p><ul><li><a href="CodeSystem-FFB.html">codesystem FFB v2.2.0 (CodeSystem)</a></li><li><a href="ValueSet-KLConditionADCodesFFB.html">valueset KLTilstandADKoderFFB v2.2.0 (ValueSet)</a></li><li><a href="ValueSet-KLConditionFFCodesFFB.html">valueset KLTilstandFFKoderFFB v2.2.0 (ValueSet)</a></li><li><a href="ValueSet-KLConditionOCodesFFB.html">valueset KLTilstandOKoderFFB v2.2.0 (ValueSet)</a></li></ul></div><p>This value set contains 67 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-1a6585e7-25a6-4518-9384-8f6290f879cc"> </a>  <a href="CodeSystem-FFB.html#FFB-1a6585e7-25a6-4518-9384-8f6290f879cc">1a6585e7-25a6-4518-9384-8f6290f879cc</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Stemme og tale</td><td><div><p>Stemme og tale er en fysisk funktion, der vedrører frembringelse af lyd og tale.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-3b4bcb40-f761-46a5-bc5f-b30ac37c88ed"> </a>  <a href="CodeSystem-FFB.html#FFB-3b4bcb40-f761-46a5-bc5f-b30ac37c88ed">3b4bcb40-f761-46a5-bc5f-b30ac37c88ed</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Bevægelse</td><td><div><p>Bevægelse er en fysisk funktion, der vedrører bevægelse af kroppen. Bevægelse spænder bredt fra en persons reflekser, ufrivillige og viljesbestemte bevægelser til gang, løb eller andre bevægelser, som inddrager hele kroppen.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-9959e779-e8ee-47e8-989b-bbff4aae2883"> </a>  <a href="CodeSystem-FFB.html#FFB-9959e779-e8ee-47e8-989b-bbff4aae2883">9959e779-e8ee-47e8-989b-bbff4aae2883</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Syn</td><td><div><p>Syn er en fysisk funktion, der vedrører opfattelse af lys og af form, størrelse og farve af visuelle stimuli.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-b37419b3-c5f2-43e9-9e9d-4037b06b3fa5"> </a>  <a href="CodeSystem-FFB.html#FFB-b37419b3-c5f2-43e9-9e9d-4037b06b3fa5">b37419b3-c5f2-43e9-9e9d-4037b06b3fa5</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Smerte og sansefunktioner</td><td><div><p>Smerte og sansefunktioner er en fysisk funktion, der vedrører opfattelsen af sanseindtryk samt ubehagelige fornemmelser som tegn på potentiel eller aktuel skade eller tilstand på dele af kroppen. Sanseindtryk omfatter fx berøringssans, temperatursans, lugt- og smagssans samt opfattelsen af kropsdeles position i forhold til hinanden. Smerter omfatter også fantomsmerter.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-eb3599bc-c0bb-4281-8a1c-bf6eab8ffde3"> </a>  <a href="CodeSystem-FFB.html#FFB-eb3599bc-c0bb-4281-8a1c-bf6eab8ffde3">eb3599bc-c0bb-4281-8a1c-bf6eab8ffde3</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Hørelse</td><td><div><p>Hørelse er en fysisk funktion, der vedrører opfattelse af lyde og skelnen af lokalisation, tone, styrke og kvalitet af lyde.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-17c35058-eb88-4a7a-8727-74cd12be42c7"> </a>  <a href="CodeSystem-FFB.html#FFB-17c35058-eb88-4a7a-8727-74cd12be42c7">17c35058-eb88-4a7a-8727-74cd12be42c7</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Opmærksomhed og koncentrationsevne</td><td><div><p>Opmærksomhed og koncentrationsevne er en mental funktion, der er bestemmende for fokusering på eksterne stimuli eller indre oplevelser så længe som nødvendigt. Begrebet omfatter fx en persons evne til at fastholde opmærksomhed, skift i opmærksomhed, opdeling af opmærksomhed, hvor der fokuseres på to eller flere stimuli på samme tid, samt deltagende opmærksomhed, hvor to eller flere personer fokuserer på det samme.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-3591c972-5b15-4bbd-86c7-91622cda56e8"> </a>  <a href="CodeSystem-FFB.html#FFB-3591c972-5b15-4bbd-86c7-91622cda56e8">3591c972-5b15-4bbd-86c7-91622cda56e8</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Virkelighedsopfattelse</td><td><div><p>Virkelighedsopfattelse er den mentale funktion, der er bestemmende for genkendelse og fortolkning af sanseindtryk. Virkelighedsopfattelse adskiller sig fra de fysiske funktioner vedrørende sanserne ved at have fokus på, hvordan en person genkender og fortolker sanseindtrykkene og ikke, hvorvidt de sanses eller ej. Begrebet omfatter fx hallucinationer og vrangforestillinger.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-4934e45a-0f93-4c23-a767-2b681378700b"> </a>  <a href="CodeSystem-FFB.html#FFB-4934e45a-0f93-4c23-a767-2b681378700b">4934e45a-0f93-4c23-a767-2b681378700b</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Bevidsthedstilstand</td><td><div><p>Bevidsthedstilstand er en mental funktion, der er bestemmende for vågenhed. Eksempler på bevidsthedstilstand kan være, at en person er vågen i perioder, men i andre perioder er i en vegetativ tilstand. Relevante aspekter af bevidsthedstilstand er fx hyppigheden eller varigheden af vågenhed, hvorvidt personen er i koma eller trance eller taber bevidstheden. Begrebet omfatter ikke, hvorvidt en person handler bevidst eller intentionelt og skal heller ikke forveksles med begrebet 'virkelighedsopfattelse' eller 'indsigt i egen situation'.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-52e0b8dd-f5fa-4e1a-b66e-f5e4a41bd313"> </a>  <a href="CodeSystem-FFB.html#FFB-52e0b8dd-f5fa-4e1a-b66e-f5e4a41bd313">52e0b8dd-f5fa-4e1a-b66e-f5e4a41bd313</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Psykosociale funktioner</td><td><div><p>De psykosociale funktioner er en mental funktion, som udvikles gennem livet, og som er nødvendig for at danne, indgå i og fastholde relationer med andre mennesker. De psykosociale funktioner danner dermed baggrund for en persons sociale og mellemmenneskelige færdigheder. De omfatter fx evnen til at aflæse andres følelser eller sociale normer. De omfatter også psykologiske funktioner, som er en forudsætning for at indgå i relationer, fx selvværd og identitetsdannelse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-61452fe5-cea2-4d92-b2f1-406e9a5d31cb"> </a>  <a href="CodeSystem-FFB.html#FFB-61452fe5-cea2-4d92-b2f1-406e9a5d31cb">61452fe5-cea2-4d92-b2f1-406e9a5d31cb</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Hukommelse</td><td><div><p>Hukommelse er en mental funktion, der er bestemmende for registrering, lagring og genkaldelse af information efter behov. Hukommelse er fx korttidshukommelse og langtidshukommelse, herunder genkaldelse af information, der er gemt i langtidshukommelsen og bringes frem i bevidstheden. Eksempler på hukommelse kan være evnen til at huske aftaler, steder og personer, ligesom der kan skelnes mellem fx auditiv, visuel, taktil eller følelsesmæssig hukommelse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-6279a3dc-7085-4157-809c-f96922242b1b"> </a>  <a href="CodeSystem-FFB.html#FFB-6279a3dc-7085-4157-809c-f96922242b1b">6279a3dc-7085-4157-809c-f96922242b1b</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Indsigt i egen situation</td><td><div><p>Indsigt i egen situation er en mental funktion, der vedrører bevidsthed om og forståelse af en selv og egen adfærd. Indsigt i egen situation er fx en persons indsigt i en eventuel funktionsnedsættelse eller socialt problem og konsekvenserne heraf.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-8028b034-cad2-42df-b51c-aaba9c0bba61"> </a>  <a href="CodeSystem-FFB.html#FFB-8028b034-cad2-42df-b51c-aaba9c0bba61">8028b034-cad2-42df-b51c-aaba9c0bba61</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Igangsætning og motivation</td><td><div><p>Igangsætning og motivation er en mental funktion, som får en person til at opnå tilfredsstillelse af specifikke behov og overordnede mål på en vedholdende måde. Igangsætning og motivation er fx en persons energiniveau, motivation, appetit og trang samt impulskontrol. Begrebet omfatter dermed en persons evne til at omsætte en tanke eller følelse i handling, hvor man tager initiativ til at igangsætte en aktivitet og afslutte den. Det at opnå eller bevare håb som vigtig motivationsfaktor er også omfattet af begrebet.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-9c2173e6-6465-44d3-af16-7c44059193b2"> </a>  <a href="CodeSystem-FFB.html#FFB-9c2173e6-6465-44d3-af16-7c44059193b2">9c2173e6-6465-44d3-af16-7c44059193b2</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Organisering og planlægning</td><td><div><p>Organisering og planlægning er en mental funktion, der vedrører helhedsdannelse, systematisering og udvikling af metode til fremgangsmåde eller handling.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-b93216fa-3843-4a7e-85bc-e3ef35a1967f"> </a>  <a href="CodeSystem-FFB.html#FFB-b93216fa-3843-4a7e-85bc-e3ef35a1967f">b93216fa-3843-4a7e-85bc-e3ef35a1967f</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Problemløsning</td><td><div><p>Problemløsning er en mental funktion, der er bestemmende for identifikation, analyse og integrering af uoverensstemmende eller modstridende informationer til en løsning. Problemløsning er dermed en persons evne til at løse problemer, herunder at identificere, at der er et problem, analysere det og fremkomme med en løsning.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-dccaa419-0bcd-4056-a11a-2e385e23edc6"> </a>  <a href="CodeSystem-FFB.html#FFB-dccaa419-0bcd-4056-a11a-2e385e23edc6">dccaa419-0bcd-4056-a11a-2e385e23edc6</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Følelser og adfærd</td><td><div><p>Følelser og adfærd er en mental funktion, der er forbundet med følelser og en persons tilbøjelighed til at reagere på bestemte måder i forskellige situationer. Følelser og adfærd er fx, hvorvidt en person har følelser, der er afstemt eller passer til den situation, personen er i, og kan regulere sine følelser. Begrebet vedrører også personens følelsesmæssige spændvidde. Følelser kan komme til udtryk gennem adfærd. Eksempler på adfærd er ind- og udadreagerende adfærd, seksuelt krænkende adfærd, selvskadende adfærd eller selvmordsforsøg.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-ef4271c4-f942-4194-a2b0-e9a7045eab22"> </a>  <a href="CodeSystem-FFB.html#FFB-ef4271c4-f942-4194-a2b0-e9a7045eab22">ef4271c4-f942-4194-a2b0-e9a7045eab22</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Intellektuelle funktioner</td><td><div><p>Den intellektuelle funktion er en overordnet mental funktion, som kræves til forståelse og integrering af forskellige mentale funktioner og deres udvikling over et livsløb. Begrebet har betydning i forhold til fx indlæringsevne og intellektuel formåen, herunder en persons skolefærdigheder. Begrebet omfatter ikke de eksekutive funktioner, så som organisering og planlægning, problemløsning og indsigt i egen situation.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-f7c0ef6c-18ba-4d38-9df5-4c891f154a08"> </a>  <a href="CodeSystem-FFB.html#FFB-f7c0ef6c-18ba-4d38-9df5-4c891f154a08">f7c0ef6c-18ba-4d38-9df5-4c891f154a08</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Orienteringsevne</td><td><div><p>Orienteringsevne en en mental funktion, der er bestemmende for kendskab til og konstatering af relationerne til en selv, til andre, til tid, sted og andre omgivelser. Orienteringsevne er fx en persons evne til at orientere sig i tid og sted, rum og retning og forstå egen identitet og identiteten af personer i personens umiddelbare nærhed.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-08aa68ce-acd6-4e03-b6b5-091811324345"> </a>  <a href="CodeSystem-FFB.html#FFB-08aa68ce-acd6-4e03-b6b5-091811324345">08aa68ce-acd6-4e03-b6b5-091811324345</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Økonomisk situation</td><td><div><p>En persons økonomiske situation er den samlede mængde af forhold, der bestemmer, hvordan en person er stillet finansielt. Et eksempel på økonomisk situation kan være, at man er på kontanthjælp eller har fast indtægt, lever af opsparing, har mistet sin indtægt eller låner penge af sit netværk. Problematikker omkring den økonomiske situation kan fx omfatte utilstrækkelige økonomiske ressourcer eller gæld. Ressourcer i forhold til den økonomiske situation kan fx være, at man er trygt stillet økonomisk.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-35c56275-0093-4901-9fd8-d06fdb5cb8f3"> </a>  <a href="CodeSystem-FFB.html#FFB-35c56275-0093-4901-9fd8-d06fdb5cb8f3">35c56275-0093-4901-9fd8-d06fdb5cb8f3</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Boligsituation</td><td><div><p>En persons boligsituation er den samlede mængde af forhold, der bestemmer, hvordan en person er stillet med hensyn til bolig. Et eksempel på boligsituation kan fx være, at man bor til leje eller er opsagt, bor ude eller hjemme, mangler egen bolig og pt. bor hos personer i netværket osv. Problematikker i forhold til boligsituationen kan være uhensigtsmæssig indretning i forhold til beboerens behov, uhensigtsmæssig brug af boligen eller hjemløshed, hvor en person ikke har eller ikke kan opholde sig i egen bolig. Ressourcer i forhold til boligsituationen kan være, at ens bolig er indrettet hensigtsmæssigt i forhold til ens funktionsnedsættelse, eller at man kan blive boende i sin bolig, selvom en funktionsnedsættelse eller et socialt problem har betydet ændringer i ens indtægtsforhold.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-52efa2e9-e0dc-41eb-8c01-9865e2fdebae"> </a>  <a href="CodeSystem-FFB.html#FFB-52efa2e9-e0dc-41eb-8c01-9865e2fdebae">52efa2e9-e0dc-41eb-8c01-9865e2fdebae</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Interesser</td><td><div><p>Interesser er de aktiviteter eller objekter, som en person beskæftiger sig indgående med og er optaget af. Interesser kan spænde over alle tænkelige forhold. Eksempler på problematikker vedrørende interesser kan være, at interessen tager overhånd og bliver for tidskrævende eller på anden vis er uhensigtsmæssig. Eksempler på ressourcer vedrørende interesser kan være, at interessen virker afstressende eller motiverende eller på anden vis bidrager positivt til livskvaliteten.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-7a8f247b-baf8-4552-95bb-acf8ef004b74"> </a>  <a href="CodeSystem-FFB.html#FFB-7a8f247b-baf8-4552-95bb-acf8ef004b74">7a8f247b-baf8-4552-95bb-acf8ef004b74</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Familiesituation</td><td><div><p>En persons familiesituation er den samlede mængde af forhold, der bestemmer, hvordan en person er stillet med hensyn til familie. Et eksempel på familiesituation kan være, at man er gift eller samlevende, lever alene eller sammen med andre eller har børn. Problematikker vedrørende familiesituation kan fx være skilsmisse, uønsket social isolation, ufrivillig barnløshed eller en syg partner. Ressourcer vedrørende familiesituation kan være, at ens familiesituation er i overensstemmelse med ens egne ønsker og behov.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-83cf43f1-6d71-477c-8583-2e28755b41d3"> </a>  <a href="CodeSystem-FFB.html#FFB-83cf43f1-6d71-477c-8583-2e28755b41d3">83cf43f1-6d71-477c-8583-2e28755b41d3</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Kriminalitet</td><td><div><p>Kriminalitet er en handling, der er strafbar. Kriminalitet som socialt problem er kendetegnet ved, at en person er, eller er i fare for at blive, marginaliseret.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-d493a97d-6036-423d-87ff-c2a086e9d664"> </a>  <a href="CodeSystem-FFB.html#FFB-d493a97d-6036-423d-87ff-c2a086e9d664">d493a97d-6036-423d-87ff-c2a086e9d664</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Traumatiske oplevelser</td><td><div><p>Traumatiske oplevelser er konkrete oplevelser, der har belastende følger for en person. Eksempler på traumatiske oplevelser er omsorgssvigt, ulykker og overgreb.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-e993d8c3-b7d7-4d72-9be2-937e5ba38b5a"> </a>  <a href="CodeSystem-FFB.html#FFB-e993d8c3-b7d7-4d72-9be2-937e5ba38b5a">e993d8c3-b7d7-4d72-9be2-937e5ba38b5a</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Prostitution</td><td><div><p>Prostitution er en handling, hvor mindst to handlende personer på markedsmæssige betingelser henholdsvis køber og sælger en prostitutionsydelse mod betaling. Prostitution som socialt problem er kendetegnet ved, at en person er, eller er i fare for at blive, marginaliseret. Den tankemæssige forestilling om fænomenet prostitution er værdineutral. Inden for Servicelovens område er prostitution benævnt som type af socialt problem, men hvorvidt prostitution udgør et problem for den enkelte må afgøres på individniveau. Begrebet omfatter ikke forhold, der falder under de strafferetlige regler, fx køb af seksuelle ydelser, der sælges af unge under 18 år, eller det fænomen, at personer tvinges af andre til at sælge seksuelle ydelser.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-f695cec7-2b39-4c7e-8731-da8558a4fb3f"> </a>  <a href="CodeSystem-FFB.html#FFB-f695cec7-2b39-4c7e-8731-da8558a4fb3f">f695cec7-2b39-4c7e-8731-da8558a4fb3f</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Uddannelse og job</td><td><div><p>En persons uddannelses og job er den samlede mængde af forhold, der bestemmer, hvordan en person er stillet med hensyn til uddannelsesniveau og arbejde. Arbejde dækker bredt, fx både ordinært arbejde, frivilligt arbejde eller beskæftigelsestilbud. Et eksempel på uddannelses- og jobsituation kan være en gennemført ungdomsuddannelse, igangværende enkeltfagskurser, ledighed, fast arbejde eller frivilligt arbejde. Problematikker i relation til uddannelse og job kan være ledighed eller højt fravær fra studierne. Ressourcer i relation til uddannelse og job kan fx være, at man har en uddannelse eller gode erfaringer med job og beskæftigelse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-081ab1be-7dc1-41fa-803c-12a146eb0b74"> </a>  <a href="CodeSystem-FFB.html#FFB-081ab1be-7dc1-41fa-803c-12a146eb0b74">081ab1be-7dc1-41fa-803c-12a146eb0b74</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Sundhedsfaglig behandling og træning</td><td><div><p>Sundhedsfaglig behandling og træning er forhold vedrørende behandling og træning, som er bevilget efter sundhedsloven. Begrebet omfatter tidligere og nuværende behandling og træning, der er bevilget efter sundhedsloven, herunder medicinsk behandling. Begrebet omfatter ikke bevillinger efter serviceloven eller alternativ, uautoriseret behandling.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-0b650369-258a-4d01-a811-42b306c2f89d"> </a>  <a href="CodeSystem-FFB.html#FFB-0b650369-258a-4d01-a811-42b306c2f89d">0b650369-258a-4d01-a811-42b306c2f89d</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Motion</td><td><div><p>Motion er en handling, hvor en person udfører regelmæssige, fysiske aktiviteter med henblik på at bevare et godt helbred og holde kroppen i form.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-69dbfad7-859a-4596-8737-8054f6b4948f"> </a>  <a href="CodeSystem-FFB.html#FFB-69dbfad7-859a-4596-8737-8054f6b4948f">69dbfad7-859a-4596-8737-8054f6b4948f</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Fysisk helbred</td><td><div><p>Fysisk helbred er en egenskab hos et individ mht. sygdom og sundhed. Helbred handler om, hvorvidt en person er fysisk rask eller syg, fx om man er udsat for hyppige infektioner, har allergier eller en kronisk sygdom.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-83376fdb-f55d-4dd9-944e-b49631a9836f"> </a>  <a href="CodeSystem-FFB.html#FFB-83376fdb-f55d-4dd9-944e-b49631a9836f">83376fdb-f55d-4dd9-944e-b49631a9836f</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Søvn</td><td><div><p>Søvn er en tilstand, hvis kvalitet afgøres af søvnmængden og forhold omkring indsovning og gennemsovning, og hvorvidt der er tale om en naturlig søvn med optimal fysisk og psykisk hvile og afslapning.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-c67aed23-d4f3-4ae6-8886-156c99048e5b"> </a>  <a href="CodeSystem-FFB.html#FFB-c67aed23-d4f3-4ae6-8886-156c99048e5b">c67aed23-d4f3-4ae6-8886-156c99048e5b</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Kost</td><td><div><p>Kost er en persons indtagelse af fødemidler og deres sammensætning. Et relevant aspekt af kost er også, hvorvidt en person spiser og drikker tilstrækkeligt eller for lidt eller for meget.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-c8f4475a-8de3-4920-ad0c-eea78c49a68d"> </a>  <a href="CodeSystem-FFB.html#FFB-c8f4475a-8de3-4920-ad0c-eea78c49a68d">c8f4475a-8de3-4920-ad0c-eea78c49a68d</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Rusmidler</td><td><div><p>En persons situation vedrørende rusmidler er den samlede mængde af forhold, der har at gøre med en persons brug af rusmidler. Et eksempel på en situation vedrørende rusmidler kan være en bekymrende hyppig brug af rusmidler eller selvmedicinering med hash. Eksempler på problematikker vedrørende rusmidler kan være alkohol- og stofmisbrug eller misbrug af lægemidler. Et eksempel på ressourcer vedrørende rusmidler kan være et gennemført behandlingsforløb.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-e6f82424-da5a-41d1-bd1a-5796aa79d5f2"> </a>  <a href="CodeSystem-FFB.html#FFB-e6f82424-da5a-41d1-bd1a-5796aa79d5f2">e6f82424-da5a-41d1-bd1a-5796aa79d5f2</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Døgnrytme</td><td><div><p>Døgnrytme er den struktur, som en person inddeler døgnets forskellige aktiviteter i. Døgnrytmen opstår fx ved at spise, arbejde og sove på mere eller mindre fastlagte tidspunkter.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-f5b8e809-7689-4952-838c-a069c99408b3"> </a>  <a href="CodeSystem-FFB.html#FFB-f5b8e809-7689-4952-838c-a069c99408b3">f5b8e809-7689-4952-838c-a069c99408b3</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Tobak</td><td><div><p>Tobak omfatter både cigaretter, pibe, vandpibe, e-cigaretter, snus mv.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-3f9da5ac-9686-4eeb-b517-b46e17fcb1d7"> </a>  <a href="CodeSystem-FFB.html#FFB-3f9da5ac-9686-4eeb-b517-b46e17fcb1d7">3f9da5ac-9686-4eeb-b517-b46e17fcb1d7</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Indgå i samspil og kontakt</td><td><div><p>At indgå i samspil og kontakt er en aktivitet, som består i at indgå i enkle eller komplekse relationer med mennesker på en måde, der er kontekstuelt og socialt passende. Begrebet har fokus på evnen til at indgå i relationer. Det vil fx sige at kunne vise hensyn og respekt, når det er passende eller reagere på andres følelser og indgå i samspil med andre mennesker (fremmede, venner, slægtninge, familiemedlemmer og kærester) fx ved at kunne give og modtage kritik, reagere på sociale signaler, anvende passende fysisk kontakt i sammenhængen, styre følelser og impulser, styre verbale og fysiske aggressioner og handle i overensstemmelse med sociale regler og konventioner.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-4c082610-b122-4019-96f2-1061e287445e"> </a>  <a href="CodeSystem-FFB.html#FFB-4c082610-b122-4019-96f2-1061e287445e">4c082610-b122-4019-96f2-1061e287445e</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Varetage relationer til netværk</td><td><div><p>At varetage relationer til netværk er en handling, der består i at skabe og opretholde et netværk. Relationerne til de enkelte personer i netværket kan både være af formel og uformel karakter, fx relationer til professionelle fagpersoner og relationer til venner, naboer, bekendte og ligesindede.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-dcc6bb77-45af-4625-9c4d-7d7878307220"> </a>  <a href="CodeSystem-FFB.html#FFB-dcc6bb77-45af-4625-9c4d-7d7878307220">dcc6bb77-45af-4625-9c4d-7d7878307220</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Deltage i sociale fællesskaber og fritidsaktiviteter</td><td><div><p>At deltage i sociale fællesskaber er en handling, der består i at deltage i organiseret socialt liv uden for familien, i lokalsamfundet, i det sociale liv og som medborger. Begrebet har fokus på en persons evne til og mulighed for at deltage i fællesskaber og frivilligt arbejde, herunder fx rekreative aktiviteter og fritidsaktiviteter, religiøse eller åndelige fællesskaber samt politisk liv.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d"> </a>  <a href="CodeSystem-FFB.html#FFB-685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d">685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Varetage beskæftigelse</td><td><div><p>Varetage beskæftigelse er en handling, der består i at deltage i alle aspekter af et arbejde, erhverv eller anden for for beskæftigelse som ansat på fuldtid eller deltid eller som selvstændig. Eksempler på aspekter er at søge et arbejde og få det, udføre de nødvendige opgaver i jobbet, møde på arbejde til tiden, lede andre arbejdere eller selv blive ledet samt at udføre de nødvendige opgaver alene eller i gruppe.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-70443014-3faf-402d-abcf-396bfad32eb9"> </a>  <a href="CodeSystem-FFB.html#FFB-70443014-3faf-402d-abcf-396bfad32eb9">70443014-3faf-402d-abcf-396bfad32eb9</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Varetage økonomi</td><td><div><p>At varetage økonomi er en handling, der består i at varetage opgaver i relation til ens økonomi. Begrebet omfatter varetagelse af basale økonomiske transaktioner som fx at betale for varer eller have overblik over faste udgifter, spare op eller benytte netbank.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-8888edfa-642b-4329-9fe3-a9b180e6d3f4"> </a>  <a href="CodeSystem-FFB.html#FFB-8888edfa-642b-4329-9fe3-a9b180e6d3f4">8888edfa-642b-4329-9fe3-a9b180e6d3f4</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Varetage uddannelse</td><td><div><p>Varetage uddannelse er et struktureret kompetencegivende undervisningsforløb, der kvalificerer modtageren til fortsat uddannelse eller til at udøve et bestemt erhverv eller udføre en bestemt opgave. Begrebet rummer skolegang, erhvervsuddannelse og videregående uddannelse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-8bef71de-55b5-47fe-b438-18ac769106b3"> </a>  <a href="CodeSystem-FFB.html#FFB-8bef71de-55b5-47fe-b438-18ac769106b3">8bef71de-55b5-47fe-b438-18ac769106b3</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Håndtere post</td><td><div><p>At håndtere post er en handling, der omfatter at tjekke, om der er fysisk eller digital post og at reagere på modtaget post og følge op herpå.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-fd4b8dd3-5c4b-4257-8c13-ea045617d2f6"> </a>  <a href="CodeSystem-FFB.html#FFB-fd4b8dd3-5c4b-4257-8c13-ea045617d2f6">fd4b8dd3-5c4b-4257-8c13-ea045617d2f6</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Varetage bolig</td><td><div><p>At varetage bolig er en handling, der består i at leje eller købe, møblere, indrette og fastholde et hus, en lejlighed eller anden bolig. Fastholdelse af bolig kan eksempelvis være at efterleve en eventuel husorden eller deltage i fællesopgaver. At varetage bolig inkluderer også at flytte ud af en bolig igen.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-2ba29098-a527-43d5-b858-4c5353669f42"> </a>  <a href="CodeSystem-FFB.html#FFB-2ba29098-a527-43d5-b858-4c5353669f42">2ba29098-a527-43d5-b858-4c5353669f42</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Fremstille meddelelser</td><td><div><p>At fremstille meddelelser er en aktivitet, der består i at fremsætte meddelelser med bogstavelige og underforståede betydninger mundtligt eller ved at anvende fagter, tegn, tegninger eller formaliseret tegnsprog eller skrift. Med formidling af meddelelser menes fx at gøre rede for kendsgerninger eller fortælle en historie, udtrykke uenighed eller forklare kendsgerninger eller komplekse tanker, samt at kunne meddele sig ved hjælp af kropssprog, almindelige tegn, symboler og billeder.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-986898d0-e2e5-4afa-9cb3-ee7aecaa0143"> </a>  <a href="CodeSystem-FFB.html#FFB-986898d0-e2e5-4afa-9cb3-ee7aecaa0143">986898d0-e2e5-4afa-9cb3-ee7aecaa0143</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Samtale</td><td><div><p>Samtale er en aktivitet, der består i at indlede, opretholde og afslutte udveksling af tanker og ideer frembragt enten i talesprog, tegnsprog eller med andre sprog mellem en eller flere personer.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-9bbbffef-c404-4ea3-a927-cd22d8027e6d"> </a>  <a href="CodeSystem-FFB.html#FFB-9bbbffef-c404-4ea3-a927-cd22d8027e6d">9bbbffef-c404-4ea3-a927-cd22d8027e6d</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Forstå meddelelser</td><td><div><p>At forstå meddelelser er en aktivitet, der består i at forstå bogstavelige og underforståede meninger i talesprog eller i meddelelser, som formidles med fagter, symboler og tegninger i formaliseret tegnsprog eller på skrift. Med forstå menes fx at skelne om en udtalelse udtrykker en kendsgerning eller er et billedligt udtryk, samt at kunne forstå betydningen af kropssprog, almindelige tegn, symboler og billeder.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-a80e8f96-18ba-4ee4-9496-d3ce882c2f85"> </a>  <a href="CodeSystem-FFB.html#FFB-a80e8f96-18ba-4ee4-9496-d3ce882c2f85">a80e8f96-18ba-4ee4-9496-d3ce882c2f85</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Anvende kommunikationsudstyr- og teknikker</td><td><div><p>At anvende kommunikationsudstyr og -teknikker er en aktivitet, der består i at anvende udstyr og teknikker med kommunikationsformål. Kommunikationsudstyr omfatter også kommunikationshjælpemidler. Eksempler på udstyr er fx telefon, sms og computer, et eksempel på teknik er Braille og mundaflæsning.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-01770afa-cd17-41fe-a966-b8895e4d55d8"> </a>  <a href="CodeSystem-FFB.html#FFB-01770afa-cd17-41fe-a966-b8895e4d55d8">01770afa-cd17-41fe-a966-b8895e4d55d8</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Købe ind</td><td><div><p>Indkøb er en handling, der består i at købe varer og serviceydelser, som er nødvendige i dagligdagen. Begrebet inkluderer også at instruere og vejlede en anden person i at foretage indkøbene, som fx at vælge madvarer, drikke, rengøringsmidler, husholdningsartikler i en forretning, på et marked eller på nettet; sammenligne kvalitet og pris af varerne, forhandle og betale for de valgte varer eller ydelser og transportere varerne.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-4a51d7a7-61e7-48fa-a1d5-9d26337c6c38"> </a>  <a href="CodeSystem-FFB.html#FFB-4a51d7a7-61e7-48fa-a1d5-9d26337c6c38">4a51d7a7-61e7-48fa-a1d5-9d26337c6c38</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Passe ejendele</td><td><div><p>Udførsel af praktiske opgaver er en handling, der består i at vedligeholde og reparere personlige ejendele. Handlingen omfatter fx vedligehold og reparation af beklædning, bolig, indbo, køretøjer og hjælpemidler som fx ved at male og tapetsere, reparere møbler og installationer, sikre at køretøjer virker, passe og fodre kæledyr og husdyr samt vande planter.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-58ef570c-1c1e-47be-8bfd-26ed99825762"> </a>  <a href="CodeSystem-FFB.html#FFB-58ef570c-1c1e-47be-8bfd-26ed99825762">58ef570c-1c1e-47be-8bfd-26ed99825762</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Udvise hjælp og omsorg for andre</td><td><div><p>At udvise hjælp og omsorg for andre er en handling, der består i at hjælpe medlemmer i husstanden og andre. Begrebet rummer også at hjælpe andre med indlæring, kommunikation, egenomsorg, færden inde og ude samt at være opmærksom på andres velbefindende. Et eksempel på at hjælpe og drage omsorg for andre er varetagelse af forældrerollen.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-8f32c948-41c4-49d7-8913-cdeede2e7fe1"> </a>  <a href="CodeSystem-FFB.html#FFB-8f32c948-41c4-49d7-8913-cdeede2e7fe1">8f32c948-41c4-49d7-8913-cdeede2e7fe1</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Gøre rent</td><td><div><p>At gøre rent er en handling, der består i at holde ens nære fysiske omgivelser rene og hygiejniske. Rengøring kan fx ske ved at støvsuge, vaske gulv og støve af og omfatter typisk oprydning.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-b947f321-7cdb-4b33-9653-f3ff800572b0"> </a>  <a href="CodeSystem-FFB.html#FFB-b947f321-7cdb-4b33-9653-f3ff800572b0">b947f321-7cdb-4b33-9653-f3ff800572b0</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Lave mad</td><td><div><p>At lave mad er en handling, der består i at planlægge, tilberede og servere enkle eller sammensatte måltider. Handlingen kan fx bestå i at sammensætte et måltid, udvælge appetitlig mad og drikke, fremskaffe ingredienser til tilberedning af måltider; forberede mad og drikke til tilberedning, lave varm og kold mad og drikke samt at servere maden til sig selv eller andre.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-bd67597b-e80f-427f-8cf9-79d01eff91fc"> </a>  <a href="CodeSystem-FFB.html#FFB-bd67597b-e80f-427f-8cf9-79d01eff91fc">bd67597b-e80f-427f-8cf9-79d01eff91fc</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Vaske tøj</td><td><div><p>At vaske tøj er en handling, der består i at holde ens tøj rent ved at vaske det, når det trænger. At vaske tøj omfatter fx at sortere vasketøj, sætte en vask over, tørre tøj og lægge det rene tøj sammen og på plads.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-14615a09-bd94-4602-b43a-f6d3d3f9801d"> </a>  <a href="CodeSystem-FFB.html#FFB-14615a09-bd94-4602-b43a-f6d3d3f9801d">14615a09-bd94-4602-b43a-f6d3d3f9801d</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Drikke</td><td><div><p>At drikke er en aktivitet, der består i at holde fast om en drik, tage drikken op til munden og drikke på en kulturelt accepteret måde. Begrebet rummer også at blande, omrøre og skænke drikke op, åbne flasker og dåser og bruge sugerør.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-28fbf17e-bca3-45e1-be35-553e3d91f1b7"> </a>  <a href="CodeSystem-FFB.html#FFB-28fbf17e-bca3-45e1-be35-553e3d91f1b7">28fbf17e-bca3-45e1-be35-553e3d91f1b7</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Varetage sin seksualitet</td><td><div><p>At varetage sin seksualitet handler om, hvorvidt en persons funktionsnedsættelse eller sociale problemer giver begrænsninger i forhold til at udleve ens seksualitet.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-347aa085-4fe2-411f-ac56-5693d164adc3"> </a>  <a href="CodeSystem-FFB.html#FFB-347aa085-4fe2-411f-ac56-5693d164adc3">347aa085-4fe2-411f-ac56-5693d164adc3</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Klæde sig af og på</td><td><div><p>At klæde sig af og på er en aktivitet, der består i at tage tøj og sko af og på i rækkefølge og i overensstemmelse med den sociale sammenhæng og de klimatiske forhold.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-3a748135-98a8-416a-808d-bff88a8e40ee"> </a>  <a href="CodeSystem-FFB.html#FFB-3a748135-98a8-416a-808d-bff88a8e40ee">3a748135-98a8-416a-808d-bff88a8e40ee</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Dyrke interesse</td><td><div><p>At dyrke en interesse er en handling, der består i at bruge tid og energi på en bestemt aktivitet eller ting, som man er optaget af. Det kan fx være at samle på bestemte ting, spille computerspil eller lave håndarbejde.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-464a2ab6-a7df-4b3a-b74d-7873f4cfe668"> </a>  <a href="CodeSystem-FFB.html#FFB-464a2ab6-a7df-4b3a-b74d-7873f4cfe668">464a2ab6-a7df-4b3a-b74d-7873f4cfe668</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Spise</td><td><div><p>At spise er en aktivitet af sammensat karakter i forbindelse med indtagelse af føde, som er serveret for en, herunder at få maden op til munden og spise på en kulturelt accepteret måde. Begrebet rummer også at skære eller bryde maden i stykker, åbne flasker og dåser, anvende spiseredskaber, deltage i måltider og i festligheder.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-4a58417e-9a75-43f2-9763-66505050159f"> </a>  <a href="CodeSystem-FFB.html#FFB-4a58417e-9a75-43f2-9763-66505050159f">4a58417e-9a75-43f2-9763-66505050159f</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Varetage egen sundhed</td><td><div><p>At varetage egen sundhed er en handling, der består i at sikre sit velvære, helbred og fysiske og psykiske velbefindende. Varetagelse af egen sundhed omfatter fx at tage vare på sig selv ved at være opmærksom på, at man har brug for og skal gøre det, der er nødvendigt til varetagelse af egen sundhed, både ved at reagere på risikofaktorer og forebygge sygdom ved fx at opsøge professionel hjælp, følge medicinsk behandling og lægelige og andre råd om sundhed, undgå risikofaktorer som fysiske skader, smitsomme sygdomme, misbrug og seksuelt overførbare sygdomme.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-885400cc-dd71-479e-8993-3fc48fdd6710"> </a>  <a href="CodeSystem-FFB.html#FFB-885400cc-dd71-479e-8993-3fc48fdd6710">885400cc-dd71-479e-8993-3fc48fdd6710</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Vaske sig</td><td><div><p>At vaske sig er en aktivitet, der der består i at vaske og tørre sig på kroppen og kropsdele med anvendelse af vand og passende rensemidler. Eksempler på vask er bad, brusebad, vaske hænder og fødder, ansigt og hår og tørre sig med håndklæde.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-94fb3ea0-92cf-43b1-929b-c95e6fb739a1"> </a>  <a href="CodeSystem-FFB.html#FFB-94fb3ea0-92cf-43b1-929b-c95e6fb739a1">94fb3ea0-92cf-43b1-929b-c95e6fb739a1</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Gå på toilettet</td><td><div><p>At gå på toilettet er en aktivitet, der består i at planlægge og udføre toiletbesøg til udskillelse af affaldsprodukter og efterfølgende rengøring.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-b3939f0b-43d9-4e8c-bb2e-50ff8bb7ed03"> </a>  <a href="CodeSystem-FFB.html#FFB-b3939f0b-43d9-4e8c-bb2e-50ff8bb7ed03">b3939f0b-43d9-4e8c-bb2e-50ff8bb7ed03</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Pleje sin krop</td><td><div><p>At pleje sin krop er en aktivitet, der består i at pleje de dele af kroppen, som behøver anden pleje end vask og tørring. Begrebet rummer fx pleje af hud, ansigt, tænder, hår, negle og kønsdele.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-320c9aa6-630e-4695-bba2-29ea808fad24"> </a>  <a href="CodeSystem-FFB.html#FFB-320c9aa6-630e-4695-bba2-29ea808fad24">320c9aa6-630e-4695-bba2-29ea808fad24</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Bære, flytte og håndtere genstande</td><td><div><p>At bære, flytte og håndtere genstande er en aktivitet, der består i at løfte en genstand op og flytte noget fra ét sted til et andet ved hjælp af hænder, arme eller ben.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-4977ce08-df4d-4c09-8e03-c2a563862e68"> </a>  <a href="CodeSystem-FFB.html#FFB-4977ce08-df4d-4c09-8e03-c2a563862e68">4977ce08-df4d-4c09-8e03-c2a563862e68</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Gå og bevæge sig</td><td><div><p>At gå og bevæge sig er en aktivitet, der består i at bevæge sig fra et sted til et andet i forskellige omgivelser. Begrebet rummer også færden med brug af udstyr, fx kørestol eller gangstativ.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd"> </a>  <a href="CodeSystem-FFB.html#FFB-759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd">759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Ændre og opretholde kropsstilling</td><td><div><p>At ændre og opretholde kropsstilling er en aktivitet, der består i at skifte kropsstilling eller holde kroppen i samme stilling efter behov. Begrebet rummer også at flytte sig fra et sted til et andet og skifte eller bevare kropsstilling undervejs.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-eff3385d-01fa-4c9c-9850-52e179243f21"> </a>  <a href="CodeSystem-FFB.html#FFB-eff3385d-01fa-4c9c-9850-52e179243f21">eff3385d-01fa-4c9c-9850-52e179243f21</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Færdes med transportmidler</td><td><div><p>At færdes med transportmidler en en aktivitet, der består i at bruge transportmidler som passager eller chauffør til at komme omkring.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-22eef871-6650-426f-8b79-8d40a6c62808"> </a>  <a href="CodeSystem-FFB.html#FFB-22eef871-6650-426f-8b79-8d40a6c62808">22eef871-6650-426f-8b79-8d40a6c62808</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Holdninger i omgivelserne</td><td><div><p>Holdninger i omgivelserne er ideologier, værdier, normer, faktuelle og religiøse overbevisninger i en persons omgivelser, der afføder vaner, praksisser og andre synlige konsekvenser, som kan påvirke den enkeltes adfærd og sociale liv på alle planer. En persons omgivelser er fx familie, slægtninge, venner, bekendte, omsorgsgivere, personlige hjælpere, fremmede, sundhedspersonale, andre professionelle, samfundet og sociale normer, konventioner og ideologier.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-83342ff3-5f2e-4914-b045-e98357685866"> </a>  <a href="CodeSystem-FFB.html#FFB-83342ff3-5f2e-4914-b045-e98357685866">83342ff3-5f2e-4914-b045-e98357685866</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Boligområde</td><td><div><p>Et boligområde er en ramme, der udgør en persons nærmiljø, herunder art og betydning af socialgrupper, bebyggelse og infrastruktur i samme geografiske område.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-urn:oid:1.2.208.176.2.22-df194a84-6e4b-4f14-a194-d8d9d9a1fcad"> </a>  <a href="CodeSystem-FFB.html#FFB-df194a84-6e4b-4f14-a194-d8d9d9a1fcad">df194a84-6e4b-4f14-a194-d8d9d9a1fcad</a></td><td>urn:oid:1.2.208.176.2.22</td><td>Personer i netværk</td><td><div><p>Netværk er en eller flere personer, der giver praktisk eller følelsesmæssig støtte, omsorg, beskyttelse, hjælp og kontakt til andre mennesker. Begrebet har fokus på de personer, der udgør et netværk. Begrebet har fokus på de personer, der udgør et netværk. Et netværk kan være privat, professionelt eller bestå af frivilligt organiserede personer. Et professionelt netværk kan fx bestå af skolelærere, sagsbehandlere, personlige hjælpere, sundhedspersonale og andre professionelle. Et privat netværk er familie, slægtninge, venner eller bekendtskaber. Et netværk bestående af frivilligt organiserede personer kan fx udgøres af fodboldtrænere eller spejderlederer. Støtte mv. gives i hjemmet, på arbejdspladsen, i skolen, under leg eller i andre forhold i en persons daglige aktivitet. Et velfungerende netværk er en ressource for en person, hvor i mod et netværk også kan være uhensigtsmæssigt og dermed påvirke en person i negativ retning.</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 13:15+0100">2024-10-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

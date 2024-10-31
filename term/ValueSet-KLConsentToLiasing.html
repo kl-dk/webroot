@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>KLBorgerIndforståetMedHenvendelseKoder - KL Terminologi v2.1.0</title>
+    <title>KLBorgerIndforståetMedHenvendelseKoder - KL Terminologi v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,7 +39,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2.3"}
     h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -58,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KL Terminologi</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - Release
+            <span style="display:inline-block;">2.2.0 - Release
 
 
             </span>
@@ -116,7 +117,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -168,7 +169,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.kl.dk/term/ValueSet/KLConsentToLiasing<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLConsentToLiasing"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLConsentToLiasing|2.1.0"/></span>
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLConsentToLiasing|2.2.0"/></span>
       </td>
     </tr>
 
@@ -184,7 +185,7 @@
         
           Active
           
-            as of 2024-06-13
+            as of 2024-10-31
           
         
       </td>
@@ -221,14 +222,15 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from<a href="CodeSystem-CareSocialCodes.html"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-3762dd32-4123-43a8-815d-ec40d3697652">3762dd32-4123-43a8-815d-ec40d3697652</a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet KLConsentToLiasing</b></p><a name="KLConsentToLiasing"> </a><a name="hcKLConsentToLiasing"> </a><a name="KLConsentToLiasing-en-US"> </a>
+<ul><li>Include codes from<a href="CodeSystem-CareSocialCodes.html"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-3762dd32-4123-43a8-815d-ec40d3697652">3762dd32-4123-43a8-815d-ec40d3697652</a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-CareSocialCodes.html">codesystem CareSocialCodes v2.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb">54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>ikke indforstået</td><td><div><p>Borger ikke indforstået med henvendelse</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-e67035da-9179-466b-99ad-ea86835d38c9"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-e67035da-9179-466b-99ad-ea86835d38c9">e67035da-9179-466b-99ad-ea86835d38c9</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>indforstået</td><td><div><p>Borger indforstået med henvendelse</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-CareSocialCodes.html">codesystem CareSocialCodes v2.2.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb">54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>ikke indforstået</td><td><div><p>Borger ikke indforstået med henvendelse</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-e67035da-9179-466b-99ad-ea86835d38c9"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-e67035da-9179-466b-99ad-ea86835d38c9">e67035da-9179-466b-99ad-ea86835d38c9</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>indforstået</td><td><div><p>Borger indforstået med henvendelse</p>
 </div></td></tr></table></div>
 
   <hr/>
@@ -288,7 +290,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 16:58+0200">2024-06-13</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 13:18+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -305,7 +307,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -316,7 +318,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

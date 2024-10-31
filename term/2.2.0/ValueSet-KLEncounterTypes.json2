@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KLEncounterTypes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KLEncounterTypes</b></p><a name=\"KLEncounterTypes\"> </a><a name=\"hcKLEncounterTypes\"> </a><a name=\"KLEncounterTypes-en-US\"> </a><ul><li>Include codes from<a href=\"CodeSystem-CareSocialCodes.html\"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from <a href=\"CodeSystem-CareSocialCodes.html#CareSocialCodes-25303acd-dcaf-4a8e-a8a3-3961a43858aa\">25303acd-dcaf-4a8e-a8a3-3961a43858aa</a></li></ul></div>"
+  },
+  "url" : "http://fhir.kl.dk/term/ValueSet/KLEncounterTypes",
+  "version" : "2.2.0",
+  "name" : "KLEncounterTypes",
+  "title" : "KLKontaktTyper",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-31T13:15:50+01:00",
+  "publisher" : "Kommunernes Landsforening",
+  "contact" : [{
+    "name" : "Kommunernes Landsforening",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://kl.dk"
+    }]
+  }],
+  "description" : "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.kl.dk/term/CodeSystem/CareSocialCodes",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "25303acd-dcaf-4a8e-a8a3-3961a43858aa"
+      }]
+    }]
+  }
+}

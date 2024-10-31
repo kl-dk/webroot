@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>KLKontaktTyper - KL Terminologi v2.1.0</title>
+    <title>KLKontaktTyper - KL Terminologi v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,7 +39,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2.20"}
     h3,h4,h5,h6{--heading-prefix:"2.20"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -58,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">KL Terminologi</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - Release
+            <span style="display:inline-block;">2.2.0 - Release
 
 
             </span>
@@ -116,7 +117,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the KLTerm (v2.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.kl.dk/term/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -168,7 +169,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.kl.dk/term/ValueSet/KLEncounterTypes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLEncounterTypes"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLEncounterTypes|2.1.0"/></span>
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.kl.dk/term/ValueSet/KLEncounterTypes|2.2.0"/></span>
       </td>
     </tr>
 
@@ -184,7 +185,7 @@
         
           Active
           
-            as of 2024-06-13
+            as of 2024-10-31
           
         
       </td>
@@ -221,19 +222,20 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from<a href="CodeSystem-CareSocialCodes.html"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-25303acd-dcaf-4a8e-a8a3-3961a43858aa">25303acd-dcaf-4a8e-a8a3-3961a43858aa</a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet KLEncounterTypes</b></p><a name="KLEncounterTypes"> </a><a name="hcKLEncounterTypes"> </a><a name="KLEncounterTypes-en-US"> </a>
+<ul><li>Include codes from<a href="CodeSystem-CareSocialCodes.html"><code>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</code></a> where concept  descends from <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-25303acd-dcaf-4a8e-a8a3-3961a43858aa">25303acd-dcaf-4a8e-a8a3-3961a43858aa</a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-CareSocialCodes.html">codesystem CareSocialCodes v2.1.0 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-bb6fc544-7f4f-4b50-8868-1431e0df2381"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-bb6fc544-7f4f-4b50-8868-1431e0df2381">bb6fc544-7f4f-4b50-8868-1431e0df2381</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>observation</td><td><div><p>observation foretaget ved kontakt</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-9f03dfbb-7a97-45a5-94db-d4c3501714a9"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-9f03dfbb-7a97-45a5-94db-d4c3501714a9">9f03dfbb-7a97-45a5-94db-d4c3501714a9</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>opfølgning</td><td><div><p>opfølgning foretaget ved kontakt</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-829ac647-c7fc-4964-836b-f708d886e0e3"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-829ac647-c7fc-4964-836b-f708d886e0e3">829ac647-c7fc-4964-836b-f708d886e0e3</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>oplysning</td><td><div><p>oplysning er foretaget ved kontakt</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-15775b0a-7ec6-469e-9d3c-a81fbc9a1b45"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-15775b0a-7ec6-469e-9d3c-a81fbc9a1b45">15775b0a-7ec6-469e-9d3c-a81fbc9a1b45</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>udførelse af akutindsats</td><td><div><p>Akutindsats, bevilget af læge eller akutteam, udført ved kontakt</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-c03b426a-4348-407f-b343-f4baa9759c72"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-c03b426a-4348-407f-b343-f4baa9759c72">c03b426a-4348-407f-b343-f4baa9759c72</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>udførelse af ikke-bevilget indsats</td><td><div><p>Indsats, der ikke i forvejen var bevilget, udført ved kontakt</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-784275f1-6822-4a88-b361-d958007d5253"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-784275f1-6822-4a88-b361-d958007d5253">784275f1-6822-4a88-b361-d958007d5253</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>udførelse af planlagt indsats</td><td><div><p>Planlagt indsats udført ved kontakt</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.kl.dk-term-CodeSystem-CareSocialCodes-9269c9a2-8220-447b-a127-811275b41062"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-9269c9a2-8220-447b-a127-811275b41062">9269c9a2-8220-447b-a127-811275b41062</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>vurdering/bevilling</td><td><div><p>vurdering og/eller bevilling er foretaget ved kontakt</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-CareSocialCodes.html">codesystem CareSocialCodes v2.2.0 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-bb6fc544-7f4f-4b50-8868-1431e0df2381"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-bb6fc544-7f4f-4b50-8868-1431e0df2381">bb6fc544-7f4f-4b50-8868-1431e0df2381</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>observation</td><td><div><p>observation foretaget ved kontakt</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-9f03dfbb-7a97-45a5-94db-d4c3501714a9"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-9f03dfbb-7a97-45a5-94db-d4c3501714a9">9f03dfbb-7a97-45a5-94db-d4c3501714a9</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>opfølgning</td><td><div><p>opfølgning foretaget ved kontakt</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-829ac647-c7fc-4964-836b-f708d886e0e3"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-829ac647-c7fc-4964-836b-f708d886e0e3">829ac647-c7fc-4964-836b-f708d886e0e3</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>oplysning</td><td><div><p>oplysning er foretaget ved kontakt</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-15775b0a-7ec6-469e-9d3c-a81fbc9a1b45"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-15775b0a-7ec6-469e-9d3c-a81fbc9a1b45">15775b0a-7ec6-469e-9d3c-a81fbc9a1b45</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>udførelse af akutindsats</td><td><div><p>Akutindsats, bevilget af læge eller akutteam, udført ved kontakt</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-c03b426a-4348-407f-b343-f4baa9759c72"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-c03b426a-4348-407f-b343-f4baa9759c72">c03b426a-4348-407f-b343-f4baa9759c72</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>udførelse af ikke-bevilget indsats</td><td><div><p>Indsats, der ikke i forvejen var bevilget, udført ved kontakt</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-784275f1-6822-4a88-b361-d958007d5253"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-784275f1-6822-4a88-b361-d958007d5253">784275f1-6822-4a88-b361-d958007d5253</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>udførelse af planlagt indsats</td><td><div><p>Planlagt indsats udført ved kontakt</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://fhir.kl.dk/term/CodeSystem/CareSocialCodes-9269c9a2-8220-447b-a127-811275b41062"> </a>  <a href="CodeSystem-CareSocialCodes.html#CareSocialCodes-9269c9a2-8220-447b-a127-811275b41062">9269c9a2-8220-447b-a127-811275b41062</a></td><td>http://fhir.kl.dk/term/CodeSystem/CareSocialCodes</td><td>vurdering/bevilling</td><td><div><p>vurdering og/eller bevilling er foretaget ved kontakt</p>
 </div></td></tr></table></div>
 
   <hr/>
@@ -293,7 +295,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 16:58+0200">2024-06-13</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://kl.dk">Kommunernes Landsforening</a>.  Package kl.dk.fhir.term#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 13:18+0100">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -310,7 +312,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -321,7 +323,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

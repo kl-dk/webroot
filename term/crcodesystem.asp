@@ -16,17 +16,17 @@
   else if (s.indexOf("html") == -1) 
     Response.Redirect("http://fhir.kl.dk/term/CodeSystem-"+id+".xml");
   else if (id == "FFB")
-    Response.Redirect("http://fhir.kl.dk/term/2.1.0/CodeSystem-FFB.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.2.0/CodeSystem-FFB.html");
   else if (id == "CareSocialCodes")
-    Response.Redirect("http://fhir.kl.dk/term/2.1.0/CodeSystem-CareSocialCodes.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.2.0/CodeSystem-CareSocialCodes.html");
   else if (id == "FBOE")
-    Response.Redirect("http://fhir.kl.dk/term/2.1.0/CodeSystem-FBOE.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.2.0/CodeSystem-FBOE.html");
   else if (id == "KLCommonproprietary")
-    Response.Redirect("http://fhir.kl.dk/term/2.1.0/CodeSystem-KLCommonproprietary.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.2.0/CodeSystem-KLCommonproprietary.html");
   else if (id == "FSIII")
-    Response.Redirect("http://fhir.kl.dk/term/2.1.0/CodeSystem-FSIII.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.2.0/CodeSystem-FSIII.html");
   else if (id == "NPU")
-    Response.Redirect("http://fhir.kl.dk/term/2.1.0/CodeSystem-NPU.html");
+    Response.Redirect("http://fhir.kl.dk/term/2.2.0/CodeSystem-NPU.html");
   else if (id == "index")
     Response.Redirect("http://fhir.kl.dk/term/CodeSystem.html");
 
